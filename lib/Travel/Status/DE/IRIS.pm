@@ -133,3 +133,31 @@ sub results {
 }
 
 1;
+
+__END__
+
+=head1 NAME
+
+Travel::Status::DE::IRIS - Interface to IRIS based web departure monitors.
+
+=head1 SYNOPSIS
+
+TODO
+
+=head1 VERSION
+
+version 0.00
+
+=head1 DESCRIPTION
+
+TraveL::Status::DE::IRIS is an unofficial interface to IRIS based web
+departure monitors such as
+L<https://iris.noncd.db.de/wbt/js/index.html?typ=ab&style=qrab&bhf=EE&SecLang=&Zeilen=20&footer=0&disrupt=0>.
+
+=head1 AUTHOR
+
+Copyright (C) 2013 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
+
+=head1 LICENSE
+
+This module is licensed under the same terms as Perl itself.
