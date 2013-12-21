@@ -11,6 +11,7 @@ our $VERSION = '0.00';
 use Carp qw(confess cluck);
 use DateTime;
 use Encode qw(encode decode);
+use List::Util qw(first);
 use LWP::UserAgent;
 use Travel::Status::DE::IRIS::Result;
 use XML::LibXML;
@@ -56,6 +57,8 @@ sub new {
 	@{ $self->{results} }
 	  = sort { $a->{datetime} <=> $b->{datetime} } @{ $self->{results} };
 
+	$self->get_realtime;
+
 	return $self;
 }
 
@@ -74,6 +77,8 @@ sub get_timetable {
 	}
 
 	my $xml = XML::LibXML->load_xml( string => $res->decoded_content );
+
+	#say $xml->toString(1);
 
 	my $station = ( $xml->findnodes('/timetable') )[0]->getAttribute('station');
 
@@ -112,10 +117,71 @@ sub get_timetable {
 			$data{departure_wings} = $e_dp->getAttribute('wings');
 		}
 
-		push(
-			@{ $self->{results} },
-			Travel::Status::DE::IRIS::Result->new(%data)
-		);
+		# if scheduled departure and current departure are not within the
+		# same hour, trains are reported twice. Don't add duplicates in
+		# that case.
+		if ( not first { $_->raw_id eq $id } @{ $self->{results} } ) {
+			push(
+				@{ $self->{results} },
+				Travel::Status::DE::IRIS::Result->new(%data)
+			);
+		}
+	}
+
+	return $self;
+}
+
+sub get_realtime {
+	my ($self) = @_;
+
+	my $eva = $self->{nodes}{station}->getAttribute('eva');
+	my $res = $self->{user_agent}
+	  ->get("http://iris.noncd.db.de/iris-tts/timetable/fchg/${eva}");
+
+	if ( $res->is_error ) {
+		$self->{errstr} = $res->status_line;
+		return $self;
+	}
+
+	my $xml = XML::LibXML->load_xml( string => $res->decoded_content );
+
+	for my $s ( $xml->findnodes('/timetable/s') ) {
+		my $id   = $s->getAttribute('id');
+		my $e_tl = ( $s->findnodes('./tl') )[0];
+		my $e_ar = ( $s->findnodes('./ar') )[0];
+		my $e_dp = ( $s->findnodes('./dp') )[0];
+
+		my $result = first { $_->raw_id eq $id } $self->results;
+
+		if ( not $result ) {
+			next;
+		}
+
+		if ($e_tl) {
+			$result->add_tl(
+				class     => $e_tl->getAttribute('f'),    # D N S F
+				unknown_t => $e_tl->getAttribute('t'),    # p
+				train_no  => $e_tl->getAttribute('n'),    # dep number
+				type      => $e_tl->getAttribute('c'),    # S/ICE/ERB/...
+				line_no   => $e_tl->getAttribute('l'),    # 1 -> S1, ...
+				unknown_o => $e_tl->getAttribute('o'),    # owner: 03/80/R2/...
+			);
+		}
+		if ($e_ar) {
+			$result->add_ar(
+				arrival_ts => $e_ar->getAttribute('ct'),
+				platform   => $e_ar->getAttribute('cp'),
+				route_pre  => $e_ar->getAttribute('cpth'),
+			);
+		}
+		if ($e_dp) {
+			$result->add_dp(
+				departure_ts => $e_dp->getAttribute('ct'),
+				platform     => $e_dp->getAttribute('cp'),
+				route_pre    => $e_dp->getAttribute('cpth'),
+			);
+		}
+
 	}
 
 	return $self;

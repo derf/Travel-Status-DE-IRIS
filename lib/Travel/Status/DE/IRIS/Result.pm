@@ -14,8 +14,9 @@ use DateTime::Format::Strptime;
 our $VERSION = '0.00';
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
-	qw(arrival date datetime departure line_no raw_id
+	qw(arrival date datetime delay departure line_no raw_id
 	  route_start route_end
+	  sched_arrival sched_departure
 	  start stop_no time train_id train_no type unknown_t unknown_o)
 );
 
@@ -36,8 +37,10 @@ sub new {
 	$ref->{train_id} = $train_id;
 	$ref->{stop_no}  = $stop_no;
 
-	my $ar = $ref->{arrival}   = $strp->parse_datetime( $opt{arrival_ts} );
-	my $dp = $ref->{departure} = $strp->parse_datetime( $opt{departure_ts} );
+	my $ar = $ref->{arrival} = $ref->{sched_arrival}
+	  = $strp->parse_datetime( $opt{arrival_ts} );
+	my $dp = $ref->{departure} = $ref->{sched_departure}
+	  = $strp->parse_datetime( $opt{departure_ts} );
 
 	if ( not( $ar or $dp ) ) {
 		cluck(
@@ -54,13 +57,57 @@ sub new {
 	$ref->{date} = $dt->strftime('%d.%m.%Y');
 	$ref->{time} = $dt->strftime('%H:%M');
 
-	$ref->{route_pre}  = [ split( qr{\|}, $ref->{route_pre}  // q{} ) ];
-	$ref->{route_post} = [ split( qr{\|}, $ref->{route_post} // q{} ) ];
+	$ref->{route_pre} = $ref->{sched_route_pre}
+	  = [ split( qr{\|}, $ref->{route_pre} // q{} ) ];
+	$ref->{route_post} = $ref->{sched_route_post}
+	  = [ split( qr{\|}, $ref->{route_post} // q{} ) ];
 
-	$ref->{route_end}   = $ref->{route_post}[-1] || $ref->{station};
-	$ref->{route_start} = $ref->{route_pre}[0]   || $ref->{station};
+	$ref->{route_end} = $ref->{sched_route_end} = $ref->{route_post}[-1]
+	  || $ref->{station};
+	$ref->{route_start} = $ref->{sched_route_start} = $ref->{route_pre}[0]
+	  || $ref->{station};
 
 	return bless( $ref, $obj );
+}
+
+sub add_ar {
+	my ( $self, %attrib ) = @_;
+
+	my $strp = DateTime::Format::Strptime->new(
+		pattern   => '%y%m%d%H%M',
+		time_zone => 'Europe/Berlin',
+	);
+
+	if ( $attrib{arrival_ts} ) {
+		$self->{arrival} = $strp->parse_datetime( $attrib{arrival_ts} );
+		$self->{delay}
+		  = $self->arrival->subtract_datetime( $self->sched_arrival )
+		  ->in_units('minutes');
+	}
+}
+
+sub add_dp {
+	my ( $self, %attrib ) = @_;
+
+	my $strp = DateTime::Format::Strptime->new(
+		pattern   => '%y%m%d%H%M',
+		time_zone => 'Europe/Berlin',
+	);
+
+	if ( $attrib{departure_ts} ) {
+		$self->{departure} = $strp->parse_datetime( $attrib{departure_ts} );
+		$self->{delay}
+		  = $self->departure->subtract_datetime( $self->sched_departure )
+		  ->in_units('minutes');
+	}
+}
+
+sub add_tl {
+	my ( $self, %attrib ) = @_;
+
+	# TODO
+
+	return $self;
 }
 
 sub origin {
@@ -85,19 +132,19 @@ sub line {
 sub route_pre {
 	my ($self) = @_;
 
-	return @{$self->{route_pre}};
+	return @{ $self->{route_pre} };
 }
 
 sub route_post {
 	my ($self) = @_;
 
-	return @{$self->{route_post}};
+	return @{ $self->{route_post} };
 }
 
 sub route {
 	my ($self) = @_;
 
-	return ($self->route_pre, $self->{station}, $self->route_post);
+	return ( $self->route_pre, $self->{station}, $self->route_post );
 }
 
 sub train {
