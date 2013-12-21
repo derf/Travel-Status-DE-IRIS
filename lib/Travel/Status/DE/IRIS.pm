@@ -53,15 +53,15 @@ sub new {
 		$dt_req->add( hours => 1 );
 	}
 
+	@{ $self->{results} }
+	  = sort { $a->{datetime} <=> $b->{datetime} } @{ $self->{results} };
+
 	return $self;
 }
 
 sub get_timetable {
 	my ( $self, $eva, $dt ) = @_;
 	my $ua = $self->{user_agent};
-
-	say $dt->strftime(
-		"http://iris.noncd.db.de/iris-tts/timetable/plan/${eva}/%y%m%d/%H");
 
 	my $res = $ua->get(
 		$dt->strftime(
@@ -74,6 +74,8 @@ sub get_timetable {
 	}
 
 	my $xml = XML::LibXML->load_xml( string => $res->decoded_content );
+
+	my $station = ( $xml->findnodes('/timetable') )[0]->getAttribute('station');
 
 	for my $s ( $xml->findnodes('/timetable/s') ) {
 		my $id   = $s->getAttribute('id');
@@ -92,6 +94,7 @@ sub get_timetable {
 			train_no  => $e_tl->getAttribute('n'),    # dep number
 			type      => $e_tl->getAttribute('c'),    # S/ICE/ERB/...
 			line_no   => $e_tl->getAttribute('l'),    # 1 -> S1, ...
+			station   => $station,
 			unknown_o => $e_tl->getAttribute('o'),    # owner: 03/80/R2/...
 		);
 
@@ -114,8 +117,6 @@ sub get_timetable {
 			Travel::Status::DE::IRIS::Result->new(%data)
 		);
 	}
-
-	say $xml->toString(1);
 
 	return $self;
 }

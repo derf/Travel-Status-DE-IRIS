@@ -14,11 +14,9 @@ use DateTime::Format::Strptime;
 our $VERSION = '0.00';
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
-	qw(arrival_date arrival_datetime arrival_time date datetime
-	  departure_date departure_datetime departure_time line_no raw_id
-	  start_date start_datetime start_time stop_no
-	  time train_id train_no
-	  type unknown_t unknown_o)
+	qw(arrival date datetime departure line_no raw_id route route_post route_pre
+	  route_start route_end
+	  start stop_no time train_id train_no type unknown_t unknown_o)
 );
 
 sub new {
@@ -33,55 +31,61 @@ sub new {
 
 	my ( $train_id, $start_ts, $stop_no ) = split( /.\K-/, $opt{raw_id} );
 
-	$ref->{start_datetime} = $strp->parse_datetime($start_ts);
-	$ref->{start_date}     = $ref->{start_datetime}->strftime('%d.%m.%Y');
-	$ref->{start_time}     = $ref->{start_datetime}->strftime('%H:%M');
+	$ref->{start} = $strp->parse_datetime($start_ts);
 
 	$ref->{train_id} = $train_id;
 	$ref->{stop_no}  = $stop_no;
 
-	$ref->{arrival_datetime}   = $strp->parse_datetime( $opt{arrival_ts} );
-	$ref->{departure_datetime} = $strp->parse_datetime( $opt{departure_ts} );
+	my $ar = $ref->{arrival}   = $strp->parse_datetime( $opt{arrival_ts} );
+	my $dp = $ref->{departure} = $strp->parse_datetime( $opt{departure_ts} );
 
-	if ( not( $ref->{arrival_datetime} or $ref->{departure_datetime} ) ) {
+	if ( not( $ar or $dp ) ) {
 		cluck(
 			sprintf(
-				"Neither '%s' nor '%s' are valid timestamps",
+				"Neither arrival '%s' nor departure '%s' are valid "
+				  . "timestamps - can't handle this train",
 				$opt{arrival_ts}, $opt{departure_ts}
 			)
 		);
 	}
 
-	if ( $ref->{arrival_datetime} ) {
-		my $dt = $ref->{datetime} = $ref->{arrival_datetime};
-		$ref->{arrival_date} = $ref->{date} = $dt->strftime('%d.%m.%Y');
-		$ref->{arrival_time} = $ref->{time} = $dt->strftime('%H:%M');
-	}
-	if ( $ref->{departure_datetime} ) {
-		my $dt = $ref->{datetime} = $ref->{departure_datetime};
-		$ref->{departure_date} = $ref->{date} = $dt->strftime('%d.%m.%Y');
-		$ref->{departure_time} = $ref->{time} = $dt->strftime('%H:%M');
-	}
+	my $dt = $ref->{datetime} = $ar // $dp;
+
+	$ref->{date} = $dt->strftime('%d.%m.%Y');
+	$ref->{time} = $dt->strftime('%H:%M');
+
+	$ref->{route_pre}  = [ split( qr{\|}, $ref->{route_pre}  // q{} ) ];
+	$ref->{route_post} = [ split( qr{\|}, $ref->{route_post} // q{} ) ];
+
+	$ref->{route_end}   = $ref->{route_post}[-1] || $ref->{station};
+	$ref->{route_start} = $ref->{route_pre}[0]   || $ref->{station};
 
 	return bless( $ref, $obj );
-}
-
-sub destination {
-	my ($self) = @_;
-
-	return $self->{route_end};
-}
-
-sub line {
-	my ($self) = @_;
-
-	return $self->{train};
 }
 
 sub origin {
 	my ($self) = @_;
 
-	return $self->{route_end};
+	return $self->route_start;
+}
+
+sub destination {
+	my ($self) = @_;
+
+	return $self->route_end;
+}
+
+sub line {
+	my ($self) = @_;
+
+	return
+	  sprintf( '%s %s', $self->{type}, $self->{line_no} // $self->{train_no} );
+}
+
+sub train {
+	my ($self) = @_;
+
+	return $self->line;
 }
 
 sub route_interesting {
@@ -132,12 +136,6 @@ sub route_interesting {
 
 	return @via_show;
 
-}
-
-sub route_timetable {
-	my ($self) = @_;
-
-	return @{ $self->{route} };
 }
 
 sub TO_JSON {
