@@ -14,7 +14,7 @@ use DateTime::Format::Strptime;
 our $VERSION = '0.00';
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
-	qw(arrival date datetime departure line_no raw_id route route_post route_pre
+	qw(arrival date datetime departure line_no raw_id
 	  route_start route_end
 	  start stop_no time train_id train_no type unknown_t unknown_o)
 );
@@ -82,6 +82,24 @@ sub line {
 	  sprintf( '%s %s', $self->{type}, $self->{line_no} // $self->{train_no} );
 }
 
+sub route_pre {
+	my ($self) = @_;
+
+	return @{$self->{route_pre}};
+}
+
+sub route_post {
+	my ($self) = @_;
+
+	return @{$self->{route_post}};
+}
+
+sub route {
+	my ($self) = @_;
+
+	return ($self->route_pre, $self->{station}, $self->route_post);
+}
+
 sub train {
 	my ($self) = @_;
 
@@ -91,7 +109,7 @@ sub train {
 sub route_interesting {
 	my ( $self, $max_parts ) = @_;
 
-	my @via = $self->route;
+	my @via = $self->route_post;
 	my ( @via_main, @via_show, $last_stop );
 	$max_parts //= 3;
 
