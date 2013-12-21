@@ -52,7 +52,7 @@ sub new {
 		);
 	}
 
-	my $dt = $ref->{datetime} = $ar // $dp;
+	my $dt = $ref->{datetime} = $dp // $ar;
 
 	$ref->{date} = $dt->strftime('%d.%m.%Y');
 	$ref->{time} = $dt->strftime('%H:%M');
