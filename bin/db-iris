@@ -86,9 +86,9 @@ sub get_station {
 sub show_help {
 	my ($code) = @_;
 
-	print 'Usage: db-ris [-d <dd.mm.yyyy>] [-m <motlist>] [-t <time>] '
+	print 'Usage: db-iris [-m <motlist>] [-t <time>] '
 	  . "[-v <via>] <station>\n"
-	  . "See also: man db-ris\n";
+	  . "See also: man db-iris\n";
 
 	exit $code;
 }
@@ -161,84 +161,27 @@ __END__
 
 =head1 NAME
 
-db-ris - Interface to the DeutscheBahn online departure monitor
+db-iris - Interface to the DeutscheBahn online departure monitor
 
 =head1 SYNOPSIS
 
-B<db-ris> [B<-a>] [B<-d> I<date>] [B<-L>] [B<-m> I<motlist>] [B<-t> I<time>]
-[B<-v> I<via>] I<station>
+B<db-iris> I<station>
 
 =head1 VERSION
 
-version 1.02
+version 0.00
 
 =head1 DESCRIPTION
 
-db-ris is an interface to the DeutscheBahn departure monitor
-available at L<http://reiseauskunft.bahn.de/bin/bhftafel.exe/dn>.
+db-iris is an interface to the DeutscheBahn departure monitor
+available at L<https://iris.noncd.db.de/wbt/js/index.html>.
 
-It requests all departures at I<station> (optionally filtered by date, time,
-route and means of transport) and lists them on stdout, similar to the big
-departure screens installed at most main stations.
+It requests all departures at I<station> and lists them on stdout, similar to
+the big departure screens installed at most main stations.
 
 =head1 OPTIONS
 
 =over
-
-=item B<-a>, B<--arrivals>
-
-Show arrivals instead of departures, including trains ending at the specified
-station. Note that this causes the output to display the start instead of
-the end station and B<-f> to list all stops between start end
-I<station>, not I<station> and end.
-
-=item B<-d>, B<--date> I<dd>.I<mm>.I<yyyy>
-
-Date to list departures for.  Default: today.
-
-=item B<-f>, B<--full-route>
-
-Display complete routes (including arrival times) of all trains.
-
-=item B<-l>, B<--lang> B<d>|B<e>|B<i>|B<n>
-
-Set language used for additional information. Supports B<d>eutsch (default),
-B<e>nglish, B<i>talian and dutch (B<n>).
-
-=item B<-L>, B<--ignore-late>
-
-Do not display delayed trains.
-
-=item B<-m>, B<--mot> I<motlist>
-
-Comma-separated list of modes of transport to show/hide.  Accepts the following
-argements:
-
-	ice    InterCity Express trains
-	ic_ec  InterCity / EuroCity trains
-	d      InterRegio and similar
-	nv     "Nahverkehr", RegionalExpress and such
-	s      S-Bahn
-	bus
-	ferry
-	u      U-Bahn
-	tram
-
-You can prefix an argument with "!" to hide it.  The default is C<<
-ice,ic_ec,d,nv,s >>.  Note that B<-m> does not replace the default, so if you
-only want to see S-Bahn and U-Bahn departures, you'd have to use C<< -m
-!ice,!ic_ec,!d,!nv,u >>.
-
-=item B<-t>, B<--time> I<hh>:I<mm>
-
-Time to list departures for.  Default: now.
-
-=item B<-v>, B<--via> I<regex>
-
-Only display trains whose route (all stations between the current stop and the
-destination) matches the perl regular expression I<regex>.  The match is not
-case-sensitive.  Use '^regex$' to match a full string, but be aware that this
-may not work as expected.
 
 =item B<-V>, B<--version>
 
@@ -260,6 +203,8 @@ None.
 
 =item * Class::Accessor(3pm)
 
+=item * DateTime(3pm)
+
 =item * LWP::UserAgent(3pm)
 
 =item * XML::LibXML(3pm)
@@ -268,12 +213,11 @@ None.
 
 =head1 BUGS AND LIMITATIONS
 
-There are a few character encoding problems (most notably, B<--via> does not
-understand UTF-8 umlauts).
+Todo.
 
 =head1 AUTHOR
 
-Copyright (C) 2011 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
+Copyright (C) 2013-2014 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
 
 =head1 LICENSE
 
