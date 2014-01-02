@@ -14,7 +14,7 @@ use DateTime::Format::Strptime;
 our $VERSION = '0.00';
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
-	qw(arrival date datetime delay departure line_no raw_id
+	qw(arrival date datetime delay departure line_no platform raw_id
 	  route_start route_end
 	  sched_arrival sched_departure
 	  start stop_no time train_id train_no type unknown_t unknown_o)

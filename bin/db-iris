@@ -1,0 +1,280 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use 5.018;
+
+our $VERSION = '0.00';
+
+use Getopt::Long qw(:config no_ignore_case);
+use List::Util qw(max);
+use Travel::Status::DE::IRIS;
+use Travel::Status::DE::IRIS::Stations;
+
+my %train_type;
+
+my ( $date, $time );
+my $arrivals = 0;
+my $filter_via;
+my $ignore_late     = 0;
+my $show_full_route = 0;
+my $types           = q{};
+my $language;
+
+my @output;
+
+binmode( STDOUT, ':encoding(utf-8)' );
+
+GetOptions(
+	'a|arrivals'    => \$arrivals,
+	'd|date=s'      => \$date,
+	'f|full-route'  => \$show_full_route,
+	'h|help'        => sub { show_help(0) },
+	'l|lang=s'      => \$language,
+	'L|ignore-late' => \$ignore_late,
+	'm|mot=s'       => \$types,
+	't|time=s'      => \$time,
+	'v|via=s'       => \$filter_via,
+	'V|version'     => \&show_version,
+
+) or show_help(1);
+
+if ( @ARGV != 1 ) {
+	show_help(1);
+}
+
+my ($station) = @ARGV;
+$station = get_station($station);
+
+for my $type ( split( qr{,}, $types ) ) {
+	if ( substr( $type, 0, 1 ) eq q{!} ) {
+		$train_type{ substr( $type, 1 ) } = 0;
+	}
+	else {
+		$train_type{$type} = 1;
+	}
+}
+
+my $status = Travel::Status::DE::IRIS->new(
+	date     => $date,
+	language => $language,
+	mot      => \%train_type,
+	station  => $station,
+	time     => $time,
+	mode     => $arrivals ? 'arr' : 'dep',
+);
+
+sub get_station {
+	my ($input_name) = @_;
+
+	my @stations
+	  = Travel::Status::DE::IRIS::Stations::get_station_by_name($input_name);
+
+	if ( @stations == 0 ) {
+		say STDERR "No station matches '$input_name'";
+	}
+	elsif ( @stations == 1 ) {
+		return $stations[0][0];
+	}
+	else {
+		say STDERR "The input '$input_name' is ambiguous. Please choose one "
+		  . 'of the following:';
+		say STDERR join( "\n", map { $_->[1] } @stations );
+		exit(1);
+	}
+}
+
+sub show_help {
+	my ($code) = @_;
+
+	print 'Usage: db-ris [-d <dd.mm.yyyy>] [-m <motlist>] [-t <time>] '
+	  . "[-v <via>] <station>\n"
+	  . "See also: man db-ris\n";
+
+	exit $code;
+}
+
+sub show_version {
+	say "db-iris version ${VERSION}";
+
+	exit 0;
+}
+
+sub display_result {
+	my (@lines) = @_;
+
+	my @line_length;
+
+	if ( not @lines ) {
+		die("Nothing to show\n");
+	}
+
+	for my $i ( 0 .. 4 ) {
+		$line_length[$i] = max map { length( $_->[$i] ) } @lines;
+	}
+
+	for my $line (@lines) {
+		printf(
+			join( q{  }, ( map { "%-${_}s" } @line_length ) ) . "\n",
+			@{$line}[ 0 .. 4 ]
+		);
+
+		if ($show_full_route) {
+			print "\n" . $line->[5] . "\n\n\n";
+		}
+	}
+
+	return;
+}
+
+if ( my $err = $status->errstr ) {
+	say STDERR "Request error: ${err}";
+	exit 2;
+}
+
+for my $d ( $status->results() ) {
+
+	my @via;
+
+	@via = $d->route;
+
+	if ( $filter_via and not( first { $_ =~ m{$filter_via}io } @via ) ) {
+		next;
+	}
+
+	if ( $ignore_late and $d->delay ) {
+		next;
+	}
+
+	push(
+		@output,
+		[
+			$d->time, $d->train,
+			$arrivals ? q{} : join( q{  }, $d->route_interesting ),
+			$d->route_end, $d->platform, join( "\n", $d->route ),
+		]
+	);
+}
+
+display_result(@output);
+
+__END__
+
+=head1 NAME
+
+db-ris - Interface to the DeutscheBahn online departure monitor
+
+=head1 SYNOPSIS
+
+B<db-ris> [B<-a>] [B<-d> I<date>] [B<-L>] [B<-m> I<motlist>] [B<-t> I<time>]
+[B<-v> I<via>] I<station>
+
+=head1 VERSION
+
+version 1.02
+
+=head1 DESCRIPTION
+
+db-ris is an interface to the DeutscheBahn departure monitor
+available at L<http://reiseauskunft.bahn.de/bin/bhftafel.exe/dn>.
+
+It requests all departures at I<station> (optionally filtered by date, time,
+route and means of transport) and lists them on stdout, similar to the big
+departure screens installed at most main stations.
+
+=head1 OPTIONS
+
+=over
+
+=item B<-a>, B<--arrivals>
+
+Show arrivals instead of departures, including trains ending at the specified
+station. Note that this causes the output to display the start instead of
+the end station and B<-f> to list all stops between start end
+I<station>, not I<station> and end.
+
+=item B<-d>, B<--date> I<dd>.I<mm>.I<yyyy>
+
+Date to list departures for.  Default: today.
+
+=item B<-f>, B<--full-route>
+
+Display complete routes (including arrival times) of all trains.
+
+=item B<-l>, B<--lang> B<d>|B<e>|B<i>|B<n>
+
+Set language used for additional information. Supports B<d>eutsch (default),
+B<e>nglish, B<i>talian and dutch (B<n>).
+
+=item B<-L>, B<--ignore-late>
+
+Do not display delayed trains.
+
+=item B<-m>, B<--mot> I<motlist>
+
+Comma-separated list of modes of transport to show/hide.  Accepts the following
+argements:
+
+	ice    InterCity Express trains
+	ic_ec  InterCity / EuroCity trains
+	d      InterRegio and similar
+	nv     "Nahverkehr", RegionalExpress and such
+	s      S-Bahn
+	bus
+	ferry
+	u      U-Bahn
+	tram
+
+You can prefix an argument with "!" to hide it.  The default is C<<
+ice,ic_ec,d,nv,s >>.  Note that B<-m> does not replace the default, so if you
+only want to see S-Bahn and U-Bahn departures, you'd have to use C<< -m
+!ice,!ic_ec,!d,!nv,u >>.
+
+=item B<-t>, B<--time> I<hh>:I<mm>
+
+Time to list departures for.  Default: now.
+
+=item B<-v>, B<--via> I<regex>
+
+Only display trains whose route (all stations between the current stop and the
+destination) matches the perl regular expression I<regex>.  The match is not
+case-sensitive.  Use '^regex$' to match a full string, but be aware that this
+may not work as expected.
+
+=item B<-V>, B<--version>
+
+Show version information.
+
+=back
+
+=head1 EXIT STATUS
+
+Zero unless things went wrong.
+
+=head1 CONFIGURATION
+
+None.
+
+=head1 DEPENDENCIES
+
+=over
+
+=item * Class::Accessor(3pm)
+
+=item * LWP::UserAgent(3pm)
+
+=item * XML::LibXML(3pm)
+
+=back
+
+=head1 BUGS AND LIMITATIONS
+
+There are a few character encoding problems (most notably, B<--via> does not
+understand UTF-8 umlauts).
+
+=head1 AUTHOR
+
+Copyright (C) 2011 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
+
+=head1 LICENSE
+
+This program is licensed under the same terms as Perl itself.
