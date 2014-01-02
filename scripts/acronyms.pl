@@ -13,7 +13,7 @@ my $re_line = qr{
 }x;
 
 say <<'EOF';
-package Travel::Status::DE::IRIS::Acronyms;
+package Travel::Status::DE::IRIS::Stations;
 
 use strict;
 use warnings;
@@ -24,38 +24,38 @@ use List::MoreUtils qw(firstval);
 
 our $VERSION = '0.00';
 
-my @acronyms = (
+my @stations = (
 EOF
 
 while (my $line = <STDIN>) {
 	chomp $line;
 
 	if ($line =~ $re_line) {
-		my ($acronym, $name) = @+{qw{acronym name}};
+		my ($station, $name) = @+{qw{acronym name}};
 		$name =~ s{'}{\\'}g;
 
-		printf("\t['%s','%s'],\n", $acronym, $name);
+		printf("\t['%s','%s'],\n", $station, $name);
 	}
 }
 
 say <<'EOF';
 );
 
-sub get_acronyms {
-	return @acronyms;
+sub get_stations {
+	return @stations;
 }
 
-sub get_acronym_by_name {
+sub get_station_by_name {
 	my ( $name ) = @_;
 
 	my $nname = lc($name);
-	my $actual_match = firstval { $nname eq lc($_->[1]) } @acronyms;
+	my $actual_match = firstval { $nname eq lc($_->[1]) } @stations;
 
 	if ($actual_match) {
 		return ($actual_match);
 	}
 
-	return ( grep { $_->[1] =~ m{$name}i } @acronyms );
+	return ( grep { $_->[1] =~ m{$name}i } @stations );
 }
 
 1;

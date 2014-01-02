@@ -1,4 +1,4 @@
-package Travel::Status::DE::IRIS::Acronyms;
+package Travel::Status::DE::IRIS::Stations;
 
 use strict;
 use warnings;
@@ -9,7 +9,7 @@ use List::MoreUtils qw(firstval);
 
 our $VERSION = '0.00';
 
-my @acronyms = (
+my @stations = (
 
 	['XNTH','`t Harde'],
 	['YMMBM','6,1/60,3 Bad MGH'],
@@ -15096,21 +15096,21 @@ my @acronyms = (
 	['XPZR','Zyrardow'],
 );
 
-sub get_acronyms {
-	return @acronyms;
+sub get_stations {
+	return @stations;
 }
 
-sub get_acronym_by_name {
+sub get_station_by_name {
 	my ( $name ) = @_;
 
 	my $nname = lc($name);
-	my $actual_match = firstval { $nname eq lc($_->[1]) } @acronyms;
+	my $actual_match = firstval { $nname eq lc($_->[1]) } @stations;
 
 	if ($actual_match) {
 		return ($actual_match);
 	}
 
-	return ( grep { $_->[1] =~ m{$name}i } @acronyms );
+	return ( grep { $_->[1] =~ m{$name}i } @stations );
 }
 
 1;
