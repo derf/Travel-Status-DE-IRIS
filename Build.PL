@@ -16,7 +16,7 @@ Module::Build->new(
 	module_name => 'Travel::Status::DE::IRIS',
 	license => 'perl',
 	requires => {
-		'perl' => '5.18',
+		'perl' => '5.18.0',
 		'Carp' => 0,
 		'Getopt::Long' => 0,
 		'LWP::UserAgent' => 0,
