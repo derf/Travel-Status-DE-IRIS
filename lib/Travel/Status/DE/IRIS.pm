@@ -107,6 +107,7 @@ sub get_timetable {
 			$data{arrival_ts} = $e_ar->getAttribute('pt');
 			$data{platform}   = $e_ar->getAttribute('pp'); # string, not number!
 			$data{route_pre}     = $e_ar->getAttribute('ppth');
+			$data{route_start}   = $e_ar->getAttribute('pde');
 			$data{arrival_wings} = $e_ar->getAttribute('wings');
 		}
 
@@ -114,6 +115,7 @@ sub get_timetable {
 			$data{departure_ts} = $e_dp->getAttribute('pt');
 			$data{platform} = $e_dp->getAttribute('pp');   # string, not number!
 			$data{route_post}      = $e_dp->getAttribute('ppth');
+			$data{route_end}       = $e_dp->getAttribute('pde');
 			$data{departure_wings} = $e_dp->getAttribute('wings');
 		}
 
@@ -190,13 +192,15 @@ sub get_realtime {
 				arrival_ts => $e_ar->getAttribute('ct'),
 				platform   => $e_ar->getAttribute('cp'),
 				route_pre  => $e_ar->getAttribute('cpth'),
+				status     => $e_ar->getAttribute('cs'),
 			);
 		}
 		if ($e_dp) {
 			$result->add_dp(
 				departure_ts => $e_dp->getAttribute('ct'),
 				platform     => $e_dp->getAttribute('cp'),
-				route_pre    => $e_dp->getAttribute('cpth'),
+				route_post   => $e_dp->getAttribute('cpth'),
+				status       => $e_dp->getAttribute('cs'),
 			);
 		}
 

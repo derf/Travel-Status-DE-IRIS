@@ -118,9 +118,18 @@ sub new {
 	$ref->{route_post} = $ref->{sched_route_post}
 	  = [ split( qr{\|}, $ref->{route_post} // q{} ) ];
 
-	$ref->{route_end} = $ref->{sched_route_end} = $ref->{route_post}[-1]
+	$ref->{route_pre_incomplete}  = $ref->{route_end}  ? 1 : 0;
+	$ref->{route_post_incomplete} = $ref->{route_post} ? 1 : 0;
+
+	$ref->{route_end}
+	  = $ref->{sched_route_end}
+	  = $ref->{route_end}
+	  || $ref->{route_post}[-1]
 	  || $ref->{station};
-	$ref->{route_start} = $ref->{sched_route_start} = $ref->{route_pre}[0]
+	$ref->{route_start}
+	  = $ref->{sched_route_start}
+	  = $ref->{route_start}
+	  || $ref->{route_pre}[0]
 	  || $ref->{station};
 
 	return bless( $ref, $obj );
@@ -244,7 +253,8 @@ sub route_interesting {
 			push( @via_main, $stop );
 		}
 	}
-	$last_stop = pop(@via);
+	$last_stop
+	  = $self->{route_post_incomplete} ? $self->{route_end} : pop(@via);
 
 	if ( @via_main and $via_main[-1] eq $last_stop ) {
 		pop(@via_main);
