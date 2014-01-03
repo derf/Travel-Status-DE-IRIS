@@ -1,0 +1,1699 @@
+<timetable station="Essen Hbf">
+<s id="-8084972750492234800-1401031446-20">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <m id="r153165" t="h" from="1401031955" to="1401032200" ts="1401032001"/>
+    <ar ct="1401032139">
+        <m id="r16664610" t="q" c="86" ts="1401031556"/>
+    </ar>
+    <dp ct="1401032141">
+        <m id="r16664610" t="q" c="86" ts="1401031556"/>
+    </dp>
+</s>
+<s id="946823158308360507-1401032033-14">
+    <ar ct="1401032125"/>
+    <dp ct="1401032126"/>
+</s>
+<s id="8363147230318398848-1401031547-13">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <ar ct="1401032141">
+        <m id="r16664144" t="d" c="48" ts="1401031533"/>
+        <m id="r16667242" t="d" c="46" ts="1401031804"/>
+        <m id="r16668598" t="d" c="43" ts="1401031912"/>
+        <m id="r16669609" t="f" c="0" ts="1401032004"/>
+    </ar>
+    <dp ct="1401032143">
+        <m id="r16664145" t="d" c="48" ts="1401031533"/>
+        <m id="r16667242" t="d" c="46" ts="1401031804"/>
+        <m id="r16668598" t="d" c="43" ts="1401031912"/>
+        <m id="r16669609" t="f" c="0" ts="1401032004"/>
+    </dp>
+</s>
+<s id="8931651114687998334-1401032032-35">
+    <ar ct="1401032217"/>
+</s>
+<s id="8752803772058470023-1401031851-18">
+    <m id="r17157s" t="r" from="1401031917" to="1401032030" ts="1401032031"/>
+    <ar ppth="Aachen Hbf|Aachen-Rothe Erde|Stolberg(Rheinl)Hbf|Eschweiler Hbf|Langerwehe|Düren|Horrem|Köln-Ehrenfeld|Köln Hbf|Köln Messe/Deutz|Köln-Mülheim|Leverkusen Mitte|Düsseldorf-Benrath|Düsseldorf Hbf|Düsseldorf Flughafen|Duisburg Hbf|Mülheim(Ruhr)Hbf" pp="6" ct="1401032110" pt="1401032050">
+        <m id="r16663376" t="d" c="36" ts="1401031442"/>
+        <m id="r16669883" t="d" c="22" ts="1401032022"/>
+    </ar>
+    <dp ppth="Wattenscheid|Bochum Hbf|Dortmund Hbf|Dortmund-Scharnhorst|Dortmund-Kurl|Kamen-Methler|Kamen|Nordbögge|Hamm(Westf)" pp="6" ct="1401032113" pt="1401032053">
+        <m id="r16663376" t="d" c="36" ts="1401031442"/>
+        <m id="r16669883" t="d" c="22" ts="1401032022"/>
+    </dp>
+    <tl f="N" t="e" n="72348" c="RE" o="03"/>
+    <ref f="N" t="p" n="10137" c="RE" o="03"/>
+</s>
+<s id="-3229028613678583796-1401032047-14">
+    <ar ct="1401032136"/>
+</s>
+<s id="-6475987336465514774-1401030842-39">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <m id="r17154s" t="r" from="1401031600" to="1401032300" ts="1401031600"/>
+    <ar ct="1401032104">
+        <m id="r16661526" t="q" c="86" ts="1401031231"/>
+        <m id="r16664550" t="f" c="0" ts="1401031553"/>
+        <m id="r16669034" t="d" c="31" ts="1401031935"/>
+        <m id="r16669905" t="d" c="22" ts="1401032024"/>
+        <m id="r16669966" t="d" c="22" ts="1401032027"/>
+    </ar>
+    <dp ct="1401032106">
+        <m id="r16661526" t="q" c="86" ts="1401031231"/>
+        <m id="r16664550" t="f" c="0" ts="1401031553"/>
+        <m id="r16669034" t="d" c="31" ts="1401031935"/>
+        <m id="r16669905" t="d" c="22" ts="1401032024"/>
+        <m id="r16669966" t="d" c="22" ts="1401032027"/>
+    </dp>
+</s>
+<s id="7170336129327845459-1401031637-9">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <m id="r17154s" t="r" from="1401031600" to="1401032300" ts="1401031600"/>
+    <m id="r153165" t="h" from="1401031955" to="1401032200" ts="1401032001"/>
+    <ar ct="1401032115">
+        <m id="r16661756" t="q" c="80" ts="1401031251"/>
+        <m id="r16661779" t="q" c="80" ts="1401031252"/>
+        <m id="r16666366" t="d" c="46" ts="1401031718"/>
+        <m id="r16669833" t="d" c="44" ts="1401032019"/>
+        <m id="r16669913" t="d" c="34" ts="1401032024"/>
+        <m id="r16670307" t="d" c="34" ts="1401032047"/>
+    </ar>
+    <dp ct="1401032117">
+        <m id="r16661756" t="q" c="80" ts="1401031251"/>
+        <m id="r16661779" t="q" c="80" ts="1401031252"/>
+        <m id="r16666366" t="d" c="46" ts="1401031718"/>
+        <m id="r16669833" t="d" c="44" ts="1401032019"/>
+        <m id="r16669913" t="d" c="34" ts="1401032024"/>
+        <m id="r16670307" t="d" c="34" ts="1401032047"/>
+    </dp>
+</s>
+<s id="-3631428706167423643-1401031838-11">
+    <m id="r152978" t="h" from="1401030000" to="1401032359" ts="1401030047"/>
+    <ar ct="1401032259">
+        <m id="r16656439" t="q" c="93" ts="1401030516"/>
+        <m id="r16669650" t="d" c="43" ts="1401032007"/>
+    </ar>
+    <dp ct="1401032301">
+        <m id="r16656439" t="q" c="93" ts="1401030516"/>
+        <m id="r16669650" t="d" c="43" ts="1401032007"/>
+    </dp>
+</s>
+<s id="4043735471459571682-1401032133-12">
+    <ar ct="1401032230"/>
+</s>
+<s id="3872512436440447407-1401032043-25">
+    <ar ct="1401032156"/>
+    <dp ct="1401032157"/>
+</s>
+<s id="-5325615657696898722-1401031932-35">
+    <ar ct="1401032114"/>
+</s>
+<s id="1888213704240974474-1401032102-35">
+    <ar ct="1401032244"/>
+</s>
+<s id="-76199863693312181-1401031951-18">
+    <ar ct="1401032154"/>
+    <dp ct="1401032156"/>
+</s>
+<s id="-5759145644115879897-1401032053-15">
+    <ar ct="1401032133"/>
+    <dp ct="1401032135"/>
+</s>
+<s id="-7622136451024038710-1401032100-3">
+    <ar ct="1401032114"/>
+    <dp ct="1401032116"/>
+</s>
+<s id="-3524682960846905298-1401031952-35">
+    <ar ct="1401032145"/>
+</s>
+<s id="968733451731854781-1401031735-10">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <m id="r153165" t="h" from="1401031955" to="1401032200" ts="1401032001"/>
+    <ar ct="1401032139">
+        <m id="r16669699" t="f" c="0" ts="1401032011"/>
+        <m id="r16669728" t="d" c="11" ts="1401032012"/>
+        <m id="r16670196" t="d" c="22" ts="1401032039"/>
+        <m id="r16670477" t="d" c="22" ts="1401032101"/>
+    </ar>
+    <dp ct="1401032141">
+        <m id="r16669699" t="f" c="0" ts="1401032011"/>
+        <m id="r16669728" t="d" c="11" ts="1401032012"/>
+        <m id="r16670196" t="d" c="22" ts="1401032039"/>
+        <m id="r16670477" t="d" c="22" ts="1401032101"/>
+    </dp>
+</s>
+<s id="-5688153282682030803-1401031758-9">
+    <ar ct="1401032222">
+        <m id="r16665244" t="q" c="80" ts="1401031627"/>
+        <m id="r16668092" t="d" c="11" ts="1401031851"/>
+        <m id="r16669057" t="f" c="0" ts="1401031936"/>
+        <m id="r16670475" t="d" c="11" ts="1401032101"/>
+    </ar>
+</s>
+<s id="2554050833785257090-1401031832-10">
+    <m id="r152999" t="h" from="1401030000" to="1401032359" ts="1401030404"/>
+    <ar ct="1401032225">
+        <m id="r16655983" t="q" c="85" ts="1401030233"/>
+        <m id="r16655989" t="q" c="93" ts="1401030235"/>
+        <m id="r16655995" t="q" c="91" ts="1401030237"/>
+        <m id="r16667569" t="q" c="84" ts="1401031824"/>
+        <m id="r16667596" t="q" c="88" ts="1401031825"/>
+        <m id="r16668911" t="d" c="36" ts="1401031928"/>
+        <m id="r16668912" t="f" c="0" ts="1401031928"/>
+        <m id="r16669260" t="d" c="36" ts="1401031946"/>
+        <m id="r16669298" t="f" c="0" ts="1401031948"/>
+    </ar>
+    <dp ct="1401032227">
+        <m id="r16655983" t="q" c="85" ts="1401030233"/>
+        <m id="r16655989" t="q" c="93" ts="1401030235"/>
+        <m id="r16655995" t="q" c="91" ts="1401030237"/>
+        <m id="r16667569" t="q" c="84" ts="1401031824"/>
+        <m id="r16667596" t="q" c="88" ts="1401031825"/>
+        <m id="r16668911" t="d" c="36" ts="1401031928"/>
+        <m id="r16668912" t="f" c="0" ts="1401031928"/>
+        <m id="r16669260" t="d" c="36" ts="1401031946"/>
+        <m id="r16669298" t="f" c="0" ts="1401031948"/>
+    </dp>
+</s>
+<s id="-1301335876326315249-1401032028-18">
+    <ar ct="1401032230">
+        <m id="r16661133" t="q" c="85" ts="1401031151"/>
+    </ar>
+    <dp ct="1401032231">
+        <m id="r16661133" t="q" c="85" ts="1401031151"/>
+    </dp>
+</s>
+<s id="4725025685937925706-1401032033-12">
+    <ar ct="1401032130"/>
+</s>
+<s id="-317145489149969779-1401032131-1">
+    <dp ct="1401032131"/>
+</s>
+<s id="-8090931002983431612-1401031528-12">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <m id="r153165" t="h" from="1401031955" to="1401032200" ts="1401032001"/>
+    <ar ct="1401032115">
+        <m id="r16664162" t="d" c="48" ts="1401031533"/>
+        <m id="r16666139" t="q" c="80" ts="1401031707"/>
+        <m id="r16667590" t="q" c="80" ts="1401031825"/>
+        <m id="r16668561" t="d" c="43" ts="1401031910"/>
+        <m id="r16670007" t="d" c="22" ts="1401032028"/>
+        <m id="r16670005" t="d" c="22" ts="1401032028"/>
+    </ar>
+    <dp ct="1401032117">
+        <m id="r16664162" t="d" c="48" ts="1401031533"/>
+        <m id="r16666139" t="q" c="80" ts="1401031707"/>
+        <m id="r16667590" t="q" c="80" ts="1401031825"/>
+        <m id="r16668561" t="d" c="43" ts="1401031910"/>
+        <m id="r16670007" t="d" c="22" ts="1401032028"/>
+        <m id="r16670005" t="d" c="22" ts="1401032028"/>
+    </dp>
+</s>
+<s id="-8227889732708971868-1401031953-4">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <ar ppth="Düsseldorf Hbf|Düsseldorf Flughafen|Duisburg Hbf" pp="6" ct="1401032110" pt="1401032021">
+        <m id="r16669213" t="d" c="22" ts="1401031943"/>
+        <m id="r16669211" t="d" c="22" ts="1401031943"/>
+        <m id="r16669209" t="d" c="22" ts="1401031943"/>
+        <m id="r16669207" t="d" c="22" ts="1401031943"/>
+        <m id="r16669205" t="d" c="22" ts="1401031943"/>
+        <m id="r16669203" t="d" c="22" ts="1401031943"/>
+        <m id="r16669664" t="d" c="22" ts="1401032008"/>
+        <m id="r16669662" t="d" c="22" ts="1401032008"/>
+        <m id="r16669670" t="d" c="22" ts="1401032008"/>
+        <m id="r16669672" t="d" c="22" ts="1401032008"/>
+        <m id="r16669668" t="d" c="22" ts="1401032008"/>
+        <m id="r16669666" t="d" c="22" ts="1401032008"/>
+        <m id="r16669870" t="d" c="22" ts="1401032022"/>
+        <m id="r16670190" t="d" c="22" ts="1401032038"/>
+        <m id="r16670389" t="d" c="22" ts="1401032051"/>
+        <m id="r16670385" t="d" c="22" ts="1401032051"/>
+        <m id="r16670461" t="d" c="43" ts="1401032100"/>
+    </ar>
+    <dp ppth="Bochum Hbf|Dortmund Hbf|Hamm(Westf)|Bielefeld Hbf|Hannover Hbf|Wolfsburg Hbf|Berlin-Spandau|Berlin Hbf (tief)" pp="6" ct="1401032112" pt="1401032023">
+        <m id="r16669213" t="d" c="22" ts="1401031943"/>
+        <m id="r16669211" t="d" c="22" ts="1401031943"/>
+        <m id="r16669209" t="d" c="22" ts="1401031943"/>
+        <m id="r16669207" t="d" c="22" ts="1401031943"/>
+        <m id="r16669205" t="d" c="22" ts="1401031943"/>
+        <m id="r16669203" t="d" c="22" ts="1401031943"/>
+        <m id="r16669664" t="d" c="22" ts="1401032008"/>
+        <m id="r16669662" t="d" c="22" ts="1401032008"/>
+        <m id="r16669672" t="d" c="22" ts="1401032008"/>
+        <m id="r16669670" t="d" c="22" ts="1401032008"/>
+        <m id="r16669668" t="d" c="22" ts="1401032008"/>
+        <m id="r16669666" t="d" c="22" ts="1401032008"/>
+        <m id="r16669869" t="d" c="22" ts="1401032022"/>
+        <m id="r16670190" t="d" c="22" ts="1401032038"/>
+        <m id="r16670389" t="d" c="22" ts="1401032051"/>
+        <m id="r16670385" t="d" c="22" ts="1401032051"/>
+        <m id="r16670461" t="d" c="43" ts="1401032100"/>
+    </dp>
+    <tl f="F" t="p" n="947" c="ICE" o="80"/>
+</s>
+<s id="-4601007725631228153-1401031706-7">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <m id="r153165" t="h" from="1401031955" to="1401032200" ts="1401032001"/>
+    <ar cpth="Hamburg Hbf|Hamburg-Harburg|Osnabrück Hbf|Münster(Westf)Hbf|Gelsenkirchen Hbf" ppth="Hamburg Hbf|Hamburg-Harburg|Osnabrück Hbf|Münster(Westf)Hbf|Recklinghausen Hbf|Gelsenkirchen Hbf" pp="1" ct="1401032056" pt="1401032021">
+        <m id="r16664048" t="f" c="0" ts="1401031526"/>
+        <m id="r16668819" t="d" c="22" ts="1401031921"/>
+        <m id="r16668824" t="d" c="11" ts="1401031921"/>
+        <m id="r16668831" t="d" c="11" ts="1401031922"/>
+        <m id="r16668926" t="d" c="11" ts="1401031929"/>
+        <m id="r16669569" t="d" c="34" ts="1401032001"/>
+        <m id="r16669790" t="d" c="11" ts="1401032016"/>
+        <m id="r16669920" t="d" c="11" ts="1401032025"/>
+        <m id="r16669991" t="d" c="22" ts="1401032027"/>
+        <m id="r16669989" t="d" c="22" ts="1401032027"/>
+        <m id="r16670003" t="d" c="22" ts="1401032028"/>
+        <m id="r16670207" t="d" c="22" ts="1401032040"/>
+        <m id="r16670205" t="d" c="22" ts="1401032040"/>
+    </ar>
+    <dp cpth="Duisburg Hbf|Düsseldorf Hbf|Köln Hbf" ppth="Duisburg Hbf|Düsseldorf Hbf|Köln Hbf" pp="1" ct="1401032100" pt="1401032024">
+        <m id="r16664048" t="f" c="0" ts="1401031526"/>
+        <m id="r16668819" t="d" c="22" ts="1401031921"/>
+        <m id="r16668824" t="d" c="11" ts="1401031921"/>
+        <m id="r16668831" t="d" c="11" ts="1401031922"/>
+        <m id="r16668926" t="d" c="11" ts="1401031929"/>
+        <m id="r16669569" t="d" c="34" ts="1401032001"/>
+        <m id="r16669790" t="d" c="11" ts="1401032016"/>
+        <m id="r16669920" t="d" c="11" ts="1401032025"/>
+        <m id="r16669991" t="d" c="22" ts="1401032027"/>
+        <m id="r16669989" t="d" c="22" ts="1401032027"/>
+        <m id="r16670003" t="d" c="22" ts="1401032028"/>
+        <m id="r16670207" t="d" c="22" ts="1401032040"/>
+        <m id="r16670205" t="d" c="22" ts="1401032040"/>
+    </dp>
+    <tl f="F" t="p" n="1529" c="ICE" o="80"/>
+</s>
+<s id="-6899771302922119515-1401032058-3">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <m id="r153165" t="h" from="1401031955" to="1401032200" ts="1401032001"/>
+    <ar ct="1401032122"/>
+    <dp ct="1401032125"/>
+</s>
+<s id="7930833342999831414-1401032032-11">
+    <m id="r152907" t="h" from="1401030000" to="1401032359" ts="1401030058"/>
+    <ar ct="1401040001">
+        <m id="r16656562" t="q" c="93" ts="1401030530"/>
+        <m id="r16670178" t="q" c="85" ts="1401032037"/>
+    </ar>
+    <dp ct="1401040002">
+        <m id="r16656562" t="q" c="93" ts="1401030530"/>
+        <m id="r16670178" t="q" c="85" ts="1401032037"/>
+    </dp>
+</s>
+<s id="3547209896395150996-1401031637-3">
+    <m id="r17162s" t="r" from="1401032058" to="1401032130" ts="1401032058"/>
+    <ar ct="1401031658">
+        <m id="r16664194" t="q" c="80" ts="1401031536"/>
+        <m id="r16665636" t="q" c="90" ts="1401031645"/>
+    </ar>
+    <dp ct="1401031700">
+        <m id="r16664194" t="q" c="80" ts="1401031536"/>
+        <m id="r16665636" t="q" c="90" ts="1401031645"/>
+    </dp>
+</s>
+<s id="6425669328188393064-1401032048-7">
+    <ar ct="1401032106"/>
+    <dp ct="1401032107"/>
+</s>
+<s id="-6944181991730507967-1401031938-9">
+    <ar ct="1401032107"/>
+    <dp ct="1401032109"/>
+</s>
+<s id="1479480332676958410-1401031956-9">
+    <ar ppth="Hamm(Westf)|Nordbögge|Kamen|Kamen-Methler|Dortmund-Kurl|Dortmund Hbf|Bochum Hbf|Wattenscheid" pp="2" ct="1401032056" pt="1401032044">
+        <m id="r16666983" t="d" c="99" ts="1401031753"/>
+    </ar>
+    <dp ppth="Mülheim(Ruhr)Hbf|Duisburg Hbf" pp="2" ct="1401032057" pt="1401032046">
+        <m id="r16666983" t="d" c="99" ts="1401031753"/>
+    </dp>
+    <tl f="N" t="e" n="72390" c="RE" o="03"/>
+    <ref f="N" t="p" n="10030" c="RE" o="03"/>
+</s>
+<s id="-3221621912493659770-1401031928-18">
+    <ar ct="1401032146">
+        <m id="r16670231" t="d" c="34" ts="1401032041"/>
+    </ar>
+    <dp ct="1401032147">
+        <m id="r16670231" t="d" c="34" ts="1401032041"/>
+    </dp>
+</s>
+<s id="8304217697931610222-1401032035-7">
+    <ar ct="1401032055"/>
+    <dp ct="1401032056"/>
+</s>
+<s id="-121514140564489583-1401032023-15">
+    <ar ct="1401032110">
+        <m id="r16669354" t="d" c="33" ts="1401031949"/>
+    </ar>
+    <dp ct="1401032111">
+        <m id="r16669354" t="d" c="33" ts="1401031949"/>
+    </dp>
+</s>
+<s id="7866691710216532047-1401032017-8">
+    <ar ct="1401032057"/>
+</s>
+<s id="-3838902119851749914-1401032013-25">
+    <ar cpth="Düsseldorf Hbf|Düsseldorf Flughafen|Duisburg Hbf|Mülheim(Ruhr)Styrum|Mülheim(Ruhr)Hbf|Essen-Frohnhausen|Essen West" ct="1401032142">
+        <m id="r16666124" t="q" c="83" ts="1401031707"/>
+        <m id="r16668793" t="d" c="38" ts="1401031920"/>
+        <m id="r16670425" t="d" c="38" ts="1401032054"/>
+    </ar>
+    <dp cpth="Essen-Steele|Essen-Steele Ost|Essen-Eiberg|Wattenscheid-Höntrop|Bochum-Ehrenfeld|Bochum Hbf|Bochum-Langendreer West|Bochum-Langendreer|Dortmund-Kley|Dortmund-Oespel|Dortmund Universität|Dortmund-Dorstfeld Süd|Dortmund-Dorstfeld|Dortmund Hbf" ct="1401032143">
+        <m id="r16666124" t="q" c="83" ts="1401031707"/>
+        <m id="r16668793" t="d" c="38" ts="1401031920"/>
+        <m id="r16670425" t="d" c="38" ts="1401032054"/>
+    </dp>
+</s>
+<s id="-4946981542276873826-1401031636-9">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <m id="r153165" t="h" from="1401031955" to="1401032200" ts="1401032001"/>
+    <ar cp="2" ct="1401032051">
+        <m id="r16667374" t="f" c="0" ts="1401031812"/>
+        <m id="r16669855" t="d" c="11" ts="1401032020"/>
+        <m id="r16670012" t="d" c="22" ts="1401032028"/>
+        <m id="r16670010" t="d" c="22" ts="1401032028"/>
+    </ar>
+    <dp cp="2" ct="1401032053">
+        <m id="r16667374" t="f" c="0" ts="1401031812"/>
+        <m id="r16669855" t="d" c="11" ts="1401032020"/>
+        <m id="r16670012" t="d" c="22" ts="1401032028"/>
+        <m id="r16670010" t="d" c="22" ts="1401032028"/>
+    </dp>
+</s>
+<s id="-1500423047061561657-1401032051-18">
+    <ar ct="1401032250"/>
+    <dp ct="1401032253"/>
+</s>
+<s id="-2344694835149263324-1401032115-10">
+    <ar ct="1401032222">
+        <m id="r16670368" t="d" c="48" ts="1401032050"/>
+    </ar>
+    <dp ct="1401032224">
+        <m id="r16670368" t="d" c="48" ts="1401032050"/>
+    </dp>
+</s>
+<s id="3729885488909644468-1401031813-25">
+    <ar cpth="Solingen Hbf|Solingen Vogelpark|Hilden Süd|Hilden|Düsseldorf-Eller|Düsseldorf-Eller Mitte|Düsseldorf-Oberbilk|Düsseldorf Volksgarten|Düsseldorf Hbf|Düsseldorf Wehrhahn|Düsseldorf-Zoo|Düsseldorf-Derendorf|Düsseldorf-Unterrath|Düsseldorf Flughafen|Angermund|Duisburg-Rahm|Duisburg-Großenbaum|Duisburg-Buchholz|Duisburg-Schlenk|Duisburg Hbf" ppth="Solingen Hbf|Solingen Vogelpark|Hilden Süd|Hilden|Düsseldorf-Eller|Düsseldorf-Eller Mitte|Düsseldorf-Oberbilk|Düsseldorf Volksgarten|Düsseldorf Hbf|Düsseldorf Wehrhahn|Düsseldorf-Zoo|Düsseldorf-Derendorf|Düsseldorf-Unterrath|Düsseldorf Flughafen|Angermund|Duisburg-Rahm|Duisburg-Großenbaum|Duisburg-Buchholz|Duisburg-Schlenk|Duisburg Hbf|Mülheim(Ruhr)Styrum|Mülheim(Ruhr)Hbf|Essen-Frohnhausen|Essen West" pp="11" ct="1401032050" pt="1401031925" cs="c" clt="1401032013">
+        <m id="r16668439" t="d" c="38" ts="1401031904"/>
+        <m id="r16668559" t="f" c="0" ts="1401031910"/>
+        <m id="r16668568" t="f" c="0" ts="1401031911"/>
+        <m id="r16668567" t="f" c="0" ts="1401031911"/>
+        <m id="r16668767" t="f" c="0" ts="1401031918"/>
+        <m id="r16669611" t="f" c="0" ts="1401032004"/>
+        <m id="r16669730" t="d" c="38" ts="1401032013"/>
+    </ar>
+    <dp cpth="Dortmund Hbf" ppth="Essen-Steele|Essen-Steele Ost|Essen-Eiberg|Wattenscheid-Höntrop|Bochum-Ehrenfeld|Bochum Hbf|Bochum-Langendreer West|Bochum-Langendreer|Dortmund-Kley|Dortmund-Oespel|Dortmund Universität|Dortmund-Dorstfeld Süd|Dortmund-Dorstfeld|Dortmund Hbf" pp="11" ct="1401032050" pt="1401031926" cs="c" clt="1401032013">
+        <m id="r16668439" t="d" c="38" ts="1401031904"/>
+        <m id="r16668559" t="f" c="0" ts="1401031910"/>
+        <m id="r16668568" t="f" c="0" ts="1401031911"/>
+        <m id="r16668567" t="f" c="0" ts="1401031911"/>
+        <m id="r16668767" t="f" c="0" ts="1401031918"/>
+        <m id="r16669611" t="f" c="0" ts="1401032004"/>
+        <m id="r16669730" t="d" c="38" ts="1401032013"/>
+    </dp>
+    <tl f="S" t="p" l="1" n="31121" c="S" o="03"/>
+</s>
+<s id="-7711004144502148469-1401032048-1">
+    <dp ct="1401032050"/>
+</s>
+<s id="5239772549867512350-1401031936-14">
+    <ar cpth="Münster(Westf)Hbf|Münster-Albachten|Bösensell|Nottuln-Appelhülsen|Buldern|Dülmen|Sythen|Haltern am See|Recklinghausen Hbf|Recklinghausen Süd|Wanne-Eickel Hbf|Gelsenkirchen Hbf" ct="1401032051">
+        <m id="r16669232" t="d" c="40" ts="1401031944"/>
+        <m id="r16669234" t="d" c="40" ts="1401031944"/>
+        <m id="r16669299" t="f" c="0" ts="1401031948"/>
+        <m id="r16669345" t="d" c="40" ts="1401031949"/>
+    </ar>
+</s>
+<s id="2748684468212940215-1401030700-37">
+    <m id="r17159s" t="r" from="1401031934" to="1401032026" ts="1401032027"/>
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <m id="r17154s" t="r" from="1401031600" to="1401032300" ts="1401031600"/>
+    <ar ppth="Salzburg Hbf|Kufstein|Wörgl Hbf|Jenbach|Innsbruck Hbf|Telfs-Pfaffenhofen|Ötztal|Imst-Pitztal|Landeck-Zams|St. Anton am Arlberg|Langen am Arlberg|Bludenz|Feldkirch|Dornbirn|Bregenz|Lindau Hbf|Friedrichshafen Stadt|Meckenbeuren|Ravensburg|Aulendorf|Biberach(Riß)|Ulm Hbf|Geislingen(Steige)|Göppingen|Stuttgart Hbf|Heidelberg Hbf|Mannheim Hbf|Mainz Hbf|Bingen(Rhein) Hbf|Koblenz Hbf|Andernach|Remagen|Bonn Hbf|Köln Hbf|Düsseldorf Hbf|Duisburg Hbf" pp="6" ct="1401032047" pt="1401031934">
+        <m id="r16668617" t="d" c="22" ts="1401031913"/>
+        <m id="r16669323" t="d" c="22" ts="1401031948"/>
+        <m id="r16669539" t="d" c="22" ts="1401031959"/>
+        <m id="r16669891" t="d" c="22" ts="1401032023"/>
+        <m id="r16669975" t="f" c="0" ts="1401032027"/>
+    </ar>
+    <dp ppth="Gelsenkirchen Hbf|Wanne-Eickel Hbf|Recklinghausen Hbf|Münster(Westf)Hbf" pp="6" ct="1401032049" pt="1401031936">
+        <m id="r16668617" t="d" c="22" ts="1401031913"/>
+        <m id="r16669323" t="d" c="22" ts="1401031948"/>
+        <m id="r16669539" t="d" c="22" ts="1401031959"/>
+        <m id="r16669891" t="d" c="22" ts="1401032023"/>
+        <m id="r16669975" t="f" c="0" ts="1401032027"/>
+    </dp>
+    <tl f="F" t="p" n="118" c="IC" o="81"/>
+</s>
+<s id="1276230875041389314-1401031828-18">
+    <ar ct="1401032045">
+        <m id="r16667916" t="d" c="32" ts="1401031841"/>
+    </ar>
+    <dp ct="1401032048">
+        <m id="r16667916" t="d" c="32" ts="1401031841"/>
+    </dp>
+</s>
+<s id="-5406672780348263235-1401032027-3">
+    <ar ct="1401032044"/>
+    <dp ct="1401032045"/>
+</s>
+<s id="-6411839821555841707-1401031547-13">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <m id="r153165" t="h" from="1401031955" to="1401032200" ts="1401032001"/>
+    <m id="r152992" t="h" from="1401030000" to="1401032359" ts="1401030348"/>
+    <ar ppth="Berlin Südkreuz|Berlin Hbf (tief)|Berlin-Spandau|Stendal|Wolfsburg Hbf|Hannover Hbf|Herford|Bielefeld Hbf|Gütersloh Hbf|Hamm(Westf)|Dortmund Hbf|Bochum Hbf" pp="1" ct="1401032042" pt="1401032012">
+        <m id="r16655965" t="q" c="82" ts="1401030225"/>
+        <m id="r16664266" t="f" c="0" ts="1401031540"/>
+        <m id="r16664271" t="q" c="91" ts="1401031541"/>
+        <m id="r16669302" t="d" c="11" ts="1401031948"/>
+        <m id="r16669339" t="d" c="11" ts="1401031949"/>
+        <m id="r16669347" t="d" c="11" ts="1401031949"/>
+        <m id="r16669619" t="d" c="22" ts="1401032005"/>
+        <m id="r16669974" t="d" c="22" ts="1401032027"/>
+        <m id="r16669972" t="d" c="22" ts="1401032027"/>
+    </ar>
+    <dp ppth="Mülheim(Ruhr)Hbf|Duisburg Hbf|Düsseldorf Hbf|Köln Hbf" pp="1" ct="1401032045" pt="1401032014">
+        <m id="r16655965" t="q" c="82" ts="1401030225"/>
+        <m id="r16664266" t="f" c="0" ts="1401031540"/>
+        <m id="r16664271" t="q" c="91" ts="1401031541"/>
+        <m id="r16669302" t="d" c="11" ts="1401031948"/>
+        <m id="r16669339" t="d" c="11" ts="1401031949"/>
+        <m id="r16669347" t="d" c="11" ts="1401031949"/>
+        <m id="r16669619" t="d" c="22" ts="1401032005"/>
+        <m id="r16669974" t="d" c="22" ts="1401032027"/>
+        <m id="r16669972" t="d" c="22" ts="1401032027"/>
+    </dp>
+    <tl f="F" t="p" n="1923" c="IC" o="80"/>
+</s>
+<s id="5005528238121052771-1401032110-13">
+    <ar cpth="Dülmen|Sythen|Haltern am See|Marl-Sinsen|Recklinghausen Hbf|Wanne-Eickel Hbf|Gelsenkirchen Hbf">
+        <m id="r16670281" t="d" c="22" ts="1401032044"/>
+    </ar>
+    <dp cpth="Mülheim(Ruhr)Hbf|Duisburg Hbf">
+        <m id="r16670281" t="d" c="22" ts="1401032044"/>
+    </dp>
+</s>
+<s id="8338269908487082905-1401031927-3">
+    <ar cpth="Duisburg Hbf|Mülheim(Ruhr)Hbf" ppth="Duisburg Hbf|Mülheim(Ruhr)Hbf" pp="4" ct="1401032020" pt="1401031940" cs="p" clt="1401031958" pde="Düsseldorf Hbf" dc="1">
+        <m id="r16668814" t="d" c="22" ts="1401031921"/>
+        <m id="r16668833" t="d" c="22" ts="1401031923"/>
+        <m id="r16669513" t="d" c="22" ts="1401031958"/>
+        <m id="r16669641" t="d" c="22" ts="1401032006"/>
+        <m id="r16669744" t="d" c="22" ts="1401032013"/>
+        <m id="r16670275" t="d" c="22" ts="1401032044"/>
+    </ar>
+    <dp cpth="Gelsenkirchen Hbf|Wanne-Eickel Hbf|Recklinghausen Hbf|Marl-Sinsen|Haltern am See|Sythen|Dülmen" ppth="Gelsenkirchen Hbf|Wanne-Eickel Hbf|Recklinghausen Hbf|Marl-Sinsen|Haltern am See|Sythen|Dülmen|Buldern|Nottuln-Appelhülsen|Bösensell|Münster-Albachten|Münster(Westf)Hbf" pp="4" ct="1401032022" pt="1401031944" cs="p" clt="1401031958">
+        <m id="r16668814" t="d" c="22" ts="1401031921"/>
+        <m id="r16668833" t="d" c="22" ts="1401031923"/>
+        <m id="r16669513" t="d" c="22" ts="1401031958"/>
+        <m id="r16669641" t="d" c="22" ts="1401032006"/>
+        <m id="r16669744" t="d" c="22" ts="1401032013"/>
+        <m id="r16670275" t="d" c="22" ts="1401032044"/>
+    </dp>
+    <tl f="N" t="p" n="10231" c="RE" o="03"/>
+</s>
+<s id="3723203209291704042-1401032018-7">
+    <ar ct="1401032042"/>
+    <dp ct="1401032044"/>
+</s>
+<s id="272001300940056920-1401032056-13">
+    <ar ct="1401040112"/>
+    <dp ct="1401040114"/>
+</s>
+<s id="6987506284477226000-1401032036-14">
+    <ar ct="1401032202">
+        <m id="r16670269" t="d" c="48" ts="1401032043"/>
+    </ar>
+</s>
+<s id="-7994284922361226355-1401031751-18">
+    <ar cpth="Aachen Hbf|Aachen-Rothe Erde|Stolberg(Rheinl)Hbf|Eschweiler Hbf|Langerwehe|Düren|Horrem|Köln-Ehrenfeld|Köln Hbf|Köln Messe/Deutz|Köln-Mülheim|Leverkusen Mitte|Düsseldorf-Benrath|Düsseldorf Hbf|Duisburg Hbf|Mülheim(Ruhr)Hbf" ppth="Aachen Hbf|Aachen-Rothe Erde|Stolberg(Rheinl)Hbf|Eschweiler Hbf|Langerwehe|Düren|Horrem|Köln-Ehrenfeld|Köln Hbf|Köln Messe/Deutz|Köln-Mülheim|Leverkusen Mitte|Düsseldorf-Benrath|Düsseldorf Hbf|Düsseldorf Flughafen|Duisburg Hbf|Mülheim(Ruhr)Hbf" pp="6" ct="1401032040" pt="1401031950">
+        <m id="r16668659" t="d" c="40" ts="1401031915"/>
+        <m id="r16668661" t="f" c="0" ts="1401031915"/>
+        <m id="r16668734" t="d" c="22" ts="1401031917"/>
+        <m id="r16669412" t="f" c="0" ts="1401031952"/>
+    </ar>
+    <dp cpth="Wattenscheid|Bochum Hbf|Dortmund Hbf|Kamen|Hamm(Westf)" ppth="Wattenscheid|Bochum Hbf|Dortmund Hbf|Kamen|Hamm(Westf)" pp="6" ct="1401032042" pt="1401031953">
+        <m id="r16668659" t="d" c="40" ts="1401031915"/>
+        <m id="r16668661" t="f" c="0" ts="1401031915"/>
+        <m id="r16668734" t="d" c="22" ts="1401031917"/>
+        <m id="r16669412" t="f" c="0" ts="1401031952"/>
+    </dp>
+    <tl f="N" t="p" n="10135" c="RE" o="03"/>
+</s>
+<s id="6450426041211401496-1401031953-15">
+    <ar cpth="Velbert-Langenberg|Velbert-Nierenhof|Essen-Kupferdreh|Essen-Holthausen|Essen-Überruhr|Essen-Steele" ct="1401032039">
+        <m id="r16669067" t="d" c="33" ts="1401031936"/>
+    </ar>
+    <dp cpth="Essen West|Essen-Borbeck Süd|Essen-Borbeck|Essen-Gerschede|Essen-Dellwig Ost|Bottrop Hbf|Bottrop-Boy|Gladbeck West|Gelsenkirchen-Buer Nord|Gelsenkirchen-Hassel|Marl Mitte|Marl-Hamm|Haltern am See" ct="1401032042">
+        <m id="r16669067" t="d" c="33" ts="1401031936"/>
+    </dp>
+</s>
+<s id="584026528363386507-1401031922-6">
+    <m id="r17157s" t="r" from="1401031917" to="1401032030" ts="1401032031"/>
+    <ar ppth="Hamm(Westf)|Kamen|Dortmund Hbf|Bochum Hbf|Wattenscheid" pp="2" ct="1401032037" pt="1401032007">
+        <m id="r16669840" t="d" c="22" ts="1401032019"/>
+    </ar>
+    <dp ppth="Mülheim(Ruhr)Hbf|Duisburg Hbf|Düsseldorf Flughafen|Düsseldorf Hbf|Düsseldorf-Benrath|Leverkusen Mitte|Köln-Mülheim|Köln Messe/Deutz|Köln Hbf|Köln-Ehrenfeld|Horrem|Düren|Langerwehe|Eschweiler Hbf|Stolberg(Rheinl)Hbf|Aachen-Rothe Erde|Aachen Hbf" pp="2" ct="1401032042" pt="1401032009">
+        <m id="r16669840" t="d" c="22" ts="1401032019"/>
+    </dp>
+    <tl f="N" t="p" n="10138" c="RE" o="03"/>
+</s>
+<s id="-605981605055838797-1401031852-35">
+    <ar ct="1401032048"/>
+</s>
+<s id="-4492120675466881020-1401031445-10">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <m id="r17147" t="r" from="1401031427" to="1401031515" ts="1401031428"/>
+    <m id="r3807860" t="c" ts="1401032040"/>
+    <m id="r3807859" t="c" ts="1401032040"/>
+    <ar ppth="München Hbf|Nürnberg Hbf|Würzburg Hbf|Aschaffenburg Hbf|Frankfurt(Main)Hbf|Frankfurt(M) Flughafen Fernbf|Köln Messe/Deutz Gl.11-12|Düsseldorf Hbf|Duisburg Hbf" pp="4" ct="1401032115" pt="1401032015">
+        <m id="r16662734" t="f" c="0" ts="1401031419"/>
+        <m id="r16663084" t="d" c="35" ts="1401031432"/>
+        <m id="r16663589" t="f" c="0" ts="1401031457"/>
+        <m id="r16669148" t="d" c="22" ts="1401031941"/>
+        <m id="r16669146" t="d" c="22" ts="1401031941"/>
+        <m id="r16669144" t="d" c="22" ts="1401031941"/>
+        <m id="r16669142" t="d" c="22" ts="1401031941"/>
+        <m id="r16669140" t="d" c="22" ts="1401031941"/>
+        <m id="r16670221" t="d" c="22" ts="1401032040"/>
+        <m id="r16670219" t="d" c="22" ts="1401032040"/>
+        <m id="r16670217" t="d" c="22" ts="1401032040"/>
+        <m id="r16670215" t="d" c="22" ts="1401032040"/>
+        <m id="r16670213" t="d" c="22" ts="1401032040"/>
+        <m id="r16670211" t="d" c="22" ts="1401032040"/>
+        <m id="r16670229" t="f" c="0" ts="1401032040"/>
+    </ar>
+    <dp ppth="Bochum Hbf|Dortmund Hbf" pp="4" ct="1401032117" pt="1401032017">
+        <m id="r16662734" t="f" c="0" ts="1401031419"/>
+        <m id="r16663084" t="d" c="35" ts="1401031432"/>
+        <m id="r16663589" t="f" c="0" ts="1401031457"/>
+        <m id="r16669148" t="d" c="22" ts="1401031941"/>
+        <m id="r16669146" t="d" c="22" ts="1401031941"/>
+        <m id="r16669144" t="d" c="22" ts="1401031941"/>
+        <m id="r16669142" t="d" c="22" ts="1401031941"/>
+        <m id="r16669140" t="d" c="22" ts="1401031941"/>
+        <m id="r16670221" t="d" c="22" ts="1401032040"/>
+        <m id="r16670219" t="d" c="22" ts="1401032040"/>
+        <m id="r16670217" t="d" c="22" ts="1401032040"/>
+        <m id="r16670215" t="d" c="22" ts="1401032040"/>
+        <m id="r16670213" t="d" c="22" ts="1401032040"/>
+        <m id="r16670211" t="d" c="22" ts="1401032040"/>
+        <m id="r16670229" t="f" c="0" ts="1401032040"/>
+    </dp>
+    <tl f="F" t="p" n="622" c="ICE" o="80"/>
+</s>
+<s id="-8853767820695778880-1401032218-1">
+    <dp>
+        <m id="r16670227" t="f" c="0" ts="1401032040"/>
+        <m id="r16670225" t="f" c="0" ts="1401032040"/>
+    </dp>
+</s>
+<s id="-6502173841148895313-1401032118-1">
+    <dp>
+        <m id="r16670228" t="f" c="0" ts="1401032040"/>
+        <m id="r16670226" t="f" c="0" ts="1401032040"/>
+    </dp>
+</s>
+<s id="-1228070310295050300-1401031637-7">
+    <ar cpth="Hamburg-Altona|Hamburg Hbf|Hamburg-Harburg|Osnabrück Hbf|Münster(Westf)Hbf|Gelsenkirchen Hbf" ppth="Hamburg-Altona|Hamburg Hbf|Hamburg-Harburg|Osnabrück Hbf|Münster(Westf)Hbf|Gelsenkirchen Hbf" pp="1" ct="1401032037" pt="1401032001" cs="p" clt="1401032001">
+        <m id="i1343272" t="d" c="11" ts="1401032002"/>
+        <m id="i1343308" t="d" c="11" ts="1401032009"/>
+    </ar>
+    <dp cpth="Duisburg Hbf|Düsseldorf Hbf|Köln Hbf" ppth="Duisburg Hbf|Düsseldorf Hbf|Köln Hbf" pp="1" ct="1401032039" pt="1401032004" cs="p" clt="1401032002">
+        <m id="i1343273" t="d" c="11" ts="1401032002"/>
+        <m id="i1343309" t="d" c="11" ts="1401032009"/>
+    </dp>
+    <tl f="D|F" t="p" n="1804" c="HKX" o="HK"/>
+</s>
+<s id="7755129774152796432-1401031933-12">
+    <ar cp="8" ct="1401032040"/>
+</s>
+<s id="-8382214308877589281-1401031913-25">
+    <ar cpth="Solingen Hbf|Solingen Vogelpark|Hilden Süd|Hilden|Düsseldorf-Eller|Düsseldorf-Eller Mitte|Düsseldorf-Oberbilk|Düsseldorf Volksgarten|Düsseldorf Hbf|Düsseldorf Wehrhahn|Düsseldorf-Zoo|Düsseldorf-Derendorf|Düsseldorf-Unterrath|Düsseldorf Flughafen|Duisburg Hbf|Mülheim(Ruhr)Styrum|Mülheim(Ruhr)Hbf|Essen-Frohnhausen|Essen West" ct="1401032036">
+        <m id="r16669011" t="d" c="38" ts="1401031933"/>
+        <m id="r16669480" t="f" c="0" ts="1401031956"/>
+        <m id="r16669498" t="d" c="38" ts="1401031957"/>
+        <m id="r16669750" t="f" c="0" ts="1401032014"/>
+    </ar>
+    <dp cpth="Essen-Steele|Essen-Steele Ost|Essen-Eiberg|Wattenscheid-Höntrop|Bochum-Ehrenfeld|Bochum Hbf|Bochum-Langendreer West|Bochum-Langendreer|Dortmund-Kley|Dortmund-Oespel|Dortmund Universität|Dortmund-Dorstfeld Süd|Dortmund-Dorstfeld|Dortmund Hbf" ct="1401032037">
+        <m id="r16669011" t="d" c="38" ts="1401031933"/>
+        <m id="r16669480" t="f" c="0" ts="1401031956"/>
+        <m id="r16669498" t="d" c="38" ts="1401031957"/>
+        <m id="r16669750" t="f" c="0" ts="1401032014"/>
+    </dp>
+</s>
+<s id="33148473894028234-1401031953-15">
+    <ar ct="1401032035"/>
+    <dp ct="1401032036"/>
+</s>
+<s id="-271910266344638999-1401032123-15">
+    <ar cpth="Velbert-Langenberg|Velbert-Nierenhof|Essen-Kupferdreh|Essen-Holthausen|Essen-Überruhr|Essen-Steele">
+        <m id="r16670143" t="d" c="33" ts="1401032035"/>
+    </ar>
+    <dp cpth="Essen West|Essen-Borbeck Süd|Essen-Borbeck|Essen-Gerschede|Essen-Dellwig Ost|Bottrop Hbf">
+        <m id="r16670143" t="d" c="33" ts="1401032035"/>
+    </dp>
+</s>
+<s id="6430945833351770988-1401031632-10">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <m id="r17154s" t="r" from="1401031600" to="1401032300" ts="1401031600"/>
+    <m id="r153165" t="h" from="1401031955" to="1401032200" ts="1401032001"/>
+    <ar ppth="Hamburg-Altona|Hamburg Dammtor|Hamburg Hbf|Hamburg-Harburg|Bremen Hbf|Osnabrück Hbf|Münster(Westf)Hbf|Dortmund Hbf|Bochum Hbf" pp="2" ct="1401032033" pt="1401031958">
+        <m id="r16665428" t="f" c="0" ts="1401031635"/>
+        <m id="r16665427" t="f" c="0" ts="1401031635"/>
+        <m id="r16665551" t="f" c="0" ts="1401031642"/>
+        <m id="r16669226" t="d" c="11" ts="1401031944"/>
+        <m id="r16669629" t="d" c="11" ts="1401032006"/>
+        <m id="r16669742" t="d" c="11" ts="1401032013"/>
+        <m id="r16669960" t="d" c="22" ts="1401032026"/>
+        <m id="r16669958" t="d" c="22" ts="1401032026"/>
+    </ar>
+    <dp ppth="Duisburg Hbf|Düsseldorf Hbf|Köln Hbf|Bonn Hbf|Koblenz Hbf|Mainz Hbf|Frankfurt(M) Flughafen Fernbf|Frankfurt(Main)Hbf" pp="2" ct="1401032035" pt="1401032000">
+        <m id="r16665428" t="f" c="0" ts="1401031635"/>
+        <m id="r16665427" t="f" c="0" ts="1401031635"/>
+        <m id="r16665551" t="f" c="0" ts="1401031642"/>
+        <m id="r16669226" t="d" c="11" ts="1401031944"/>
+        <m id="r16669629" t="d" c="11" ts="1401032006"/>
+        <m id="r16669742" t="d" c="11" ts="1401032013"/>
+        <m id="r16669960" t="d" c="22" ts="1401032026"/>
+        <m id="r16669958" t="d" c="22" ts="1401032026"/>
+    </dp>
+    <tl f="F" t="p" n="2215" c="IC" o="80"/>
+</s>
+<s id="5229956847426921326-1401031933-14">
+    <ar cpth="Haltern am See|Marl-Hamm|Marl Mitte|Gelsenkirchen-Hassel|Gelsenkirchen-Buer Nord|Gladbeck West|Bottrop-Boy|Bottrop Hbf|Essen-Dellwig Ost|Essen-Gerschede|Essen-Borbeck|Essen-Borbeck Süd|Essen West" ct="1401032032">
+        <m id="r16669528" t="d" c="43" ts="1401031959"/>
+        <m id="r16670133" t="d" c="33" ts="1401032034"/>
+    </ar>
+    <dp cpth="Essen-Steele|Essen-Überruhr|Essen-Holthausen|Essen-Kupferdreh|Velbert-Nierenhof|Velbert-Langenberg" ct="1401032033">
+        <m id="r16669528" t="d" c="43" ts="1401031959"/>
+        <m id="r16670133" t="d" c="33" ts="1401032034"/>
+    </dp>
+</s>
+<s id="5339265886030765031-1401031300-14">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <m id="r17154s" t="r" from="1401031600" to="1401032300" ts="1401031600"/>
+    <ar ppth="Zürich HB|Basel SBB|Basel Bad Bf|Freiburg(Breisgau) Hbf|Baden-Baden|Karlsruhe Hbf|Mannheim Hbf|Mainz Hbf|Koblenz Hbf|Bonn Hbf|Köln Hbf|Düsseldorf Hbf|Duisburg Hbf" pp="4" ct="1401032107" pt="1401031957">
+        <m id="r16663807" t="d" c="36" ts="1401031510"/>
+        <m id="r16663949" t="d" c="36" ts="1401031518"/>
+        <m id="r16668966" t="d" c="22" ts="1401031930"/>
+        <m id="r16668968" t="d" c="22" ts="1401031930"/>
+        <m id="r16668964" t="d" c="22" ts="1401031930"/>
+        <m id="r16668962" t="d" c="22" ts="1401031930"/>
+        <m id="r16668960" t="d" c="22" ts="1401031930"/>
+        <m id="r16668958" t="d" c="22" ts="1401031930"/>
+        <m id="r16669842" t="d" c="22" ts="1401032019"/>
+        <m id="r16670128" t="d" c="22" ts="1401032034"/>
+        <m id="r16670126" t="d" c="22" ts="1401032034"/>
+        <m id="r16670124" t="d" c="22" ts="1401032034"/>
+        <m id="r16670122" t="d" c="22" ts="1401032034"/>
+        <m id="r16670120" t="d" c="22" ts="1401032034"/>
+        <m id="r16670118" t="d" c="22" ts="1401032034"/>
+        <m id="r16670116" t="d" c="22" ts="1401032034"/>
+        <m id="r16670114" t="d" c="22" ts="1401032034"/>
+    </ar>
+    <dp ppth="Bochum Hbf|Dortmund Hbf|Münster(Westf)Hbf|Osnabrück Hbf|Diepholz|Bremen Hbf|Hamburg-Harburg|Hamburg Hbf|Hamburg Dammtor|Hamburg-Altona" pp="4" ct="1401032109" pt="1401031959">
+        <m id="r16663807" t="d" c="36" ts="1401031510"/>
+        <m id="r16663949" t="d" c="36" ts="1401031518"/>
+        <m id="r16668966" t="d" c="22" ts="1401031930"/>
+        <m id="r16668968" t="d" c="22" ts="1401031930"/>
+        <m id="r16668964" t="d" c="22" ts="1401031930"/>
+        <m id="r16668962" t="d" c="22" ts="1401031930"/>
+        <m id="r16668960" t="d" c="22" ts="1401031930"/>
+        <m id="r16668958" t="d" c="22" ts="1401031930"/>
+        <m id="r16669842" t="d" c="22" ts="1401032019"/>
+        <m id="r16670128" t="d" c="22" ts="1401032034"/>
+        <m id="r16670126" t="d" c="22" ts="1401032034"/>
+        <m id="r16670124" t="d" c="22" ts="1401032034"/>
+        <m id="r16670122" t="d" c="22" ts="1401032034"/>
+        <m id="r16670120" t="d" c="22" ts="1401032034"/>
+        <m id="r16670118" t="d" c="22" ts="1401032034"/>
+        <m id="r16670116" t="d" c="22" ts="1401032034"/>
+        <m id="r16670114" t="d" c="22" ts="1401032034"/>
+    </dp>
+    <tl f="F" t="p" n="6" c="EC" o="85"/>
+</s>
+<s id="934165365820726081-1401031841-1">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <m id="r153164" t="h" from="1401030000" to="1401032359" ts="1401031945"/>
+    <dp cpth="Duisburg Hbf|Düsseldorf Hbf|Köln Messe/Deutz Gl.11-12|Siegburg/Bonn|Montabaur|Limburg Süd|Frankfurt(M) Flughafen Fernbf|Frankfurt(Main)Hbf|Hanau Hbf|Aschaffenburg Hbf|Würzburg Hbf|Nürnberg Hbf|Ingolstadt Hbf|München Hbf" ct="1401031842"/>
+</s>
+<s id="8843104913431376942-1401031947-14">
+    <ar ct="1401032035"/>
+</s>
+<s id="6081279464034669989-1401032031-1">
+    <dp ct="1401032032"/>
+</s>
+<s id="3491873584947513141-1401031738-9">
+    <m id="r17157s" t="r" from="1401031917" to="1401032030" ts="1401032031"/>
+    <ar cpth="Paderborn Hbf|Lippstadt|Soest|Hamm(Westf)|Kamen|Dortmund Hbf|Bochum Hbf|Wattenscheid" ct="1401031906"/>
+    <dp cpth="Mülheim(Ruhr)Hbf|Duisburg Hbf|Düsseldorf Hbf|Düsseldorf-Benrath|Leverkusen Mitte|Köln-Mülheim|Köln Messe/Deutz|Köln Hbf|Köln-Ehrenfeld|Horrem|Düren|Langerwehe|Eschweiler Hbf|Stolberg(Rheinl)Hbf|Aachen-Rothe Erde|Aachen Hbf" ct="1401031909"/>
+</s>
+<s id="6839991441272685633-1401031924-3">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <ar ct="1401032004">
+        <m id="r16669382" t="d" c="11" ts="1401031951"/>
+    </ar>
+    <dp ct="1401032018">
+        <m id="r16669382" t="d" c="11" ts="1401031951"/>
+    </dp>
+</s>
+<s id="-6538912095270983191-1401031535-10">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <ar ppth="Berlin Ostbahnhof|Berlin Hbf|Berlin-Spandau|Wolfsburg Hbf|Hannover Hbf|Bielefeld Hbf|Hamm(Westf)|Dortmund Hbf|Bochum Hbf" pp="1" ct="1401031958" pt="1401031934">
+        <m id="r16664839" t="q" c="90" ts="1401031610"/>
+        <m id="r16665836" t="d" c="43" ts="1401031652"/>
+        <m id="r16669395" t="d" c="11" ts="1401031952"/>
+    </ar>
+    <dp ppth="Duisburg Hbf|Düsseldorf Hbf|Neuss Hbf|Mönchengladbach Hbf" pp="1" ct="1401032015" pt="1401031936">
+        <m id="r16664839" t="q" c="90" ts="1401031610"/>
+        <m id="r16665836" t="d" c="43" ts="1401031652"/>
+        <m id="r16669395" t="d" c="11" ts="1401031952"/>
+    </dp>
+    <tl f="F" t="p" n="1046" c="ICE" o="80"/>
+</s>
+<s id="-8263029909139282966-1401031741-10">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <m id="r17154s" t="r" from="1401031600" to="1401032300" ts="1401031600"/>
+    <m id="r153165" t="h" from="1401031955" to="1401032200" ts="1401032001"/>
+    <ar ct="1401032157">
+        <m id="r16667524" t="d" c="46" ts="1401031822"/>
+    </ar>
+    <dp ct="1401032159">
+        <m id="r16667524" t="d" c="46" ts="1401031822"/>
+    </dp>
+</s>
+<s id="8749790394691537993-1401031507-11">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <ar ct="1401031913">
+        <m id="r16663483" t="q" c="85" ts="1401031450"/>
+    </ar>
+    <dp ct="1401031914">
+        <m id="r16663483" t="q" c="85" ts="1401031450"/>
+    </dp>
+</s>
+<s id="-1925224229858704505-1401031255-18">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <ar cp="1" ct="1401031941">
+        <m id="r16659397" t="q" c="80" ts="1401030903"/>
+        <m id="r16659427" t="q" c="90" ts="1401030906"/>
+        <m id="r16661646" t="f" c="0" ts="1401031241"/>
+        <m id="r16661668" t="d" c="21" ts="1401031243"/>
+        <m id="r16661705" t="q" c="80" ts="1401031247"/>
+        <m id="r16661956" t="f" c="0" ts="1401031308"/>
+        <m id="r16669186" t="d" c="22" ts="1401031942"/>
+        <m id="r16669184" t="d" c="22" ts="1401031942"/>
+    </ar>
+    <dp cp="1" ct="1401031948">
+        <m id="r16659397" t="q" c="80" ts="1401030903"/>
+        <m id="r16659427" t="q" c="90" ts="1401030906"/>
+        <m id="r16661646" t="f" c="0" ts="1401031241"/>
+        <m id="r16661668" t="d" c="21" ts="1401031243"/>
+        <m id="r16661705" t="q" c="80" ts="1401031247"/>
+        <m id="r16661956" t="f" c="0" ts="1401031308"/>
+        <m id="r16669186" t="d" c="22" ts="1401031942"/>
+        <m id="r16669184" t="d" c="22" ts="1401031942"/>
+    </dp>
+</s>
+<s id="-5767623233851804660-1401031645-11">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <ar ct="1401032202">
+        <m id="r16665458" t="f" c="0" ts="1401031637"/>
+    </ar>
+    <dp ct="1401032204">
+        <m id="r16665458" t="f" c="0" ts="1401031637"/>
+    </dp>
+</s>
+<s id="-7616940048040021998-1401031837-3">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <ar ct="1401031858">
+        <m id="r16667999" t="q" c="93" ts="1401031846"/>
+    </ar>
+    <dp ct="1401031901">
+        <m id="r16667999" t="q" c="93" ts="1401031846"/>
+    </dp>
+</s>
+<s id="1065350279715650378-1401031812-6">
+    <m id="r17156s" t="r" from="1401032029" to="1401032200" ts="1401032030"/>
+    <ar ppth="Köln/Bonn Flughafen|Köln Messe/Deutz Gl.11-12|Düsseldorf Hbf|Düsseldorf Flughafen|Duisburg Hbf" pp="4" ct="1401032014" pt="1401031921">
+        <m id="r16668407" t="d" c="22" ts="1401031903"/>
+        <m id="r16668654" t="d" c="22" ts="1401031915"/>
+        <m id="r16669306" t="d" c="22" ts="1401031948"/>
+        <m id="r16669524" t="d" c="22" ts="1401031958"/>
+        <m id="r16669529" t="d" c="22" ts="1401031959"/>
+        <m id="r16669548" t="d" c="22" ts="1401032000"/>
+        <m id="r16669574" t="d" c="11" ts="1401032001"/>
+        <m id="r16669585" t="q" c="80" ts="1401032002"/>
+    </ar>
+    <dp ppth="Bochum Hbf|Dortmund Hbf|Hamm(Westf)|Bielefeld Hbf|Hannover Hbf|Berlin-Spandau|Berlin Hbf|Berlin Ostbahnhof" pp="4" ct="1401032016" pt="1401031923">
+        <m id="r16668407" t="d" c="22" ts="1401031903"/>
+        <m id="r16668654" t="d" c="22" ts="1401031915"/>
+        <m id="r16669306" t="d" c="22" ts="1401031948"/>
+        <m id="r16669524" t="d" c="22" ts="1401031958"/>
+        <m id="r16669529" t="d" c="22" ts="1401031959"/>
+        <m id="r16669548" t="d" c="22" ts="1401032000"/>
+        <m id="r16669574" t="d" c="11" ts="1401032001"/>
+        <m id="r16669585" t="q" c="80" ts="1401032002"/>
+    </dp>
+    <tl f="F" t="p" n="645" c="ICE" o="80"/>
+</s>
+<s id="964301945987141924-1401031954-5">
+    <ar cpth="Düsseldorf Hbf|Duisburg Hbf|Mülheim(Ruhr)Hbf" ppth="Düsseldorf Hbf|Düsseldorf Flughafen|Duisburg Hbf|Mülheim(Ruhr)Hbf" pp="6" ct="1401032101" pt="1401032027" cs="p" clt="1401032002">
+        <m id="r16669579" t="d" c="22" ts="1401032002"/>
+        <m id="r16670018" t="d" c="40" ts="1401032029"/>
+        <m id="r16670019" t="f" c="0" ts="1401032029"/>
+    </ar>
+    <dp cpth="Wattenscheid|Bochum Hbf|Dortmund Hbf|Kamen|Hamm(Westf)|Heessen|Ahlen(Westf)|Neubeckum|Oelde|Rheda-Wiedenbrück|Gütersloh Hbf|Bielefeld Hbf|Herford|Löhne(Westf)|Bad Oeynhausen|Porta Westfalica|Minden(Westf)" ppth="Wattenscheid|Bochum Hbf|Dortmund Hbf|Kamen|Hamm(Westf)|Heessen|Ahlen(Westf)|Neubeckum|Oelde|Rheda-Wiedenbrück|Gütersloh Hbf|Bielefeld Hbf|Herford|Löhne(Westf)|Bad Oeynhausen|Porta Westfalica|Minden(Westf)" pp="6" ct="1401032103" pt="1401032029" cs="p" clt="1401032002">
+        <m id="r16669579" t="d" c="22" ts="1401032002"/>
+        <m id="r16670018" t="d" c="40" ts="1401032029"/>
+        <m id="r16670019" t="f" c="0" ts="1401032029"/>
+    </dp>
+    <tl f="N" t="p" n="10633" c="RE" o="03"/>
+</s>
+<s id="5345232723667580067-1401031854-5">
+    <ar ppth="Düsseldorf Hbf|Düsseldorf Flughafen|Duisburg Hbf|Mülheim(Ruhr)Hbf" pp="6" ct="1401032041" pt="1401031927">
+        <m id="r16668405" t="d" c="34" ts="1401031903"/>
+        <m id="r16668490" t="d" c="34" ts="1401031906"/>
+        <m id="r16668766" t="d" c="22" ts="1401031918"/>
+        <m id="r16669101" t="d" c="34" ts="1401031938"/>
+        <m id="r16669617" t="d" c="22" ts="1401032005"/>
+        <m id="r16669908" t="d" c="22" ts="1401032024"/>
+        <m id="r16670021" t="d" c="22" ts="1401032029"/>
+    </ar>
+    <dp ppth="Wattenscheid|Bochum Hbf|Dortmund Hbf|Kamen|Hamm(Westf)|Heessen|Ahlen(Westf)|Neubeckum|Oelde|Rheda-Wiedenbrück|Gütersloh Hbf|Bielefeld Hbf|Herford|Löhne(Westf)|Bad Oeynhausen|Porta Westfalica|Minden(Westf)" pp="6" ct="1401032043" pt="1401031929">
+        <m id="r16668405" t="d" c="34" ts="1401031903"/>
+        <m id="r16668490" t="d" c="34" ts="1401031906"/>
+        <m id="r16668766" t="d" c="22" ts="1401031918"/>
+        <m id="r16669101" t="d" c="34" ts="1401031938"/>
+        <m id="r16669617" t="d" c="22" ts="1401032005"/>
+        <m id="r16669908" t="d" c="22" ts="1401032024"/>
+        <m id="r16670021" t="d" c="22" ts="1401032029"/>
+    </dp>
+    <tl f="N" t="p" n="10631" c="RE" o="03"/>
+</s>
+<s id="-2178957263049635172-1401031917-10">
+    <ar ct="1401032029"/>
+</s>
+<s id="719478848043418137-1401031812-18">
+    <ar ct="1401032029"/>
+</s>
+<s id="4587478172680377429-1401032005-7">
+    <ar ct="1401032024"/>
+    <dp ct="1401032026"/>
+</s>
+<s id="-8398443622955054434-1401032022-1">
+    <dp ct="1401032023"/>
+</s>
+<s id="3717107569652841075-1401032113-25">
+    <ar cpth="Düsseldorf Hbf|Düsseldorf Wehrhahn|Düsseldorf-Zoo|Düsseldorf-Derendorf|Düsseldorf-Unterrath|Düsseldorf Flughafen|Angermund|Duisburg-Rahm|Duisburg-Großenbaum|Duisburg-Buchholz|Duisburg-Schlenk|Duisburg Hbf|Mülheim(Ruhr)Styrum|Mülheim(Ruhr)Hbf|Essen-Frohnhausen|Essen West">
+        <m id="r16669889" t="d" c="38" ts="1401032023"/>
+    </ar>
+    <dp cpth="Essen-Steele|Essen-Steele Ost|Essen-Eiberg|Wattenscheid-Höntrop|Bochum-Ehrenfeld|Bochum Hbf|Bochum-Langendreer West|Bochum-Langendreer|Dortmund-Kley|Dortmund-Oespel|Dortmund Universität|Dortmund-Dorstfeld Süd|Dortmund-Dorstfeld|Dortmund Hbf">
+        <m id="r16669889" t="d" c="38" ts="1401032023"/>
+    </dp>
+</s>
+<s id="5987491710202947022-1401031853-15">
+    <ar cpth="Dortmund Hbf|Dortmund-Dorstfeld|Dortmund-Dorstfeld Süd|Dortmund Universität|Dortmund-Oespel|Dortmund-Kley|Bochum-Langendreer|Bochum-Langendreer West|Bochum Hbf|Bochum-Ehrenfeld|Wattenscheid-Höntrop|Essen-Eiberg|Essen-Steele Ost|Essen-Steele" ct="1401031938">
+        <m id="r16669007" t="d" c="99" ts="1401031932"/>
+    </ar>
+    <dp cpth="Essen West|Essen-Frohnhausen|Mülheim(Ruhr)Hbf|Mülheim(Ruhr)Styrum|Duisburg Hbf|Duisburg-Schlenk|Duisburg-Buchholz|Duisburg-Großenbaum|Duisburg-Rahm|Angermund|Düsseldorf Flughafen|Düsseldorf-Unterrath|Düsseldorf-Derendorf|Düsseldorf-Zoo|Düsseldorf Wehrhahn|Düsseldorf Hbf" ct="1401031940">
+        <m id="r16669007" t="d" c="99" ts="1401031932"/>
+    </dp>
+</s>
+<s id="-8111871672637294420-1401032000-3">
+    <ar ct="1401032019"/>
+    <dp ct="1401032021"/>
+</s>
+<s id="-4395350547945062597-1401032018-1">
+    <dp ct="1401032018"/>
+</s>
+<s id="5490797621693698489-1401032018-1">
+    <dp ct="1401032018"/>
+</s>
+<s id="4565266880925619813-1401031943-25">
+    <ar ct="1401032115">
+        <m id="r16669812" t="d" c="38" ts="1401032017"/>
+        <m id="r16669816" t="d" c="38" ts="1401032017"/>
+    </ar>
+    <dp ct="1401032116">
+        <m id="r16669812" t="d" c="38" ts="1401032017"/>
+        <m id="r16669816" t="d" c="38" ts="1401032017"/>
+    </dp>
+</s>
+<s id="6936505128768022846-1401031958-7">
+    <ar ct="1401032015"/>
+</s>
+<s id="-3072291448218447413-1401032033-7">
+    <ar cpth="" cs="c" clt="1401032013">
+        <m id="r16669738" t="d" c="11" ts="1401032013"/>
+    </ar>
+    <dp cpth="" cs="c" clt="1401032013">
+        <m id="r16669738" t="d" c="11" ts="1401032013"/>
+    </dp>
+</s>
+<s id="-6202424250488930145-1401032023-15">
+    <ar ppth="Dortmund Hbf|Dortmund-Dorstfeld|Dortmund-Dorstfeld Süd|Dortmund Universität|Dortmund-Oespel|Dortmund-Kley|Bochum-Langendreer|Bochum-Langendreer West|Bochum Hbf|Bochum-Ehrenfeld|Wattenscheid-Höntrop|Essen-Eiberg|Essen-Steele Ost|Essen-Steele" pp="7" ct="1401032133" pt="1401032103">
+        <m id="r16669733" t="d" c="38" ts="1401032013"/>
+    </ar>
+    <dp ppth="Essen West|Essen-Frohnhausen|Mülheim(Ruhr)Hbf|Mülheim(Ruhr)Styrum|Duisburg Hbf|Duisburg-Schlenk|Duisburg-Buchholz|Duisburg-Großenbaum|Duisburg-Rahm|Angermund|Düsseldorf Flughafen|Düsseldorf-Unterrath|Düsseldorf-Derendorf|Düsseldorf-Zoo|Düsseldorf Wehrhahn|Düsseldorf Hbf|Düsseldorf Volksgarten|Düsseldorf-Oberbilk|Düsseldorf-Eller Mitte|Düsseldorf-Eller|Hilden|Hilden Süd|Solingen Vogelpark|Solingen Hbf" pp="7" ct="1401032135" pt="1401032105">
+        <m id="r16669733" t="d" c="38" ts="1401032013"/>
+    </dp>
+    <tl f="S" t="p" l="1" n="31132" c="S" o="03"/>
+</s>
+<s id="5617974306404527058-1401031832-35">
+    <ar ct="1401032014"/>
+</s>
+<s id="-5716084173145223820-1401031912-12">
+    <ar cpth="Münster(Westf)Hbf|Bösensell|Nottuln-Appelhülsen|Buldern|Dülmen|Sythen|Haltern am See|Marl-Sinsen|Recklinghausen Hbf|Wanne-Eickel Hbf|Gelsenkirchen Hbf" ct="1401032042" cs="p" clt="1401031945">
+        <m id="r16668847" t="d" c="22" ts="1401031924"/>
+        <m id="r16669253" t="d" c="22" ts="1401031945"/>
+        <m id="r16669719" t="d" c="22" ts="1401032012"/>
+    </ar>
+    <dp cpth="Mülheim(Ruhr)Hbf|Duisburg Hbf" ct="1401032044" cs="p" clt="1401031945" dc="1">
+        <m id="r16668847" t="d" c="22" ts="1401031924"/>
+        <m id="r16669253" t="d" c="22" ts="1401031945"/>
+        <m id="r16669719" t="d" c="22" ts="1401032012"/>
+    </dp>
+</s>
+<s id="-5115312582423992507-1401032010-13">
+    <ar ct="1401032118"/>
+    <dp ct="1401032121"/>
+</s>
+<s id="-1791946162335905451-1401032053-15">
+    <ar cpth="Velbert-Langenberg|Velbert-Nierenhof|Essen-Kupferdreh|Essen-Holthausen|Essen-Überruhr|Essen-Steele">
+        <m id="r16669694" t="d" c="33" ts="1401032011"/>
+    </ar>
+    <dp cpth="Essen West|Essen-Borbeck Süd|Essen-Borbeck|Essen-Gerschede|Essen-Dellwig Ost|Bottrop Hbf|Bottrop-Boy|Gladbeck West|Gelsenkirchen-Buer Nord|Gelsenkirchen-Hassel|Marl Mitte|Marl-Hamm|Haltern am See">
+        <m id="r16669694" t="d" c="33" ts="1401032011"/>
+    </dp>
+</s>
+<s id="-3699599225924903851-1401031924-7">
+    <ar cpth="Bottrop Hbf|Essen-Dellwig Ost|Essen-Gerschede|Essen-Borbeck|Essen-Borbeck Süd|Essen West" ct="1401031940"/>
+    <dp cpth="Essen-Steele|Essen-Überruhr|Essen-Holthausen|Essen-Kupferdreh|Velbert-Nierenhof|Velbert-Langenberg" ct="1401031951"/>
+</s>
+<s id="1789630766476170408-1401032007-1">
+    <dp ct="1401032008"/>
+</s>
+<s id="-7124250137512149381-1401031938-7">
+    <ar ct="1401032005"/>
+    <dp ct="1401032006"/>
+</s>
+<s id="-9187585202090909675-1401031918-1">
+    <dp cpth="Gelsenkirchen Hbf|Wanne-Eickel Hbf|Recklinghausen Süd|Recklinghausen Hbf|Marl-Sinsen|Haltern am See|Sythen|Dülmen|Buldern|Nottuln-Appelhülsen|Bösensell|Münster-Albachten|Münster(Westf)Hbf" ct="1401031918"/>
+</s>
+<s id="-2303827334142648402-1401031923-15">
+    <ar ct="1401032003"/>
+    <dp ct="1401032005"/>
+</s>
+<s id="3080378096688992011-1401032054-5">
+    <ar cpth="Duisburg Hbf|Mülheim(Ruhr)Hbf">
+        <m id="r16669566" t="d" c="22" ts="1401032000"/>
+    </ar>
+    <dp cpth="Wattenscheid|Bochum Hbf|Dortmund Hbf|Kamen|Hamm(Westf)|Heessen|Ahlen(Westf)|Neubeckum|Oelde|Rheda-Wiedenbrück|Gütersloh Hbf|Bielefeld Hbf|Herford|Löhne(Westf)|Bad Oeynhausen|Porta Westfalica|Minden(Westf)">
+        <m id="r16669566" t="d" c="22" ts="1401032000"/>
+    </dp>
+</s>
+<s id="-7135410493104348852-1401031728-18">
+    <ar cpth="Minden(Westf)|Porta Westfalica|Bad Oeynhausen|Löhne(Westf)|Herford|Bielefeld Hbf|Gütersloh Hbf|Rheda-Wiedenbrück|Oelde|Neubeckum|Ahlen(Westf)|Heessen|Hamm(Westf)|Kamen|Dortmund Hbf|Bochum Hbf|Wattenscheid" ct="1401031931"/>
+    <dp cpth="Mülheim(Ruhr)Hbf|Duisburg Hbf" ct="1401031940"/>
+</s>
+<s id="6890181206993863191-1401031944-7">
+    <ar ct="1401032002"/>
+</s>
+<s id="3596919423525995308-1401031748-10">
+    <ar ct="1401032302">
+        <m id="r16666966" t="d" c="32" ts="1401031752"/>
+        <m id="r16669400" t="d" c="36" ts="1401031952"/>
+        <m id="r16669518" t="f" c="0" ts="1401031958"/>
+    </ar>
+    <dp ct="1401032304">
+        <m id="r16666966" t="d" c="32" ts="1401031752"/>
+        <m id="r16669400" t="d" c="36" ts="1401031952"/>
+        <m id="r16669518" t="f" c="0" ts="1401031958"/>
+    </dp>
+</s>
+<s id="5356540339024183333-1401031833-25">
+    <ar cpth="Solingen Hbf|Solingen Vogelpark|Hilden Süd|Hilden|Düsseldorf-Eller|Düsseldorf-Eller Mitte|Düsseldorf-Oberbilk|Düsseldorf Volksgarten|Düsseldorf Hbf|Düsseldorf Wehrhahn|Düsseldorf-Zoo|Düsseldorf-Derendorf|Düsseldorf-Unterrath|Düsseldorf Flughafen|Duisburg Hbf|Mülheim(Ruhr)Styrum|Mülheim(Ruhr)Hbf|Essen-Frohnhausen|Essen West" ct="1401031955">
+        <m id="r16668027" t="d" c="48" ts="1401031848"/>
+        <m id="r16668641" t="d" c="38" ts="1401031914"/>
+        <m id="r16668700" t="f" c="0" ts="1401031916"/>
+        <m id="r16668701" t="f" c="0" ts="1401031916"/>
+        <m id="r16668739" t="d" c="38" ts="1401031917"/>
+    </ar>
+    <dp cpth="Essen-Steele|Essen-Steele Ost|Essen-Eiberg|Wattenscheid-Höntrop|Bochum-Ehrenfeld|Bochum Hbf|Bochum-Langendreer West|Bochum-Langendreer|Dortmund-Kley|Dortmund-Oespel|Dortmund Universität|Dortmund-Dorstfeld Süd|Dortmund-Dorstfeld|Dortmund Hbf" ct="1401031957">
+        <m id="r16668027" t="d" c="48" ts="1401031848"/>
+        <m id="r16668641" t="d" c="38" ts="1401031914"/>
+        <m id="r16668700" t="f" c="0" ts="1401031916"/>
+        <m id="r16668701" t="f" c="0" ts="1401031916"/>
+        <m id="r16668739" t="d" c="38" ts="1401031917"/>
+    </dp>
+</s>
+<s id="-7498275956243512404-1401031935-7">
+    <ar ct="1401031954"/>
+    <dp ct="1401031956"/>
+</s>
+<s id="-812765794456303550-1401031917-8">
+    <ar ct="1401031956"/>
+</s>
+<s id="-6098736009185601464-1401031900-7">
+    <ar cp="2" ct="1401031951">
+        <m id="r16669485" t="d" c="22" ts="1401031956"/>
+    </ar>
+    <dp cp="2" ct="1401031955">
+        <m id="r16669485" t="d" c="22" ts="1401031956"/>
+    </dp>
+</s>
+<s id="1449171414306421298-1401031833-15">
+    <ar cpth="Dortmund Hbf|Dortmund-Dorstfeld|Dortmund-Dorstfeld Süd|Dortmund Universität|Dortmund-Oespel|Dortmund-Kley|Bochum-Langendreer|Bochum-Langendreer West|Bochum Hbf|Bochum-Ehrenfeld|Wattenscheid-Höntrop|Essen-Eiberg|Essen-Steele Ost|Essen-Steele" ct="1401031912">
+        <m id="r16667507" t="d" c="48" ts="1401031820"/>
+    </ar>
+    <dp cpth="Essen West|Essen-Frohnhausen|Mülheim(Ruhr)Hbf|Mülheim(Ruhr)Styrum|Duisburg Hbf|Düsseldorf Flughafen|Düsseldorf-Unterrath|Düsseldorf-Derendorf|Düsseldorf-Zoo|Düsseldorf Wehrhahn|Düsseldorf Hbf" ct="1401031915">
+        <m id="r16667507" t="d" c="48" ts="1401031820"/>
+    </dp>
+</s>
+<s id="928035621202990137-1401031907-14">
+    <ar ct="1401031955"/>
+</s>
+<s id="7296282120265665716-1401031812-35">
+    <ar ct="1401031954"/>
+</s>
+<s id="-4323776959691839862-1401031833-14">
+    <ar cpth="Haltern am See|Marl-Hamm|Marl Mitte|Gelsenkirchen-Hassel|Gelsenkirchen-Buer Nord|Gladbeck West|Bottrop-Boy|Bottrop Hbf|Essen-Dellwig Ost|Essen-Gerschede|Essen-Borbeck|Essen-Borbeck Süd|Essen West" ct="1401031920">
+        <m id="r16667404" t="d" c="34" ts="1401031813"/>
+    </ar>
+    <dp cpth="Essen-Steele|Essen-Überruhr|Essen-Holthausen|Essen-Kupferdreh|Velbert-Nierenhof|Velbert-Langenberg" ct="1401031921">
+        <m id="r16667404" t="d" c="34" ts="1401031813"/>
+    </dp>
+</s>
+<s id="2168554214873253269-1401031948-1">
+    <dp ct="1401031949"/>
+</s>
+<s id="4720335786227858685-1401031945-16">
+    <ar ct="1401040130"/>
+    <dp ct="1401040132"/>
+</s>
+<s id="-2673530446256149310-1401031853-15">
+    <ar ct="1401031944"/>
+    <dp ct="1401031946"/>
+</s>
+<s id="7940265024916013861-1401031833-12">
+    <ar ct="1401031943"/>
+</s>
+<s id="8789306852068431733-1401031836-14">
+    <ar ct="1401031943"/>
+</s>
+<s id="-5788383919463676002-1401031934-1">
+    <dp ct="1401031935"/>
+</s>
+<s id="-1015216840562924669-1401031934-1">
+    <dp ct="1401031935"/>
+</s>
+<s id="-3058220223096575074-1401031918-7">
+    <ar ct="1401031936"/>
+    <dp ct="1401031937"/>
+</s>
+<s id="8585518626356903043-1401031844-7">
+    <ar cpth="Bottrop Hbf|Essen-Dellwig Ost|Essen-Gerschede|Essen-Borbeck|Essen-Borbeck Süd|Essen West" ct="1401031859"/>
+    <dp cpth="Essen-Steele|Essen-Überruhr|Essen-Holthausen|Essen-Kupferdreh|Velbert-Nierenhof|Velbert-Langenberg" ct="1401031902"/>
+</s>
+<s id="3256651525108793139-1401031931-1">
+    <dp ct="1401031932"/>
+</s>
+<s id="4842286391652673512-1401031752-35">
+    <ar ct="1401031936"/>
+</s>
+<s id="-4798367918354393383-1401031928-1">
+    <dp ct="1401031931"/>
+</s>
+<s id="144289640290506862-1401031712-18">
+    <ar ct="1401031928"/>
+</s>
+<s id="7111529184008854568-1401031817-10">
+    <ar ct="1401031928"/>
+</s>
+<s id="-3776310189107880575-1401031905-7">
+    <ar ct="1401031924"/>
+    <dp ct="1401031927"/>
+</s>
+<s id="5138262217967581968-1401031935-10">
+    <ar ct="1401032334"/>
+    <dp ct="1401032336"/>
+</s>
+<s id="4159044897208891741-1401031833-15">
+    <ar ct="1401031920"/>
+    <dp ct="1401031921"/>
+</s>
+<s id="8246248993422560410-1401031347-10">
+    <ar cpth="München Hbf|Nürnberg Hbf|Würzburg Hbf|Aschaffenburg Hbf|Frankfurt(Main)Hbf|Frankfurt(M) Flughafen Fernbf|Köln Messe/Deutz Gl.11-12|Düsseldorf Hbf|Duisburg Hbf" ct="1401031903">
+        <m id="r16661008" t="q" c="80" ts="1401031142"/>
+        <m id="r16662981" t="q" c="80" ts="1401031426"/>
+        <m id="r16663382" t="q" c="80" ts="1401031442"/>
+    </ar>
+    <dp cpth="Münster(Westf)Hbf" ct="1401031912">
+        <m id="r16661008" t="q" c="80" ts="1401031142"/>
+        <m id="r16662981" t="q" c="80" ts="1401031426"/>
+        <m id="r16663382" t="q" c="80" ts="1401031442"/>
+    </dp>
+</s>
+<s id="-3764778657908576210-1401031845-14">
+    <ar ct="1401040025">
+        <m id="r16668094" t="d" c="43" ts="1401031851"/>
+    </ar>
+    <dp ct="1401040027">
+        <m id="r16668094" t="d" c="43" ts="1401031851"/>
+    </dp>
+</s>
+<s id="-2513417407868107929-1401031753-15">
+    <ar cpth="Dortmund Hbf|Dortmund-Dorstfeld|Dortmund-Dorstfeld Süd|Dortmund Universität|Dortmund-Oespel|Dortmund-Kley|Bochum-Langendreer|Bochum-Langendreer West|Bochum Hbf|Bochum-Ehrenfeld|Wattenscheid-Höntrop|Essen-Eiberg|Essen-Steele Ost|Essen-Steele" ct="1401031832">
+        <m id="r16666112" t="q" c="83" ts="1401031706"/>
+    </ar>
+    <dp cpth="Essen West|Essen-Frohnhausen|Mülheim(Ruhr)Hbf|Mülheim(Ruhr)Styrum|Duisburg Hbf|Duisburg-Schlenk|Duisburg-Buchholz|Duisburg-Großenbaum|Duisburg-Rahm|Angermund|Düsseldorf Flughafen|Düsseldorf-Unterrath|Düsseldorf-Derendorf|Düsseldorf-Zoo|Düsseldorf Wehrhahn|Düsseldorf Hbf" ct="1401031836">
+        <m id="r16666112" t="q" c="83" ts="1401031706"/>
+    </dp>
+</s>
+<s id="1801276115330651902-1401031810-13">
+    <ar ct="1401031917"/>
+    <dp ct="1401031921" dc="1"/>
+</s>
+<s id="-7668819887253480362-1401031900-3">
+    <ar ct="1401031913"/>
+    <dp ct="1401031918"/>
+</s>
+<s id="5427743943578522368-1401031813-15">
+    <ar cpth="Dortmund Hbf|Dortmund-Dorstfeld|Dortmund-Dorstfeld Süd|Dortmund Universität|Dortmund-Oespel|Dortmund-Kley|Bochum-Langendreer|Bochum-Langendreer West|Bochum Hbf|Bochum-Ehrenfeld|Wattenscheid-Höntrop|Essen-Eiberg|Essen-Steele Ost|Essen-Steele" ct="1401031852"/>
+    <dp cpth="Essen West|Essen-Frohnhausen|Mülheim(Ruhr)Hbf|Mülheim(Ruhr)Styrum|Duisburg Hbf|Düsseldorf Flughafen|Düsseldorf-Unterrath|Düsseldorf-Derendorf|Düsseldorf-Zoo|Düsseldorf Wehrhahn|Düsseldorf Hbf" ct="1401031855"/>
+</s>
+<s id="78252885978625825-1401031913-14">
+    <ar ct="1401040001"/>
+    <dp ct="1401040003"/>
+</s>
+<s id="-938590283302513846-1401031858-7">
+    <ar ct="1401031915"/>
+</s>
+<s id="-2458592866881751466-1401031732-35">
+    <ar ct="1401031914"/>
+</s>
+<s id="5412736049384977408-1401031907-1">
+    <dp ct="1401031907"/>
+</s>
+<s id="-6673277749865830912-1401031908-1">
+    <dp ct="1401031908"/>
+</s>
+<s id="-1135098103503831790-1401031845-7">
+    <ar ct="1401031905"/>
+    <dp ct="1401031907"/>
+</s>
+<s id="4455155611190679954-1401031907-1">
+    <dp ct="1401031908"/>
+</s>
+<s id="-4102031737018101877-1401031838-7">
+    <ar ct="1401031856"/>
+    <dp ct="1401031907"/>
+</s>
+<s id="6215338576828065741-1401031753-25">
+    <ar ct="1401031905"/>
+</s>
+<s id="6904595439323771390-1401031347-10">
+    <ar ct="1401031903">
+        <m id="r16661007" t="q" c="80" ts="1401031142"/>
+        <m id="r16663042" t="q" c="80" ts="1401031431"/>
+        <m id="r16663379" t="q" c="80" ts="1401031442"/>
+    </ar>
+    <dp ct="1401031915">
+        <m id="r16661007" t="q" c="80" ts="1401031142"/>
+        <m id="r16663042" t="q" c="80" ts="1401031431"/>
+        <m id="r16663379" t="q" c="80" ts="1401031442"/>
+    </dp>
+</s>
+<s id="-5014484434568378685-1401031813-15">
+    <ar ct="1401031900"/>
+    <dp ct="1401031902"/>
+</s>
+<s id="-7711068264750156982-1401031544-9">
+    <m id="r17154s" t="r" from="1401031600" to="1401032300" ts="1401031600"/>
+    <ar cp="4" ct="1401031858">
+        <m id="r16656218" t="q" c="93" ts="1401030423"/>
+        <m id="r16656221" t="q" c="87" ts="1401030424"/>
+        <m id="r16656849" t="q" c="80" ts="1401030604"/>
+        <m id="r16664989" t="f" c="0" ts="1401031615"/>
+    </ar>
+    <dp cp="4" ct="1401031901">
+        <m id="r16656218" t="q" c="93" ts="1401030423"/>
+        <m id="r16656221" t="q" c="87" ts="1401030424"/>
+        <m id="r16656849" t="q" c="80" ts="1401030604"/>
+        <m id="r16664989" t="f" c="0" ts="1401031615"/>
+    </dp>
+</s>
+<s id="-9067923709865265293-1401032300-3">
+    <ar cpth="" cs="c" clt="1401031756" dc="1">
+        <m id="r16667076" t="d" c="99" ts="1401031756"/>
+    </ar>
+</s>
+<s id="-6146326181374925571-1401032215-10">
+    <ar cpth="" cs="c" clt="1401031443">
+        <m id="r16663397" t="d" c="36" ts="1401031443"/>
+    </ar>
+    <dp cpth="" cs="c" clt="1401031443">
+        <m id="r16663397" t="d" c="36" ts="1401031443"/>
+    </dp>
+</s>
+<s id="4876056609143796358-1401032223-15">
+    <ar>
+        <m id="r16666141" t="q" c="83" ts="1401031707"/>
+    </ar>
+    <dp>
+        <m id="r16666141" t="q" c="83" ts="1401031707"/>
+    </dp>
+</s>
+<s id="5163703620587601182-1401032232-12">
+    <m id="r153002" t="h" from="1401030000" to="1401032359" ts="1401030409"/>
+    <ar>
+        <m id="r16656044" t="q" c="85" ts="1401030249"/>
+        <m id="r16656047" t="q" c="91" ts="1401030250"/>
+    </ar>
+    <dp>
+        <m id="r16656044" t="q" c="85" ts="1401030249"/>
+        <m id="r16656047" t="q" c="91" ts="1401030250"/>
+    </dp>
+</s>
+<s id="-2477523154122243903-1401031651-18">
+    <ar ct="1401031855"/>
+    <dp ct="1401031858"/>
+</s>
+<s id="8711082694407352840-1401031733-25">
+    <ar ct="1401031850"/>
+    <dp ct="1401031856"/>
+</s>
+<s id="-4757688337795398762-1401031825-7">
+    <ar ct="1401031845"/>
+    <dp ct="1401031849"/>
+</s>
+<s id="-3547609784996627221-1401031848-1">
+    <dp ct="1401031848"/>
+</s>
+<s id="-1179452476200244652-1401031824-7">
+    <ar ct="1401031847">
+        <m id="r16667763" t="d" c="43" ts="1401031833"/>
+    </ar>
+    <dp ct="1401031848">
+        <m id="r16667763" t="d" c="43" ts="1401031833"/>
+    </dp>
+</s>
+<s id="-150798176026002884-1401031756-9">
+    <ar ct="1401031844"/>
+    <dp ct="1401031846"/>
+</s>
+<s id="8597475546576224186-1401031824-3">
+    <ar ct="1401031841"/>
+    <dp ct="1401031844"/>
+</s>
+<s id="-2190944122329322376-1401031923-15">
+    <ar cpth="Wuppertal-Vohwinkel|Wülfrath-Aprath|Velbert Rosenhügel|Velbert-Neviges|Velbert-Langenberg|Velbert-Nierenhof|Essen-Kupferdreh|Essen-Holthausen|Essen-Überruhr|Essen-Steele">
+        <m id="r16667960" t="d" c="34" ts="1401031844"/>
+    </ar>
+    <dp cpth="Essen West|Essen-Borbeck Süd|Essen-Borbeck|Essen-Gerschede|Essen-Dellwig Ost|Bottrop Hbf">
+        <m id="r16667960" t="d" c="34" ts="1401031844"/>
+    </dp>
+</s>
+<s id="-8991225205319772402-1401031733-14">
+    <ar cpth="Haltern am See|Marl-Hamm|Marl Mitte|Gelsenkirchen-Hassel|Gelsenkirchen-Buer Nord|Gladbeck West|Bottrop-Boy|Bottrop Hbf|Essen-Dellwig Ost|Essen-Gerschede|Essen-Borbeck|Essen-Borbeck Süd|Essen West" ct="1401031839">
+        <m id="r16667371" t="d" c="34" ts="1401031812"/>
+        <m id="r16667957" t="d" c="34" ts="1401031844"/>
+    </ar>
+    <dp cpth="Essen-Steele|Essen-Überruhr|Essen-Holthausen|Essen-Kupferdreh|Velbert-Nierenhof|Velbert-Langenberg|Velbert-Neviges|Velbert Rosenhügel|Wülfrath-Aprath|Wuppertal-Vohwinkel" ct="1401031841">
+        <m id="r16667371" t="d" c="34" ts="1401031812"/>
+        <m id="r16667957" t="d" c="34" ts="1401031844"/>
+    </dp>
+</s>
+<s id="-7661326637297024862-1401031753-15">
+    <ar ct="1401031839"/>
+    <dp ct="1401031842"/>
+</s>
+<s id="-8182302220215968183-1401031835-6">
+    <ar ct="1401032223"/>
+    <dp ct="1401032225"/>
+</s>
+<s id="6400366769255929224-1401031835-6">
+    <ar ct="1401032223"/>
+    <dp ct="1401032225"/>
+</s>
+<s id="2703407660248099192-1401031436-9">
+    <ar ct="1401031835">
+        <m id="r16658902" t="q" c="85" ts="1401030822"/>
+        <m id="r16662983" t="q" c="85" ts="1401031427"/>
+        <m id="r16662991" t="f" c="0" ts="1401031427"/>
+        <m id="r16664735" t="q" c="98" ts="1401031604"/>
+    </ar>
+    <dp ct="1401031837">
+        <m id="r16658902" t="q" c="85" ts="1401030822"/>
+        <m id="r16662983" t="q" c="85" ts="1401031427"/>
+        <m id="r16662991" t="f" c="0" ts="1401031427"/>
+        <m id="r16664735" t="q" c="98" ts="1401031604"/>
+    </dp>
+</s>
+<s id="-3446779893060823864-1401031834-1">
+    <dp ct="1401031835"/>
+</s>
+<s id="-1129983989285046740-1401031834-1">
+    <dp ct="1401031835"/>
+</s>
+<s id="8564990237788222185-1401031831-1">
+    <dp cpth="Dorsten|Hervest-Dorsten|Deuten|Rhade|Marbeck-Heiden|Borken(Westf)" cs="c" clt="1401031831">
+        <m id="i1343179" t="f" c="1" ts="1401031834"/>
+    </dp>
+</s>
+<s id="-2665841810658108347-1401031628-18">
+    <ar ct="1401031832">
+        <m id="r16665801" t="d" c="36" ts="1401031651"/>
+    </ar>
+    <dp ct="1401031834">
+        <m id="r16665801" t="d" c="36" ts="1401031651"/>
+    </dp>
+</s>
+<s id="264730671946523422-1401031754-5">
+    <ar ct="1401031826"/>
+    <dp ct="1401031829"/>
+</s>
+<s id="-2338570060617760722-1401031828-1">
+    <dp ct="1401031828"/>
+</s>
+<s id="9177353544415613797-1401031713-25">
+    <ar ct="1401031825"/>
+    <dp ct="1401031826"/>
+</s>
+<s id="-7928547227758004206-1401031753-4">
+    <ar ct="1401031823"/>
+    <dp ct="1401031825"/>
+</s>
+<s id="-718506009160225299-1401031836-9">
+    <ar ct="1401032234"/>
+    <dp ct="1401032236"/>
+</s>
+<s id="-4812862961720388902-1401031800-3">
+    <ar ppth="Duisburg Hbf|Mülheim(Ruhr)Hbf" pp="6" ct="1401031820" pt="1401031812">
+        <m id="r16661051" t="f" c="0" ts="1401031145"/>
+        <m id="r16667447" t="d" c="99" ts="1401031817"/>
+    </ar>
+    <dp ppth="Wattenscheid|Bochum Hbf|Dortmund Hbf|Dortmund-Scharnhorst|Dortmund-Kurl|Kamen-Methler|Kamen|Hamm(Westf)" pp="6" ct="1401031821" pt="1401031814">
+        <m id="r16661051" t="f" c="0" ts="1401031145"/>
+        <m id="r16667447" t="d" c="99" ts="1401031817"/>
+    </dp>
+    <tl f="N" t="e" n="72332" c="RE" o="03"/>
+    <ref f="N" t="p" n="10025" c="RE" o="03"/>
+</s>
+<s id="-7343371135585207243-1401031818-1">
+    <dp ct="1401031819"/>
+</s>
+<s id="6558643076269542871-1401031733-15">
+    <ar ct="1401031812"/>
+    <dp ct="1401031817"/>
+</s>
+<s id="-2539085566430539973-1401031100-14">
+    <m id="r17154s" t="r" from="1401031600" to="1401032300" ts="1401031600"/>
+    <ar ct="1401031815">
+        <m id="r16664089" t="d" c="7" ts="1401031529"/>
+        <m id="r16666110" t="d" c="31" ts="1401031706"/>
+    </ar>
+    <dp ct="1401031817">
+        <m id="r16664089" t="d" c="7" ts="1401031529"/>
+        <m id="r16666110" t="d" c="31" ts="1401031706"/>
+    </dp>
+</s>
+<s id="527192946537232884-1401031722-6">
+    <ar ct="1401031807"/>
+    <dp ct="1401031810"/>
+</s>
+<s id="1240940949557900317-1401031808-1">
+    <dp ct="1401031808"/>
+</s>
+<s id="-2279478987071714796-1401030946-22">
+    <m id="r17154s" t="r" from="1401031600" to="1401032300" ts="1401031600"/>
+    <m id="r152937" t="h" from="1401030000" to="1401032359" ts="1401022234"/>
+    <ar ct="1401031803">
+        <m id="r16646718" t="q" c="80" ts="1401021457"/>
+        <m id="r16646731" t="q" c="85" ts="1401021500"/>
+        <m id="r16654687" t="q" c="85" ts="1401030000"/>
+        <m id="r16654685" t="q" c="80" ts="1401030000"/>
+        <m id="r16655806" t="q" c="85" ts="1401030112"/>
+        <m id="r16658855" t="f" c="0" ts="1401030818"/>
+        <m id="r16659891" t="d" c="99" ts="1401030953"/>
+        <m id="r16659906" t="f" c="0" ts="1401030955"/>
+        <m id="r16663504" t="d" c="7" ts="1401031452"/>
+        <m id="r16663843" t="f" c="0" ts="1401031512"/>
+        <m id="r16664024" t="f" c="0" ts="1401031524"/>
+    </ar>
+    <dp ct="1401031806">
+        <m id="r16646718" t="q" c="80" ts="1401021457"/>
+        <m id="r16646731" t="q" c="85" ts="1401021500"/>
+        <m id="r16654687" t="q" c="85" ts="1401030000"/>
+        <m id="r16654685" t="q" c="80" ts="1401030000"/>
+        <m id="r16655806" t="q" c="85" ts="1401030112"/>
+        <m id="r16658855" t="f" c="0" ts="1401030818"/>
+        <m id="r16659891" t="d" c="99" ts="1401030953"/>
+        <m id="r16659906" t="f" c="0" ts="1401030955"/>
+        <m id="r16663504" t="d" c="7" ts="1401031452"/>
+        <m id="r16663843" t="f" c="0" ts="1401031512"/>
+        <m id="r16664024" t="f" c="0" ts="1401031524"/>
+    </dp>
+</s>
+<s id="-5167554140712966572-1401031029-16">
+    <m id="r17154s" t="r" from="1401031600" to="1401032300" ts="1401031600"/>
+    <m id="r152972" t="h" from="1401030000" to="1401032359" ts="1401030021"/>
+    <ar ct="1401031758">
+        <m id="r16655112" t="q" c="85" ts="1401030002"/>
+        <m id="r16655541" t="q" c="80" ts="1401030014"/>
+        <m id="r16655563" t="q" c="93" ts="1401030022"/>
+        <m id="r16661491" t="q" c="84" ts="1401031227"/>
+    </ar>
+    <dp ct="1401031800">
+        <m id="r16655112" t="q" c="85" ts="1401030002"/>
+        <m id="r16655541" t="q" c="80" ts="1401030014"/>
+        <m id="r16655563" t="q" c="93" ts="1401030022"/>
+        <m id="r16661491" t="q" c="84" ts="1401031227"/>
+    </dp>
+</s>
+<s id="2072761486269796102-1401032154-5">
+    <ar>
+        <m id="r16652943" t="f" c="0" ts="1401022017"/>
+        <m id="r16655050" t="f" c="0" ts="1401030001"/>
+    </ar>
+    <dp>
+        <m id="r16652943" t="f" c="0" ts="1401022017"/>
+        <m id="r16655050" t="f" c="0" ts="1401030001"/>
+    </dp>
+</s>
+<s id="-5085305219057511825-1401032300-3">
+    <ar ppth="Duisburg Hbf|Mülheim(Ruhr)Hbf" pt="1401032312">
+        <m id="r16667077" t="d" c="99" ts="1401031756"/>
+    </ar>
+    <tl f="N" t="e" n="72393" c="RE" o="03"/>
+    <ref f="N" t="p" n="10035" c="RE" o="03"/>
+</s>
+<s id="-4743155447859959390-1401031713-15">
+    <ar ct="1401031753"/>
+    <dp ct="1401031755"/>
+</s>
+<s id="477010341466767808-1401031701-4">
+    <ar ct="1401031753"/>
+    <dp ct="1401031755"/>
+</s>
+<s id="2146451110410366459-1401031956-9">
+    <ar cpth="" cs="c" clt="1401031754">
+        <m id="r16666982" t="d" c="99" ts="1401031753"/>
+    </ar>
+    <dp cpth="" cs="c" clt="1401031754" dc="1">
+        <m id="r16666982" t="d" c="99" ts="1401031753"/>
+    </dp>
+</s>
+<s id="-7719427526223245796-1401031753-1">
+    <dp ct="1401031754"/>
+</s>
+<s id="6269162912389074298-1401031748-1">
+    <dp ct="1401031749"/>
+</s>
+<s id="5556106062038315514-1401031710-3">
+    <ar cp="4" ct="1401031736">
+        <m id="r16666213" t="q" c="86" ts="1401031711"/>
+    </ar>
+    <dp cp="4" ct="1401031739">
+        <m id="r16666213" t="q" c="86" ts="1401031711"/>
+    </dp>
+</s>
+<s id="3374842652744233643-1401031734-1">
+    <dp ct="1401031735"/>
+</s>
+<s id="-5226196432130574910-1401031654-5">
+    <ar ct="1401031732">
+        <m id="r16661129" t="q" c="85" ts="1401031151"/>
+    </ar>
+    <dp ct="1401031735">
+        <m id="r16661129" t="q" c="85" ts="1401031151"/>
+    </dp>
+</s>
+<s id="-2745304273102390783-1401031727-12">
+    <ar ct="1401032258"/>
+    <dp ct="1401032307"/>
+</s>
+<s id="-4751702846324410043-1401031728-1">
+    <dp ct="1401031728"/>
+</s>
+<s id="2934259025034110048-1401031612-6">
+    <m id="r153154" t="h" from="1401030000" to="1401032359" ts="1401031712"/>
+    <ar ct="1401031725">
+        <m id="r16665462" t="q" c="93" ts="1401031638"/>
+    </ar>
+    <dp ct="1401031727">
+        <m id="r16665462" t="q" c="93" ts="1401031638"/>
+    </dp>
+</s>
+<s id="5269474591683046025-1401031538-9">
+    <ar ct="1401031712"/>
+    <dp ct="1401031714"/>
+</s>
+<s id="5003606945829397216-1401031614-4">
+    <m id="r153001" t="h" from="1401030000" to="1401032359" ts="1401030409"/>
+    <ar ct="1401031708">
+        <m id="r16656365" t="q" c="85" ts="1401030507"/>
+        <m id="r16656395" t="q" c="91" ts="1401030510"/>
+        <m id="r16664848" t="q" c="80" ts="1401031610"/>
+        <m id="r16665426" t="d" c="36" ts="1401031635"/>
+    </ar>
+    <dp ct="1401031710">
+        <m id="r16656365" t="q" c="85" ts="1401030507"/>
+        <m id="r16656395" t="q" c="91" ts="1401030510"/>
+        <m id="r16664848" t="q" c="80" ts="1401031610"/>
+        <m id="r16665426" t="d" c="36" ts="1401031635"/>
+    </dp>
+</s>
+<s id="-7865049801958838928-1401031703-1">
+    <dp ct="1401031704"/>
+</s>
+<s id="-8611612980793422554-1401031653-1">
+    <dp ct="1401031653"/>
+</s>
+<s id="2396990007999835860-1401031556-3">
+    <ar ct="1401031623"/>
+    <dp ct="1401031624"/>
+</s>
+<s id="4211664472046986945-1401031137-11">
+    <ar ct="1401031614">
+        <m id="r16660648" t="d" c="36" ts="1401031110"/>
+        <m id="r16660888" t="f" c="0" ts="1401031128"/>
+        <m id="r16661457" t="q" c="82" ts="1401031222"/>
+    </ar>
+    <dp ct="1401031616">
+        <m id="r16660648" t="d" c="36" ts="1401031110"/>
+        <m id="r16660888" t="f" c="0" ts="1401031128"/>
+        <m id="r16661457" t="q" c="82" ts="1401031222"/>
+    </dp>
+</s>
+<s id="6753987376710121727-1401031158-12">
+    <m id="r17154s" t="r" from="1401031600" to="1401032300" ts="1401031600"/>
+    <ar ct="1401031612"/>
+    <dp ct="1401031615"/>
+</s>
+<s id="-4143478165668440328-1401030926-14">
+    <m id="r17154s" t="r" from="1401031600" to="1401032300" ts="1401031600"/>
+    <ar ct="1401031557">
+        <m id="r16663013" t="f" c="0" ts="1401031428"/>
+    </ar>
+    <dp ct="1401031600">
+        <m id="r16663013" t="f" c="0" ts="1401031428"/>
+    </dp>
+</s>
+<s id="-3916087825963607111-1401031553-1">
+    <dp ct="1401031554">
+        <m id="r16664171" t="q" c="86" ts="1401031534"/>
+    </dp>
+</s>
+<s id="-5503629625062779386-1401030643-26">
+    <ar ct="1401031544"/>
+    <dp ct="1401031545"/>
+</s>
+<s id="-889588124031753646-1401031412-6">
+    <ar ct="1401031523">
+        <m id="r16662590" t="q" c="87" ts="1401031408"/>
+    </ar>
+    <dp ct="1401031525">
+        <m id="r16662590" t="q" c="87" ts="1401031408"/>
+    </dp>
+</s>
+<s id="-6487130405468870642-1401031437-3">
+    <ar ct="1401031459"/>
+    <dp ct="1401031501"/>
+</s>
+<s id="-7498557299412611973-1401031851-18">
+    <ar cpth="" cs="c" clt="1401031442">
+        <m id="r16663373" t="d" c="36" ts="1401031442"/>
+    </ar>
+    <dp cpth="" cs="c" clt="1401031442">
+        <m id="r16663373" t="d" c="36" ts="1401031442"/>
+    </dp>
+</s>
+<s id="-1292968324353729887-1401031453-1">
+    <dp ct="1401031455"/>
+</s>
+<s id="3714029087859992058-1401031452-19">
+    <ar ct="1401040057"/>
+    <dp ct="1401040059"/>
+</s>
+<s id="-7396633882905648233-1401032215-10">
+    <ar ppth="Hamm(Westf)|Nordbögge|Kamen|Kamen-Methler|Dortmund-Kurl|Dortmund-Scharnhorst|Dortmund Hbf|Bochum Hbf|Wattenscheid" pp="2" pt="1401032307">
+        <m id="r16663398" t="d" c="36" ts="1401031443"/>
+    </ar>
+    <dp ppth="Mülheim(Ruhr)Hbf|Duisburg Hbf|Düsseldorf Flughafen|Düsseldorf Hbf|Düsseldorf-Benrath|Leverkusen Mitte|Köln-Mülheim|Köln Messe/Deutz|Köln Hbf|Köln-Ehrenfeld|Horrem|Düren|Langerwehe|Eschweiler Hbf|Stolberg(Rheinl)Hbf|Aachen-Rothe Erde|Aachen Hbf" pp="2" pt="1401032309">
+        <m id="r16663398" t="d" c="36" ts="1401031443"/>
+    </dp>
+    <tl f="N" t="e" n="72349" c="RE" o="03"/>
+    <ref f="N" t="p" n="10144" c="RE" o="03"/>
+</s>
+<s id="6542594835720355156-1401031346-4">
+    <ar ct="1401031415"/>
+    <dp ct="1401031418"/>
+</s>
+<s id="-5556092268393556891-1401031156-8">
+    <ar ct="1401031412">
+        <m id="r16660221" t="q" c="85" ts="1401031031"/>
+        <m id="r16661495" t="q" c="85" ts="1401031227"/>
+        <m id="r16662027" t="q" c="85" ts="1401031317"/>
+    </ar>
+    <dp ct="1401031414">
+        <m id="r16660221" t="q" c="85" ts="1401031031"/>
+        <m id="r16661495" t="q" c="85" ts="1401031227"/>
+        <m id="r16662027" t="q" c="85" ts="1401031317"/>
+    </dp>
+</s>
+<s id="-420469320168593494-1401031800-3">
+    <ar cpth="" cs="c" clt="1401031145" dc="1">
+        <m id="r16661050" t="f" c="0" ts="1401031145"/>
+    </ar>
+    <dp cpth="" cs="c" clt="1401031145">
+        <m id="r16661050" t="f" c="0" ts="1401031145"/>
+    </dp>
+</s>
+<s id="8460865749817138300-1401031302-4">
+    <ar ct="1401031355"/>
+    <dp ct="1401031357"/>
+</s>
+<s id="-7924173136350216839-1401031324-3">
+    <ar ct="1401031348"/>
+    <dp ct="1401031354"/>
+</s>
+<s id="-3619910072470154013-1401031153-9">
+    <ar ct="1401031343"/>
+    <dp ct="1401031345"/>
+</s>
+<s id="3902650839731944670-1401031120-5">
+    <ar ct="1401031218"/>
+    <dp ct="1401031220"/>
+</s>
+<s id="-2893425221262732069-1401030837-3">
+    <ar ct="1401030857"/>
+    <dp ct="1401030900"/>
+</s>
+<s id="5865061056538653377-1401030727-5">
+    <ar ct="1401030823"/>
+    <dp ct="1401030826"/>
+</s>
+</timetable>
