@@ -316,6 +316,108 @@ You usually do not need to call this.
 
 =back
 
+=head1 MESSAGES
+
+A dump of all messages entered for the result is available. Each message
+consists of a timestamp (when it was entered), a type (d for delay reasons,
+q for other train-related information) and a value (numeric ID).
+
+At the time of this writing, the following messages are known:
+
+=over
+
+=item d  2 : "Polizeiliche Ermittlung"
+
+=item d  3 : "Feuerwehreinsatz neben der Strecke"
+
+=item d  5 : "E<Auml>rztliche Versorgung eines Fahrgastes"
+
+=item d  7 : "Personen im Gleis"
+
+=item d  8 : "Notarzteinsatz am Gleis"
+
+=item d 10 : "Ausgebrochene Tiere im Gleis"
+
+=item d 11 : "Unwetter"
+
+=item d 15 : "BeeintrE<auml>chtigung durch Vandalismus"
+
+=item d 16 : "EntschE<auml>rfung einer Fliegerbombe"
+
+=item d 17 : "BeschE<auml>digung einer BrE<uuml>cke"
+
+=item d 18 : "UmgestE<uuml>rzter Baum im Gleis"
+
+=item d 19 : "Unfall an einem BahnE<uuml>bergang"
+
+=item d 20 : "Tiere im Gleis"
+
+=item d 21 : "Warten auf weitere Reisende"
+
+=item d 22 : "Witterungsbedingte StE<ouml>rung"
+
+=item d 23 : "Feuerwehreinsatz auf BahngelE<auml>nde"
+
+=item d 24 : "VerspE<auml>tung aus dem Ausland"
+
+=item d 25 : "Warten auf verspE<auml>tete Zugteile"
+
+=item d 28 : "GegenstE<auml>nde im Gleis"
+
+=item d 31 : "Bauarbeiten"
+
+=item d 32 : "VerzE<ouml>gerung beim Ein-/Ausstieg"
+
+=item d 33 : "OberleitungsstE<ouml>rung"
+
+=item d 34 : "SignalstE<ouml>rung"
+
+=item d 35 : "Streckensperrung"
+
+=item d 36 : "Technische StE<ouml>rung am Zug"
+
+=item d 38 : "Technische StE<ouml>rung an der Strecke"
+
+=item d 39 : "AnhE<auml>ngen von zusE<auml>tzlichen Wagen"
+
+=item d 40 : "StellwerksstE<ouml>rung/-ausfall"
+
+=item d 41 : "StE<ouml>rung an einem BahnE<uuml>bergang"
+
+=item d 42 : "AußerplanmE<auml>E<szlig>ige GeschwindigkeitsbeschrE<auml>nkung"
+
+=item d 43 : "VerspE<auml>tung eines vorausfahrenden Zuges"
+
+=item d 44 : "Warten auf einen entgegenkommenden Zug"
+
+=item d 45 : "E<Uuml>berholung durch anderen Zug"
+
+=item d 46 : "Warten auf freie Einfahrt"
+
+=item d 47 : "VerspE<auml>tete Bereitstellung"
+
+=item d 48 : "VerspE<auml>tung aus vorheriger Fahrt"
+
+=item q 80 : "Abweichende Wagenreihung"
+
+=item q 83 : "Fehlender Zugteil"
+
+=item q 86 : "Keine Reservierungsanzeige"
+
+=item q 90 : "Kein Bordrestaurant/Bordbistro"
+
+=item q 91 : "Keine Fahrradmitnahme"
+
+=item q 92 : "Rollstuhlgerechtes WC in einem Wagen ausgefallen"
+
+=item q 93 : "Kein rollstuhlgerechtes WC"
+
+=item q 98 : "Kein rollstuhlgerechter Wagen"
+
+=item d 99 : "VerzE<ouml>gerungen im Betriebsablauf"
+
+=back
+
 =head1 DIAGNOSTICS
 
 None.
