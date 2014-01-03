@@ -150,6 +150,9 @@ sub get_realtime {
 		my $e_tl = ( $s->findnodes('./tl') )[0];
 		my $e_ar = ( $s->findnodes('./ar') )[0];
 		my $e_dp = ( $s->findnodes('./dp') )[0];
+		my @e_ms = $s->findnodes('.//m');
+
+		my %messages;
 
 		my $result = first { $_->raw_id eq $id } $self->results;
 
@@ -158,6 +161,19 @@ sub get_realtime {
 		}
 
 		$result->add_realtime($s);
+
+		for my $e_m (@e_ms) {
+			my $type  = $e_m->getAttribute('t');
+			my $value = $e_m->getAttribute('c');
+			my $id    = $e_m->getAttribute('id');
+			my $ts    = $e_m->getAttribute('ts');
+
+			if ($value) {
+				$messages{$id} = [ $ts, $type, $value ];
+			}
+		}
+
+		$result->add_messages(%messages);
 
 		if ($e_tl) {
 			$result->add_tl(

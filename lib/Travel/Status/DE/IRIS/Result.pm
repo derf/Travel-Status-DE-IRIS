@@ -3,6 +3,7 @@ package Travel::Status::DE::IRIS::Result;
 use strict;
 use warnings;
 use 5.010;
+use utf8;
 
 no if $] >= 5.018, warnings => "experimental::smartmatch";
 
@@ -10,8 +11,63 @@ use parent 'Class::Accessor';
 use Carp qw(cluck);
 use DateTime;
 use DateTime::Format::Strptime;
+use List::MoreUtils qw(uniq);
 
 our $VERSION = '0.00';
+
+sub translate_msg {
+	my ( $self, $msg ) = @_;
+
+	my %translation = (
+		2  => 'Polizeiliche Ermittlung',
+		3  => 'Feuerwehreinsatz neben der Strecke',
+		5  => 'Ärztliche Versorgung eines Fahrgastes',
+		7  => 'Personen im Gleis',
+		8  => 'Notarzteinsatz am Gleis',
+		10 => 'Ausgebrochene Tiere im Gleis',
+		11 => 'Unwetter',
+		15 => 'Beeinträchtigung durch Vandalismus',
+		16 => 'Entschärfung einer Fliegerbombe',
+		17 => 'Beschädigung einer Brücke',
+		18 => 'Umgestürzter Baum im Gleis',
+		19 => 'Unfall an einem Bahnübergang',
+		20 => 'Tiere im Gleis',
+		21 => 'Warten auf weitere Reisende',
+		22 => 'Witterungsbedingte Störung',
+		23 => 'Feuerwehreinsatz auf Bahngelände',
+		24 => 'Verspätung aus dem Ausland',
+		25 => 'Warten auf verspätete Zugteile',
+		28 => 'Gegenstände im Gleis',
+		31 => 'Bauarbeiten',
+		32 => 'Verzögerung beim Ein-/Ausstieg',
+		33 => 'Oberleitungsstörung',
+		34 => 'Signalstörung',
+		35 => 'Streckensperrung',
+		36 => 'Technische Störung am Zug',
+		38 => 'Technische Störung an der Strecke',
+		39 => 'Anhängen von zusätzlichen Wagen',
+		40 => 'Stellwerksstörung/-ausfall',
+		41 => 'Störung an einem Bahnübergang',
+		42 => 'Außerplanmäßige Geschwindigkeitsbeschränkung',
+		43 => 'Verspätung eines vorausfahrenden Zuges',
+		44 => 'Warten auf einen entgegenkommenden Zug',
+		45 => 'Überholung durch anderen Zug',
+		46 => 'Warten auf freie Einfahrt',
+		47 => 'Verspätete Bereitstellung',
+		48 => 'Verspätung aus vorheriger Fahrt',
+		80 => 'Abweichende Wagenreihung',
+		83 => 'Fehlender Zugteil',
+		86 => 'Keine Reservierungsanzeige',
+		90 => 'Kein Bordrestaurant/Bordbistro',
+		91 => 'Keine Fahrradmitnahme',
+		92 => 'Rollstuhlgerechtes WC in einem Wagen ausgefallen',
+		93 => 'Kein rollstuhlgerechtes WC',
+		98 => 'Kein rollstuhlgerechter Wagen',
+		99 => 'Verzögerungen im Betriebsablauf',
+	);
+
+	return $translation{$msg} // "?($msg)";
+}
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
 	qw(arrival date datetime delay departure line_no platform raw_id
@@ -102,8 +158,14 @@ sub add_dp {
 	}
 }
 
+sub add_messages {
+	my ( $self, %messages ) = @_;
+
+	$self->{messages} = \%messages;
+}
+
 sub add_realtime {
-	my ($self, $xmlobj) = @_;
+	my ( $self, $xmlobj ) = @_;
 
 	$self->{realtime_xml} = $xmlobj;
 }
@@ -126,6 +188,17 @@ sub destination {
 	my ($self) = @_;
 
 	return $self->route_end;
+}
+
+sub info {
+	my ($self) = @_;
+
+	my @messages = sort keys %{ $self->{messages} };
+	my @ids = uniq( map { $self->{messages}{$_}->[2] } @messages );
+
+	my @info = map { $self->translate_msg($_) } @ids;
+
+	return @info;
 }
 
 sub line {

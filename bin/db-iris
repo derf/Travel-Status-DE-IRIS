@@ -108,18 +108,18 @@ sub display_result {
 		die("Nothing to show\n");
 	}
 
-	for my $i ( 0 .. 4 ) {
+	for my $i ( 0 .. 5 ) {
 		$line_length[$i] = max map { length( $_->[$i] ) } @lines;
 	}
 
 	for my $line (@lines) {
 		printf(
 			join( q{  }, ( map { "%-${_}s" } @line_length ) ) . "\n",
-			@{$line}[ 0 .. 4 ]
+			@{$line}[ 0 .. 5 ]
 		);
 
 		if ($show_full_route) {
-			print "\n" . $line->[5] . "\n\n\n";
+			print "\n" . $line->[6] . "\n\n\n";
 		}
 	}
 
@@ -145,12 +145,22 @@ for my $d ( $status->results() ) {
 		next;
 	}
 
+	my $delay = q{};
+
+	if ( $d->delay ) {
+		$delay = ' +' . $d->delay;
+	}
+
 	push(
 		@output,
 		[
-			$d->time, $d->train,
+			$d->time . $delay,
+			$d->train,
 			$arrivals ? q{} : join( q{  }, $d->route_interesting ),
-			$d->route_end, $d->platform, join( "\n", $d->route ),
+			$d->route_end,
+			$d->platform,
+			join( ' -- ', $d->info ),
+			join( "\n",   $d->route ),
 		]
 	);
 }
