@@ -157,6 +157,8 @@ sub get_realtime {
 			next;
 		}
 
+		$result->add_realtime($s);
+
 		if ($e_tl) {
 			$result->add_tl(
 				class     => $e_tl->getAttribute('f'),    # D N S F

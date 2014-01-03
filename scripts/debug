@@ -1,0 +1,35 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use 5.018;
+
+binmode( STDOUT, ':encoding(utf-8)' );
+
+use Data::Dumper;
+use Travel::Status::DE::DeutscheBahn;
+use Travel::Status::DE::IRIS;
+
+my $ris = Travel::Status::DE::DeutscheBahn->new(
+	station => $ARGV[0],
+	mode => 'dep',
+);
+
+my $iris = Travel::Status::DE::IRIS->new(
+	station => $ARGV[1],
+);
+
+my @res_ris = $ris->results;
+my @res_iris = $iris->results;
+
+for my $d (@res_iris) {
+	printf("\n\n     %5s %10s %4s %20s (%s)\n", $d->time, $d->train, $d->platform, $d->route_end, join(q{ }, $d->route_interesting));
+	my @matching = grep { $_->time . $_->train eq $d->time . $d->train } @res_ris;
+	for my $risd (@matching) {
+		printf(" ->  %5s %10s %4s %20s (%s)\n", $risd->time, $risd->train, $risd->platform, $risd->route_end, join(q{ }, $risd->route_interesting));
+		printf(" ->  %s\n", $risd->info_raw);
+	}
+	if ($d->realtime_xml) {
+		print $d->realtime_xml->toString(1);
+	}
+}

@@ -15,7 +15,7 @@ our $VERSION = '0.00';
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
 	qw(arrival date datetime delay departure line_no platform raw_id
-	  route_start route_end
+	  realtime_xml route_start route_end
 	  sched_arrival sched_departure
 	  start stop_no time train_id train_no type unknown_t unknown_o)
 );
@@ -100,6 +100,12 @@ sub add_dp {
 		  = $self->departure->subtract_datetime( $self->sched_departure )
 		  ->in_units('minutes');
 	}
+}
+
+sub add_realtime {
+	my ($self, $xmlobj) = @_;
+
+	$self->{realtime_xml} = $xmlobj;
 }
 
 sub add_tl {
