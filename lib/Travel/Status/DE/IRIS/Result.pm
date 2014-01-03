@@ -457,7 +457,7 @@ At the time of this writing, the following messages are known:
 
 =item d 41 : "StE<ouml>rung an einem BahnE<uuml>bergang"
 
-=item d 42 : "AußerplanmE<auml>E<szlig>ige GeschwindigkeitsbeschrE<auml>nkung"
+=item d 42 : "AuE<szlig>erplanmE<auml>E<szlig>ige GeschwindigkeitsbeschrE<auml>nkung"
 
 =item d 43 : "VerspE<auml>tung eines vorausfahrenden Zuges"
 
