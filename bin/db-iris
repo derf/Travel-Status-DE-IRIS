@@ -150,6 +150,9 @@ for my $d ( $status->results() ) {
 	if ( $d->delay ) {
 		$delay = ' +' . $d->delay;
 	}
+	if ( $d->is_cancelled ) {
+		$delay = ' CANCELED';
+	}
 
 	push(
 		@output,

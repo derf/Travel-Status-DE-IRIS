@@ -15,62 +15,8 @@ use List::MoreUtils qw(uniq);
 
 our $VERSION = '0.00';
 
-sub translate_msg {
-	my ( $self, $msg ) = @_;
-
-	my %translation = (
-		2  => 'Polizeiliche Ermittlung',
-		3  => 'Feuerwehreinsatz neben der Strecke',
-		5  => 'Ärztliche Versorgung eines Fahrgastes',
-		7  => 'Personen im Gleis',
-		8  => 'Notarzteinsatz am Gleis',
-		10 => 'Ausgebrochene Tiere im Gleis',
-		11 => 'Unwetter',
-		15 => 'Beeinträchtigung durch Vandalismus',
-		16 => 'Entschärfung einer Fliegerbombe',
-		17 => 'Beschädigung einer Brücke',
-		18 => 'Umgestürzter Baum im Gleis',
-		19 => 'Unfall an einem Bahnübergang',
-		20 => 'Tiere im Gleis',
-		21 => 'Warten auf weitere Reisende',
-		22 => 'Witterungsbedingte Störung',
-		23 => 'Feuerwehreinsatz auf Bahngelände',
-		24 => 'Verspätung aus dem Ausland',
-		25 => 'Warten auf verspätete Zugteile',
-		28 => 'Gegenstände im Gleis',
-		31 => 'Bauarbeiten',
-		32 => 'Verzögerung beim Ein-/Ausstieg',
-		33 => 'Oberleitungsstörung',
-		34 => 'Signalstörung',
-		35 => 'Streckensperrung',
-		36 => 'Technische Störung am Zug',
-		38 => 'Technische Störung an der Strecke',
-		39 => 'Anhängen von zusätzlichen Wagen',
-		40 => 'Stellwerksstörung/-ausfall',
-		41 => 'Störung an einem Bahnübergang',
-		42 => 'Außerplanmäßige Geschwindigkeitsbeschränkung',
-		43 => 'Verspätung eines vorausfahrenden Zuges',
-		44 => 'Warten auf einen entgegenkommenden Zug',
-		45 => 'Überholung durch anderen Zug',
-		46 => 'Warten auf freie Einfahrt',
-		47 => 'Verspätete Bereitstellung',
-		48 => 'Verspätung aus vorheriger Fahrt',
-		80 => 'Abweichende Wagenreihung',
-		83 => 'Fehlender Zugteil',
-		86 => 'Keine Reservierungsanzeige',
-		90 => 'Kein Bordrestaurant/Bordbistro',
-		91 => 'Keine Fahrradmitnahme',
-		92 => 'Rollstuhlgerechtes WC in einem Wagen ausgefallen',
-		93 => 'Kein rollstuhlgerechtes WC',
-		98 => 'Kein rollstuhlgerechter Wagen',
-		99 => 'Verzögerungen im Betriebsablauf',
-	);
-
-	return $translation{$msg} // "?($msg)";
-}
-
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
-	qw(arrival date datetime delay departure line_no platform raw_id
+	qw(arrival date datetime delay departure is_cancelled line_no platform raw_id
 	  realtime_xml route_start route_end
 	  sched_arrival sched_departure
 	  start stop_no time train_id train_no type unknown_t unknown_o)
@@ -132,6 +78,8 @@ sub new {
 	  || $ref->{route_pre}[0]
 	  || $ref->{station};
 
+	$ref->{is_cancelled} = 0;
+
 	return bless( $ref, $obj );
 }
 
@@ -149,6 +97,10 @@ sub add_ar {
 		  = $self->arrival->subtract_datetime( $self->sched_arrival )
 		  ->in_units('minutes');
 	}
+
+	if ( $attrib{status} and $attrib{status} eq 'c' ) {
+		$self->{is_cancelled} = 1;
+	}
 }
 
 sub add_dp {
@@ -164,6 +116,10 @@ sub add_dp {
 		$self->{delay}
 		  = $self->departure->subtract_datetime( $self->sched_departure )
 		  ->in_units('minutes');
+	}
+
+	if ( $attrib{status} and $attrib{status} eq 'c' ) {
+		$self->{is_cancelled} = 1;
 	}
 }
 
@@ -290,6 +246,60 @@ sub route_interesting {
 
 	return @via_show;
 
+}
+
+sub translate_msg {
+	my ( $self, $msg ) = @_;
+
+	my %translation = (
+		2  => 'Polizeiliche Ermittlung',
+		3  => 'Feuerwehreinsatz neben der Strecke',
+		5  => 'Ärztliche Versorgung eines Fahrgastes',
+		7  => 'Personen im Gleis',
+		8  => 'Notarzteinsatz am Gleis',
+		10 => 'Ausgebrochene Tiere im Gleis',
+		11 => 'Unwetter',
+		15 => 'Beeinträchtigung durch Vandalismus',
+		16 => 'Entschärfung einer Fliegerbombe',
+		17 => 'Beschädigung einer Brücke',
+		18 => 'Umgestürzter Baum im Gleis',
+		19 => 'Unfall an einem Bahnübergang',
+		20 => 'Tiere im Gleis',
+		21 => 'Warten auf weitere Reisende',
+		22 => 'Witterungsbedingte Störung',
+		23 => 'Feuerwehreinsatz auf Bahngelände',
+		24 => 'Verspätung aus dem Ausland',
+		25 => 'Warten auf verspätete Zugteile',
+		28 => 'Gegenstände im Gleis',
+		31 => 'Bauarbeiten',
+		32 => 'Verzögerung beim Ein-/Ausstieg',
+		33 => 'Oberleitungsstörung',
+		34 => 'Signalstörung',
+		35 => 'Streckensperrung',
+		36 => 'Technische Störung am Zug',
+		38 => 'Technische Störung an der Strecke',
+		39 => 'Anhängen von zusätzlichen Wagen',
+		40 => 'Stellwerksstörung/-ausfall',
+		41 => 'Störung an einem Bahnübergang',
+		42 => 'Außerplanmäßige Geschwindigkeitsbeschränkung',
+		43 => 'Verspätung eines vorausfahrenden Zuges',
+		44 => 'Warten auf einen entgegenkommenden Zug',
+		45 => 'Überholung durch anderen Zug',
+		46 => 'Warten auf freie Einfahrt',
+		47 => 'Verspätete Bereitstellung',
+		48 => 'Verspätung aus vorheriger Fahrt',
+		80 => 'Abweichende Wagenreihung',
+		83 => 'Fehlender Zugteil',
+		86 => 'Keine Reservierungsanzeige',
+		90 => 'Kein Bordrestaurant/Bordbistro',
+		91 => 'Keine Fahrradmitnahme',
+		92 => 'Rollstuhlgerechtes WC in einem Wagen ausgefallen',
+		93 => 'Kein rollstuhlgerechtes WC',
+		98 => 'Kein rollstuhlgerechter Wagen',
+		99 => 'Verzögerungen im Betriebsablauf',
+	);
+
+	return $translation{$msg} // "?($msg)";
 }
 
 sub TO_JSON {
