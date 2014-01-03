@@ -54,12 +54,63 @@ sub new {
 		$dt_req->add( hours => 1 );
 	}
 
+	$self->get_realtime;
+
 	@{ $self->{results} }
 	  = sort { $a->{datetime} <=> $b->{datetime} } @{ $self->{results} };
 
-	$self->get_realtime;
-
 	return $self;
+}
+
+sub add_result {
+	my ( $self, $station, $s ) = @_;
+
+	my $id   = $s->getAttribute('id');
+	my $e_tl = ( $s->findnodes('./tl') )[0];
+	my $e_ar = ( $s->findnodes('./ar') )[0];
+	my $e_dp = ( $s->findnodes('./dp') )[0];
+
+	if ( not $e_tl ) {
+		return;
+	}
+
+	my %data = (
+		raw_id    => $id,
+		class     => $e_tl->getAttribute('f'),    # D N S F
+		unknown_t => $e_tl->getAttribute('t'),    # p
+		train_no  => $e_tl->getAttribute('n'),    # dep number
+		type      => $e_tl->getAttribute('c'),    # S/ICE/ERB/...
+		line_no   => $e_tl->getAttribute('l'),    # 1 -> S1, ...
+		station   => $station,
+		unknown_o => $e_tl->getAttribute('o'),    # owner: 03/80/R2/...
+	);
+
+	if ($e_ar) {
+		$data{arrival_ts}  = $e_ar->getAttribute('pt');
+		$data{platform}    = $e_ar->getAttribute('pp');    # string, not number!
+		$data{route_pre}   = $e_ar->getAttribute('ppth');
+		$data{route_start} = $e_ar->getAttribute('pde');
+		$data{arrival_wings} = $e_ar->getAttribute('wings');
+	}
+
+	if ($e_dp) {
+		$data{departure_ts} = $e_dp->getAttribute('pt');
+		$data{platform}     = $e_dp->getAttribute('pp');   # string, not number!
+		$data{route_post}   = $e_dp->getAttribute('ppth');
+		$data{route_end}    = $e_dp->getAttribute('pde');
+		$data{departure_wings} = $e_dp->getAttribute('wings');
+	}
+
+	my $result = Travel::Status::DE::IRIS::Result->new(%data);
+
+	# if scheduled departure and current departure are not within the
+	# same hour, trains are reported twice. Don't add duplicates in
+	# that case.
+	if ( not first { $_->raw_id eq $id } @{ $self->{results} } ) {
+		push( @{ $self->{results} }, $result, );
+	}
+
+	return $result;
 }
 
 sub get_timetable {
@@ -83,51 +134,8 @@ sub get_timetable {
 	my $station = ( $xml->findnodes('/timetable') )[0]->getAttribute('station');
 
 	for my $s ( $xml->findnodes('/timetable/s') ) {
-		my $id   = $s->getAttribute('id');
-		my $e_tl = ( $s->findnodes('./tl') )[0];
-		my $e_ar = ( $s->findnodes('./ar') )[0];
-		my $e_dp = ( $s->findnodes('./dp') )[0];
 
-		if ( not $e_tl ) {
-			next;
-		}
-
-		my %data = (
-			raw_id    => $id,
-			class     => $e_tl->getAttribute('f'),    # D N S F
-			unknown_t => $e_tl->getAttribute('t'),    # p
-			train_no  => $e_tl->getAttribute('n'),    # dep number
-			type      => $e_tl->getAttribute('c'),    # S/ICE/ERB/...
-			line_no   => $e_tl->getAttribute('l'),    # 1 -> S1, ...
-			station   => $station,
-			unknown_o => $e_tl->getAttribute('o'),    # owner: 03/80/R2/...
-		);
-
-		if ($e_ar) {
-			$data{arrival_ts} = $e_ar->getAttribute('pt');
-			$data{platform}   = $e_ar->getAttribute('pp'); # string, not number!
-			$data{route_pre}     = $e_ar->getAttribute('ppth');
-			$data{route_start}   = $e_ar->getAttribute('pde');
-			$data{arrival_wings} = $e_ar->getAttribute('wings');
-		}
-
-		if ($e_dp) {
-			$data{departure_ts} = $e_dp->getAttribute('pt');
-			$data{platform} = $e_dp->getAttribute('pp');   # string, not number!
-			$data{route_post}      = $e_dp->getAttribute('ppth');
-			$data{route_end}       = $e_dp->getAttribute('pde');
-			$data{departure_wings} = $e_dp->getAttribute('wings');
-		}
-
-		# if scheduled departure and current departure are not within the
-		# same hour, trains are reported twice. Don't add duplicates in
-		# that case.
-		if ( not first { $_->raw_id eq $id } @{ $self->{results} } ) {
-			push(
-				@{ $self->{results} },
-				Travel::Status::DE::IRIS::Result->new(%data)
-			);
-		}
+		$self->add_result( $station, $s );
 	}
 
 	return $self;
@@ -147,6 +155,8 @@ sub get_realtime {
 
 	my $xml = XML::LibXML->load_xml( string => $res->decoded_content );
 
+	my $station = ( $xml->findnodes('/timetable') )[0]->getAttribute('station');
+
 	for my $s ( $xml->findnodes('/timetable/s') ) {
 		my $id   = $s->getAttribute('id');
 		my $e_tl = ( $s->findnodes('./tl') )[0];
@@ -158,6 +168,9 @@ sub get_realtime {
 
 		my $result = first { $_->raw_id eq $id } $self->results;
 
+		if ( not $result ) {
+			$result = $self->add_result( $station, $s );
+		}
 		if ( not $result ) {
 			next;
 		}
