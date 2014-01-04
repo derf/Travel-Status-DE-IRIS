@@ -356,45 +356,160 @@ the platform, time, route and more.
 
 =over
 
-=item $result->arrival_date
+=item $result->arrival
 
-=item $result->arrival_datetime
-
-=item $result->arrival_time
+DateTime(3pm) object for the arrival date and time. undef if the
+train starts here. Contains realtime data if available.
 
 =item $result->date
 
+Scheduled departure date if available, arrival date otherwise (e.g. if the
+train ends here). String in dd.mm.YYYY format. Does not contain realtime data.
+
 =item $result->datetime
 
-=item $result->departure_date
+DateTime(3pm) object for departure if available, arrival otherwise. Does not
+contain realtime data.
 
-=item $result->departure_datetime
+=item $result->delay
 
-=item $result->departure_time
+Estimated delay in minutes (integer number). undef when no realtime data is
+available, negative if a train ends at the specified station and arrives /
+arrived early.
+
+=item $result->departure
+
+DateTime(3pm) object for the departure date and time. undef if the train ends
+here. Contains realtime data if available.
+
+=item $result->destination
+
+Aleas for route_end.
+
+=item $result->info
+
+List of information strings. Contains both reasons for delays (which may or
+may not be up-to-date) and generic information such as missing carriages or
+broken toilets.
+
+=item $result->is_cancelled
+
+True if the train was cancelled, false otherwise. Note that this does not
+contain information about replacement trains or route diversions.
+
+=item $result->line
+
+Train type with line (such as C<< S 1 >>) if available, type with number
+(suc as C<< RE 10126 >>) otherwise.
 
 =item $result->line_no
 
+Number of the line, undef if unknown. Seems to be set only for S-Bahn and
+similar trains. Regional and long-distance trains such as C<< RE 10126 >>
+usually do not have this field set, even if they have a common line number
+(C<< RE 1 >> in this case).
+
+Example: For the line C<< S 1 >>, line_no will return C<< 1 >>.
+
+=item $result->origin
+
+Alias for route_start.
+
+=item $result->platform
+
+Arrivel/departure platform as string, undef if unknown. Note that this is
+not neccessarily a number, platform sections may be included (e.g.
+C<< 3a/b >>).
+
 =item $result->raw_id
 
-=item $result->start_date
+Raw ID of the departure, e.g. C<< -4642102742373784975-1401031322-6 >>.
+The first part appears to be this train's UUID (can be tracked across
+multiple stations), the second the YYmmddHHMM departure timestamp at its
+start station, and the third the count of this station in the train's schedule
+(in this case, it's the sixth from thestart station).
 
-=item $result->start_datetime
+About half of all departure IDs do not contain the leading minus (C<< - >>)
+seen in this example. The reason for this is unknown.
 
-=item $result->start_time
+This is a developer option. It may be removed without prior warning.
+
+=item $result->realtime_xml
+
+XML::LibXML::Node(3pm) object containing all realtime data. undef if none is
+available.
+
+This is a developer option. It may be removed without prior warning.
+
+=item $result->route
+
+List of all stations served by this train, according to its schedule. Does
+not contain realtime data.
+
+=item $result->route_end
+
+Name of the last station served by this train according to its schedule.
+
+=item $result->route_interesting
+
+List of up to three "interesting" stations served by this train, subset of
+route_post. Usually contains the next stop and one or two major stations after
+that.
+
+=item $result->route_pre
+
+List of station names the train is scheduled to pass before this stop.
+
+=item $result->route_post
+
+List of station names the train is scheduled to pass after this stop.
+
+=item $result->route_start
+
+Name of the first station served by this train according to its schedule.
+
+=item $result->sched_arrival
+
+DateTime(3pm) object for the scheduled arrival date and time. undef if the
+train starts here.
+
+=item $result->sched_departure
+
+DateTime(3pm) object for the scehduled departure date and time. undef if the
+train ends here.
+
+=item $result->start
+
+DateTime(3pm) object for the scheduled start of the train on its route
+(i.e. the departure time at its first station).
 
 =item $result->stop_no
 
+Number of this stop on the train's route. 1 if it's the start station, 2
+for the stop after that, and so on.
+
 =item $result->time
+
+Scheduled departure time if available, arrival time otherwise (e.g. if the
+train ends here). String in HH:MM format. Does not contain realtime data.
+
+=item $result->train
+
+Alias for line.
 
 =item $result->train_id
 
+Numeric ID of this train. Seems to be unique for a year and trackable across
+stations.
+
 =item $result->train_no
+
+Number of this train, unique per day. E.g. C<< 2225 >> for C<< IC 2225 >>.
 
 =item $result->type
 
-=item $result->unknown_t
-
-=item $result->unknown_o
+Type of this train, e.g. C<< S >> for S-Bahn, C<< RE >> for Regional-Express,
+C<< ICE >> for InterCity-Express.
 
 =back
 
