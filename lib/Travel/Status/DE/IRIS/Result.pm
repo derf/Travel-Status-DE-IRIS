@@ -288,14 +288,23 @@ sub translate_msg {
 		46 => 'Warten auf freie Einfahrt',
 		47 => 'Verspätete Bereitstellung',
 		48 => 'Verspätung aus vorheriger Fahrt',
+		55 => 'Technische Störung an einem anderen Zug', # ?
 		80 => 'Abweichende Wagenreihung',
+		82 => 'Mehrere Wagen fehlen',
 		83 => 'Fehlender Zugteil',
+		84 => 'Zug verkehrt richtig gereiht', # r 80 82 83 85
+		85 => 'Ein Wagen fehlt',
 		86 => 'Keine Reservierungsanzeige',
+		87 => 'Einzelne Wagen ohne Reservierungsanzeige',
+		88 => 'Keine Qualitätsmängel', # r 80 82 83 85 86 87 90 91 92 93 96 97 98
+		89 => 'Reservierungen sind wieder vorhanden',
 		90 => 'Kein Bordrestaurant/Bordbistro',
-		91 => 'Keine Fahrradmitnahme',
-		92 => 'Rollstuhlgerechtes WC in einem Wagen ausgefallen',
-		93 => 'Kein rollstuhlgerechtes WC',
-		98 => 'Kein rollstuhlgerechter Wagen',
+		91 => 'Eingeschränkte Fahrradmitnahme',
+		92 => 'Klimaanlage in einzelnen Wagen ausgefallen',
+		93 => 'Fehlende oder gestörte behindertengerechte Einrichtung',
+		96 => 'Der Zug ist überbesetzt',
+		97 => 'Der Zug ist überbesetzt',
+		98 => 'Sonstige Qualitätsmängel',
 		99 => 'Verzögerungen im Betriebsablauf',
 	);
 
@@ -606,21 +615,83 @@ At the time of this writing, the following messages are known:
 
 =item d 48 : "VerspE<auml>tung aus vorheriger Fahrt"
 
+=item d 55 : "Technische StE<ouml>rung an einem anderen Zug"
+
+Correlation between IRIS and DB RIS (bahn.de).  May be incorrect.
+
 =item q 80 : "Abweichende Wagenreihung"
+
+Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
+
+=item q 82 : "Mehrere Wagen fehlen"
+
+Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
 
 =item q 83 : "Fehlender Zugteil"
 
+Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
+
+=item q 84 : "Zug verkehrt richtig gereiht"
+
+Obsoletes messages 80, 82, 83, 85.
+Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
+
+=item q 85 : "Ein Wagen fehlt"
+
+Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
+
 =item q 86 : "Keine Reservierungsanzeige"
+
+Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
+
+=item q 87 : "Einzelne Wagen ohne Reservierungsanzeige"
+
+Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
+
+=item q 88 : "Keine QualitE<auml>tsmE<auml>ngel"
+
+Obsoletes messages 80, 82, 83, 85, 86, 87, 90, 91, 92, 93, 96, 97, 98.
+Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
+
+=item q 89 : "Reservierungen sind wieder vorhanden"
+
+Obsoletes messages 86, 87.
+Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
 
 =item q 90 : "Kein Bordrestaurant/Bordbistro"
 
-=item q 91 : "Keine Fahrradmitnahme"
+Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
 
-=item q 92 : "Rollstuhlgerechtes WC in einem Wagen ausgefallen"
+=item q 91 : "EingeschrE<auml>nkte Fahrradmitnahme"
 
-=item q 93 : "Kein rollstuhlgerechtes WC"
+Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
 
-=item q 98 : "Kein rollstuhlgerechter Wagen"
+Might also mean "Keine Fahrradmitnahme" (source: frubi).
+
+=item q 92 : "Klimaanlage in einzelnen Wagen ausgefallen"
+
+Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
+
+Might also mean "Rollstuhlgerechtes WC in einem Wagen ausgefallen"
+(source: frubi).
+
+=item q 93 : "Fehlende oder gestE<ouml>rte behindertengerechte Einrichtung"
+
+Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
+Might also mean "Kein rollstuhlgerechtes WC" (source: frubi).
+
+=item q 96 : "Der Zug ist E<uuml>berbesetzt"
+
+Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
+
+=item q 97 : "Der Zug ist E<uuml>berbesetzt"
+
+Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
+
+=item q 98 : "Sonstige QualitE<auml>tsmE<auml>ngel"
+
+Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
+Might also mean "Kein rollstuhlgerechter Wagen" (source: frubi).
 
 =item d 99 : "VerzE<ouml>gerungen im Betriebsablauf"
 
