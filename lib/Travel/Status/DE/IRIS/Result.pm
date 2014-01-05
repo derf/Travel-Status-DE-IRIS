@@ -255,6 +255,7 @@ sub translate_msg {
 		2  => 'Polizeiliche Ermittlung',
 		3  => 'Feuerwehreinsatz neben der Strecke',
 		5  => 'Ärztliche Versorgung eines Fahrgastes',
+		6  => 'Betätigen der Notbremse',
 		7  => 'Personen im Gleis',
 		8  => 'Notarzteinsatz am Gleis',
 		10 => 'Ausgebrochene Tiere im Gleis',
@@ -549,6 +550,10 @@ At the time of this writing, the following messages are known:
 
 =item d  5 : "E<Auml>rztliche Versorgung eines Fahrgastes"
 
+=item d  6 : "BetE<auml>tigen der Notbremse"
+
+Source: Correlation between IRIS and DB RIS (bahn.de).
+
 =item d  7 : "Personen im Gleis"
 
 =item d  8 : "Notarzteinsatz am Gleis"
@@ -617,7 +622,7 @@ At the time of this writing, the following messages are known:
 
 =item d 55 : "Technische StE<ouml>rung an einem anderen Zug"
 
-Correlation between IRIS and DB RIS (bahn.de).  May be incorrect.
+Source: Correlation between IRIS and DB RIS (bahn.de).
 
 =item q 80 : "Abweichende Wagenreihung"
 
