@@ -5,6 +5,7 @@ use 5.018;
 
 our $VERSION = '0.00';
 
+use Encode qw(decode);
 use Getopt::Long qw(:config no_ignore_case);
 use List::Util qw(max);
 use Travel::Status::DE::IRIS;
@@ -43,7 +44,10 @@ if ( @ARGV != 1 ) {
 }
 
 my ($station) = @ARGV;
-$station = get_station($station);
+
+$filter_via = decode( 'UTF-8', $filter_via );
+$station    = decode( 'UTF-8', $station );
+$station    = get_station($station);
 
 for my $type ( split( qr{,}, $types ) ) {
 	if ( substr( $type, 0, 1 ) eq q{!} ) {
