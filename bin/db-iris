@@ -75,6 +75,7 @@ sub get_station {
 
 	if ( @stations == 0 ) {
 		say STDERR "No station matches '$input_name'";
+		exit(1);
 	}
 	elsif ( @stations == 1 ) {
 		return $stations[0][0];
