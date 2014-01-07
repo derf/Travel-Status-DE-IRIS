@@ -26,7 +26,8 @@ sub new {
 	}
 
 	my $self = {
-		dt_now     => DateTime->now( time_zone => 'Europe/Berlin' ),
+		datetime => $opt{datetime}
+		  // DateTime->now( time_zone => 'Europe/Berlin' ),
 		station    => $opt{station},
 		user_agent => $ua,
 	};
@@ -47,7 +48,7 @@ sub new {
 
 	$self->{nodes}{station} = ( $xml_st->findnodes('//station') )[0];
 
-	my $dt_req = $self->{dt_now}->clone;
+	my $dt_req = $self->{datetime}->clone;
 	for ( 1 .. 3 ) {
 		$self->get_timetable( $self->{nodes}{station}->getAttribute('eva'),
 			$dt_req );
@@ -231,7 +232,7 @@ sub errstr {
 sub results {
 	my ($self) = @_;
 
-	return @{ $self->{results} };
+	return @{ $self->{results} // [] };
 }
 
 1;

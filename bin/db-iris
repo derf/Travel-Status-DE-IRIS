@@ -5,6 +5,8 @@ use 5.018;
 
 our $VERSION = '0.00';
 
+use DateTime;
+use DateTime::Format::Strptime;
 use Encode qw(decode);
 use Getopt::Long qw(:config no_ignore_case);
 use List::Util qw(max);
@@ -14,6 +16,7 @@ use Travel::Status::DE::IRIS::Stations;
 my %train_type;
 
 my ( $date, $time );
+my $datetime = DateTime->now( time_zone => 'Europe/Berlin' );
 my $arrivals = 0;
 my $filter_via;
 my $ignore_late     = 0;
@@ -58,13 +61,26 @@ for my $type ( split( qr{,}, $types ) ) {
 	}
 }
 
+if ($date) {
+	my ( $day, $month, $year ) = split( /\./, $date );
+	$datetime->set(
+		day   => $day,
+		month => $month,
+		year  => $year || $datetime->year,
+	);
+}
+if ($time) {
+	my ( $hour, $minute, $second ) = split( /:/, $time );
+	$datetime->set(
+		hour   => $hour,
+		minute => $minute,
+		second => $second || $datetime->second,
+	);
+}
+
 my $status = Travel::Status::DE::IRIS->new(
-	date     => $date,
-	language => $language,
-	mot      => \%train_type,
+	datetime => $datetime,
 	station  => $station,
-	time     => $time,
-	mode     => $arrivals ? 'arr' : 'dep',
 );
 
 sub get_station {
