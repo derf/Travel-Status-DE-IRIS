@@ -89,7 +89,7 @@ sub get_station {
 sub show_help {
 	my ($code) = @_;
 
-	print 'Usage: db-iris [-m <motlist>] [-t <time>] '
+	print 'Usage: db-iris [-f] '
 	  . "[-v <via>] <station>\n"
 	  . "See also: man db-iris\n";
 
@@ -177,7 +177,8 @@ db-iris - Interface to the DeutscheBahn online departure monitor
 
 =head1 SYNOPSIS
 
-B<db-iris> I<station>
+B<db-iris> [B<-fV>] [B<-d> I<date>] [B<-t> I<time>] [B<-v> I<station>]
+I<station>
 
 =head1 VERSION
 
@@ -194,6 +195,26 @@ the big departure screens installed at most main stations.
 =head1 OPTIONS
 
 =over
+
+=item B<-d>, B<--date> I<date>
+
+Request results for I<date> in dd.mm. oder dd.mm.YYYY format. Note that only
+slight (a few hours max) deviations from the current time are supported by the
+IRIS backend, larger ones will not return data.
+
+=item B<-f>, B<--full-route>
+
+Show the entire route of all trains (both before and after I<station>).
+
+=item B<-t>, B<--time> I<time>
+
+Request results for I<time> in HH:MM oder HH:MM:SS format. Note that only
+slight deviations (a few hours max) from the current time are supported by the
+IRIS backend, larger ones will not return data.
+
+=item B<-v>, B<--via> I<viastation>
+
+Only show trains serving I<viastation> after I<station>.
 
 =item B<-V>, B<--version>
 
