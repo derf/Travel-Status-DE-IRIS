@@ -249,7 +249,20 @@ Travel::Status::DE::IRIS - Interface to IRIS based web departure monitors.
 
 =head1 SYNOPSIS
 
-TODO
+    use Travel::Status::DE::IRIS;
+    use Travel::Status::DE::IRIS::Stations;
+
+    # Get station code for "Essen Hbf" (-> "EE")
+    my $station = (Travel::Status::DE::IRIS::Stations::get_station_by_name(
+        'Essen Hbf'))[0][0];
+    
+    my $status = Travel::Status::DE::IRIS->new(station => $station);
+    for my $r ($status->results) {
+        printf(
+            "%s %s +%-3d %10s -> %s\n",
+            $r->date, $r->time, $r->delay || 0, $r->line, $r->destination
+        );
+    }
 
 =head1 VERSION
 
@@ -257,13 +270,81 @@ version 0.00
 
 =head1 DESCRIPTION
 
-TraveL::Status::DE::IRIS is an unofficial interface to IRIS based web
+Travel::Status::DE::IRIS is an unofficial interface to IRIS based web
 departure monitors such as
 L<https://iris.noncd.db.de/wbt/js/index.html?typ=ab&style=qrab&bhf=EE&SecLang=&Zeilen=20&footer=0&disrupt=0>.
 
+=head1 METHODS
+
+=over
+
+=item my $states = Travel::Status::DE::IRIS->new(I<%opt>)
+
+Requests schedule and realtime data for a specific station at a specific
+point in time. Returns a new Travel::Status::DE::IRIS object.
+
+Arguments:
+
+=over
+
+=item B<datetime> => I<datetime-obj>
+
+A DateTime(3pm) object specifying the point in time. Optional, defaults to the
+current date and time.
+
+=item B<station> => I<stationcode>
+
+Mandatory: Which station to return departures for. Note that this is not a
+station name, but a station code, such as "EE" (for Essen Hbf) or "KA"
+(for Aachen Hbf). See Travel::Status::DE::IRIS::Stations(3pm) for a
+name to code mapping.
+
+=back
+
+All other options are passed to the LWP::UserAgent(3pm) constructor.
+
+=item $status->errstr
+
+In case of an HTTP request or IRIS error, returns a string describing it.
+Returns undef otherwise.
+
+=item $status->results
+
+Returns a list of Travel::Status::DE::IRIS(3pm) objects, each one describing
+one arrival and/or departure.
+
+=back
+
+=head1 DIAGNOSTICS
+
+None.
+
+=head1 DEPENDENCIES
+
+=over
+
+=item * DateTime(3pm)
+
+=item * List::Util(3pm)
+
+=item * LWP::UserAgent(3pm)
+
+=item * XML::LibXML(3pm)
+
+=back
+
+=head1 BUGS AND LIMITATIONS
+
+Many backend features are not yet exposed.
+
+=head1 SEE ALSO
+
+db-iris(1), Travel::Status::DE::IRIS::Result(3pm),
+Travel::Status::DE::IRIS::Stations(3pm)
+
 =head1 AUTHOR
 
-Copyright (C) 2013 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
+Copyright (C) 2013-2014 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
 
 =head1 LICENSE
 
