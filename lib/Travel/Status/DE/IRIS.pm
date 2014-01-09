@@ -58,6 +58,10 @@ sub new {
 	$self->get_realtime;
 
 	@{ $self->{results} }
+	  = grep { ( $_->departure // $_->arrival ) >= $self->{datetime} }
+	  @{ $self->{results} };
+
+	@{ $self->{results} }
 	  = sort { $a->{datetime} <=> $b->{datetime} } @{ $self->{results} };
 
 	return $self;
