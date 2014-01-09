@@ -13,32 +13,23 @@ use List::Util qw(max);
 use Travel::Status::DE::IRIS;
 use Travel::Status::DE::IRIS::Stations;
 
-my %train_type;
-
 my ( $date, $time );
 my $datetime = DateTime->now( time_zone => 'Europe/Berlin' );
 my $arrivals = 0;
 my $filter_via;
-my $ignore_late     = 0;
 my $show_full_route = 0;
-my $types           = q{};
-my $language;
 
 my @output;
 
 binmode( STDOUT, ':encoding(utf-8)' );
 
 GetOptions(
-	'a|arrivals'    => \$arrivals,
-	'd|date=s'      => \$date,
-	'f|full-route'  => \$show_full_route,
-	'h|help'        => sub { show_help(0) },
-	'l|lang=s'      => \$language,
-	'L|ignore-late' => \$ignore_late,
-	'm|mot=s'       => \$types,
-	't|time=s'      => \$time,
-	'v|via=s'       => \$filter_via,
-	'V|version'     => \&show_version,
+	'd|date=s'     => \$date,
+	'f|full-route' => \$show_full_route,
+	'h|help'       => sub { show_help(0) },
+	't|time=s'     => \$time,
+	'v|via=s'      => \$filter_via,
+	'V|version'    => \&show_version,
 
 ) or show_help(1);
 
@@ -51,15 +42,6 @@ my ($station) = @ARGV;
 $filter_via = decode( 'UTF-8', $filter_via );
 $station    = decode( 'UTF-8', $station );
 $station    = get_station($station);
-
-for my $type ( split( qr{,}, $types ) ) {
-	if ( substr( $type, 0, 1 ) eq q{!} ) {
-		$train_type{ substr( $type, 1 ) } = 0;
-	}
-	else {
-		$train_type{$type} = 1;
-	}
-}
 
 if ($date) {
 	my ( $day, $month, $year ) = split( /\./, $date );
@@ -159,10 +141,6 @@ for my $d ( $status->results() ) {
 	@via = $d->route;
 
 	if ( $filter_via and not( first { $_ =~ m{$filter_via}io } @via ) ) {
-		next;
-	}
-
-	if ( $ignore_late and $d->delay ) {
 		next;
 	}
 
