@@ -49,6 +49,12 @@ sub new {
 
 	$self->{nodes}{station} = ( $xml_st->findnodes('//station') )[0];
 
+	if ( not $self->{node}->{station} ) {
+		$self->{errstr}
+		  = "The station '$opt{station}' has no associated timetable";
+		return $self;
+	}
+
 	my $dt_req = $self->{datetime}->clone;
 	for ( 1 .. 3 ) {
 		$self->get_timetable( $self->{nodes}{station}->getAttribute('eva'),
