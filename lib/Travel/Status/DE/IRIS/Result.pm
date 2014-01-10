@@ -5,7 +5,7 @@ use warnings;
 use 5.010;
 use utf8;
 
-no if $] >= 5.018, warnings => "experimental::smartmatch";
+no if $] >= 5.018, warnings => 'experimental::smartmatch';
 
 use parent 'Class::Accessor';
 use Carp qw(cluck);
@@ -60,9 +60,9 @@ sub new {
 	$ref->{time} = $dt->strftime('%H:%M');
 
 	$ref->{route_pre} = $ref->{sched_route_pre}
-	  = [ split( qr{\|}, $ref->{route_pre} // q{} ) ];
+	  = [ split( qr{[|]}, $ref->{route_pre} // q{} ) ];
 	$ref->{route_post} = $ref->{sched_route_post}
-	  = [ split( qr{\|}, $ref->{route_post} // q{} ) ];
+	  = [ split( qr{[|]}, $ref->{route_post} // q{} ) ];
 
 	$ref->{route_pre_incomplete}  = $ref->{route_end}  ? 1 : 0;
 	$ref->{route_post_incomplete} = $ref->{route_post} ? 1 : 0;
@@ -101,6 +101,8 @@ sub add_ar {
 	if ( $attrib{status} and $attrib{status} eq 'c' ) {
 		$self->{is_cancelled} = 1;
 	}
+
+	return $self;
 }
 
 sub add_dp {
@@ -121,18 +123,24 @@ sub add_dp {
 	if ( $attrib{status} and $attrib{status} eq 'c' ) {
 		$self->{is_cancelled} = 1;
 	}
+
+	return $self;
 }
 
 sub add_messages {
 	my ( $self, %messages ) = @_;
 
 	$self->{messages} = \%messages;
+
+	return $self;
 }
 
 sub add_realtime {
 	my ( $self, $xmlobj ) = @_;
 
 	$self->{realtime_xml} = $xmlobj;
+
+	return $self;
 }
 
 sub add_tl {
@@ -289,15 +297,16 @@ sub translate_msg {
 		46 => 'Warten auf freie Einfahrt',
 		47 => 'Verspätete Bereitstellung',
 		48 => 'Verspätung aus vorheriger Fahrt',
-		55 => 'Technische Störung an einem anderen Zug', # ?
+		55 => 'Technische Störung an einem anderen Zug',        # ?
 		80 => 'Abweichende Wagenreihung',
 		82 => 'Mehrere Wagen fehlen',
 		83 => 'Fehlender Zugteil',
-		84 => 'Zug verkehrt richtig gereiht', # r 80 82 83 85
+		84 => 'Zug verkehrt richtig gereiht',                    # r 80 82 83 85
 		85 => 'Ein Wagen fehlt',
 		86 => 'Keine Reservierungsanzeige',
 		87 => 'Einzelne Wagen ohne Reservierungsanzeige',
-		88 => 'Keine Qualitätsmängel', # r 80 82 83 85 86 87 90 91 92 93 96 97 98
+		88 =>
+		  'Keine Qualitätsmängel',  # r 80 82 83 85 86 87 90 91 92 93 96 97 98
 		89 => 'Reservierungen sind wieder vorhanden',
 		90 => 'Kein Bordrestaurant/Bordbistro',
 		91 => 'Eingeschränkte Fahrradmitnahme',
