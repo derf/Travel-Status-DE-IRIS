@@ -3,6 +3,8 @@ use strict;
 use warnings;
 use 5.018;
 
+no if $] >= 5.018, warnings => 'experimental::smartmatch';
+
 our $VERSION = '0.00';
 
 use DateTime;
@@ -18,18 +20,23 @@ my $datetime = DateTime->now( time_zone => 'Europe/Berlin' );
 my $arrivals = 0;
 my $filter_via;
 my $show_full_route = 0;
+my ( @grep_traintypes, @grep_platforms );
 
 my @output;
 
 binmode( STDOUT, ':encoding(utf-8)' );
 
+@ARGV = map { decode( 'UTF-8', $_ ) } @ARGV;
+
 GetOptions(
-	'd|date=s'     => \$date,
-	'f|full-route' => \$show_full_route,
-	'h|help'       => sub { show_help(0) },
-	't|time=s'     => \$time,
-	'v|via=s'      => \$filter_via,
-	'V|version'    => \&show_version,
+	'd|date=s'       => \$date,
+	'f|full-route'   => \$show_full_route,
+	'h|help'         => sub { show_help(0) },
+	'm|mot=s'        => \@grep_traintypes,
+	'p|platforms=s@' => \@grep_platforms,
+	't|time=s'       => \$time,
+	'v|via=s'        => \$filter_via,
+	'V|version'      => \&show_version,
 
 ) or show_help(1);
 
@@ -37,11 +44,12 @@ if ( @ARGV != 1 ) {
 	show_help(1);
 }
 
-my ($station) = @ARGV;
+# opt=foo,bar support
+@grep_platforms  = split( qr{,}, join( q{,}, @grep_platforms ) );
+@grep_traintypes = split( qr{,}, join( q{,}, @grep_traintypes ) );
 
-$filter_via = decode( 'UTF-8', $filter_via );
-$station    = decode( 'UTF-8', $station );
-$station    = get_station($station);
+my ($station) = @ARGV;
+$station = get_station($station);
 
 if ($date) {
 	my ( $day, $month, $year ) = split( /\./, $date );
@@ -140,7 +148,10 @@ for my $d ( $status->results() ) {
 
 	@via = $d->route_post;
 
-	if ( $filter_via and not( first { $_ =~ m{$filter_via}io } @via ) ) {
+	if (   ( $filter_via and not( first { $_ =~ m{$filter_via}io } @via ) )
+		or ( @grep_platforms and not( $d->platform ~~ \@grep_platforms ) )
+		or ( @grep_traintypes and not( $d->type ~~ \@grep_traintypes ) ) )
+	{
 		next;
 	}
 
@@ -201,6 +212,38 @@ IRIS backend, larger ones will not return data.
 =item B<-f>, B<--full-route>
 
 Show the entire route of all trains (both before and after I<station>).
+
+=item B<-m>, B<--mot> I<motlist>
+
+Comma-separated list of modes of transport to filter by. Using this option
+causes all arrivals/departures whose mot not in I<motlist> to be discarded.
+
+The mot is based on the train type and accepts a superset of the following
+values:
+
+    local transport:
+    IR   Inter-Regio (rare in Germany, mostly used in Switzerland)
+    IRE  Inter-Regio Express (rare)
+    RB   Regionalbahn (slower than RE)
+    RE   Regional-Express
+    S    S-Bahn
+
+    regional/interregional transport:
+    D    "Schnellzug" (generic fast train, rare)
+    EC   Eurocity
+    IC   Intercity
+    ICE  Intercity-Express
+    THA  Thalys
+
+Depending on the city and country, other types may be used as well. Examples
+include "ABR" / "NWB" (private trains included in the local transport tariff
+system), "HKX" (private train not included in any DB tariffs) and
+"SBB" (unknown swiss train class)
+
+=item B<-p>, B<--platforms> I<platforms>
+
+Only show arrivals/departures at I<platforms> (comma-separated list, option may
+be repeated).
 
 =item B<-t>, B<--time> I<time>
 
