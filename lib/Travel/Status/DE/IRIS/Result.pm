@@ -16,10 +16,10 @@ use List::MoreUtils qw(uniq);
 our $VERSION = '0.00';
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
-	qw(arrival date datetime delay departure is_cancelled line_no platform raw_id
-	  realtime_xml route_start route_end
-	  sched_arrival sched_departure sched_route_start sched_route_end
-	  start stop_no time train_id train_no type unknown_t unknown_o)
+	qw(arrival classes date datetime delay departure is_cancelled line_no
+	  platform raw_id realtime_xml route_start route_end sched_arrival
+	  sched_departure sched_route_start sched_route_end start stop_no time
+	  train_id train_no type unknown_t unknown_o)
 );
 
 sub new {
@@ -397,6 +397,18 @@ the platform, time, route and more.
 
 DateTime(3pm) object for the arrival date and time. undef if the
 train starts here. Contains realtime data if available.
+
+=item $result->classes
+
+List of characters indicating the class(es) of this train, may be empty. This
+is slighty related to B<type>, but more generic. At this time, the following
+classes are known:
+
+    D    Non-DB train. Usually local transport
+    D,F  Non-DB train, long distance transport
+    F    "Fernverkehr", long-distance transport
+    N    "Nahverkehr", local and regional transport
+    S    S-Bahn, rather slow local/regional transport
 
 =item $result->date
 

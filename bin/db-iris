@@ -12,6 +12,7 @@ use DateTime::Format::Strptime;
 use Encode qw(decode);
 use Getopt::Long qw(:config no_ignore_case);
 use List::Util qw(first max);
+use List::MoreUtils qw(none);
 use Travel::Status::DE::IRIS;
 use Travel::Status::DE::IRIS::Stations;
 
@@ -20,7 +21,7 @@ my $datetime = DateTime->now( time_zone => 'Europe/Berlin' );
 my $arrivals = 0;
 my $filter_via;
 my $show_full_route = 0;
-my ( @grep_traintypes, @grep_platforms );
+my ( @grep_class, @grep_type, @grep_platform );
 
 my @output;
 
@@ -29,14 +30,15 @@ binmode( STDOUT, ':encoding(utf-8)' );
 @ARGV = map { decode( 'UTF-8', $_ ) } @ARGV;
 
 GetOptions(
-	'd|date=s'       => \$date,
-	'f|full-route'   => \$show_full_route,
-	'h|help'         => sub { show_help(0) },
-	'm|mot=s'        => \@grep_traintypes,
-	'p|platforms=s@' => \@grep_platforms,
-	't|time=s'       => \$time,
-	'v|via=s'        => \$filter_via,
-	'V|version'      => \&show_version,
+	'c|class=s@'    => \@grep_class,
+	'd|date=s'      => \$date,
+	'f|full-route'  => \$show_full_route,
+	'h|help'        => sub { show_help(0) },
+	'p|platform=s@' => \@grep_platform,
+	't|time=s'      => \$time,
+	'T|type=s'      => \@grep_type,
+	'v|via=s'       => \$filter_via,
+	'V|version'     => \&show_version,
 
 ) or show_help(1);
 
@@ -45,8 +47,9 @@ if ( @ARGV != 1 ) {
 }
 
 # opt=foo,bar support
-@grep_platforms  = split( qr{,}, join( q{,}, @grep_platforms ) );
-@grep_traintypes = split( qr{,}, join( q{,}, @grep_traintypes ) );
+@grep_class    = split( qr{,}, join( q{,}, @grep_class ) );
+@grep_platform = split( qr{,}, join( q{,}, @grep_platform ) );
+@grep_type     = split( qr{,}, join( q{,}, @grep_type ) );
 
 my ($station) = @ARGV;
 $station = get_station($station);
@@ -149,8 +152,9 @@ for my $d ( $status->results() ) {
 	@via = $d->route_post;
 
 	if (   ( $filter_via and not( first { $_ =~ m{$filter_via}io } @via ) )
-		or ( @grep_platforms and not( $d->platform ~~ \@grep_platforms ) )
-		or ( @grep_traintypes and not( $d->type ~~ \@grep_traintypes ) ) )
+		or ( @grep_class and none { $_ ~~ \@grep_class } $d->classes )
+		or ( @grep_platform and not( $d->platform ~~ \@grep_platform ) )
+		or ( @grep_type and not( $d->type ~~ \@grep_type ) ) )
 	{
 		next;
 	}
@@ -203,6 +207,18 @@ the big departure screens installed at most main stations.
 
 =over
 
+=item B<-c>, B<--class> I<classlist>
+
+Comma-separated list of train classes to filter by. Using this option
+causes all trains whose class is not in I<classlist> to be discarded.
+
+Valid classes are:
+
+    D    Non-DB train. Usually local transport
+    F    "Fernverkehr", long-distance transport
+    N    "Nahverkehr", local and regional transport
+    S    S-Bahn, rather slow local/regional transport
+
 =item B<-d>, B<--date> I<date>
 
 Request results for I<date> in dd.mm. oder dd.mm.YYYY format. Note that only
@@ -213,13 +229,23 @@ IRIS backend, larger ones will not return data.
 
 Show the entire route of all trains (both before and after I<station>).
 
-=item B<-m>, B<--mot> I<motlist>
+=item B<-p>, B<--platforms> I<platforms>
 
-Comma-separated list of modes of transport to filter by. Using this option
-causes all arrivals/departures whose mot not in I<motlist> to be discarded.
+Only show arrivals/departures at I<platforms> (comma-separated list, option may
+be repeated).
 
-The mot is based on the train type and accepts a superset of the following
-values:
+=item B<-t>, B<--time> I<time>
+
+Request results for I<time> in HH:MM oder HH:MM:SS format. Note that only
+slight deviations (a few hours max) from the current time are supported by the
+IRIS backend, larger ones will not return data.
+
+=item B<-T>, B<--type> I<typelist>
+
+Comma-separated list of train types to filter by. Using this option
+causes all arrivals/departures whose type is not in I<typelist> to be discarded.
+
+The following valid values are known:
 
     local transport:
     IR   Inter-Regio (rare in Germany, mostly used in Switzerland)
@@ -239,17 +265,6 @@ Depending on the city and country, other types may be used as well. Examples
 include "ABR" / "NWB" (private trains included in the local transport tariff
 system), "HKX" (private train not included in any DB tariffs) and
 "SBB" (unknown swiss train class)
-
-=item B<-p>, B<--platforms> I<platforms>
-
-Only show arrivals/departures at I<platforms> (comma-separated list, option may
-be repeated).
-
-=item B<-t>, B<--time> I<time>
-
-Request results for I<time> in HH:MM oder HH:MM:SS format. Note that only
-slight deviations (a few hours max) from the current time are supported by the
-IRIS backend, larger ones will not return data.
 
 =item B<-v>, B<--via> I<viastation>
 

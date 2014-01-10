@@ -88,7 +88,7 @@ sub add_result {
 
 	my %data = (
 		raw_id    => $id,
-		class     => $e_tl->getAttribute('f'),    # D N S F
+		classes   => $e_tl->getAttribute('f'),    # D N S F
 		unknown_t => $e_tl->getAttribute('t'),    # p
 		train_no  => $e_tl->getAttribute('n'),    # dep number
 		type      => $e_tl->getAttribute('c'),    # S/ICE/ERB/...
