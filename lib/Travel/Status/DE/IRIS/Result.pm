@@ -338,24 +338,13 @@ arrival/departure received by Travel::Status::DE::IRIS
 
 =head1 SYNOPSIS
 
-	for my $departure ($status->results) {
+	for my $result ($status->results) {
 		printf(
 			"At %s: %s to %s from platform %s\n",
-			$departure->time,
-			$departure->line,
-			$departure->destination,
-			$departure->platform,
-		);
-	}
-
-	# or (depending on module setup)
-	for my $arrival ($status->results) {
-		printf(
-			"At %s: %s from %s on platform %s\n",
-			$arrival->time,
-			$arrival->line,
-			$arrival->origin,
-			$arrival->platform,
+			$result->time,
+			$result->line,
+			$result->destination,
+			$result->platform,
 		);
 	}
 
