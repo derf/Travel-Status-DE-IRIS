@@ -18,7 +18,7 @@ our $VERSION = '0.00';
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
 	qw(arrival date datetime delay departure is_cancelled line_no platform raw_id
 	  realtime_xml route_start route_end
-	  sched_arrival sched_departure
+	  sched_arrival sched_departure sched_route_start sched_route_end
 	  start stop_no time train_id train_no type unknown_t unknown_o)
 );
 
@@ -98,6 +98,11 @@ sub add_ar {
 		  ->in_units('minutes');
 	}
 
+	if ( $attrib{route_pre} ) {
+		$self->{route_pre} = [ split( qr{[|]}, $attrib{route_pre} // q{} ) ];
+		$self->{route_start} = $self->{route_pre}[0];
+	}
+
 	if ( $attrib{status} and $attrib{status} eq 'c' ) {
 		$self->{is_cancelled} = 1;
 	}
@@ -118,6 +123,11 @@ sub add_dp {
 		$self->{delay}
 		  = $self->departure->subtract_datetime( $self->sched_departure )
 		  ->in_units('minutes');
+	}
+
+	if ( $attrib{route_post} ) {
+		$self->{route_post} = [ split( qr{[|]}, $attrib{route_post} // q{} ) ];
+		$self->{route_end} = $self->{route_post}[-1];
 	}
 
 	if ( $attrib{status} and $attrib{status} eq 'c' ) {
@@ -254,6 +264,25 @@ sub route_interesting {
 
 	return @via_show;
 
+}
+
+sub sched_route_pre {
+	my ($self) = @_;
+
+	return @{ $self->{sched_route_pre} };
+}
+
+sub sched_route_post {
+	my ($self) = @_;
+
+	return @{ $self->{sched_route_post} };
+}
+
+sub sched_route {
+	my ($self) = @_;
+
+	return ( $self->sched_route_pre, $self->{station},
+		$self->sched_route_post );
 }
 
 sub translate_msg {
@@ -456,25 +485,25 @@ not contain realtime data.
 
 =item $result->route_end
 
-Name of the last station served by this train according to its schedule.
+Name of the last station served by this train.
 
 =item $result->route_interesting
 
 List of up to three "interesting" stations served by this train, subset of
 route_post. Usually contains the next stop and one or two major stations after
-that.
+that. Does not contain realtime data.
 
 =item $result->route_pre
 
-List of station names the train is scheduled to pass before this stop.
+List of station names the train passed (or will have passed) befoe this stop.
 
 =item $result->route_post
 
-List of station names the train is scheduled to pass after this stop.
+List of station names the train will pass after this stop.
 
 =item $result->route_start
 
-Name of the first station served by this train according to its schedule.
+Name of the first station served by this train.
 
 =item $result->sched_arrival
 
@@ -485,6 +514,27 @@ train starts here.
 
 DateTime(3pm) object for the scehduled departure date and time. undef if the
 train ends here.
+
+=item $result->sched_route
+
+List of all stations served by this train, according to its schedule. Does
+not contain realtime data.
+
+=item $result->sched_route_end
+
+Name of the last station served by this train according to its schedule.
+
+=item $result->sched_route_pre
+
+List of station names the train is scheduled to pass before this stop.
+
+=item $result->sched_route_post
+
+List of station names the train is scheduled to pass after this stop.
+
+=item $result->sched_route_start
+
+Name of the first station served by this train according to its schedule.
 
 =item $result->start
 
