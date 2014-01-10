@@ -9,7 +9,7 @@ use DateTime;
 use DateTime::Format::Strptime;
 use Encode qw(decode);
 use Getopt::Long qw(:config no_ignore_case);
-use List::Util qw(max);
+use List::Util qw(first max);
 use Travel::Status::DE::IRIS;
 use Travel::Status::DE::IRIS::Stations;
 
@@ -138,7 +138,7 @@ for my $d ( $status->results() ) {
 
 	my @via;
 
-	@via = $d->route;
+	@via = $d->route_post;
 
 	if ( $filter_via and not( first { $_ =~ m{$filter_via}io } @via ) ) {
 		next;
