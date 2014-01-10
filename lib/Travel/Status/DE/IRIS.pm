@@ -28,6 +28,8 @@ sub new {
 	my $self = {
 		datetime => $opt{datetime}
 		  // DateTime->now( time_zone => 'Europe/Berlin' ),
+		iris_base => $opt{iris_base}
+		  // 'http://iris.noncd.db.de/iris-tts/timetable',
 		station    => $opt{station},
 		user_agent => $ua,
 	};
@@ -36,8 +38,7 @@ sub new {
 
 	$ua->env_proxy;
 
-	my $res_st = $ua->get(
-		'http://iris.noncd.db.de/iris-tts/timetable/station/' . $opt{station} );
+	my $res_st = $ua->get( $self->{iris_base} . '/station/' . $opt{station} );
 
 	if ( $res_st->is_error ) {
 		$self->{errstr} = $res_st->status_line;
@@ -123,9 +124,7 @@ sub get_timetable {
 	my $ua = $self->{user_agent};
 
 	my $res = $ua->get(
-		$dt->strftime(
-			"http://iris.noncd.db.de/iris-tts/timetable/plan/${eva}/%y%m%d/%H")
-	);
+		$dt->strftime( $self->{iris_base} . "/plan/${eva}/%y%m%d/%H" ) );
 
 	if ( $res->is_error ) {
 		$self->{errstr} = $res->status_line;
@@ -150,8 +149,7 @@ sub get_realtime {
 	my ($self) = @_;
 
 	my $eva = $self->{nodes}{station}->getAttribute('eva');
-	my $res = $self->{user_agent}
-	  ->get("http://iris.noncd.db.de/iris-tts/timetable/fchg/${eva}");
+	my $res = $self->{user_agent}->get( $self->{iris_base} . "/fchg/${eva}" );
 
 	if ( $res->is_error ) {
 		$self->{errstr} = $res->status_line;
@@ -291,6 +289,10 @@ Arguments:
 
 A DateTime(3pm) object specifying the point in time. Optional, defaults to the
 current date and time.
+
+=item B<iris_base> => I<url>
+
+IRIS base url, defaults to C<< http://iris.noncd.db.de/iris-tts/timetable >>.
 
 =item B<station> => I<stationcode>
 
