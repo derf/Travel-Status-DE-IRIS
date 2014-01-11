@@ -10,7 +10,7 @@ our $VERSION = '0.00';
 use DateTime;
 use DateTime::Format::Strptime;
 use Encode qw(decode);
-use Getopt::Long qw(:config no_ignore_case);
+use Getopt::Long qw(:config no_ignore_case bundling);
 use List::Util qw(first max);
 use List::MoreUtils qw(none);
 use Travel::Status::DE::IRIS;
@@ -20,8 +20,8 @@ my ( $date, $time );
 my $datetime = DateTime->now( time_zone => 'Europe/Berlin' );
 my $arrivals = 0;
 my $filter_via;
-my $show_full_route = 0;
 my ( @grep_class, @grep_type, @grep_platform );
+my ( %edata, @edata_pre );
 
 my @output;
 
@@ -32,8 +32,8 @@ binmode( STDOUT, ':encoding(utf-8)' );
 GetOptions(
 	'c|class=s@'    => \@grep_class,
 	'd|date=s'      => \$date,
-	'f|full-route'  => \$show_full_route,
 	'h|help'        => sub { show_help(0) },
+	'o|output=s@'   => \@edata_pre,
 	'p|platform=s@' => \@grep_platform,
 	't|time=s'      => \$time,
 	'T|type=s'      => \@grep_type,
@@ -47,6 +47,7 @@ if ( @ARGV != 1 ) {
 }
 
 # opt=foo,bar support
+@edata_pre     = split( qr{,}, join( q{,}, @edata_pre ) );
 @grep_class    = split( qr{,}, join( q{,}, @grep_class ) );
 @grep_platform = split( qr{,}, join( q{,}, @grep_platform ) );
 @grep_type     = split( qr{,}, join( q{,}, @grep_type ) );
@@ -69,6 +70,17 @@ if ($time) {
 		minute => $minute,
 		second => $second || $datetime->second,
 	);
+}
+
+for my $efield (@edata_pre) {
+	given ($efield) {
+		when ('d') { $edata{delay}    = 1 }
+		when ('m') { $edata{messages} = 1 }
+		when ('q') { $edata{qos}      = 1 }
+		when ('r') { $edata{route}    = 1 }
+		when ('t') { $edata{times}    = 1 }
+		default    { $edata{$efield}  = 1 }
+	}
 }
 
 my $status = Travel::Status::DE::IRIS->new(
@@ -132,7 +144,7 @@ sub display_result {
 			@{$line}[ 0 .. 4 ]
 		);
 
-		if ($show_full_route) {
+		if ( $edata{route} ) {
 			print "\n" . join( "\n", $line->[5]->route ) . "\n\n\n";
 		}
 	}
@@ -225,9 +237,43 @@ Request results for I<date> in dd.mm. oder dd.mm.YYYY format. Note that only
 slight (a few hours max) deviations from the current time are supported by the
 IRIS backend, larger ones will not return data.
 
-=item B<-f>, B<--full-route>
+=item B<-o>, B<--output> I<outputtypes>
+
+For each result, output I<outputtypes> in addition to the normal time, delay,
+line and destination information. I<outputtypes> is a comma-separated list,
+this option may be repeated. Each output type has both a short and long form,
+so both C<< -ot,d >> and C<< --output=times,delay >> is valid.
+
+Valid output types are:
+
+=over
+
+=item d / delay
+
+List all delay reasons entered into the IRIS, even if the train is on time
+by now.
+
+=item m / messages
+
+List all messages (delay and qos) entered into the IRIS with timestamps.
+
+=item q / qos
+
+List all quality of service messages entered into the IRIS. These contain
+information like "Missing carriage" or "Broken air conditioning".
+
+Note that some qos messages may supersede older ones. supersed messages are
+omitted, use the m / messages type to see those as well.
+
+=item r / route
 
 Show the entire route of all trains (both before and after I<station>).
+
+=item t / times
+
+Show both scheduled and expected arrival and departure times.
+
+=back
 
 =item B<-p>, B<--platforms> I<platforms>
 
