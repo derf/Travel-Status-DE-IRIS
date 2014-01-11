@@ -2,6 +2,7 @@
 use strict;
 use warnings;
 use 5.018;
+use utf8;
 
 no if $] >= 5.018, warnings => 'experimental::smartmatch';
 
@@ -144,8 +145,34 @@ sub display_result {
 			@{$line}[ 0 .. 4 ]
 		);
 
+		my $d             = $line->[5];
+		my $need_newlines = 0;
+
+		if ( $edata{times} ) {
+			if ( not defined $d->delay ) {
+				print "\n";
+			}
+			elsif ( $d->delay == 0 ) {
+				printf( "%s+0\n", q{ } x 15 );
+			}
+			else {
+				printf(
+					"%5s → %5s  %+d\n",
+					$d->arrival   ? $d->arrival->strftime('%H:%M')   : q{},
+					$d->departure ? $d->departure->strftime('%H:%M') : q{},
+					$d->delay,
+				);
+			}
+
+		}
+
 		if ( $edata{route} ) {
-			print "\n" . join( "\n", $line->[5]->route ) . "\n\n\n";
+			$need_newlines = 1;
+			print "\n" . join( "\n", $d->route );
+		}
+
+		if ($need_newlines) {
+			print "\n\n";
 		}
 	}
 
@@ -180,11 +207,22 @@ for my $d ( $status->results() ) {
 		$delay = ' CANCELED';
 	}
 
+	my $timestr;
+	if ( $edata{times} ) {
+		$timestr = sprintf( '%5s → %5s',
+			$d->sched_arrival   ? $d->sched_arrival->strftime('%H:%M')   : q{},
+			$d->sched_departure ? $d->sched_departure->strftime('%H:%M') : q{},
+		);
+	}
+	else {
+		$timestr = $d->time . $delay;
+	}
+
 	push(
 		@output,
 		[
-			$d->time . $delay,
-			$d->train, $arrivals ? q{} : join( q{  }, $d->route_interesting ),
+			$timestr, $d->train,
+			$arrivals ? q{} : join( q{  }, $d->route_interesting ),
 			$d->route_end, $d->platform, $d
 		]
 	);
