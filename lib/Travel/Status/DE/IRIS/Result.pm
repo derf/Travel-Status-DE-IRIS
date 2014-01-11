@@ -173,6 +173,22 @@ sub destination {
 	return $self->route_end;
 }
 
+sub messages {
+	my ($self) = @_;
+
+	my $strp = DateTime::Format::Strptime->new(
+		pattern   => '%y%m%d%H%M',
+		time_zone => 'Europe/Berlin',
+	);
+
+	my @messages = sort keys %{ $self->{messages } };
+	my @ret = map { [ $strp->parse_datetime($self->{messages}->{$_}->[0]),
+	$self->translate_msg($self->{messages}->{$_}->[2]) ] }
+		@messages;
+
+	return @ret;
+}
+
 sub info {
 	my ($self) = @_;
 
@@ -459,6 +475,14 @@ usually do not have this field set, even if they have a common line number
 (C<< RE 1 >> in this case).
 
 Example: For the line C<< S 1 >>, line_no will return C<< 1 >>.
+
+=item $result->messages
+
+Get all qos and delay messages ever entered for this train. Returns a list
+of [datetime, string] listrefs. The datetime part is a DateTime(3pm) object
+corresponding to the point in time when the message was entered, the string
+is the message. Note that neither duplicates nor superseded messages are
+filtered from this list.
 
 =item $result->origin
 

@@ -74,13 +74,13 @@ if ($time) {
 
 for my $efield (@edata_pre) {
 	given ($efield) {
-		when ('d') { $edata{delay}    = 1 }
+		when ('d') { $edata{delay}     = 1 }
 		when ('f') { $edata{fullroute} = 1 }
-		when ('m') { $edata{messages} = 1 }
-		when ('q') { $edata{qos}      = 1 }
-		when ('r') { $edata{route}    = 1 }
-		when ('t') { $edata{times}    = 1 }
-		default    { $edata{$efield}  = 1 }
+		when ('m') { $edata{messages}  = 1 }
+		when ('q') { $edata{qos}       = 1 }
+		when ('r') { $edata{route}     = 1 }
+		when ('t') { $edata{times}     = 1 }
+		default    { $edata{$efield}   = 1 }
 	}
 }
 
@@ -145,8 +145,7 @@ sub display_result {
 			@{$line}[ 0 .. 4 ]
 		);
 
-		my $d             = $line->[5];
-		my $need_newlines = 0;
+		my $d = $line->[5];
 
 		if ( $edata{times} ) {
 			if ( not defined $d->delay ) {
@@ -166,13 +165,19 @@ sub display_result {
 
 		}
 
-		if ( $edata{fullroute} ) {
-			$need_newlines = 1;
-			print "\n" . join( "\n", $d->route );
+		if ( $edata{messages} ) {
+			for my $message ( reverse $d->messages ) {
+
+				# leading spaces to align with regular output
+				printf( " %s  %s\n",
+					$message->[0]->strftime('%d.%m. %H:%M'),
+					$message->[1] );
+			}
+			print "\n";
 		}
 
-		if ($need_newlines) {
-			print "\n\n";
+		if ( $edata{fullroute} ) {
+			print "\n" . join( "\n", $d->route ) . "\n\n";
 		}
 	}
 
