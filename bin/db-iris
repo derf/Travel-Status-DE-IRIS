@@ -19,7 +19,6 @@ use Travel::Status::DE::IRIS::Stations;
 
 my ( $date, $time );
 my $datetime = DateTime->now( time_zone => 'Europe/Berlin' );
-my $arrivals = 0;
 my $filter_via;
 my ( @grep_class, @grep_type, @grep_platform );
 my ( %edata, @edata_pre );
@@ -76,6 +75,7 @@ if ($time) {
 for my $efield (@edata_pre) {
 	given ($efield) {
 		when ('d') { $edata{delay}    = 1 }
+		when ('f') { $edata{fullroute} = 1 }
 		when ('m') { $edata{messages} = 1 }
 		when ('q') { $edata{qos}      = 1 }
 		when ('r') { $edata{route}    = 1 }
@@ -166,7 +166,7 @@ sub display_result {
 
 		}
 
-		if ( $edata{route} ) {
+		if ( $edata{fullroute} ) {
 			$need_newlines = 1;
 			print "\n" . join( "\n", $d->route );
 		}
@@ -222,7 +222,7 @@ for my $d ( $status->results() ) {
 		@output,
 		[
 			$timestr, $d->train,
-			$arrivals ? q{} : join( q{  }, $d->route_interesting ),
+			$edata{route} ? join( q{  }, $d->route_interesting ) : q{},
 			$d->route_end, $d->platform, $d
 		]
 	);
@@ -291,6 +291,10 @@ Valid output types are:
 List all delay reasons entered into the IRIS, even if the train is on time
 by now.
 
+=item f / fullroute
+
+Show the entire route of all trains (both before and after I<station>).
+
 =item m / messages
 
 List all messages (delay and qos) entered into the IRIS with timestamps.
@@ -305,7 +309,7 @@ omitted, use the m / messages type to see those as well.
 
 =item r / route
 
-Show the entire route of all trains (both before and after I<station>).
+Show up to three stops between I<station> and the train's destination.
 
 =item t / times
 
