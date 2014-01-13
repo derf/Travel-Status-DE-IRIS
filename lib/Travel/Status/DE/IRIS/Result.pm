@@ -173,6 +173,25 @@ sub destination {
 	return $self->route_end;
 }
 
+sub delay_messages {
+	my ($self) = @_;
+
+	my $strp = DateTime::Format::Strptime->new(
+		pattern   => '%y%m%d%H%M',
+		time_zone => 'Europe/Berlin',
+	);
+
+	my @keys = sort keys %{ $self->{messages} };
+	my @msgs
+	  = uniq( grep { $_->[1] eq 'd' } map { $self->{messages}{$_} } @keys );
+
+	my @ret = map {
+		[ $strp->parse_datetime( $_->[0] ), $self->translate_msg( $_->[2] ) ]
+	} @msgs;
+
+	return @ret;
+}
+
 sub messages {
 	my ($self) = @_;
 
@@ -181,10 +200,13 @@ sub messages {
 		time_zone => 'Europe/Berlin',
 	);
 
-	my @messages = sort keys %{ $self->{messages } };
-	my @ret = map { [ $strp->parse_datetime($self->{messages}->{$_}->[0]),
-	$self->translate_msg($self->{messages}->{$_}->[2]) ] }
-		@messages;
+	my @messages = sort keys %{ $self->{messages} };
+	my @ret      = map {
+		[
+			$strp->parse_datetime( $self->{messages}->{$_}->[0] ),
+			$self->translate_msg( $self->{messages}->{$_}->[2] )
+		]
+	} @messages;
 
 	return @ret;
 }

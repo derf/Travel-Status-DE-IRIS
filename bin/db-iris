@@ -75,6 +75,7 @@ if ($time) {
 for my $efield (@edata_pre) {
 	given ($efield) {
 		when ('d') { $edata{delay}     = 1 }
+		when ('D') { $edata{delays}    = 1 }
 		when ('f') { $edata{fullroute} = 1 }
 		when ('m') { $edata{messages}  = 1 }
 		when ('q') { $edata{qos}       = 1 }
@@ -141,11 +142,16 @@ sub display_result {
 
 	for my $line (@lines) {
 		printf(
-			join( q{  }, ( map { "%-${_}s" } @line_length ) ) . "\n",
+			join( q{  }, ( map { "%-${_}s" } @line_length ) ),
 			@{$line}[ 0 .. 4 ]
 		);
 
 		my $d = $line->[5];
+
+		if ( $edata{delay} and $d->delay and $d->delay_messages ) {
+			printf( '  %s', ( $d->delay_messages )[-1]->[1] );
+		}
+		print "\n";
 
 		if ( $edata{times} ) {
 			if ( not defined $d->delay ) {
@@ -293,8 +299,12 @@ Valid output types are:
 
 =item d / delay
 
-List all delay reasons entered into the IRIS, even if the train is on time
-by now.
+If a train is delayed, show the most recent reason for this delay.
+
+=item d / delays
+
+List all delay reasons entered into the IRIS for each train, even if the
+particular train is on time by now.
 
 =item f / fullroute
 
