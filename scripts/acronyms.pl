@@ -48,6 +48,12 @@ sub get_stations {
 sub get_station_by_name {
 	my ( $name ) = @_;
 
+	my $ds100_match = firstval { $nname eq $_->[0] } @stations;
+
+	if ($ds100_match) {
+		return ($ds100_match);
+	}
+
 	my $nname = lc($name);
 	my $actual_match = firstval { $nname eq lc($_->[1]) } @stations;
 
