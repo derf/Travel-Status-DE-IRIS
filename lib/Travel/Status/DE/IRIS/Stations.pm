@@ -15100,6 +15100,18 @@ sub get_stations {
 	return @stations;
 }
 
+sub get_station {
+	my ( $name ) = @_;
+
+	my $ds100_match = firstval { $name eq $_->[0] } @stations;
+
+	if ($ds100_match) {
+		return ($ds100_match);
+	}
+
+	return get_station_by_name($name);
+}
+
 sub get_station_by_name {
 	my ( $name ) = @_;
 
@@ -15164,6 +15176,16 @@ B<Note:> Station codes may contain whitespace.
 
 Returns a list of [station code, station name] listrefs lexically sorted by
 station name.
+
+=item Travel::Status::DE::IRIS::get_station(I<$in>)
+
+Returns a list of [station code, station name] listrefs matching I<$in>.
+
+If a I<$in> is a valid station code, only one element ([I<$in>, related name])
+is returned. Otherwise, it is passed to get_station_by_name(I<$in>) (see
+below).
+
+Note that station codes matching is case sensitive and must be exact.
 
 =item Travel::Status::DE::IRIS::get_station_by_name(I<$name>)
 

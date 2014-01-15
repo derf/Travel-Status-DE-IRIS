@@ -93,8 +93,7 @@ my $status = Travel::Status::DE::IRIS->new(
 sub get_station {
 	my ($input_name) = @_;
 
-	my @stations
-	  = Travel::Status::DE::IRIS::Stations::get_station_by_name($input_name);
+	my @stations = Travel::Status::DE::IRIS::Stations::get_station($input_name);
 
 	if ( @stations == 0 ) {
 		say STDERR "No station matches '$input_name'";
