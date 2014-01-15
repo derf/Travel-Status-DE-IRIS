@@ -113,7 +113,9 @@ sub get_station {
 sub show_help {
 	my ($code) = @_;
 
-	print 'Usage: db-iris [-V] [-c <classlist>] [-d <date>] [-o <output-flags>] [-p <platforms>] [-t <time>] [-T <typelist>] [-v <via>] <station>' . "\n" .
+	print 'Usage: db-iris [-V] [-c <classlist>] [-d <date>] '
+	  . '[-o <output-flags>] [-p <platforms>] [-t <time>] '
+	  . '[-T <typelist>] [-v <via>] <station>' . "\n"
 	  . "See also: man db-iris\n";
 
 	exit $code;
@@ -247,7 +249,9 @@ db-iris - Interface to the DeutscheBahn online departure monitor
 
 =head1 SYNOPSIS
 
-B<db-iris> [B<-V>] [B<-c> I<classlist>] [B<-d> I<date>] [B<-o> I<output-flags>] [B<-p> I<platforms>] [B<-t> I<time>] [B<-T> I<typelist>] [B<-v> I<via>] I<station>
+B<db-iris> [B<-V>] [B<-c> I<classlist>] [B<-d> I<date>] [B<-o> I<output-flags>]
+[B<-p> I<platforms>] [B<-t> I<time>] [B<-T> I<typelist>] [B<-v> I<via>]
+I<station>
 
 =head1 VERSION
 
