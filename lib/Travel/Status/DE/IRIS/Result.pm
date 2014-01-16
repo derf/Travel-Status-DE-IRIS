@@ -2,7 +2,7 @@ package Travel::Status::DE::IRIS::Result;
 
 use strict;
 use warnings;
-use 5.010;
+use 5.014;
 use utf8;
 
 no if $] >= 5.018, warnings => 'experimental::smartmatch';

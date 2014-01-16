@@ -2,7 +2,7 @@ package Travel::Status::DE::IRIS;
 
 use strict;
 use warnings;
-use 5.018;
+use 5.014;
 
 no if $] >= 5.018, warnings => "experimental::smartmatch";
 
