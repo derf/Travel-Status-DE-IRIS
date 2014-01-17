@@ -19,7 +19,8 @@ my $status = Travel::Status::DE::IRIS->new(
 		month  => 1,
 		day    => 3,
 		hour   => 20,
-		minute => 1
+		minute => 1,
+		time_zone => 'Europe/Berlin',
 	)
 );
 

@@ -3,7 +3,6 @@ use strict;
 use warnings;
 use 5.014;
 
-use DateTime;
 use Test::More tests => 10;
 
 BEGIN {
