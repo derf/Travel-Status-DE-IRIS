@@ -64,9 +64,12 @@ sub new {
 
 	$self->get_realtime;
 
-	@{ $self->{results} }
-	  = grep { ( $_->departure // $_->arrival ) >= $self->{datetime} }
-	  @{ $self->{results} };
+	@{ $self->{results} } = grep {
+		my $d
+		  = ( $_->departure // $_->arrival )
+		  ->subtract_datetime( $self->{datetime} );
+		not $d->is_negative and $d->in_units('hours') < 4
+	} @{ $self->{results} };
 
 	@{ $self->{results} }
 	  = sort { $a->{datetime} <=> $b->{datetime} } @{ $self->{results} };
