@@ -11,7 +11,7 @@ use parent 'Class::Accessor';
 use Carp qw(cluck);
 use DateTime;
 use DateTime::Format::Strptime;
-use List::MoreUtils qw(uniq);
+use List::MoreUtils qw(none uniq);
 
 our $VERSION = '0.00';
 
@@ -192,6 +192,37 @@ sub delay_messages {
 	return @ret;
 }
 
+sub qos_messages {
+	my ($self) = @_;
+
+	my $strp = DateTime::Format::Strptime->new(
+		pattern   => '%y%m%d%H%M',
+		time_zone => 'Europe/Berlin',
+	);
+
+	my @keys = sort keys %{ $self->{messages} };
+	my @msgs = grep { $_->[1] eq 'q' } map { $self->{messages}{$_} } @keys;
+	my @ret;
+
+	for my $msg (@msgs) {
+		if ( my @superseded = $self->superseded_messages( $msg->[2] ) ) {
+			@ret = grep { not( $_->[2] ~~ \@superseded ) } @ret;
+		}
+
+		# 88 is "no qos shortcomings" and only required to filter previous
+		# qos messages
+		if ( $msg->[2] != 88 and ( none { $_->[2] == $msg->[2] } @ret ) ) {
+			push( @ret, $msg );
+		}
+	}
+
+	@ret = map {
+		[ $strp->parse_datetime( $_->[0] ), $self->translate_msg( $_->[2] ) ]
+	} @ret;
+
+	return @ret;
+}
+
 sub messages {
 	my ($self) = @_;
 
@@ -321,6 +352,17 @@ sub sched_route {
 
 	return ( $self->sched_route_pre, $self->{station},
 		$self->sched_route_post );
+}
+
+sub superseded_messages {
+	my ( $self, $msg ) = @_;
+
+	my %superseded = (
+		84 => [ 80, 82, 83, 85 ],
+		88 => [ 80, 82, 83, 85, 86, 87, 90, 91, 92, 93, 96, 97, 98 ],
+	);
+
+	return @{ $superseded{$msg} // [] };
 }
 
 sub translate_msg {
