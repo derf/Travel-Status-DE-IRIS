@@ -5,7 +5,7 @@ use 5.014;
 use utf8;
 
 use DateTime;
-use Test::More tests => 8;
+use Test::More tests => 10;
 use Test::Fatal;
 
 use Travel::Status::DE::IRIS;
@@ -95,5 +95,9 @@ is_deeply(
 
 is_deeply([$ice645->route_interesting],
 	['Bochum', 'Dortmund', 'Bielefeld'], 'route_interesting with just major');
+is_deeply([$s1->route_interesting],
+	[], 'route_interesting with realtime');
+is_deeply([$s9->route_interesting],
+	[], 'route_interesting, train ends here');
 is_deeply([$abr->route_interesting],
 	['Essen-Kray Süd', 'Bochum', 'Witten'], 'route_interesting with minor');
