@@ -4,7 +4,7 @@ use warnings;
 use 5.014;
 
 use DateTime;
-use Test::More tests => 4;
+use Test::More tests => 5;
 use Test::Fatal;
 
 use Travel::Status::DE::IRIS;
@@ -38,6 +38,21 @@ $status = Travel::Status::DE::IRIS->new(
 );
 
 ok( defined $status->errstr, 'constructor with missing data has errstr' );
+
+$status = Travel::Status::DE::IRIS->new(
+	iris_base => 'file:t/in',
+	station   => 'doesnotexist',
+	datetime  => DateTime->new(
+		year      => 2014,
+		month     => 1,
+		day       => 3,
+		hour      => 19,
+		minute    => 1,
+		time_zone => 'Europe/Berlin'
+	)
+);
+
+ok( defined $status->errstr, 'constructor with imaginary station has errstr' );
 
 $status = Travel::Status::DE::IRIS->new(
 	iris_base => 'file:t/in',

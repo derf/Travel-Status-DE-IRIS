@@ -5,7 +5,7 @@ use 5.014;
 use utf8;
 
 use DateTime;
-use Test::More tests => 434;
+use Test::More tests => 435;
 use Test::Fatal;
 
 use Travel::Status::DE::IRIS;
@@ -70,3 +70,20 @@ for my $i (0 .. $#results) {
 	is($r->destination, $r->route_end, "results[$i]: destination == routd_end");
 	is($r->train, $r->line, "results[$i]: line == train");
 }
+
+$status = Travel::Status::DE::IRIS->new(
+	iris_base => 'file:t/in',
+	station   => 'EE',
+	datetime  => DateTime->new(
+		year      => 2014,
+		month     => 1,
+		day       => 5,
+		hour      => 20,
+		minute    => 1,
+		time_zone => 'Europe/Berlin'
+	)
+);
+
+@results = $status->results;
+
+is(@results, 0, 'no data available -> empty result list');
