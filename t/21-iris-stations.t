@@ -3,12 +3,17 @@ use strict;
 use warnings;
 use 5.014;
 
-use Test::More tests => 10;
+use Test::More tests => 11;
 
 BEGIN {
 	use_ok('Travel::Status::DE::IRIS::Stations');
 }
 require_ok('Travel::Status::DE::IRIS::Stations');
+
+my @emptypairs = grep { not (length($_->[0]) and length($_->[1])) }
+	Travel::Status::DE::IRIS::Stations::get_stations;
+
+is_deeply(\@emptypairs, [], 'no stations with empty code / name');
 
 is_deeply(
 	[],
