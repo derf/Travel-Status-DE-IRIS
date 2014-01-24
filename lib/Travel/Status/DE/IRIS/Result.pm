@@ -509,6 +509,14 @@ Estimated delay in minutes (integer number). undef when no realtime data is
 available, negative if a train ends at the specified station and arrives /
 arrived early.
 
+=item $result->delay_messages
+
+Get all delay messages entered for this train. Returns a list
+of [datetime, string] listrefs. The datetime part is a DateTime(3pm) object
+corresponding to the point in time when the message was entered, the string
+is the message. If a delay reason was entered more than once, only its oldest
+record will be returned.
+
 =item $result->departure
 
 DateTime(3pm) object for the departure date and time. undef if the train ends
@@ -554,6 +562,13 @@ filtered from this list.
 =item $result->origin
 
 Alias for route_start.
+
+=item $result->qos_messages
+
+Get all current qos messages for this train. Returns a list
+of [datetime, string] listrefs. The datetime part is a DateTime(3pm) object
+corresponding to the point in time when the message was entered, the string
+is the message. Contains neither superseded messages nor duplicates.
 
 =item $result->platform
 
