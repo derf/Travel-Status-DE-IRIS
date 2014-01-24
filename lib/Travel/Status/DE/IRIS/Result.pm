@@ -13,7 +13,7 @@ use DateTime;
 use DateTime::Format::Strptime;
 use List::MoreUtils qw(none uniq);
 
-our $VERSION = '0.00';
+our $VERSION = '0.01';
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
 	qw(arrival classes date datetime delay departure is_cancelled line_no
@@ -882,7 +882,8 @@ None.
 
 =head1 BUGS AND LIMITATIONS
 
-None known.
+The messages returned by B<delay_messages> and B<qos_messages> contain
+duplicates.
 
 =head1 SEE ALSO
 
@@ -890,7 +891,7 @@ Travel::Status::DE::IRIS(3pm).
 
 =head1 AUTHOR
 
-Copyright (C) 2013 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
+Copyright (C) 2013-2014 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
 
 =head1 LICENSE
 

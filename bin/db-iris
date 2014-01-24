@@ -6,7 +6,7 @@ use utf8;
 
 no if $] >= 5.018, warnings => 'experimental::smartmatch';
 
-our $VERSION = '0.00';
+our $VERSION = '0.01';
 
 use DateTime;
 use DateTime::Format::Strptime;
@@ -148,6 +148,12 @@ sub display_result {
 
 		my $d = $line->[5];
 
+		if (    $edata{delays}
+			and $d->delay_messages )
+		{
+			printf( '  %s',
+				join( q{  }, map { $_->[1] } ( reverse $d->delay_messages ) ) );
+		}
 		if (    $edata{delay}
 			and ( $d->delay or $d->is_cancelled )
 			and $d->delay_messages )
@@ -262,7 +268,7 @@ I<station>
 
 =head1 VERSION
 
-version 0.00
+version 0.01
 
 =head1 DESCRIPTION
 
@@ -313,7 +319,7 @@ Valid output types are:
 
 If a train is delayed, show the most recent reason for this delay.
 
-=item d / delays
+=item D / delays
 
 List all delay reasons entered into the IRIS for each train, even if the
 particular train is on time by now.
@@ -415,7 +421,7 @@ None.
 
 =head1 BUGS AND LIMITATIONS
 
-Todo.
+B<-oD> and B<-oq> contain duplicate entries.
 
 =head1 AUTHOR
 

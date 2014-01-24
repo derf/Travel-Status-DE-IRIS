@@ -1,0 +1,28 @@
+Travel::Status::DE::IRIS - Interface to IRIS based web departure monitors
+-------------------------------------------------------------------------
+
+* <http://finalrewind.org/projects/Travel-Status-DE-IRIS/>
+
+
+Dependencies
+------------
+
+* perl version 5.14.2 or newer
+* Class::Accessor
+* DateTime
+* DateTime::Format::Strptime
+* List::MoreUtils
+* LWP::UserAgent
+* XML::LibXML
+
+Installation
+------------
+
+* perl Build.PL
+* ./Build
+* sudo ./Build install
+
+See also the Module::Build documentation.
+
+You can then run 'man Travel::Status::DE::IRIS'.
+This distribution also ships the script 'db-iris', see 'man db-iris'.
