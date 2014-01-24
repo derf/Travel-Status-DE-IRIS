@@ -56,7 +56,7 @@ my ($station) = @ARGV;
 $station = get_station($station);
 
 if ($date) {
-	my ( $day, $month, $year ) = split( /\./, $date );
+	my ( $day, $month, $year ) = split( qr{ [.] }ox, $date );
 	$datetime->set(
 		day   => $day,
 		month => $month,
@@ -64,7 +64,7 @@ if ($date) {
 	);
 }
 if ($time) {
-	my ( $hour, $minute, $second ) = split( /:/, $time );
+	my ( $hour, $minute, $second ) = split( qr{ : }ox, $time );
 	$datetime->set(
 		hour   => $hour,
 		minute => $minute,
@@ -156,7 +156,7 @@ sub display_result {
 		}
 		if ( $edata{qos} and $d->qos_messages ) {
 			printf( '  %s',
-				join( '  ', map { $_->[1] } ( reverse $d->qos_messages ) ) );
+				join( q{  }, map { $_->[1] } ( reverse $d->qos_messages ) ) );
 		}
 		print "\n";
 

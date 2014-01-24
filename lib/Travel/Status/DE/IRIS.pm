@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use 5.014;
 
-no if $] >= 5.018, warnings => "experimental::smartmatch";
+no if $] >= 5.018, warnings => 'experimental::smartmatch';
 
 our $VERSION = '0.00';
 
@@ -192,11 +192,11 @@ sub get_realtime {
 		for my $e_m (@e_ms) {
 			my $type  = $e_m->getAttribute('t');
 			my $value = $e_m->getAttribute('c');
-			my $id    = $e_m->getAttribute('id');
+			my $msgid = $e_m->getAttribute('id');
 			my $ts    = $e_m->getAttribute('ts');
 
 			if ($value) {
-				$messages{$id} = [ $ts, $type, $value ];
+				$messages{$msgid} = [ $ts, $type, $value ];
 			}
 		}
 
