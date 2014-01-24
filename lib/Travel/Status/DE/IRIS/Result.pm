@@ -462,7 +462,7 @@ arrival/departure received by Travel::Status::DE::IRIS
 
 =head1 VERSION
 
-version 1.02
+version 0.01
 
 =head1 DESCRIPTION
 
