@@ -247,7 +247,7 @@ for my $d ( $status->results() ) {
 		[
 			$timestr, $d->train,
 			$edata{route} ? join( q{  }, $d->route_interesting ) : q{},
-			$d->route_end, $d->platform, $d
+			$d->route_end, $d->platform // q{}, $d
 		]
 	);
 }
