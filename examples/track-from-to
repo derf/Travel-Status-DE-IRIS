@@ -218,7 +218,7 @@ for my $d ( $status_f->results ) {
 	my $timestr = $d->time;
 
 	my $d_via = first { $_->train_id eq $d->train_id } $status_t->results;
-	my $timestr_via = ($d_via ? $d_via->time : '??:??') . $delay;
+	my $timestr_via = ($d_via ? $d_via->arrival->strftime('%H:%M') : '??:??') . $delay;
 
 	push(
 		@output,
