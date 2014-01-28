@@ -19,9 +19,9 @@ use Travel::Status::DE::IRIS::Stations;
 
 my ( $date, $time );
 my $datetime = DateTime->now( time_zone => 'Europe/Berlin' );
-my $filter_via;
+my ( $filter_via, $track_via, $status_via );
 my ( @grep_class, @grep_type, @grep_platform );
-my ( %edata, @edata_pre );
+my ( %edata,      @edata_pre );
 
 my @output;
 
@@ -38,7 +38,8 @@ GetOptions(
 	't|time=s'      => \$time,
 	'T|type=s'      => \@grep_type,
 	'v|via=s'       => \$filter_via,
-	'V|version'     => \&show_version,
+	'V|track-via=s' => \$track_via,
+	'version'       => \&show_version,
 
 ) or show_help(1);
 
@@ -54,6 +55,10 @@ if ( @ARGV != 1 ) {
 
 my ($station) = @ARGV;
 $station = get_station($station);
+
+if ($track_via) {
+	$track_via = get_station($track_via);
+}
 
 if ($date) {
 	my ( $day, $month, $year ) = split( qr{ [.] }ox, $date );
@@ -89,6 +94,12 @@ my $status = Travel::Status::DE::IRIS->new(
 	datetime => $datetime,
 	station  => $station,
 );
+if ($track_via) {
+	$status_via = Travel::Status::DE::IRIS->new(
+		datetime => $datetime,
+		station  => $track_via,
+	);
+}
 
 sub get_station {
 	my ($input_name) = @_;
@@ -208,6 +219,12 @@ if ( my $err = $status->errstr ) {
 	exit 2;
 }
 
+if ( $status_via and $status_via->errstr ) {
+	my $err = $status_via->errstr;
+	say STDERR "Request error: ${err}";
+	exit 2;
+}
+
 for my $d ( $status->results() ) {
 
 	my @via;
@@ -232,7 +249,19 @@ for my $d ( $status->results() ) {
 	}
 
 	my $timestr;
-	if ( $edata{times} ) {
+	if ($track_via) {
+		$timestr = $d->time;
+		my $d_via = first { $_->train_id eq $d->train_id } $status_via->results;
+		if (   not $d_via
+			or not $d_via->arrival
+			or $d_via->arrival < $d->departure )
+		{
+			next;
+		}
+		my $timestr_via = $d_via->arrival->strftime('%H:%M') . $delay;
+		$timestr = $d->time . ' → ' . $timestr_via;
+	}
+	elsif ( $edata{times} ) {
 		$timestr = sprintf( '%5s → %5s',
 			$d->sched_arrival   ? $d->sched_arrival->strftime('%H:%M')   : q{},
 			$d->sched_departure ? $d->sched_departure->strftime('%H:%M') : q{},
