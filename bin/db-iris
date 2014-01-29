@@ -138,6 +138,14 @@ sub show_version {
 	exit 0;
 }
 
+sub sanitize_options {
+	if ( $track_via and $edata{times} ) {
+		say STDERR "Note: --track-via cannot be combined with --output=times";
+		say STDERR "Disabling option --output=times";
+		delete $edata{times};
+	}
+}
+
 sub display_result {
 	my (@lines) = @_;
 
@@ -225,6 +233,8 @@ if ( $status_via and $status_via->errstr ) {
 	exit 2;
 }
 
+sanitize_options();
+
 for my $d ( $status->results() ) {
 
 	my @via;
@@ -251,6 +261,9 @@ for my $d ( $status->results() ) {
 	my $timestr;
 	if ($track_via) {
 		$timestr = $d->time;
+		if ( not $d->departure ) {
+			next;
+		}
 		my $d_via = first { $_->train_id eq $d->train_id } $status_via->results;
 		if (   not $d_via
 			or not $d_via->arrival
@@ -293,6 +306,7 @@ db-iris - Interface to the DeutscheBahn online departure monitor
 
 B<db-iris> [B<-V>] [B<-c> I<classlist>] [B<-d> I<date>] [B<-o> I<output-flags>]
 [B<-p> I<platforms>] [B<-t> I<time>] [B<-T> I<typelist>] [B<-v> I<via>]
+[B<-V> I<track-via>]
 I<station>
 
 =head1 VERSION
@@ -418,9 +432,21 @@ system), "HKX" (private train not included in any DB tariffs) and
 
 =item B<-v>, B<--via> I<viastation>
 
-Only show trains serving I<viastation> after I<station>.
+Only show trains serving I<viastation> after I<station>. In this case,
+I<viastation> must match the station as contained in the train's route
+(see B<-of>), DS100 codes are not supported.
 
-=item B<-V>, B<--version>
+=item B<-V>, B<--track-via> I<viastation>
+
+Only show trains serving I<viastation> after I<station>. Show result
+timestamps as "HH:MM -> HH:MM +x", where the first time is the scheduled
+departure (without delay) at I<station> and the second the expected arrival
+(delay included) at I<viastation>. If a delay is known, it will be indicated
+by +x.
+
+Note that here, I<viastation> must be a regular station name or DS100 code.
+
+=item B<--version>
 
 Show version information.
 
