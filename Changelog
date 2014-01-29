@@ -2,6 +2,8 @@ git HEAD
 
     * Fix warnings when encountering unplanned (fchg-only) trains without
       arrival or departure platform
+    * db-iris: add -V / --track-via option to display departure at start
+      and expected arrival at a destination station
 
 Travel::Status::DE::IRIS 0.01 - Fri Jan 24 2014
 
