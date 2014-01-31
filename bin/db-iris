@@ -258,6 +258,7 @@ for my $d ( $status->results() ) {
 		$delay = ' CANCELED';
 	}
 
+	my $platformstr = $d->platform // q{};
 	my $timestr;
 	if ($track_via) {
 		$timestr = $d->time;
@@ -273,6 +274,8 @@ for my $d ( $status->results() ) {
 		}
 		my $timestr_via = $d_via->arrival->strftime('%H:%M') . $delay;
 		$timestr = $d->time . ' → ' . $timestr_via;
+		$platformstr = sprintf( '%2s → %2s', $d->platform // q{},
+			$d_via->platform // q{} );
 	}
 	elsif ( $edata{times} ) {
 		$timestr = sprintf( '%5s → %5s',
@@ -289,7 +292,7 @@ for my $d ( $status->results() ) {
 		[
 			$timestr, $d->train,
 			$edata{route} ? join( q{  }, $d->route_interesting ) : q{},
-			$d->route_end, $d->platform // q{}, $d
+			$d->route_end, $platformstr // q{}, $d
 		]
 	);
 }
