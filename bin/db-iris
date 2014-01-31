@@ -448,6 +448,12 @@ by +x.
 
 Note that here, I<viastation> must be a regular station name or DS100 code.
 
+Caveat: Some trains change their identity along the route. For instance, the
+line RE11 line in NRW has two identifiers, one for ME<ouml>nchengladbach
+<-> Duisburg and one for Duisburg <-> Hamm. B<track-via> is not able to handle
+those and will miss trains changing their identifier between I<station> and
+I<viastation>
+
 =item B<--version>
 
 Show version information.
