@@ -267,12 +267,12 @@ for my $d ( $status->results() ) {
 		}
 		my $d_via = first { $_->train_id eq $d->train_id } $status_via->results;
 		if (   not $d_via
-			or not $d_via->arrival
-			or $d_via->arrival < $d->departure )
+			or not $d_via->sched_arrival
+			or $d_via->sched_arrival < $d->departure )
 		{
 			next;
 		}
-		my $timestr_via = $d_via->arrival->strftime('%H:%M') . $delay;
+		my $timestr_via = $d_via->sched_arrival->strftime('%H:%M') . $delay;
 		$timestr = $d->time . ' → ' . $timestr_via;
 		$platformstr = sprintf( '%2s → %2s', $d->platform // q{},
 			$d_via->platform // q{} );
@@ -442,8 +442,8 @@ I<viastation> must match the station as contained in the train's route
 
 Only show trains serving I<viastation> after I<station>. Show result
 timestamps as "HH:MM -> HH:MM +x", where the first time is the scheduled
-departure (without delay) at I<station> and the second the expected arrival
-(delay included) at I<viastation>. If a delay is known, it will be indicated
+departure (without delay) at I<station> and the second the scheduled arrival
+(also withoyt delay) at I<viastation>. If a delay is known, it will be indicated
 by +x.
 
 Note that here, I<viastation> must be a regular station name or DS100 code.
