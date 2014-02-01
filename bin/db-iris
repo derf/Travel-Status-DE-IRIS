@@ -19,6 +19,7 @@ use Travel::Status::DE::IRIS::Stations;
 
 my ( $date, $time );
 my $datetime = DateTime->now( time_zone => 'Europe/Berlin' );
+my $realtime = 0;
 my ( $filter_via, $track_via, $status_via );
 my ( @grep_class, @grep_type, @grep_platform );
 my ( %edata,      @edata_pre );
@@ -35,6 +36,7 @@ GetOptions(
 	'h|help'        => sub { show_help(0) },
 	'o|output=s@'   => \@edata_pre,
 	'p|platform=s@' => \@grep_platform,
+	'r|realtime'    => \$realtime,
 	't|time=s'      => \$time,
 	'T|type=s'      => \@grep_type,
 	'v|via=s'       => \$filter_via,
@@ -101,6 +103,28 @@ if ($track_via) {
 	);
 }
 
+sub get_arrival {
+	my ( $result, $fmt ) = @_;
+
+	my $dt_arrival = $realtime ? $result->arrival : $result->sched_arrival;
+
+	if ($fmt) {
+		return $dt_arrival ? $dt_arrival->strftime($fmt) : q{};
+	}
+	return $dt_arrival;
+}
+
+sub get_departure {
+	my ( $result, $fmt ) = @_;
+
+	my $dt_dep = $realtime ? $result->departure : $result->sched_departure;
+
+	if ($fmt) {
+		return $dt_dep ? $dt_dep->strftime($fmt) : q{};
+	}
+	return $dt_dep;
+}
+
 sub get_station {
 	my ($input_name) = @_;
 
@@ -143,6 +167,11 @@ sub sanitize_options {
 		say STDERR "Note: --track-via cannot be combined with --output=times";
 		say STDERR "Disabling option --output=times";
 		delete $edata{times};
+	}
+	if ( $realtime and $edata{times} ) {
+		say STDERR "Note: --realtime cannot be combined with --output=times";
+		say STDERR "Disabling option --realtime";
+		$realtime = 0;
 	}
 }
 
@@ -195,9 +224,8 @@ sub display_result {
 			else {
 				printf(
 					"%5s → %5s  %+d\n",
-					$d->arrival   ? $d->arrival->strftime('%H:%M')   : q{},
-					$d->departure ? $d->departure->strftime('%H:%M') : q{},
-					$d->delay,
+					get_arrival( $d, '%H:%M' ),
+					get_departure( $d, '%H:%M' ), $d->delay,
 				);
 			}
 
@@ -261,7 +289,7 @@ for my $d ( $status->results() ) {
 	my $platformstr = $d->platform // q{};
 	my $timestr;
 	if ($track_via) {
-		$timestr = $d->time;
+		$timestr = get_departure( $d, '%H:%M' ) || get_arrival( $d, '%H:%M' );
 		if ( not $d->departure ) {
 			next;
 		}
@@ -272,8 +300,8 @@ for my $d ( $status->results() ) {
 		{
 			next;
 		}
-		my $timestr_via = $d_via->sched_arrival->strftime('%H:%M') . $delay;
-		$timestr = $d->time . ' → ' . $timestr_via;
+		my $timestr_via = get_arrival( $d_via, '%H:%M' ) . $delay;
+		$timestr .= ' → ' . $timestr_via;
 		$platformstr = sprintf( '%2s → %2s', $d->platform // q{},
 			$d_via->platform // q{} );
 	}
@@ -284,7 +312,9 @@ for my $d ( $status->results() ) {
 		);
 	}
 	else {
-		$timestr = $d->time . $delay;
+		$timestr
+		  = ( get_departure( $d, '%H:%M' ) || get_arrival( $d, '%H:%M' ) )
+		  . $delay;
 	}
 
 	push(
@@ -399,6 +429,11 @@ Show both scheduled and expected arrival and departure times.
 
 Only show arrivals/departures at I<platforms> (comma-separated list, option may
 be repeated).
+
+=item B<-r>, B<--realtime>
+
+Show estimated instead of scheduled time where available. Cannot be combiled
+with C<< --output=times >>.
 
 =item B<-t>, B<--time> I<time>
 
