@@ -200,8 +200,7 @@ sub display_result {
 		if (    $edata{delays}
 			and $d->delay_messages )
 		{
-			printf( '  %s',
-				join( q{  }, map { $_->[1] } ( reverse $d->delay_messages ) ) );
+			printf( '  %s', join( q{  }, map { $_->[1] } $d->delay_messages ) );
 		}
 		if (    $edata{delay}
 			and ( $d->delay or $d->is_cancelled )
@@ -210,8 +209,7 @@ sub display_result {
 			printf( '  %s', ( $d->delay_messages )[-1]->[1] );
 		}
 		if ( $edata{qos} and $d->qos_messages ) {
-			printf( '  %s',
-				join( q{  }, map { $_->[1] } ( reverse $d->qos_messages ) ) );
+			printf( '  %s', join( q{  }, map { $_->[1] } $d->qos_messages ) );
 		}
 		print "\n";
 
@@ -233,7 +231,7 @@ sub display_result {
 		}
 
 		if ( $edata{messages} ) {
-			for my $message ( reverse $d->messages ) {
+			for my $message ( $d->messages ) {
 
 				# leading spaces to align with regular output
 				printf( " %s  %s\n",
@@ -520,7 +518,7 @@ None.
 
 =head1 BUGS AND LIMITATIONS
 
-B<-oD> and B<-oq> contain duplicate entries.
+Unknown.
 
 =head1 AUTHOR
 

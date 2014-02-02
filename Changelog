@@ -6,6 +6,8 @@ git HEAD
       and expected arrival at a destination station
     * db-iris: Add -r / --realtime option to compute times using delay
       data
+    * Result: Remove duplicates in qos_messages and delay_messages,
+      return all messages in reverse order (newest first)
 
 Travel::Status::DE::IRIS 0.01 - Fri Jan 24 2014
 

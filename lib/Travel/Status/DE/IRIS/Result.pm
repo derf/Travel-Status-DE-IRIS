@@ -11,7 +11,7 @@ use parent 'Class::Accessor';
 use Carp qw(cluck);
 use DateTime;
 use DateTime::Format::Strptime;
-use List::MoreUtils qw(none uniq);
+use List::MoreUtils qw(none uniq firstval);
 
 our $VERSION = '0.01';
 
@@ -181,13 +181,16 @@ sub delay_messages {
 		time_zone => 'Europe/Berlin',
 	);
 
-	my @keys = sort keys %{ $self->{messages} };
-	my @msgs
-	  = uniq( grep { $_->[1] eq 'd' } map { $self->{messages}{$_} } @keys );
+	my @keys   = reverse sort keys %{ $self->{messages} };
+	my @msgs   = grep { $_->[1] eq 'd' } map { $self->{messages}{$_} } @keys;
+	my @msgids = uniq( map { $_->[2] } @msgs );
+	my @ret;
 
-	my @ret = map {
-		[ $strp->parse_datetime( $_->[0] ), $self->translate_msg( $_->[2] ) ]
-	} @msgs;
+	for my $id (@msgids) {
+		my $msg = firstval { $_->[2] == $id } @msgs;
+		push( @ret,
+			[ $strp->parse_datetime( $msg->[0] ), $self->translate_msg($id) ] );
+	}
 
 	return @ret;
 }
@@ -208,17 +211,18 @@ sub qos_messages {
 		if ( my @superseded = $self->superseded_messages( $msg->[2] ) ) {
 			@ret = grep { not( $_->[2] ~~ \@superseded ) } @ret;
 		}
+		@ret = grep { $_->[2] != $msg->[2] } @ret;
 
 		# 88 is "no qos shortcomings" and only required to filter previous
 		# qos messages
-		if ( $msg->[2] != 88 and ( none { $_->[2] == $msg->[2] } @ret ) ) {
+		if ( $msg->[2] != 88 ) {
 			push( @ret, $msg );
 		}
 	}
 
 	@ret = map {
 		[ $strp->parse_datetime( $_->[0] ), $self->translate_msg( $_->[2] ) ]
-	} @ret;
+	} reverse @ret;
 
 	return @ret;
 }
@@ -231,7 +235,7 @@ sub messages {
 		time_zone => 'Europe/Berlin',
 	);
 
-	my @messages = sort keys %{ $self->{messages} };
+	my @messages = reverse sort keys %{ $self->{messages} };
 	my @ret      = map {
 		[
 			$strp->parse_datetime( $self->{messages}->{$_}->[0] ),
@@ -511,11 +515,11 @@ arrived early.
 
 =item $result->delay_messages
 
-Get all delay messages entered for this train. Returns a list
-of [datetime, string] listrefs. The datetime part is a DateTime(3pm) object
-corresponding to the point in time when the message was entered, the string
-is the message. If a delay reason was entered more than once, only its oldest
-record will be returned.
+Get all delay messages entered for this train. Returns a list of [datetime,
+string] listrefs sorted by newest first. The datetime part is a DateTime(3pm)
+object corresponding to the point in time when the message was entered, the
+string is the message. If a delay reason was entered more than once, only its
+most recent record will be returned.
 
 =item $result->departure
 
@@ -553,11 +557,11 @@ Example: For the line C<< S 1 >>, line_no will return C<< 1 >>.
 
 =item $result->messages
 
-Get all qos and delay messages ever entered for this train. Returns a list
-of [datetime, string] listrefs. The datetime part is a DateTime(3pm) object
-corresponding to the point in time when the message was entered, the string
-is the message. Note that neither duplicates nor superseded messages are
-filtered from this list.
+Get all qos and delay messages ever entered for this train. Returns a list of
+[datetime, string] listrefs sorted by newest first. The datetime part is a
+DateTime(3pm) object corresponding to the point in time when the message was
+entered, the string is the message. Note that neither duplicates nor superseded
+messages are filtered from this list.
 
 =item $result->origin
 
@@ -565,10 +569,11 @@ Alias for route_start.
 
 =item $result->qos_messages
 
-Get all current qos messages for this train. Returns a list
-of [datetime, string] listrefs. The datetime part is a DateTime(3pm) object
-corresponding to the point in time when the message was entered, the string
-is the message. Contains neither superseded messages nor duplicates.
+Get all current qos messages for this train. Returns a list of [datetime,
+string] listrefs sorted by newest first. The datetime part is a DateTime(3pm)
+object corresponding to the point in time when the message was entered, the
+string is the message. Contains neither superseded messages nor duplicates (in
+case of a duplicate, only the most recent message is present)
 
 =item $result->platform
 
@@ -882,8 +887,7 @@ None.
 
 =head1 BUGS AND LIMITATIONS
 
-The messages returned by B<delay_messages> and B<qos_messages> contain
-duplicates.
+Unknown.
 
 =head1 SEE ALSO
 
