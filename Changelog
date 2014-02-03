@@ -1,4 +1,4 @@
-git HEAD
+Travel::Status::DE::IRIS 0.02 - Mon Feb 03 2014
 
     * Fix warnings when encountering unplanned (fchg-only) trains without
       arrival or departure platform
