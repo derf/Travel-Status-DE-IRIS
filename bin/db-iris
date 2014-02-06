@@ -228,8 +228,9 @@ sub display_result {
 			else {
 				printf(
 					"%5s → %5s  %+d\n",
-					get_arrival( $d, '%H:%M' ),
-					get_departure( $d, '%H:%M' ), $d->delay,
+					$d->arrival   ? $d->arrival->strftime('%H:%M')   : q{},
+					$d->departure ? $d->departure->strftime('%H:%M') : q{},
+					$d->delay,
 				);
 			}
 
