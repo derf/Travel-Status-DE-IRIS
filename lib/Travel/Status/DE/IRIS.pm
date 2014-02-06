@@ -30,7 +30,8 @@ sub new {
 		  // DateTime->now( time_zone => 'Europe/Berlin' ),
 		iris_base => $opt{iris_base}
 		  // 'http://iris.noncd.db.de/iris-tts/timetable',
-		station    => $opt{station},
+		lookahead => $opt{lookahead} // ( 4 * 60 ),
+		station => $opt{station},
 		user_agent => $ua,
 	};
 
@@ -68,7 +69,7 @@ sub new {
 		my $d
 		  = ( $_->departure // $_->arrival )
 		  ->subtract_datetime( $self->{datetime} );
-		not $d->is_negative and $d->in_units('hours') < 4
+		not $d->is_negative and $d->in_units('minutes') < $self->{lookahead}
 	} @{ $self->{results} };
 
 	@{ $self->{results} }
@@ -302,6 +303,18 @@ current date and time.
 =item B<iris_base> => I<url>
 
 IRIS base url, defaults to C<< http://iris.noncd.db.de/iris-tts/timetable >>.
+
+=item B<lookahead> => I<int>
+
+Compute only those results which are less than I<int> minutes in the future.
+Default: 240 (4 hours).
+
+Note that the DeutscheBahn IRIS backend only provides schedules up to four
+to five hours into the future, and this module only requests data for up to
+three hours. So in most cases, setting this to a value above 180 minutes will
+have no effect. However, as the IRIS occasionally contains unscheduled
+departures or qos messages known far in advance (e.g. 12 hours from now), any
+non-negative integer is accepted.
 
 =item B<station> => I<stationcode>
 

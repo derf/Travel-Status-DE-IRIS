@@ -5,7 +5,7 @@ use 5.014;
 use utf8;
 
 use DateTime;
-use Test::More tests => 435;
+use Test::More tests => 436;
 use Test::Fatal;
 
 use Travel::Status::DE::IRIS;
@@ -87,3 +87,21 @@ $status = Travel::Status::DE::IRIS->new(
 @results = $status->results;
 
 is(@results, 0, 'no data available -> empty result list');
+
+$status = Travel::Status::DE::IRIS->new(
+	iris_base => 'file:t/in',
+	lookahead => 0,
+	station   => 'EE',
+	datetime  => DateTime->new(
+		year      => 2014,
+		month     => 1,
+		day       => 3,
+		hour      => 20,
+		minute    => 1,
+		time_zone => 'Europe/Berlin'
+	)
+);
+
+@results = $status->results;
+
+is(@results, 0, 'lookahead 0 -> no results');

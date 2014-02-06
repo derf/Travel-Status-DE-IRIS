@@ -17,7 +17,7 @@ use List::MoreUtils qw(none);
 use Travel::Status::DE::IRIS;
 use Travel::Status::DE::IRIS::Stations;
 
-my ( $date, $time );
+my ( $date, $time, $lookahead );
 my $datetime = DateTime->now( time_zone => 'Europe/Berlin' );
 my $realtime = 0;
 my ( $filter_via, $track_via, $status_via );
@@ -34,6 +34,7 @@ GetOptions(
 	'c|class=s@'    => \@grep_class,
 	'd|date=s'      => \$date,
 	'h|help'        => sub { show_help(0) },
+	'l|lookahead=i' => \$lookahead,
 	'o|output=s@'   => \@edata_pre,
 	'p|platform=s@' => \@grep_platform,
 	'r|realtime'    => \$realtime,
@@ -93,10 +94,14 @@ for my $efield (@edata_pre) {
 }
 
 my $status = Travel::Status::DE::IRIS->new(
-	datetime => $datetime,
-	station  => $station,
+	datetime  => $datetime,
+	lookahead => $lookahead,
+	station   => $station,
 );
 if ($track_via) {
+
+	# lookahead should not be used here - the via stop is reached an unknown
+	# amount of time later
 	$status_via = Travel::Status::DE::IRIS->new(
 		datetime => $datetime,
 		station  => $track_via,
@@ -377,6 +382,16 @@ Valid classes are:
 Request results for I<date> in dd.mm. oder dd.mm.YYYY format. Note that only
 slight (a few hours max) deviations from the current time are supported by the
 IRIS backend, larger ones will not return data.
+
+=item B<-l>, B<--lookahead> I<int>
+
+Return only those results which are less than I<int> minutes in the future.
+Defaults to 240 (4 hours).
+
+Note that this is only an upper limit, not a guarantee to get every train
+with a departure in less than I<int> minutes. This guarantee holds only for
+I<int> below 120. However, any non-negative number is accepted for this
+option.
 
 =item B<-o>, B<--output> I<outputtypes>
 
