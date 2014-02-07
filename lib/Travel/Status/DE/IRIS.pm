@@ -65,6 +65,25 @@ sub new {
 
 	$self->get_realtime;
 
+	# tra (transfer?) indicates a train changing its ID, so there are two
+	# results for the same train. Remove the departure-only trains from the
+	# result set and merge them with their arrival-only counterpairt.
+	# This way, in case the arrival is available but the departure isn't,
+	# nothing gets lost.
+	my @merge_candidates
+	  = grep { $_->transfer and $_->departure } @{ $self->{results} };
+	@{ $self->{results} }
+	  = grep { not( $_->transfer and $_->departure ) } @{ $self->{results} };
+
+	for my $transfer (@merge_candidates) {
+		my $result
+		  = first { $_->transfer and $_->transfer eq $transfer->train_id }
+		@{ $self->{results} };
+		if ($result) {
+			$result->merge_with_departure($transfer);
+		}
+	}
+
 	@{ $self->{results} } = grep {
 		my $d
 		  = ( $_->departure // $_->arrival )
@@ -106,6 +125,7 @@ sub add_result {
 		$data{platform}    = $e_ar->getAttribute('pp');    # string, not number!
 		$data{route_pre}   = $e_ar->getAttribute('ppth');
 		$data{route_start} = $e_ar->getAttribute('pde');
+		$data{transfer}    = $e_ar->getAttribute('tra');
 		$data{arrival_wings} = $e_ar->getAttribute('wings');
 	}
 
@@ -114,6 +134,7 @@ sub add_result {
 		$data{platform}     = $e_dp->getAttribute('pp');   # string, not number!
 		$data{route_post}   = $e_dp->getAttribute('ppth');
 		$data{route_end}    = $e_dp->getAttribute('pde');
+		$data{transfer}     = $e_dp->getAttribute('tra');
 		$data{departure_wings} = $e_dp->getAttribute('wings');
 	}
 

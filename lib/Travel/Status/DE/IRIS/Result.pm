@@ -19,7 +19,7 @@ Travel::Status::DE::IRIS::Result->mk_ro_accessors(
 	qw(arrival classes date datetime delay departure is_cancelled line_no
 	  platform raw_id realtime_xml route_start route_end sched_arrival
 	  sched_departure sched_route_start sched_route_end start stop_no time
-	  train_id train_no type unknown_t unknown_o)
+	  train_id train_no transfer type unknown_t unknown_o)
 );
 
 sub new {
@@ -38,6 +38,11 @@ sub new {
 
 	$ref->{train_id} = $train_id;
 	$ref->{stop_no}  = $stop_no;
+
+	if ( $opt{transfer} ) {
+		my ($transfer) = split( /.\K-/, $opt{transfer} );
+		$ref->{transfer} = $transfer;
+	}
 
 	my $ar = $ref->{arrival} = $ref->{sched_arrival}
 	  = $strp->parse_datetime( $opt{arrival_ts} );
@@ -157,6 +162,30 @@ sub add_tl {
 	my ( $self, %attrib ) = @_;
 
 	# TODO
+
+	return $self;
+}
+
+sub merge_with_departure {
+	my ( $self, $result ) = @_;
+
+	# result must be departure-only
+
+	# departure is preferred over arrival, so overwrite default values
+	$self->{date}     = $result->{date};
+	$self->{time}     = $result->{time};
+	$self->{datetime} = $result->{datetime};
+	$self->{train_id} = $result->{train_id};    # TODO save old value
+	$self->{train_no} = $result->{train_no};    # TODO save old value
+
+	$self->{departure}        = $result->{departure};
+	$self->{departure_wings}  = $result->{departure_wings};
+	$self->{route_post}       = $result->{route_post};
+	$self->{sched_departure}  = $result->{sched_departure};
+	$self->{sched_route_post} = $result->{sched_route_post};
+
+	# update realtime info only if applicable
+	$self->{is_cancelled} ||= $result->{is_cancelled};
 
 	return $self;
 }
