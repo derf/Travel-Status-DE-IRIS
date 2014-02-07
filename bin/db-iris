@@ -272,7 +272,8 @@ for my $d ( $status->results() ) {
 
 	my @via;
 
-	@via = $d->route_post;
+	# route may be incomplete, so check route_end as well
+	@via = ( $d->route_post, $d->route_end );
 
 	if (   ( $filter_via and not( first { $_ =~ m{$filter_via}io } @via ) )
 		or ( @grep_class and none { $_ ~~ \@grep_class } $d->classes )

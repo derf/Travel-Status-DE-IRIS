@@ -1,6 +1,8 @@
 git HEAD
 
     * IRIS / db-iris: Add lookahead option
+    * db-iris: Fix --via not matching destination of trains with incomplete
+      route data
 
 Travel::Status::DE::IRIS 0.02 - Mon Feb 03 2014
 
