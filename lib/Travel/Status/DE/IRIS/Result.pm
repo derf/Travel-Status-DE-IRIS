@@ -180,6 +180,7 @@ sub merge_with_departure {
 
 	$self->{departure}        = $result->{departure};
 	$self->{departure_wings}  = $result->{departure_wings};
+	$self->{route_end}        = $result->{route_end};
 	$self->{route_post}       = $result->{route_post};
 	$self->{sched_departure}  = $result->{sched_departure};
 	$self->{sched_route_post} = $result->{sched_route_post};
