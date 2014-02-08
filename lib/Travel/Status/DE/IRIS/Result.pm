@@ -16,10 +16,11 @@ use List::MoreUtils qw(none uniq firstval);
 our $VERSION = '0.02';
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
-	qw(arrival classes date datetime delay departure is_cancelled line_no
-	  platform raw_id realtime_xml route_start route_end sched_arrival
-	  sched_departure sched_route_start sched_route_end start stop_no time
-	  train_id train_no transfer type unknown_t unknown_o)
+	qw(arrival classes date datetime delay departure is_cancelled is_transfer
+	  line_no old_train_id old_train_no platform raw_id realtime_xml
+	  route_start route_end sched_arrival sched_departure sched_route_start
+	  sched_route_end start stop_no time train_id train_no transfer type
+	  unknown_t unknown_o)
 );
 
 sub new {
@@ -171,12 +172,17 @@ sub merge_with_departure {
 
 	# result must be departure-only
 
+	$self->{is_transfer} = 1;
+
+	$self->{old_train_id} = $self->{train_id};
+	$self->{old_train_no} = $self->{train_no};
+
 	# departure is preferred over arrival, so overwrite default values
 	$self->{date}     = $result->{date};
 	$self->{time}     = $result->{time};
 	$self->{datetime} = $result->{datetime};
-	$self->{train_id} = $result->{train_id};    # TODO save old value
-	$self->{train_no} = $result->{train_no};    # TODO save old value
+	$self->{train_id} = $result->{train_id};
+	$self->{train_no} = $result->{train_no};
 
 	$self->{departure}        = $result->{departure};
 	$self->{departure_wings}  = $result->{departure_wings};
@@ -571,6 +577,19 @@ broken toilets.
 True if the train was cancelled, false otherwise. Note that this does not
 contain information about replacement trains or route diversions.
 
+=item $result->is_transfer
+
+True if the train changes its ID at the current station, false otherwise.
+
+An ID change means: There are two results in the system (e.g. RE 10228
+ME<uuml>nster -> Duisburg, RE 30028 Duisburg -> DE<uuml>sseldorf), but they are
+the same train (RE line 2 from ME<uuml>nster to DE<uuml>sseldorf in this case)
+and should be treated as such. In this case, Travel::Status::DE::IRIS merges
+the results and indicates it by setting B<is_transfer> to a true value.
+
+In case of a transfer, B<train_id> and B<train_no> are set to the "new"
+value, the old ones are available in B<old_train_id> and B<old_train_no>.
+
 =item $result->line
 
 Train type with line (such as C<< S 1 >>) if available, type with number
@@ -592,6 +611,18 @@ Get all qos and delay messages ever entered for this train. Returns a list of
 DateTime(3pm) object corresponding to the point in time when the message was
 entered, the string is the message. Note that neither duplicates nor superseded
 messages are filtered from this list.
+
+=item $result->old_train_id
+
+Numeric ID of the pre-transfer train. Seems to be unique for a year and
+trackable across stations. Only defined if a transfer took place,
+see also B<is_transfer>.
+
+=item $result->old_train_no
+
+Number of the pre-tarnsfer train, unique per day. E.g. C<< 2225 >> for
+C<< IC 2225 >>. See also B<is_transfer>. Only defined if a transfer took
+place, see also B<is_transfer>.
 
 =item $result->origin
 
