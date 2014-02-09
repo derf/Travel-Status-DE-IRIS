@@ -35,6 +35,8 @@ sub new {
 
 	my ( $train_id, $start_ts, $stop_no ) = split( /.\K-/, $opt{raw_id} );
 
+	$train_id =~ s{^-}{};
+
 	$ref->{start} = $strp->parse_datetime($start_ts);
 
 	$ref->{train_id} = $train_id;
@@ -42,6 +44,7 @@ sub new {
 
 	if ( $opt{transfer} ) {
 		my ($transfer) = split( /.\K-/, $opt{transfer} );
+		$transfer =~ s{^-}{};
 		$ref->{transfer} = $transfer;
 	}
 
