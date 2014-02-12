@@ -18,9 +18,9 @@ our $VERSION = '0.02';
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
 	qw(arrival classes date datetime delay departure is_cancelled is_transfer
 	  line_no old_train_id old_train_no platform raw_id realtime_xml
-	  route_start route_end sched_arrival sched_departure sched_route_start
-	  sched_route_end start stop_no time train_id train_no transfer type
-	  unknown_t unknown_o)
+	  route_start route_end sched_arrival sched_departure sched_platform
+	  sched_route_start sched_route_end start stop_no time train_id train_no
+	  transfer type unknown_t unknown_o)
 );
 
 sub new {
@@ -76,6 +76,7 @@ sub new {
 	$ref->{route_pre_incomplete}  = $ref->{route_end}  ? 1 : 0;
 	$ref->{route_post_incomplete} = $ref->{route_post} ? 1 : 0;
 
+	$ref->{sched_platform} = $ref->{platform};
 	$ref->{route_end}
 	  = $ref->{sched_route_end}
 	  = $ref->{route_end}
@@ -107,6 +108,10 @@ sub add_ar {
 		  ->in_units('minutes');
 	}
 
+	if ( $attrib{platform} ) {
+		$self->{platform} = $attrib{platform};
+	}
+
 	if ( $attrib{route_pre} ) {
 		$self->{route_pre} = [ split( qr{[|]}, $attrib{route_pre} // q{} ) ];
 		$self->{route_start} = $self->{route_pre}[0];
@@ -132,6 +137,10 @@ sub add_dp {
 		$self->{delay}
 		  = $self->departure->subtract_datetime( $self->sched_departure )
 		  ->in_units('minutes');
+	}
+
+	if ( $attrib{platform} ) {
+		$self->{platform} = $attrib{platform};
 	}
 
 	if ( $attrib{route_post} ) {
@@ -641,7 +650,7 @@ case of a duplicate, only the most recent message is present)
 
 =item $result->platform
 
-Arrivel/departure platform as string, undef if unknown. Note that this is
+Arrival/departure platform as string, undef if unknown. Note that this is
 not neccessarily a number, platform sections may be included (e.g.
 C<< 3a/b >>).
 
@@ -701,6 +710,12 @@ train starts here.
 
 DateTime(3pm) object for the scehduled departure date and time. undef if the
 train ends here.
+
+=item $result->sched_platform
+
+Scheduled Arrival/departure platform as string, undef if unknown. Note that
+this is not neccessarily a number, platform sections may be included (e.g.  C<<
+3a/b >>).
 
 =item $result->sched_route
 
