@@ -293,6 +293,9 @@ for my $d ( $status->results() ) {
 	}
 
 	my $platformstr = $d->platform // q{};
+	if ( ( $d->platform // q{} ) ne ( $d->sched_platform // q{} ) ) {
+		$platformstr .= ' !';
+	}
 	my $timestr;
 	if ($track_via) {
 		$timestr = get_departure( $d, '%H:%M' ) || get_arrival( $d, '%H:%M' );
@@ -362,6 +365,9 @@ either a DS100 station code (such as "EE") or a normal station name
 (such as "Essen Hbf" or "DO UniversitE<auml>t"). If no exact match is found,
 B<db-iris> will try to find station names containing I<station> as a
 substring.
+
+An exclamation mark (C<< ! >>) next to a platform indicates that it is not the
+scheduled one.
 
 =head1 OPTIONS
 
@@ -444,7 +450,7 @@ Show both scheduled and expected arrival and departure times.
 =item B<-p>, B<--platforms> I<platforms>
 
 Only show arrivals/departures at I<platforms> (comma-separated list, option may
-be repeated).
+be repeated).  This applies to actual departures, not schedules.
 
 =item B<-r>, B<--realtime>
 
