@@ -192,11 +192,12 @@ sub get_realtime {
 	my $station = ( $xml->findnodes('/timetable') )[0]->getAttribute('station');
 
 	for my $s ( $xml->findnodes('/timetable/s') ) {
-		my $id   = $s->getAttribute('id');
-		my $e_tl = ( $s->findnodes('./tl') )[0];
-		my $e_ar = ( $s->findnodes('./ar') )[0];
-		my $e_dp = ( $s->findnodes('./dp') )[0];
-		my @e_ms = $s->findnodes('.//m');
+		my $id    = $s->getAttribute('id');
+		my $e_tl  = ( $s->findnodes('./tl') )[0];
+		my $e_ar  = ( $s->findnodes('./ar') )[0];
+		my $e_dp  = ( $s->findnodes('./dp') )[0];
+		my $e_ref = ( $s->findnodes('./ref') )[0];
+		my @e_ms  = $s->findnodes('.//m');
 
 		my %messages;
 
@@ -232,6 +233,16 @@ sub get_realtime {
 				type      => $e_tl->getAttribute('c'),    # S/ICE/ERB/...
 				line_no   => $e_tl->getAttribute('l'),    # 1 -> S1, ...
 				unknown_o => $e_tl->getAttribute('o'),    # owner: 03/80/R2/...
+			);
+		}
+		if ($e_ref) {
+			$result->add_ref(
+				class     => $e_ref->getAttribute('f'),    # D N S F
+				unknown_t => $e_ref->getAttribute('t'),    # p
+				train_no  => $e_ref->getAttribute('n'),    # dep number
+				type      => $e_ref->getAttribute('c'),    # S/ICE/ERB/...
+				line_no   => $e_ref->getAttribute('l'),    # 1 -> S1, ...
+				unknown_o => $e_ref->getAttribute('o'),    # owner: 03/80/R2/...
 			);
 		}
 		if ($e_ar) {
