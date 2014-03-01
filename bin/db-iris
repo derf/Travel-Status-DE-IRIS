@@ -302,7 +302,11 @@ for my $d ( $status->results() ) {
 		if ( not $d->departure ) {
 			next;
 		}
-		my $d_via = first { $_->train_id eq $d->train_id } $status_via->results;
+		my $d_via = first {
+			$_->train_id eq $d->train_id
+			  or ( $_->old_train_id and $_->old_train_id eq $d->train_id );
+		}
+		$status_via->results;
 		if (   not $d_via
 			or not $d_via->sched_arrival
 			or $d_via->sched_arrival < $d->departure )

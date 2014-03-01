@@ -1,3 +1,7 @@
+git HEAD
+
+    * Fix --track-via <stop> not matching trains changing their ID at <stop>
+
 Travel::Status::DE::IRIS 0.03 - Fri Feb 14 2014
 
     * IRIS / db-iris: Add lookahead option
