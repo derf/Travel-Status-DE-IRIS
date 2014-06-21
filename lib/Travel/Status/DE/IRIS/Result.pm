@@ -471,6 +471,7 @@ sub translate_msg {
 		46 => 'Warten auf freie Einfahrt',
 		47 => 'Verspätete Bereitstellung',
 		48 => 'Verspätung aus vorheriger Fahrt',
+		64 => 'Weichenstörung',
 		55 => 'Technische Störung an einem anderen Zug',        # ?
 		80 => 'Abweichende Wagenreihung',
 		82 => 'Mehrere Wagen fehlen',
@@ -893,6 +894,10 @@ Source: Correlation between IRIS and DB RIS (bahn.de).
 =item d 55 : "Technische StE<ouml>rung an einem anderen Zug"
 
 Source: Correlation between IRIS and DB RIS (bahn.de).
+
+=item d 64 : "WeichenstE<ouml>rung"
+
+Source: correlation between IRIS and DB RIS (bahn.de).
 
 =item q 80 : "Abweichende Wagenreihung"
 
