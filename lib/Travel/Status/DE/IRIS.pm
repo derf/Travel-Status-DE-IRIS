@@ -31,8 +31,9 @@ sub new {
 		iris_base => $opt{iris_base}
 		  // 'http://iris.noncd.db.de/iris-tts/timetable',
 		lookahead => $opt{lookahead} // ( 4 * 60 ),
-		station => $opt{station},
-		user_agent => $ua,
+		serializable => $opt{serializable},
+		station      => $opt{station},
+		user_agent   => $ua,
 	};
 
 	bless( $self, $class );
@@ -210,7 +211,9 @@ sub get_realtime {
 			next;
 		}
 
-		$result->add_realtime($s);
+		if ( not $self->{serializable} ) {
+			$result->add_realtime($s);
+		}
 
 		for my $e_m (@e_ms) {
 			my $type  = $e_m->getAttribute('t');
