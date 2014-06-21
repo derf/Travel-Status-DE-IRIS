@@ -486,6 +486,7 @@ sub translate_msg {
 		91 => 'Eingeschränkte Fahrradmitnahme',
 		92 => 'Klimaanlage in einzelnen Wagen ausgefallen',
 		93 => 'Fehlende oder gestörte behindertengerechte Einrichtung',
+		94 => 'Ersatzbewirtschaftung',
 		96 => 'Der Zug ist überbesetzt',
 		97 => 'Der Zug ist überbesetzt',
 		98 => 'Sonstige Qualitätsmängel',
@@ -953,6 +954,10 @@ Might also mean "Rollstuhlgerechtes WC in einem Wagen ausgefallen"
 
 Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
 Might also mean "Kein rollstuhlgerechtes WC" (source: frubi).
+
+=item q 94 : "Ersatzbewirtschaftung"
+
+Estimated from a comparison with bahn.de/ris messages. Needs to be verified.
 
 =item q 96 : "Der Zug ist E<uuml>berbesetzt"
 
