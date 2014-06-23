@@ -37,7 +37,7 @@ $status = Travel::Status::DE::IRIS->new(
 	)
 );
 
-ok( defined $status->errstr, 'constructor with missing data has errstr' );
+ok( defined $status->warnstr, 'constructor with missing data has warnstr' );
 
 $status = Travel::Status::DE::IRIS->new(
 	iris_base => 'file:t/in',

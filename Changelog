@@ -1,6 +1,8 @@
 git HEAD
 
     * Fix --track-via <stop> not matching trains changing their ID at <stop>
+    * Do not errour out if only partial data is available, show partial data
+      and a warning instead (closes #4)
 
 Travel::Status::DE::IRIS 0.03 - Fri Feb 14 2014
 

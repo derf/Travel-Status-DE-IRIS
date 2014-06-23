@@ -259,11 +259,18 @@ if ( my $err = $status->errstr ) {
 	say STDERR "Request error: ${err}";
 	exit 2;
 }
+if ( my $warning = $status->warnstr ) {
+	say STDERR "Request warning: ${warning}";
+}
 
 if ( $status_via and $status_via->errstr ) {
 	my $err = $status_via->errstr;
-	say STDERR "Request error: ${err}";
+	say STDERR "Request error in --via : ${err}";
 	exit 2;
+}
+if ( $status_via and $status_via->warnstr ) {
+	my $warning = $status_via->warnstr;
+	say STDERR "Request warning in --via : ${warning}";
 }
 
 sanitize_options();

@@ -43,7 +43,8 @@ sub new {
 	my $res_st = $ua->get( $self->{iris_base} . '/station/' . $opt{station} );
 
 	if ( $res_st->is_error ) {
-		$self->{errstr} = $res_st->status_line;
+		$self->{errstr} = 'Failed to fetch station data: Server returned '
+		  . $res_st->status_line;
 		return $self;
 	}
 
@@ -159,7 +160,8 @@ sub get_timetable {
 		$dt->strftime( $self->{iris_base} . "/plan/${eva}/%y%m%d/%H" ) );
 
 	if ( $res->is_error ) {
-		$self->{errstr} = $res->status_line;
+		$self->{warnstr} = 'Failed to fetch a schedule part: Server returned '
+		  . $res->status_line;
 		return $self;
 	}
 
@@ -184,7 +186,8 @@ sub get_realtime {
 	my $res = $self->{user_agent}->get( $self->{iris_base} . "/fchg/${eva}" );
 
 	if ( $res->is_error ) {
-		$self->{errstr} = $res->status_line;
+		$self->{warnstr} = 'Failed to fetch realtime data: Server returned '
+		  . $res->status_line;
 		return $self;
 	}
 
@@ -282,6 +285,12 @@ sub results {
 	return @{ $self->{results} // [] };
 }
 
+sub warnstr {
+	my ($self) = @_;
+
+	return $self->{warnstr};
+}
+
 1;
 
 __END__
@@ -364,13 +373,18 @@ All other options are passed to the LWP::UserAgent(3pm) constructor.
 
 =item $status->errstr
 
-In case of an HTTP request or IRIS error, returns a string describing it.
+In case of a fatal HTTP request or IRIS error, returns a string describing it.
 Returns undef otherwise.
 
 =item $status->results
 
 Returns a list of Travel::Status::DE::IRIS(3pm) objects, each one describing
 one arrival and/or departure.
+
+=item $status->errstr
+
+In case of a (probably) non-fatal HTTP request or IRIS error, returns a string
+describing it.  Returns undef otherwise.
 
 =back
 
