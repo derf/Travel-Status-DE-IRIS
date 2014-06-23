@@ -1,6 +1,9 @@
 git HEAD
 
     * Fix --track-via <stop> not matching trains changing their ID at <stop>
+    * Add new (not entirely verified) IRIS delay and qos messages
+    * IRIS: add serializable option. Use this if you intend to serialize
+      the list returned by ->results
     * Do not errour out if only partial data is available, show partial data
       and a warning instead (closes #4)
 
