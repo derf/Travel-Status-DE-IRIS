@@ -381,7 +381,7 @@ Returns undef otherwise.
 Returns a list of Travel::Status::DE::IRIS(3pm) objects, each one describing
 one arrival and/or departure.
 
-=item $status->errstr
+=item $status->warnstr
 
 In case of a (probably) non-fatal HTTP request or IRIS error, returns a string
 describing it.  Returns undef otherwise.
