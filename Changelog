@@ -1,4 +1,4 @@
-git HEAD
+Travel::Status::DE::IRIS 0.04 - Sat Jun 28 2014
 
     * Fix --track-via <stop> not matching trains changing their ID at <stop>
     * Add new (not entirely verified) IRIS delay and qos messages
@@ -6,6 +6,7 @@ git HEAD
       the list returned by ->results
     * Do not errour out if only partial data is available, show partial data
       and a warning instead (closes #4)
+    * Add several qos and delay messages
 
 Travel::Status::DE::IRIS 0.03 - Fri Feb 14 2014
 
