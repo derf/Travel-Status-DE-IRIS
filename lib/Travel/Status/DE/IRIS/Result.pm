@@ -474,6 +474,7 @@ sub translate_msg {
 		64 => 'Weichenstörung',
 		55 => 'Technische Störung an einem anderen Zug',        # ?
 		57 => 'Zusätzlicher Halt',                              # ?
+		58 => 'Umleitung(?)',                                   # ?
 		80 => 'Abweichende Wagenreihung',
 		82 => 'Mehrere Wagen fehlen',
 		83 => 'Fehlender Zugteil',
@@ -901,6 +902,11 @@ Source: Correlation between IRIS and DB RIS (bahn.de).
 
 Source: Correlation between IRIS and DB RIS (bahn.de). Only one entry so far,
 so may be wrong.
+
+=item d 58 : "Umleitung"
+
+Source: Correlation between IRIS and DB RIS (bahn.de). Several entries, related
+to "Notarzteinsatz am Gleis".
 
 =item d 64 : "WeichenstE<ouml>rung"
 
