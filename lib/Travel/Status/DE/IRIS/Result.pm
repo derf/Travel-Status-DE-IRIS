@@ -475,6 +475,7 @@ sub translate_msg {
 		55 => 'Technische Störung an einem anderen Zug',        # ?
 		57 => 'Zusätzlicher Halt',                              # ?
 		58 => 'Umleitung(?)',                                   # ?
+		63 => 'Technische Untersuchung am Zug',
 		80 => 'Abweichende Wagenreihung',
 		82 => 'Mehrere Wagen fehlen',
 		83 => 'Fehlender Zugteil',
@@ -907,6 +908,8 @@ so may be wrong.
 
 Source: Correlation between IRIS and DB RIS (bahn.de). Several entries, related
 to "Notarzteinsatz am Gleis".
+
+=item d 63 : "Technische Untersuchung am Zug"
 
 =item d 64 : "WeichenstE<ouml>rung"
 
