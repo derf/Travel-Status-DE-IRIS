@@ -482,7 +482,6 @@ causes all arrivals/departures whose type is not in I<typelist> to be discarded.
 The following valid values are known:
 
     local transport:
-    IR   Inter-Regio (rare in Germany, mostly used in Switzerland)
     IRE  Inter-Regio Express (rare)
     RB   Regionalbahn (slower than RE)
     RE   Regional-Express
@@ -492,6 +491,7 @@ The following valid values are known:
     D    "Schnellzug" (generic fast train, rare)
     EC   Eurocity
     IC   Intercity
+    IR   Inter-Regio (rare in Germany, mostly used in Switzerland)
     ICE  Intercity-Express
     THA  Thalys
 
