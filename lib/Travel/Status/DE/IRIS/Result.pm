@@ -440,6 +440,7 @@ sub translate_msg {
 		6  => 'Betätigen der Notbremse',
 		7  => 'Personen im Gleis',
 		8  => 'Notarzteinsatz am Gleis',
+		9  => 'Streikauswirkungen',
 		10 => 'Ausgebrochene Tiere im Gleis',
 		11 => 'Unwetter',
 		15 => 'Beeinträchtigung durch Vandalismus',
@@ -832,6 +833,8 @@ Source: Correlation between IRIS and DB RIS (bahn.de).
 =item d  7 : "Personen im Gleis"
 
 =item d  8 : "Notarzteinsatz am Gleis"
+
+=item d 9 : "Streikauswirkungen"
 
 =item d 10 : "Ausgebrochene Tiere im Gleis"
 
