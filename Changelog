@@ -1,3 +1,7 @@
+Travel::Status::DE::IRIS 0.05 - Thu Oct 16 2014
+
+    * Support additional IRIS delay messages
+
 Travel::Status::DE::IRIS 0.04 - Sat Jun 28 2014
 
     * Fix --track-via <stop> not matching trains changing their ID at <stop>
