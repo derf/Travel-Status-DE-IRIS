@@ -834,7 +834,7 @@ Source: Correlation between IRIS and DB RIS (bahn.de).
 
 =item d  8 : "Notarzteinsatz am Gleis"
 
-=item d 9 : "Streikauswirkungen"
+=item d  9 : "Streikauswirkungen"
 
 =item d 10 : "Ausgebrochene Tiere im Gleis"
 
