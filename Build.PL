@@ -25,6 +25,7 @@ Module::Build->new(
 		'DateTime::Format::Strptime' => 0,
 		'Encode' => 0,
 		'Getopt::Long' => 0,
+		'List::Compare' => '0.29',
 		'List::MoreUtils' => 0,
 		'List::Util' => 0,
 		'LWP::UserAgent' => 0,

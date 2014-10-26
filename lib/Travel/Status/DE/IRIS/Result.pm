@@ -11,6 +11,7 @@ use parent 'Class::Accessor';
 use Carp qw(cluck);
 use DateTime;
 use DateTime::Format::Strptime;
+use List::Compare;
 use List::MoreUtils qw(none uniq firstval);
 
 our $VERSION = '0.05';
@@ -187,6 +188,24 @@ sub add_tl {
 	# TODO
 
 	return $self;
+}
+
+sub additional_stops {
+	my ($self) = @_;
+
+	$self->{comparator}
+	  //= List::Compare->new( $self->{sched_route_post}, $self->{route_post} );
+
+	return $self->{comparator}->get_complement;
+}
+
+sub canceled_stops {
+	my ($self) = @_;
+
+	$self->{comparator}
+	  //= List::Compare->new( $self->{sched_route_post}, $self->{route_post} );
+
+	return $self->{comparator}->get_unique;
 }
 
 sub merge_with_departure {
@@ -475,7 +494,7 @@ sub translate_msg {
 		64 => 'Weichenstörung',
 		55 => 'Technische Störung an einem anderen Zug',        # ?
 		57 => 'Zusätzlicher Halt',                              # ?
-		58 => 'Umleitung(?)',                                   # ?
+		58 => 'Umleitung(?)',                                    # ?
 		63 => 'Technische Untersuchung am Zug',
 		80 => 'Abweichende Wagenreihung',
 		82 => 'Mehrere Wagen fehlen',

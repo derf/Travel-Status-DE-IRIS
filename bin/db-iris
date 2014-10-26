@@ -82,14 +82,16 @@ if ($time) {
 
 for my $efield (@edata_pre) {
 	given ($efield) {
-		when ('d') { $edata{delay}     = 1 }
-		when ('D') { $edata{delays}    = 1 }
-		when ('f') { $edata{fullroute} = 1 }
-		when ('m') { $edata{messages}  = 1 }
-		when ('q') { $edata{qos}       = 1 }
-		when ('r') { $edata{route}     = 1 }
-		when ('t') { $edata{times}     = 1 }
-		default    { $edata{$efield}   = 1 }
+		when ('a') { $edata{additional} = 1 }
+		when ('c') { $edata{canceled}   = 1 }
+		when ('d') { $edata{delay}      = 1 }
+		when ('D') { $edata{delays}     = 1 }
+		when ('f') { $edata{fullroute}  = 1 }
+		when ('m') { $edata{messages}   = 1 }
+		when ('q') { $edata{qos}        = 1 }
+		when ('r') { $edata{route}      = 1 }
+		when ('t') { $edata{times}      = 1 }
+		default    { $edata{$efield}    = 1 }
 	}
 }
 
@@ -245,6 +247,15 @@ sub display_result {
 					$message->[1] );
 			}
 			print "\n";
+		}
+
+		if ( $edata{additional} and $d->additional_stops ) {
+			printf( "Zusätzlicher Halt in: %s\n",
+				join( q{, }, $d->additional_stops ) );
+		}
+
+		if ( $edata{canceled} and $d->canceled_stops ) {
+			printf( "Ohne Halt in: %s\n", join( q{, }, $d->canceled_stops ) );
 		}
 
 		if ( $edata{fullroute} ) {
