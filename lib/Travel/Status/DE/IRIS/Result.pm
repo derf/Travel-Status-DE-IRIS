@@ -190,22 +190,51 @@ sub add_tl {
 	return $self;
 }
 
+# List::Compare does not keep the order of its arguments (even with unsorted).
+# So we need to re-sort all stops to maintain their original order.
+sub sorted_sublist {
+	my ( $self, $list, $sublist ) = @_;
+	my %pos;
+
+	if ( not $sublist or not @{$sublist} ) {
+		return;
+	}
+
+	for my $i ( 0 .. $#{$list} ) {
+		$pos{ $list->[$i] } = $i;
+	}
+
+	my @sorted = sort { $pos{$a} <=> $pos{$b} } @{$sublist};
+
+	return @sorted;
+}
+
 sub additional_stops {
 	my ($self) = @_;
 
-	$self->{comparator}
-	  //= List::Compare->new( $self->{sched_route_post}, $self->{route_post} );
+	$self->{comparator} //= List::Compare->new(
+		{
+			lists    => [ $self->{sched_route_post}, $self->{route_post} ],
+			unsorted => 1,
+		}
+	);
 
-	return $self->{comparator}->get_complement;
+	return $self->sorted_sublist( [ $self->{route_post} ],
+		[ $self->{comparator}->get_complement ] );
 }
 
 sub canceled_stops {
 	my ($self) = @_;
 
-	$self->{comparator}
-	  //= List::Compare->new( $self->{sched_route_post}, $self->{route_post} );
+	$self->{comparator} //= List::Compare->new(
+		{
+			lists    => [ $self->{sched_route_post}, $self->{route_post} ],
+			unsorted => 1,
+		}
+	);
 
-	return $self->{comparator}->get_unique;
+	return $self->sorted_sublist( [ $self->{sched_route_post} ],
+		[ $self->{comparator}->get_unique ] );
 }
 
 sub merge_with_departure {
