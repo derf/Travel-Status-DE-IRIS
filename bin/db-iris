@@ -272,6 +272,7 @@ if ( my $err = $status->errstr ) {
 }
 if ( my $warning = $status->warnstr ) {
 	say STDERR "Request warning: ${warning}";
+	say STDERR '                 Information may be incomplete';
 }
 
 if ( $status_via and $status_via->errstr ) {
@@ -282,6 +283,7 @@ if ( $status_via and $status_via->errstr ) {
 if ( $status_via and $status_via->warnstr ) {
 	my $warning = $status_via->warnstr;
 	say STDERR "Request warning in --via : ${warning}";
+	say STDERR '                           Information may be incomplete';
 }
 
 sanitize_options();
