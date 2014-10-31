@@ -436,6 +436,16 @@ Valid output types are:
 
 =over
 
+=item a / additional
+
+If a train's route deviates from its schedule: Print a list of additional
+(unscheduled) stops it will stop at.
+
+=item c / canceled
+
+If a train's route deviates from its schedule: Print a list of canceled
+stops (scheduled stops which will not be served).
+
 =item d / delay
 
 If a train is delayed, show the most recent reason for this delay.

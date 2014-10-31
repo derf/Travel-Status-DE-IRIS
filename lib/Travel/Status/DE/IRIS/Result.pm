@@ -593,10 +593,22 @@ the platform, time, route and more.
 
 =over
 
+=item $result->additional_stops
+
+Returns served stops which are not part of the schedule. I.e., this is the
+set of actual stops (B<route_post>) minus the set of scheduled stops
+(B<sched_route_post>).
+
 =item $result->arrival
 
 DateTime(3pm) object for the arrival date and time. undef if the
 train starts here. Contains realtime data if available.
+
+=item $result->canceled_stops
+
+Returns stops which are scheduled, but will not be served by this train.
+I.e., this is the set of scheduled stops (B<sched_route_post>) minus the set of
+actual stops (B<route_post>).
 
 =item $result->classes
 
