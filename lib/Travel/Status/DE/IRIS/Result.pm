@@ -118,6 +118,12 @@ sub add_ar {
 		$self->{route_start} = $self->{route_pre}[0];
 	}
 
+	if ( $attrib{sched_route_pre} ) {
+		$self->{sched_route_pre}
+		  = [ split( qr{[|]}, $attrib{sched_route_pre} // q{} ) ];
+		$self->{sched_route_start} = $self->{sched_route_pre}[0];
+	}
+
 	if ( $attrib{status} and $attrib{status} eq 'c' ) {
 		$self->{is_cancelled} = 1;
 	}
@@ -147,6 +153,12 @@ sub add_dp {
 	if ( $attrib{route_post} ) {
 		$self->{route_post} = [ split( qr{[|]}, $attrib{route_post} // q{} ) ];
 		$self->{route_end} = $self->{route_post}[-1];
+	}
+
+	if ( $attrib{sched_route_post} ) {
+		$self->{sched_route_post}
+		  = [ split( qr{[|]}, $attrib{sched_route_post} // q{} ) ];
+		$self->{sched_route_end} = $self->{sched_route_post}[-1];
 	}
 
 	if ( $attrib{status} and $attrib{status} eq 'c' ) {

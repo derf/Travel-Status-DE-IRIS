@@ -1,3 +1,7 @@
+git HEAD
+
+    * Improved support for delayed trains
+
 Travel::Status::DE::IRIS 0.05 - Thu Oct 16 2014
 
     * Support additional IRIS delay messages

@@ -53,7 +53,7 @@ is($ice645->raw_id, '1065350279715650378-1401031812-6', '->raw_id');
 is($ice645->route_end, 'Berlin Ostbahnhof', '->routd_end');
 is($ice645->route_start, 'Köln/Bonn Flughafen', '->routd_start');
 is($ice645->sched_route_end, 'Berlin Ostbahnhof', '->sched_route_end');
-is($ice645->sched_route_start, 'Köln/Bonn Flughafen', '->sched_routd_start');
+is($ice645->sched_route_start, 'Köln/Bonn Flughafen', '->sched_route_start');
 is($ice645->stop_no, 6, '->stop_no');
 is($ice645->time, '19:23', '->time');
 is($ice645->train, 'ICE 645', '->train');
