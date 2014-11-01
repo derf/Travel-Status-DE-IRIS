@@ -231,7 +231,7 @@ sub additional_stops {
 		}
 	);
 
-	return $self->sorted_sublist( [ $self->{route_post} ],
+	return $self->sorted_sublist( $self->{route_post},
 		[ $self->{comparator}->get_complement ] );
 }
 
@@ -245,7 +245,7 @@ sub canceled_stops {
 		}
 	);
 
-	return $self->sorted_sublist( [ $self->{sched_route_post} ],
+	return $self->sorted_sublist( $self->{sched_route_post},
 		[ $self->{comparator}->get_unique ] );
 }
 
