@@ -14,7 +14,7 @@ use DateTime::Format::Strptime;
 use List::Compare;
 use List::MoreUtils qw(none uniq firstval);
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
 	qw(arrival classes date datetime delay departure is_cancelled is_transfer
@@ -592,7 +592,7 @@ arrival/departure received by Travel::Status::DE::IRIS
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 DESCRIPTION
 

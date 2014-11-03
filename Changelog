@@ -1,4 +1,4 @@
-git HEAD
+Travel::Status::DE::IRIS 0.06 - Mon Nov 03 2014
 
     * New non-core module dependency: List::Compare
     * Add support for canceled and additional stops

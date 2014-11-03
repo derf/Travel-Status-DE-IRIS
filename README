@@ -11,6 +11,7 @@ Dependencies
 * Class::Accessor
 * DateTime
 * DateTime::Format::Strptime
+* List::Compare
 * List::MoreUtils
 * LWP::UserAgent
 * XML::LibXML

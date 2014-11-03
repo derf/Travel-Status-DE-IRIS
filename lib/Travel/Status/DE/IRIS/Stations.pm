@@ -7,7 +7,7 @@ use utf8;
 
 use List::MoreUtils qw(firstval);
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 my @stations = (
 
@@ -15154,7 +15154,7 @@ Travel::Status::DE::IRIS::Stations - Station name to station code mapping
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 DESCRIPTION
 
