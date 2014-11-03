@@ -1,6 +1,11 @@
 git HEAD
 
-    * Improved support for delayed trains
+    * New non-core module dependency: List::Compare
+    * Add support for canceled and additional stops
+    * db-iris: Add options -oa and -oc
+    * Result: Add accessors additional_stops and canceled_stops
+    * Improve support for delayed trains
+    * Support additional IRIS delay messages
 
 Travel::Status::DE::IRIS 0.05 - Thu Oct 16 2014
 
