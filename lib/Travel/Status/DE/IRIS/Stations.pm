@@ -15257,7 +15257,7 @@ sub get_station_by_name {
 	$nname = normalize($nname);
 	$actual_match = firstval { $nname eq normalize( lc( $_->[1] ) ) } @stations;
 	if ($actual_match) {
-		return $actual_match;
+		return ($actual_match);
 	}
 
 	return ( grep { $_->[1] =~ m{$name}i } @stations );
