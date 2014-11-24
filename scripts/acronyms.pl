@@ -45,6 +45,20 @@ sub get_stations {
 	return @stations;
 }
 
+sub normalize {
+	my ($val) = @_;
+
+	$val =~ s{Ä}{Ae}g;
+	$val =~ s{Ö}{Oe}g;
+	$val =~ s{Ü}{Ue}g;
+	$val =~ s{ä}{ae}g;
+	$val =~ s{ö}{oe}g;
+	$val =~ s{ß}{sz}g;
+	$val =~ s{ü}{ue}g;
+
+	return $val;
+}
+
 sub get_station {
 	my ( $name ) = @_;
 
@@ -65,6 +79,12 @@ sub get_station_by_name {
 
 	if ($actual_match) {
 		return ($actual_match);
+	}
+
+	$nname = normalize($nname);
+	$actual_match = firstval { $nname eq normalize(lc($_->[1])) } @stations;
+	if ($actual_match) {
+		return $actual_match;
 	}
 
 	return ( grep { $_->[1] =~ m{$name}i } @stations );
