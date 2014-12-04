@@ -254,6 +254,7 @@ sub get_realtime {
 		if ($e_ar) {
 			$result->add_ar(
 				arrival_ts      => $e_ar->getAttribute('ct'),
+				plan_arrivaL_ts => $e_ar->getAttribute('pt'),
 				platform        => $e_ar->getAttribute('cp'),
 				route_pre       => $e_ar->getAttribute('cpth'),
 				sched_route_pre => $e_ar->getAttribute('ppth'),
@@ -262,11 +263,12 @@ sub get_realtime {
 		}
 		if ($e_dp) {
 			$result->add_dp(
-				departure_ts     => $e_dp->getAttribute('ct'),
-				platform         => $e_dp->getAttribute('cp'),
-				route_post       => $e_dp->getAttribute('cpth'),
-				sched_route_post => $e_dp->getAttribute('ppth'),
-				status           => $e_dp->getAttribute('cs'),
+				departure_ts      => $e_dp->getAttribute('ct'),
+				plan_departure_ts => $e_dp->getAttribute('pt'),
+				platform          => $e_dp->getAttribute('cp'),
+				route_post        => $e_dp->getAttribute('cpth'),
+				sched_route_post  => $e_dp->getAttribute('ppth'),
+				status            => $e_dp->getAttribute('cs'),
 			);
 		}
 

@@ -102,6 +102,13 @@ sub add_ar {
 		time_zone => 'Europe/Berlin',
 	);
 
+	# unscheduled arrivals may not appear in the plan, but we do need to
+	# know their planned arrival time
+	if ( $attrib{plan_arrival_ts} ) {
+		$self->{sched_arrival}
+		  = $strp->parse_datetime( $attrib{plan_arrival_ts} );
+	}
+
 	if ( $attrib{arrival_ts} ) {
 		$self->{arrival} = $strp->parse_datetime( $attrib{arrival_ts} );
 		$self->{delay}
@@ -138,6 +145,13 @@ sub add_dp {
 		pattern   => '%y%m%d%H%M',
 		time_zone => 'Europe/Berlin',
 	);
+
+	# unscheduled arrivals may not appear in the plan, but we do need to
+	# know their planned arrival time
+	if ( $attrib{plan_departure_ts} ) {
+		$self->{sched_departure}
+		  = $strp->parse_datetime( $attrib{plan_departure_ts} );
+	}
 
 	if ( $attrib{departure_ts} ) {
 		$self->{departure} = $strp->parse_datetime( $attrib{departure_ts} );
@@ -535,7 +549,7 @@ sub translate_msg {
 		64 => 'Weichenstörung',
 		55 => 'Technische Störung an einem anderen Zug',        # ?
 		57 => 'Zusätzlicher Halt',                              # ?
-		58 => 'Umleitung',                                    # ?
+		58 => 'Umleitung',                                       # ?
 		61 => 'Türstörung',
 		62 => 'Behobene technische Störung am Zug',
 		63 => 'Technische Untersuchung am Zug',
