@@ -336,7 +336,7 @@ sub qos_messages {
 	);
 
 	my @keys = sort keys %{ $self->{messages} };
-	my @msgs = grep { $_->[1] eq 'q' } map { $self->{messages}{$_} } @keys;
+	my @msgs = grep { $_->[1] ~~ [qw[f q]] } map { $self->{messages}{$_} } @keys;
 	my @ret;
 
 	for my $msg (@msgs) {
