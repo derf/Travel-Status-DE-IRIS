@@ -553,6 +553,7 @@ sub translate_msg {
 		61 => 'Türstörung',
 		62 => 'Behobene technische Störung am Zug',
 		63 => 'Technische Untersuchung am Zug',
+		74 => 'Mehrzweckabteil hinten(?)', # ?
 		80 => 'Abweichende Wagenreihung',
 		82 => 'Mehrere Wagen fehlen',
 		83 => 'Fehlender Zugteil',
@@ -1013,6 +1014,10 @@ Source: Correlation between IRIS and DB RIS (bahn.de).
 =item d 64 : "WeichenstE<ouml>rung"
 
 Source: correlation between IRIS and DB RIS (bahn.de).
+
+=item q 74 : "Mehrzweckabteil hinten"
+
+Source: correlation between IRIS and DB RIS (bahn.de). Unsure, may be wrong.
 
 =item q 80 : "Abweichende Wagenreihung"
 
