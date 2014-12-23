@@ -546,13 +546,14 @@ sub translate_msg {
 		46 => 'Warten auf freie Einfahrt',
 		47 => 'Verspätete Bereitstellung',
 		48 => 'Verspätung aus vorheriger Fahrt',
-		64 => 'Weichenstörung',
 		55 => 'Technische Störung an einem anderen Zug',        # ?
 		57 => 'Zusätzlicher Halt',                              # ?
 		58 => 'Umleitung',                                       # ?
 		61 => 'Türstörung',
 		62 => 'Behobene technische Störung am Zug',
 		63 => 'Technische Untersuchung am Zug',
+		64 => 'Weichenstörung',
+		65 => 'Erdrutsch',
 		74 => 'Mehrzweckabteil hinten(?)', # ?
 		80 => 'Abweichende Wagenreihung',
 		82 => 'Mehrere Wagen fehlen',
@@ -1012,6 +1013,10 @@ Source: Correlation between IRIS and DB RIS (bahn.de).
 =item d 63 : "Technische Untersuchung am Zug"
 
 =item d 64 : "WeichenstE<ouml>rung"
+
+Source: correlation between IRIS and DB RIS (bahn.de).
+
+=item d 65 : "Erdrutsch"
 
 Source: correlation between IRIS and DB RIS (bahn.de).
 
