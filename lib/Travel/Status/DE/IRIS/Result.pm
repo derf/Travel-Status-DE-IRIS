@@ -547,7 +547,7 @@ sub translate_msg {
 		47 => 'Verspätete Bereitstellung',
 		48 => 'Verspätung aus vorheriger Fahrt',
 		55 => 'Technische Störung an einem anderen Zug',        # ?
-		57 => 'Zusätzlicher Halt',                              # ?
+		57 => 'Zusätzlicher Halt',
 		58 => 'Umleitung',                                       # ?
 		61 => 'Türstörung',
 		62 => 'Behobene technische Störung am Zug',
@@ -995,8 +995,7 @@ Source: Correlation between IRIS and DB RIS (bahn.de).
 
 =item d 57 : "ZusE<auml>tzlicher Halt"
 
-Source: Correlation between IRIS and DB RIS (bahn.de). Only one entry so far,
-so may be wrong.
+Source: Correlation between IRIS and DB RIS (bahn.de).
 
 =item d 58 : "Umleitung"
 
