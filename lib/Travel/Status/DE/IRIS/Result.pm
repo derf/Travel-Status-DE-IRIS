@@ -554,6 +554,7 @@ sub translate_msg {
 		63 => 'Technische Untersuchung am Zug',
 		64 => 'Weichenstörung',
 		65 => 'Erdrutsch',
+		73 => 'Mehrzweckabteil vorne',
 		74 => 'Mehrzweckabteil hinten',
 		77 => 'Ohne 1. Klasse',
 		80 => 'Abweichende Wagenreihung',
@@ -1017,6 +1018,10 @@ Source: Correlation between IRIS and DB RIS (bahn.de).
 Source: correlation between IRIS and DB RIS (bahn.de).
 
 =item d 65 : "Erdrutsch"
+
+Source: correlation between IRIS and DB RIS (bahn.de).
+
+=item q 73 : "Mehrzweckabteil vorne"
 
 Source: correlation between IRIS and DB RIS (bahn.de).
 
