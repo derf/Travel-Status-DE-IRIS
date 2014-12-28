@@ -554,7 +554,7 @@ sub translate_msg {
 		63 => 'Technische Untersuchung am Zug',
 		64 => 'Weichenstörung',
 		65 => 'Erdrutsch',
-		74 => 'Mehrzweckabteil hinten(?)', # ?
+		74 => 'Mehrzweckabteil hinten',
 		77 => 'Ohne 1. Klasse(?)', # ?
 		80 => 'Abweichende Wagenreihung',
 		82 => 'Mehrere Wagen fehlen',
@@ -1022,7 +1022,7 @@ Source: correlation between IRIS and DB RIS (bahn.de).
 
 =item q 74 : "Mehrzweckabteil hinten"
 
-Source: correlation between IRIS and DB RIS (bahn.de). Unsure, may be wrong.
+Source: correlation between IRIS and DB RIS (bahn.de).
 
 =item q 77 : "Ohne 1. Klasse"
 
