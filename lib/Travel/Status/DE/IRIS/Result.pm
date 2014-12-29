@@ -549,6 +549,7 @@ sub translate_msg {
 		55 => 'Technische Störung an einem anderen Zug',        # ?
 		57 => 'Zusätzlicher Halt',
 		58 => 'Umleitung',                                       # ?
+		59 => 'Schnee und Eis', # ?
 		61 => 'Türstörung',
 		62 => 'Behobene technische Störung am Zug',
 		63 => 'Technische Untersuchung am Zug',
@@ -1002,6 +1003,10 @@ Source: Correlation between IRIS and DB RIS (bahn.de).
 
 Source: Correlation between IRIS and DB RIS (bahn.de). Several entries, related
 to "Notarzteinsatz am Gleis".
+
+=item d 59 : "Schnee und Eis"
+
+Source: Correlation between IRIS and DB RIS (bahn.de).
 
 =item d 61 : "TE<uuml>rstE<ouml>rung"
 
