@@ -261,6 +261,7 @@ sub get_realtime {
 				route_pre       => $e_ar->getAttribute('cpth'),
 				sched_route_pre => $e_ar->getAttribute('ppth'),
 				status          => $e_ar->getAttribute('cs'),
+				status_since    => $e_ar->getAttribute('clt'),
 			);
 		}
 		if ($e_dp) {
