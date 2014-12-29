@@ -224,7 +224,9 @@ sub get_realtime {
 			my $msgid = $e_m->getAttribute('id');
 			my $ts    = $e_m->getAttribute('ts');
 
-			if ($value) {
+			# 0 and 1 (with key "f") are related to canceled trains and
+			# do not appear to hold information
+			if (defined $value and $value > 1) {
 				$messages{$msgid} = [ $ts, $type, $value ];
 			}
 		}
