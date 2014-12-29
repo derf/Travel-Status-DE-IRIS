@@ -547,6 +547,7 @@ sub translate_msg {
 		47 => 'Verspätete Bereitstellung',
 		48 => 'Verspätung aus vorheriger Fahrt',
 		55 => 'Technische Störung an einem anderen Zug',        # ?
+		56 => 'Warten auf Fahrgäste aus einem Bus',
 		57 => 'Zusätzlicher Halt',
 		58 => 'Umleitung',                                       # ?
 		59 => 'Schnee und Eis',
@@ -992,6 +993,10 @@ Source: Correlation between IRIS and DB RIS (bahn.de).
 =item d 48 : "VerspE<auml>tung aus vorheriger Fahrt"
 
 =item d 55 : "Technische StE<ouml>rung an einem anderen Zug"
+
+Source: Correlation between IRIS and DB RIS (bahn.de).
+
+=item d 56 : "Warten auf FahrgE<auml>ste aus einem Bus"
 
 Source: Correlation between IRIS and DB RIS (bahn.de).
 
