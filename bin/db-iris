@@ -92,6 +92,7 @@ for my $efield (@edata_pre) {
 		when ('q') { $edata{qos}        = 1 }
 		when ('r') { $edata{route}      = 1 }
 		when ('t') { $edata{times}      = 1 }
+		when ('!') { $edata{debug}      = 1 }
 		default    { $edata{$efield}    = 1 }
 	}
 }
@@ -237,6 +238,15 @@ sub display_result {
 				);
 			}
 
+		}
+
+		if ( $edata{debug} ) {
+			if ( $d->{unk_ar_hi} ) {
+				say "[DEBUG] arr:hi = $d->{unk_ar_hi}";
+			}
+			if ( $d->{unk_dp_hi} ) {
+				say "[DEBUG] dep:hi = $d->{unk_dp_hi}";
+			}
 		}
 
 		if ( $edata{messages} ) {

@@ -129,6 +129,7 @@ sub add_result {
 		$data{route_start} = $e_ar->getAttribute('pde');
 		$data{transfer}    = $e_ar->getAttribute('tra');
 		$data{arrival_wings} = $e_ar->getAttribute('wings');
+		$data{unk_ar_hi}     = $e_ar->getAttribute('hi');
 	}
 
 	if ($e_dp) {
@@ -138,6 +139,7 @@ sub add_result {
 		$data{route_end}    = $e_dp->getAttribute('pde');
 		$data{transfer}     = $e_dp->getAttribute('tra');
 		$data{departure_wings} = $e_dp->getAttribute('wings');
+		$data{unk_dp_hi}       = $e_dp->getAttribute('hi');
 	}
 
 	my $result = Travel::Status::DE::IRIS::Result->new(%data);
@@ -226,7 +228,7 @@ sub get_realtime {
 
 			# 0 and 1 (with key "f") are related to canceled trains and
 			# do not appear to hold information
-			if (defined $value and $value > 1) {
+			if ( defined $value and $value > 1 ) {
 				$messages{$msgid} = [ $ts, $type, $value ];
 			}
 		}
