@@ -6,7 +6,7 @@ use 5.014;
 
 no if $] >= 5.018, warnings => 'experimental::smartmatch';
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 use Carp qw(confess cluck);
 use DateTime;
@@ -327,7 +327,7 @@ Travel::Status::DE::IRIS - Interface to IRIS based web departure monitors.
 
 =head1 VERSION
 
-version 0.06
+version 0.07
 
 =head1 DESCRIPTION
 
@@ -426,7 +426,7 @@ Travel::Status::DE::IRIS::Stations(3pm)
 
 =head1 AUTHOR
 
-Copyright (C) 2013-2014 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
+Copyright (C) 2013-2015 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
 
 =head1 LICENSE
 

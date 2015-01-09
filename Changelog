@@ -1,3 +1,9 @@
+Travel::Status::DE::IRIS 0.07 - Fri Jan 09 2015
+
+   * Fix a crash related to unscheduled additional stops in a train's route
+   * Improve Travel::Status::DE::IRIS::Stations matching
+   * Add IRIS delay/qos keys 56, 59, 61, 65, 73, 74, 77
+
 Travel::Status::DE::IRIS 0.06 - Mon Nov 03 2014
 
     * New non-core module dependency: List::Compare
