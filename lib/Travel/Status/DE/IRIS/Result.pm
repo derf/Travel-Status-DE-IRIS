@@ -94,7 +94,7 @@ sub new {
 	return bless( $ref, $obj );
 }
 
-sub add_ar {
+sub set_ar {
 	my ( $self, %attrib ) = @_;
 
 	my $strp = DateTime::Format::Strptime->new(
@@ -115,16 +115,28 @@ sub add_ar {
 		  = $self->arrival->subtract_datetime( $self->sched_arrival )
 		  ->in_units('minutes');
 	}
+	else {
+		$self->{arrival} = $self->{sched_arrival};
+		$self->{delay} = 0;
+	}
 
 	if ( $attrib{platform} ) {
 		$self->{platform} = $attrib{platform};
+	}
+	else {
+		$self->{platform} = $self->{sched_platform};
 	}
 
 	if ( $attrib{route_pre} ) {
 		$self->{route_pre} = [ split( qr{[|]}, $attrib{route_pre} // q{} ) ];
 		$self->{route_start} = $self->{route_pre}[0];
 	}
+	else {
+		$self->{route_pre} = $self->{sched_route_pre};
+		$self->{route_start} = $self->{sched_route_start};
+	}
 
+	# also only for unscheduled arrivals
 	if ( $attrib{sched_route_pre} ) {
 		$self->{sched_route_pre}
 		  = [ split( qr{[|]}, $attrib{sched_route_pre} // q{} ) ];
@@ -134,11 +146,14 @@ sub add_ar {
 	if ( $attrib{status} and $attrib{status} eq 'c' ) {
 		$self->{is_cancelled} = 1;
 	}
+	else {
+		$self->{is_cancelled} = 0;
+	}
 
 	return $self;
 }
 
-sub add_dp {
+sub set_dp {
 	my ( $self, %attrib ) = @_;
 
 	my $strp = DateTime::Format::Strptime->new(
@@ -159,16 +174,28 @@ sub add_dp {
 		  = $self->departure->subtract_datetime( $self->sched_departure )
 		  ->in_units('minutes');
 	}
+	else {
+		$self->{departure} = $self->{sched_departure};
+		$self->{delay} = 0;
+	}
 
 	if ( $attrib{platform} ) {
 		$self->{platform} = $attrib{platform};
+	}
+	else {
+		$self->{platform} = $self->{sched_platform};
 	}
 
 	if ( $attrib{route_post} ) {
 		$self->{route_post} = [ split( qr{[|]}, $attrib{route_post} // q{} ) ];
 		$self->{route_end} = $self->{route_post}[-1];
 	}
+	else {
+		$self->{route_post} = $self->{sched_route_post};
+		$self->{route_end} = $self->{sched_route_end};
+	}
 
+	# also only for unscheduled departures
 	if ( $attrib{sched_route_post} ) {
 		$self->{sched_route_post}
 		  = [ split( qr{[|]}, $attrib{sched_route_post} // q{} ) ];
@@ -177,6 +204,9 @@ sub add_dp {
 
 	if ( $attrib{status} and $attrib{status} eq 'c' ) {
 		$self->{is_cancelled} = 1;
+	}
+	else {
+		$self->{is_cancelled} = 0;
 	}
 
 	return $self;
