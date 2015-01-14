@@ -182,7 +182,7 @@ sub add_dp {
 	return $self;
 }
 
-sub add_messages {
+sub set_messages {
 	my ( $self, %messages ) = @_;
 
 	$self->{messages} = \%messages;
@@ -190,7 +190,7 @@ sub add_messages {
 	return $self;
 }
 
-sub add_realtime {
+sub set_realtime {
 	my ( $self, $xmlobj ) = @_;
 
 	$self->{realtime_xml} = $xmlobj;
@@ -198,7 +198,7 @@ sub add_realtime {
 	return $self;
 }
 
-sub add_ref {
+sub set_ref {
 	my ( $self, %attrib ) = @_;
 
 	$self->{train_no_transfer} = $attrib{train_no};
@@ -208,7 +208,7 @@ sub add_ref {
 	return $self;
 }
 
-sub add_tl {
+sub set_tl {
 	my ( $self, %attrib ) = @_;
 
 	# TODO

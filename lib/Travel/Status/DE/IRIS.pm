@@ -217,7 +217,7 @@ sub get_realtime {
 		}
 
 		if ( not $self->{serializable} ) {
-			$result->add_realtime($s);
+			$result->set_realtime($s);
 		}
 
 		for my $e_m (@e_ms) {
@@ -233,10 +233,10 @@ sub get_realtime {
 			}
 		}
 
-		$result->add_messages(%messages);
+		$result->set_messages(%messages);
 
 		if ($e_tl) {
-			$result->add_tl(
+			$result->set_tl(
 				class     => $e_tl->getAttribute('f'),    # D N S F
 				unknown_t => $e_tl->getAttribute('t'),    # p
 				train_no  => $e_tl->getAttribute('n'),    # dep number
@@ -246,7 +246,7 @@ sub get_realtime {
 			);
 		}
 		if ($e_ref) {
-			$result->add_ref(
+			$result->set_ref(
 				class     => $e_ref->getAttribute('f'),    # D N S F
 				unknown_t => $e_ref->getAttribute('t'),    # p
 				train_no  => $e_ref->getAttribute('n'),    # dep number
