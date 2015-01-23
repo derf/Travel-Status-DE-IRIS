@@ -581,6 +581,7 @@ sub translate_msg {
 		57 => 'Zusätzlicher Halt',
 		58 => 'Umleitung',                                       # ?
 		59 => 'Schnee und Eis',
+		60 => 'Reduzierte Geschwindigkeit wegen Sturm(?)',
 		61 => 'Türstörung',
 		62 => 'Behobene technische Störung am Zug',
 		63 => 'Technische Untersuchung am Zug',
@@ -1042,6 +1043,11 @@ to "Notarzteinsatz am Gleis".
 =item d 59 : "Schnee und Eis"
 
 Source: Correlation between IRIS and DB RIS (bahn.de).
+
+=item d 60 : "Reduzierte Geschwindigkeit wegen Sturm"
+
+Source: Correlation between IRIS and DB RIS (bahn.de). Needs further
+verification.
 
 =item d 61 : "TE<uuml>rstE<ouml>rung"
 
