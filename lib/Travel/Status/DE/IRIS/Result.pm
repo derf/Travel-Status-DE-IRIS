@@ -589,6 +589,8 @@ sub translate_msg {
 		65 => 'Erdrutsch',
 		73 => 'Mehrzweckabteil vorne',
 		74 => 'Mehrzweckabteil hinten',
+		75 => '1. Klasse vorne',
+		76 => '1. Klasse hinten',
 		77 => 'Ohne 1. Klasse',
 		80 => 'Abweichende Wagenreihung',
 		82 => 'Mehrere Wagen fehlen',
@@ -1072,6 +1074,14 @@ Source: correlation between IRIS and DB RIS (bahn.de).
 Source: correlation between IRIS and DB RIS (bahn.de).
 
 =item q 74 : "Mehrzweckabteil hinten"
+
+Source: correlation between IRIS and DB RIS (bahn.de).
+
+=item q 75 : "1. Klasse vorne"
+
+Source: correlation between IRIS and DB RIS (bahn.de).
+
+=item q 76 : "1. Klasse hinten"
 
 Source: correlation between IRIS and DB RIS (bahn.de).
 
