@@ -740,7 +740,7 @@ here. Contains realtime data if available.
 
 =item $result->destination
 
-Aleas for route_end.
+Alias for route_end.
 
 =item $result->info
 
