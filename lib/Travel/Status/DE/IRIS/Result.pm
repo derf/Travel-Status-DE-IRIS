@@ -389,6 +389,26 @@ sub qos_messages {
 	return @ret;
 }
 
+sub raw_messages {
+	my ($self) = @_;
+
+	my $strp = DateTime::Format::Strptime->new(
+		pattern   => '%y%m%d%H%M',
+		time_zone => 'Europe/Berlin',
+	);
+
+	my @messages = reverse sort keys %{ $self->{messages} };
+	my @ret      = map {
+		[
+			$strp->parse_datetime( $self->{messages}->{$_}->[0] ),
+			$self->{messages}->{$_}->[2]
+		]
+	} @messages;
+
+	return @ret;
+}
+
+
 sub messages {
 	my ($self) = @_;
 
