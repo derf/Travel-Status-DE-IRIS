@@ -923,8 +923,10 @@ Alias for line.
 
 =item $result->train_id
 
-Numeric ID of this train. Seems to be unique for a year and trackable across
-stations.
+Numeric ID of this train, trackable across stations and days. For instance, the
+S 31128 (S1) to Solingen, starting in Dortmund on 19:23, has the ID
+2404170432985554630 on each station it passes and (usually) on every day of the
+year.  Note that it may change during the yearly itinerary update in december.
 
 =item $result->train_no
 
