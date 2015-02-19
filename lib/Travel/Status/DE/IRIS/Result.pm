@@ -567,6 +567,7 @@ sub translate_msg {
 		9  => 'Streikauswirkungen',
 		10 => 'Ausgebrochene Tiere im Gleis',
 		11 => 'Unwetter',
+		13 => 'Pass- und Zollkontrolle',
 		15 => 'Beeinträchtigung durch Vandalismus',
 		16 => 'Entschärfung einer Fliegerbombe',
 		17 => 'Beschädigung einer Brücke',
@@ -988,6 +989,10 @@ Source: Correlation between IRIS and DB RIS (bahn.de).
 =item d 10 : "Ausgebrochene Tiere im Gleis"
 
 =item d 11 : "Unwetter"
+
+=item d 13 : "Pass- und Zollkontrolle"
+
+Source: Correlation between IRIS and DB RIS (bahn.de).
 
 =item d 15 : "BeeintrE<auml>chtigung durch Vandalismus"
 
