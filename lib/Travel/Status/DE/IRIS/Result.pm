@@ -14,7 +14,7 @@ use DateTime::Format::Strptime;
 use List::Compare;
 use List::MoreUtils qw(none uniq firstval);
 
-our $VERSION = '0.07';
+our $VERSION = '0.08';
 
 my %translation = (
 	2  => 'Polizeiliche Ermittlung',
@@ -672,7 +672,7 @@ arrival/departure received by Travel::Status::DE::IRIS
 
 =head1 VERSION
 
-version 0.07
+version 0.08
 
 =head1 DESCRIPTION
 
