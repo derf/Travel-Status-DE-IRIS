@@ -309,7 +309,8 @@ for my $d ( $status->results() ) {
 	if (   ( $filter_via and not( first { $_ =~ m{$filter_via}io } @via ) )
 		or ( @grep_class and none { $_ ~~ \@grep_class } $d->classes )
 		or ( @grep_platform and not( $d->platform ~~ \@grep_platform ) )
-		or ( @grep_type and not( $d->type ~~ \@grep_type ) ) )
+		or ( @grep_type     and not( $d->type     ~~ \@grep_type ) )
+		or $d->is_wing )
 	{
 		next;
 	}
@@ -369,6 +370,23 @@ for my $d ( $status->results() ) {
 			$d->route_end, $platformstr // q{}, $d
 		]
 	);
+
+	for my $wing ( $d->departure_wings ) {
+		push(
+			@output,
+			[
+				'├' . '─' x ( length($timestr) - 1 ),
+				$wing->train,
+				$edata{route} ? join( q{  }, $wing->route_interesting ) : q{},
+				$wing->route_end,
+				$platformstr // q{},
+				$wing
+			]
+		);
+	}
+	if ( $d->departure_wings ) {
+		$output[-1][0] = '└' . '─' x ( length($timestr) - 1 );
+	}
 }
 
 display_result(@output);

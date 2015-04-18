@@ -95,7 +95,7 @@ my %translation = (
 );
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
-	qw(arrival classes date datetime delay departure is_cancelled is_transfer
+	qw(arrival classes date datetime delay departure is_cancelled is_transfer is_wing
 	  line_no train_no_transfer old_train_id old_train_no platform raw_id
 	  realtime_xml route_start route_end sched_arrival sched_departure
 	  sched_platform sched_route_start sched_route_end start stop_no time
@@ -115,6 +115,7 @@ sub new {
 	my ( $train_id, $start_ts, $stop_no ) = split( /.\K-/, $opt{raw_id} );
 
 	$ref->{wing_id} = "${train_id}-${start_ts}";
+	$ref->{is_wing} = 0;
 	$train_id =~ s{^-}{};
 
 	$ref->{start} = $strp->parse_datetime($start_ts);
@@ -328,6 +329,7 @@ sub set_tl {
 sub add_arrival_wingref {
 	my ( $self, $ref ) = @_;
 
+	$ref->{is_wing} = 1;
 	weaken($ref);
 	push( @{ $self->{arrival_wings} }, $ref );
 }
@@ -335,6 +337,7 @@ sub add_arrival_wingref {
 sub add_departure_wingref {
 	my ( $self, $ref ) = @_;
 
+	$ref->{is_wing} = 1;
 	weaken($ref);
 	push( @{ $self->{departure_wings} }, $ref );
 }
