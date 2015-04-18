@@ -13,7 +13,6 @@ use DateTime;
 use Encode qw(encode decode);
 use List::Util qw(first);
 use LWP::UserAgent;
-use Scalar::Util qw(weaken);
 use Travel::Status::DE::IRIS::Result;
 use XML::LibXML;
 
@@ -298,7 +297,7 @@ sub get_realtime {
 sub get_result_by_id {
 	my ( $self, $id ) = @_;
 
-	my $res = first { $_->{raw_id} eq $id } $self->results;
+	my $res = first { $_->wing_id eq $id } @{ $self->{results} };
 	return $res;
 }
 

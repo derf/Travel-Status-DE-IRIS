@@ -13,6 +13,7 @@ use DateTime;
 use DateTime::Format::Strptime;
 use List::Compare;
 use List::MoreUtils qw(none uniq firstval);
+use Scalar::Util qw(weaken);
 
 our $VERSION = '0.08';
 
@@ -98,7 +99,7 @@ Travel::Status::DE::IRIS::Result->mk_ro_accessors(
 	  line_no train_no_transfer old_train_id old_train_no platform raw_id
 	  realtime_xml route_start route_end sched_arrival sched_departure
 	  sched_platform sched_route_start sched_route_end start stop_no time
-	  train_id train_no transfer type unknown_t unknown_o)
+	  train_id train_no transfer type unknown_t unknown_o wing_id)
 );
 
 sub new {
@@ -113,6 +114,7 @@ sub new {
 
 	my ( $train_id, $start_ts, $stop_no ) = split( /.\K-/, $opt{raw_id} );
 
+	$ref->{wing_id} = "${train_id}-${start_ts}";
 	$train_id =~ s{^-}{};
 
 	$ref->{start} = $strp->parse_datetime($start_ts);
