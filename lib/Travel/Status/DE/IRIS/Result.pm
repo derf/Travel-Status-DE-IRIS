@@ -323,6 +323,20 @@ sub set_tl {
 	return $self;
 }
 
+sub add_arrival_wingref {
+	my ( $self, $ref ) = @_;
+
+	weaken($ref);
+	push( @{ $self->{arrival_wings} }, $ref );
+}
+
+sub add_departure_wingref {
+	my ( $self, $ref ) = @_;
+
+	weaken($ref);
+	push( @{ $self->{departure_wings} }, $ref );
+}
+
 # List::Compare does not keep the order of its arguments (even with unsorted).
 # So we need to re-sort all stops to maintain their original order.
 sub sorted_sublist {
@@ -432,6 +446,24 @@ sub delay_messages {
 	}
 
 	return @ret;
+}
+
+sub arrival_wings {
+	my ($self) = @_;
+
+	if ( $self->{arrival_wings} ) {
+		return @{ $self->{arrival_wings} };
+	}
+	return;
+}
+
+sub departure_wings {
+	my ($self) = @_;
+
+	if ( $self->{departure_wings} ) {
+		return @{ $self->{departure_wings} };
+	}
+	return;
 }
 
 sub dump_message_codes {

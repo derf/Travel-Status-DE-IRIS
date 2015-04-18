@@ -13,6 +13,7 @@ use DateTime;
 use Encode qw(encode decode);
 use List::Util qw(first);
 use LWP::UserAgent;
+use Scalar::Util qw(weaken);
 use Travel::Status::DE::IRIS::Result;
 use XML::LibXML;
 
@@ -96,6 +97,10 @@ sub new {
 	@{ $self->{results} }
 	  = sort { $a->{datetime} <=> $b->{datetime} } @{ $self->{results} };
 
+	# wings (different departures which are coupled as one train) contain
+	# references to each other. therefore, they must be processed last.
+	$self->create_wing_refs;
+
 	return $self;
 }
 
@@ -128,8 +133,8 @@ sub add_result {
 		$data{route_pre}   = $e_ar->getAttribute('ppth');
 		$data{route_start} = $e_ar->getAttribute('pde');
 		$data{transfer}    = $e_ar->getAttribute('tra');
-		$data{arrival_wings} = $e_ar->getAttribute('wings');
-		$data{unk_ar_hi}     = $e_ar->getAttribute('hi');
+		$data{arrival_wing_ids} = $e_ar->getAttribute('wings');
+		$data{unk_ar_hi}        = $e_ar->getAttribute('hi');
 	}
 
 	if ($e_dp) {
@@ -138,8 +143,16 @@ sub add_result {
 		$data{route_post}   = $e_dp->getAttribute('ppth');
 		$data{route_end}    = $e_dp->getAttribute('pde');
 		$data{transfer}     = $e_dp->getAttribute('tra');
-		$data{departure_wings} = $e_dp->getAttribute('wings');
-		$data{unk_dp_hi}       = $e_dp->getAttribute('hi');
+		$data{departure_wing_ids} = $e_dp->getAttribute('wings');
+		$data{unk_dp_hi}          = $e_dp->getAttribute('hi');
+	}
+
+	if ( $data{arrival_wing_ids} ) {
+		$data{arrival_wing_ids} = [ split( /\|/, $data{arrival_wing_ids} ) ];
+	}
+	if ( $data{departure_wing_ids} ) {
+		$data{departure_wing_ids}
+		  = [ split( /\|/, $data{departure_wing_ids} ) ];
 	}
 
 	my $result = Travel::Status::DE::IRIS::Result->new(%data);
@@ -280,6 +293,37 @@ sub get_realtime {
 	}
 
 	return $self;
+}
+
+sub get_result_by_id {
+	my ( $self, $id ) = @_;
+
+	my $res = first { $_->{raw_id} eq $id } $self->results;
+	return $res;
+}
+
+sub create_wing_refs {
+	my ($self) = @_;
+
+	for my $r ( $self->results ) {
+		if ( $r->{departure_wing_ids} ) {
+			for my $wing_id ( @{ $r->{departure_wing_ids} } ) {
+				my $wingref = $self->get_result_by_id($wing_id);
+				if ($wingref) {
+					$r->add_departure_wingref($wingref);
+				}
+			}
+		}
+		if ( $r->{arrival_wing_ids} ) {
+			for my $wing_id ( @{ $r->{arrival_wing_ids} } ) {
+				my $wingref = $self->get_result_by_id($wing_id);
+				if ($wingref) {
+					$r->add_departure_wingref($wingref);
+				}
+			}
+		}
+	}
+
 }
 
 sub errstr {
