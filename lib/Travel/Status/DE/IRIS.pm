@@ -173,6 +173,8 @@ sub get_timetable {
 	my $res = $ua->get(
 		$dt->strftime( $self->{iris_base} . "/plan/${eva}/%y%m%d/%H" ) );
 
+	#say 'GET ' . $dt->strftime( $self->{iris_base} . "/plan/${eva}/%y%m%d/%H" );
+
 	if ( $res->is_error ) {
 		$self->{warnstr} = 'Failed to fetch a schedule part: Server returned '
 		  . $res->status_line;
@@ -198,6 +200,8 @@ sub get_realtime {
 
 	my $eva = $self->{nodes}{station}->getAttribute('eva');
 	my $res = $self->{user_agent}->get( $self->{iris_base} . "/fchg/${eva}" );
+
+	#say 'GET ' . $self->{iris_base} . "/fchg/${eva}";
 
 	if ( $res->is_error ) {
 		$self->{warnstr} = 'Failed to fetch realtime data: Server returned '
