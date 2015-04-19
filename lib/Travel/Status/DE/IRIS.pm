@@ -28,6 +28,7 @@ sub new {
 	my $self = {
 		datetime => $opt{datetime}
 		  // DateTime->now( time_zone => 'Europe/Berlin' ),
+		developer_mode => $opt{developer_mode},
 		iris_base => $opt{iris_base}
 		  // 'http://iris.noncd.db.de/iris-tts/timetable',
 		lookahead => $opt{lookahead} // ( 4 * 60 ),
@@ -173,7 +174,10 @@ sub get_timetable {
 	my $res = $ua->get(
 		$dt->strftime( $self->{iris_base} . "/plan/${eva}/%y%m%d/%H" ) );
 
-	#say 'GET ' . $dt->strftime( $self->{iris_base} . "/plan/${eva}/%y%m%d/%H" );
+	if ( $self->{developer_mode} ) {
+		say 'GET '
+		  . $dt->strftime( $self->{iris_base} . "/plan/${eva}/%y%m%d/%H" );
+	}
 
 	if ( $res->is_error ) {
 		$self->{warnstr} = 'Failed to fetch a schedule part: Server returned '
@@ -182,8 +186,6 @@ sub get_timetable {
 	}
 
 	my $xml = XML::LibXML->load_xml( string => $res->decoded_content );
-
-	#say $xml->toString(1);
 
 	my $station = ( $xml->findnodes('/timetable') )[0]->getAttribute('station');
 
@@ -201,7 +203,9 @@ sub get_realtime {
 	my $eva = $self->{nodes}{station}->getAttribute('eva');
 	my $res = $self->{user_agent}->get( $self->{iris_base} . "/fchg/${eva}" );
 
-	#say 'GET ' . $self->{iris_base} . "/fchg/${eva}";
+	if ( $self->{developer_mode} ) {
+		say 'GET ' . $self->{iris_base} . "/fchg/${eva}";
+	}
 
 	if ( $res->is_error ) {
 		$self->{warnstr} = 'Failed to fetch realtime data: Server returned '

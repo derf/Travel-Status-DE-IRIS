@@ -19,8 +19,9 @@ use Travel::Status::DE::IRIS;
 use Travel::Status::DE::IRIS::Stations;
 
 my ( $date, $time, $lookahead );
-my $datetime = DateTime->now( time_zone => 'Europe/Berlin' );
-my $realtime = 0;
+my $datetime       = DateTime->now( time_zone => 'Europe/Berlin' );
+my $developer_mode = 0;
+my $realtime       = 0;
 my ( $filter_via, $track_via, $status_via );
 my ( @grep_class, @grep_type, @grep_platform );
 my ( %edata,      @edata_pre );
@@ -43,6 +44,7 @@ GetOptions(
 	'T|type=s'      => \@grep_type,
 	'v|via=s'       => \$filter_via,
 	'V|track-via=s' => \$track_via,
+	'devmode'       => \$developer_mode,
 	'version'       => \&show_version,
 
 ) or show_help(1);
@@ -98,9 +100,10 @@ for my $efield (@edata_pre) {
 }
 
 my $status = Travel::Status::DE::IRIS->new(
-	datetime  => $datetime,
-	lookahead => $lookahead,
-	station   => $station,
+	datetime       => $datetime,
+	developer_mode => $developer_mode,
+	lookahead      => $lookahead,
+	station        => $station,
 );
 if ($track_via) {
 
