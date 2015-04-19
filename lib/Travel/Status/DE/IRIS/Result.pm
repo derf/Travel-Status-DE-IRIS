@@ -734,6 +734,12 @@ set of actual stops (B<route_post>) minus the set of scheduled stops
 DateTime(3pm) object for the arrival date and time. undef if the
 train starts here. Contains realtime data if available.
 
+=item $result->arrival_wings
+
+Returns a list of references to Travel::Status::DE::IRIS::Result(3pm) objects
+which are coupled to this train on arrival. Returns nothing (false / empty list)
+otherwise.
+
 =item $result->canceled_stops
 
 Returns stops which are scheduled, but will not be served by this train.
@@ -781,6 +787,12 @@ most recent record will be returned.
 DateTime(3pm) object for the departure date and time. undef if the train ends
 here. Contains realtime data if available.
 
+=item $result->departure_wings
+
+Returns a list of references to Travel::Status::DE::IRIS::Result(3pm) objects
+which are coupled to this train on departure. Returns nothing (false / empty
+list) otherwise.
+
 =item $result->destination
 
 Alias for route_end.
@@ -808,6 +820,12 @@ the results and indicates it by setting B<is_transfer> to a true value.
 
 In case of a transfer, B<train_id> and B<train_no> are set to the "new"
 value, the old ones are available in B<old_train_id> and B<old_train_no>.
+
+=item $result->is_wing
+
+Returns true if this result is a wing, false otherwise.
+A wing is a train which has its own ID and destination, but is currently
+coupled to another train and shares all or some of its route.
 
 =item $result->line
 
