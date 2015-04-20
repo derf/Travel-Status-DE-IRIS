@@ -325,7 +325,7 @@ sub create_wing_refs {
 			for my $wing_id ( @{ $r->{arrival_wing_ids} } ) {
 				my $wingref = $self->get_result_by_id($wing_id);
 				if ($wingref) {
-					$r->add_departure_wingref($wingref);
+					$r->add_arrival_wingref($wingref);
 				}
 			}
 		}
