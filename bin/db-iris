@@ -368,7 +368,7 @@ for my $d ( $status->results() ) {
 	push(
 		@output,
 		[
-			$timestr, $d->train,
+			$timestr, $d->train . ($d->is_unscheduled ? ' !' : q{}),
 			$edata{route} ? join( q{  }, $d->route_interesting ) : q{},
 			$d->route_end, $platformstr // q{}, $d
 		]

@@ -29,7 +29,7 @@ sub new {
 		datetime => $opt{datetime}
 		  // DateTime->now( time_zone => 'Europe/Berlin' ),
 		developer_mode => $opt{developer_mode},
-		iris_base => $opt{iris_base}
+		iris_base      => $opt{iris_base}
 		  // 'http://iris.noncd.db.de/iris-tts/timetable',
 		lookahead => $opt{lookahead} // ( 4 * 60 ),
 		serializable => $opt{serializable},
@@ -231,6 +231,9 @@ sub get_realtime {
 
 		if ( not $result ) {
 			$result = $self->add_result( $station, $s );
+			if ($result) {
+				$result->set_unscheduled(1);
+			}
 		}
 		if ( not $result ) {
 			next;

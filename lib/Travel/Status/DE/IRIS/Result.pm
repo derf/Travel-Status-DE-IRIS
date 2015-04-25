@@ -95,11 +95,12 @@ my %translation = (
 );
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
-	qw(arrival classes date datetime delay departure is_cancelled is_transfer is_wing
-	  line_no train_no_transfer old_train_id old_train_no platform raw_id
-	  realtime_xml route_start route_end sched_arrival sched_departure
-	  sched_platform sched_route_start sched_route_end start stop_no time
-	  train_id train_no transfer type unknown_t unknown_o wing_id)
+	qw(arrival classes date datetime delay departure is_cancelled is_transfer
+	  is_unscheduled is_wing line_no train_no_transfer old_train_id
+	  old_train_no platform raw_id realtime_xml route_start route_end
+	  sched_arrival sched_departure sched_platform sched_route_start
+	  sched_route_end start stop_no time train_id train_no transfer type
+	  unknown_t unknown_o wing_id)
 );
 
 sub new {
@@ -324,6 +325,12 @@ sub set_tl {
 	# TODO
 
 	return $self;
+}
+
+sub set_unscheduled {
+	my ( $self, $unscheduled ) = @_;
+
+	$self->{is_unscheduled} = $unscheduled;
 }
 
 sub add_arrival_wingref {
@@ -820,6 +827,14 @@ the results and indicates it by setting B<is_transfer> to a true value.
 
 In case of a transfer, B<train_id> and B<train_no> are set to the "new"
 value, the old ones are available in B<old_train_id> and B<old_train_no>.
+
+=item $result->is_unscheduled
+
+True if the train does not appear in the requested plans. This can happen
+because of two reasons: Either the scheduled time and the actual time are so
+far apart that it should've arrived/departed long ago, or it really is an
+unscheduled train. In that case, it can be a replacement or an additional
+train. There is no logic to distinguish these cases yet.
 
 =item $result->is_wing
 
