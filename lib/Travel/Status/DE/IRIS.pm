@@ -278,7 +278,7 @@ sub get_realtime {
 		if ($e_ar) {
 			$result->set_ar(
 				arrival_ts      => $e_ar->getAttribute('ct'),
-				plan_arrivaL_ts => $e_ar->getAttribute('pt'),
+				plan_arrival_ts => $e_ar->getAttribute('pt'),
 				platform        => $e_ar->getAttribute('cp'),
 				route_pre       => $e_ar->getAttribute('cpth'),
 				sched_route_pre => $e_ar->getAttribute('ppth'),
