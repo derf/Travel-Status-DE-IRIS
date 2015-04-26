@@ -96,7 +96,7 @@ my %translation = (
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
 	qw(arrival classes date datetime delay departure is_cancelled is_transfer
-	  is_unscheduled is_wing line_no train_no_transfer old_train_id
+	  is_unscheduled is_wing line_no old_train_id
 	  old_train_no platform raw_id realtime_xml route_start route_end
 	  sched_arrival sched_departure sched_platform sched_route_start
 	  sched_route_end start stop_no time train_id train_no transfer type
@@ -311,8 +311,6 @@ sub set_realtime {
 
 sub set_ref {
 	my ( $self, %attrib ) = @_;
-
-	$self->{train_no_transfer} = $attrib{train_no};
 
 	# TODO
 
@@ -1007,15 +1005,6 @@ year.  Note that it may change during the yearly itinerary update in december.
 =item $result->train_no
 
 Number of this train, unique per day. E.g. C<< 2225 >> for C<< IC 2225 >>.
-
-=item $result->train_no_transfer
-
-Number of this train after a following transfer, undefined if no such transfer
-exists. See B<is_transfer> for a note about this.
-
-Note that unlike B<old_train_no>, this information is always based on realtime
-data (not included in any schedule) and only set for stations before the
-transfer station, not the transfer station itself.
 
 =item $result->type
 
