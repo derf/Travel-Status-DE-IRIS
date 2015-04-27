@@ -5,6 +5,8 @@ git HEAD
     * db-iris: Indicate wings in output
     * Result: Remove train_no_transfer accessor (was based on erroneous
       assumptions)
+    * Result: Add replaced_by and replacement_for accessors
+    * db-iris: Add -or to show replacement information
 
 Travel::Status::DE::IRIS 0.08 - Thu Mar 12 2015
 

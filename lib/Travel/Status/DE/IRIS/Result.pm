@@ -96,8 +96,8 @@ my %translation = (
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
 	qw(arrival classes date datetime delay departure is_cancelled is_transfer
-	  is_unscheduled is_wing line_no old_train_id
-	  old_train_no platform raw_id realtime_xml route_start route_end
+	  is_unscheduled is_wing line_no old_train_id old_train_no platform raw_id
+	  realtime_xml route_start route_end
 	  sched_arrival sched_departure sched_platform sched_route_start
 	  sched_route_end start stop_no time train_id train_no transfer type
 	  unknown_t unknown_o wing_id)
@@ -309,10 +309,10 @@ sub set_realtime {
 	return $self;
 }
 
-sub set_ref {
+sub add_raw_ref {
 	my ( $self, %attrib ) = @_;
 
-	# TODO
+	push( @{ $self->{refs} }, \%attrib );
 
 	return $self;
 }
@@ -337,6 +337,7 @@ sub add_arrival_wingref {
 	$ref->{is_wing} = 1;
 	weaken($ref);
 	push( @{ $self->{arrival_wings} }, $ref );
+	return $self;
 }
 
 sub add_departure_wingref {
@@ -345,6 +346,25 @@ sub add_departure_wingref {
 	$ref->{is_wing} = 1;
 	weaken($ref);
 	push( @{ $self->{departure_wings} }, $ref );
+	return $self;
+}
+
+sub add_reference {
+	my ( $self, $ref ) = @_;
+
+	$ref->add_inverse_reference($self);
+	weaken($ref);
+	push( @{ $self->{replacement_for} }, $ref );
+	return $self;
+}
+
+# never called externally
+sub add_inverse_reference {
+	my ( $self, $ref ) = @_;
+
+	weaken($ref);
+	push( @{ $self->{replaced_by} }, $ref );
+	return $self;
 }
 
 # List::Compare does not keep the order of its arguments (even with unsorted).
@@ -472,6 +492,24 @@ sub departure_wings {
 
 	if ( $self->{departure_wings} ) {
 		return @{ $self->{departure_wings} };
+	}
+	return;
+}
+
+sub replaced_by {
+	my ($self) = @_;
+
+	if ( $self->{replaced_by} ) {
+		return @{ $self->{replaced_by} };
+	}
+	return;
+}
+
+sub replacement_for {
+	my ($self) = @_;
+
+	if ( $self->{replacement_for} ) {
+		return @{ $self->{replacement_for} };
 	}
 	return;
 }
@@ -911,6 +949,18 @@ XML::LibXML::Node(3pm) object containing all realtime data. undef if none is
 available.
 
 This is a developer option. It may be removed without prior warning.
+
+=item $result->replaced_by
+
+Returns a list of references to Travel::Status::DE::IRIS::Result(3pm) objects
+which replace the (usually cancelled) arrival/departure of this train.
+Returns nothing (false / empty list) otherwise.
+
+=item $result->replacement_for
+
+Returns a list of references to Travel::Status::DE::IRIS::Result(3pm) objects
+which this (usually unplanned) train is meant to replace.
+Returns nothing (false / empty list) otherwise.
 
 =item $result->route
 

@@ -101,6 +101,9 @@ sub new {
 	# references to each other. therefore, they must be processed last.
 	$self->create_wing_refs;
 
+	# same goes for replacement refs (the <ref> tag in the fchg document)
+	$self->create_replacement_refs;
+
 	return $self;
 }
 
@@ -218,12 +221,12 @@ sub get_realtime {
 	my $station = ( $xml->findnodes('/timetable') )[0]->getAttribute('station');
 
 	for my $s ( $xml->findnodes('/timetable/s') ) {
-		my $id    = $s->getAttribute('id');
-		my $e_tl  = ( $s->findnodes('./tl') )[0];
-		my $e_ar  = ( $s->findnodes('./ar') )[0];
-		my $e_dp  = ( $s->findnodes('./dp') )[0];
-		my $e_ref = ( $s->findnodes('./ref') )[0];
-		my @e_ms  = $s->findnodes('.//m');
+		my $id     = $s->getAttribute('id');
+		my $e_tl   = ( $s->findnodes('./tl') )[0];
+		my $e_ar   = ( $s->findnodes('./ar') )[0];
+		my $e_dp   = ( $s->findnodes('./dp') )[0];
+		my @e_refs = $s->findnodes('./ref/tl');
+		my @e_ms   = $s->findnodes('.//m');
 
 		my %messages;
 
@@ -268,8 +271,8 @@ sub get_realtime {
 				unknown_o => $e_tl->getAttribute('o'),    # owner: 03/80/R2/...
 			);
 		}
-		if ($e_ref) {
-			$result->set_ref(
+		for my $e_ref (@e_refs) {
+			$result->add_raw_ref(
 				class     => $e_ref->getAttribute('f'),    # D N S F
 				unknown_t => $e_ref->getAttribute('t'),    # p
 				train_no  => $e_ref->getAttribute('n'),    # dep number
@@ -312,6 +315,14 @@ sub get_result_by_id {
 	return $res;
 }
 
+sub get_result_by_train {
+	my ( $self, $type, $train_no ) = @_;
+
+	my $res = first { $_->type eq $type and $_->train_no eq $train_no }
+	@{ $self->{results} };
+	return $res;
+}
+
 sub create_wing_refs {
 	my ($self) = @_;
 
@@ -334,6 +345,20 @@ sub create_wing_refs {
 		}
 	}
 
+}
+
+sub create_replacement_refs {
+	my ($self) = @_;
+
+	for my $r ( $self->results ) {
+		for my $ref_hash ( @{ $r->{refs} // [] } ) {
+			my $ref = $self->get_result_by_train( $ref_hash->{type},
+				$ref_hash->{train_no} );
+			if ($ref) {
+				$r->add_reference($ref);
+			}
+		}
+	}
 }
 
 sub errstr {
