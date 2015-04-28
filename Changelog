@@ -1,12 +1,12 @@
-git HEAD
+Travel::Status::DE::IRIS 0.09 - Tue Apr 28 2015
 
     * Result: Add arrival_wings, departure_wings and is_wing accessors
       (a wing train is coupled to the respective departure, but has its own ID)
     * db-iris: Indicate wings in output
     * Result: Remove train_no_transfer accessor (was based on erroneous
       assumptions)
-    * Result: Add replaced_by and replacement_for accessors
-    * db-iris: Add -or to show replacement information
+    * Result: Add is_unscheduled, replaced_by and replacement_for accessors
+    * db-iris: Add -oR to show replacement information
 
 Travel::Status::DE::IRIS 0.08 - Thu Mar 12 2015
 
