@@ -395,6 +395,7 @@ for my $d ( $status->results() ) {
 		]
 	);
 
+	my @processed_wings;
 	for my $wing ( $d->departure_wings ) {
 		push(
 			@output,
@@ -407,8 +408,26 @@ for my $d ( $status->results() ) {
 				$wing
 			]
 		);
+		push( @processed_wings, $wing );
 	}
-	if ( $d->departure_wings ) {
+	for my $wing ( $d->arrival_wings ) {
+		if ( not $wing ~~ \@processed_wings ) {
+			push(
+				@output,
+				[
+					'├' . '─' x ( length($timestr) - 1 ),
+					$wing->train,
+					$edata{route}
+					? join( q{  }, $wing->route_interesting )
+					: q{},
+					$wing->route_end,
+					$platformstr // q{},
+					$wing
+				]
+			);
+		}
+	}
+	if ( $d->departure_wings or $d->arrival_wings ) {
 		$output[-1][0] = '└' . '─' x ( length($timestr) - 1 );
 	}
 }
