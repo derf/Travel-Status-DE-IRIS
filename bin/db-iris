@@ -408,10 +408,10 @@ for my $d ( $status->results() ) {
 				$wing
 			]
 		);
-		push( @processed_wings, $wing );
+		push( @processed_wings, $wing->wing_id );
 	}
 	for my $wing ( $d->arrival_wings ) {
-		if ( not $wing ~~ \@processed_wings ) {
+		if ( not $wing->wing_id ~~ \@processed_wings ) {
 			push(
 				@output,
 				[
