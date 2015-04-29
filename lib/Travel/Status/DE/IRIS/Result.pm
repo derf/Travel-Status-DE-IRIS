@@ -726,6 +726,12 @@ sub translate_msg {
 sub TO_JSON {
 	my ($self) = @_;
 
+	my %copy = %{$self};
+	delete $copy{arrival_wings};
+	delete $copy{departure_wings};
+	delete $copy{replaced_by};
+	delete $copy{replacement_for};
+
 	return { %{$self} };
 }
 
