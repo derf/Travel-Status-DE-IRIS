@@ -732,7 +732,7 @@ sub TO_JSON {
 	delete $copy{replaced_by};
 	delete $copy{replacement_for};
 
-	return { %{$self} };
+	return { %copy };
 }
 
 1;
