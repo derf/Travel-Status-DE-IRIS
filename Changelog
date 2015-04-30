@@ -1,3 +1,7 @@
+Travel::Status::DE::IRIS 0.10 - Tue Apr 30 2015
+
+    * Result: Fix deep recursion error in TO_JSON
+
 Travel::Status::DE::IRIS 0.09 - Tue Apr 28 2015
 
     * Result: Add arrival_wings, departure_wings and is_wing accessors
