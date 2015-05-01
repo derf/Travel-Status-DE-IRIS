@@ -19,7 +19,9 @@ use XML::LibXML;
 sub new {
 	my ( $class, %opt ) = @_;
 
-	my $ua = LWP::UserAgent->new(%opt);
+	my %lwp_options = %{ $opt{lwp_options} // { timeout => 10 } };
+
+	my $ua = LWP::UserAgent->new( %{ $opt{lwp_options} } );
 
 	if ( not $opt{station} ) {
 		confess('station flag must be passed');
@@ -448,6 +450,11 @@ have no effect. However, as the IRIS occasionally contains unscheduled
 departures or qos messages known far in advance (e.g. 12 hours from now), any
 non-negative integer is accepted.
 
+=item B<lwp_options> => I<\%hashref>
+
+Passed on to C<< LWP::UserAgent->new >>. Defaults to C<< { timeout => 10 } >>,
+use an empty hashref to override.
+
 =item B<station> => I<stationcode>
 
 Mandatory: Which station to return departures for. Note that this is not a
@@ -456,8 +463,6 @@ station name, but a station code, such as "EE" (for Essen Hbf) or "KA"
 name to code mapping.
 
 =back
-
-All other options are passed to the LWP::UserAgent(3pm) constructor.
 
 =item $status->errstr
 

@@ -1,3 +1,9 @@
+git HEAD
+
+    * IRIS->new: Use lwp_options to explicitly pass arguments to the
+      LWP::UserAgent constructor. Unknown arguments are now longer
+      implicitly passed on
+
 Travel::Status::DE::IRIS 0.10 - Tue Apr 30 2015
 
     * Result: Fix deep recursion error in TO_JSON
