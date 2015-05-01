@@ -21,7 +21,7 @@ sub new {
 
 	my %lwp_options = %{ $opt{lwp_options} // { timeout => 10 } };
 
-	my $ua = LWP::UserAgent->new( %{ $opt{lwp_options} } );
+	my $ua = LWP::UserAgent->new(%lwp_options);
 
 	if ( not $opt{station} ) {
 		confess('station flag must be passed');

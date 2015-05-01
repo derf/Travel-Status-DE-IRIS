@@ -1,3 +1,7 @@
+git HEAD
+
+    * IRIS->new: Fix default lwp_options value (was documented, but not used)
+
 Travel::Status::DE::IRIS 1.00 - Fri May 01 2015
 
     * IRIS->new: Use lwp_options to explicitly pass arguments to the
