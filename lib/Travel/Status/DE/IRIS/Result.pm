@@ -317,14 +317,6 @@ sub add_raw_ref {
 	return $self;
 }
 
-sub set_tl {
-	my ( $self, %attrib ) = @_;
-
-	# TODO
-
-	return $self;
-}
-
 sub set_unscheduled {
 	my ( $self, $unscheduled ) = @_;
 
@@ -732,7 +724,7 @@ sub TO_JSON {
 	delete $copy{replaced_by};
 	delete $copy{replacement_for};
 
-	return { %copy };
+	return {%copy};
 }
 
 1;

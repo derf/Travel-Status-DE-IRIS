@@ -224,7 +224,6 @@ sub get_realtime {
 
 	for my $s ( $xml->findnodes('/timetable/s') ) {
 		my $id     = $s->getAttribute('id');
-		my $e_tl   = ( $s->findnodes('./tl') )[0];
 		my $e_ar   = ( $s->findnodes('./ar') )[0];
 		my $e_dp   = ( $s->findnodes('./dp') )[0];
 		my @e_refs = $s->findnodes('./ref/tl');
@@ -263,16 +262,11 @@ sub get_realtime {
 
 		$result->set_messages(%messages);
 
-		if ($e_tl) {
-			$result->set_tl(
-				class     => $e_tl->getAttribute('f'),    # D N S F
-				unknown_t => $e_tl->getAttribute('t'),    # p
-				train_no  => $e_tl->getAttribute('n'),    # dep number
-				type      => $e_tl->getAttribute('c'),    # S/ICE/ERB/...
-				line_no   => $e_tl->getAttribute('l'),    # 1 -> S1, ...
-				unknown_o => $e_tl->getAttribute('o'),    # owner: 03/80/R2/...
-			);
-		}
+		# note: A departure may also have a ./tl attribute. However, we do
+		# not need to process it because it only matters for departures which
+		# are not planned (or not in the plans we requested). However, in
+		# those cases we already called add_result earlier, which reads ./tl
+		# by itself.
 		for my $e_ref (@e_refs) {
 			$result->add_raw_ref(
 				class     => $e_ref->getAttribute('f'),    # D N S F
