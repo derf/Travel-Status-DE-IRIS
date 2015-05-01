@@ -189,6 +189,20 @@ sub sanitize_options {
 	return;
 }
 
+sub format_delay {
+	my ($d) = @_;
+	my $delay = q{};
+
+	if ( $d->delay ) {
+		$delay = ( $d->delay > 0 ? ' +' : q{ } ) . $d->delay;
+	}
+	if ( $d->is_cancelled ) {
+		$delay = ' CANCELED';
+	}
+
+	return $delay;
+}
+
 sub display_result {
 	my (@lines) = @_;
 
@@ -336,14 +350,7 @@ for my $d ( $status->results() ) {
 		next;
 	}
 
-	my $delay = q{};
-
-	if ( $d->delay ) {
-		$delay = ( $d->delay > 0 ? ' +' : q{ } ) . $d->delay;
-	}
-	if ( $d->is_cancelled ) {
-		$delay = ' CANCELED';
-	}
+	my $delay = format_delay($d);
 
 	my $platformstr = $d->platform // q{};
 	if ( ( $d->platform // q{} ) ne ( $d->sched_platform // q{} ) ) {
@@ -386,21 +393,21 @@ for my $d ( $status->results() ) {
 	push(
 		@output,
 		[
-			$timestr,
-			$d->train . ( $d->is_unscheduled ? ' !' : q{} ),
+			$timestr, $d->train,
 			$edata{route} ? join( q{  }, $d->route_interesting ) : q{},
-			$d->route_end,
-			$platformstr // q{},
-			$d
+			$d->route_end, $platformstr // q{}, $d
 		]
 	);
 
 	my @processed_wings;
 	for my $wing ( $d->departure_wings ) {
+		my $wingdelay = format_delay($wing);
 		push(
 			@output,
 			[
-				'├' . '─' x ( length($timestr) - 1 ),
+				'├'
+				  . '─' x ( length($timestr) - 1 - length($delay) )
+				  . $wingdelay,
 				$wing->train,
 				$edata{route} ? join( q{  }, $wing->route_interesting ) : q{},
 				$wing->route_end,
@@ -412,10 +419,13 @@ for my $d ( $status->results() ) {
 	}
 	for my $wing ( $d->arrival_wings ) {
 		if ( not $wing->wing_id ~~ \@processed_wings ) {
+			my $wingdelay = format_delay($wing);
 			push(
 				@output,
 				[
-					'├' . '─' x ( length($timestr) - 1 ),
+					'├'
+					  . '─' x ( length($timestr) - 1 - length($delay) )
+					  . $wingdelay,
 					$wing->train,
 					$edata{route}
 					? join( q{  }, $wing->route_interesting )
@@ -428,7 +438,7 @@ for my $d ( $status->results() ) {
 		}
 	}
 	if ( $d->departure_wings or $d->arrival_wings ) {
-		$output[-1][0] = '└' . '─' x ( length($timestr) - 1 );
+		substr( $output[-1][0], 0, 1 ) = '└';
 	}
 }
 
