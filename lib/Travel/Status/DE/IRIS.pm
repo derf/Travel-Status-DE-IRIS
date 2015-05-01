@@ -72,7 +72,7 @@ sub new {
 
 	# tra (transfer?) indicates a train changing its ID, so there are two
 	# results for the same train. Remove the departure-only trains from the
-	# result set and merge them with their arrival-only counterpairt.
+	# result set and merge them with their arrival-only counterpart.
 	# This way, in case the arrival is available but the departure isn't,
 	# nothing gets lost.
 	my @merge_candidates
