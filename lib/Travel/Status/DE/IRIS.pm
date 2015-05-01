@@ -420,7 +420,7 @@ L<https://iris.noncd.db.de/wbt/js/index.html?typ=ab&style=qrab&bhf=EE&SecLang=&Z
 
 =over
 
-=item my $states = Travel::Status::DE::IRIS->new(I<%opt>)
+=item my $status = Travel::Status::DE::IRIS->new(I<%opt>)
 
 Requests schedule and realtime data for a specific station at a specific
 point in time. Returns a new Travel::Status::DE::IRIS object.
