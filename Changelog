@@ -1,8 +1,9 @@
-git HEAD
+Travel::Status::DE::IRIS 1.00 - Fri May 01 2015
 
     * IRIS->new: Use lwp_options to explicitly pass arguments to the
       LWP::UserAgent constructor. Unknown arguments are now longer
       implicitly passed on
+    * db-iris: Improve output format for wing trains
 
 Travel::Status::DE::IRIS 0.10 - Tue Apr 30 2015
 

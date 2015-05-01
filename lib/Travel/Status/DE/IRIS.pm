@@ -6,7 +6,7 @@ use 5.014;
 
 no if $] >= 5.018, warnings => 'experimental::smartmatch';
 
-our $VERSION = '0.10';
+our $VERSION = '1.00';
 
 use Carp qw(confess cluck);
 use DateTime;
@@ -402,7 +402,7 @@ Travel::Status::DE::IRIS - Interface to IRIS based web departure monitors.
 
 =head1 VERSION
 
-version 0.10
+version 1.00
 
 =head1 DESCRIPTION
 
@@ -447,7 +447,7 @@ non-negative integer is accepted.
 =item B<lwp_options> => I<\%hashref>
 
 Passed on to C<< LWP::UserAgent->new >>. Defaults to C<< { timeout => 10 } >>,
-use an empty hashref to override.
+you can use an empty hashref to override it.
 
 =item B<station> => I<stationcode>
 
