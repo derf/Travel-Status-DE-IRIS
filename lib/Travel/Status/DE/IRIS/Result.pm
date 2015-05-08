@@ -633,7 +633,7 @@ sub route_interesting {
 	$max_parts //= 3;
 
 	for my $stop (@via) {
-		if ( $stop =~ m{ ?Hbf}o ) {
+		if ( $stop =~ m{ Hbf | Flughafen }ox ) {
 			push( @via_main, $stop );
 		}
 	}
