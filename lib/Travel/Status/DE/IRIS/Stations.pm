@@ -15292,7 +15292,7 @@ Travel::Status::DE::IRIS::Stations - Station name to station code mapping
 
 =head1 VERSION
 
-version 1.00
+version 0.00
 
 =head1 DESCRIPTION
 
@@ -15363,7 +15363,7 @@ Travel::Status::DE::IRIS(3pm).
 
 =head1 AUTHOR
 
-Copyright (C) 2014 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
+Copyright (C) 2014-2015 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
 
 =head1 LICENSE
 

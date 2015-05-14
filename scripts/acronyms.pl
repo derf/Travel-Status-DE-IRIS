@@ -22,7 +22,7 @@ use utf8;
 
 use List::MoreUtils qw(firstval);
 
-our $VERSION = '0.00';
+our $VERSION = '1.00';
 
 my @stations = (
 EOF

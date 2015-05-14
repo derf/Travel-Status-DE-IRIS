@@ -1,5 +1,5 @@
 #!/bin/sh
 
-curl -s http://www.db-netz.de/file/2361656/data/betriebsstellen.pdf \
+curl -s http://fahrweg.dbnetze.com/file/fahrweg-de/2394144/vHBDX5OndmGwv-JTA9EzuNArX1E/2361656/data/betriebsstellen.pdf \
 | pdftotext -raw - - | perl scripts/acronyms.pl \
 > lib/Travel/Status/DE/IRIS/Stations.pm
