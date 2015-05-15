@@ -3,14 +3,9 @@
 use strict;
 use warnings;
 use 5.010;
-
-my $re_line = qr{
-	^
-	(?<acronym> [A-Z]{2}[A-Z ]{0,3} )
-	\s
-	(?<name> .+)
-	$
-}x;
+use Encode qw(decode encode);
+use List::Util qw(max sum);
+use List::MoreUtils qw(true);
 
 say <<'EOF';
 package Travel::Status::DE::IRIS::Stations;
@@ -27,15 +22,81 @@ our $VERSION = '1.00';
 my @stations = (
 EOF
 
+my @buf;
+
+sub process_block {
+	my @histogram;
+	my @borders = (0);
+	my $run = 0;
+
+	my $length = max (map { length($_) } @buf);
+
+	for my $i (0 .. $length) {
+		$histogram[$i] = true { length($_) < $i or substr($_, $i, 1) eq q{ } } @buf;
+
+		if ($histogram[$i] == @buf) {
+			if (not $run) {
+				push(@borders, $i);
+				$run = 1;
+			}
+		}
+		else {
+			$run = 0;
+		}
+	}
+	for my $i (0 .. $#borders / 2) {
+		for my $line (@buf) {
+			my $station_offset = $borders[2 * $i];
+			my $name_offset = $borders[2 * $i + 1];
+			my $station_length = $name_offset - $station_offset;
+			my $name_length = $borders[2 * $i + 2] ? ($borders[2 * $i + 2] - $name_offset) : undef;
+
+			if (length($line) < $station_offset) {
+				next;
+			}
+
+			my $station = substr($line, $station_offset, $station_length);
+			my $name = $name_length ? substr($line, $name_offset, $name_length) : substr($line, $name_offset);
+
+			$station =~ s{^\s+}{};
+			$station =~ s{\s+$}{};
+			$station =~ s{\s+}{ }g;
+			$name =~ s{!}{ }g;
+			$name =~ s{^\s+}{};
+			$name =~ s{\s+$}{};
+			$name =~ s{\s+}{ }g;
+			$name =~ s{'}{\\'}g;
+
+			if (length($station) == 0) {
+				next;
+			}
+
+			printf("\t['%s','%s'],\n", encode('UTF-8', $station), encode('UTF-8', $name));
+		}
+	}
+}
+
 while (my $line = <STDIN>) {
 	chomp $line;
+	$line = decode('UTF-8', $line);
 
-	if ($line =~ $re_line) {
-		my ($station, $name) = @+{qw{acronym name}};
-		$name =~ s{'}{\\'}g;
-
-		printf("\t['%s','%s'],\n", $station, $name);
+	if (length($line) == 0 and @buf) {
+		process_block();
+		@buf = ();
 	}
+
+	if ($line !~ m{ ^ [A-Z]{2} }x and $line !~ m{ \s [A-Z]{2,5} \s }x) {
+		next;
+	}
+
+	$line =~ s{RB-Gr km}{RB-Gr!km}g;
+	$line =~ s{RB-Gr!km\s++}{RB-Gr!km!}g;
+	$line =~ s{Bad }{Bad!}g;
+
+	push(@buf, $line);
+}
+if (@buf) {
+	process_block();
 }
 
 say <<'EOF';
