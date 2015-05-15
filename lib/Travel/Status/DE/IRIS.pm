@@ -6,7 +6,7 @@ use 5.014;
 
 no if $] >= 5.018, warnings => 'experimental::smartmatch';
 
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 
 use Carp qw(confess cluck);
 use DateTime;
@@ -501,6 +501,10 @@ Many backend features are not yet exposed.
 
 db-iris(1), Travel::Status::DE::IRIS::Result(3pm),
 Travel::Status::DE::IRIS::Stations(3pm)
+
+=head1 REPOSITORY
+
+L<https://github.com/derf/Travel-Status-DE-IRIS>
 
 =head1 AUTHOR
 
