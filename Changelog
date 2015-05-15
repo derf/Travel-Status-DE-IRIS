@@ -1,4 +1,4 @@
-git HEAD
+Travel::Status::DE::IRIS 1.01 - Fri May 15 2015
 
     * IRIS->new: Fix default lwp_options value (was documented, but not used)
     * Result->route_interesting: Also consider airports
