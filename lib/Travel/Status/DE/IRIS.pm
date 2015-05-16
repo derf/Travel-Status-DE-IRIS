@@ -6,7 +6,7 @@ use 5.014;
 
 no if $] >= 5.018, warnings => 'experimental::smartmatch';
 
-our $VERSION = '1.02';
+our $VERSION = '1.01';
 
 use Carp qw(confess cluck);
 use DateTime;

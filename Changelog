@@ -1,4 +1,4 @@
-Travel::Status::DE::IRIS 1.02 - ??? May ?? 2015
+git HEAD
 
     * Added github repo to dist metadata and the doc
 
