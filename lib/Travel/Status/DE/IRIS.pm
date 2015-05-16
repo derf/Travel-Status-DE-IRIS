@@ -502,6 +502,10 @@ Many backend features are not yet exposed.
 db-iris(1), Travel::Status::DE::IRIS::Result(3pm),
 Travel::Status::DE::IRIS::Stations(3pm)
 
+=head1 REPOSITORY
+
+L<https://github.com/derf/Travel-Status-DE-IRIS>
+
 =head1 AUTHOR
 
 Copyright (C) 2013-2015 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
