@@ -88,8 +88,8 @@ my %translation = (
 	93 => 'Fehlende oder gestörte behindertengerechte Einrichtung',
 	94 => 'Ersatzbewirtschaftung',
 	95 => 'Ohne behindertengerechtes WC',
-	96 => 'Der Zug ist überbesetzt',
-	97 => 'Der Zug ist überbesetzt',
+	96 => 'Der Zug ist stark überbesetzt', # r 97
+	97 => 'Der Zug ist überbesetzt', # r 96
 	98 => 'Sonstige Qualitätsmängel',
 	99 => 'Verzögerungen im Betriebsablauf',
 );
@@ -704,6 +704,8 @@ sub superseded_messages {
 	my %superseded = (
 		84 => [ 80, 82, 83, 85 ],
 		88 => [ 80, 82, 83, 85, 86, 87, 90, 91, 92, 93, 96, 97, 98 ],
+		96 => [ 97 ],
+		97 => [ 96 ],
 	);
 
 	return @{ $superseded{$msg} // [] };
@@ -1297,7 +1299,7 @@ Estimated from a comparison with bahn.de/ris messages. Needs to be verified.
 
 Estimated from a comparison with bahn.de/iris messages.
 
-=item q 96 : "Der Zug ist E<uuml>berbesetzt"
+=item q 96 : "Der Zug ist stark E<uuml>berbesetzt"
 
 Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
 
