@@ -1,6 +1,10 @@
 git HEAD
 
     * Added github repo to dist metadata and the doc
+    * Result: distinguish between overcrowded trains (q97) and very overcrowded
+      trains (q96)
+    * Result: Verify delay key 60 ("delays because of storm")
+    * Result: Add qos key 70 ("no wifi" -- not entirely sure yet)
 
 Travel::Status::DE::IRIS 1.01 - Fri May 15 2015
 

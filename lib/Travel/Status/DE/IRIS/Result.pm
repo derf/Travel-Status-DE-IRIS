@@ -68,6 +68,7 @@ my %translation = (
 	63 => 'Technische Untersuchung am Zug',
 	64 => 'Weichenstörung',
 	65 => 'Erdrutsch',
+	70 => 'Kein WLAN(?)', # ?
 	73 => 'Mehrzweckabteil vorne',
 	74 => 'Mehrzweckabteil hinten',
 	75 => '1. Klasse vorne',
@@ -1208,6 +1209,10 @@ Source: correlation between IRIS and DB RIS (bahn.de).
 =item d 65 : "Erdrutsch"
 
 Source: correlation between IRIS and DB RIS (bahn.de).
+
+=item q 70 : "Kein WLAN"
+
+Uncertain. Source: correlation between IRIS and DB RIS (bahn.de).
 
 =item q 73 : "Mehrzweckabteil vorne"
 
