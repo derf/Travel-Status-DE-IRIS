@@ -62,7 +62,7 @@ my %translation = (
 	57 => 'Zusätzlicher Halt',
 	58 => 'Umleitung',                                          # ?
 	59 => 'Schnee und Eis',
-	60 => 'Reduzierte Geschwindigkeit wegen Sturm(?)',
+	60 => 'Reduzierte Geschwindigkeit wegen Sturm',
 	61 => 'Türstörung',
 	62 => 'Behobene technische Störung am Zug',
 	63 => 'Technische Untersuchung am Zug',
@@ -1189,8 +1189,7 @@ Source: Correlation between IRIS and DB RIS (bahn.de).
 
 =item d 60 : "Reduzierte Geschwindigkeit wegen Sturm"
 
-Source: Correlation between IRIS and DB RIS (bahn.de). Needs further
-verification.
+Source: Correlation between IRIS and DB RIS (bahn.de).
 
 =item d 61 : "TE<uuml>rstE<ouml>rung"
 
