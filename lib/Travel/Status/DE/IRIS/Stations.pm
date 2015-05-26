@@ -7,7 +7,7 @@ use utf8;
 
 use List::MoreUtils qw(firstval);
 
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 
 my @stations = (
 
