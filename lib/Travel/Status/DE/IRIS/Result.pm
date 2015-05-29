@@ -93,6 +93,7 @@ my %translation = (
 	97 => 'Der Zug ist überbesetzt', # r 96
 	98 => 'Sonstige Qualitätsmängel',
 	99 => 'Verzögerungen im Betriebsablauf',
+	900 => 'Anschlussbus wartet',
 );
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
@@ -1317,6 +1318,10 @@ Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
 Might also mean "Kein rollstuhlgerechter Wagen" (source: frubi).
 
 =item d 99 : "VerzE<ouml>gerungen im Betriebsablauf"
+
+=item f 900 : "Anschlussbus wartet"
+
+Verified by correlation.
 
 =back
 
