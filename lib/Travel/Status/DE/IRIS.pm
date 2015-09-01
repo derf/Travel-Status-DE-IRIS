@@ -54,6 +54,9 @@ sub new {
 	my $xml_st = XML::LibXML->load_xml( string => $res_st->decoded_content );
 
 	$self->{nodes}{station} = ( $xml_st->findnodes('//station') )[0];
+	# TODO parse 'meta' and maybe 'p' flags
+	# They're optional pointers to related platforms. For instance
+	# Berlin Hbf/BL -> Berlin HBf (tief), Berlin Hbf (S), ...
 
 	if ( not $self->{nodes}{station} ) {
 		$self->{errstr}
