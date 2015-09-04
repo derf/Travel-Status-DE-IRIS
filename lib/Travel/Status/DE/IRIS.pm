@@ -278,6 +278,7 @@ sub get_realtime {
 				type      => $e_ref->getAttribute('c'),    # S/ICE/ERB/...
 				line_no   => $e_ref->getAttribute('l'),    # 1 -> S1, ...
 				unknown_o => $e_ref->getAttribute('o'),    # owner: 03/80/R2/...
+				# TODO ps='a' -> rerouted and normally unscheduled train?
 			);
 		}
 		if ($e_ar) {
@@ -289,6 +290,7 @@ sub get_realtime {
 				sched_route_pre => $e_ar->getAttribute('ppth'),
 				status          => $e_ar->getAttribute('cs'),
 				status_since    => $e_ar->getAttribute('clt'),
+				# TODO ps='a' -> rerouted and normally unscheduled train?
 			);
 		}
 		if ($e_dp) {
