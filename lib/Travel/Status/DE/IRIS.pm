@@ -46,7 +46,7 @@ sub new {
 	my $res_st = $ua->get( $self->{iris_base} . '/station/' . $opt{station} );
 
 	if ( $res_st->is_error ) {
-		$self->{errstr} = 'Failed to fetch station data: Server returned '
+		$self->{errstr} = 'Failed to fetch station data: '
 		  . $res_st->status_line;
 		return $self;
 	}
@@ -188,7 +188,7 @@ sub get_timetable {
 	}
 
 	if ( $res->is_error ) {
-		$self->{warnstr} = 'Failed to fetch a schedule part: Server returned '
+		$self->{warnstr} = 'Failed to fetch a schedule part: '
 		  . $res->status_line;
 		return $self;
 	}
@@ -216,7 +216,7 @@ sub get_realtime {
 	}
 
 	if ( $res->is_error ) {
-		$self->{warnstr} = 'Failed to fetch realtime data: Server returned '
+		$self->{warnstr} = 'Failed to fetch realtime data: '
 		  . $res->status_line;
 		return $self;
 	}
