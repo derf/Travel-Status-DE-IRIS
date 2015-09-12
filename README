@@ -14,7 +14,21 @@ Dependencies
 * List::Compare
 * List::MoreUtils
 * LWP::UserAgent
+* Text::LevenshteinXS
 * XML::LibXML
+
+Note about Text::LevenshteinXS: This module is old and unmaintained, but
+appears to be packaged for slightly more distros than its successor
+Text::Levenshtein::XS. If it is not available for your distro (and you do
+not wish to build it), the following drop-in replacements are available:
+
+* Text::Levenshtein::XS
+* Text::Levenshtein (about 10 times slower than the XS modules)
+
+To use them, simply run:
+> sed -i 's/Text::LevenshteinXS/Text::Levenshtein::XS/g' Build.PL lib/Travel/Status/DE/IRIS/Stations.pm
+or
+> sed -i 's/Text::LevenshteinXS/Text::Levenshtein/g' Build.PL lib/Travel/Status/DE/IRIS/Stations.pm
 
 Installation
 ------------

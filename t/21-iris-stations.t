@@ -10,16 +10,10 @@ BEGIN {
 }
 require_ok('Travel::Status::DE::IRIS::Stations');
 
-my @emptypairs = grep { not (length($_->[0]) and length($_->[1])) }
-	Travel::Status::DE::IRIS::Stations::get_stations;
+my @emptypairs = grep { not( length( $_->[0] ) and length( $_->[1] ) ) }
+  Travel::Status::DE::IRIS::Stations::get_stations;
 
-is_deeply(\@emptypairs, [], 'no stations with empty code / name');
-
-is_deeply(
-	[],
-	[ Travel::Status::DE::IRIS::Stations::get_station('doesnotexist') ],
-	'get_station: returns empty list for no match'
-);
+is_deeply( \@emptypairs, [], 'no stations with empty code / name' );
 
 is_deeply(
 	[ [ 'EE', 'Essen Hbf' ] ],
@@ -52,13 +46,23 @@ is_deeply(
 );
 
 is_deeply(
-	[ [ 'EG', 'Gelsenk Hbf' ], [ 'EGZO', 'Gelsenk Zoo' ] ],
-	[ Travel::Status::DE::IRIS::Stations::get_station('Gelsenk') ],
-	'get_station: partial match by name works'
+	[ [ 'KM', 'M\'gladbach Hbf' ] ],
+	[ Travel::Status::DE::IRIS::Stations::get_station('mgladbach hbf') ],
+	'get_station: close fuzzy match works (one result)'
 );
 
 is_deeply(
-	[ [ 'EG', 'Gelsenk Hbf' ], [ 'EGZO', 'Gelsenk Zoo' ] ],
-	[ Travel::Status::DE::IRIS::Stations::get_station('gelsenk') ],
-	'get_station: partial match by name is case insensitive'
+	[ [ 'KM', 'M\'gladbach Hbf' ] ],
+	[ Travel::Status::DE::IRIS::Stations::get_station('Mgladbach Bbf') ],
+	'get_station: close fuzzy match is case insensitive'
+);
+
+is_deeply(
+	[
+		[ 'NKL',  'Kirchenlaibach' ],
+		[ 'KM',   'M\'gladbach Hbf' ],
+		[ 'XSRC', 'Reichenbach Kt' ]
+	],
+	[ Travel::Status::DE::IRIS::Stations::get_station('Moenchengladbach Hbf') ],
+	'get_station: partial match works (several results for very fuzzy match)'
 );

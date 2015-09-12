@@ -29,6 +29,7 @@ Module::Build->new(
 		'List::MoreUtils' => 0,
 		'List::Util' => 0,
 		'LWP::UserAgent' => 0,
+		'Text::LevenshteinXS' => 0,
 		'XML::LibXML' => 0,
 	},
 	sign => 1,

@@ -5,7 +5,11 @@ use warnings;
 use 5.014;
 use utf8;
 
-use List::MoreUtils qw(firstval);
+use List::Util qw(min);
+use List::MoreUtils qw(firstval pairwise);
+use Text::LevenshteinXS qw(distance);
+
+# TODO switch to Text::Levenshtein::XS once AUR/Debian packages become available
 
 our $VERSION = '1.02';
 
@@ -15265,7 +15269,19 @@ sub get_station_by_name {
 		return ($actual_match);
 	}
 
-	return ( grep { $_->[1] =~ m{$name}i } @stations );
+	my @distances   = map { distance( $nname, $_->[1] ) } @stations;
+	my $min_dist    = min(@distances);
+	my $minp1_dist  = min( grep { $_ != $min_dist } @distances );
+	my @station_map = pairwise { [ $a, $b ] } @stations, @distances;
+
+	# arbitrary selection: edit distance < 5 is probably a typo, >= 5
+	# probably means the station does not exist / has an odd name
+	if ( $min_dist < 5 ) {
+		return map { $_->[0] } grep { $_->[1] == $min_dist } @station_map;
+	}
+
+	# always return a list when the edit distance is large
+	return map { $_->[0] } grep { $_->[1] <= $minp1_dist } @station_map;
 }
 
 1;
@@ -15354,6 +15370,10 @@ None.
 =over
 
 =item * List::MoreUtils(3pm)
+
+=item * List::Util(3pm)
+
+=item * Text::LevenshteinXS(3pm)
 
 =back
 

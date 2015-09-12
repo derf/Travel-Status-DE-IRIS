@@ -153,7 +153,8 @@ sub get_station {
 	else {
 		say STDERR "The input '$input_name' is ambiguous. Please choose one "
 		  . 'of the following:';
-		say STDERR join( "\n", map { $_->[1] } @stations );
+		say STDERR
+		  join( "\n", map { $_->[1] . ' (' . $_->[0] . ')' } @stations );
 		exit(1);
 	}
 }

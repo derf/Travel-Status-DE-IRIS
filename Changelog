@@ -1,6 +1,10 @@
 git HEAD
 
     * Result: Add info key 900
+    * Station: Improve get_station matching quality by using the Levenshtein
+      edit distance instead of simple substring matching
+    * new dependency: Text::LevenshteinXS (see README for notes about
+      drop-in replacements)
 
 Travel::Status::DE::IRIS 1.02 - Tue May 26 2015
 
