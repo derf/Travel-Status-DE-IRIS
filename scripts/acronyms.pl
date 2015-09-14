@@ -16,6 +16,7 @@ use 5.014;
 use utf8;
 
 use List::Util qw(min);
+use List::UtilsBy qw(uniq_by);
 use List::MoreUtils qw(firstval pairwise);
 use Text::LevenshteinXS qw(distance);
 
@@ -125,7 +126,7 @@ sub normalize {
 }
 
 sub get_station {
-	my ( $name ) = @_;
+	my ($name) = @_;
 
 	my $ds100_match = firstval { $name eq $_->[0] } @stations;
 
@@ -137,34 +138,30 @@ sub get_station {
 }
 
 sub get_station_by_name {
-	my ( $name ) = @_;
+	my ($name) = @_;
 
 	my $nname = lc($name);
-	my $actual_match = firstval { $nname eq lc($_->[1]) } @stations;
+	my $actual_match = firstval { $nname eq lc( $_->[1] ) } @stations;
 
 	if ($actual_match) {
 		return ($actual_match);
 	}
 
 	$nname = normalize($nname);
-	$actual_match = firstval { $nname eq normalize(lc($_->[1])) } @stations;
+	$actual_match = firstval { $nname eq normalize( lc( $_->[1] ) ) } @stations;
 	if ($actual_match) {
 		return ($actual_match);
 	}
 
 	my @distances   = map { distance( $nname, $_->[1] ) } @stations;
 	my $min_dist    = min(@distances);
-	my $minp1_dist  = min( grep { $_ != $min_dist } @distances );
 	my @station_map = pairwise { [ $a, $b ] } @stations, @distances;
 
-	# arbitrary selection: edit distance < 5 is probably a typo, >= 5
-	# probably means the station does not exist / has an odd name
-	if ( $min_dist < 5 ) {
-		return map { $_->[0] } grep { $_->[1] == $min_dist } @station_map;
-	}
+	my @substring_matches = grep { $_->[1] =~ m{$name}i } @stations;
+	my @levenshtein_matches
+	  = map { $_->[0] } grep { $_->[1] == $min_dist } @station_map;
 
-	# always return a list when the edit distance is large
-	return map { $_->[0] } grep { $_->[1] <= $minp1_dist } @station_map;
+	return uniq_by { $_->[0] } ( @substring_matches, @levenshtein_matches );
 }
 
 1;

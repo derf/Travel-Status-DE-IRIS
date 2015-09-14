@@ -6,6 +6,7 @@ use 5.014;
 use utf8;
 
 use List::Util qw(min);
+use List::UtilsBy qw(uniq_by);
 use List::MoreUtils qw(firstval pairwise);
 use Text::LevenshteinXS qw(distance);
 
@@ -15271,17 +15272,13 @@ sub get_station_by_name {
 
 	my @distances   = map { distance( $nname, $_->[1] ) } @stations;
 	my $min_dist    = min(@distances);
-	my $minp1_dist  = min( grep { $_ != $min_dist } @distances );
 	my @station_map = pairwise { [ $a, $b ] } @stations, @distances;
 
-	# arbitrary selection: edit distance < 5 is probably a typo, >= 5
-	# probably means the station does not exist / has an odd name
-	if ( $min_dist < 5 ) {
-		return map { $_->[0] } grep { $_->[1] == $min_dist } @station_map;
-	}
+	my @substring_matches = grep { $_->[1] =~ m{$name}i } @stations;
+	my @levenshtein_matches
+	  = map { $_->[0] } grep { $_->[1] == $min_dist } @station_map;
 
-	# always return a list when the edit distance is large
-	return map { $_->[0] } grep { $_->[1] <= $minp1_dist } @station_map;
+	return uniq_by { $_->[0] } ( @substring_matches, @levenshtein_matches );
 }
 
 1;

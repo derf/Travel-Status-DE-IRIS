@@ -2,6 +2,7 @@
 use strict;
 use warnings;
 use 5.014;
+use utf8;
 
 use Test::More tests => 11;
 
@@ -59,10 +60,12 @@ is_deeply(
 
 is_deeply(
 	[
-		[ 'NKL',  'Kirchenlaibach' ],
-		[ 'KM',   'M\'gladbach Hbf' ],
-		[ 'XSRC', 'Reichenbach Kt' ]
+		[ 'EEBE', 'E-Bergeborbeck' ],
+		[ 'EEBB', 'E-Borbeck' ],
+		[ 'EEBS', 'E-Borbeck Süd' ],
+		[ 'EGAR', 'Garbeck' ],
+		[ 'EWBC', 'Wolbeck' ],
 	],
-	[ Travel::Status::DE::IRIS::Stations::get_station('Moenchengladbach Hbf') ],
-	'get_station: partial match works (several results for very fuzzy match)'
+	[ Travel::Status::DE::IRIS::Stations::get_station('Borbeck') ],
+	'get_station: partial match with substring and levenshtein'
 );

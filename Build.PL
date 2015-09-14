@@ -28,6 +28,7 @@ Module::Build->new(
 		'List::Compare' => '0.29',
 		'List::MoreUtils' => 0,
 		'List::Util' => 0,
+		'List::UtilsBy' => 0,
 		'LWP::UserAgent' => 0,
 		'Text::LevenshteinXS' => 0,
 		'XML::LibXML' => 0,
