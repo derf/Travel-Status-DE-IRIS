@@ -12,7 +12,7 @@ use Text::LevenshteinXS qw(distance);
 
 # TODO switch to Text::Levenshtein::XS once AUR/Debian packages become available
 
-our $VERSION = '1.02';
+our $VERSION = '1.03';
 
 my @stations = (
 
@@ -15369,6 +15369,8 @@ None.
 =item * List::MoreUtils(3pm)
 
 =item * List::Util(3pm)
+
+=item * List::UtilsBy(3pm)
 
 =item * Text::LevenshteinXS(3pm)
 

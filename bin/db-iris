@@ -6,7 +6,7 @@ use utf8;
 
 no if $] >= 5.018, warnings => 'experimental::smartmatch';
 
-our $VERSION = '1.02';
+our $VERSION = '1.03';
 
 use Carp;
 use DateTime;
@@ -459,7 +459,7 @@ I<station>
 
 =head1 VERSION
 
-version 1.02
+version 1.03
 
 =head1 DESCRIPTION
 
