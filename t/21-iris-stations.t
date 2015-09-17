@@ -4,7 +4,7 @@ use warnings;
 use 5.014;
 use utf8;
 
-use Test::More tests => 11;
+use Test::More tests => 12;
 
 BEGIN {
 	use_ok('Travel::Status::DE::IRIS::Stations');
@@ -32,6 +32,12 @@ is_deeply(
 	[ [ 'EE', 'Essen Hbf' ] ],
 	[ Travel::Status::DE::IRIS::Stations::get_station('essen hbf') ],
 	'get_station: exact match by name is case insensitive'
+);
+
+is_deeply(
+	[ [ 'EESD', 'Essen Süd' ] ],
+	[ Travel::Status::DE::IRIS::Stations::get_station('essen sued') ],
+	'get_station: exact match with normalization (1)'
 );
 
 is_deeply(
