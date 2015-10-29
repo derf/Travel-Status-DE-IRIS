@@ -306,7 +306,10 @@ sub display_result {
 		}
 
 		if ( $edata{fullroute} ) {
-			print "\n" . join( "\n", $d->route ) . "\n\n";
+			print "\n"
+			  . join( "\n", $d->route_pre )
+			  . "\n - - - -\n"
+			  . join( "\n", $d->route_post ) . "\n\n";
 		}
 	}
 
