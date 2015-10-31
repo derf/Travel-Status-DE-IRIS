@@ -46,28 +46,31 @@ sub new {
 	my $res_st = $ua->get( $self->{iris_base} . '/station/' . $opt{station} );
 
 	if ( $res_st->is_error ) {
-		$self->{errstr} = 'Failed to fetch station data: '
-		  . $res_st->status_line;
+		$self->{errstr}
+		  = 'Failed to fetch station data: ' . $res_st->status_line;
 		return $self;
 	}
 
 	my $xml_st = XML::LibXML->load_xml( string => $res_st->decoded_content );
 
-	$self->{nodes}{station} = ( $xml_st->findnodes('//station') )[0];
+	my $station_node = ( $xml_st->findnodes('//station') )[0];
+
 	# TODO parse 'meta' and maybe 'p' flags
 	# They're optional pointers to related platforms. For instance
 	# Berlin Hbf/BL -> Berlin HBf (tief), Berlin Hbf (S), ...
 
-	if ( not $self->{nodes}{station} ) {
+	if ( not $station_node ) {
 		$self->{errstr}
 		  = "The station '$opt{station}' has no associated timetable";
 		return $self;
 	}
 
+	$self->{station}      = $opt{station};
+	$self->{station_code} = $station_node->getAttribute('eva');
+
 	my $dt_req = $self->{datetime}->clone;
 	for ( 1 .. 3 ) {
-		$self->get_timetable( $self->{nodes}{station}->getAttribute('eva'),
-			$dt_req );
+		$self->get_timetable( $self->{station_code}, $dt_req );
 		$dt_req->add( hours => 1 );
 	}
 
@@ -188,8 +191,8 @@ sub get_timetable {
 	}
 
 	if ( $res->is_error ) {
-		$self->{warnstr} = 'Failed to fetch a schedule part: '
-		  . $res->status_line;
+		$self->{warnstr}
+		  = 'Failed to fetch a schedule part: ' . $res->status_line;
 		return $self;
 	}
 
@@ -208,7 +211,7 @@ sub get_timetable {
 sub get_realtime {
 	my ($self) = @_;
 
-	my $eva = $self->{nodes}{station}->getAttribute('eva');
+	my $eva = $self->{station_code};
 	my $res = $self->{user_agent}->get( $self->{iris_base} . "/fchg/${eva}" );
 
 	if ( $self->{developer_mode} ) {
@@ -216,8 +219,8 @@ sub get_realtime {
 	}
 
 	if ( $res->is_error ) {
-		$self->{warnstr} = 'Failed to fetch realtime data: '
-		  . $res->status_line;
+		$self->{warnstr}
+		  = 'Failed to fetch realtime data: ' . $res->status_line;
 		return $self;
 	}
 
@@ -278,7 +281,7 @@ sub get_realtime {
 				type      => $e_ref->getAttribute('c'),    # S/ICE/ERB/...
 				line_no   => $e_ref->getAttribute('l'),    # 1 -> S1, ...
 				unknown_o => $e_ref->getAttribute('o'),    # owner: 03/80/R2/...
-				# TODO ps='a' -> rerouted and normally unscheduled train?
+				     # TODO ps='a' -> rerouted and normally unscheduled train?
 			);
 		}
 		if ($e_ar) {
@@ -290,6 +293,7 @@ sub get_realtime {
 				sched_route_pre => $e_ar->getAttribute('ppth'),
 				status          => $e_ar->getAttribute('cs'),
 				status_since    => $e_ar->getAttribute('clt'),
+
 				# TODO ps='a' -> rerouted and normally unscheduled train?
 			);
 		}
