@@ -1,6 +1,7 @@
 git HEAD
 
     * Result: Add qos code 79 ("Ohne Mehrzweckabteil")
+    * db-iris: Accept UIC station codes
 
 Travel::Status::DE::IRIS 1.03 - Tue Sep 15 2015
 
