@@ -141,6 +141,10 @@ sub get_departure {
 sub get_station {
 	my ($input_name) = @_;
 
+	if ( $input_name =~ m{ ^ [[:digit:]]+ $ }x ) {
+		return $input_name;
+	}
+
 	my @stations = Travel::Status::DE::IRIS::Stations::get_station($input_name);
 
 	if ( @stations == 0 ) {

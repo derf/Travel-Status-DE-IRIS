@@ -67,6 +67,7 @@ sub new {
 
 	$self->{station}      = $opt{station};
 	$self->{station_code} = $station_node->getAttribute('eva');
+	$self->{station_name} = $station_node->getAttribute('name');
 
 	my $dt_req = $self->{datetime}->clone;
 	for ( 1 .. 3 ) {
