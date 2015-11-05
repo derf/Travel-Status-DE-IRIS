@@ -43,31 +43,16 @@ sub new {
 
 	$ua->env_proxy;
 
-	my $res_st = $ua->get( $self->{iris_base} . '/station/' . $opt{station} );
+	my ($station_code, $station_name, @related) = $self->get_station(
+		name => $opt{station},
+	);
 
-	if ( $res_st->is_error ) {
-		$self->{errstr}
-		  = 'Failed to fetch station data: ' . $res_st->status_line;
+	if ($self->{errstr}) {
 		return $self;
 	}
 
-	my $xml_st = XML::LibXML->load_xml( string => $res_st->decoded_content );
-
-	my $station_node = ( $xml_st->findnodes('//station') )[0];
-
-	# TODO parse 'meta' and maybe 'p' flags
-	# They're optional pointers to related platforms. For instance
-	# Berlin Hbf/BL -> Berlin HBf (tief), Berlin Hbf (S), ...
-
-	if ( not $station_node ) {
-		$self->{errstr}
-		  = "The station '$opt{station}' has no associated timetable";
-		return $self;
-	}
-
-	$self->{station}      = $opt{station};
-	$self->{station_code} = $station_node->getAttribute('eva');
-	$self->{station_name} = $station_node->getAttribute('name');
+	$self->{station_code} = $station_code;
+	$self->{station_name} = $station_name;
 
 	my $dt_req = $self->{datetime}->clone;
 	for ( 1 .. 3 ) {
@@ -114,6 +99,35 @@ sub new {
 	$self->create_replacement_refs;
 
 	return $self;
+}
+
+sub get_station {
+	my ($self, %opt) = @_;
+
+	my $ua = $self->{user_agent};
+	my $res_st = $ua->get( $self->{iris_base} . '/station/' . $opt{name} );
+
+	if ( $res_st->is_error ) {
+		$self->{errstr}
+		  = 'Failed to fetch station data: ' . $res_st->status_line;
+		return $self;
+	}
+
+	my $xml_st = XML::LibXML->load_xml( string => $res_st->decoded_content );
+
+	my $station_node = ( $xml_st->findnodes('//station') )[0];
+
+	# TODO parse 'meta' and maybe 'p' flags
+	# They're optional pointers to related platforms. For instance
+	# Berlin Hbf/BL -> Berlin HBf (tief), Berlin Hbf (S), ...
+
+	if ( not $station_node ) {
+		$self->{errstr}
+		  = "The station '$opt{name}' has no associated timetable";
+		return;
+	}
+
+	return ($station_node->getAttribute('eva'), $station_node->getAttribute('name'));
 }
 
 sub add_result {
@@ -365,6 +379,12 @@ sub create_replacement_refs {
 			}
 		}
 	}
+}
+
+sub station_code {
+	my ($self) = @_;
+
+	return $self->{station_code};
 }
 
 sub errstr {
