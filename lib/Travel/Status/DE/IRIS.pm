@@ -37,17 +37,34 @@ sub new {
 		serializable => $opt{serializable},
 		station      => $opt{station},
 		user_agent   => $ua,
+		with_related => $opt{with_related} // 1,
 	};
 
 	bless( $self, $class );
 
 	$ua->env_proxy;
 
-	my ($station_code, $station_name, @related) = $self->get_station(
+	my ( $station_code, $station_name, @related ) = $self->get_station(
 		name => $opt{station},
+		root => 1,
 	);
 
-	if ($self->{errstr}) {
+	if (@related) {
+		for my $ref (@related) {
+			my $ref_status = Travel::Status::DE::IRIS->new(
+				datetime       => $self->{datetime},
+				developer_mode => $self->{developer_mode},
+				lookahead      => $self->{lookahead},
+				station        => $ref,
+				with_related   => 0,
+			);
+			if ( not $ref_status->errstr ) {
+				push( @{ $self->{results} }, $ref_status->results );
+			}
+		}
+	}
+
+	if ( $self->{errstr} ) {
 		return $self;
 	}
 
@@ -102,8 +119,14 @@ sub new {
 }
 
 sub get_station {
-	my ($self, %opt) = @_;
+	my ( $self, %opt ) = @_;
 
+	if ( $self->{developer_mode} ) {
+		say 'GET ' . $self->{iris_base} . '/station/' . $opt{name};
+	}
+
+	my @related_ids;
+	my $recursion_depth = $opt{recursion_depth} // 0;
 	my $ua = $self->{user_agent};
 	my $res_st = $ua->get( $self->{iris_base} . '/station/' . $opt{name} );
 
@@ -122,12 +145,44 @@ sub get_station {
 	# Berlin Hbf/BL -> Berlin HBf (tief), Berlin Hbf (S), ...
 
 	if ( not $station_node ) {
-		$self->{errstr}
-		  = "The station '$opt{name}' has no associated timetable";
+		if ( $opt{root} ) {
+			$self->{errstr}
+			  = "The station '$opt{name}' has no associated timetable";
+		}
+		return;
+	}
+	if ( $recursion_depth > 5 ) {
+		cluck("Reached recursion depth $recursion_depth while tracking IDs");
 		return;
 	}
 
-	return ($station_node->getAttribute('eva'), $station_node->getAttribute('name'));
+	my $uic_code = $station_node->getAttribute('eva');
+	my $name     = $station_node->getAttribute('name');
+	my $sd100    = $station_node->getAttribute('ds100');
+
+	if ( $self->{with_related} and $station_node->hasAttribute('meta') ) {
+		my @recursion_blacklist = @{ $opt{recursion_blacklist} // [] };
+		my @refs = split( m{ \| }x, $station_node->getAttribute('meta') );
+
+		push( @recursion_blacklist, $uic_code );
+		for my $ref (@refs) {
+			if ( not( $ref ~~ \@recursion_blacklist ) ) {
+				my ( $id, undef, @ids ) = $self->get_station(
+					name                => $ref,
+					recursion_depth     => $recursion_depth + 1,
+					recursion_blacklist => \@recursion_blacklist,
+				);
+				if ($id) {
+					push( @related_ids, $id );
+				}
+				if (@ids) {
+					push( @related_ids, @ids );
+				}
+			}
+		}
+	}
+
+	return ( $uic_code, $name, @related_ids );
 }
 
 sub add_result {
