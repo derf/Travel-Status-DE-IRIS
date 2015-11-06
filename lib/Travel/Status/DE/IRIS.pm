@@ -158,7 +158,11 @@ sub get_station {
 
 	my $uic_code = $station_node->getAttribute('eva');
 	my $name     = $station_node->getAttribute('name');
-	my $sd100    = $station_node->getAttribute('ds100');
+	my $ds100    = $station_node->getAttribute('ds100');
+
+	if ( $self->{developer_mode} ) {
+		printf( " -> %s (%s / %s)\n", $name, $uic_code, $ds100 );
+	}
 
 	if ( $self->{with_related} and $station_node->hasAttribute('meta') ) {
 		my @recursion_blacklist = @{ $opt{recursion_blacklist} // [] };
