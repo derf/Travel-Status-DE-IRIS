@@ -22,6 +22,7 @@ my ( $date, $time, $lookahead );
 my $datetime       = DateTime->now( time_zone => 'Europe/Berlin' );
 my $developer_mode = 0;
 my $realtime       = 0;
+my $with_related   = 1;
 my ( $filter_via, $track_via, $status_via );
 my ( @grep_class, @grep_type, @grep_platform );
 my ( %edata,      @edata_pre );
@@ -33,19 +34,20 @@ binmode( STDOUT, ':encoding(utf-8)' );
 @ARGV = map { decode( 'UTF-8', $_ ) } @ARGV;
 
 GetOptions(
-	'c|class=s@'    => \@grep_class,
-	'd|date=s'      => \$date,
-	'h|help'        => sub { show_help(0) },
-	'l|lookahead=i' => \$lookahead,
-	'o|output=s@'   => \@edata_pre,
-	'p|platform=s@' => \@grep_platform,
-	'r|realtime'    => \$realtime,
-	't|time=s'      => \$time,
-	'T|type=s'      => \@grep_type,
-	'v|via=s'       => \$filter_via,
-	'V|track-via=s' => \$track_via,
-	'devmode'       => \$developer_mode,
-	'version'       => \&show_version,
+	'c|class=s@'         => \@grep_class,
+	'd|date=s'           => \$date,
+	'h|help'             => sub { show_help(0) },
+	'l|lookahead=i'      => \$lookahead,
+	'o|output=s@'        => \@edata_pre,
+	'p|platform=s@'      => \@grep_platform,
+	'r|realtime'         => \$realtime,
+	't|time=s'           => \$time,
+	'T|type=s'           => \@grep_type,
+	'v|via=s'            => \$filter_via,
+	'V|track-via=s'      => \$track_via,
+	'x|exact|no-related' => sub { $with_related = 0 },
+	'devmode'            => \$developer_mode,
+	'version'            => \&show_version,
 
 ) or show_help(1);
 
@@ -105,6 +107,7 @@ my $status = Travel::Status::DE::IRIS->new(
 	developer_mode => $developer_mode,
 	lookahead      => $lookahead,
 	station        => $station,
+	with_related   => $with_related,
 );
 if ($track_via) {
 

@@ -37,7 +37,7 @@ sub new {
 		serializable => $opt{serializable},
 		station      => $opt{station},
 		user_agent   => $ua,
-		with_related => $opt{with_related} // 1,
+		with_related => $opt{with_related},
 	};
 
 	bless( $self, $class );
