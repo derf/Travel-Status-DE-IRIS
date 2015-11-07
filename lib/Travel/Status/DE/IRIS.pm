@@ -44,32 +44,31 @@ sub new {
 
 	$ua->env_proxy;
 
-	my ( $station_code, $station_name, @related ) = $self->get_station(
-		name => $opt{station},
-		root => 1,
+	my ( $station, @related_stations ) = $self->get_station(
+		name      => $opt{station},
+		root      => 1,
+		recursive => $opt{with_related},
 	);
 
-	if (@related) {
-		for my $ref (@related) {
-			my $ref_status = Travel::Status::DE::IRIS->new(
-				datetime       => $self->{datetime},
-				developer_mode => $self->{developer_mode},
-				lookahead      => $self->{lookahead},
-				station        => $ref,
-				with_related   => 0,
-			);
-			if ( not $ref_status->errstr ) {
-				push( @{ $self->{results} }, $ref_status->results );
-			}
+	$self->{station_code} = $station->{uic};
+	$self->{station_name} = $station->{name};
+
+	for my $ref (@related_stations) {
+		my $ref_status = Travel::Status::DE::IRIS->new(
+			datetime       => $self->{datetime},
+			developer_mode => $self->{developer_mode},
+			lookahead      => $self->{lookahead},
+			station        => $ref->{uic},
+			with_related   => 0,
+		);
+		if ( not $ref_status->errstr ) {
+			push( @{ $self->{results} }, $ref_status->results );
 		}
 	}
 
 	if ( $self->{errstr} ) {
 		return $self;
 	}
-
-	$self->{station_code} = $station_code;
-	$self->{station_name} = $station_name;
 
 	my $dt_req = $self->{datetime}->clone;
 	for ( 1 .. 3 ) {
@@ -125,7 +124,7 @@ sub get_station {
 		say 'GET ' . $self->{iris_base} . '/station/' . $opt{name};
 	}
 
-	my @related_ids;
+	my @ret;
 	my $recursion_depth = $opt{recursion_depth} // 0;
 	my $ua = $self->{user_agent};
 	my $res_st = $ua->get( $self->{iris_base} . '/station/' . $opt{name} );
@@ -133,16 +132,12 @@ sub get_station {
 	if ( $res_st->is_error ) {
 		$self->{errstr}
 		  = 'Failed to fetch station data: ' . $res_st->status_line;
-		return $self;
+		return;
 	}
 
 	my $xml_st = XML::LibXML->load_xml( string => $res_st->decoded_content );
 
 	my $station_node = ( $xml_st->findnodes('//station') )[0];
-
-	# TODO parse 'meta' and maybe 'p' flags
-	# They're optional pointers to related platforms. For instance
-	# Berlin Hbf/BL -> Berlin HBf (tief), Berlin Hbf (S), ...
 
 	if ( not $station_node ) {
 		if ( $opt{root} ) {
@@ -156,37 +151,40 @@ sub get_station {
 		return;
 	}
 
-	my $uic_code = $station_node->getAttribute('eva');
-	my $name     = $station_node->getAttribute('name');
-	my $ds100    = $station_node->getAttribute('ds100');
+	push(
+		@ret,
+		{
+			uic   => $station_node->getAttribute('eva'),
+			name  => $station_node->getAttribute('name'),
+			ds100 => $station_node->getAttribute('ds100'),
+		}
+	);
 
 	if ( $self->{developer_mode} ) {
-		printf( " -> %s (%s / %s)\n", $name, $uic_code, $ds100 );
+		printf( " -> %s (%s / %s)\n", @{ $ret[0] }{qw{name uic ds100}} );
 	}
 
-	if ( $self->{with_related} and $station_node->hasAttribute('meta') ) {
+	if ( $opt{recursive} and $station_node->hasAttribute('meta') ) {
 		my @recursion_blacklist = @{ $opt{recursion_blacklist} // [] };
 		my @refs = split( m{ \| }x, $station_node->getAttribute('meta') );
 
-		push( @recursion_blacklist, $uic_code );
+		push( @recursion_blacklist, $ret[0]{uic} );
 		for my $ref (@refs) {
 			if ( not( $ref ~~ \@recursion_blacklist ) ) {
-				my ( $id, undef, @ids ) = $self->get_station(
-					name                => $ref,
-					recursion_depth     => $recursion_depth + 1,
-					recursion_blacklist => \@recursion_blacklist,
+				push(
+					@ret,
+					$self->get_station(
+						name                => $ref,
+						recursive           => 1,
+						recursion_depth     => $recursion_depth + 1,
+						recursion_blacklist => \@recursion_blacklist,
+					)
 				);
-				if ($id) {
-					push( @related_ids, $id );
-				}
-				if (@ids) {
-					push( @related_ids, @ids );
-				}
 			}
 		}
 	}
 
-	return ( $uic_code, $name, @related_ids );
+	return @ret;
 }
 
 sub add_result {
