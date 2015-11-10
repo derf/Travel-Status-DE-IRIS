@@ -35,7 +35,6 @@ sub new {
 		  // 'http://iris.noncd.db.de/iris-tts/timetable',
 		lookahead => $opt{lookahead} // ( 4 * 60 ),
 		serializable => $opt{serializable},
-		station      => $opt{station},
 		user_agent   => $ua,
 		with_related => $opt{with_related},
 	};
@@ -50,8 +49,8 @@ sub new {
 		recursive => $opt{with_related},
 	);
 
-	$self->{station_code} = $station->{uic};
-	$self->{station_name} = $station->{name};
+	$self->{station}          = $station;
+	$self->{related_stations} = \@related_stations;
 
 	for my $ref (@related_stations) {
 		my $ref_status = Travel::Status::DE::IRIS->new(
@@ -72,7 +71,7 @@ sub new {
 
 	my $dt_req = $self->{datetime}->clone;
 	for ( 1 .. 3 ) {
-		$self->get_timetable( $self->{station_code}, $dt_req );
+		$self->get_timetable( $self->{station}{uic}, $dt_req );
 		$dt_req->add( hours => 1 );
 	}
 
@@ -283,7 +282,7 @@ sub get_timetable {
 sub get_realtime {
 	my ($self) = @_;
 
-	my $eva = $self->{station_code};
+	my $eva = $self->{station}{uic};
 	my $res = $self->{user_agent}->get( $self->{iris_base} . "/fchg/${eva}" );
 
 	if ( $self->{developer_mode} ) {
@@ -438,10 +437,16 @@ sub create_replacement_refs {
 	}
 }
 
-sub station_code {
+sub station {
 	my ($self) = @_;
 
-	return $self->{station_code};
+	return $self->{station};
+}
+
+sub related_stations {
+	my ($self) = @_;
+
+	return @{ $self->{related_stations} };
 }
 
 sub errstr {
