@@ -1,7 +1,9 @@
-git HEAD
+Travel::Status::DE::IRIS 1.04 - Thu Nov 12 2015
 
     * Result: Add qos code 79 ("Ohne Mehrzweckabteil")
     * db-iris: Accept UIC station codes
+    * Fix warnings with recent DateTime::Format::Strptime releases
+    * Improve parser speed
 
 Travel::Status::DE::IRIS 1.03 - Tue Sep 15 2015
 
