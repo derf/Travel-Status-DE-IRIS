@@ -111,18 +111,20 @@ sub new {
 
 	my $ref = \%opt;
 
-	my $strp = DateTime::Format::Strptime->new(
+	my ( $train_id, $start_ts, $stop_no ) = split( /.\K-/, $opt{raw_id} );
+
+	bless( $ref, $obj );
+
+	$ref->{strptime_obj} = DateTime::Format::Strptime->new(
 		pattern   => '%y%m%d%H%M',
 		time_zone => 'Europe/Berlin',
 	);
-
-	my ( $train_id, $start_ts, $stop_no ) = split( /.\K-/, $opt{raw_id} );
 
 	$ref->{wing_id} = "${train_id}-${start_ts}";
 	$ref->{is_wing} = 0;
 	$train_id =~ s{^-}{};
 
-	$ref->{start} = $strp->parse_datetime($start_ts);
+	$ref->{start} = $ref->parse_ts($start_ts);
 
 	$ref->{train_id} = $train_id;
 	$ref->{stop_no}  = $stop_no;
@@ -134,9 +136,9 @@ sub new {
 	}
 
 	my $ar = $ref->{arrival} = $ref->{sched_arrival}
-	  = $strp->parse_datetime( $opt{arrival_ts} );
+	  = $ref->parse_ts( $opt{arrival_ts} );
 	my $dp = $ref->{departure} = $ref->{sched_departure}
-	  = $strp->parse_datetime( $opt{departure_ts} );
+	  = $ref->parse_ts( $opt{departure_ts} );
 
 	if ( not( $ar or $dp ) ) {
 		cluck(
@@ -178,23 +180,27 @@ sub new {
 	return bless( $ref, $obj );
 }
 
+sub parse_ts {
+	my ( $self, $string ) = @_;
+
+	if ( defined $string ) {
+		return $self->{strptime_obj}->parse_datetime($string);
+	}
+	return;
+}
+
 sub set_ar {
 	my ( $self, %attrib ) = @_;
-
-	my $strp = DateTime::Format::Strptime->new(
-		pattern   => '%y%m%d%H%M',
-		time_zone => 'Europe/Berlin',
-	);
 
 	# unscheduled arrivals may not appear in the plan, but we do need to
 	# know their planned arrival time
 	if ( $attrib{plan_arrival_ts} ) {
 		$self->{sched_arrival}
-		  = $strp->parse_datetime( $attrib{plan_arrival_ts} );
+		  = $self->parse_ts( $attrib{plan_arrival_ts} );
 	}
 
 	if ( $attrib{arrival_ts} ) {
-		$self->{arrival} = $strp->parse_datetime( $attrib{arrival_ts} );
+		$self->{arrival} = $self->parse_ts( $attrib{arrival_ts} );
 		$self->{delay}
 		  = $self->arrival->subtract_datetime( $self->sched_arrival )
 		  ->in_units('minutes');
@@ -240,20 +246,15 @@ sub set_ar {
 sub set_dp {
 	my ( $self, %attrib ) = @_;
 
-	my $strp = DateTime::Format::Strptime->new(
-		pattern   => '%y%m%d%H%M',
-		time_zone => 'Europe/Berlin',
-	);
-
 	# unscheduled arrivals may not appear in the plan, but we do need to
 	# know their planned arrival time
 	if ( $attrib{plan_departure_ts} ) {
 		$self->{sched_departure}
-		  = $strp->parse_datetime( $attrib{plan_departure_ts} );
+		  = $self->parse_ts( $attrib{plan_departure_ts} );
 	}
 
 	if ( $attrib{departure_ts} ) {
-		$self->{departure} = $strp->parse_datetime( $attrib{departure_ts} );
+		$self->{departure} = $self->parse_ts( $attrib{departure_ts} );
 		$self->{delay}
 		  = $self->departure->subtract_datetime( $self->sched_departure )
 		  ->in_units('minutes');
@@ -454,11 +455,6 @@ sub destination {
 sub delay_messages {
 	my ($self) = @_;
 
-	my $strp = DateTime::Format::Strptime->new(
-		pattern   => '%y%m%d%H%M',
-		time_zone => 'Europe/Berlin',
-	);
-
 	my @keys   = reverse sort keys %{ $self->{messages} };
 	my @msgs   = grep { $_->[1] eq 'd' } map { $self->{messages}{$_} } @keys;
 	my @msgids = uniq( map { $_->[2] } @msgs );
@@ -467,7 +463,7 @@ sub delay_messages {
 	for my $id (@msgids) {
 		my $msg = firstval { $_->[2] == $id } @msgs;
 		push( @ret,
-			[ $strp->parse_datetime( $msg->[0] ), $self->translate_msg($id) ] );
+			[ $self->parse_ts( $msg->[0] ), $self->translate_msg($id) ] );
 	}
 
 	return @ret;
@@ -518,11 +514,6 @@ sub dump_message_codes {
 sub qos_messages {
 	my ($self) = @_;
 
-	my $strp = DateTime::Format::Strptime->new(
-		pattern   => '%y%m%d%H%M',
-		time_zone => 'Europe/Berlin',
-	);
-
 	my @keys = sort keys %{ $self->{messages} };
 	my @msgs
 	  = grep { $_->[1] ~~ [qw[f q]] } map { $self->{messages}{$_} } @keys;
@@ -541,9 +532,9 @@ sub qos_messages {
 		}
 	}
 
-	@ret = map {
-		[ $strp->parse_datetime( $_->[0] ), $self->translate_msg( $_->[2] ) ]
-	} reverse @ret;
+	@ret
+	  = map { [ $self->parse_ts( $_->[0] ), $self->translate_msg( $_->[2] ) ] }
+	  reverse @ret;
 
 	return @ret;
 }
@@ -551,15 +542,10 @@ sub qos_messages {
 sub raw_messages {
 	my ($self) = @_;
 
-	my $strp = DateTime::Format::Strptime->new(
-		pattern   => '%y%m%d%H%M',
-		time_zone => 'Europe/Berlin',
-	);
-
 	my @messages = reverse sort keys %{ $self->{messages} };
 	my @ret      = map {
 		[
-			$strp->parse_datetime( $self->{messages}->{$_}->[0] ),
+			$self->parse_ts( $self->{messages}->{$_}->[0] ),
 			$self->{messages}->{$_}->[2]
 		]
 	} @messages;
@@ -570,15 +556,10 @@ sub raw_messages {
 sub messages {
 	my ($self) = @_;
 
-	my $strp = DateTime::Format::Strptime->new(
-		pattern   => '%y%m%d%H%M',
-		time_zone => 'Europe/Berlin',
-	);
-
 	my @messages = reverse sort keys %{ $self->{messages} };
 	my @ret      = map {
 		[
-			$strp->parse_datetime( $self->{messages}->{$_}->[0] ),
+			$self->parse_ts( $self->{messages}->{$_}->[0] ),
 			$self->translate_msg( $self->{messages}->{$_}->[2] )
 		]
 	} @messages;
