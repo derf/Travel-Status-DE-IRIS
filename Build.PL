@@ -11,6 +11,7 @@ Module::Build->new(
 		'Test::Fatal' => 0,
 		'Test::More' => 0,
 		'Test::Pod' => 0,
+		'Text::CSV' => 0,
 	},
 	configure_requires => {
 		'Module::Build' => 0.40,
