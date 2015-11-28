@@ -34,6 +34,8 @@ sub new {
 		iris_base      => $opt{iris_base}
 		  // 'http://iris.noncd.db.de/iris-tts/timetable',
 		lookahead => $opt{lookahead} // ( 4 * 60 ),
+		main_cache   => $opt{main_cache},
+		rt_cache     => $opt{realtime_cache},
 		serializable => $opt{serializable},
 		user_agent   => $ua,
 		with_related => $opt{with_related},
@@ -116,25 +118,39 @@ sub new {
 	return $self;
 }
 
+sub get_with_cache {
+	my ( $self, $cache, $url ) = @_;
+
+	if ( $self->{developer_mode} ) {
+		say "GET $url";
+	}
+
+	say '  cache miss';
+	my $ua  = $self->{user_agent};
+	my $res = $ua->get($url);
+
+	if ( $res->is_error ) {
+		return ( undef, $res->status_line );
+	}
+
+	return ( $res->decoded_content, undef );
+}
+
 sub get_station {
 	my ( $self, %opt ) = @_;
 
-	if ( $self->{developer_mode} ) {
-		say 'GET ' . $self->{iris_base} . '/station/' . $opt{name};
-	}
-
 	my @ret;
 	my $recursion_depth = $opt{recursion_depth} // 0;
-	my $ua = $self->{user_agent};
-	my $res_st = $ua->get( $self->{iris_base} . '/station/' . $opt{name} );
 
-	if ( $res_st->is_error ) {
-		$self->{errstr}
-		  = 'Failed to fetch station data: ' . $res_st->status_line;
+	my ( $raw, $err )
+	  = $self->get_with_cache( $self->{main_cache},
+		$self->{iris_base} . '/station/' . $opt{name} );
+	if ($err) {
+		$self->{errstr} = "Failed to fetch station data: $err";
 		return;
 	}
 
-	my $xml_st = XML::LibXML->load_xml( string => $res_st->decoded_content );
+	my $xml_st = XML::LibXML->load_xml( string => $raw );
 
 	my $station_node = ( $xml_st->findnodes('//station') )[0];
 
@@ -251,23 +267,17 @@ sub add_result {
 
 sub get_timetable {
 	my ( $self, $eva, $dt ) = @_;
-	my $ua = $self->{user_agent};
 
-	my $res = $ua->get(
+	my ( $raw, $err )
+	  = $self->get_with_cache( $self->{main_cache},
 		$dt->strftime( $self->{iris_base} . "/plan/${eva}/%y%m%d/%H" ) );
 
-	if ( $self->{developer_mode} ) {
-		say 'GET '
-		  . $dt->strftime( $self->{iris_base} . "/plan/${eva}/%y%m%d/%H" );
-	}
-
-	if ( $res->is_error ) {
-		$self->{warnstr}
-		  = 'Failed to fetch a schedule part: ' . $res->status_line;
+	if ($err) {
+		$self->{warnstr} = "Failed to fetch a schedule part: $err";
 		return $self;
 	}
 
-	my $xml = XML::LibXML->load_xml( string => $res->decoded_content );
+	my $xml = XML::LibXML->load_xml( string => $raw );
 
 	my $station = ( $xml->findnodes('/timetable') )[0]->getAttribute('station');
 
@@ -283,19 +293,17 @@ sub get_realtime {
 	my ($self) = @_;
 
 	my $eva = $self->{station}{uic};
-	my $res = $self->{user_agent}->get( $self->{iris_base} . "/fchg/${eva}" );
 
-	if ( $self->{developer_mode} ) {
-		say 'GET ' . $self->{iris_base} . "/fchg/${eva}";
-	}
+	my ( $raw, $err )
+	  = $self->get_with_cache( $self->{rt_cache},
+		$self->{iris_base} . "/fchg/${eva}" );
 
-	if ( $res->is_error ) {
-		$self->{warnstr}
-		  = 'Failed to fetch realtime data: ' . $res->status_line;
+	if ($err) {
+		$self->{warnstr} = "Failed to fetch realtime data: $err";
 		return $self;
 	}
 
-	my $xml = XML::LibXML->load_xml( string => $res->decoded_content );
+	my $xml = XML::LibXML->load_xml( string => $raw );
 
 	my $station = ( $xml->findnodes('/timetable') )[0]->getAttribute('station');
 
