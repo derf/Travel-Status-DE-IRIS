@@ -125,6 +125,16 @@ sub get_with_cache {
 		say "GET $url";
 	}
 
+	if ($cache) {
+		my $content = $cache->thaw($url);
+		if ($content) {
+			if ( $self->{developer_mode} ) {
+				say '  cache hit';
+			}
+			return ( ${$content}, undef );
+		}
+	}
+
 	say '  cache miss';
 	my $ua  = $self->{user_agent};
 	my $res = $ua->get($url);
@@ -132,8 +142,13 @@ sub get_with_cache {
 	if ( $res->is_error ) {
 		return ( undef, $res->status_line );
 	}
+	my $content = $res->decoded_content;
 
-	return ( $res->decoded_content, undef );
+	if ($cache) {
+		$cache->freeze( $url, \$content );
+	}
+
+	return ( $content, undef );
 }
 
 sub get_station {
