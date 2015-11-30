@@ -135,7 +135,10 @@ sub get_with_cache {
 		}
 	}
 
-	say '  cache miss';
+	if ( $self->{developer_mode} ) {
+		say '  cache miss';
+	}
+
 	my $ua  = $self->{user_agent};
 	my $res = $ua->get($url);
 
