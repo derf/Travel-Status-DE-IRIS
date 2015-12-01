@@ -1,3 +1,19 @@
+git HEAD
+
+    * Update station list. It now uses data supplied by the Deutsche Bahn
+      Open Data portal.
+    * db-iris: New option -x / --exact / --no-related
+    * IRIS->new: New options main_cache, realtime_cache and with_related
+    * IRIS: Add ->station and ->related_stations accessors
+    * db-iris: Include related stations in query output (for instance,
+      "Köln Messe Deutz" will include "Köln Messe Deutz (tief)" and
+      "Köln Messe Deutz Gl. 9-10"). Use --exact / --no-related to disable this.
+    * IRIS: Same. Also, IRIS->new can now be passed Cache objects to cache
+      HTTP requests for a user-defined time. This is most useful when
+      building infoscreens and similar, since the scheduled and station data
+      never changes and can therefore be cached to decrease network load and
+      increase response time.
+
 Travel::Status::DE::IRIS 1.04 - Thu Nov 12 2015
 
     * Result: Add qos code 79 ("Ohne Mehrzweckabteil")
