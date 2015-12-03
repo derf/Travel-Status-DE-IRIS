@@ -643,6 +643,17 @@ line RE11 line in NRW has two identifiers, one for ME<ouml>nchengladbach
 those and will miss trains changing their identifier between I<station> and
 I<viastation>
 
+=item B<-x>, B<--exact>, B<--no-related>
+
+Sometimes, Deutsche Bahn splits up major stations in their IRIS interface.
+For instance, "KE<ouml>ln Messe/Deutz" actually consists of
+"KE<ouml>ln Messe/Deutz" (KKDZ), "KE<ouml>ln Messe/Deutz Gl. 9-10"
+(KKDZB) and "KE<ouml>ln Messe/Deutz (tief)" (KKDT).
+
+By default, B<db-iris> will show departures for all of these stations when
+queried for any of them. When this option is set, only the departures for the
+station part specified on the commandline are shown.
+
 =item B<--version>
 
 Show version information.
