@@ -1,4 +1,4 @@
-git HEAD
+Travel::Status::DE::IRIS 1.05 - Sun Dec 20 2015
 
     * Update station list. It now uses data supplied by the Deutsche Bahn
       Open Data portal.
