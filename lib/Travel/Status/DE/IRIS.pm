@@ -574,6 +574,17 @@ station name, but a station code, such as "EE" (for Essen Hbf) or "KA"
 (for Aachen Hbf). See Travel::Status::DE::IRIS::Stations(3pm) for a
 name to code mapping.
 
+=item B<with_related> => I<bool>
+
+Sometimes, Deutsche Bahn splits up major stations in the IRIS interface.  For
+instance, "KE<ouml>ln Messe/Deutz" actually consists of "KE<ouml>ln
+Messe/Deutz" (KKDZ), "KE<ouml>ln Messe/Deutz Gl. 9-10" (KKDZB) and "KE<ouml>ln
+Messe/Deutz (tief)" (KKDT).
+
+By default, Travel::Status::DE::IRIS only returns departures for the specified
+station. When this option is set to a true value, it will also return
+departures for all related stations.
+
 =back
 
 =item $status->errstr
