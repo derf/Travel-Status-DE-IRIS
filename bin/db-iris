@@ -284,8 +284,8 @@ sub display_result {
 
 				printf(
 					" %s → %s  %s\n",
-					$message->[0]->strftime('%d.%m. %H:%M'),
 					$message->[1]->strftime('%d.%m. %H:%M'),
+					$message->[2]->strftime('%d.%m. %H:%M'),
 					$message->[3]
 				);
 			}
