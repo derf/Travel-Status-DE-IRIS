@@ -330,9 +330,11 @@ sub get_realtime {
 		my $e_ar   = ( $s->findnodes('./ar') )[0];
 		my $e_dp   = ( $s->findnodes('./dp') )[0];
 		my @e_refs = $s->findnodes('./ref/tl');
+		my @e_tms  = $s->findnodes('./m');
 		my @e_ms   = $s->findnodes('.//m');
 
 		my %messages;
+		my %track_messages;
 
 		my $result = first { $_->raw_id eq $id } $self->results;
 
@@ -362,8 +364,17 @@ sub get_realtime {
 				$messages{$msgid} = [ $ts, $type, $value ];
 			}
 		}
+		for my $e_tm (@e_tms) {
+			my $type  = $e_tm->getAttribute('t');
+			my $msgid = $e_tm->getAttribute('id');
+			my $ts    = $e_tm->getAttribute('ts');
+			my $from  = $e_tm->getAttribute('from');
+			my $to    = $e_tm->getAttribute('to');
+			$track_messages{$msgid} = [ $ts, $from, $to, $type, $msgid ];
+		}
 
 		$result->set_messages(%messages);
+		$result->set_track_messages(%track_messages);
 
 		# note: A departure may also have a ./tl attribute. However, we do
 		# not need to process it because it only matters for departures which

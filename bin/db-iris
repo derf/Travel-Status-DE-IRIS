@@ -23,6 +23,7 @@ my $datetime       = DateTime->now( time_zone => 'Europe/Berlin' );
 my $developer_mode = 0;
 my $realtime       = 0;
 my $with_related   = 1;
+my $emma_url;
 my ( $filter_via, $track_via, $status_via );
 my ( @grep_class, @grep_type, @grep_platform );
 my ( %edata,      @edata_pre );
@@ -47,6 +48,7 @@ GetOptions(
 	'V|track-via=s'      => \$track_via,
 	'x|exact|no-related' => sub { $with_related = 0 },
 	'devmode'            => \$developer_mode,
+	'emma=s'             => \$emma_url,
 	'version'            => \&show_version,
 
 ) or show_help(1);
@@ -93,6 +95,7 @@ for my $efield (@edata_pre) {
 		when ('D') { $edata{delays}       = 1 }
 		when ('f') { $edata{fullroute}    = 1 }
 		when ('m') { $edata{messages}     = 1 }
+		when ('M') { $edata{trackinfo}    = 1 }
 		when ('q') { $edata{qos}          = 1 }
 		when ('r') { $edata{route}        = 1 }
 		when ('R') { $edata{replacements} = 1 }
@@ -108,6 +111,7 @@ my $status = Travel::Status::DE::IRIS->new(
 	lookahead      => $lookahead,
 	station        => $station,
 	with_related   => $with_related,
+	emma_url       => $emma_url,
 );
 if ($track_via) {
 
@@ -272,6 +276,18 @@ sub display_result {
 			}
 			if ( $d->{unk_dp_hi} ) {
 				say "[DEBUG] dep:hi = $d->{unk_dp_hi}";
+			}
+		}
+
+		if ( $edata{trackinfo} ) {
+			for my $message ( $d->track_messages ) {
+
+				printf(
+					" %s → %s  %s\n",
+					$message->[0]->strftime('%d.%m. %H:%M'),
+					$message->[1]->strftime('%d.%m. %H:%M'),
+					$message->[3]
+				);
 			}
 		}
 

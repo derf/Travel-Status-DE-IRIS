@@ -305,6 +305,14 @@ sub set_messages {
 	return $self;
 }
 
+sub set_track_messages {
+	my ( $self, %track_messages ) = @_;
+
+	$self->{track_messages} = \%track_messages;
+
+	return $self;
+}
+
 sub set_realtime {
 	my ( $self, $xmlobj ) = @_;
 
@@ -464,6 +472,28 @@ sub delay_messages {
 		my $msg = firstval { $_->[2] == $id } @msgs;
 		push( @ret,
 			[ $self->parse_ts( $msg->[0] ), $self->translate_msg($id) ] );
+	}
+
+	return @ret;
+}
+
+sub track_messages {
+	my ($self) = @_;
+
+	my @keys = reverse sort keys %{ $self->{track_messages} };
+	my @msgs = map { $self->{track_messages}{$_} } @keys;
+	my @ret;
+
+	for my $msg (@msgs) {
+		push(
+			@ret,
+			[
+				$self->parse_ts( $msg->[0] ),
+				$self->parse_ts( $msg->[1] ),
+				$self->parse_ts( $msg->[2] ),
+				$msg->[4]
+			]
+		);
 	}
 
 	return @ret;
