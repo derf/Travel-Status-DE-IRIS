@@ -12,6 +12,8 @@ use Carp qw(confess cluck);
 use DateTime;
 use Encode qw(encode decode);
 use List::Util qw(first);
+use List::MoreUtils qw(uniq);
+use List::UtilsBy qw(uniq_by);
 use LWP::UserAgent;
 use Travel::Status::DE::IRIS::Result;
 use XML::LibXML;
@@ -197,11 +199,14 @@ sub get_station {
 		printf( " -> %s (%s / %s)\n", @{ $ret[0] }{qw{name uic ds100}} );
 	}
 
+	# TODO this approach is flawed, iterative is probably better
+
 	if ( $opt{recursive} and $station_node->hasAttribute('meta') ) {
 		my @recursion_blacklist = @{ $opt{recursion_blacklist} // [] };
-		my @refs = split( m{ \| }x, $station_node->getAttribute('meta') );
+		my @refs = uniq(split( m{ \| }x, $station_node->getAttribute('meta') ));
 
-		push( @recursion_blacklist, $ret[0]{uic} );
+		push( @recursion_blacklist, map { $_->{uic} } @ret );
+
 		for my $ref (@refs) {
 			if ( not( $ref ~~ \@recursion_blacklist ) ) {
 				push(
@@ -216,6 +221,8 @@ sub get_station {
 			}
 		}
 	}
+
+	@ret = uniq_by { $_->{uic} } @ret;
 
 	return @ret;
 }
