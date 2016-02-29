@@ -1,3 +1,12 @@
+Travel::Status::DE::IRIS 1.06 - Mon Feb 29 2016
+
+    * Partially fix slow response time and excessive network requests for
+      stations with heavily cross-referenced related-station tags (most notable
+      example: München Hbf). The implementation is still slightly inefficient
+      in these cases, but far better than before -- A complete fix will follow
+      in the next release. Note that db-iris calls using
+      -x/--exact/--no-related are not affected by this issue.
+
 Travel::Status::DE::IRIS 1.05 - Sun Dec 20 2015
 
     * Update station list. It now uses data supplied by the Deutsche Bahn
