@@ -870,9 +870,8 @@ Train type with line (such as C<< S 1 >>) if available, type with number
 =item $result->line_no
 
 Number of the line, undef if unknown. Seems to be set only for S-Bahn and
-similar trains. Regional and long-distance trains such as C<< RE 10126 >>
-usually do not have this field set, even if they have a common line number
-(C<< RE 1 >> in this case).
+regional trains. Note that some regional and most long-distance trains do
+not have this field set, even if they have a common line number.
 
 Example: For the line C<< S 1 >>, line_no will return C<< 1 >>.
 
