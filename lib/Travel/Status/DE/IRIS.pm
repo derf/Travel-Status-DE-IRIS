@@ -160,65 +160,55 @@ sub get_station {
 	my ( $self, %opt ) = @_;
 
 	my @ret;
-	my $recursion_depth = $opt{recursion_depth} // 0;
+	my @queue = ( $opt{name} );
+	my @seen;
 
-	my ( $raw, $err )
-	  = $self->get_with_cache( $self->{main_cache},
-		$self->{iris_base} . '/station/' . $opt{name} );
-	if ($err) {
-		$self->{errstr} = "Failed to fetch station data: $err";
-		return;
-	}
+	while (@queue) {
+		my $station = shift(@queue);
+		push( @seen, $station );
 
-	my $xml_st = XML::LibXML->load_xml( string => $raw );
-
-	my $station_node = ( $xml_st->findnodes('//station') )[0];
-
-	if ( not $station_node ) {
-		if ( $opt{root} ) {
-			$self->{errstr}
-			  = "The station '$opt{name}' has no associated timetable";
+		my ( $raw, $err )
+		  = $self->get_with_cache( $self->{main_cache},
+			$self->{iris_base} . '/station/' . $station );
+		if ($err) {
+			$self->{errstr} = "Failed to fetch station data: $err";
+			return;
 		}
-		return;
-	}
-	if ( $recursion_depth > 5 ) {
-		cluck("Reached recursion depth $recursion_depth while tracking IDs");
-		return;
-	}
 
-	push(
-		@ret,
-		{
-			uic   => $station_node->getAttribute('eva'),
-			name  => $station_node->getAttribute('name'),
-			ds100 => $station_node->getAttribute('ds100'),
-		}
-	);
+		my $xml_st = XML::LibXML->load_xml( string => $raw );
 
-	if ( $self->{developer_mode} ) {
-		printf( " -> %s (%s / %s)\n", @{ $ret[0] }{qw{name uic ds100}} );
-	}
+		my $station_node = ( $xml_st->findnodes('//station') )[0];
 
-	# TODO this approach is flawed, iterative is probably better
-
-	if ( $opt{recursive} and $station_node->hasAttribute('meta') ) {
-		my @recursion_blacklist = @{ $opt{recursion_blacklist} // [] };
-		my @refs = uniq(split( m{ \| }x, $station_node->getAttribute('meta') ));
-
-		push( @recursion_blacklist, map { $_->{uic} } @ret );
-
-		for my $ref (@refs) {
-			if ( not( $ref ~~ \@recursion_blacklist ) ) {
-				push(
-					@ret,
-					$self->get_station(
-						name                => $ref,
-						recursive           => 1,
-						recursion_depth     => $recursion_depth + 1,
-						recursion_blacklist => \@recursion_blacklist,
-					)
-				);
+		if ( not $station_node ) {
+			if ( $opt{root} ) {
+				$self->{errstr}
+				  = "The station '$opt{name}' has no associated timetable";
+				return;
 			}
+			next;
+		}
+
+		push( @seen, $station_node->getAttribute('eva') );
+
+		push(
+			@ret,
+			{
+				uic   => $station_node->getAttribute('eva'),
+				name  => $station_node->getAttribute('name'),
+				ds100 => $station_node->getAttribute('ds100'),
+			}
+		);
+
+		if ( $self->{developer_mode} ) {
+			printf( " -> %s (%s / %s)\n", @{ $ret[-1] }{qw{name uic ds100}} );
+		}
+
+		if ( $opt{recursive} ) {
+			my @refs
+			  = uniq( split( m{ \| }x, $station_node->getAttribute('meta') ) );
+			@refs = grep { not( $_ ~~ \@seen or $_ ~~ \@queue ) } @refs;
+			push( @queue, @refs );
+			$opt{root} = 0;
 		}
 	}
 
