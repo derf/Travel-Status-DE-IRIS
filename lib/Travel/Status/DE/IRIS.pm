@@ -173,8 +173,15 @@ sub get_station {
 		  = $self->get_with_cache( $self->{main_cache},
 			$self->{iris_base} . '/station/' . $station );
 		if ($err) {
-			$self->{errstr} = "Failed to fetch station data: $err";
-			return;
+			if ( $opt{root} ) {
+				$self->{errstr} = "Failed to fetch station data: $err";
+				return;
+			}
+			else {
+				$self->{warnstr}
+				  = "Failed to fetch station data for '$station': $err\n";
+				next;
+			}
 		}
 
 		my $xml_st = XML::LibXML->load_xml( string => $raw );
@@ -184,8 +191,13 @@ sub get_station {
 		if ( not $station_node ) {
 			if ( $opt{root} ) {
 				$self->{errstr}
-				  = "The station '$opt{name}' has no associated timetable";
+				  = "Station '$station' has no associated timetable";
 				return;
+			}
+			else {
+				$self->{warnstr}
+				  = "Station '$station' has no associated timetable";
+				next;
 			}
 			next;
 		}
