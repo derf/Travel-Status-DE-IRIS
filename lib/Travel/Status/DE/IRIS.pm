@@ -159,13 +159,15 @@ sub get_with_cache {
 sub get_station {
 	my ( $self, %opt ) = @_;
 
+	my $iter_depth = 0;
 	my @ret;
 	my @queue = ( $opt{name} );
 	my @seen;
 
-	while (@queue) {
+	while ( @queue and $iter_depth < 12 ) {
 		my $station = shift(@queue);
 		push( @seen, $station );
+		$iter_depth++;
 
 		my ( $raw, $err )
 		  = $self->get_with_cache( $self->{main_cache},
@@ -210,6 +212,11 @@ sub get_station {
 			push( @queue, @refs );
 			$opt{root} = 0;
 		}
+	}
+
+	if (@queue) {
+		cluck(  "Reached $iter_depth iterations when tracking station IDs. "
+			  . "This is probably a bug" );
 	}
 
 	@ret = uniq_by { $_->{uic} } @ret;
