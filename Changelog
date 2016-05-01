@@ -1,8 +1,7 @@
-git HEAD
+Travel::Status::DE::IRIS 1.07 - Sun May 01 2016
 
-    * Fix slow response time and excessive network requests for stations with
-      with heavily cross-referenced related-station tags (most notable example:
-      München Hbf)
+    * Fix inefficient requests for stations with with heavily cross-referenced
+      related-station tags (most notable example: München Hbf)
 
 Travel::Status::DE::IRIS 1.06 - Mon Feb 29 2016
 
