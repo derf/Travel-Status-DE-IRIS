@@ -217,7 +217,7 @@ sub get_station {
 			printf( " -> %s (%s / %s)\n", @{ $ret[-1] }{qw{name uic ds100}} );
 		}
 
-		if ( $opt{recursive} ) {
+		if ( $opt{recursive} and defined $station_node->getAttribute('meta') ) {
 			my @refs
 			  = uniq( split( m{ \| }x, $station_node->getAttribute('meta') ) );
 			@refs = grep { not( $_ ~~ \@seen or $_ ~~ \@queue ) } @refs;
