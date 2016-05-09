@@ -690,6 +690,11 @@ Unknown.
 
 Copyright (C) 2013-2015 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
 
+The station data used by this script is Copyright (C) 2016 by DB
+Station&Service AG, Europaplatz 1, 10557 Berlin, Germany and also available
+under a CC-BY 4.0 license on
+L<http://data.deutschebahn.com/datasets/haltestellen/>.
+
 =head1 LICENSE
 
 This program is licensed under the same terms as Perl itself.

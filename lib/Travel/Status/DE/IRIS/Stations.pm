@@ -6868,10 +6868,14 @@ Travel::Status::DE::IRIS(3pm).
 
 =head1 AUTHOR
 
-Copyright (C) 2014-2015 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
+Station data: Copyright (C) 2016 by DB Station&Service AG, Europaplatz 1, 10557 Berlin, Germany
+
+Lookup code: Copyright (C) 2014-2016 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
 
 =head1 LICENSE
 
-This module is licensed under the same terms as Perl itself.
+This module is licensed under the same terms as Perl itself. Note that the
+station data used by this module is also available under a CC-BY 4.0 license on
+L<http://data.deutschebahn.com/datasets/haltestellen/>.
 
 
