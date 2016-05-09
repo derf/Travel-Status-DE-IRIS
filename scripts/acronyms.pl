@@ -34,11 +34,11 @@ while (my $line = <STDIN>) {
 	my $status = $csv->parse($line);
 	my @fields = $csv->fields;
 
-	if ($fields[0] eq 'Abk') {
+	my ($uic, $station, $name, $mot, $longitute, $latitude) = @fields;
+
+	if ($station eq 'DS100' or $station eq q{}) {
 		next;
 	}
-
-	my ($station, $name, $country, $location, $valid_since) = @fields;
 
 	$name =~ s{!}{ }g;
 	$name =~ s{^\s+}{};
@@ -46,7 +46,7 @@ while (my $line = <STDIN>) {
 	$name =~ s{\s+}{ }g;
 	$name =~ s{'}{\\'}g;
 
-	printf("\t['%s','%s'],\n", encode('UTF-8', $station), encode('UTF-8', $name));
+	printf("\t['%s','%s',%s,%s,%s],\n", encode('UTF-8', $station), encode('UTF-8', $name), $uic, $longitute, $latitude);
 }
 
 say <<'EOF';

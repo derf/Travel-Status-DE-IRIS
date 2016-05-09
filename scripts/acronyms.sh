@@ -1,5 +1,5 @@
 #!/bin/sh
 
-curl -s http://data.deutschebahn.com/datasets/betriebsstellen/DBNetz-Betriebsstellenverzeichnis-Stand2015-05.csv \
+curl -s http://data.deutschebahn.com/datasets/haltestellen/D_Bahnhof_2016_01_alle.csv \
 | perl scripts/acronyms.pl \
 > lib/Travel/Status/DE/IRIS/Stations.pm
