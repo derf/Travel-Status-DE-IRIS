@@ -5,10 +5,15 @@ use warnings;
 use 5.014;
 use utf8;
 
+use Geo::Distance;
 use List::Util qw(min);
 use List::UtilsBy qw(uniq_by);
 use List::MoreUtils qw(firstval pairwise);
 use Text::LevenshteinXS qw(distance);
+
+# TODO Geo::Distance is kinda deprecated, it is recommended to use GIS::Distance
+# instead. However, since GIS::Distance is not packaged for Debian, I'll stick
+# with Geo::Distance for now (which works fine enough here)
 
 # TODO switch to Text::Levenshtein::XS once AUR/Debian packages become available
 
@@ -8485,6 +8490,26 @@ sub get_station {
 	}
 
 	return get_station_by_name($name);
+}
+
+sub get_stations_by_location {
+	my ($lon, $lat, $num_matches) = @_;
+
+	$num_matches //= 10;
+
+	my $geo = Geo::Distance->new();
+
+	# we only use geolocations inside germany.
+	# For these, this fast preprocessing step will let through all
+	# coordinates inside a 60km radius (and a bunch which are farther out)
+	my @candidates = grep { $#{$_} >= 4 and abs($_->[3] - $lon) < 1 and abs($_->[4] - $lat) < 1 } @stations;
+	my @distances = map { $geo->distance('kilometer', $lon, $lat, $_->[3], $_->[4]) } @candidates;
+	my @station_map = pairwise { [ $a, $b ] } @candidates, @distances;
+
+	@station_map = sort { $a->[1] <=> $b->[1] } @station_map;
+	splice(@station_map, 10);
+
+	return @station_map;
 }
 
 sub get_station_by_name {
