@@ -1421,7 +1421,7 @@ my @stations = (
 	[ 'LDRG',  'Drahtzug',                      8017005, 11.124636, 51.663447 ],
 	[ 'BDR',   'Drebkau',                       8011414, 14.22313,  51.655084 ],
 	[ 'LDAH',  'Drei Annen Hohne',              8017006, 10.726766, 51.770116 ],
-	[ 'FBUSS', 'Dreieich-Buchschlag',           8001236, 8.661204,  50.022113 ],
+	[ 'FBUS',  'Dreieich-Buchschlag',           8001236, 8.661204,  50.022113 ], # fixed DS100
 	[ 'FDCH',  'Dreieich-Dreieichenhain',       8001554, 8.708693,  49.998468 ],
 	[ 'FGOZ',  'Dreieich-Götzenhain',          8002315, 8.731266,  49.994502 ],
 	[ 'FOFF',  'Dreieich-Offenthal',            8004653, 8.74964,   49.981851 ],
@@ -2544,7 +2544,7 @@ my @stations = (
 	[ 'RHST',  'Hammerstein',                   8070419, 7.644148,  47.690295 ],
 	[ 'DHUW',  'Hammerunterwiesenthal',         8011817, 13.008722, 50.441091 ],
 	[ 'EHK',   'Hamminkeln',                    8002571, 6.601745,  51.735104 ],
-	[ 'FH  N', 'Hanau Hbf',                     8000150, 8.929,     50.120953 ],
+	[ 'FH',    'Hanau Hbf',                     8000150, 8.929,     50.120953 ], # fixed DS100
 	[ 'FKAH',  'Hanau Klein-Auheim',            8003311, 8.934288,  50.100734 ],
 	[ 'FHN',   'Hanau Nord',                    8002572, 8.925848,  50.141433 ],
 	[ 'FHW',   'Hanau West',                    8002573, 8.908818,  50.131949 ],
