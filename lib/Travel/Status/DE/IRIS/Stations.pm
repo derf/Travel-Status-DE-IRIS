@@ -8493,7 +8493,7 @@ sub get_station {
 	return get_station_by_name($name);
 }
 
-sub get_stations_by_location {
+sub get_station_by_location {
 	my ( $lon, $lat, $num_matches ) = @_;
 
 	$num_matches //= 10;
@@ -8580,28 +8580,42 @@ version 0.00
 
 =head1 DESCRIPTION
 
-This module contains a mapping of DeutscheBahn station names to station codes.
-A station name is a (perhaps slightly abbreviated) string naming a particular
-station; a station code is a two to five character denoting a station for the
-IRIS web service.
+This module contains a list of Deutsche Bahn stations, and also some stations
+outside of Germany which are served by Deutsche Bahn trains. It offers
+several accessors to look up stations based on names or geolocation data and
+can also simply dump all known stations.
 
-Example station names (code in parentheses) are:
-"Essen HBf" (EE), "Aachen Schanz" (KASZ), "Do UniversitE<auml>t" (EDUV).
+Each of the following methods returns a list of array references. Each
+array reference describes a single station and contains either two or
+five elements:
 
-B<Note:> Station codes may contain whitespace.
+=over
+
+=item * The station code (also known as DS100 / "Druckschrift 100" /
+"Richtlinie 100"). A short string used exclusively by Deutsche Bahn APIs. Note
+that it may contain space characters.
+
+=item * The station name
+
+=item * The international station number (IBNR, "Internationale Bahnhofsnummer")
+
+=item * The station's longitude
+
+=item * The station's latitude
+
+=back
 
 =head1 METHODS
 
 =over
 
-=item Travel::Status::DE::IRIS::get_stations
+=item Travel::Status::DE::IRIS::Stations::get_stations
 
-Returns a list of [station code, station name] listrefs lexically sorted by
-station name.
+Returns a list of all known stations, lexically sorted by station name.
 
-=item Travel::Status::DE::IRIS::get_station(I<$in>)
+=item Travel::Status::DE::IRIS::Stations::get_station(I<$in>)
 
-Returns a list of [station code, station name] listrefs matching I<$in>.
+Returns a list of stations matching I<$in>.
 
 If a I<$in> is a valid station code, only one element ([I<$in>, related name])
 is returned. Otherwise, it is passed to get_station_by_name(I<$in>) (see
@@ -8609,16 +8623,27 @@ below).
 
 Note that station codes matching is case sensitive and must be exact.
 
-=item Travel::Status::DE::IRIS::get_station_by_name(I<$name>)
+=item Travel::Status::DE::IRIS::Stations::get_station_by_location(I<$lon>, I<$lat>, I<$num_matches>)
 
-Returns a list of [station code, station name] listrefs where the station
-name matches I<$name>.
+Looks for stations which are close to longitude/latitude I<$lon>/I<$lat> and
+returns the closest I<$num_matches> (defaults to 10) matches. Note that
+stations which are located more than 70 kilometers away from I<$lon>/I<$lat>
+may be ignored when computing the closest matches.
+
+Note that location-based lookup is only supported for stations inside Germany,
+since the station list data source does not provide geolocation data for
+non-german stations.
+
+=item Travel::Status::DE::IRIS::Stations::get_station_by_name(I<$name>)
+
+Returns a list of stations where the station name matches I<$name>.
 
 Matching happens in two steps: If a case-insensitive exact match exists, only
 this one is returned. Otherwise, all stations whose name contains I<$name> as
-a substring (also case-insensitive) are returned.
+a substring (also case-insensitive) and all stations whose name has a low
+Levenshtein distance to I<$name> are returned.
 
-This two-step behaviour makes sure that not prefix-free stations can still be
+This two-step behaviour makes sure that not-prefix-free stations can still be
 matched directly. For instance, both "Essen-Steele" and "Essen-Steele Ost"
 are valid station names, but "essen-steele" will only return "Essen-Steele".
 
@@ -8631,6 +8656,8 @@ None.
 =head1 DEPENDENCIES
 
 =over
+
+=item * Geo::Distance(3pm)
 
 =item * List::MoreUtils(3pm)
 
