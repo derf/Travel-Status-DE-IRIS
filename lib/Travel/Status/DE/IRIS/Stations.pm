@@ -1370,7 +1370,7 @@ my @stations = (
 	[ 'UDOE',  'Dörrberg',                     8011397, 10.798671, 50.735351 ],
 	[ 'EDRN',  'Dorsten',                       8006709, 6.970903,  51.658335 ],
 	[ 'FDW',   'Dortelweil',                    8001514, 8.751145,  50.207503 ],
-	[ 'EDO N', 'Dortmund Hbf',                  8000080, 7.45929,   51.517896 ],
+	[ 'EDO', 'Dortmund Hbf',                  8000080, 7.45929,   51.517896 ], # fixed DS100
 	[
 		'EDKK', 'Dortmund Knappschaftskrankenhaus', 8001517, 7.537458,
 		51.518768
