@@ -494,10 +494,10 @@ available at L<https://iris.noncd.db.de/wbt/js/index.html>.
 
 It requests all departures at I<station> and lists them on stdout, similar to
 the big departure screens installed at most main stations. I<station> can be
-either a DS100 station code (such as "EE") or a normal station name
-(such as "Essen Hbf" or "DO UniversitE<auml>t"). If no exact match is found,
-B<db-iris> will try to find station names containing I<station> as a
-substring.
+either a DS100 station code (such as "EE"), a normal station name
+(such as "Essen Hbf" or "Dortmund UniversitE<auml>t"), or an IBNR / european station
+number (such as 8000098). If no exact match is found, B<db-iris> will try to
+find station names similar to I<station>.
 
 An exclamation mark (C<< ! >>) next to a platform indicates that it is not the
 scheduled one.
