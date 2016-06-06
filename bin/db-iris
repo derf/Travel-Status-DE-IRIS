@@ -154,11 +154,19 @@ sub get_station {
 		my @candidates
 		  = Travel::Status::DE::IRIS::Stations::get_station_by_location(
 			$+{lon}, $+{lat} );
+
+		if ( not @candidates ) {
+			say STDERR
+			  "Found no stations inside a 70km radius around $+{lon},$+{lat}";
+			exit(1);
+		}
+
 		say STDERR "Geolocation candidates for $+{lon},$+{lat} are:";
 		say STDERR join(
 			"\n",
 			map {
-				sprintf( "%s (%s) - %-3.1fkm", $_->[0][1], $_->[0][0], $_->[1] )
+				sprintf( "%-30s %-5s  %4.1fkm",
+					$_->[0][1], $_->[0][0], $_->[1] )
 			} @candidates
 		);
 		exit(1);
