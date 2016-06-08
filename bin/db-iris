@@ -244,17 +244,32 @@ sub display_result {
 		die("Nothing to show\n");
 	}
 
+	# the " !" suffixes might change a column's maximum line length, so we
+	# need to add them before calculating it
+	for my $line (@lines) {
+		my $d = $line->[5];
+
+		if ( not $edata{canceled} and $d->canceled_stops ) {
+			$line->[3] .= q{ !};
+		}
+
+		if ( ( $d->platform // q{} ) ne ( $d->sched_platform // q{} ) ) {
+			$line->[4] .= q{ !};
+		}
+	}
+
 	for my $i ( 0 .. 4 ) {
 		$line_length[$i] = max map { length( $_->[$i] ) } @lines;
 	}
 
 	for my $line (@lines) {
+
+		my $d = $line->[5];
+
 		printf(
 			join( q{  }, ( map { "%-${_}s" } @line_length ) ),
 			@{$line}[ 0 .. 4 ]
 		);
-
-		my $d = $line->[5];
 
 		if (    $edata{delays}
 			and $d->delay_messages )
@@ -388,9 +403,6 @@ for my $d ( $status->results() ) {
 	my $delay = format_delay($d);
 
 	my $platformstr = $d->platform // q{};
-	if ( ( $d->platform // q{} ) ne ( $d->sched_platform // q{} ) ) {
-		$platformstr .= ' !';
-	}
 	my $timestr;
 	if ($track_via) {
 		$timestr = get_departure( $d, '%H:%M' ) || get_arrival( $d, '%H:%M' );
@@ -507,7 +519,9 @@ either a DS100 station code (such as "EE"), a normal station name
 number (such as 8000098). If no exact match is found, B<db-iris> will try to
 find station names similar to I<station>.
 
-An exclamation mark (C<< ! >>) next to a platform indicates that it is not the
+An exclamation mark (C<< ! >>) next to a destination indicates that at least
+one stop on the train's route has been canceled. Use B<-oc> to see the canceled
+stops.  An exclamation mark next to a platform indicates that it is not the
 scheduled one.
 
 =head1 OPTIONS
