@@ -1943,7 +1943,7 @@ Travel::Status::DE::IRIS::Stations - Station name to station code mapping
 
 =head1 VERSION
 
-version 0.00
+version 1.08
 
 =head1 DESCRIPTION
 
