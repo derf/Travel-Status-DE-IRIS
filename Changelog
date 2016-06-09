@@ -1,9 +1,12 @@
-git HEAD
+Travel::Status::DE::IRIS 1.08 - Thu Jun 09 2016
 
     * New dependency: Geo::Distance
     * Update DS100 code list. Station names are now unabbreviated, e.g.
       "Dortmund Univeristät" instead of "Do Universität". Also, stations
-      without train service are no longer included
+      without train service are no longer included. Note that this list might
+      contain errors. If you get "Request error: Station ... has no associated
+      timetable" for a station which worked with previous versions, please
+      submit a bug report.
     * Travel::Status::DE::IRIS::Stations now also returns international
       station number, longitude and latitutde for most stations
     * New method Travel::Status::DE::IRIS::Stations::get_station_by_location

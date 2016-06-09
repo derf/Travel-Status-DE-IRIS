@@ -6,7 +6,7 @@ use utf8;
 
 no if $] >= 5.018, warnings => 'experimental::smartmatch';
 
-our $VERSION = '1.07';
+our $VERSION = '1.08';
 
 use Carp;
 use DateTime;
@@ -505,7 +505,7 @@ I<station>
 
 =head1 VERSION
 
-version 1.07
+version 1.08
 
 =head1 DESCRIPTION
 
@@ -726,9 +726,9 @@ Unknown.
 
 =head1 AUTHOR
 
-Copyright (C) 2013-2015 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
+Copyright (C) 2013-2016 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
 
-The station data used by this script is Copyright (C) 2016 by DB
+The station data used by this script is provided by DB
 Station&Service AG, Europaplatz 1, 10557 Berlin, Germany and also available
 under a CC-BY 4.0 license on
 L<http://data.deutschebahn.com/datasets/haltestellen/>.
