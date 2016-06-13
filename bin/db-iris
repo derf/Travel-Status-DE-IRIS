@@ -69,7 +69,18 @@ if ($track_via) {
 }
 
 if ($date) {
-	my ( $day, $month, $year ) = split( qr{ [.] }ox, $date );
+	my ( $day, $month, $year ) = split( qr{ [.] }x, $date );
+
+	if (   not( defined $day and defined $month )
+		or ( $day < 1 )
+		or ( $day > 31 )
+		or ( $month < 1 )
+		or ( $month > 12 ) )
+	{
+		say STDERR "-d/--date: Please specify a valid date";
+		exit(3);
+	}
+
 	$datetime->set(
 		day   => $day,
 		month => $month,
@@ -77,7 +88,20 @@ if ($date) {
 	);
 }
 if ($time) {
-	my ( $hour, $minute, $second ) = split( qr{ : }ox, $time );
+	my ( $hour, $minute, $second ) = split( qr{ : }x, $time );
+
+	if (   not defined $hour
+		or not defined $minute
+		or ( $hour < 0 )
+		or ( $hour > 23 )
+		or ( $minute < 0 )
+		or ( $minute > 59 )
+		or ( defined $second and ( ( $second < 0 ) or ( $second > 59 ) ) ) )
+	{
+		say STDERR "-t/--time: Please specify a valid time";
+		exit(3);
+	}
+
 	$datetime->set(
 		hour   => $hour,
 		minute => $minute,
