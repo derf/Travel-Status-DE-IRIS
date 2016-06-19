@@ -98,7 +98,7 @@ my %translation = (
 );
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
-	qw(arrival classes date datetime delay departure is_cancelled is_transfer
+	qw(arrival date datetime delay departure is_cancelled is_transfer
 	  is_unscheduled is_wing line_no old_train_id old_train_no platform raw_id
 	  realtime_xml route_start route_end
 	  sched_arrival sched_departure sched_platform sched_route_start
@@ -408,6 +408,14 @@ sub canceled_stops {
 
 	return $self->sorted_sublist( $self->{sched_route_post},
 		[ $self->{comparator}->get_unique ] );
+}
+
+sub classes {
+	my ($self) = @_;
+
+	my @classes = split(//, $self->{classes});
+
+	return @classes;
 }
 
 sub merge_with_departure {
