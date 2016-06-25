@@ -68,6 +68,8 @@ while ( my $line = <STDIN> ) {
 	$station =~ s{ ^ KDFFH    $ }{KDFF}x;
 	$station =~ s{ ^ KDN \s P $ }{KDN}x;
 	$station =~ s{ ^ KRY \s P $ }{KRY}x;
+	$station =~ s{ ^ TS \s\s T$ }{TST}x;
+	$station =~ s{ ^ TSZ \s F $ }{TSFE}x;
 
 	printf(
 		"\t['%s','%s',%s,%s,%s],\n",
