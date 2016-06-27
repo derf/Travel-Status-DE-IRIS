@@ -755,7 +755,7 @@ Copyright (C) 2013-2016 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
 The station data used by this script is provided by DB
 Station&Service AG, Europaplatz 1, 10557 Berlin, Germany and also available
 under a CC-BY 4.0 license on
-L<http://data.deutschebahn.com/dataset/data-haltestellendaten>.
+L<http://data.deutschebahn.com/dataset/data-haltestellen>.
 
 =head1 LICENSE
 

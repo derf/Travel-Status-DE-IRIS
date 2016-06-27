@@ -2055,6 +2055,6 @@ Lookup code: Copyright (C) 2014-2016 by Daniel Friesel E<lt>derf@finalrewind.org
 
 This module is licensed under the same terms as Perl itself. Note that the
 station data used by this module is also available under a CC-BY 4.0 license on
-L<http://data.deutschebahn.com/dataset/data-haltestellendaten>.
+L<http://data.deutschebahn.com/dataset/data-haltestellen>.
 
 EOF
