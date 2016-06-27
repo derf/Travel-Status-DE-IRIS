@@ -1,4 +1,4 @@
-git HEAD
+Travel::Status::DE::IRIS 1.09 - Mon Jun 27 2016
 
     * Travel::Status::DE::IRIS::Result: Fix ->classes accessor
       (returned a string instead of a list)
