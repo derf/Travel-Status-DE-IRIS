@@ -69,6 +69,7 @@ my %translation = (
 	64 => 'Weichenstörung',
 	65 => 'Erdrutsch',
 	70 => 'Kein WLAN',
+	71 => 'WLAN in einzelnen Wagen nicht verfügbar',
 	73 => 'Mehrzweckabteil vorne',
 	74 => 'Mehrzweckabteil hinten',
 	75 => '1. Klasse vorne',
@@ -413,7 +414,7 @@ sub canceled_stops {
 sub classes {
 	my ($self) = @_;
 
-	my @classes = split(//, $self->{classes});
+	my @classes = split( //, $self->{classes} );
 
 	return @classes;
 }
@@ -1203,6 +1204,8 @@ Source: correlation between IRIS and DB RIS (bahn.de).
 =item q 70 : "Kein WLAN"
 
 Source: correlation between IRIS and DB RIS (bahn.de).
+
+=item q 71 : "WLAN in einzelnen Wagen nicht verfE<uuml>gbar"
 
 =item q 73 : "Mehrzweckabteil vorne"
 
