@@ -1,3 +1,10 @@
+git HEAD
+
+    * Add qos code 71 ("WLAN in einzelnen Wagen nicht verfügbar")
+    * Fix DS100 codes for "Geilenkirchen" and "Montabaur"
+    * Travel::Status::DE::IRIS::Stations::get_station: Add support for
+      UIC / EVA numbers
+
 Travel::Status::DE::IRIS 1.09 - Mon Jun 27 2016
 
     * Travel::Status::DE::IRIS::Result: Fix ->classes accessor
