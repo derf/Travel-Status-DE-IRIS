@@ -1,4 +1,4 @@
-git HEAD
+Travel::Status::DE::IRIS 1.10 - Sat Oct 01 2016
 
     * Add qos code 71 ("WLAN in einzelnen Wagen nicht verfügbar")
     * Fix DS100 codes for "Geilenkirchen" and "Montabaur"
