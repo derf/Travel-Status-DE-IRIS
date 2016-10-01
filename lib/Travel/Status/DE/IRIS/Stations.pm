@@ -8621,11 +8621,11 @@ Returns a list of all known stations, lexically sorted by station name.
 
 Returns a list of stations matching I<$in>.
 
-If a I<$in> is a valid station code, only one element ([I<$in>, related name])
-is returned. Otherwise, it is passed to get_station_by_name(I<$in>) (see
-below).
+If a I<$in> is a valid station (either DS100 code or UIC/EVA number),
+a single array reference describing the station is returned. Otherwise,
+I<$in> is passed to get_station_by_name(I<$in>) (see below).
 
-Note that station codes matching is case sensitive and must be exact.
+Note that DS100 code matching is case sensitive.
 
 =item Travel::Status::DE::IRIS::Stations::get_station_by_location(I<$lon>, I<$lat>, I<$num_matches>)
 
