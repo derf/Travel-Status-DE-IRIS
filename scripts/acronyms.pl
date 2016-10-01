@@ -1860,6 +1860,12 @@ sub get_station {
 		return ($ds100_match);
 	}
 
+	my $eva_match = firstval { defined $_->[2] and $name eq $_->[2] } @stations;
+
+	if ($eva_match) {
+		return ($eva_match);
+	}
+
 	return get_station_by_name($name);
 }
 
@@ -1889,7 +1895,6 @@ sub get_station_by_location {
 
 	return @station_map;
 }
-
 
 sub get_station_by_name {
 	my ($name) = @_;
