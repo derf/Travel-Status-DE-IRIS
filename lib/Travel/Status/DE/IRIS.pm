@@ -36,11 +36,12 @@ sub new {
 		iris_base      => $opt{iris_base}
 		  // 'http://iris.noncd.db.de/iris-tts/timetable',
 		lookahead => $opt{lookahead} // ( 4 * 60 ),
-		main_cache   => $opt{main_cache},
-		rt_cache     => $opt{realtime_cache},
-		serializable => $opt{serializable},
-		user_agent   => $ua,
-		with_related => $opt{with_related},
+		main_cache      => $opt{main_cache},
+		rt_cache        => $opt{realtime_cache},
+		serializable    => $opt{serializable},
+		user_agent      => $ua,
+		with_related    => $opt{with_related},
+		departure_by_id => {},
 	};
 
 	bless( $self, $class );
@@ -292,8 +293,9 @@ sub add_result {
 	# if scheduled departure and current departure are not within the
 	# same hour, trains are reported twice. Don't add duplicates in
 	# that case.
-	if ( not first { $_->raw_id eq $id } @{ $self->{results} } ) {
+	if ( not $self->{departure_by_id}{$id} ) {
 		push( @{ $self->{results} }, $result, );
+		$self->{departure_by_id}{$id} = $result;
 	}
 
 	return $result;
@@ -350,7 +352,7 @@ sub get_realtime {
 
 		my %messages;
 
-		my $result = first { $_->raw_id eq $id } $self->results;
+		my $result = $self->{departure_by_id}{$id};
 
 		if ( not $result ) {
 			$result = $self->add_result( $station, $s );
