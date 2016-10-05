@@ -354,7 +354,9 @@ sub get_realtime {
 
 		my $result = $self->{departure_by_id}{$id};
 
-		if ( not $result ) {
+		# add_result will return nothing if no ./tl node is present. The ./tl
+		# check here is for optimization purposes.
+		if ( not $result and ( $s->findnodes('./tl') )[0] ) {
 			$result = $self->add_result( $station, $s );
 			if ($result) {
 				$result->set_unscheduled(1);
