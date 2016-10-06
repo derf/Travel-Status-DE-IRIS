@@ -8,7 +8,6 @@ no if $] >= 5.018, warnings => 'experimental::smartmatch';
 
 our $VERSION = '1.10';
 
-use Carp;
 use DateTime;
 use DateTime::Format::Strptime;
 use Encode qw(decode);
