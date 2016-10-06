@@ -116,7 +116,7 @@ sub new {
 
 	bless( $ref, $obj );
 
-	$ref->{strptime_obj} = DateTime::Format::Strptime->new(
+	$ref->{strptime_obj} //= DateTime::Format::Strptime->new(
 		pattern   => '%y%m%d%H%M',
 		time_zone => 'Europe/Berlin',
 	);

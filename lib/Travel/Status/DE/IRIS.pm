@@ -10,6 +10,7 @@ our $VERSION = '1.10';
 
 use Carp qw(confess cluck);
 use DateTime;
+use DateTime::Format::Strptime;
 use Encode qw(encode decode);
 use List::Util qw(first);
 use List::MoreUtils qw(uniq);
@@ -42,6 +43,11 @@ sub new {
 		user_agent      => $ua,
 		with_related    => $opt{with_related},
 		departure_by_id => {},
+		strptime_obj    => DateTime::Format::Strptime->new(
+			pattern   => '%y%m%d%H%M',
+			time_zone => 'Europe/Berlin',
+		),
+
 	};
 
 	bless( $self, $class );
@@ -250,14 +256,15 @@ sub add_result {
 	}
 
 	my %data = (
-		raw_id    => $id,
-		classes   => $e_tl->getAttribute('f'),    # D N S F
-		unknown_t => $e_tl->getAttribute('t'),    # p
-		train_no  => $e_tl->getAttribute('n'),    # dep number
-		type      => $e_tl->getAttribute('c'),    # S/ICE/ERB/...
-		line_no   => $e_tl->getAttribute('l'),    # 1 -> S1, ...
-		station   => $station,
-		unknown_o => $e_tl->getAttribute('o'),    # owner: 03/80/R2/...
+		raw_id       => $id,
+		classes      => $e_tl->getAttribute('f'),    # D N S F
+		unknown_t    => $e_tl->getAttribute('t'),    # p
+		train_no     => $e_tl->getAttribute('n'),    # dep number
+		type         => $e_tl->getAttribute('c'),    # S/ICE/ERB/...
+		line_no      => $e_tl->getAttribute('l'),    # 1 -> S1, ...
+		station      => $station,
+		unknown_o    => $e_tl->getAttribute('o'),    # owner: 03/80/R2/...
+		strptime_obj => $self->{strptime_obj},
 	);
 
 	if ($e_ar) {
