@@ -69,6 +69,8 @@ sub new {
 			developer_mode => $self->{developer_mode},
 			lookahead      => $self->{lookahead},
 			station        => $ref->{uic},
+			main_cache     => $self->{main_cache},
+			rt_cache       => $self->{rt_cache},
 			with_related   => 0,
 		);
 		if ( not $ref_status->errstr ) {
