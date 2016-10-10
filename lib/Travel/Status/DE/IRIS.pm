@@ -596,6 +596,14 @@ non-negative integer is accepted.
 Passed on to C<< LWP::UserAgent->new >>. Defaults to C<< { timeout => 10 } >>,
 you can use an empty hashref to unset the default.
 
+=item B<main_cache> => I<$ojj>
+
+A Cache::File(3pm) object used to cache station and timetable requests. Optional.
+
+=item B<realtime_cache> => I<$ojj>
+
+A Cache::File(3pm) object used to cache realtime data requests. Optional.
+
 =item B<station> => I<stationcode>
 
 Mandatory: Which station to return departures for. Note that this is not a
@@ -653,7 +661,7 @@ None.
 
 =head1 BUGS AND LIMITATIONS
 
-Many backend features are not yet exposed.
+Some backend features are not yet exposed.
 
 =head1 SEE ALSO
 
