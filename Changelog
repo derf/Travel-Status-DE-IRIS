@@ -1,3 +1,9 @@
+Travel::Status::DE::IRIS 1.11 - Tue Oct 11 2016
+
+    * IRIS->new: Fix partially broken cache handling when using
+      "with_related => 1"
+    * Improve parser performance
+
 Travel::Status::DE::IRIS 1.10 - Sat Oct 01 2016
 
     * Add qos code 71 ("WLAN in einzelnen Wagen nicht verfügbar")
