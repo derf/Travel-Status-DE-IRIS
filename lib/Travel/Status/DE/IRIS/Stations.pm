@@ -8519,7 +8519,7 @@ sub get_station_by_location {
 	my @station_map = pairwise { [ $a, $b ] } @candidates, @distances;
 
 	@station_map = sort { $a->[1] <=> $b->[1] } @station_map;
-	splice( @station_map, 10 );
+	splice( @station_map, $num_matches );
 
 	return @station_map;
 }
