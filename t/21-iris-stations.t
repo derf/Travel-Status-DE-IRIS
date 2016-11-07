@@ -4,7 +4,7 @@ use warnings;
 use 5.014;
 use utf8;
 
-use Test::More tests => 14;
+use Test::More tests => 15;
 
 BEGIN {
 	use_ok('Travel::Status::DE::IRIS::Stations');
@@ -20,6 +20,12 @@ is_deeply(
 	[ Travel::Status::DE::IRIS::Stations::get_station('EE') ],
 	[ [ 'EE', 'Essen Hbf', 8000098, 7.014793,  51.451355 ] ],
 	'get_station: exact match by DS100 works'
+);
+
+is_deeply(
+	[ Travel::Status::DE::IRIS::Stations::get_station(8000098) ],
+	[ [ 'EE', 'Essen Hbf', 8000098, 7.014793,  51.451355 ] ],
+	'get_station: exact match by EVA/UIC works'
 );
 
 is_deeply(
