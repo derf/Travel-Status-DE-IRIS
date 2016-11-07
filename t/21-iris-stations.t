@@ -4,7 +4,7 @@ use warnings;
 use 5.014;
 use utf8;
 
-use Test::More tests => 12;
+use Test::More tests => 14;
 
 BEGIN {
 	use_ok('Travel::Status::DE::IRIS::Stations');
@@ -74,3 +74,29 @@ is_deeply(
 	],
 	'get_station: partial match with substring and levenshtein'
 );
+
+is_deeply(
+	[ map { [$_->[0][0], $_->[0][1]] } Travel::Status::DE::IRIS::Stations::get_station_by_location(7.02458, 51.43862) ],
+	[
+		[ 'EESD', 'Essen Süd'        ],
+		[ 'EE',   'Essen Hbf'        ],
+		[ 'EESA', 'Essen Stadtwald'  ],
+		[ 'EEUE', 'Essen-Überruhr'   ],
+		[ 'EENW', 'Essen West'       ],
+		[ 'EEST', 'Essen-Steele'     ],
+		[ 'EEHU', 'Essen-Hügel'      ],
+		[ 'EEHH', 'Essen-Holthausen' ],
+		[ 'EEKS', 'Essen-Kray Süd'   ],
+		[ 'EESO', 'Essen-Steele Ost' ],
+	],
+	'get_station_by_location: 10 matches for Foobar'
+);
+
+is_deeply(
+	[ Travel::Status::DE::IRIS::Stations::get_station_by_location(7.02458, 51.43862, 1) ],
+	[
+		[[ 'EESD', 'Essen Süd', 8001897, 7.023098, 51.439295], 0.127234298397033]
+	],
+	'get_station_by_location: 1 match with all data for Foobar'
+);
+
