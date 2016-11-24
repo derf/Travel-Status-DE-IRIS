@@ -11,7 +11,6 @@ our $VERSION = '1.11';
 use Carp qw(confess cluck);
 use DateTime;
 use DateTime::Format::Strptime;
-use Encode qw(encode decode);
 use List::Util qw(first);
 use List::MoreUtils qw(uniq);
 use List::UtilsBy qw(uniq_by);

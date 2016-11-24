@@ -141,7 +141,7 @@ sub new {
 	my $dp = $ref->{departure} = $ref->{sched_departure}
 	  = $ref->parse_ts( $opt{departure_ts} );
 
-	if ( not( $ar or $dp ) ) {
+	if ( not( defined $ar or defined $dp ) ) {
 		cluck(
 			sprintf(
 				"Neither arrival '%s' nor departure '%s' are valid "
