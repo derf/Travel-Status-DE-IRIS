@@ -98,6 +98,30 @@ my %translation = (
 	900 => 'Anschlussbus wartet(?)',
 );
 
+my %linemap = (
+	RE => {
+		100 => 11,
+		101 => 1,
+		102 => 2,
+		104 => 4,
+		105 => 5,
+		106 => 6,
+		112 => 42,
+	},
+	S => {
+		301 => 1,
+		303 => 3,
+		306 => 6,
+		308 => '8',
+		309 => 9,
+		311 => 1,
+		312 => 2,
+		313 => 3,
+		315 => 5,
+		316 => 6,
+	}
+);
+
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
 	qw(arrival date datetime delay departure is_cancelled is_transfer
 	  is_unscheduled is_wing line_no old_train_id old_train_no platform raw_id
@@ -177,6 +201,11 @@ sub new {
 	  || $ref->{station};
 
 	$ref->{is_cancelled} = 0;
+
+	if ( not defined $ref->{line_no} ) {
+		my $train_prefix = substr( $ref->{train_no}, 0, 3 );
+		$ref->{line_no} = $linemap{ $ref->{type} }{$train_prefix};
+	}
 
 	return bless( $ref, $obj );
 }
