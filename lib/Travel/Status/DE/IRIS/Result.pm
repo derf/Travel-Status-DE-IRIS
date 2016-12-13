@@ -202,8 +202,8 @@ sub new {
 
 	$ref->{is_cancelled} = 0;
 
-	if ( not defined $ref->{line_no} ) {
-		my $train_prefix = substr( $ref->{train_no}, 0, 3 );
+	if ( not defined $ref->{line_no} and length( $ref->{train_no} ) > 2 ) {
+		my $train_prefix = substr( $ref->{train_no}, -5, 3 );
 		$ref->{line_no} = $linemap{ $ref->{type} }{$train_prefix};
 	}
 
