@@ -750,7 +750,7 @@ my @stations = (
 	[ 'FBIK',  'Biedenkopf',                    8000952, 8.529989,  50.909113 ],
 	[ 'FBIZ',  'Biedenkopf-Schulzentrum',       8000954, 8.517706,  50.915125 ],
 	[ 'LBZ',   'Biederitz',                     8010047, 11.716466, 52.15271 ],
-	[ 'EBIL',  'Bielefeld Hbf',                 8000036, 8.532722,  52.029261 ],
+	[ 'EBILP', 'Bielefeld Hbf',                 8000036, 8.532722,  52.029261 ],
 	[ 'EBIO',  'Bielefeld Ost',                 8000953, 8.559416,  52.024013 ],
 	[ 'EBIS',  'Bielefeld-Senne',               8000956, 8.520335,  51.965118 ],
 	[ 'LBF',   'Biendorf',                      8011184, 11.856411, 51.756861 ],

@@ -57,6 +57,7 @@ while ( my $line = <STDIN> ) {
 	$name =~ s{\s+}{ }g;
 	$name =~ s{'}{\\'}g;
 
+	$station =~ s{ ^ EBIL     $ }{EBILP}x;
 	$station =~ s{ ^ EBLA     $ }{EBP}x;
 	$station =~ s{ ^ EBTHP    $ }{EBTH}x;
 	$station =~ s{ ^ EDO \s N $ }{EDO}x;
