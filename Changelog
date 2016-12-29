@@ -1,3 +1,12 @@
+git HEAD
+
+    * Unfortunately, line numbers are not available at the moment due to IRIS
+      backend changes. Some lines in NRW have been provided with a manual line
+      number mapping to remedy this.
+    * Fix DS100 code for "Bielefeld Hbf"
+    * Travel::Status::DE::IRIS::Stations::get_station_by_location: Fix bug in
+      num_matches (parameter was silently ignored)
+
 Travel::Status::DE::IRIS 1.11 - Tue Oct 11 2016
 
     * IRIS->new: Fix partially broken cache handling when using
