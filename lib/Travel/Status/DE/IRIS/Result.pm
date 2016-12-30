@@ -15,7 +15,7 @@ use List::Compare;
 use List::MoreUtils qw(none uniq firstval);
 use Scalar::Util qw(weaken);
 
-our $VERSION = '1.11';
+our $VERSION = '1.12';
 
 my %translation = (
 	2  => 'Polizeiliche Ermittlung',
@@ -170,6 +170,7 @@ my %linemap = (
 		464 => 31,
 		465 => 31,
 		466 => 31,
+		469 => 31,
 		470 => 1,
 		471 => 1,
 		472 => 1,
@@ -840,7 +841,7 @@ arrival/departure received by Travel::Status::DE::IRIS
 
 =head1 VERSION
 
-version 1.11
+version 1.12
 
 =head1 DESCRIPTION
 
