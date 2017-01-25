@@ -262,7 +262,6 @@ sub add_result {
 		unknown_t    => $e_tl->getAttribute('t'),    # p
 		train_no     => $e_tl->getAttribute('n'),    # dep number
 		type         => $e_tl->getAttribute('c'),    # S/ICE/ERB/...
-		line_no      => $e_tl->getAttribute('l'),    # 1 -> S1, ...
 		station      => $station,
 		unknown_o    => $e_tl->getAttribute('o'),    # owner: 03/80/R2/...
 		strptime_obj => $self->{strptime_obj},
@@ -270,6 +269,7 @@ sub add_result {
 
 	if ($e_ar) {
 		$data{arrival_ts}  = $e_ar->getAttribute('pt');
+		$data{line_no}     = $e_ar->getAttribute('l');
 		$data{platform}    = $e_ar->getAttribute('pp');    # string, not number!
 		$data{route_pre}   = $e_ar->getAttribute('ppth');
 		$data{route_start} = $e_ar->getAttribute('pde');
@@ -280,6 +280,7 @@ sub add_result {
 
 	if ($e_dp) {
 		$data{departure_ts} = $e_dp->getAttribute('pt');
+		$data{line_no}      = $e_dp->getAttribute('l');
 		$data{platform}     = $e_dp->getAttribute('pp');   # string, not number!
 		$data{route_post}   = $e_dp->getAttribute('ppth');
 		$data{route_end}    = $e_dp->getAttribute('pde');

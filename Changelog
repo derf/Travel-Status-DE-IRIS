@@ -1,3 +1,7 @@
+git HEAD
+
+    * Fix support for line numbers, remove manual line map workaround
+
 Travel::Status::DE::IRIS 1.12 - Fri Dec 30 2016
 
     * Unfortunately, line numbers are not available at the moment due to IRIS
