@@ -98,97 +98,6 @@ my %translation = (
 	900 => 'Anschlussbus wartet(?)',
 );
 
-my %linemap = (
-
-	#ABR => {
-	#	200 => 19,                                                      # RE
-	#	# 893, 894, 895 do not uniquely identify a line
-	#},
-	#ERB => {
-	#	200 => 13,                                                      # RE
-	#	898 => 3,                                                       # RE
-	#	899 => 3,                                                       # RE
-	#	903 => 59,                                                      # RB
-	#},
-	#NWB => {
-	#	750 => 10,                                                      # RE
-	#	753 => 14,                                                      # RE
-	#},
-	RB => {
-		103 => 33,
-		118 => 38,
-		144 => 43,
-		146 => 53,
-		147 => 51,
-	},
-	RE => {
-		100 => 11,
-		101 => 1,
-		102 => 2,
-		104 => 4,
-		105 => 5,
-		106 => 6,
-		107 => 57,
-		108 => 8,
-		109 => 9,
-		112 => 42,
-		113 => 22,
-		325 => 7,
-	},
-	S => {
-		301 => 1,
-		302 => 2,
-		303 => 3,
-		304 => 4,
-		306 => 6,
-		308 => 8,
-		309 => 9,
-		311 => 1,
-		312 => 2,
-		313 => 3,
-		315 => 5,
-		316 => 6,
-		318 => 8,
-		319 => 9,
-		321 => 11,
-		331 => 11,
-		370 => 1,
-		371 => 1,
-		372 => 1,
-		373 => 1,
-		374 => 1,
-		375 => 1,
-		376 => 1,
-		430 => 3,
-		431 => 3,
-		432 => 3,
-		433 => 3,
-		460 => 31,
-		461 => 31,
-		462 => 31,
-		463 => 31,
-		464 => 31,
-		465 => 31,
-		466 => 31,
-		469 => 31,
-		470 => 1,
-		471 => 1,
-		472 => 1,
-		473 => 1,
-		474 => 1,
-		475 => 1,
-		476 => 1,
-		481 => 21,
-		482 => 21,
-		483 => 21,
-		484 => 21,
-		485 => 21,
-		486 => 21,
-		907 => 28,
-		908 => 28,
-	},
-);
-
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
 	qw(arrival date datetime delay departure is_cancelled is_transfer
 	  is_unscheduled is_wing line_no old_train_id old_train_no platform raw_id
@@ -268,11 +177,6 @@ sub new {
 	  || $ref->{station};
 
 	$ref->{is_cancelled} = 0;
-
-	if ( not defined $ref->{line_no} and length( $ref->{train_no} ) > 2 ) {
-		my $train_prefix = substr( $ref->{train_no}, -5, 3 );
-		$ref->{line_no} = $linemap{ $ref->{type} }{$train_prefix};
-	}
 
 	return bless( $ref, $obj );
 }
