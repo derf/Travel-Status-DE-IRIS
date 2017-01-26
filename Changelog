@@ -1,4 +1,4 @@
-git HEAD
+Travel::Status::DE::IRIS 1.13 - Thu Jan 26 2017
 
     * Fix support for line numbers, remove manual line map workaround
 
