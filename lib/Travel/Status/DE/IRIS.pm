@@ -35,9 +35,10 @@ sub new {
 		developer_mode => $opt{developer_mode},
 		iris_base      => $opt{iris_base}
 		  // 'http://iris.noncd.db.de/iris-tts/timetable',
-		lookahead => $opt{lookahead} // ( 4 * 60 ),
-		main_cache      => $opt{main_cache},
-		rt_cache        => $opt{realtime_cache},
+		lookahead  => $opt{lookahead}  // ( 4 * 60 ),
+		lookbehind => $opt{lookbehind} // ( 0 * 60 ),
+		main_cache => $opt{main_cache},
+		rt_cache   => $opt{realtime_cache},
 		serializable    => $opt{serializable},
 		user_agent      => $ua,
 		with_related    => $opt{with_related},
@@ -67,6 +68,7 @@ sub new {
 			datetime       => $self->{datetime},
 			developer_mode => $self->{developer_mode},
 			lookahead      => $self->{lookahead},
+			lookbehind     => $self->{lookbehind},
 			station        => $ref->{uic},
 			main_cache     => $self->{main_cache},
 			realtime_cache => $self->{rt_cache},
@@ -82,9 +84,14 @@ sub new {
 	}
 
 	my $dt_req = $self->{datetime}->clone;
-	for ( 1 .. 3 ) {
+	for ( 1 .. int( $self->{lookahead} / 60 ) ) {
 		$self->get_timetable( $self->{station}{uic}, $dt_req );
 		$dt_req->add( hours => 1 );
+	}
+	$dt_req = $self->{datetime}->clone;
+	for ( 1 .. int( $self->{lookbehind} / 60 ) ) {
+		$dt_req->subtract( hours => 1 );
+		$self->get_timetable( $self->{station}{uic}, $dt_req );
 	}
 
 	$self->get_realtime;

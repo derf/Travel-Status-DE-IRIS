@@ -20,7 +20,8 @@ my $status = Travel::Status::DE::IRIS->new(
 		hour      => 20,
 		minute    => 1,
 		time_zone => 'Europe/Berlin'
-	)
+	),
+	lookahead => 3 * 60 + 59,
 );
 
 my @results = $status->results;
