@@ -35,7 +35,7 @@ sub new {
 		developer_mode => $opt{developer_mode},
 		iris_base      => $opt{iris_base}
 		  // 'http://iris.noncd.db.de/iris-tts/timetable',
-		lookahead  => $opt{lookahead}  // ( 4 * 60 ),
+		lookahead  => $opt{lookahead}  // ( 3 * 60 ),
 		lookbehind => $opt{lookbehind} // ( 0 * 60 ),
 		main_cache => $opt{main_cache},
 		rt_cache   => $opt{realtime_cache},
