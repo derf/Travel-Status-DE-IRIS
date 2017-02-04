@@ -17,9 +17,10 @@ use List::MoreUtils qw(none);
 use Travel::Status::DE::IRIS;
 use Travel::Status::DE::IRIS::Stations;
 
-my ( $date, $time, $lookahead );
+my ( $date, $time );
 my $datetime       = DateTime->now( time_zone => 'Europe/Berlin' );
 my $developer_mode = 0;
+my $lookahead      = 3 * 60;
 my $realtime       = 0;
 my $with_related   = 1;
 my ( $filter_via, $track_via, $status_via );
@@ -133,12 +134,10 @@ my $status = Travel::Status::DE::IRIS->new(
 	with_related   => $with_related,
 );
 if ($track_via) {
-
-	# lookahead should not be used here - the via stop is reached an unknown
-	# amount of time later
 	$status_via = Travel::Status::DE::IRIS->new(
-		datetime => $datetime,
-		station  => $track_via,
+		datetime  => $datetime,
+		station   => $track_via,
+		lookahead => $lookahead + 3 * 60,
 	);
 }
 
