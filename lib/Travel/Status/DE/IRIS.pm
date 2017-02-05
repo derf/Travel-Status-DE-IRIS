@@ -588,15 +588,28 @@ IRIS base url, defaults to C<< http://iris.noncd.db.de/iris-tts/timetable >>.
 
 =item B<lookahead> => I<int>
 
-Compute only those results which are less than I<int> minutes in the future.
-Default: 240 (4 hours).
+Compute only results which are less than I<int> minutes in the future.
+Default: 180 (3 hours).
 
-Note that the DeutscheBahn IRIS backend only provides schedules up to four
-to five hours into the future, and this module only requests data for up to
-three hours. So in most cases, setting this to a value above 180 minutes will
-have no effect. However, as the IRIS occasionally contains unscheduled
-departures or qos messages known far in advance (e.g. 12 hours from now), any
-non-negative integer is accepted.
+Note that the DeutscheBahn IRIS backend only provides schedules up to four to
+five hours into the future. So in most cases, setting this to a value above 240
+minutes will have little effect. However, as the IRIS occasionally contains
+unscheduled departures or qos messages known far in advance (e.g. 12 hours from
+now), any non-negative integer is accepted.
+
+=item B<lookbehind> => I<int>
+
+Also check trains whose scheduled departure lies up to I<int> minutes in the
+past. Default: 0.
+
+This is useful when requesting departures shortly after a full hour. If,
+for example, a train was scheduled to depart on 11:59 and has 5 minutes delay,
+it will not be shown when requesting departures on or after 12:00 unless
+B<lookbehind> is set to a value greater than zero.
+
+Note that trains with significant delay (e.g. +30) may still be shown in this
+case regardless of the setting of B<lookbehind>, since these receive special
+treatment by the IRIS backend.
 
 =item B<lwp_options> => I<\%hashref>
 

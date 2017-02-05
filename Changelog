@@ -1,6 +1,9 @@
 git HEAD
 
     * IRIS->new: Add optional argument lookbehind
+    * db-iris: Remove a useless HTTP request, resulting in slightly faster
+               responses
+    * db-iris -V / --track-via: Improve support for faraway stations
 
 Travel::Status::DE::IRIS 1.13 - Thu Jan 26 2017
 
