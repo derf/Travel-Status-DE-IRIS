@@ -21,10 +21,6 @@ use XML::LibXML;
 sub new {
 	my ( $class, %opt ) = @_;
 
-	my %lwp_options = %{ $opt{lwp_options} // { timeout => 10 } };
-
-	my $ua = LWP::UserAgent->new(%lwp_options);
-
 	if ( not $opt{station} ) {
 		confess('station flag must be passed');
 	}
@@ -40,10 +36,10 @@ sub new {
 		main_cache => $opt{main_cache},
 		rt_cache   => $opt{realtime_cache},
 		serializable    => $opt{serializable},
-		user_agent      => $ua,
+		user_agent      => $opt{user_agent},
 		with_related    => $opt{with_related},
 		departure_by_id => {},
-		strptime_obj    => DateTime::Format::Strptime->new(
+		strptime_obj => $opt{strptime_obj} // DateTime::Format::Strptime->new(
 			pattern   => '%y%m%d%H%M',
 			time_zone => 'Europe/Berlin',
 		),
@@ -52,7 +48,11 @@ sub new {
 
 	bless( $self, $class );
 
-	$ua->env_proxy;
+	if ( not $self->{user_agent} ) {
+		my %lwp_options = %{ $opt{lwp_options} // { timeout => 10 } };
+		$self->{user_agent} = LWP::UserAgent->new(%lwp_options);
+		$self->{user_agent}->env_proxy;
+	}
 
 	my ( $station, @related_stations ) = $self->get_station(
 		name      => $opt{station},
@@ -72,6 +72,8 @@ sub new {
 			station        => $ref->{uic},
 			main_cache     => $self->{main_cache},
 			realtime_cache => $self->{rt_cache},
+			strptime_obj   => $self->{strptime_obj},
+			user_agent     => $self->{user_agent},
 			with_related   => 0,
 		);
 		if ( not $ref_status->errstr ) {
