@@ -1,4 +1,4 @@
-git HEAD
+Travel::Status::DE::IRIS 1.14 - Mon Feb 06 2017
 
     * IRIS->new: Add optional argument lookbehind
     * db-iris: Remove a useless HTTP request, resulting in slightly faster
