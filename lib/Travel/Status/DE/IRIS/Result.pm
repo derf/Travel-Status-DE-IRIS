@@ -153,8 +153,9 @@ sub new {
 
 	my $dt = $ref->{datetime} = $dp // $ar;
 
-	$ref->{date} = $dt->strftime('%d.%m.%Y');
-	$ref->{time} = $dt->strftime('%H:%M');
+	$ref->{date}  = $dt->strftime('%d.%m.%Y');
+	$ref->{time}  = $dt->strftime('%H:%M');
+	$ref->{epoch} = $dt->epoch;
 
 	$ref->{route_pre} = $ref->{sched_route_pre}
 	  = [ split( qr{[|]}, $ref->{route_pre} // q{} ) ];
@@ -432,6 +433,7 @@ sub merge_with_departure {
 	# departure is preferred over arrival, so overwrite default values
 	$self->{date}     = $result->{date};
 	$self->{time}     = $result->{time};
+	$self->{epoch}    = $result->{epoch};
 	$self->{datetime} = $result->{datetime};
 	$self->{train_id} = $result->{train_id};
 	$self->{train_no} = $result->{train_no};

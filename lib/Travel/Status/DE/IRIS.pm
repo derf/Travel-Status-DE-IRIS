@@ -128,7 +128,7 @@ sub new {
 	} @{ $self->{results} };
 
 	@{ $self->{results} }
-	  = sort { $a->{datetime} <=> $b->{datetime} } @{ $self->{results} };
+	  = sort { $a->{epoch} <=> $b->{epoch} } @{ $self->{results} };
 
 	# wings (different departures which are coupled as one train) contain
 	# references to each other. therefore, they must be processed last.
