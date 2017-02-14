@@ -43,6 +43,9 @@ sub new {
 			pattern   => '%y%m%d%H%M',
 			time_zone => 'Europe/Berlin',
 		),
+		xp_ar => XML::LibXML::XPathExpression->new('./ar'),
+		xp_dp => XML::LibXML::XPathExpression->new('./dp'),
+		xp_tl => XML::LibXML::XPathExpression->new('./tl'),
 
 	};
 
@@ -257,9 +260,9 @@ sub add_result {
 	my ( $self, $station, $s ) = @_;
 
 	my $id   = $s->getAttribute('id');
-	my $e_tl = ( $s->findnodes('./tl') )[0];
-	my $e_ar = ( $s->findnodes('./ar') )[0];
-	my $e_dp = ( $s->findnodes('./dp') )[0];
+	my $e_tl = ( $s->findnodes( $self->{xp_tl} ) )[0];
+	my $e_ar = ( $s->findnodes( $self->{xp_ar} ) )[0];
+	my $e_dp = ( $s->findnodes( $self->{xp_dp} ) )[0];
 
 	if ( not $e_tl ) {
 		return;
@@ -268,12 +271,13 @@ sub add_result {
 	my %data = (
 		raw_id       => $id,
 		classes      => $e_tl->getAttribute('f'),    # D N S F
-		unknown_t    => $e_tl->getAttribute('t'),    # p
 		train_no     => $e_tl->getAttribute('n'),    # dep number
 		type         => $e_tl->getAttribute('c'),    # S/ICE/ERB/...
 		station      => $station,
-		unknown_o    => $e_tl->getAttribute('o'),    # owner: 03/80/R2/...
 		strptime_obj => $self->{strptime_obj},
+
+		#unknown_o    => $e_tl->getAttribute('o'),    # owner: 03/80/R2/...
+		#unknown_t    => $e_tl->getAttribute('t'),    # p
 	);
 
 	if ($e_ar) {
@@ -284,7 +288,8 @@ sub add_result {
 		$data{route_start} = $e_ar->getAttribute('pde');
 		$data{transfer}    = $e_ar->getAttribute('tra');
 		$data{arrival_wing_ids} = $e_ar->getAttribute('wings');
-		$data{unk_ar_hi}        = $e_ar->getAttribute('hi');
+
+		#$data{unk_ar_hi}        = $e_ar->getAttribute('hi');
 	}
 
 	if ($e_dp) {
@@ -295,7 +300,8 @@ sub add_result {
 		$data{route_end}    = $e_dp->getAttribute('pde');
 		$data{transfer}     = $e_dp->getAttribute('tra');
 		$data{departure_wing_ids} = $e_dp->getAttribute('wings');
-		$data{unk_dp_hi}          = $e_dp->getAttribute('hi');
+
+		#$data{unk_dp_hi}          = $e_dp->getAttribute('hi');
 	}
 
 	if ( $data{arrival_wing_ids} ) {
@@ -363,8 +369,8 @@ sub get_realtime {
 
 	for my $s ( $xml->findnodes('/timetable/s') ) {
 		my $id     = $s->getAttribute('id');
-		my $e_ar   = ( $s->findnodes('./ar') )[0];
-		my $e_dp   = ( $s->findnodes('./dp') )[0];
+		my $e_ar   = ( $s->findnodes( $self->{xp_ar} ) )[0];
+		my $e_dp   = ( $s->findnodes( $self->{xp_dp} ) )[0];
 		my @e_refs = $s->findnodes('./ref/tl');
 		my @e_ms   = $s->findnodes('.//m');
 
@@ -374,7 +380,7 @@ sub get_realtime {
 
 		# add_result will return nothing if no ./tl node is present. The ./tl
 		# check here is for optimization purposes.
-		if ( not $result and ( $s->findnodes('./tl') )[0] ) {
+		if ( not $result and ( $s->findnodes( $self->{xp_tl} ) )[0] ) {
 			$result = $self->add_result( $station, $s );
 			if ($result) {
 				$result->set_unscheduled(1);
@@ -410,13 +416,14 @@ sub get_realtime {
 		# by itself.
 		for my $e_ref (@e_refs) {
 			$result->add_raw_ref(
-				class     => $e_ref->getAttribute('f'),    # D N S F
-				unknown_t => $e_ref->getAttribute('t'),    # p
-				train_no  => $e_ref->getAttribute('n'),    # dep number
-				type      => $e_ref->getAttribute('c'),    # S/ICE/ERB/...
-				line_no   => $e_ref->getAttribute('l'),    # 1 -> S1, ...
-				unknown_o => $e_ref->getAttribute('o'),    # owner: 03/80/R2/...
-				     # TODO ps='a' -> rerouted and normally unscheduled train?
+				class    => $e_ref->getAttribute('f'),    # D N S F
+				train_no => $e_ref->getAttribute('n'),    # dep number
+				type     => $e_ref->getAttribute('c'),    # S/ICE/ERB/...
+				line_no  => $e_ref->getAttribute('l'),    # 1 -> S1, ...
+
+               #unknown_t => $e_ref->getAttribute('t'),    # p
+               #unknown_o => $e_ref->getAttribute('o'),    # owner: 03/80/R2/...
+               # TODO ps='a' -> rerouted and normally unscheduled train?
 			);
 		}
 		if ($e_ar) {
