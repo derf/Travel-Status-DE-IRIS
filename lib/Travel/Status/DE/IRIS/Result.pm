@@ -99,13 +99,54 @@ my %translation = (
 );
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
-	qw(arrival date datetime delay departure is_cancelled is_transfer
-	  is_unscheduled is_wing line_no old_train_id old_train_no platform raw_id
+	qw(arrival arrival_is_additional arrival_is_cancelled
+	  date datetime delay
+	  departure departure_is_additional departure_is_cancelled
+	  is_transfer is_unscheduled is_wing
+	  line_no old_train_id old_train_no platform raw_id
 	  realtime_xml route_start route_end
 	  sched_arrival sched_departure sched_platform sched_route_start
 	  sched_route_end start stop_no time train_id train_no transfer type
 	  unknown_t unknown_o wing_id)
 );
+
+sub is_additional {
+	my ($self) = @_;
+
+	if ( $self->{arrival_is_additional} and $self->{departure_is_additional} ) {
+		return 1;
+	}
+	if ( $self->{arrival_is_additional}
+		and not defined $self->{departure_is_additional} )
+	{
+		return 1;
+	}
+	if ( not defined $self->{arrival_is_additional}
+		and $self->{departure_is_additional} )
+	{
+		return 1;
+	}
+	return 0;
+}
+
+sub is_cancelled {
+	my ($self) = @_;
+
+	if ( $self->{arrival_is_cancelled} and $self->{departure_is_cancelled} ) {
+		return 1;
+	}
+	if ( $self->{arrival_is_cancelled}
+		and not defined $self->{departure_is_cancelled} )
+	{
+		return 1;
+	}
+	if ( not defined $self->{arrival_is_cancelled}
+		and $self->{departure_is_cancelled} )
+	{
+		return 1;
+	}
+	return 0;
+}
 
 sub new {
 	my ( $obj, %opt ) = @_;
@@ -177,8 +218,6 @@ sub new {
 	  || $ref->{route_pre}[0]
 	  || $ref->{station};
 
-	$ref->{is_cancelled} = 0;
-
 	return bless( $ref, $obj );
 }
 
@@ -236,10 +275,14 @@ sub set_ar {
 	}
 
 	if ( $attrib{status} and $attrib{status} eq 'c' ) {
-		$self->{is_cancelled} = 1;
+		$self->{arrival_is_cancelled} = 1;
+	}
+	elsif ( $attrib{status} and $attrib{status} eq 'a' ) {
+		$self->{arrival_is_additional} = 1;
 	}
 	else {
-		$self->{is_cancelled} = 0;
+		$self->{arrival_is_additional} = 0;
+		$self->{arrival_is_cancelled}  = 0;
 	}
 
 	return $self;
@@ -290,10 +333,14 @@ sub set_dp {
 	}
 
 	if ( $attrib{status} and $attrib{status} eq 'c' ) {
-		$self->{is_cancelled} = 1;
+		$self->{departure_is_cancelled} = 1;
+	}
+	elsif ( $attrib{status} and $attrib{status} eq 'a' ) {
+		$self->{departure_is_additional} = 1;
 	}
 	else {
-		$self->{is_cancelled} = 0;
+		$self->{departure_is_additional} = 0;
+		$self->{departure_is_cancelled}  = 0;
 	}
 
 	return $self;

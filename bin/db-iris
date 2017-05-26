@@ -253,6 +253,9 @@ sub format_delay {
 	if ( $d->is_cancelled ) {
 		$delay = ' CANCELED';
 	}
+	elsif ( $d->departure_is_cancelled ) {
+		$delay .= ' ⊖';
+	}
 
 	return $delay;
 }
