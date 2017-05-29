@@ -819,6 +819,15 @@ set of actual stops (B<route_post>) minus the set of scheduled stops
 DateTime(3pm) object for the arrival date and time. undef if the
 train starts here. Contains realtime data if available.
 
+=item $result->arrival_is_additional
+
+True if the arrival at this stop is an additional (unscheduled) event, i.e.,
+if the train started its journey earlier than planned.
+
+=item $result->arrival_is_cancelled
+
+True if the arrival at this stop has been cancelled.
+
 =item $result->arrival_wings
 
 Returns a list of references to Travel::Status::DE::IRIS::Result(3pm) objects
@@ -872,6 +881,16 @@ most recent record will be returned.
 DateTime(3pm) object for the departure date and time. undef if the train ends
 here. Contains realtime data if available.
 
+=item $result->departure_is_additional
+
+True if the train's departure at this stop is unscheduled (additional), i.e.,
+the route has been extended past its scheduled terminal stop.
+
+=item $result->departure_is_cancelled
+
+True if the train's departure at this stop has been cancelled, i.e., the train
+terminates here and does not continue its scheduled journey.
+
 =item $result->departure_wings
 
 Returns a list of references to Travel::Status::DE::IRIS::Result(3pm) objects
@@ -887,6 +906,11 @@ Alias for route_end.
 List of information strings. Contains both reasons for delays (which may or
 may not be up-to-date) and generic information such as missing carriages or
 broken toilets.
+
+=item $result->is_additional
+
+True if the train's arrival and departure at the stop are unscheduled
+additional stops, false otherwise.
 
 =item $result->is_cancelled
 
