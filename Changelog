@@ -1,3 +1,13 @@
+Travel::Status::DE::IRIS 1.15 - Tue Jun 06 2017
+
+    * Performance improvements
+    * Distinguish between cancelled/additional arrivals and departures
+    * Travel::Status::DE::IRIS::Result: New accessors arrival_is_additional,
+      arrival_is_cancelled, departure_is_additional, departure_is_cancelled
+      and is_additional.
+    * Travel::Status::DE::IRIS::Result: is_cancelled now only returns true
+      if both arrival and departure have been cancelled.
+
 Travel::Status::DE::IRIS 1.14 - Mon Feb 06 2017
 
     * IRIS->new: Add optional argument lookbehind
