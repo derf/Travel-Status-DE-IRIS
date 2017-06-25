@@ -31,7 +31,7 @@ sub new {
 		developer_mode => $opt{developer_mode},
 		iris_base      => $opt{iris_base}
 		  // 'http://iris.noncd.db.de/iris-tts/timetable',
-		lookahead  => $opt{lookahead}  // ( 3 * 60 ),
+		lookahead  => $opt{lookahead}  // ( 2 * 60 ),
 		lookbehind => $opt{lookbehind} // ( 0 * 60 ),
 		main_cache => $opt{main_cache},
 		rt_cache   => $opt{realtime_cache},
@@ -88,13 +88,25 @@ sub new {
 		return $self;
 	}
 
+	my $lookahead_steps = int( $self->{lookahead} / 60 );
+	if ( ( 60 - $self->{datetime}->minute ) < ( $self->{lookahead} % 60 ) ) {
+		say "lookahead: ${lookahead_steps}++";
+		$lookahead_steps++;
+	}
+	my $lookbehind_steps = int( $self->{lookbehind} / 60 );
+	if ( $self->{datetime}->minute < ( $self->{lookbehind} % 60 ) ) {
+		say "lookbehind: ${lookbehind_steps}++";
+		$lookbehind_steps++;
+	}
+
 	my $dt_req = $self->{datetime}->clone;
-	for ( 1 .. int( $self->{lookahead} / 60 ) ) {
-		$self->get_timetable( $self->{station}{uic}, $dt_req );
+	$self->get_timetable( $self->{station}{uic}, $dt_req );
+	for ( 1 .. $lookahead_steps ) {
 		$dt_req->add( hours => 1 );
+		$self->get_timetable( $self->{station}{uic}, $dt_req );
 	}
 	$dt_req = $self->{datetime}->clone;
-	for ( 1 .. int( $self->{lookbehind} / 60 ) ) {
+	for ( 1 .. $lookbehind_steps ) {
 		$dt_req->subtract( hours => 1 );
 		$self->get_timetable( $self->{station}{uic}, $dt_req );
 	}
