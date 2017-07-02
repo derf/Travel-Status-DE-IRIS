@@ -20,7 +20,7 @@ use Travel::Status::DE::IRIS::Stations;
 my ( $date, $time );
 my $datetime       = DateTime->now( time_zone => 'Europe/Berlin' );
 my $developer_mode = 0;
-my $lookahead      = 3 * 60;
+my $lookahead      = 2 * 60;
 my $realtime       = 0;
 my $with_related   = 1;
 my ( $filter_via, $track_via, $status_via );

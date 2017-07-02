@@ -5,7 +5,7 @@ use 5.014;
 use utf8;
 
 use DateTime;
-use Test::More tests => 436;
+use Test::More tests => 424;
 use Test::Fatal;
 
 use Travel::Status::DE::IRIS;
@@ -21,12 +21,12 @@ my $status = Travel::Status::DE::IRIS->new(
 		minute    => 1,
 		time_zone => 'Europe/Berlin'
 	),
-	lookahead => 3 * 60 + 59,
+	lookahead => 3 * 60,
 );
 
 my @results = $status->results;
 
-is(@results, 135, 'got 135 results');
+is(@results, 131, 'got 131 results');
 
 my $ice645 = $results[0];
 my $s1 = $results[1];

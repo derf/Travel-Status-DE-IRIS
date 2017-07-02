@@ -4,7 +4,7 @@ use warnings;
 use 5.014;
 
 use DateTime;
-use Test::More tests => 274;
+use Test::More tests => 266;
 
 BEGIN {
 	use_ok('Travel::Status::DE::IRIS');
@@ -22,7 +22,7 @@ my $status = Travel::Status::DE::IRIS->new(
 		minute => 1,
 		time_zone => 'Europe/Berlin',
 	),
-	lookahead => 3 * 60 + 59,
+	lookahead => 3 * 60,
 );
 
 isa_ok( $status, 'Travel::Status::DE::IRIS' );
