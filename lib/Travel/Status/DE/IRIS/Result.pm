@@ -233,6 +233,17 @@ sub parse_ts {
 sub set_ar {
 	my ( $self, %attrib ) = @_;
 
+	if ( $attrib{status} and $attrib{status} eq 'c' ) {
+		$self->{arrival_is_cancelled} = 1;
+	}
+	elsif ( $attrib{status} and $attrib{status} eq 'a' ) {
+		$self->{arrival_is_additional} = 1;
+	}
+	else {
+		$self->{arrival_is_additional} = 0;
+		$self->{arrival_is_cancelled}  = 0;
+	}
+
 	# unscheduled arrivals may not appear in the plan, but we do need to
 	# know their planned arrival time
 	if ( $attrib{plan_arrival_ts} ) {
@@ -242,13 +253,15 @@ sub set_ar {
 
 	if ( $attrib{arrival_ts} ) {
 		$self->{arrival} = $self->parse_ts( $attrib{arrival_ts} );
-		$self->{delay}
-		  = $self->arrival->subtract_datetime( $self->sched_arrival )
-		  ->in_units('minutes');
+		if ( not $self->{arrival_is_cancelled} ) {
+			$self->{delay}
+			  = $self->arrival->subtract_datetime( $self->sched_arrival )
+			  ->in_units('minutes');
+		}
 	}
 	else {
 		$self->{arrival} = $self->{sched_arrival};
-		$self->{delay}   = 0;
+		$self->{delay} //= 0;
 	}
 
 	if ( $attrib{platform} ) {
@@ -274,22 +287,22 @@ sub set_ar {
 		$self->{sched_route_start} = $self->{sched_route_pre}[0];
 	}
 
-	if ( $attrib{status} and $attrib{status} eq 'c' ) {
-		$self->{arrival_is_cancelled} = 1;
-	}
-	elsif ( $attrib{status} and $attrib{status} eq 'a' ) {
-		$self->{arrival_is_additional} = 1;
-	}
-	else {
-		$self->{arrival_is_additional} = 0;
-		$self->{arrival_is_cancelled}  = 0;
-	}
-
 	return $self;
 }
 
 sub set_dp {
 	my ( $self, %attrib ) = @_;
+
+	if ( $attrib{status} and $attrib{status} eq 'c' ) {
+		$self->{departure_is_cancelled} = 1;
+	}
+	elsif ( $attrib{status} and $attrib{status} eq 'a' ) {
+		$self->{departure_is_additional} = 1;
+	}
+	else {
+		$self->{departure_is_additional} = 0;
+		$self->{departure_is_cancelled}  = 0;
+	}
 
 	# unscheduled arrivals may not appear in the plan, but we do need to
 	# know their planned arrival time
@@ -300,13 +313,15 @@ sub set_dp {
 
 	if ( $attrib{departure_ts} ) {
 		$self->{departure} = $self->parse_ts( $attrib{departure_ts} );
-		$self->{delay}
-		  = $self->departure->subtract_datetime( $self->sched_departure )
-		  ->in_units('minutes');
+		if ( not $self->{departure_is_cancelled} ) {
+			$self->{delay}
+			  = $self->departure->subtract_datetime( $self->sched_departure )
+			  ->in_units('minutes');
+		}
 	}
 	else {
 		$self->{departure} = $self->{sched_departure};
-		$self->{delay}     = 0;
+		$self->{delay} //= 0;
 	}
 
 	if ( $attrib{platform} ) {
@@ -330,17 +345,6 @@ sub set_dp {
 		$self->{sched_route_post}
 		  = [ split( qr{[|]}, $attrib{sched_route_post} // q{} ) ];
 		$self->{sched_route_end} = $self->{sched_route_post}[-1];
-	}
-
-	if ( $attrib{status} and $attrib{status} eq 'c' ) {
-		$self->{departure_is_cancelled} = 1;
-	}
-	elsif ( $attrib{status} and $attrib{status} eq 'a' ) {
-		$self->{departure_is_additional} = 1;
-	}
-	else {
-		$self->{departure_is_additional} = 0;
-		$self->{departure_is_cancelled}  = 0;
 	}
 
 	return $self;
