@@ -1,6 +1,7 @@
 git HEAD
 
     * Fix miscalculated delays of prematurely terminating trains
+    * Lookahead and lookbehind are now interpreted with 1-minute granularity
 
 Travel::Status::DE::IRIS 1.15 - Tue Jun 06 2017
 
