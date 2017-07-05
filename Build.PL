@@ -10,6 +10,7 @@ Module::Build->new(
 		'Test::Compile' => 0,
 		'Test::Fatal' => 0,
 		'Test::More' => 0,
+		'Test::Number::Delta' => 0,
 		'Test::Pod' => 0,
 		'Text::CSV' => 0,
 	},
