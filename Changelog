@@ -1,7 +1,10 @@
-git HEAD
+Travel::Status::DE::IRIS 1.16 - Sat Jul 08 2017
 
     * Fix miscalculated delays of prematurely terminating trains
-    * Lookahead and lookbehind are now interpreted with 1-minute granularity
+    * Lookahead and lookbehind are now interpreted with 1-minute granularity.
+      Note that this also affects the default lookahead.
+    * Fix floating point-related test failures on some architectures
+    * New "./Build test" dependency: Test::Number::Delta
 
 Travel::Status::DE::IRIS 1.15 - Tue Jun 06 2017
 
