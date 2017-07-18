@@ -5848,7 +5848,7 @@ my @stations = (
 	[ 'TSFS',  'Stuttgart Feuersee',            8006699, 9.166273,  48.772768 ],
 	[ 'TFL',   'Stuttgart Flughafen/Messe',     8005768, 9.19263,   48.690648 ],
 	[ 'TS',    'Stuttgart Hbf',                 8000096, 9.181635,  48.784084 ],
-	[ 'TST',   'Stuttgart Hbf (tief)',          8098096, 9.179808,  48.782999 ],
+	[ 'TS  T', 'Stuttgart Hbf (tief)',          8098096, 9.179808,  48.782999 ],
 	[ 'TSNS',  'Stuttgart Neckarpark',          8006743, 9.241595,  48.792173 ],
 	[ 'TSN',   'Stuttgart Nord',                8005767, 9.188026,  48.803769 ],
 	[ 'TSNU',  'Stuttgart Nürnberger Str.',    8004357, 9.234858,  48.806423 ],
