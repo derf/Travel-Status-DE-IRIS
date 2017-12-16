@@ -90,12 +90,10 @@ sub new {
 
 	my $lookahead_steps = int( $self->{lookahead} / 60 );
 	if ( ( 60 - $self->{datetime}->minute ) < ( $self->{lookahead} % 60 ) ) {
-		say "lookahead: ${lookahead_steps}++";
 		$lookahead_steps++;
 	}
 	my $lookbehind_steps = int( $self->{lookbehind} / 60 );
 	if ( $self->{datetime}->minute < ( $self->{lookbehind} % 60 ) ) {
-		say "lookbehind: ${lookbehind_steps}++";
 		$lookbehind_steps++;
 	}
 
