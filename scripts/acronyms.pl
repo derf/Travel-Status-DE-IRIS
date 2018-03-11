@@ -60,6 +60,7 @@ while ( my $line = <STDIN> ) {
 	$station =~ s{ ^ EBIL     $ }{EBILP}x;
 	$station =~ s{ ^ EBLA     $ }{EBP}x;
 	$station =~ s{ ^ EBTHP    $ }{EBTH}x;
+	$station =~ s{ ^ EDULH    $ }{EDUL}x;
 	$station =~ s{ ^ EDO \s N $ }{EDO}x;
 	$station =~ s{ ^ FBUSS    $ }{FBUS}x;
 	$station =~ s{ ^ FH \s\s N$ }{FH}x;
