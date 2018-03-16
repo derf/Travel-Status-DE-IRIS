@@ -11,6 +11,7 @@ our $VERSION = '1.16';
 use Carp qw(confess cluck);
 use DateTime;
 use DateTime::Format::Strptime;
+use File::Slurp qw(write_file);
 use List::Util qw(first);
 use List::MoreUtils qw(uniq);
 use List::UtilsBy qw(uniq_by);
@@ -35,6 +36,7 @@ sub new {
 		lookbehind => $opt{lookbehind} // ( 0 * 60 ),
 		main_cache => $opt{main_cache},
 		rt_cache   => $opt{realtime_cache},
+		log_dir    => $opt{log_dir},
 		serializable    => $opt{serializable},
 		user_agent      => $opt{user_agent},
 		with_related    => $opt{with_related},
@@ -181,6 +183,13 @@ sub get_with_cache {
 
 	if ($cache) {
 		$cache->freeze( $url, \$content );
+	}
+	if ( $self->{log_dir} ) {
+		my $filename = $url;
+		$filename =~ s{ ^ .* iris-tts/ }{}x;
+		$filename =~ tr{/}{_};
+		$filename = $self->{datetime}->strftime('%Y%m%d%H%%M%S_') . $filename;
+		write_file( $self->{log_dir} . '/' . $filename, $content );
 	}
 
 	return ( $content, undef );
