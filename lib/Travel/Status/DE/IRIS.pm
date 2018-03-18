@@ -188,7 +188,9 @@ sub get_with_cache {
 		my $filename = $url;
 		$filename =~ s{ ^ .* iris-tts/ }{}x;
 		$filename =~ tr{/}{_};
-		$filename = $self->{datetime}->strftime('%Y%m%d%H%%M%S_') . $filename;
+		if ( $filename =~ m{ fchg }x ) {
+			$filename .= $self->{datetime}->strftime('_%Y%m%d%H%M%S');
+		}
 		write_file( $self->{log_dir} . '/' . $filename, $content );
 	}
 
