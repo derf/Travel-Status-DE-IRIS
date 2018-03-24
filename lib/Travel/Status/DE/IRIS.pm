@@ -681,7 +681,7 @@ Returns undef otherwise.
 
 =item $status->results
 
-Returns a list of Travel::Status::DE::IRIS(3pm) objects, each one describing
+Returns a list of Travel::Status::DE::IRIS::Result(3pm) objects, each one describing
 one arrival and/or departure.
 
 =item $status->warnstr
