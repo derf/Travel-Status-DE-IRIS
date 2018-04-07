@@ -26,7 +26,6 @@ Module::Build->new(
 		'DateTime' => 0,
 		'DateTime::Format::Strptime' => 0,
 		'Encode' => 0,
-		'File::Slurp' => 0,
 		'Geo::Distance' => 0,
 		'Getopt::Long' => 0,
 		'List::Compare' => '0.29',

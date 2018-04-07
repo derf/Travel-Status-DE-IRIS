@@ -11,7 +11,6 @@ Dependencies
 * Class::Accessor
 * DateTime
 * DateTime::Format::Strptime
-* File::Slurp
 * Geo::Distance
 * List::Compare
 * List::MoreUtils
