@@ -71,21 +71,26 @@ if ($track_via) {
 if ($date) {
 	my ( $day, $month, $year ) = split( qr{ [.] }x, $date );
 
-	if (   not( defined $day and defined $month )
+	if ( $date eq 'tomorrow' ) {
+		$datetime->add( days => 1 );
+	}
+	elsif (not( defined $day and defined $month )
 		or ( $day < 1 )
 		or ( $day > 31 )
 		or ( $month < 1 )
 		or ( $month > 12 ) )
 	{
-		say STDERR "-d/--date: Please specify a valid date";
+		say STDERR
+"-d/--date: Please specify a valid date (dd.mm. / dd.mm.YYYY / tomorrow)";
 		exit(3);
 	}
-
-	$datetime->set(
-		day   => $day,
-		month => $month,
-		year  => $year || $datetime->year,
-	);
+	else {
+		$datetime->set(
+			day   => $day,
+			month => $month,
+			year  => $year || $datetime->year,
+		);
+	}
 }
 if ($time) {
 	my ( $hour, $minute, $second ) = split( qr{ : }x, $time );
@@ -567,7 +572,8 @@ Valid classes are:
 
 =item B<-d>, B<--date> I<date>
 
-Request results for I<date> in dd.mm. or dd.mm.YYYY format. Note that only
+Request results for I<date>, which is either a date string in in I<dd>.I<mm>.
+or I<dd>.I<mm>.I<YYYY> format, or C<< tomorrow >>.  Note that typically only
 slight (a few hours max) deviations from the current time are supported by the
 IRIS backend, larger ones will not return data.
 
