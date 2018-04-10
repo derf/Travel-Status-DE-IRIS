@@ -65,6 +65,7 @@ while ( my $line = <STDIN> ) {
 	$station =~ s{ ^ FBUSS    $ }{FBUS}x;
 	$station =~ s{ ^ FH \s\s N$ }{FH}x;
 	$station =~ s{ ^ FMTN     $ }{FMT}x;
+	$station =~ s{ ^ HWOL     $ }{HWOH}x;
 	$station =~ s{ ^ KAREP    $ }{KARE}x;
 	$station =~ s{ ^ KBR \s P $ }{KBR}x;
 	$station =~ s{ ^ KDDH     $ }{KDD}x;
