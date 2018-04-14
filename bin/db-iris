@@ -6,7 +6,7 @@ use utf8;
 
 no if $] >= 5.018, warnings => 'experimental::smartmatch';
 
-our $VERSION = '1.16';
+our $VERSION = '1.17';
 
 use DateTime;
 use DateTime::Format::Strptime;
@@ -535,7 +535,7 @@ I<station>
 
 =head1 VERSION
 
-version 1.16
+version 1.17
 
 =head1 DESCRIPTION
 
@@ -755,7 +755,7 @@ Unknown.
 
 =head1 AUTHOR
 
-Copyright (C) 2013-2016 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
+Copyright (C) 2013-2018 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
 
 The station data used by this script is provided by DB
 Station&Service AG, Europaplatz 1, 10557 Berlin, Germany and also available

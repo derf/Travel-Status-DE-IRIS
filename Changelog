@@ -1,3 +1,8 @@
+Travel::Status::DE::IRIS 1.17 - Sat Apr 14 2018
+
+    * Fix DS100 codes for Dülmen, Stuttgart Hbf (tief), and Wolfenbüttel
+    * db-iris: Support -d/--date "tomorrow"
+
 Travel::Status::DE::IRIS 1.16 - Sat Jul 08 2017
 
     * Fix miscalculated delays of prematurely terminating trains

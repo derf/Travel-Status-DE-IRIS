@@ -15,7 +15,7 @@ use List::Compare;
 use List::MoreUtils qw(none uniq firstval);
 use Scalar::Util qw(weaken);
 
-our $VERSION = '1.16';
+our $VERSION = '1.17';
 
 my %translation = (
 	2  => 'Polizeiliche Ermittlung',
@@ -798,7 +798,7 @@ arrival/departure received by Travel::Status::DE::IRIS
 
 =head1 VERSION
 
-version 1.16
+version 1.17
 
 =head1 DESCRIPTION
 
@@ -1420,7 +1420,7 @@ Travel::Status::DE::IRIS(3pm).
 
 =head1 AUTHOR
 
-Copyright (C) 2013-2016 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
+Copyright (C) 2013-2018 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
 
 =head1 LICENSE
 
