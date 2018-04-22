@@ -26,7 +26,7 @@ use Text::LevenshteinXS qw(distance);
 
 # TODO switch to Text::Levenshtein::XS once AUR/Debian packages become available
 
-our $VERSION = '1.09';
+our $VERSION = '1.17';
 
 my @stations = (
 EOF
@@ -37,6 +37,7 @@ my $csv = Text::CSV->new(
 		sep_char => q{;}
 	}
 );
+my @buf;
 while ( my $line = <STDIN> ) {
 
 	#	chomp $line;
@@ -45,7 +46,7 @@ while ( my $line = <STDIN> ) {
 	my $status = $csv->parse($line);
 	my @fields = $csv->fields;
 
-	my ( $uic, $station, $name, $mot, $longitute, $latitude ) = @fields;
+	my ( $uic, $station, $ifopt, $name, $mot, $longitude, $latitude ) = @fields;
 
 	if ( $station eq 'DS100' or $station eq q{} ) {
 		next;
@@ -57,29 +58,21 @@ while ( my $line = <STDIN> ) {
 	$name =~ s{\s+}{ }g;
 	$name =~ s{'}{\\'}g;
 
-	$station =~ s{ ^ EBIL     $ }{EBILP}x;
-	$station =~ s{ ^ EBLA     $ }{EBP}x;
-	$station =~ s{ ^ EBTHP    $ }{EBTH}x;
-	$station =~ s{ ^ EDULH    $ }{EDUL}x;
-	$station =~ s{ ^ EDO \s N $ }{EDO}x;
-	$station =~ s{ ^ FBUSS    $ }{FBUS}x;
-	$station =~ s{ ^ FH \s\s N$ }{FH}x;
-	$station =~ s{ ^ FMTN     $ }{FMT}x;
-	$station =~ s{ ^ HWOL     $ }{HWOH}x;
-	$station =~ s{ ^ KAREP    $ }{KARE}x;
-	$station =~ s{ ^ KBR \s P $ }{KBR}x;
-	$station =~ s{ ^ KDDH     $ }{KDD}x;
-	$station =~ s{ ^ KDFFH    $ }{KDFF}x;
-	$station =~ s{ ^ KDN \s P $ }{KDN}x;
-	$station =~ s{ ^ KGKK     $ }{KGEK}x;
-	$station =~ s{ ^ KRY \s P $ }{KRY}x;
-	$station =~ s{ ^ TSZ \s F $ }{TSFE}x;
+	$longitude =~ tr{,}{.};
+	$latitude =~ tr{,}{.};
 
+	for my $real_station (split(qr{,}, $station)) {
+		push(@buf, [encode('UTF-8', $real_station), encode('UTF-8', $name), $uic, $longitude, $latitude]);
+	}
+}
+
+@buf = sort { $a->[1] cmp $b->[1] } @buf;
+
+for my $entry (@buf) {
+	my ($station, $name, $uic, $longitude, $latitude) = @{$entry};
 	printf(
 		"\t['%s','%s',%s,%s,%s],\n",
-		encode( 'UTF-8', $station ),
-		encode( 'UTF-8', $name ),
-		$uic, $longitute, $latitude
+		$station, $name, $uic, $longitude, $latitude
 	);
 }
 

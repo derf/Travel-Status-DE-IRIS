@@ -74,10 +74,10 @@ is_deeply(
 is_deeply(
 	[ Travel::Status::DE::IRIS::Stations::get_station('Borbeck') ],
 	[
-		[ 'EEBE', 'Essen-Bergeborbeck', 8001901, 6.977782,  51.480201 ],
-		[ 'EEBB', 'Essen-Borbeck', 8001902, 6.948795,  51.472713 ],
-		[ 'EEBS', 'Essen-Borbeck Süd', 8005031, 6.953922,  51.461673 ],
-		[ 'EGAR', 'Garbeck', 8002180, 7.839903,  51.321459 ],
+		[ 'EEBE', 'Essen-Bergeborbeck', 8001901, 6.97711100,  51.4803960 ],
+		[ 'EEBB', 'Essen-Borbeck', 8001902, 6.94846100,  51.4731030 ],
+		[ 'EEBS', 'Essen-Borbeck Süd', 8005031, 6.95392200,  51.4616730 ],
+		[ 'EGAR', 'Garbeck', 8002180, 7.83990300,  51.3214590 ],
 	],
 	'get_station: partial match with substring and levenshtein'
 );
