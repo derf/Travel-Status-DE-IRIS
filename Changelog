@@ -1,3 +1,7 @@
+Travel::Status::DE::IRIS 1.18 - Mon Apr 23 2018
+
+    * Update station dataset to Open Data Haltestellenliste 2017-09
+
 Travel::Status::DE::IRIS 1.17 - Sat Apr 14 2018
 
     * Fix DS100 codes for Dülmen, Stuttgart Hbf (tief), and Wolfenbüttel
