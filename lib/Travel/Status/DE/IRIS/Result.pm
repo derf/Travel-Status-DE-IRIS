@@ -27,6 +27,7 @@ my %translation = (
 	9  => 'Streikauswirkungen',
 	10 => 'Ausgebrochene Tiere im Gleis',
 	11 => 'Unwetter',
+	12 => 'Warten auf Fahrgäste aus einem Schiff',
 	13 => 'Pass- und Zollkontrolle',
 	15 => 'Beeinträchtigung durch Vandalismus',
 	16 => 'Entschärfung einer Fliegerbombe',
