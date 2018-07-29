@@ -100,9 +100,9 @@ my %translation = (
 );
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
-	qw(arrival arrival_is_additional arrival_is_cancelled
+	qw(arrival arrival_delay arrival_is_additional arrival_is_cancelled
 	  date datetime delay
-	  departure departure_is_additional departure_is_cancelled
+	  departure departure_delay departure_is_additional departure_is_cancelled
 	  is_transfer is_unscheduled is_wing
 	  line_no old_train_id old_train_no platform raw_id
 	  realtime_xml route_start route_end
@@ -255,14 +255,15 @@ sub set_ar {
 	if ( $attrib{arrival_ts} ) {
 		$self->{arrival} = $self->parse_ts( $attrib{arrival_ts} );
 		if ( not $self->{arrival_is_cancelled} ) {
-			$self->{delay}
+			$self->{delay} = $self->{arrival_delay}
 			  = $self->arrival->subtract_datetime( $self->sched_arrival )
 			  ->in_units('minutes');
 		}
 	}
 	else {
 		$self->{arrival} = $self->{sched_arrival};
-		$self->{delay} //= 0;
+		$self->{arrival_delay} //= 0;
+		$self->{delay}         //= 0;
 	}
 
 	if ( $attrib{platform} ) {
@@ -315,14 +316,15 @@ sub set_dp {
 	if ( $attrib{departure_ts} ) {
 		$self->{departure} = $self->parse_ts( $attrib{departure_ts} );
 		if ( not $self->{departure_is_cancelled} ) {
-			$self->{delay}
+			$self->{delay} = $self->{departure_delay}
 			  = $self->departure->subtract_datetime( $self->sched_departure )
 			  ->in_units('minutes');
 		}
 	}
 	else {
 		$self->{departure} = $self->{sched_departure};
-		$self->{delay} //= 0;
+		$self->{delay}           //= 0;
+		$self->{departure_delay} //= 0;
 	}
 
 	if ( $attrib{platform} ) {
@@ -824,6 +826,12 @@ set of actual stops (B<route_post>) minus the set of scheduled stops
 DateTime(3pm) object for the arrival date and time. undef if the
 train starts here. Contains realtime data if available.
 
+=item $result->arrival_delay
+
+Estimated arrival delay in minutes (integer number). undef if no realtime
+data is available, the train starts at the specified station, or there is
+no scheduled arrival time (e.g. due to diversions). May be negative.
+
 =item $result->arrival_is_additional
 
 True if the arrival at this stop is an additional (unscheduled) event, i.e.,
@@ -869,9 +877,10 @@ contain realtime data.
 
 =item $result->delay
 
-Estimated delay in minutes (integer number). undef when no realtime data is
-available, negative if a train ends at the specified station and arrives /
-arrived early.
+Estimated delay in minutes (integer number). Defaults to the departure delay,
+except for trains which terminate at the specifed station. Similar to
+C<< $result->departure_delay // $result->arrival_delay >>. undef if
+no realtime data is available. May be negative.
 
 =item $result->delay_messages
 
@@ -885,6 +894,12 @@ most recent record will be returned.
 
 DateTime(3pm) object for the departure date and time. undef if the train ends
 here. Contains realtime data if available.
+
+=item $result->departure_delay
+
+Estimated departure delay in minutes (integer number). undef if no realtime
+data is available, the train terminates at the specified station, or there is
+no scheduled departure time (e.g. due to diversions). May be negative.
 
 =item $result->departure_is_additional
 
