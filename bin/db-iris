@@ -321,7 +321,7 @@ sub display_result {
 			if ( not defined $d->delay ) {
 				print "\n";
 			}
-			elsif ( $d->delay == 0 ) {
+			elsif ( $d->delay == 0 and ( $d->arrival_delay // 0 ) == 0 ) {
 				printf( "%s+0\n", q{ } x 15 );
 			}
 			else {
