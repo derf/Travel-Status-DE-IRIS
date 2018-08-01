@@ -1,3 +1,10 @@
+Travel::Status::DE::IRIS 1.19 - Wed Aug 01 2018
+
+    * db-iris: Fix "-ot" ignoring arrival delay if departure is on time
+    * Add delay code 12 (waiting for passengers in a ship)
+    * Result->route_interesting: Include dutch and swiss central station names
+    * Result: New accessors arrival_delay and departure_delay
+
 Travel::Status::DE::IRIS 1.18 - Mon Apr 23 2018
 
     * Update station dataset to Open Data Haltestellenliste 2017-09
