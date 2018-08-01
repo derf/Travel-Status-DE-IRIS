@@ -5,7 +5,7 @@ use 5.014;
 use utf8;
 
 use DateTime;
-use Test::More tests => 424;
+use Test::More tests => 429;
 use Test::Fatal;
 
 use Travel::Status::DE::IRIS;
@@ -30,6 +30,7 @@ is(@results, 131, 'got 131 results');
 
 my $ice645 = $results[0];
 my $s1 = $results[1];
+my $ice1529 = $results[27];
 
 
 # Generic checks: All accessors should work
@@ -43,6 +44,8 @@ isa_ok($ice645->start, 'DateTime');
 is($ice645->datetime, $ice645->sched_departure, 'datetime is sched_departure');
 is_deeply(['F'], [$ice645->classes], '->classes');
 is($ice645->date, '03.01.2014', '->date');
+is($ice645->arrival_delay, 53, '->arrival_delay');
+is($ice645->departure_delay, 53, '->departure_delay');
 is($ice645->delay, 53, '->delay');
 is($ice645->destination, 'Berlin Ostbahnhof', '->destination');
 ok(! $ice645->is_cancelled, '->is_cancelled for non-cancelled train');
@@ -63,6 +66,11 @@ is($ice645->train_no, 645, '->train_no');
 is($ice645->type, 'ICE', '->type');
 
 ok($s1->is_cancelled, '->is_cancelled for cancelled train');
+
+# arrival_delay != departure_delay in some cases
+is($ice1529->arrival_delay, 35, '->arrival_delay is arrival delay');
+is($ice1529->departure_delay, 36, '->arrival_delay is departure delay');
+is($ice1529->delay, 36, '->delay defaults to departure_delay');
 
 # documented aliases should work on all results
 for my $i (0 .. $#results) {
