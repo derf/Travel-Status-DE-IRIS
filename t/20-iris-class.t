@@ -4,7 +4,7 @@ use warnings;
 use 5.014;
 
 use DateTime;
-use Test::More tests => 266;
+use Test::More tests => 268;
 
 BEGIN {
 	use_ok('Travel::Status::DE::IRIS');

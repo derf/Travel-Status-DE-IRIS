@@ -5,7 +5,7 @@ use 5.014;
 use utf8;
 
 use DateTime;
-use Test::More tests => 429;
+use Test::More tests => 432;
 use Test::Fatal;
 
 use Travel::Status::DE::IRIS;
@@ -26,7 +26,7 @@ my $status = Travel::Status::DE::IRIS->new(
 
 my @results = $status->results;
 
-is(@results, 131, 'got 131 results');
+is(scalar @results, 132, 'got 132 results');
 
 my $ice645 = $results[0];
 my $s1 = $results[1];
@@ -113,4 +113,4 @@ $status = Travel::Status::DE::IRIS->new(
 
 @results = $status->results;
 
-is(@results, 0, 'lookahead 0 -> no results');
+is(scalar @results, 10, 'lookahead 0 -> only overdue results');
