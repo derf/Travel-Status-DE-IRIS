@@ -1,3 +1,10 @@
+Travel::Status::DE::IRIS 1.20 - Mon Aug 06 2018
+
+    * Use schedule instead of realtime data when determining whether a train
+      falls within the lookahead time frame. This fixes severely delayed
+      trains being ignored even if their scheduled arrival/departure is very
+      soon or has already passed.
+
 Travel::Status::DE::IRIS 1.19 - Wed Aug 01 2018
 
     * db-iris: Fix "-ot" ignoring arrival delay if departure is on time
