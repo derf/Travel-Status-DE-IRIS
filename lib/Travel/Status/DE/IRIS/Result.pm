@@ -1064,7 +1064,7 @@ that. Does not contain realtime data.
 
 =item $result->route_pre
 
-List of station names the train passed (or will have passed) befoe this stop.
+List of station names the train passed (or will have passed) before this stop.
 
 =item $result->route_post
 
