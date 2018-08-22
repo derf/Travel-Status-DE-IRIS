@@ -1,0 +1,109 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use 5.014;
+use utf8;
+
+use Cache::Memory;
+use Encode qw(decode);
+use Travel::Status::DE::IRIS;
+use Travel::Status::DE::IRIS::Stations;
+
+
+my $now = DateTime->now( time_zone => 'Europe/Berlin' );
+
+binmode( STDOUT, ':encoding(utf-8)' );
+
+@ARGV = map { decode( 'UTF-8', $_ ) } @ARGV;
+
+my ($initial_station, $train_type, $train_no, $dest_station) = @ARGV;
+
+my $main_cache = Cache::Memory->new(
+	namespace => 'IRISMain',
+	default_expires => '6 hours',
+);
+
+my $rt_cache = Cache::Memory->new(
+	namespace => 'IRISRT',
+	default_expires => '30 seconds'
+);
+
+sub get_train_or_undef {
+	my ($station) = @_;
+
+	my $status = Travel::Status::DE::IRIS->new(
+		datetime => $now,
+		station => $station,
+		with_related => 1,
+		main_cache     => $main_cache,
+		realtime_cache => $rt_cache,
+	);
+
+	if (my $err = $status->errstr) {
+		say STDERR "Request error at ${station}: ${err}";
+		return undef;
+	}
+	if (my $warn = $status->warnstr) {
+		say STDERR "Request warning at ${station}: ${warn}";
+	}
+
+	my @res = grep { $_->type eq $train_type and $_->train_no eq $train_no } $status->results;
+
+	if (@res == 1) {
+		return $res[0];
+	}
+	return undef;
+}
+
+sub get_train_at_next_station_or_undef {
+	my ($train) = @_;
+
+	my @route_next = $train->route_post;
+
+	if (not @route_next) {
+		return (undef, undef);
+	}
+	return ($route_next[0], get_train_or_undef($route_next[0]));
+}
+
+sub get_train_at_prev_station_or_undef {
+	my ($train) = @_;
+
+	my @route_prev = $train->route_pre;
+
+	if (not @route_prev) {
+		return (undef, undef);
+	}
+	return ($route_prev[-1], get_train_or_undef($route_prev[-1]));
+}
+
+sub format_datetime {
+	my ($dt) = @_;
+
+	if (not defined $dt) {
+		return q{};
+	}
+
+	return $dt->strftime('%H:%M');
+}
+
+while (1) {
+
+	my $current_station = $dest_station;
+	my $current_dep = get_train_or_undef($current_station);
+
+	while (defined $current_dep) {
+		printf("%20s   %5s → %5s   +%d\n%20s   %5s → %5s\n\n",
+			$current_station, format_datetime($current_dep->sched_arrival),
+			format_datetime($current_dep->sched_departure),
+			$current_dep->delay, q{},
+			format_datetime($current_dep->arrival),
+			format_datetime($current_dep->departure),
+		);
+		($current_station, $current_dep) = get_train_at_prev_station_or_undef($current_dep);
+	}
+
+	say "\n----\n";
+
+	sleep(60);
+}
