@@ -19,39 +19,39 @@ binmode( STDOUT, ':encoding(utf-8)' );
 
 @ARGV = map { decode( 'UTF-8', $_ ) } @ARGV;
 
-my ($dest_station, $train_type, $train_no, $max_stations) = @ARGV;
+my ( $dest_station, $train_type, $train_no, $max_stations ) = @ARGV;
 
 $max_stations //= 20;
 
 my $main_cache = Cache::Memory->new(
-	namespace => 'IRISMain',
+	namespace       => 'IRISMain',
 	default_expires => '6 hours',
 );
 
 my $rt_cache = Cache::Memory->new(
-	namespace => 'IRISRT',
+	namespace       => 'IRISRT',
 	default_expires => '90 seconds'
 );
 
 sub get_train_or_undef {
-	my ($station, $ignore_errors) = @_;
+	my ( $station, $ignore_errors ) = @_;
 
 	my @candidates = Travel::Status::DE::IRIS::Stations::get_station($station);
 
-	if (@candidates == 1) {
+	if ( @candidates == 1 ) {
 		$station = $candidates[0][0];
 	}
 
 	my $status = Travel::Status::DE::IRIS->new(
-		datetime => $now,
-		station => $station,
-		with_related => 0,
+		datetime       => $now,
+		station        => $station,
+		with_related   => 0,
 		main_cache     => $main_cache,
 		realtime_cache => $rt_cache,
-		lookahead => 300,
+		lookahead      => 300,
 	);
 
-	if (my $err = $status->errstr) {
+	if ( my $err = $status->errstr ) {
 		if ($ignore_errors) {
 			return undef;
 		}
@@ -60,13 +60,14 @@ sub get_train_or_undef {
 			exit 1;
 		}
 	}
-	if (my $warn = $status->warnstr and not $ignore_errors) {
+	if ( my $warn = $status->warnstr and not $ignore_errors ) {
 		say STDERR "Request warning at ${station}: ${warn}";
 	}
 
-	my @res = grep { $_->type eq $train_type and $_->train_no eq $train_no } $status->results;
+	my @res = grep { $_->type eq $train_type and $_->train_no eq $train_no }
+	  $status->results;
 
-	if (@res == 1) {
+	if ( @res == 1 ) {
 		return $res[0];
 	}
 	return undef;
@@ -77,10 +78,10 @@ sub get_train_at_next_station_or_undef {
 
 	my @route_next = $train->route_post;
 
-	if (not @route_next) {
-		return (undef, undef);
+	if ( not @route_next ) {
+		return ( undef, undef );
 	}
-	return ($route_next[0], get_train_or_undef($route_next[0]));
+	return ( $route_next[0], get_train_or_undef( $route_next[0] ) );
 }
 
 sub get_train_at_prev_station_or_undef {
@@ -88,16 +89,16 @@ sub get_train_at_prev_station_or_undef {
 
 	my @route_prev = $train->route_pre;
 
-	if (not @route_prev) {
-		return (undef, undef);
+	if ( not @route_prev ) {
+		return ( undef, undef );
 	}
-	return ($route_prev[-1], get_train_or_undef($route_prev[-1]));
+	return ( $route_prev[-1], get_train_or_undef( $route_prev[-1] ) );
 }
 
 sub format_datetime {
 	my ($dt) = @_;
 
-	if (not defined $dt) {
+	if ( not defined $dt ) {
 		return q{};
 	}
 
@@ -107,44 +108,45 @@ sub format_datetime {
 sub format_delay {
 	my ($delay) = @_;
 
-	if (not defined $delay) {
+	if ( not defined $delay ) {
 		return q{};
 	}
 
-	return sprintf('%+d', $delay);
+	return sprintf( '%+d', $delay );
 }
 
 sub update_trainstatus {
 	my ($train) = @_;
 	return {
-		sched_arrival => $train->sched_arrival,
-		rt_arrival => $train->arrival,
-		sched_departure => $train->sched_departure,
-		rt_departure => $train->departure,
-		cancelled_arrival => $train->arrival_is_cancelled,
+		sched_arrival       => $train->sched_arrival,
+		rt_arrival          => $train->arrival,
+		sched_departure     => $train->sched_departure,
+		rt_departure        => $train->departure,
+		cancelled_arrival   => $train->arrival_is_cancelled,
 		cancelled_departure => $train->departure_is_cancelled,
-		sched_platform => $train->sched_platform,
-		delay => $train->delay,
-		arrival_delay => $train->arrival_delay,
-		departure_delay => $train->departure_delay,
-		platform => $train->platform,
-		epoch => ($train->arrival // $train->departure)->epoch,
-		last_update => DateTime->now(time_zone => 'Europe/Berlin')->epoch,
+		sched_platform      => $train->sched_platform,
+		delay               => $train->delay,
+		arrival_delay       => $train->arrival_delay,
+		departure_delay     => $train->departure_delay,
+		platform            => $train->platform,
+		epoch               => ( $train->arrival // $train->departure )->epoch,
+		last_update => DateTime->now( time_zone => 'Europe/Berlin' )->epoch,
 	};
 }
 
 my $initial_train = get_train_or_undef($dest_station);
 
-if (not defined $initial_train) {
+if ( not defined $initial_train ) {
 	say STDERR "Did not find $train_type $train_no at $dest_station\n";
-	say STDERR "Note that its arrival must not be more than 5 hours in the future\n";
+	say STDERR
+	  "Note that its arrival must not be more than 5 hours in the future\n";
 }
 
-my @stations = ($initial_train->route_pre, $dest_station);
+my @stations = ( $initial_train->route_pre, $dest_station );
 my @all_messages = $initial_train->messages;
 
-if (@stations > $max_stations) {
-	splice(@stations, 0, @stations - $max_stations);
+if ( @stations > $max_stations ) {
+	splice( @stations, 0, @stations - $max_stations );
 }
 
 my %status = (
@@ -152,8 +154,8 @@ my %status = (
 );
 
 my $timer_current = 0;
-my $timer_max = @stations;
-my $timer = Time::Progress->new(
+my $timer_max     = @stations;
+my $timer         = Time::Progress->new(
 	min => 1,
 	max => $timer_max,
 );
@@ -161,10 +163,10 @@ my $timer = Time::Progress->new(
 for my $station (@stations) {
 	print $timer->report(
 		"\r\e[2KGetting initial departures  %20b %p  "
-		. "(${timer_current}/${timer_max})  ${station}",
+		  . "(${timer_current}/${timer_max})  ${station}",
 		++$timer_current
 	);
-	if (my $train = get_train_or_undef($station, 1)) {
+	if ( my $train = get_train_or_undef( $station, 1 ) ) {
 		$status{$station} = update_trainstatus($train);
 	}
 	else {
@@ -177,37 +179,48 @@ print "\r\e[2K";
 while (1) {
 
 	my $prev_epoch = 0;
-	my $now = DateTime->now(time_zone => 'Europe/Berlin');
+	my $now = DateTime->now( time_zone => 'Europe/Berlin' );
 
 	for my $station (@stations) {
-		if ($status{$station}{skip}) {
-			printf("%30s   ??:?? → ??:??\n\n", $station);
+		if ( $status{$station}{skip} ) {
+			printf( "%30s   ??:?? → ??:??\n\n", $station );
 		}
 		else {
 			my $epoch = $status{$station}{epoch};
-			my @messages = grep { $_->[0]->epoch > $prev_epoch and $_->[0]->epoch <= $epoch } @all_messages;
+			my @messages
+			  = grep { $_->[0]->epoch > $prev_epoch and $_->[0]->epoch <= $epoch }
+			  @all_messages;
 			for my $message (@messages) {
-				printf("%30s   %5s   %s\n", q{}, $message->[0]->strftime('%H:%M'), $message->[1]);
+				printf(
+					"%30s   %5s   %s\n",
+					q{}, $message->[0]->strftime('%H:%M'),
+					$message->[1]
+				);
 			}
 			if (@messages) {
 				print "\n";
 			}
 
-			if ($prev_epoch < $now->epoch and $now->epoch <= $epoch) {
-				printf("%30s   %5s\n\n", '>' x 15, $now->strftime('%H:%M'));
+			if ( $prev_epoch < $now->epoch and $now->epoch <= $epoch ) {
+				printf( "%30s   %5s\n\n", '>' x 15, $now->strftime('%H:%M') );
 			}
 
-			printf("%30s   %5s → %5s   %s\n",
-				$station, format_datetime($status{$station}{sched_arrival}),
-				format_datetime($status{$station}{sched_departure}),
-				format_delay($status{$station}{delay}),
+			printf(
+				"%30s   %5s → %5s   %s\n",
+				$station,
+				format_datetime( $status{$station}{sched_arrival} ),
+				format_datetime( $status{$station}{sched_departure} ),
+				format_delay( $status{$station}{delay} ),
 			);
 
-			if ($status{$station}{arrival_delay} or $status{$station}{departure_delay}) {
-				printf("%30s   %5s → %5s\n",
+			if (   $status{$station}{arrival_delay}
+				or $status{$station}{departure_delay} )
+			{
+				printf(
+					"%30s   %5s → %5s\n",
 					q{},
-					format_datetime($status{$station}{rt_arrival}),
-					format_datetime($status{$station}{rt_departure}),
+					format_datetime( $status{$station}{rt_arrival} ),
+					format_datetime( $status{$station}{rt_departure} ),
 				);
 			}
 
@@ -220,7 +233,7 @@ while (1) {
 	sleep(60);
 
 	for my $station (@stations) {
-		if (my $train = get_train_or_undef($station, 1)) {
+		if ( my $train = get_train_or_undef( $station, 1 ) ) {
 			$status{$station} = update_trainstatus($train);
 			@all_messages = $train->messages;
 		}
