@@ -19,7 +19,9 @@ binmode( STDOUT, ':encoding(utf-8)' );
 
 @ARGV = map { decode( 'UTF-8', $_ ) } @ARGV;
 
-my ($dest_station, $train_type, $train_no) = @ARGV;
+my ($dest_station, $train_type, $train_no, $max_stations) = @ARGV;
+
+$max_stations //= 20;
 
 my $main_cache = Cache::Memory->new(
 	namespace => 'IRISMain',
@@ -102,6 +104,16 @@ sub format_datetime {
 	return $dt->strftime('%H:%M');
 }
 
+sub format_delay {
+	my ($delay) = @_;
+
+	if (not defined $delay) {
+		return q{};
+	}
+
+	return sprintf('%+d', $delay);
+}
+
 sub update_trainstatus {
 	my ($train) = @_;
 	return {
@@ -113,6 +125,8 @@ sub update_trainstatus {
 		cancelled_departure => $train->departure_is_cancelled,
 		sched_platform => $train->sched_platform,
 		delay => $train->delay,
+		arrival_delay => $train->arrival_delay,
+		departure_delay => $train->departure_delay,
 		platform => $train->platform,
 		epoch => ($train->arrival // $train->departure)->epoch,
 		last_update => DateTime->now(time_zone => 'Europe/Berlin')->epoch,
@@ -129,8 +143,8 @@ if (not defined $initial_train) {
 my @stations = ($initial_train->route_pre, $dest_station);
 my @all_messages = $initial_train->messages;
 
-if (@stations > 20) {
-	splice(@stations, 0, @stations - 20);
+if (@stations > $max_stations) {
+	splice(@stations, 0, @stations - $max_stations);
 }
 
 my %status = (
@@ -180,31 +194,36 @@ while (1) {
 			}
 
 			if ($prev_epoch < $now->epoch and $now->epoch <= $epoch) {
-				printf("\n%30s   %5s\n\n", '>' x 15, $now->strftime('%H:%M'));
+				printf("%30s   %5s\n\n", '>' x 15, $now->strftime('%H:%M'));
 			}
 
-			printf("%30s   %5s → %5s   +%d\n%30s   %5s → %5s\n\n",
+			printf("%30s   %5s → %5s   %s\n",
 				$station, format_datetime($status{$station}{sched_arrival}),
 				format_datetime($status{$station}{sched_departure}),
-				$status{$station}{delay}, q{},
-				format_datetime($status{$station}{rt_arrival}),
-				format_datetime($status{$station}{rt_departure}),
+				format_delay($status{$station}{delay}),
 			);
+
+			if ($status{$station}{arrival_delay} or $status{$station}{departure_delay}) {
+				printf("%30s   %5s → %5s\n",
+					q{},
+					format_datetime($status{$station}{rt_arrival}),
+					format_datetime($status{$station}{rt_departure}),
+				);
+			}
+
+			print "\n";
 
 			$prev_epoch = $epoch;
 		}
 	}
+
+	sleep(60);
 
 	for my $station (@stations) {
 		if (my $train = get_train_or_undef($station, 1)) {
 			$status{$station} = update_trainstatus($train);
 			@all_messages = $train->messages;
 		}
-		else {
-			$status{$station}{skip} = 1;
-		}
 	}
-
-	sleep(60);
 	say "\n----\n";
 }
