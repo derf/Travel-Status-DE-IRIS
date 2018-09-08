@@ -31,7 +31,7 @@ sub new {
 		developer_mode => $opt{developer_mode},
 		iris_base      => $opt{iris_base}
 		  // 'http://iris.noncd.db.de/iris-tts/timetable',
-		lookahead  => $opt{lookahead}  // ( 2 * 60 ),
+		lookahead  => $opt{lookahead} //  ( 2 * 60 ),
 		lookbehind => $opt{lookbehind} // ( 0 * 60 ),
 		main_cache => $opt{main_cache},
 		rt_cache   => $opt{realtime_cache},
@@ -131,7 +131,7 @@ sub new {
 	}
 
 	@{ $self->{results} } = grep {
-		my $d = ( $_->departure // $_->arrival );
+		my $d  = ( $_->departure // $_->arrival );
 		my $sd = $_->sched_departure // $_->sched_arrival // $d;
 		$d  = $d->subtract_datetime( $self->{datetime} );
 		$sd = $sd->subtract_datetime( $self->{datetime} );
@@ -215,7 +215,12 @@ sub get_station {
 			}
 		}
 
-		my $xml_st = XML::LibXML->load_xml( string => $raw );
+		my $xml_st;
+		eval { $xml_st = XML::LibXML->load_xml( string => $raw ) };
+		if ($@) {
+			$self->{errstr} = "Parse error: $@";
+			return;
+		}
 
 		my $station_node = ( $xml_st->findnodes('//station') )[0];
 
