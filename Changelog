@@ -1,3 +1,7 @@
+Travel::Status::DE::IRIS 1.21 - Sun Sep 09 2018
+
+    * Fix crash when receiving invalid XML due to network issues
+
 Travel::Status::DE::IRIS 1.20 - Mon Aug 06 2018
 
     * Use schedule instead of realtime data when determining whether a train
