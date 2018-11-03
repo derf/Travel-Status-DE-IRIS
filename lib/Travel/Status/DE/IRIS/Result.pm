@@ -47,6 +47,7 @@ my %translation = (
 	34 => 'Signalstörung',
 	35 => 'Streckensperrung',
 	36 => 'Technische Störung am Zug',
+	37 => 'Technische Störung am Wagen',
 	38 => 'Technische Störung an der Strecke',
 	39 => 'Anhängen von zusätzlichen Wagen',
 	40 => 'Stellwerksstörung/-ausfall',
@@ -1228,6 +1229,8 @@ Source: Correlation between IRIS and DB RIS (bahn.de).
 =item d 35 : "Streckensperrung"
 
 =item d 36 : "Technische StE<ouml>rung am Zug"
+
+=item d 37 : "Technische StE<ouml>rung am Wagen"
 
 =item d 38 : "Technische StE<ouml>rung an der Strecke"
 
