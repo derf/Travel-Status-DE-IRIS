@@ -1,7 +1,7 @@
 Travel::Status::DE::IRIS - Interface to IRIS based web departure monitors
 -------------------------------------------------------------------------
 
-* <http://finalrewind.org/projects/Travel-Status-DE-IRIS/>
+<https://finalrewind.org/projects/Travel-Status-DE-IRIS/>
 
 
 Dependencies
@@ -27,7 +27,7 @@ not wish to build it), the following drop-in replacements are available:
 * Text::Levenshtein::XS
 * Text::Levenshtein (about 10 times slower than the XS modules)
 
-To use them, simply run:
+To use them, run:
 > sed -i 's/Text::LevenshteinXS/Text::Levenshtein::XS/g' Build.PL lib/Travel/Status/DE/IRIS/Stations.pm
 or
 > sed -i 's/Text::LevenshteinXS/Text::Levenshtein/g' Build.PL lib/Travel/Status/DE/IRIS/Stations.pm
