@@ -220,7 +220,7 @@ sub new {
 	  || $ref->{route_pre}[0]
 	  || $ref->{station};
 
-	return bless( $ref, $obj );
+	return $ref;
 }
 
 sub parse_ts {
