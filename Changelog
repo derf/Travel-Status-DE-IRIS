@@ -1,7 +1,7 @@
 Travel::Status::DE::IRIS 1.22 - Sun Dec 16 2018
 
     * Add delay code 4 (unforeseen staff shortage, thanks to Fabian Schwarz)
-    * Add delay code (technical failure in carriage, thanks to @marudor)
+    * Add delay code 37 (technical failure in carriage, thanks to @marudor)
 
 Travel::Status::DE::IRIS 1.21 - Sun Sep 09 2018
 
