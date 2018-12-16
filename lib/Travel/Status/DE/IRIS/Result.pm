@@ -683,8 +683,11 @@ sub route_interesting {
 	my ( @via_main, @via_show, $last_stop );
 	$max_parts //= 3;
 
+	# Centraal: dutch main station (Hbf in .nl)
+	# HB:  swiss main station (Hbf in .ch)
+	# hl.n.: czech main station (Hbf in .cz)
 	for my $stop (@via) {
-		if ( $stop =~ m{ HB $ | Hbf | Centraal | Flughafen }x ) {
+		if ( $stop =~ m{ HB $ | hl\.n\. $ | Hbf | Centraal | Flughafen }x ) {
 			push( @via_main, $stop );
 		}
 	}
