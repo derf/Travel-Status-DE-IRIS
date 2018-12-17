@@ -213,6 +213,17 @@ sub get_station {
 		push( @seen, $station );
 		$iter_depth++;
 
+		if ($station eq '8089317') {
+			# "München Hbf" (8000261) references "München ZOB (Hackerbrücke)"
+			# (8089317), which in turn references "München Hackerbrücke"
+			# (8004129)... which is a different station altogether and for added
+			# confusion has overlapping lines with München Hbf.
+			#
+			# To work around this, skip München ZOB (Hackerbrücke) entirely
+			# for now.
+			next;
+		}
+
 		my ( $raw, $err )
 		  = $self->get_with_cache( $self->{main_cache},
 			$self->{iris_base} . '/station/' . $station );
