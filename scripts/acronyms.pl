@@ -2028,13 +2028,13 @@ None.
 
 =over
 
-=item * Geo::Distance(3pm)
+=item * L<Geo::Distance>
 
-=item * List::MoreUtils(3pm)
+=item * L<List::MoreUtils>
 
-=item * List::Util(3pm)
+=item * L<List::Util>
 
-=item * Text::LevenshteinXS(3pm)
+=item * L<Text::LevenshteinXS>
 
 =back
 
@@ -2045,7 +2045,7 @@ yet.
 
 =head1 SEE ALSO
 
-Travel::Status::DE::IRIS(3pm).
+L<Travel::Status::DE::IRIS>
 
 =head1 AUTHOR
 
