@@ -87,15 +87,15 @@ my %translation = (
 	86 => 'Keine Reservierungsanzeige',
 	87 => 'Einzelne Wagen ohne Reservierungsanzeige',
 	88 => 'Keine Qualitätsmängel',  # r 80 82 83 85 86 87 90 91 92 93 96 97 98
-	89  => 'Reservierungen sind wieder vorhanden', # -> 86 87
+	89  => 'Reservierungen sind wieder vorhanden',                    # -> 86 87
 	90  => 'Kein Bordrestaurant/Bordbistro',
 	91  => 'Eingeschränkte Fahrradmitnahme',
 	92  => 'Klimaanlage in einzelnen Wagen ausgefallen',
 	93  => 'Fehlende oder gestörte behindertengerechte Einrichtung',
 	94  => 'Ersatzbewirtschaftung',
 	95  => 'Ohne behindertengerechtes WC',
-	96  => 'Der Zug ist stark überbesetzt',                            # r 97
-	97  => 'Der Zug ist überbesetzt',                                  # r 96
+	96  => 'Der Zug ist stark überbesetzt',                          # r 97
+	97  => 'Der Zug ist überbesetzt',                                # r 96
 	98  => 'Sonstige Qualitätsmängel',
 	99  => 'Verzögerungen im Betriebsablauf',
 	900 => 'Anschlussbus wartet(?)',
@@ -592,9 +592,10 @@ sub qos_messages {
 		}
 		@ret = grep { $_->[2] != $msg->[2] } @ret;
 
-		# 88 is "no qos shortcomings" and only required to filter previous
-		# qos messages
-		if ( $msg->[2] != 88 ) {
+		# 88 is "no qos shortcomings" and only required to cancel previous qos
+		# messages. Same for 84 ("correct wagon order") and 89 ("reservations
+		# display is working again").
+		if ( $msg->[2] != 84 and $msg->[2] != 88 and $msg->[2] != 89 ) {
 			push( @ret, $msg );
 		}
 	}
