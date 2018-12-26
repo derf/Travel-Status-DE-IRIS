@@ -87,7 +87,7 @@ my %translation = (
 	86 => 'Keine Reservierungsanzeige',
 	87 => 'Einzelne Wagen ohne Reservierungsanzeige',
 	88 => 'Keine Qualitätsmängel',  # r 80 82 83 85 86 87 90 91 92 93 96 97 98
-	89  => 'Reservierungen sind wieder vorhanden',
+	89  => 'Reservierungen sind wieder vorhanden', # -> 86 87
 	90  => 'Kein Bordrestaurant/Bordbistro',
 	91  => 'Eingeschränkte Fahrradmitnahme',
 	92  => 'Klimaanlage in einzelnen Wagen ausgefallen',
@@ -758,6 +758,7 @@ sub superseded_messages {
 	my %superseded = (
 		84 => [ 80, 82, 83, 85 ],
 		88 => [ 80, 82, 83, 85, 86, 87, 90, 91, 92, 93, 96, 97, 98 ],
+		89 => [ 86, 87 ],
 		96 => [97],
 		97 => [96],
 	);
