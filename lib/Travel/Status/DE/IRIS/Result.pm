@@ -87,18 +87,19 @@ my %translation = (
 	86 => 'Keine Reservierungsanzeige',
 	87 => 'Einzelne Wagen ohne Reservierungsanzeige',
 	88 => 'Keine Qualitätsmängel',  # r 80 82 83 85 86 87 90 91 92 93 96 97 98
-	89  => 'Reservierungen sind wieder vorhanden',                    # -> 86 87
-	90  => 'Kein Bordrestaurant/Bordbistro',
-	91  => 'Eingeschränkte Fahrradmitnahme',
-	92  => 'Klimaanlage in einzelnen Wagen ausgefallen',
-	93  => 'Fehlende oder gestörte behindertengerechte Einrichtung',
-	94  => 'Ersatzbewirtschaftung',
-	95  => 'Ohne behindertengerechtes WC',
-	96  => 'Der Zug ist stark überbesetzt',                          # r 97
-	97  => 'Der Zug ist überbesetzt',                                # r 96
-	98  => 'Sonstige Qualitätsmängel',
-	99  => 'Verzögerungen im Betriebsablauf',
-	900 => 'Anschlussbus wartet(?)',
+	89 => 'Reservierungen sind wieder vorhanden',                     # -> 86 87
+	90 => 'Kein Bordrestaurant/Bordbistro',
+	91 => 'Eingeschränkte Fahrradmitnahme',
+	92 => 'Klimaanlage in einzelnen Wagen ausgefallen',
+	93 => 'Fehlende oder gestörte behindertengerechte Einrichtung',
+	94 => 'Ersatzbewirtschaftung',
+	95 => 'Ohne behindertengerechtes WC',
+	96 => 'Der Zug ist stark überbesetzt',                           # r 97
+	97 => 'Der Zug ist überbesetzt',                                 # r 96
+	98 => 'Sonstige Qualitätsmängel',
+	99 => 'Verzögerungen im Betriebsablauf',
+
+	#900 => 'Anschlussbus wartet(?)',
 );
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
@@ -1416,10 +1417,6 @@ Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
 Might also mean "Kein rollstuhlgerechter Wagen" (source: frubi).
 
 =item d 99 : "VerzE<ouml>gerungen im Betriebsablauf"
-
-=item f 900 : "Anschlussbus wartet(?)"
-
-Verified by correlation. Not sure yet.
 
 =back
 
