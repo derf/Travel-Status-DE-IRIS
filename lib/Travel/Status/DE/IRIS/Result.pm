@@ -727,7 +727,7 @@ sub route_interesting {
 	}
 
 	for (@via_show) {
-		s{ ?Hbf}{};
+		s{ \s? Hbf .* }{}x;
 	}
 
 	return @via_show;
