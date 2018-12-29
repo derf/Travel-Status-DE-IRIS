@@ -1,3 +1,13 @@
+Travel::Status::DE::IRIS 1.23 - Sat Dec 29 2018
+
+    * Ignore apparently useless "ZOB" (central omnibus station) links at most
+      main stations. This decreases the average runtime and also fixes
+      some S-Bahn trains being reported twice in München Hbf.
+    * Result->qos_messages: Skip superseded messages. They're still present in
+      ->messages.
+    * Result->route_interesting: Filter Hbf suffixes (not just "Hbf"); include
+      .hl.n (czech main station).
+
 Travel::Status::DE::IRIS 1.22 - Sun Dec 16 2018
 
     * Add delay code 4 (unforeseen staff shortage, thanks to Fabian Schwarz)
