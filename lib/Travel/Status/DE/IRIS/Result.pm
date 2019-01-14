@@ -99,7 +99,9 @@ my %translation = (
 	98 => 'Sonstige Qualitätsmängel',
 	99 => 'Verzögerungen im Betriebsablauf',
 
-	#900 => 'Anschlussbus wartet(?)',
+	# Occasionally, there's a message with ID 900. In all cases observed so far,
+	# it was used for "Anschlussbus wartet". However, as we don't know which bus
+	# it refers to, we don't show it to users.
 );
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(

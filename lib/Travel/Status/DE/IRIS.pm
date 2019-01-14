@@ -445,9 +445,12 @@ sub get_realtime {
 			my $msgid = $e_m->getAttribute('id');
 			my $ts    = $e_m->getAttribute('ts');
 
-			# 0 and 1 (with key "f") are related to canceled trains and
-			# do not appear to hold information
-			if ( defined $value and $value > 1 ) {
+           # 0 and 1 (with key "f") are related to canceled trains and
+           # do not appear to hold information (or at least none we can access).
+           # All observed cases of message ID 900 were related to bus
+           # connections ("Anschlussbus wartet"). We can't access which bus
+           # it refers to, so we don't show that either.
+			if ( defined $value and $value > 1 and $value != 900 ) {
 				$messages{$msgid} = [ $ts, $type, $value ];
 			}
 		}
