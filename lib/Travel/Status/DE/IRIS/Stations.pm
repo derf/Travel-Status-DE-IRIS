@@ -1592,7 +1592,6 @@ my @stations = (
 	[ 'KDW',  'Düsseldorf Wehrhahn',         8001582, 6.79817300, 51.2284470 ],
 	[ 'KDBE', 'Düsseldorf-Benrath',          8001584, 6.87893100, 51.1622930 ],
 	[ 'KDBH', 'Düsseldorf-Bilk',             8001585, 6.77557800, 51.2079940 ],
-	[ 'KDBI', 'Düsseldorf-Bilk',             8001585, 6.77557800, 51.2079940 ],
 	[ 'KDD',  'Düsseldorf-Derendorf',        8001586, 6.79451200, 51.2476240 ],
 	[ 'KDDH', 'Düsseldorf-Derendorf',        8001586, 6.79451200, 51.2476240 ],
 	[ 'KDE',  'Düsseldorf-Eller',            8001587, 6.85192700, 51.2026700 ],
