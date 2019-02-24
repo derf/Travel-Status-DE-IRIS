@@ -474,7 +474,7 @@ sub canceled_stops {
 sub classes {
 	my ($self) = @_;
 
-	my @classes = split( //, $self->{classes} );
+	my @classes = split( //, $self->{classes} // q{} );
 
 	return @classes;
 }
