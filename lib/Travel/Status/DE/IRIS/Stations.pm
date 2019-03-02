@@ -9012,7 +9012,7 @@ Travel::Status::DE::IRIS(3pm).
 
 Station data: Copyright (C) 2016 by DB Station&Service AG, Europaplatz 1, 10557 Berlin, Germany
 
-Lookup code: Copyright (C) 2014-2018 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
+Lookup code: Copyright (C) 2014-2019 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
 
 =head1 LICENSE
 
