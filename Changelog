@@ -1,3 +1,8 @@
+Travel::Status::DE::IRIS 1.24 - Sat Mar 02 2019
+
+    * Remove erroneous double entry for Düsseldorf-Bilk
+    * Fix a warning when encountering unusual train types
+
 Travel::Status::DE::IRIS 1.23 - Sat Dec 29 2018
 
     * Ignore apparently useless "ZOB" (central omnibus station) links at most
