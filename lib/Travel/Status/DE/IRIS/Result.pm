@@ -71,6 +71,7 @@ my %translation = (
 	63 => 'Technische Untersuchung am Zug',
 	64 => 'Weichenstörung',
 	65 => 'Erdrutsch',
+	66 => 'Hochwasser',
 	70 => 'Kein WLAN',
 	71 => 'WLAN in einzelnen Wagen nicht verfügbar',
 	73 => 'Mehrzweckabteil vorne',
@@ -1303,6 +1304,10 @@ Source: Correlation between IRIS and DB RIS (bahn.de).
 Source: correlation between IRIS and DB RIS (bahn.de).
 
 =item d 65 : "Erdrutsch"
+
+Source: correlation between IRIS and DB RIS (bahn.de).
+
+=item d 66 : "Hochwasser"
 
 Source: correlation between IRIS and DB RIS (bahn.de).
 
