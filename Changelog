@@ -1,3 +1,9 @@
+Travel::Status::DE::IRIS 1.25 - Mon Apr 29 2019
+
+    * Do not ignore trains with arrival < lookahead, even if departure >=
+      lookahead.
+    * Add delay code 66 (flooded area)
+
 Travel::Status::DE::IRIS 1.24 - Sat Mar 02 2019
 
     * Remove erroneous double entry for Düsseldorf-Bilk

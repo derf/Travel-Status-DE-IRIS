@@ -17,7 +17,7 @@ use Text::LevenshteinXS qw(distance);
 
 # TODO switch to Text::Levenshtein::XS once AUR/Debian packages become available
 
-our $VERSION = '1.24';
+our $VERSION = '1.25';
 
 my @stations = (
 
