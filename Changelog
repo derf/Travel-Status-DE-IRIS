@@ -1,3 +1,8 @@
+Travel::Status::DE::IRIS 1.26 - Fri May 31 2019
+
+    * Fix DS100 code for Berlin Westkreuz
+    * Add station Bonn UN Campus
+
 Travel::Status::DE::IRIS 1.25 - Mon Apr 29 2019
 
     * Do not ignore trains with arrival < lookahead, even if departure >=
