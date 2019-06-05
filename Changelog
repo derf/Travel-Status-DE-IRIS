@@ -1,3 +1,7 @@
+Travel::Status::DE::IRIS 1.27 - Wed Jun 05 2019
+
+    * Add station Berlin Zoologischer Garten (S)
+
 Travel::Status::DE::IRIS 1.26 - Fri May 31 2019
 
     * Fix DS100 code for Berlin Westkreuz
