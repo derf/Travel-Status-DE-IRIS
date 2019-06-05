@@ -655,6 +655,11 @@ my @stations = (
 	[ 'BGGS', 'Berlin Yorckstr.(S1)',         8089051, 13.3677970, 52.4922890 ],
 	[ 'BYOR', 'Berlin Yorckstr.(S2)',         8089050, 13.3721280, 52.4911700 ],
 	[ 'BZOO', 'Berlin Zoologischer Garten',   8010406, 13.3319920, 52.5072770 ],
+	[
+		'BZOS',  'Berlin Zoologischer Garten (S)',
+		8089046, 13.3319920,
+		52.5072770
+	],
 	[ 'BADL', 'Berlin-Adlershof',             8089052, 13.5411290, 52.4350310 ],
 	[ 'BAGL', 'Berlin-Altglienicke',          8089054, 13.5587530, 52.4072990 ],
 	[ 'BBDF', 'Berlin-Biesdorf',              8089055, 13.5558780, 52.5130970 ],
