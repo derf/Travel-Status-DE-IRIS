@@ -30,6 +30,7 @@ my %translation = (
 	11 => 'Unwetter',
 	12 => 'Warten auf Fahrgäste aus einem Schiff',
 	13 => 'Pass- und Zollkontrolle',
+  14 => 'Technische Störung am Bahnhof',
 	15 => 'Beeinträchtigung durch Vandalismus',
 	16 => 'Entschärfung einer Fliegerbombe',
 	17 => 'Beschädigung einer Brücke',
