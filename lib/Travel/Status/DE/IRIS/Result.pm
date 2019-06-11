@@ -30,6 +30,9 @@ my %translation = (
 	11 => 'Unwetter',
 	12 => 'Warten auf Fahrgäste aus einem Schiff',
 	13 => 'Pass- und Zollkontrolle',
+
+	# https://twitter.com/gleis3a/status/1138174888726925312
+	14 => 'Technische Störung am Bahnhof',
 	15 => 'Beeinträchtigung durch Vandalismus',
 	16 => 'Entschärfung einer Fliegerbombe',
 	17 => 'Beschädigung einer Brücke',
@@ -280,7 +283,7 @@ sub set_ar {
 	}
 
 	if ( $attrib{route_pre} ) {
-		$self->{route_pre} = [ split( qr{[|]}, $attrib{route_pre} // q{} ) ];
+		$self->{route_pre}   = [ split( qr{[|]}, $attrib{route_pre} // q{} ) ];
 		$self->{route_start} = $self->{route_pre}[0];
 	}
 	else {
@@ -342,7 +345,7 @@ sub set_dp {
 
 	if ( $attrib{route_post} ) {
 		$self->{route_post} = [ split( qr{[|]}, $attrib{route_post} // q{} ) ];
-		$self->{route_end} = $self->{route_post}[-1];
+		$self->{route_end}  = $self->{route_post}[-1];
 	}
 	else {
 		$self->{route_post} = $self->{sched_route_post};
@@ -643,7 +646,7 @@ sub info {
 	my ($self) = @_;
 
 	my @messages = sort keys %{ $self->{messages} };
-	my @ids = uniq( map { $self->{messages}{$_}->[2] } @messages );
+	my @ids      = uniq( map { $self->{messages}{$_}->[2] } @messages );
 
 	my @info = map { $self->translate_msg($_) } @ids;
 
