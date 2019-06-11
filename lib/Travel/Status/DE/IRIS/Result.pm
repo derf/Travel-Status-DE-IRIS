@@ -30,8 +30,6 @@ my %translation = (
 	11 => 'Unwetter',
 	12 => 'Warten auf Fahrgäste aus einem Schiff',
 	13 => 'Pass- und Zollkontrolle',
-
-	# https://twitter.com/gleis3a/status/1138174888726925312
 	14 => 'Technische Störung am Bahnhof',
 	15 => 'Beeinträchtigung durch Vandalismus',
 	16 => 'Entschärfung einer Fliegerbombe',
