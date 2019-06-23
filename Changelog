@@ -1,3 +1,8 @@
+Travel::Status::DE::IRIS 1.28 - Sun Jun 23 2019
+
+    * Add 234 stations missing from regular DB Open Data station list
+    * Add delay code 14 (Technische Störung am Bahnhof)
+
 Travel::Status::DE::IRIS 1.27 - Wed Jun 05 2019
 
     * Add station Berlin Zoologischer Garten (S)
