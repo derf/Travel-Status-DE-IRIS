@@ -75,6 +75,7 @@ my %translation = (
 	66 => 'Hochwasser',
 	70 => 'Kein WLAN',
 	71 => 'WLAN in einzelnen Wagen nicht verfügbar',
+	72 => 'Info/Entertainment nicht verfügbar',
 	73 => 'Mehrzweckabteil vorne',
 	74 => 'Mehrzweckabteil hinten',
 	75 => '1. Klasse vorne',
@@ -1317,6 +1318,8 @@ Source: correlation between IRIS and DB RIS (bahn.de).
 Source: correlation between IRIS and DB RIS (bahn.de).
 
 =item q 71 : "WLAN in einzelnen Wagen nicht verfE<uuml>gbar"
+
+=item q 72 : "Info/Entertainment nicht verfE<uuml>gbar"
 
 =item q 73 : "Mehrzweckabteil vorne"
 
