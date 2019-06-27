@@ -73,7 +73,7 @@ my %translation = (
 	64 => 'Weichenstörung',
 	65 => 'Erdrutsch',
 	66 => 'Hochwasser',
-	70 => 'Kein WLAN',
+	70 => 'WLAN nicht verfügbar',
 	71 => 'WLAN in einzelnen Wagen nicht verfügbar',
 	72 => 'Info/Entertainment nicht verfügbar',
 	73 => 'Mehrzweckabteil vorne',
@@ -91,7 +91,7 @@ my %translation = (
 	87 => 'Einzelne Wagen ohne Reservierungsanzeige',
 	88 => 'Keine Qualitätsmängel',  # r 80 82 83 85 86 87 90 91 92 93 96 97 98
 	89 => 'Reservierungen sind wieder vorhanden',                     # -> 86 87
-	90 => 'Kein Bordrestaurant/Bordbistro',
+	90 => 'Kein gastronomisches Angebot',
 	91 => 'Eingeschränkte Fahrradmitnahme',
 	92 => 'Klimaanlage in einzelnen Wagen ausgefallen',
 	93 => 'Fehlende oder gestörte behindertengerechte Einrichtung',
@@ -1313,7 +1313,7 @@ Source: correlation between IRIS and DB RIS (bahn.de).
 
 Source: correlation between IRIS and DB RIS (bahn.de).
 
-=item q 70 : "Kein WLAN"
+=item q 70 : "WLAN nicht verfE<uuml>gbar"
 
 Source: correlation between IRIS and DB RIS (bahn.de).
 
@@ -1384,7 +1384,7 @@ Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
 Obsoletes messages 86, 87.
 Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
 
-=item q 90 : "Kein Bordrestaurant/Bordbistro"
+=item q 90 : "Kein gastronomisches Angebot"
 
 Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
 
