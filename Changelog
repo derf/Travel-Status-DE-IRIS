@@ -1,3 +1,8 @@
+Travel::Status::DE::IRIS 1.29 - Tue Jul 09 2019
+
+    * Add QoS code 72 (no info/entertainment system available)
+    * Fix erroneous QoS codes 83, 91, 92
+
 Travel::Status::DE::IRIS 1.28 - Sun Jun 23 2019
 
     * Add 234 stations missing from regular DB Open Data station list
