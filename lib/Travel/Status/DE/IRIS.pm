@@ -44,7 +44,7 @@ sub new {
 		developer_mode => $opt{developer_mode},
 		iris_base      => $opt{iris_base}
 		  // 'http://iris.noncd.db.de/iris-tts/timetable',
-		lookahead  => $opt{lookahead} //  ( 2 * 60 ),
+		lookahead  => $opt{lookahead}  // ( 2 * 60 ),
 		lookbehind => $opt{lookbehind} // ( 0 * 60 ),
 		main_cache => $opt{main_cache},
 		rt_cache   => $opt{realtime_cache},
@@ -144,7 +144,7 @@ sub new {
 	}
 
 	@{ $self->{results} } = grep {
-		my $d = $_->departure // $_->arrival;
+		my $d = $_->departure     // $_->arrival;
 		my $s = $_->sched_arrival // $_->sched_departure // $_->arrival // $d;
 		$d = $d->subtract_datetime( $self->{datetime} );
 		$s = $s->subtract_datetime( $self->{datetime} );
@@ -292,7 +292,7 @@ sub get_station {
 }
 
 sub add_result {
-	my ( $self, $station, $s ) = @_;
+	my ( $self, $station_name, $station_uic, $s ) = @_;
 
 	my $id   = $s->getAttribute('id');
 	my $e_tl = ( $s->findnodes( $self->{xp_tl} ) )[0];
@@ -308,7 +308,8 @@ sub add_result {
 		classes      => $e_tl->getAttribute('f'),    # D N S F
 		train_no     => $e_tl->getAttribute('n'),    # dep number
 		type         => $e_tl->getAttribute('c'),    # S/ICE/ERB/...
-		station      => $station,
+		station      => $station_name,
+		station_uic  => $station_uic + 0,            # UIC IDs are numbers
 		strptime_obj => $self->{strptime_obj},
 
 		#unknown_o    => $e_tl->getAttribute('o'),    # owner: 03/80/R2/...
@@ -383,7 +384,7 @@ sub get_timetable {
 
 	for my $s ( $xml->findnodes('/timetable/s') ) {
 
-		$self->add_result( $station, $s );
+		$self->add_result( $station, $eva, $s );
 	}
 
 	return $self;
@@ -426,7 +427,7 @@ sub get_realtime {
 		# add_result will return nothing if no ./tl node is present. The ./tl
 		# check here is for optimization purposes.
 		if ( not $result and ( $s->findnodes( $self->{xp_tl} ) )[0] ) {
-			$result = $self->add_result( $station, $s );
+			$result = $self->add_result( $station, $eva, $s );
 			if ($result) {
 				$result->set_unscheduled(1);
 			}
