@@ -1,3 +1,9 @@
+Travel::Status::DE::IRIS 1.30 - Wed Jul 17 2019
+
+    * Result: Add ->station and ->station_uic accessors. These are useful to
+      determine which station an individual train belongs to when requesting
+      departures of multiple stations at once using the "with_related" option.
+
 Travel::Status::DE::IRIS 1.29 - Tue Jul 09 2019
 
     * Add QoS code 72 (no info/entertainment system available)
