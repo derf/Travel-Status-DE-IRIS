@@ -283,9 +283,11 @@ sub set_ar {
 		$self->{platform} = $self->{sched_platform};
 	}
 
-	if ( $attrib{route_pre} ) {
-		$self->{route_pre}   = [ split( qr{[|]}, $attrib{route_pre} // q{} ) ];
-		$self->{route_start} = $self->{route_pre}[0];
+	if ( defined $attrib{route_pre} ) {
+		$self->{route_pre} = [ split( qr{[|]}, $attrib{route_pre} // q{} ) ];
+		if ( @{ $self->{route_pre} } ) {
+			$self->{route_start} = $self->{route_pre}[0];
+		}
 	}
 	else {
 		$self->{route_pre}   = $self->{sched_route_pre};
@@ -344,9 +346,11 @@ sub set_dp {
 		$self->{platform} = $self->{sched_platform};
 	}
 
-	if ( $attrib{route_post} ) {
+	if ( defined $attrib{route_post} ) {
 		$self->{route_post} = [ split( qr{[|]}, $attrib{route_post} // q{} ) ];
-		$self->{route_end}  = $self->{route_post}[-1];
+		if ( @{ $self->{route_post} } ) {
+			$self->{route_end} = $self->{route_post}[-1];
+		}
 	}
 	else {
 		$self->{route_post} = $self->{sched_route_post};
