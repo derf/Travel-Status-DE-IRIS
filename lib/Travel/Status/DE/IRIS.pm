@@ -451,7 +451,9 @@ sub get_realtime {
            # All observed cases of message ID 900 were related to bus
            # connections ("Anschlussbus wartet"). We can't access which bus
            # it refers to, so we don't show that either.
-			if ( defined $value and $value > 1 and $value != 900 ) {
+           # ID 1000 is a generic free text message, which (as we lack access
+           # to the text itself) is not helpful either.
+			if ( defined $value and $value > 1 and $value < 100 ) {
 				$messages{$msgid} = [ $ts, $type, $value ];
 			}
 		}
