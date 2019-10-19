@@ -259,6 +259,14 @@ sub get_station {
 			next;
 		}
 
+		if ( $station_node->getAttribute('ds100') =~ m{ ^ D \d+ $ }x ) {
+
+			# This is an invalid DS100 code, at least from DB perspective.
+			# So far it seems to refer to subway stations which do not have
+			# IRIS departures.
+			next;
+		}
+
 		push(
 			@ret,
 			{
