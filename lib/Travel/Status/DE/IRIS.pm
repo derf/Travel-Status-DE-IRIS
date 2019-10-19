@@ -718,6 +718,17 @@ departures for all related stations.
 In case of a fatal HTTP request or IRIS error, returns a string describing it.
 Returns undef otherwise.
 
+=item $status->related_stations
+
+Returns a list of hashes describing related stations whose
+arrivals/departures are included in B<results>. Only useful when setting
+B<with_related> to a true value, see its documentation above for details.
+
+Each hash contains the keys B<uic> (UIC/EVA number; known as IBNR in Germany),
+B<name> (station name), and B<ds100> (station code). Note that stations
+returned by B<related_stations> are not necessarily known to
+Travel::Status::DE::IRIS::Stations(3pm).
+
 =item $status->results
 
 Returns a list of Travel::Status::DE::IRIS::Result(3pm) objects, each one describing
