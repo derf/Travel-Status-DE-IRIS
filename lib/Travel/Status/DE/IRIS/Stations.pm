@@ -8840,25 +8840,25 @@ my @stations = (
 		'XSSZ', 'Salez-Sennwald', 8509402, 9.502320642448307,
 		47.241444244433694
 	],
-	[ 'XAAI',  'Salzburg Aiglhof',   8102048 ],
-	[ 'XASLF', 'Salzburg Liefering', 8102063 ],
+	[ 'XAAI',  'Salzburg Aiglhof',   8102048 ,13.0265534, 47.8076314],
+	[ 'XASLF', 'Salzburg Liefering', 8102063 ,13.0006666, 47.8241752],
 	[
 		'XASBA', 'Salzburg Aigen', 8101470, 13.07879285060029,
 		47.78857921547915
 	],
-	[ 'XASB', 'Salzburg Hbf', 8100002 ,13.045853 ,47.8130618],
+	[ 'XASB', 'Salzburg Hbf', 8100002 ,13.0428766 ,47.8130523],
 	[
 		'XASBP', 'Salzburg Parsch',
 		8101481, 13.073165321601373,
 		47.799079011919076
 	],
-	[ 'XASSA', 'Salzburg Sam', 8102055 ],
+	[ 'XASSA', 'Salzburg Sam', 8102055 ,13.0623105, 47.819661],
 	[
 		'XASBS', 'Salzburg Süd',
 		8101917, 13.078529947388532,
 		47.770107876837514
 	],
-	[ 'XASG', 'Salzburg Gnigl', 8100559 ],
+	[ 'XASG', 'Salzburg Gnigl', 8100559 ,13.0657565, 47.811992],
 	[ 'XSSD',  'Samedan',    8509251, 9.873635416302262, 46.53376417413068 ],
 	[ 'XSSMT', 'Samstagern', 8503286, 8.685972674894963, 47.19154642069013 ],
 	[ 'XISAR', 'San Remo',   8300182 ],
@@ -8874,7 +8874,7 @@ my @stations = (
 	[ 'XFSUD', 'Saumur Rive Droit',        8704969 ],
 	[ 'XFSV',  'Saverne',                  8700266 ],
 	[ 'XISAV', 'Savona',                   8300185 ],
-	[ 'XAML',  'Salzburg Mülln-Altstadt', 8102052 ],
+	[ 'XAML',  'Salzburg Mülln-Altstadt', 8102052 ,13.0339813, 47.8084162],
 	[ 'XASVZ', 'Schaan-Vaduz',             8100482 ],
 	[ 'XBS',   'Schaerbeek',               8800001 ],
 	[ 'XSS',   'Schaffhausen', 8503424, 8.632728485895205,  47.69828146920709 ],
@@ -9102,7 +9102,7 @@ my @stations = (
 		8100046, 12.947899003056541,
 		47.292812521519586
 	],
-	[ 'XATX', 'Salzburg Taxham Europark', 8102045 ],
+	[ 'XATX', 'Salzburg Taxham Europark', 8102045 ,13.0101347, 47.8161158],
 	[ 'XPTC', 'Tczew',                    5100061 ],
 	[ 'XSTE', 'Tecknau', 8500028, 7.887605230238611, 47.44575725936749 ],
 	[
