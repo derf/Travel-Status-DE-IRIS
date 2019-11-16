@@ -8846,7 +8846,7 @@ my @stations = (
 		'XASBA', 'Salzburg Aigen', 8101470, 13.07879285060029,
 		47.78857921547915
 	],
-	[ 'XASB', 'Salzburg Hbf', 8100002 ],
+	[ 'XASB', 'Salzburg Hbf', 8100002 ,13.045853 ,47.8130618],
 	[
 		'XASBP', 'Salzburg Parsch',
 		8101481, 13.073165321601373,
