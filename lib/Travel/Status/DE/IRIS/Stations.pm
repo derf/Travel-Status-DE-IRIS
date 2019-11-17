@@ -8088,9 +8088,9 @@ my @stations = (
 	[ 'XAIP', 'Imst-Pitztal', 8100062, 10.761943094904922, 47.21904015771718 ],
 	[ 'XBIM', 'Ingelmunster',          8800346 ],
 	[ 'XFIW', 'Ingwiller',             8700309 ],
-	[ 'XAI',  'Innsbruck Hbf',         8100108 ],
-	[ 'XAIH', 'Innsbruck Hötting',    8100110 ],
-	[ 'XAIW', 'Innsbruck Westbahnhof', 8100109 ],
+	[ 'XAI',  'Innsbruck Hbf',         8100108 , 11.4010885424296, 47.2634127853823],
+	[ 'XAIH', 'Innsbruck Hötting',    8100110 , 11.373714005966, 47.2615611390909],
+	[ 'XAIW', 'Innsbruck Westbahnhof', 8100109 , 11.3917477933704 , 47.2556089816207],
 	[ 'XPIW', 'Inowroclaw',            5100015 ],
 	[
 		'XSIO', 'Interlaken Ost', 8507492, 7.8690051374368535,
@@ -8319,8 +8319,8 @@ my @stations = (
 	[ 'XFLI',  'Lille Flandres',       8700030 ],
 	[ 'XFLIE', 'Lille Europe',         8704949 ],
 	[ 'XILMN', 'Limone',               8300381 ],
-	[ 'XAL',   'Linz Hbf',             8100013 ],
-	[ 'XALW',  'Linz/Donau Wegscheid', 8101195 ],
+	[ 'XAL',   'Linz Hbf',             8100013 , 14.2919405869061, 48.2901577309329],
+	[ 'XALW',  'Linz/Donau Wegscheid', 8101195 , 14.2756088399248, 48.2496679884762],
 	[ 'XPLIL', 'Lipinki Luzyckie',     5102094 ],
 	[ 'XTLL',  'Lipova u Sluknova',    5401773 ],
 	[ 'XZLJ',  'Litija',               7900140 ],
@@ -8884,25 +8884,25 @@ my @stations = (
 		'XSSZ', 'Salez-Sennwald', 8509402, 9.502320642448307,
 		47.241444244433694
 	],
-	[ 'XAAI',  'Salzburg Aiglhof',   8102048 ,13.0265534, 47.8076314],
-	[ 'XASLF', 'Salzburg Liefering', 8102063 ,13.0006666, 47.8241752],
+	[ 'XAAI',  'Salzburg Aiglhof',   8102048 ,13.0268283771151, 47.8078673204272],
+	[ 'XASLF', 'Salzburg Liefering', 8102063 ,13.0007765382897, 47.8240389720688],
 	[
 		'XASBA', 'Salzburg Aigen', 8101470, 13.07879285060029,
 		47.78857921547915
 	],
-	[ 'XASB', 'Salzburg Hbf', 8100002 ,13.0428766 ,47.8130523],
+	[ 'XASB', 'Salzburg Hbf', 8100002 ,13.046756378102 ,47.8136297940914],
 	[
 		'XASBP', 'Salzburg Parsch',
 		8101481, 13.073165321601373,
 		47.799079011919076
 	],
-	[ 'XASSA', 'Salzburg Sam', 8102055 ,13.0623105, 47.819661],
+	[ 'XASSA', 'Salzburg Sam', 8102055 ,13.063199297621, 47.8195034189248],
 	[
 		'XASBS', 'Salzburg Süd',
 		8101917, 13.078529947388532,
 		47.770107876837514
 	],
-	[ 'XASG', 'Salzburg Gnigl', 8100559 ,13.0657565, 47.811992],
+	[ 'XASG', 'Salzburg Gnigl', 8100559 ,13.0663828956381, 47.8120237445838],
 	[ 'XSSD',  'Samedan',    8509251, 9.873635416302262, 46.53376417413068 ],
 	[ 'XSSMT', 'Samstagern', 8503286, 8.685972674894963, 47.19154642069013 ],
 	[ 'XISAR', 'San Remo',   8300182 ],
