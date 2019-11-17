@@ -52,3 +52,33 @@ See also the Module::Build documentation.
 
 You can then run 'man Travel::Status::DE::IRIS'.
 This distribution also ships the script 'db-iris', see 'man db-iris'.
+
+Managing stations
+-----------------
+
+Travel::Status::DE::IRIS needs a list of train stations to operate, which is
+located in `share/stations.json`. There are two recommended editing methods.
+
+Automatic method, e.g. to incorporate changes from Open Data sources:
+
+* modify stations.json with a script in any JSON-aware language you like
+* run ./json2json in the share diretcory. This transforms stations.json into
+  its canonical format, which simplifies tracking of changes and reduces diff
+  size
+
+Manual method:
+
+* run ./json2csv in the share directory
+* modify stations.csv automatically or manually (e.g. with LibreOffice Calc)
+* run ./csv2json in the share directory
+
+If the changes you made are suitable for inclusion in Travel::Status::DE::IRIS,
+please open a pull request afterwards.
+
+Please only include stations which are usable with DB IRIS, that is, which have
+both DS100 and UIC numbers. If
+`curl -s https://iris.noncd.db.de/iris-tts/timetable/station/UICNUMBER`
+and
+`curl -s https://iris.noncd.db.de/iris-tts/timetable/station/DS100`
+return a `<station>` element with "name", "eva" and "ds100" attributes, you're
+good to go.
