@@ -7930,6 +7930,7 @@ my @stations = (
 	[ 'XPGD',  'Gdynia Glowna',   5100010 ],
 	[ 'XAGEI', 'Geinberg', 8100830, 13.291435567583736, 48.266337934350126 ],
 	[ 'XNLU', 'Geleen-Lutterade', 8400248 ],
+	[ 'XNGM', 'Geldermalsen', 8400244, 5.27127,           51.88301 ],
 	[ 'XSGK', 'Gelterkinden', 8500027, 7.847652712645581, 47.46588123955976 ],
 	[ 'XIGF', 'Gemona del Friuli', 8300090 ],
 	[ 'XSGE', 'Genève', 8501008, 6.1424530287470525, 46.21020226686625 ],
