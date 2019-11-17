@@ -1,0 +1,14 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use 5.010;
+
+use File::Slurp qw(read_file write_file);
+use JSON;
+
+my $json_str = read_file('stations.json');
+my $stations = JSON->new->utf8->decode($json_str);
+@{$stations} = sort { $a->{name} cmp $b->{name} } @{$stations};
+my $json_out = JSON->new->utf8->canonical->pretty->encode($stations);
+write_file( 'stations.json', $json_out );
