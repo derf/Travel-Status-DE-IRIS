@@ -1,3 +1,10 @@
+Travel::Status::DE::IRIS 1.35 - Sat Oct 19 2019
+
+    * Add additional dutch and austrian stations
+      (thanks to https://github.com/Knuspel)
+    * Add geocoordinates for several of those
+      (thanks to https://github.com/Knuspel)
+
 Travel::Status::DE::IRIS 1.34 - Sat Oct 19 2019
 
     * Improve request speed when using with_related by ignoring
