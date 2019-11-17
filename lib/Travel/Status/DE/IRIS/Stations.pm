@@ -8918,7 +8918,7 @@ my @stations = (
 	[ 'XFSUD', 'Saumur Rive Droit',        8704969 ],
 	[ 'XFSV',  'Saverne',                  8700266 ],
 	[ 'XISAV', 'Savona',                   8300185 ],
-	[ 'XAML',  'Salzburg Mülln-Altstadt', 8102052 ,13.0339813, 47.8084162],
+	[ 'XAML',  'Salzburg Mülln-Altstadt', 8102052 , 13.0337828783657, 47.8083899458954],
 	[ 'XASVZ', 'Schaan-Vaduz',             8100482 ],
 	[ 'XBS',   'Schaerbeek',               8800001 ],
 	[ 'XSS',   'Schaffhausen', 8503424, 8.632728485895205,  47.69828146920709 ],
@@ -9147,7 +9147,7 @@ my @stations = (
 		8100046, 12.947899003056541,
 		47.292812521519586
 	],
-	[ 'XATX', 'Salzburg Taxham Europark', 8102045 ,13.0101347, 47.8161158],
+	[ 'XATX', 'Salzburg Taxham Europark', 8102045 ,13.0108233471485 , 47.8159723773145],
 	[ 'XPTC', 'Tczew',                    5100061 ],
 	[ 'XSTE', 'Tecknau', 8500028, 7.887605230238611, 47.44575725936749 ],
 	[
