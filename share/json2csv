@@ -1,0 +1,30 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use 5.010;
+
+use File::Slurp qw(read_file write_file);
+use JSON;
+use Text::CSV;
+
+my $json_str = read_file('stations.json');
+my $stations = JSON->new->utf8->decode($json_str);
+my $csv      = Text::CSV->new( { eol => "\n" } );
+
+my $buf = '';
+
+$csv->combine( 'name', 'DS100', 'UIC (IBNR)', 'Latitude', 'Longitude' );
+$buf .= $csv->string;
+
+for my $station ( @{$stations} ) {
+	my @fields = ( $station->{name}, $station->{ds100}, $station->{uic} );
+	if ( $station->{latlong} ) {
+		push( @fields, $station->{latlong}[0], $station->{latlong}[1] );
+	}
+	if ( $csv->combine(@fields) ) {
+		$buf .= $csv->string;
+	}
+}
+
+write_file( 'stations.csv', { binmode => ':utf8' }, $buf );

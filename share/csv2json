@@ -1,0 +1,37 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use 5.010;
+
+use File::Slurp qw(read_file write_file);
+use JSON;
+use Text::CSV;
+
+my @csv_lines = read_file( 'stations.csv', { binmode => ':utf8' } );
+my @stations;
+my $csv = Text::CSV->new;
+
+# skip header
+shift @csv_lines;
+
+for my $line (@csv_lines) {
+	if ( $csv->parse($line) ) {
+		my ( $name, $ds100, $uic, $lat, $lon ) = $csv->fields;
+		my $station = {
+			name    => $name,
+			ds100   => $ds100,
+			uic     => 0 + $uic,
+			latlong => undef
+		};
+		if ( $lat and $lon ) {
+			$station->{latlong} = [ 0 + $lat, 0 + $lon ];
+		}
+		push( @stations, $station );
+	}
+}
+
+@stations = sort { $a->{name} cmp $b->{name} } @stations;
+
+my $json_out = JSON->new->utf8->canonical->pretty->encode( [@stations] );
+write_file( 'stations.json', $json_out );
