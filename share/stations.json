@@ -43956,12 +43956,6 @@
       "name" : "Milano Centrale"
    },
    {
-      "ds100" : "XIMB",
-      "uic" : 8300046,
-      "latlong" : null,
-      "name" : "Milano Centrale"
-   },
-   {
       "ds100" : "XIMG",
       "uic" : 8300416,
       "latlong" : null,
