@@ -18,6 +18,21 @@ shift @csv_lines;
 for my $line (@csv_lines) {
 	if ( $csv->parse($line) ) {
 		my ( $name, $ds100, $uic, $lat, $lon ) = $csv->fields;
+
+		if ( not $name ) {
+			say "Station name is mandatory -- skipping this line: $line";
+			next;
+		}
+		if ( not $ds100 ) {
+			say "DS100 is mandatory at the moment -- skipping this line: $line";
+			next;
+		}
+		if ( not $uic or $uic !~ m{ ^ \d+ $ }x ) {
+			say
+"UIC is mandatory and must be numeric -- skipping this line: $line";
+			next;
+		}
+
 		my $station = {
 			name    => $name,
 			ds100   => $ds100,
