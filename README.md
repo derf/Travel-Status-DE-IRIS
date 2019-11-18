@@ -73,9 +73,9 @@ located in `share/stations.json`. There are two recommended editing methods.
 Automatic method, e.g. to incorporate changes from Open Data sources:
 
 * modify stations.json with a script in any JSON-aware language you like
-* run ./json2json in the share diretcory. This transforms stations.json into
-  its canonical format, which simplifies tracking of changes and reduces diff
-  size
+* run `./json2json` in the share diretcory. This performs consistency checks and
+  transforms stations.json into its canonical format, which simplifies tracking
+  of changes and reduces diff size
 
 Manual method:
 

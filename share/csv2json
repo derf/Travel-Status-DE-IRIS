@@ -50,8 +50,8 @@ for my $line (@csv_lines) {
 
 my $have_duplicates = 0;
 my @names           = map { $_->{name} } @stations;
-my @ds100           = map { $_->{ds100} } @stations;
-my @uic_ids         = map { $_->{uic} } @stations;
+my @ds100           = map { $_->{ds100} } sort { $a->{ds100} cmp $b->{ds100} } @stations;
+my @uic_ids         = map { $_->{uic} } sort { $a->{uic} <=> $b->{uic} } @stations;
 
 for my $i ( 1 .. $#names ) {
 	if ( $names[ $i - 1 ] eq $names[$i] ) {
