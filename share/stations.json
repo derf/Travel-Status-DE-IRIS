@@ -16905,12 +16905,6 @@
       "uic" : 8400194
    },
    {
-      "ds100" : "XNDU",
-      "latlong" : null,
-      "name" : "Duivendrecht",
-      "uic" : 8400194
-   },
-   {
       "ds100" : "XFDK",
       "latlong" : null,
       "name" : "Dunkerque",
@@ -52486,12 +52480,6 @@
    },
    {
       "ds100" : "XNOD",
-      "latlong" : null,
-      "name" : "Oldenzaal",
-      "uic" : 8400483
-   },
-   {
-      "ds100" : "XNOD",
       "latlong" : [
          52.30638885498,
          6.9347224235535
@@ -69252,12 +69240,6 @@
       "uic" : 8400632
    },
    {
-      "ds100" : "XNVB",
-      "latlong" : null,
-      "name" : "Valkenburg(NL)",
-      "uic" : 8400632
-   },
-   {
       "ds100" : "KVA",
       "latlong" : [
          50.399645,
@@ -69409,12 +69391,6 @@
       ],
       "name" : "Veenendaal West",
       "uic" : 8400628
-   },
-   {
-      "ds100" : "XNVK",
-      "latlong" : null,
-      "name" : "Veenendaal-De Klomp",
-      "uic" : 8400637
    },
    {
       "ds100" : "XNVK",
@@ -69604,12 +69580,6 @@
       "latlong" : null,
       "name" : "Venissieux",
       "uic" : 8700380
-   },
-   {
-      "ds100" : "XNVL",
-      "latlong" : null,
-      "name" : "Venlo",
-      "uic" : 8400644
    },
    {
       "ds100" : "XNVL",
@@ -70045,24 +70015,12 @@
    },
    {
       "ds100" : "XNVT",
-      "latlong" : null,
-      "name" : "Vleuten",
-      "uic" : 8400651
-   },
-   {
-      "ds100" : "XNVT",
       "latlong" : [
          52.103054046631,
          5.0108332633972
       ],
       "name" : "Vleuten",
       "uic" : 8400651
-   },
-   {
-      "ds100" : "XNVI",
-      "latlong" : null,
-      "name" : "Vlissingen",
-      "uic" : 8400652
    },
    {
       "ds100" : "XNVI",
@@ -71473,12 +71431,6 @@
    },
    {
       "ds100" : "XNWT",
-      "latlong" : null,
-      "name" : "Weert",
-      "uic" : 8400684
-   },
-   {
-      "ds100" : "XNWT",
       "latlong" : [
          51.248611450195,
          5.7036108970642
@@ -71494,12 +71446,6 @@
       ],
       "name" : "Weesenstein",
       "uic" : 8013247
-   },
-   {
-      "ds100" : "XNWS",
-      "latlong" : null,
-      "name" : "Weesp",
-      "uic" : 8400685
    },
    {
       "ds100" : "XNWS",
@@ -73726,12 +73672,6 @@
    },
    {
       "ds100" : "XNWI",
-      "latlong" : null,
-      "name" : "Winschoten",
-      "uic" : 8400696
-   },
-   {
-      "ds100" : "XNWI",
       "latlong" : [
          53.1392377,
          7.035101
@@ -73792,12 +73732,6 @@
       ],
       "name" : "Wintermoor",
       "uic" : 8006489
-   },
-   {
-      "ds100" : "XNWW",
-      "latlong" : null,
-      "name" : "Winterswijk",
-      "uic" : 8400698
    },
    {
       "ds100" : "XNWW",
@@ -74065,12 +73999,6 @@
       "latlong" : null,
       "name" : "Wjasma",
       "uic" : 2000021
-   },
-   {
-      "ds100" : "XNWO",
-      "latlong" : null,
-      "name" : "Woerden",
-      "uic" : 8400702
    },
    {
       "ds100" : "XNWO",
@@ -74365,12 +74293,6 @@
       ],
       "name" : "Workum",
       "uic" : 8400706
-   },
-   {
-      "ds100" : "XNWM",
-      "latlong" : null,
-      "name" : "Wormerveer",
-      "uic" : 8400707
    },
    {
       "ds100" : "XNWM",
@@ -75105,7 +75027,7 @@
       "uic" : 8400731
    },
    {
-      "ds100" : "XNZAA",
+      "ds100" : "ONZAK",
       "latlong" : [
          52.456665039062,
          4.8202776908875
@@ -75190,12 +75112,6 @@
       ],
       "name" : "Zaltbommel",
       "uic" : 8400732
-   },
-   {
-      "ds100" : "XNZA",
-      "latlong" : null,
-      "name" : "Zandvoort aan Zee",
-      "uic" : 8400733
    },
    {
       "ds100" : "XNZA",
@@ -75568,12 +75484,6 @@
       ],
       "name" : "Zeutsch",
       "uic" : 8013398
-   },
-   {
-      "ds100" : "XNZV",
-      "latlong" : null,
-      "name" : "Zevenaar",
-      "uic" : 8400735
    },
    {
       "ds100" : "XNZV",
@@ -75973,12 +75883,6 @@
    },
    {
       "ds100" : "XNZB",
-      "latlong" : null,
-      "name" : "Zuidbroek",
-      "uic" : 8400742
-   },
-   {
-      "ds100" : "XNZB",
       "latlong" : [
          53.159612280006,
          6.8679141998291
@@ -76108,12 +76012,6 @@
       ],
       "name" : "Zwieselau",
       "uic" : 8006685
-   },
-   {
-      "ds100" : "XNZW",
-      "latlong" : null,
-      "name" : "Zwijndrecht(NL)",
-      "uic" : 8400752
    },
    {
       "ds100" : "XNZW",
