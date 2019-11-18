@@ -1770,6 +1770,15 @@
       "uic" : 8400058
    },
    {
+      "ds100" : "PNABH",
+      "latlong" : [
+         52.29844,
+         6.7580556869507
+      ],
+      "name" : "Amsterdam Holendrecht",
+      "uic" : 8400076
+   },
+   {
       "ds100" : "ONAL",
       "latlong" : [
          52.357776641846,
@@ -1795,6 +1804,15 @@
       ],
       "name" : "Amsterdam RAI",
       "uic" : 8400056
+   },
+   {
+      "ds100" : "PNABJ",
+      "latlong" : [
+         52.35526,
+         6.7355556488037
+      ],
+      "name" : "Amsterdam Science Park",
+      "uic" : 8400083
    },
    {
       "ds100" : "XNAS",
@@ -2112,6 +2130,24 @@
       "uic" : 8400066
    },
    {
+      "ds100" : "PNAAQ",
+      "latlong" : [
+         52.205276489258,
+         6.6875551
+      ],
+      "name" : "Apeldoorn De Maten",
+      "uic" : 8400032
+   },
+   {
+      "ds100" : "PNAAR",
+      "latlong" : [
+         52.215278625488,
+         6.6758332252502
+      ],
+      "name" : "Apeldoorn Osseveld",
+      "uic" : 8400033
+   },
+   {
       "ds100" : "AAPS",
       "latlong" : [
          53.441667,
@@ -2308,6 +2344,15 @@
       ],
       "name" : "Arnhem Velperpoort",
       "uic" : 8400072
+   },
+   {
+      "ds100" : "PNAAN",
+      "latlong" : [
+         51.955001831055,
+         6.60041
+      ],
+      "name" : "Arnhem Zuid",
+      "uic" : 8400029
    },
    {
       "ds100" : "XAAR",
@@ -3898,7 +3943,10 @@
    },
    {
       "ds100" : "XNNS",
-      "latlong" : null,
+      "latlong" : [
+         53.1844,
+         7.19937
+      ],
       "name" : "Bad Nieuweschans",
       "uic" : 8400457
    },
@@ -4623,6 +4671,15 @@
       "uic" : 8000775
    },
    {
+      "ds100" : "ONBF",
+      "latlong" : [
+         53.3608969,
+         6.5916666984558
+      ],
+      "name" : "Baflo",
+      "uic" : 8400089
+   },
+   {
       "ds100" : "BBG",
       "latlong" : [
          51.654888,
@@ -4984,7 +5041,10 @@
    },
    {
       "ds100" : "XNBA",
-      "latlong" : null,
+      "latlong" : [
+         51.854721069336,
+         6.5854178
+      ],
       "name" : "Barendrecht",
       "uic" : 8400090
    },
@@ -5041,6 +5101,33 @@
       ],
       "name" : "Barmstedt Brunnenstr",
       "uic" : 8007069
+   },
+   {
+      "ds100" : "ONBAC",
+      "latlong" : [
+         52.139999389648,
+         6.5844445228577
+      ],
+      "name" : "Barneveld Centrum",
+      "uic" : 8400091
+   },
+   {
+      "ds100" : "ONBAN",
+      "latlong" : [
+         52.161388397217,
+         6.5786272287369
+      ],
+      "name" : "Barneveld Noord",
+      "uic" : 8400092
+   },
+   {
+      "ds100" : "PNACA",
+      "latlong" : [
+         52.128853,
+         6.5759947
+      ],
+      "name" : "Barneveld Zuid",
+      "uic" : 8400115
    },
    {
       "ds100" : "HBNF",
@@ -5397,6 +5484,24 @@
       "uic" : 8000842
    },
    {
+      "ds100" : "ONBD",
+      "latlong" : [
+         53.3068857,
+         6.5752778053284
+      ],
+      "name" : "Bedum",
+      "uic" : 8400094
+   },
+   {
+      "ds100" : "ONBE",
+      "latlong" : [
+         50.947498321533,
+         6.5708332061768
+      ],
+      "name" : "Beek-Elsloo",
+      "uic" : 8400096
+   },
+   {
       "ds100" : "EBEE",
       "latlong" : [
          51.92932,
@@ -5439,6 +5544,15 @@
       "uic" : 8800302
    },
    {
+      "ds100" : "ONBED",
+      "latlong" : [
+         51.899444580078,
+         6.5696679
+      ],
+      "name" : "Beesd",
+      "uic" : 8400097
+   },
+   {
       "ds100" : "BBES",
       "latlong" : [
          52.177684,
@@ -5473,6 +5587,15 @@
       ],
       "name" : "Beienheim",
       "uic" : 8000851
+   },
+   {
+      "ds100" : "ONBEL",
+      "latlong" : [
+         52.854721069336,
+         6.5671364
+      ],
+      "name" : "Beilen",
+      "uic" : 8400100
    },
    {
       "ds100" : "LBEI",
@@ -5848,7 +5971,10 @@
    },
    {
       "ds100" : "XNBZ",
-      "latlong" : null,
+      "latlong" : [
+         51.49388885498,
+         6.5647220611572
+      ],
       "name" : "Bergen op Zoom",
       "uic" : 8400108
    },
@@ -7740,6 +7866,15 @@
       "uic" : 8000926
    },
    {
+      "ds100" : "ONBT",
+      "latlong" : [
+         51.509998321533,
+         6.5563172
+      ],
+      "name" : "Best",
+      "uic" : 8400112
+   },
+   {
       "ds100" : "BBST",
       "latlong" : [
          52.242129,
@@ -7882,7 +8017,10 @@
    },
    {
       "ds100" : "XNBK",
-      "latlong" : null,
+      "latlong" : [
+         52.478332519531,
+         6.5404
+      ],
       "name" : "Beverwijk",
       "uic" : 8400113
    },
@@ -8308,6 +8446,15 @@
       ],
       "name" : "Bilten",
       "uic" : 8503224
+   },
+   {
+      "ds100" : "ONBH",
+      "latlong" : [
+         52.130001068115,
+         6.5211110115051
+      ],
+      "name" : "Bilthoven",
+      "uic" : 8400114
    },
    {
       "ds100" : "XTBKN",
@@ -8818,7 +8965,10 @@
    },
    {
       "ds100" : "XNBL",
-      "latlong" : null,
+      "latlong" : [
+         51.372501373291,
+         6.5202905
+      ],
       "name" : "Blerick",
       "uic" : 8400117
    },
@@ -8848,6 +8998,15 @@
       ],
       "name" : "Blindheim",
       "uic" : 8001028
+   },
+   {
+      "ds100" : "ONBLO",
+      "latlong" : [
+         52.404167175293,
+         6.5202779769897
+      ],
+      "name" : "Bloemendaal",
+      "uic" : 8400118
    },
    {
       "ds100" : "XABL",
@@ -9100,7 +9259,10 @@
    },
    {
       "ds100" : "XNBD",
-      "latlong" : null,
+      "latlong" : [
+         52.081390380859,
+         6.5185581
+      ],
       "name" : "Bodegraven",
       "uic" : 8400121
    },
@@ -9610,7 +9772,10 @@
    },
    {
       "ds100" : "XNBO",
-      "latlong" : null,
+      "latlong" : [
+         52.298889160156,
+         6.4736108779907
+      ],
       "name" : "Borne(NL)",
       "uic" : 8400124
    },
@@ -9643,6 +9808,24 @@
       "latlong" : null,
       "name" : "Borup st",
       "uic" : 8600276
+   },
+   {
+      "ds100" : "ONBOK",
+      "latlong" : [
+         52.077777862549,
+         6.462
+      ],
+      "name" : "Boskoop",
+      "uic" : 8400125
+   },
+   {
+      "ds100" : "PNBKS",
+      "latlong" : [
+         52.067658,
+         6.458839
+      ],
+      "name" : "Boskoop Snijdelwijk",
+      "uic" : 8400126
    },
    {
       "ds100" : "XSBOH",
@@ -9729,6 +9912,33 @@
       "uic" : 8700333
    },
    {
+      "ds100" : "PNABP",
+      "latlong" : [
+         51.832222,
+         6.4492656
+      ],
+      "name" : "Boven-Hardinxveld",
+      "uic" : 8400236
+   },
+   {
+      "ds100" : "XNBF",
+      "latlong" : [
+         52.696109771729,
+         6.4263887405395
+      ],
+      "name" : "Bovenkarspel Flora",
+      "uic" : 8400230
+   },
+   {
+      "ds100" : "XNBG",
+      "latlong" : [
+         52.694999694824,
+         6.42027759552
+      ],
+      "name" : "Bovenkarspel-Grootebroek",
+      "uic" : 8400127
+   },
+   {
       "ds100" : "TBOX",
       "latlong" : [
          49.485596,
@@ -9736,6 +9946,24 @@
       ],
       "name" : "Boxberg-Wölchingen",
       "uic" : 8001111
+   },
+   {
+      "ds100" : "ONBM",
+      "latlong" : [
+         51.644521767653,
+         6.4158334732056
+      ],
+      "name" : "Boxmeer",
+      "uic" : 8400128
+   },
+   {
+      "ds100" : "ONBX",
+      "latlong" : [
+         51.58433,
+         6.4062361
+      ],
+      "name" : "Boxtel",
+      "uic" : 8400129
    },
    {
       "ds100" : "EBRB",
@@ -9988,9 +10216,21 @@
    },
    {
       "ds100" : "XNBR",
-      "latlong" : null,
+      "latlong" : [
+         51.595554351807,
+         6.3642466
+      ],
       "name" : "Breda",
       "uic" : 8400131
+   },
+   {
+      "ds100" : "ONBRP",
+      "latlong" : [
+         51.606388092041,
+         6.3486
+      ],
+      "name" : "Breda-Prinsenbeek",
+      "uic" : 8400132
    },
    {
       "ds100" : "WBDN",
@@ -10533,6 +10773,15 @@
       "uic" : 8001178
    },
    {
+      "ds100" : "ONBRU",
+      "latlong" : [
+         52.17149,
+         6.3170457
+      ],
+      "name" : "Breukelen",
+      "uic" : 8400133
+   },
+   {
       "ds100" : "KBRY",
       "latlong" : [
          51.294615,
@@ -10891,6 +11140,15 @@
       "latlong" : null,
       "name" : "Brumath",
       "uic" : 8700294
+   },
+   {
+      "ds100" : "ONBRM",
+      "latlong" : [
+         52.091110229492,
+         6.3097786903381
+      ],
+      "name" : "Brummen",
+      "uic" : 8400136
    },
    {
       "ds100" : "LBRP",
@@ -11266,7 +11524,10 @@
    },
    {
       "ds100" : "XNBP",
-      "latlong" : null,
+      "latlong" : [
+         53.2564547,
+         6.2962148
+      ],
       "name" : "Buitenpost",
       "uic" : 8400139
    },
@@ -11295,6 +11556,15 @@
       "uic" : 8700334
    },
    {
+      "ds100" : "ONBU",
+      "latlong" : [
+         50.896945953369,
+         6.2775001525879
+      ],
+      "name" : "Bunde",
+      "uic" : 8400140
+   },
+   {
       "ds100" : "SBTR",
       "latlong" : [
          49.102353,
@@ -11302,6 +11572,15 @@
       ],
       "name" : "Bundenthal-Rumbach",
       "uic" : 8079087
+   },
+   {
+      "ds100" : "ONBUK",
+      "latlong" : [
+         52.063056945801,
+         6.2598521
+      ],
+      "name" : "Bunnik",
+      "uic" : 8400141
    },
    {
       "ds100" : "SSHI",
@@ -11641,6 +11920,15 @@
       ],
       "name" : "Bussnang",
       "uic" : 8506190
+   },
+   {
+      "ds100" : "ONBUZ",
+      "latlong" : [
+         52.26583480835,
+         6.25861120224
+      ],
+      "name" : "Bussum Zuid",
+      "uic" : 8400145
    },
    {
       "ds100" : "XIBU",
@@ -12345,6 +12633,15 @@
       "uic" : 8700911
    },
    {
+      "ds100" : "ONCS",
+      "latlong" : [
+         51.954166412354,
+         6.2211112976074
+      ],
+      "name" : "Capelle Schollevaar",
+      "uic" : 8400147
+   },
+   {
       "ds100" : "ECP",
       "latlong" : [
          51.735268,
@@ -12439,6 +12736,15 @@
       ],
       "name" : "Castione-Arbedo",
       "uic" : 8505212
+   },
+   {
+      "ds100" : "ONCC",
+      "latlong" : [
+         52.545833587646,
+         6.2144446372986
+      ],
+      "name" : "Castricum",
+      "uic" : 8400151
    },
    {
       "ds100" : "ECA",
@@ -12969,6 +13275,15 @@
       "uic" : 8700227
    },
    {
+      "ds100" : "ONCH",
+      "latlong" : [
+         50.876110076904,
+         6.213844
+      ],
+      "name" : "Chevremont(NL)",
+      "uic" : 8400152
+   },
+   {
       "ds100" : "XSCH",
       "latlong" : [
          45.8321788009196,
@@ -13180,7 +13495,10 @@
    },
    {
       "ds100" : "XNCV",
-      "latlong" : null,
+      "latlong" : [
+         52.663612365723,
+         6.1975002288818
+      ],
       "name" : "Coevorden",
       "uic" : 8400153
    },
@@ -13479,6 +13797,24 @@
       "uic" : 8010196
    },
    {
+      "ds100" : "ONCK",
+      "latlong" : [
+         51.726682587905,
+         6.1941666603088
+      ],
+      "name" : "Cuijk",
+      "uic" : 8400155
+   },
+   {
+      "ds100" : "ONCU",
+      "latlong" : [
+         51.946666717529,
+         6.1727776527405
+      ],
+      "name" : "Culemborg",
+      "uic" : 8400154
+   },
+   {
       "ds100" : "XFCU",
       "latlong" : null,
       "name" : "Culmont-Chalindrey",
@@ -13558,6 +13894,15 @@
       ],
       "name" : "Daaden",
       "uic" : 8007077
+   },
+   {
+      "ds100" : "ONDA",
+      "latlong" : [
+         52.4407702,
+         6.1605553627014
+      ],
+      "name" : "Daarlerveen",
+      "uic" : 8400164
    },
    {
       "ds100" : "BDAB",
@@ -13720,6 +14065,24 @@
       ],
       "name" : "Dahn Süd",
       "uic" : 8079081
+   },
+   {
+      "ds100" : "ONDAL",
+      "latlong" : [
+         52.69416809082,
+         6.1550002098083
+      ],
+      "name" : "Dalen(NL)",
+      "uic" : 8400161
+   },
+   {
+      "ds100" : "OND",
+      "latlong" : [
+         52.498332977295,
+         6.1469445228577
+      ],
+      "name" : "Dalfsen",
+      "uic" : 8400167
    },
    {
       "ds100" : "KDAL",
@@ -13956,6 +14319,15 @@
       "uic" : 8700043
    },
    {
+      "ds100" : "ONDVI",
+      "latlong" : [
+         52.147220611572,
+         6.1446496
+      ],
+      "name" : "De Vink",
+      "uic" : 8400188
+   },
+   {
       "ds100" : "XMD",
       "latlong" : null,
       "name" : "Debrecen",
@@ -14073,6 +14445,15 @@
       "uic" : 8070349
    },
    {
+      "ds100" : "ONDM",
+      "latlong" : [
+         53.1888115,
+         6.14253
+      ],
+      "name" : "Deinum",
+      "uic" : 8400168
+   },
+   {
       "ds100" : "MDS",
       "latlong" : [
          48.019539,
@@ -14092,21 +14473,48 @@
    },
    {
       "ds100" : "XNDD",
-      "latlong" : null,
+      "latlong" : [
+         52.259998321533,
+         6.1405553817749
+      ],
       "name" : "Delden",
       "uic" : 8400169
    },
    {
       "ds100" : "XNDT",
-      "latlong" : null,
+      "latlong" : [
+         52.00666809082,
+         6.1324106
+      ],
       "name" : "Delft",
       "uic" : 8400170
    },
    {
+      "ds100" : "ONDTZ",
+      "latlong" : [
+         51.990833282471,
+         6.1145557632446
+      ],
+      "name" : "Delft Zuid",
+      "uic" : 8400166
+   },
+   {
       "ds100" : "XNDZ",
-      "latlong" : null,
+      "latlong" : [
+         53.3336625,
+         6.1130557060242
+      ],
       "name" : "Delfzijl",
       "uic" : 8400171
+   },
+   {
+      "ds100" : "ONDZW",
+      "latlong" : [
+         53.3320834,
+         6.1030554771423
+      ],
+      "name" : "Delfzijl West",
+      "uic" : 8400175
    },
    {
       "ds100" : "LDLO",
@@ -14196,6 +14604,15 @@
       "uic" : 8011356
    },
    {
+      "ds100" : "ONDD",
+      "latlong" : [
+         52.140277862549,
+         6.0986108779907
+      ],
+      "name" : "Den Dolder",
+      "uic" : 8400179
+   },
+   {
       "ds100" : "XNDH",
       "latlong" : [
          52.080276489258,
@@ -14241,10 +14658,31 @@
       "uic" : 8400279
    },
    {
+      "ds100" : "PNAAO",
+      "latlong" : [
+         52.055278778076,
+         6.0597224235535
+      ],
+      "name" : "Den Haag Ypenburg",
+      "uic" : 8400030
+   },
+   {
       "ds100" : "XNDL",
-      "latlong" : null,
+      "latlong" : [
+         52.955276489258,
+         6.0574998855591
+      ],
       "name" : "Den Helder",
       "uic" : 8400311
+   },
+   {
+      "ds100" : "ONDLZ",
+      "latlong" : [
+         52.932498931885,
+         6.05146
+      ],
+      "name" : "Den Helder Zuid",
+      "uic" : 8400303
    },
    {
       "ds100" : "XBDL",
@@ -14484,6 +14922,15 @@
       "uic" : 8001430
    },
    {
+      "ds100" : "ONDEU",
+      "latlong" : [
+         51.455833435059,
+         6.0450000762939
+      ],
+      "name" : "Deurne",
+      "uic" : 8400172
+   },
+   {
       "ds100" : "EDEU",
       "latlong" : [
          51.713087,
@@ -14509,9 +14956,21 @@
    },
    {
       "ds100" : "XNDV",
-      "latlong" : null,
+      "latlong" : [
+         52.257499694824,
+         6.0422220230103
+      ],
       "name" : "Deventer",
       "uic" : 8400173
+   },
+   {
+      "ds100" : "ONDVC",
+      "latlong" : [
+         52.2502784729,
+         6.03463
+      ],
+      "name" : "Deventer Colmschate",
+      "uic" : 8400185
    },
    {
       "ds100" : "XYDN",
@@ -14524,6 +14983,15 @@
       "latlong" : null,
       "name" : "Diano Marina",
       "uic" : 8300149
+   },
+   {
+      "ds100" : "ONDI",
+      "latlong" : [
+         51.933502,
+         6.03228
+      ],
+      "name" : "Didam",
+      "uic" : 8400174
    },
    {
       "ds100" : "NDIE",
@@ -14562,6 +15030,24 @@
       "uic" : 8001439
    },
    {
+      "ds100" : "ONDIM",
+      "latlong" : [
+         52.34515,
+         6.0314
+      ],
+      "name" : "Diemen",
+      "uic" : 8400165
+   },
+   {
+      "ds100" : "ONDIZ",
+      "latlong" : [
+         52.330276489258,
+         6.02578
+      ],
+      "name" : "Diemen Zuid",
+      "uic" : 8400163
+   },
+   {
       "ds100" : "XFDM",
       "latlong" : null,
       "name" : "Diemeringen",
@@ -14590,6 +15076,15 @@
       ],
       "name" : "Diepholz",
       "uic" : 8001443
+   },
+   {
+      "ds100" : "ONDIR",
+      "latlong" : [
+         52.044998168945,
+         6.019166469574
+      ],
+      "name" : "Dieren",
+      "uic" : 8400176
    },
    {
       "ds100" : "KDI",
@@ -14988,6 +15483,24 @@
       "uic" : 8600416
    },
    {
+      "ds100" : "ONDO",
+      "latlong" : [
+         51.9585962,
+         6.0147223472595
+      ],
+      "name" : "Doetinchem",
+      "uic" : 8400177
+   },
+   {
+      "ds100" : "ONDOH",
+      "latlong" : [
+         51.9591413,
+         6.0141777992248
+      ],
+      "name" : "Doetinchem De Huet",
+      "uic" : 8400184
+   },
+   {
       "ds100" : "RDRN",
       "latlong" : [
          47.608887,
@@ -15187,9 +15700,30 @@
    },
    {
       "ds100" : "XNDO",
-      "latlong" : null,
+      "latlong" : [
+         51.807220458984,
+         6.0044445991516
+      ],
       "name" : "Dordrecht",
       "uic" : 8400180
+   },
+   {
+      "ds100" : "ONDOS",
+      "latlong" : [
+         51.801944732666,
+         6.0036110877991
+      ],
+      "name" : "Dordrecht Stadspolders",
+      "uic" : 8400186
+   },
+   {
+      "ds100" : "ONDOZ",
+      "latlong" : [
+         51.790000915527,
+         6.0025000572205
+      ],
+      "name" : "Dordrecht Zuid",
+      "uic" : 8400181
    },
    {
       "ds100" : "WMK",
@@ -16134,6 +16668,24 @@
       "uic" : 8001561
    },
    {
+      "ds100" : "ONDZ",
+      "latlong" : [
+         52.065277099609,
+         6.0005555152893
+      ],
+      "name" : "Driebergen-Zeist",
+      "uic" : 8400182
+   },
+   {
+      "ds100" : "ONDR",
+      "latlong" : [
+         52.442501068115,
+         5.99714
+      ],
+      "name" : "Driehuis",
+      "uic" : 8400183
+   },
+   {
       "ds100" : "LDM",
       "latlong" : [
          51.721692,
@@ -16143,8 +16695,20 @@
       "uic" : 8011433
    },
    {
+      "ds100" : "ONDP",
+      "latlong" : [
+         53.1778086,
+         5.9941668510437
+      ],
+      "name" : "Dronryp",
+      "uic" : 8400192
+   },
+   {
       "ds100" : "XNDR",
-      "latlong" : null,
+      "latlong" : [
+         52.5344,
+         5.9886615
+      ],
       "name" : "Dronten",
       "uic" : 8400198
    },
@@ -16321,6 +16885,24 @@
       ],
       "name" : "Duisburg-Wedau",
       "uic" : 8001612
+   },
+   {
+      "ds100" : "ONDV",
+      "latlong" : [
+         51.943332672119,
+         5.9802780151367
+      ],
+      "name" : "Duiven",
+      "uic" : 8400193
+   },
+   {
+      "ds100" : "XNDU",
+      "latlong" : [
+         52.323333740234,
+         5.9797382354736
+      ],
+      "name" : "Duivendrecht",
+      "uic" : 8400194
    },
    {
       "ds100" : "XNDU",
@@ -17079,6 +17661,15 @@
       "uic" : 8001647
    },
    {
+      "ds100" : "ONET",
+      "latlong" : [
+         51.100555419922,
+         5.9749999046326
+      ],
+      "name" : "Echt",
+      "uic" : 8400195
+   },
+   {
       "ds100" : "TETD",
       "latlong" : [
          48.692152,
@@ -17152,7 +17743,10 @@
    },
    {
       "ds100" : "XNE",
-      "latlong" : null,
+      "latlong" : [
+         52.043609619141,
+         5.9702777862549
+      ],
       "name" : "Ede Centrum",
       "uic" : 8400201
    },
@@ -17164,7 +17758,10 @@
    },
    {
       "ds100" : "XNEW",
-      "latlong" : null,
+      "latlong" : [
+         52.027778625488,
+         5.9695
+      ],
       "name" : "Ede-Wageningen",
       "uic" : 8400200
    },
@@ -17239,6 +17836,15 @@
       ],
       "name" : "Edling",
       "uic" : 8001669
+   },
+   {
+      "ds100" : "PNEHV",
+      "latlong" : [
+         53.458419,
+         5.952222
+      ],
+      "name" : "Eemshaven",
+      "uic" : 8400202
    },
    {
       "ds100" : "UEFT",
@@ -17649,6 +18255,15 @@
       "uic" : 8011462
    },
    {
+      "ds100" : "ONEJ",
+      "latlong" : [
+         50.771945953369,
+         5.9438886642456
+      ],
+      "name" : "Eijsden",
+      "uic" : 8400219
+   },
+   {
       "ds100" : "LEG",
       "latlong" : [
          51.451966,
@@ -17722,9 +18337,21 @@
    },
    {
       "ds100" : "XNEI",
-      "latlong" : null,
+      "latlong" : [
+         51.443332672119,
+         5.9438886642456
+      ],
       "name" : "Eindhoven",
       "uic" : 8400206
+   },
+   {
+      "ds100" : "ONEIB",
+      "latlong" : [
+         51.451110839844,
+         5.9390330314636
+      ],
+      "name" : "Eindhoven Strijp-S",
+      "uic" : 8400196
    },
    {
       "ds100" : "AEF",
@@ -18114,6 +18741,15 @@
       "uic" : 8011484
    },
    {
+      "ds100" : "XNEL",
+      "latlong" : [
+         51.916942596435,
+         5.934543
+      ],
+      "name" : "Elst",
+      "uic" : 8400207
+   },
+   {
       "ds100" : "BETN",
       "latlong" : [
          52.54749,
@@ -18256,6 +18892,24 @@
       ],
       "name" : "Emmelshausen",
       "uic" : 8001770
+   },
+   {
+      "ds100" : "PNEZ",
+      "latlong" : [
+         52.748866374691,
+         5.9302778244019
+      ],
+      "name" : "Emmen Zuid",
+      "uic" : 8400407
+   },
+   {
+      "ds100" : "ONEM",
+      "latlong" : [
+         52.790000915527,
+         5.9305553436279
+      ],
+      "name" : "Emmen(NL)",
+      "uic" : 8400208
    },
    {
       "ds100" : "XSEB",
@@ -18450,6 +19104,15 @@
       "uic" : 8000372
    },
    {
+      "ds100" : "XNEK",
+      "latlong" : [
+         52.699165344238,
+         5.92479
+      ],
+      "name" : "Enkhuizen",
+      "uic" : 8400210
+   },
+   {
       "ds100" : "EENP",
       "latlong" : [
          51.304778,
@@ -18469,15 +19132,30 @@
    },
    {
       "ds100" : "XNES",
-      "latlong" : null,
+      "latlong" : [
+         52.222499847412,
+         5.9216666221619
+      ],
       "name" : "Enschede",
       "uic" : 8400212
    },
    {
       "ds100" : "XNDE",
-      "latlong" : null,
+      "latlong" : [
+         52.221389770508,
+         5.9194445610046
+      ],
       "name" : "Enschede De Eschmarke",
       "uic" : 8400012
+   },
+   {
+      "ds100" : "ONESD",
+      "latlong" : [
+         52.23749923706,
+         5.9141664505005
+      ],
+      "name" : "Enschede Kennispark",
+      "uic" : 8400213
    },
    {
       "ds100" : "SEN",
@@ -18931,6 +19609,15 @@
       ],
       "name" : "Ermatingen URh",
       "uic" : 8506162
+   },
+   {
+      "ds100" : "ONER",
+      "latlong" : [
+         52.301666259766,
+         5.91309
+      ],
+      "name" : "Ermelo",
+      "uic" : 8400216
    },
    {
       "ds100" : "EEK",
@@ -19554,6 +20241,15 @@
       "uic" : 8200120
    },
    {
+      "ds100" : "ONEL",
+      "latlong" : [
+         51.57500076294,
+         5.8991665840149
+      ],
+      "name" : "Etten-Leur",
+      "uic" : 8400218
+   },
+   {
       "ds100" : "UEH",
       "latlong" : [
          50.874563,
@@ -19806,8 +20502,20 @@
       "uic" : 8001946
    },
    {
+      "ds100" : "ONEV",
+      "latlong" : [
+         50.890556335449,
+         5.898056
+      ],
+      "name" : "Eygelshoven",
+      "uic" : 8400338
+   },
+   {
       "ds100" : "XNEM",
-      "latlong" : null,
+      "latlong" : [
+         50.896049819644,
+         5.893611
+      ],
       "name" : "Eygelshoven Markt",
       "uic" : 8400043
    },
@@ -20023,6 +20731,15 @@
       ],
       "name" : "Favoritepark",
       "uic" : 8001967
+   },
+   {
+      "ds100" : "ONVWD",
+      "latlong" : [
+         53.2351834,
+         5.9886615
+      ],
+      "name" : "Feanwalden",
+      "uic" : 8400638
    },
    {
       "ds100" : "XFFHL",
@@ -20767,6 +21484,15 @@
       "latlong" : null,
       "name" : "Fraipont",
       "uic" : 8800266
+   },
+   {
+      "ds100" : "ONFR",
+      "latlong" : [
+         53.1824488,
+         5.879133
+      ],
+      "name" : "Franeker",
+      "uic" : 8400232
    },
    {
       "ds100" : "FFRK",
@@ -22479,6 +23205,15 @@
       "uic" : 8002156
    },
    {
+      "ds100" : "PNAAS",
+      "latlong" : [
+         51.93074,
+         5.8788890838623
+      ],
+      "name" : "Gaanderen",
+      "uic" : 8400034
+   },
+   {
       "ds100" : "MGAL",
       "latlong" : [
          48.463417,
@@ -23064,8 +23799,29 @@
       "uic" : 8002222
    },
    {
+      "ds100" : "ONGL",
+      "latlong" : [
+         51.419723510742,
+         5.8742952346802
+      ],
+      "name" : "Geldrop",
+      "uic" : 8400245
+   },
+   {
+      "ds100" : "ONLUO",
+      "latlong" : [
+         50.966945648193,
+         5.8722224235535
+      ],
+      "name" : "Geleen Oost",
+      "uic" : 8400246
+   },
+   {
       "ds100" : "XNLU",
-      "latlong" : null,
+      "latlong" : [
+         50.975555419922,
+         5.8674998283386
+      ],
       "name" : "Geleen-Lutterade",
       "uic" : 8400248
    },
@@ -23763,6 +24519,15 @@
       "uic" : 8011633
    },
    {
+      "ds100" : "ONGR",
+      "latlong" : [
+         51.583610534668,
+         5.8630557060242
+      ],
+      "name" : "Gilze-Rijen",
+      "uic" : 8400251
+   },
+   {
       "ds100" : "TGI",
       "latlong" : [
          48.661039,
@@ -23863,7 +24628,10 @@
    },
    {
       "ds100" : "XNGB",
-      "latlong" : null,
+      "latlong" : [
+         52.218612670898,
+         5.859686
+      ],
       "name" : "Glanerbrug",
       "uic" : 8400011
    },
@@ -24102,6 +24870,15 @@
       "uic" : 8270480
    },
    {
+      "ds100" : "ONG",
+      "latlong" : [
+         51.498054504395,
+         5.8586111068726
+      ],
+      "name" : "Goes",
+      "uic" : 8400253
+   },
+   {
       "ds100" : "AGK",
       "latlong" : [
          54.118755,
@@ -24246,6 +25023,15 @@
       "uic" : 8002326
    },
    {
+      "ds100" : "ONGO",
+      "latlong" : [
+         52.230278015137,
+         5.8550000190735
+      ],
+      "name" : "Goor",
+      "uic" : 8400254
+   },
+   {
       "ds100" : "XSGO",
       "latlong" : [
          46.3677451313466,
@@ -24262,6 +25048,15 @@
       ],
       "name" : "Gorgast",
       "uic" : 8011674
+   },
+   {
+      "ds100" : "ONGN",
+      "latlong" : [
+         51.833889007568,
+         5.8522224426269
+      ],
+      "name" : "Gorinchem",
+      "uic" : 8400256
    },
    {
       "ds100" : "XPGW",
@@ -24358,9 +25153,21 @@
    },
    {
       "ds100" : "XNG",
-      "latlong" : null,
+      "latlong" : [
+         52.017501831055,
+         5.8519444465637
+      ],
       "name" : "Gouda",
       "uic" : 8400258
+   },
+   {
+      "ds100" : "ONGG",
+      "latlong" : [
+         52.014999389648,
+         5.850529
+      ],
+      "name" : "Gouda Goverwelle",
+      "uic" : 8400257
    },
    {
       "ds100" : "XBGY",
@@ -24535,6 +25342,15 @@
       ],
       "name" : "Grambow",
       "uic" : 8011689
+   },
+   {
+      "ds100" : "ONGRA",
+      "latlong" : [
+         52.60916519165,
+         5.843611240387
+      ],
+      "name" : "Gramsbergen",
+      "uic" : 8400259
    },
    {
       "ds100" : "XEGR",
@@ -24792,6 +25608,15 @@
       "uic" : 8002373
    },
    {
+      "ds100" : "ONGI",
+      "latlong" : [
+         53.255740325573,
+         5.8430557250977
+      ],
+      "name" : "Grijpskerk",
+      "uic" : 8400267
+   },
+   {
       "ds100" : "LGRI",
       "latlong" : [
          51.230076,
@@ -24861,6 +25686,15 @@
       "uic" : 8400263
    },
    {
+      "ds100" : "PNABA",
+      "latlong" : [
+         53.20480027,
+         5.8400001525879
+      ],
+      "name" : "Groningen Europapark",
+      "uic" : 8400042
+   },
+   {
       "ds100" : "ONGRN",
       "latlong" : [
          53.2301469,
@@ -24877,6 +25711,15 @@
       ],
       "name" : "Gronsdorf",
       "uic" : 8002383
+   },
+   {
+      "ds100" : "ONGRI",
+      "latlong" : [
+         53.088890075684,
+         5.8247222900391
+      ],
+      "name" : "Grou-Jirnsum",
+      "uic" : 8400266
    },
    {
       "ds100" : "LGRL",
@@ -26239,7 +27082,10 @@
    },
    {
       "ds100" : "XNHE",
-      "latlong" : null,
+      "latlong" : [
+         52.38777923584,
+         5.8225002288818
+      ],
       "name" : "Haarlem",
       "uic" : 8400285
    },
@@ -26659,6 +27505,15 @@
       ],
       "name" : "Halfing",
       "uic" : 8070801
+   },
+   {
+      "ds100" : "PNHWZ",
+      "latlong" : [
+         52.385935,
+         4.747165
+      ],
+      "name" : "Halfweg-Zwanenburg",
+      "uic" : 8400400
    },
    {
       "ds100" : "FKMBS",
@@ -27978,6 +28833,24 @@
       "uic" : 8002594
    },
    {
+      "ds100" : "ONH",
+      "latlong" : [
+         52.572776794434,
+         5.7936110496521
+      ],
+      "name" : "Hardenberg",
+      "uic" : 8400293
+   },
+   {
+      "ds100" : "ONHAW",
+      "latlong" : [
+         52.337501525879,
+         5.7922220230103
+      ],
+      "name" : "Harderwijk",
+      "uic" : 8400294
+   },
+   {
       "ds100" : "NHHF",
       "latlong" : [
          49.496925,
@@ -27985,6 +28858,24 @@
       ],
       "name" : "Hardhof",
       "uic" : 8002596
+   },
+   {
+      "ds100" : "PNABU",
+      "latlong" : [
+         51.82944,
+         5.7888889312744
+      ],
+      "name" : "Hardinxveld Blauwe Zoom",
+      "uic" : 8400438
+   },
+   {
+      "ds100" : "ONHAG",
+      "latlong" : [
+         51.830554962158,
+         5.7866668701172
+      ],
+      "name" : "Hardinxveld-Giessendam",
+      "uic" : 8400295
    },
    {
       "ds100" : "HHAR",
@@ -27996,10 +28887,28 @@
       "uic" : 8002598
    },
    {
+      "ds100" : "ONHAR",
+      "latlong" : [
+         53.176109313965,
+         5.7852778434753
+      ],
+      "name" : "Haren(NL)",
+      "uic" : 8400297
+   },
+   {
       "ds100" : "HHLE",
       "latlong" : null,
       "name" : "Harlesiel",
       "uic" : 8002600
+   },
+   {
+      "ds100" : "ONHA",
+      "latlong" : [
+         53.1704205,
+         5.7366666793823
+      ],
+      "name" : "Harlingen(NL)",
+      "uic" : 8400296
    },
    {
       "ds100" : "UH",
@@ -28596,6 +29505,24 @@
       "uic" : 8011838
    },
    {
+      "ds100" : "ONHK",
+      "latlong" : [
+         52.495277404785,
+         5.7281572
+      ],
+      "name" : "Heemskerk",
+      "uic" : 8400317
+   },
+   {
+      "ds100" : "ONHSA",
+      "latlong" : [
+         52.35916519165,
+         5.7228408
+      ],
+      "name" : "Heemstede-Aerdenhout",
+      "uic" : 8400302
+   },
+   {
       "ds100" : "XSHR",
       "latlong" : [
          47.410385307077,
@@ -28606,15 +29533,39 @@
    },
    {
       "ds100" : "XNHR",
-      "latlong" : null,
+      "latlong" : [
+         52.961387634277,
+         5.72089
+      ],
       "name" : "Heerenveen",
       "uic" : 8400305
    },
    {
+      "ds100" : "ONHGV",
+      "latlong" : [
+         52.669723510742,
+         5.7172222137451
+      ],
+      "name" : "Heerhugowaard",
+      "uic" : 8400306
+   },
+   {
       "ds100" : "XNH",
-      "latlong" : null,
+      "latlong" : [
+         50.89083480835,
+         5.7131996
+      ],
       "name" : "Heerlen",
       "uic" : 8400307
+   },
+   {
+      "ds100" : "PNABM",
+      "latlong" : [
+         50.896667,
+         5.710000038147
+      ],
+      "name" : "Heerlen Woonboulevard",
+      "uic" : 8400087
    },
    {
       "ds100" : "EHE P",
@@ -28624,6 +29575,15 @@
       ],
       "name" : "Heessen",
       "uic" : 8002680
+   },
+   {
+      "ds100" : "ONHEZ",
+      "latlong" : [
+         51.384998321533,
+         5.7055554389954
+      ],
+      "name" : "Heeze",
+      "uic" : 8400308
    },
    {
       "ds100" : "FKHBS",
@@ -29055,6 +30015,15 @@
       "uic" : 8002704
    },
    {
+      "ds100" : "ONHEL",
+      "latlong" : [
+         52.599445343018,
+         5.7036108970642
+      ],
+      "name" : "Heiloo",
+      "uic" : 8400309
+   },
+   {
       "ds100" : "NHE",
       "latlong" : [
          49.34595,
@@ -29125,6 +30094,15 @@
       ],
       "name" : "Heinebach",
       "uic" : 8002716
+   },
+   {
+      "ds100" : "ONHEN",
+      "latlong" : [
+         52.427223205566,
+         5.70177
+      ],
+      "name" : "Heino",
+      "uic" : 8400310
    },
    {
       "ds100" : "FKNZH",
@@ -29260,9 +30238,39 @@
    },
    {
       "ds100" : "XNHM",
-      "latlong" : null,
+      "latlong" : [
+         51.475555419922,
+         5.6737254
+      ],
       "name" : "Helmond",
       "uic" : 8400313
+   },
+   {
+      "ds100" : "ONHMH",
+      "latlong" : [
+         51.46794,
+         5.6730556488037
+      ],
+      "name" : "Helmond 't Hout",
+      "uic" : 8400300
+   },
+   {
+      "ds100" : "PNAAT",
+      "latlong" : [
+         51.462223052979,
+         5.668333530426
+      ],
+      "name" : "Helmond Brandevoort",
+      "uic" : 8400035
+   },
+   {
+      "ds100" : "ONHMB",
+      "latlong" : [
+         51.47068,
+         5.6631808
+      ],
+      "name" : "Helmond Brouwhuis",
+      "uic" : 8400299
    },
    {
       "ds100" : "DHLF",
@@ -29308,6 +30316,15 @@
       ],
       "name" : "Helpup",
       "uic" : 8002737
+   },
+   {
+      "ds100" : "ONHDW",
+      "latlong" : [
+         51.9222129,
+         5.6619443893433
+      ],
+      "name" : "Hemmen-Dodewaard",
+      "uic" : 8400315
    },
    {
       "ds100" : "EHMD",
@@ -30217,7 +31234,10 @@
    },
    {
       "ds100" : "XNHO",
-      "latlong" : null,
+      "latlong" : [
+         52.302501678467,
+         5.6347411
+      ],
       "name" : "Hillegom",
       "uic" : 8400005
    },
@@ -30259,13 +31279,28 @@
    },
    {
       "ds100" : "XNHI",
-      "latlong" : null,
+      "latlong" : [
+         52.225833892822,
+         5.63085
+      ],
       "name" : "Hilversum",
       "uic" : 8400322
    },
    {
-      "ds100" : "XNHIS",
-      "latlong" : null,
+      "ds100" : "ONHSN",
+      "latlong" : [
+         52.238056182861,
+         5.6303429603577
+      ],
+      "name" : "Hilversum Media Park",
+      "uic" : 8400324
+   },
+   {
+      "ds100" : " XNHIS",
+      "latlong" : [
+         52.216110229492,
+         5.1872220039368
+      ],
       "name" : "Hilversum Sportpark",
       "uic" : 8400570
    },
@@ -30295,6 +31330,15 @@
       ],
       "name" : "Himmelstadt",
       "uic" : 8002845
+   },
+   {
+      "ds100" : "ONHI",
+      "latlong" : [
+         52.9464903,
+         5.619722366333
+      ],
+      "name" : "Hindeloopen",
+      "uic" : 8400323
    },
    {
       "ds100" : "MHRS",
@@ -30604,6 +31648,24 @@
       "latlong" : null,
       "name" : "Hoeje Taastrup st",
       "uic" : 8601031
+   },
+   {
+      "ds100" : "ONHBK",
+      "latlong" : [
+         50.905555725098,
+         5.6160801
+      ],
+      "name" : "Hoensbroek",
+      "uic" : 8400326
+   },
+   {
+      "ds100" : "PNHLK",
+      "latlong" : [
+         52.16652,
+         5.45718
+      ],
+      "name" : "Hoevelaken",
+      "uic" : 8400490
    },
    {
       "ds100" : "NHO",
@@ -30948,6 +32010,15 @@
       "uic" : 8002962
    },
    {
+      "ds100" : "ONHLR",
+      "latlong" : [
+         52.17777633667,
+         5.6072220802307
+      ],
+      "name" : "Hollandsche Rading",
+      "uic" : 8400327
+   },
+   {
       "ds100" : "FKHST",
       "latlong" : null,
       "name" : "Holländische Straße, Kassel",
@@ -30976,6 +32047,15 @@
       ],
       "name" : "Holstentherme",
       "uic" : 8007203
+   },
+   {
+      "ds100" : "ONHO",
+      "latlong" : [
+         52.283889770508,
+         5.60246
+      ],
+      "name" : "Holten",
+      "uic" : 8400328
    },
    {
       "ds100" : "HHOL",
@@ -31138,21 +32218,57 @@
    },
    {
       "ds100" : "XNHD",
-      "latlong" : null,
+      "latlong" : [
+         52.293334960938,
+         5.5980553627014
+      ],
       "name" : "Hoofddorp",
       "uic" : 8400332
    },
    {
       "ds100" : "XNHG",
-      "latlong" : null,
+      "latlong" : [
+         52.733890533447,
+         5.590277671814
+      ],
       "name" : "Hoogeveen",
       "uic" : 8400330
    },
    {
       "ds100" : "XNHS",
-      "latlong" : null,
+      "latlong" : [
+         53.159818131676,
+         5.5833465
+      ],
       "name" : "Hoogezand-Sappemeer",
       "uic" : 8400331
+   },
+   {
+      "ds100" : "XNHGK",
+      "latlong" : [
+         52.69055557251,
+         5.5783333778381
+      ],
+      "name" : "Hoogkarspel",
+      "uic" : 8400334
+   },
+   {
+      "ds100" : "XNHOR",
+      "latlong" : [
+         52.644721984863,
+         5.5752778053284
+      ],
+      "name" : "Hoorn",
+      "uic" : 8400337
+   },
+   {
+      "ds100" : "XNHOK",
+      "latlong" : [
+         52.653610229492,
+         5.5738887786865
+      ],
+      "name" : "Hoorn Kersenboogerd",
+      "uic" : 8400336
    },
    {
       "ds100" : "XAHG",
@@ -31374,6 +32490,15 @@
       "uic" : 8003003
    },
    {
+      "ds100" : "ONHSM",
+      "latlong" : [
+         51.426387786865,
+         5.5694446563721
+      ],
+      "name" : "Horst-Sevenum",
+      "uic" : 8400339
+   },
+   {
       "ds100" : "BHC",
       "latlong" : [
          51.454706,
@@ -31381,6 +32506,33 @@
       ],
       "name" : "Hosena",
       "uic" : 8010171
+   },
+   {
+      "ds100" : "ONHT",
+      "latlong" : [
+         52.03402,
+         5.5505557060242
+      ],
+      "name" : "Houten",
+      "uic" : 8400340
+   },
+   {
+      "ds100" : "PNSHC",
+      "latlong" : [
+         52.01701,
+         5.548611164093
+      ],
+      "name" : "Houten Castellum",
+      "uic" : 8400010
+   },
+   {
+      "ds100" : "ONHSG",
+      "latlong" : [
+         50.873332977295,
+         5.5483094
+      ],
+      "name" : "Houthem-St. Gerlach",
+      "uic" : 8400341
    },
    {
       "ds100" : "BHW",
@@ -31552,6 +32704,15 @@
       ],
       "name" : "Huntlosen",
       "uic" : 8003030
+   },
+   {
+      "ds100" : "ONHG",
+      "latlong" : [
+         53.2187783,
+         5.5322222709656
+      ],
+      "name" : "Hurdegaryp",
+      "uic" : 8400292
    },
    {
       "ds100" : "AY",
@@ -31993,6 +33154,15 @@
       ],
       "name" : "Hüttingen",
       "uic" : 8003021
+   },
+   {
+      "ds100" : "ONLJ",
+      "latlong" : [
+         53.0146614,
+         5.6160801
+      ],
+      "name" : "IJlst",
+      "uic" : 8400722
    },
    {
       "ds100" : "RIB",
@@ -33573,8 +34743,20 @@
       "uic" : 8003170
    },
    {
+      "ds100" : "ONK",
+      "latlong" : [
+         52.559722900391,
+         5.5055556297302
+      ],
+      "name" : "Kampen (NL)",
+      "uic" : 8400353
+   },
+   {
       "ds100" : "XNKM",
-      "latlong" : null,
+      "latlong" : [
+         52.5331,
+         5.4938888549805
+      ],
       "name" : "Kampen Zuid",
       "uic" : 8400360
    },
@@ -33613,6 +34795,15 @@
       ],
       "name" : "Kanzem",
       "uic" : 8003173
+   },
+   {
+      "ds100" : "ONKA",
+      "latlong" : [
+         51.480834960938,
+         5.4813890457153
+      ],
+      "name" : "Kapelle-Biezelinge",
+      "uic" : 8400354
    },
    {
       "ds100" : "RKPD",
@@ -34326,6 +35517,15 @@
       "uic" : 8003235
    },
    {
+      "ds100" : "ONKD",
+      "latlong" : [
+         50.861667633057,
+         5.4727778434753
+      ],
+      "name" : "Kerkrade Centrum",
+      "uic" : 8400355
+   },
+   {
       "ds100" : "BKE",
       "latlong" : [
          51.909578,
@@ -34354,7 +35554,10 @@
    },
    {
       "ds100" : "XNKE",
-      "latlong" : null,
+      "latlong" : [
+         51.9313869,
+         5.45718
+      ],
       "name" : "Kesteren",
       "uic" : 8400359
    },
@@ -34968,6 +36171,15 @@
       "uic" : 8003303
    },
    {
+      "ds100" : "ONKL",
+      "latlong" : [
+         52.17805480957,
+         5.4564285
+      ],
+      "name" : "Klarenbeek",
+      "uic" : 8400361
+   },
+   {
       "ds100" : "BKDF",
       "latlong" : [
          52.021383,
@@ -35200,6 +36412,15 @@
       ],
       "name" : "Klieken",
       "uic" : 8012040
+   },
+   {
+      "ds100" : "ONKLR",
+      "latlong" : [
+         50.866390228271,
+         5.4558334350586
+      ],
+      "name" : "Klimmen-Ransdaal",
+      "uic" : 8400362
    },
    {
       "ds100" : "BKG",
@@ -35722,7 +36943,10 @@
    },
    {
       "ds100" : "XNKB",
-      "latlong" : null,
+      "latlong" : [
+         52.458610534668,
+         5.4338889122009
+      ],
       "name" : "Koog aan de Zaan",
       "uic" : 8400363
    },
@@ -35844,10 +37068,28 @@
       "uic" : 8003415
    },
    {
+      "ds100" : "ONKOM",
+      "latlong" : [
+         52.9028197,
+         5.4251932
+      ],
+      "name" : "Koudum-Molkwerum",
+      "uic" : 8400366
+   },
+   {
       "ds100" : "XTKO",
       "latlong" : null,
       "name" : "Kovarska",
       "uic" : 5401571
+   },
+   {
+      "ds100" : "ONKR",
+      "latlong" : [
+         51.433334350586,
+         5.423063
+      ],
+      "name" : "Krabbendijke",
+      "uic" : 8400367
    },
    {
       "ds100" : "UKR",
@@ -36229,7 +37471,10 @@
    },
    {
       "ds100" : "XNKA",
-      "latlong" : null,
+      "latlong" : [
+         52.49511,
+         5.4222221374512
+      ],
       "name" : "Krommenie-Assendelft",
       "uic" : 8400368
    },
@@ -36295,7 +37540,10 @@
    },
    {
       "ds100" : "XNKR",
-      "latlong" : null,
+      "latlong" : [
+         53.1617362,
+         5.4112885
+      ],
       "name" : "Kropswolde",
       "uic" : 8400369
    },
@@ -36313,6 +37561,15 @@
       ],
       "name" : "Kruft",
       "uic" : 8003455
+   },
+   {
+      "ds100" : "ONKUY",
+      "latlong" : [
+         51.465000152588,
+         5.4106913
+      ],
+      "name" : "Kruiningen-Yerseke",
+      "uic" : 8400370
    },
    {
       "ds100" : "MKRS",
@@ -37369,7 +38626,10 @@
    },
    {
       "ds100" : "XNZLW",
-      "latlong" : null,
+      "latlong" : [
+         51.69111251831,
+         5.4038887023926
+      ],
       "name" : "Lage Zwaluwe",
       "uic" : 8400382
    },
@@ -37561,8 +38821,11 @@
    },
    {
       "ds100" : "XNLG",
-      "latlong" : null,
-      "name" : "Landgraaf",
+      "latlong" : [
+         50.896389007568,
+         6.019166469574
+      ],
+      "name" : "Landgraaf ",
       "uic" : 8400548
    },
    {
@@ -38052,6 +39315,15 @@
       "uic" : 8003560
    },
    {
+      "ds100" : "PNACH",
+      "latlong" : [
+         52.042222,
+         5.3891668319702
+      ],
+      "name" : "Lansingerland-Zoetermeer",
+      "uic" : 8400135
+   },
+   {
       "ds100" : "HLAT",
       "latlong" : [
          52.860749,
@@ -38535,6 +39807,15 @@
       "uic" : 8000225
    },
    {
+      "ds100" : "ONLE",
+      "latlong" : [
+         51.894721984863,
+         5.3705554008484
+      ],
+      "name" : "Leerdam",
+      "uic" : 8400386
+   },
+   {
       "ds100" : "HLST",
       "latlong" : [
          52.509469,
@@ -38545,9 +39826,21 @@
    },
    {
       "ds100" : "XNLW",
-      "latlong" : null,
+      "latlong" : [
+         53.195835113525,
+         5.3699998855591
+      ],
       "name" : "Leeuwarden",
       "uic" : 8400387
+   },
+   {
+      "ds100" : "ONLWC",
+      "latlong" : [
+         53.2021808,
+         5.8422968
+      ],
+      "name" : "Leeuwarden Camminghaburen",
+      "uic" : 8400389
    },
    {
       "ds100" : "ELGD",
@@ -38647,13 +39940,19 @@
    },
    {
       "ds100" : "XNL",
-      "latlong" : null,
+      "latlong" : [
+         52.166110992432,
+         4.4816665649414
+      ],
       "name" : "Leiden Centraal",
       "uic" : 8400390
    },
    {
       "ds100" : "XNLL",
-      "latlong" : null,
+      "latlong" : [
+         52.146945953369,
+         5.31912
+      ],
       "name" : "Leiden Lammenschans",
       "uic" : 8400384
    },
@@ -39169,7 +40468,10 @@
    },
    {
       "ds100" : "XNLY",
-      "latlong" : null,
+      "latlong" : [
+         52.507778167725,
+         5.4727778434753
+      ],
       "name" : "Lelystad Centrum",
       "uic" : 8400394
    },
@@ -39825,6 +41127,15 @@
       "uic" : 8003676
    },
    {
+      "ds100" : "ONLI",
+      "latlong" : [
+         52.01188,
+         6.59641
+      ],
+      "name" : "Lichtenvoorde-Groenlo",
+      "uic" : 8400395
+   },
+   {
       "ds100" : "FLIB",
       "latlong" : null,
       "name" : "Liebenau(Bz Kassel)",
@@ -40269,6 +41580,15 @@
       "uic" : 8100124
    },
    {
+      "ds100" : "ONLOC",
+      "latlong" : [
+         52.166667938232,
+         6.4263887405395
+      ],
+      "name" : "Lochem",
+      "uic" : 8400399
+   },
+   {
       "ds100" : "MLCH",
       "latlong" : [
          48.128247,
@@ -40405,6 +41725,15 @@
       ],
       "name" : "Loppenhausen",
       "uic" : 8003749
+   },
+   {
+      "ds100" : "ONLO",
+      "latlong" : [
+         53.3347145,
+         6.7472625
+      ],
+      "name" : "Loppersum",
+      "uic" : 8400403
    },
    {
       "ds100" : "FLOR",
@@ -40846,6 +42175,15 @@
       ],
       "name" : "Lunestedt",
       "uic" : 8003799
+   },
+   {
+      "ds100" : "ONLU",
+      "latlong" : [
+         52.085277557373,
+         5.6244444847107
+      ],
+      "name" : "Lunteren",
+      "uic" : 8400405
    },
    {
       "ds100" : "XFLU",
@@ -41473,6 +42811,33 @@
       ],
       "name" : "Lützow",
       "uic" : 8012274
+   },
+   {
+      "ds100" : "PNABN",
+      "latlong" : [
+         51.30376236035,
+         5.2919445037842
+      ],
+      "name" : "Maarheeze",
+      "uic" : 8400088
+   },
+   {
+      "ds100" : "ONMN",
+      "latlong" : [
+         52.064167022705,
+         5.3699998855591
+      ],
+      "name" : "Maarn",
+      "uic" : 8400417
+   },
+   {
+      "ds100" : "XNMS",
+      "latlong" : [
+         52.135276794434,
+         5.0336112976074
+      ],
+      "name" : "Maarssen",
+      "uic" : 8400419
    },
    {
       "ds100" : "AMSB",
@@ -42198,6 +43563,15 @@
       "uic" : 8270690
    },
    {
+      "ds100" : "ONMG",
+      "latlong" : [
+         53.1296368,
+         5.7131996
+      ],
+      "name" : "Mantgum",
+      "uic" : 8400427
+   },
+   {
       "ds100" : "RMBO",
       "latlong" : [
          48.033683,
@@ -42328,6 +43702,15 @@
       "latlong" : null,
       "name" : "Maribor",
       "uic" : 7900006
+   },
+   {
+      "ds100" : "ONMB",
+      "latlong" : [
+         52.50944519043,
+         6.5752778053284
+      ],
+      "name" : "Marienberg (NL)",
+      "uic" : 8400428
    },
    {
       "ds100" : "DMG",
@@ -42670,7 +44053,10 @@
    },
    {
       "ds100" : "XNMH",
-      "latlong" : null,
+      "latlong" : [
+         53.1607232,
+         6.7402989
+      ],
       "name" : "Martenshoek",
       "uic" : 8400430
    },
@@ -43095,6 +44481,15 @@
       "uic" : 8004694
    },
    {
+      "ds100" : "XNMES",
+      "latlong" : [
+         50.882879392551,
+         5.7509994506836
+      ],
+      "name" : "Meerssen",
+      "uic" : 8400434
+   },
+   {
       "ds100" : "AMSS",
       "latlong" : [
          53.754222,
@@ -43491,6 +44886,15 @@
       "uic" : 8508297
    },
    {
+      "ds100" : "ONMP",
+      "latlong" : [
+         52.69083404541,
+         6.1975002288818
+      ],
+      "name" : "Meppel",
+      "uic" : 8400435
+   },
+   {
       "ds100" : "HMEP",
       "latlong" : [
          52.696021,
@@ -43873,6 +45277,15 @@
       ],
       "name" : "Michendorf",
       "uic" : 8010233
+   },
+   {
+      "ds100" : "ONM",
+      "latlong" : [
+         51.494720458984,
+         3.6172223091126
+      ],
+      "name" : "Middelburg",
+      "uic" : 8400436
    },
    {
       "ds100" : "XDMF",
@@ -44419,6 +45832,15 @@
       ],
       "name" : "Monzingen",
       "uic" : 8004080
+   },
+   {
+      "ds100" : "PNABI",
+      "latlong" : [
+         51.766262,
+         5.21764
+      ],
+      "name" : "Mook Molenhoek",
+      "uic" : 8400077
    },
    {
       "ds100" : "AMBH",
@@ -46141,6 +47563,15 @@
       ],
       "name" : "Müssen",
       "uic" : 8004177
+   },
+   {
+      "ds100" : "ONN",
+      "latlong" : [
+         52.280277252197,
+         5.1569442749023
+      ],
+      "name" : "Naarden-Bussum",
+      "uic" : 8400452
    },
    {
       "ds100" : "NNAB",
@@ -48750,6 +50181,24 @@
       "uic" : 8400454
    },
    {
+      "ds100" : "ONNV",
+      "latlong" : [
+         52.258888244629,
+         4.6455554962158
+      ],
+      "name" : "Nieuw Vennep",
+      "uic" : 8400460
+   },
+   {
+      "ds100" : "ONNW",
+      "latlong" : [
+         51.965278625488,
+         4.6169443130493
+      ],
+      "name" : "Nieuwerkerk a. d. IJssel",
+      "uic" : 8400455
+   },
+   {
       "ds100" : "KNIV",
       "latlong" : [
          51.123717,
@@ -48766,6 +50215,15 @@
       ],
       "name" : "Nievern",
       "uic" : 8004435
+   },
+   {
+      "ds100" : "ONNK",
+      "latlong" : [
+         52.222221374512,
+         5.4938888549805
+      ],
+      "name" : "Nijkerk",
+      "uic" : 8400469
    },
    {
       "ds100" : "XNNM",
@@ -48786,6 +50244,15 @@
       "uic" : 8400475
    },
    {
+      "ds100" : "PNABY",
+      "latlong" : [
+         51.8273,
+         5.1819443702698
+      ],
+      "name" : "Nijmegen Goffert",
+      "uic" : 8400109
+   },
+   {
       "ds100" : "ONNMH",
       "latlong" : [
          51.826946258545,
@@ -48793,6 +50260,24 @@
       ],
       "name" : "Nijmegen Heyendaal",
       "uic" : 8400468
+   },
+   {
+      "ds100" : "PNNL",
+      "latlong" : [
+         51.861811,
+         5.1791667938232
+      ],
+      "name" : "Nijmegen Lent",
+      "uic" : 8400016
+   },
+   {
+      "ds100" : "ONNVD",
+      "latlong" : [
+         52.366111,
+         6.462
+      ],
+      "name" : "Nijverdal",
+      "uic" : 8400472
    },
    {
       "ds100" : "TNK",
@@ -49273,6 +50758,24 @@
       ],
       "name" : "Nufringen",
       "uic" : 8004490
+   },
+   {
+      "ds100" : "ONNU",
+      "latlong" : [
+         52.370834350586,
+         5.7852778434753
+      ],
+      "name" : "Nunspeet",
+      "uic" : 8400466
+   },
+   {
+      "ds100" : "ONNUT",
+      "latlong" : [
+         50.919445037842,
+         5.8927779197693
+      ],
+      "name" : "Nuth",
+      "uic" : 8400467
    },
    {
       "ds100" : "NNBS",
@@ -50835,6 +52338,15 @@
       "uic" : 8004662
    },
    {
+      "ds100" : "ONOI",
+      "latlong" : [
+         51.582221984863,
+         5.1941666603088
+      ],
+      "name" : "Oisterwijk",
+      "uic" : 8400482
+   },
+   {
       "ds100" : "FOK",
       "latlong" : [
          50.252664,
@@ -50979,6 +52491,15 @@
       "uic" : 8400483
    },
    {
+      "ds100" : "XNOD",
+      "latlong" : [
+         52.30638885498,
+         6.9347224235535
+      ],
+      "name" : "Oldenzaal",
+      "uic" : 8400483
+   },
+   {
       "ds100" : "XBOL",
       "latlong" : null,
       "name" : "Olen",
@@ -51024,6 +52545,15 @@
       "uic" : 8004677
    },
    {
+      "ds100" : "ONOL",
+      "latlong" : [
+         52.334720611572,
+         6.1130557060242
+      ],
+      "name" : "Olst (NL)",
+      "uic" : 8400486
+   },
+   {
       "ds100" : "XSOL",
       "latlong" : [
          47.3519295324592,
@@ -51034,7 +52564,10 @@
    },
    {
       "ds100" : "XNOM",
-      "latlong" : null,
+      "latlong" : [
+         52.50944519043,
+         6.4158334732056
+      ],
       "name" : "Ommen",
       "uic" : 8400487
    },
@@ -51051,6 +52584,15 @@
       "uic" : 8800030
    },
    {
+      "ds100" : "ONOB",
+      "latlong" : [
+         51.994998931885,
+         5.8400001525879
+      ],
+      "name" : "Oosterbeek",
+      "uic" : 8400489
+   },
+   {
       "ds100" : "XSZP",
       "latlong" : [
          47.4299514491701,
@@ -51058,6 +52600,15 @@
       ],
       "name" : "Opfikon",
       "uic" : 8503340
+   },
+   {
+      "ds100" : "ONOP",
+      "latlong" : [
+         51.9261615,
+         5.6371145
+      ],
+      "name" : "Opheusden",
+      "uic" : 8400494
    },
    {
       "ds100" : "KOPL",
@@ -51307,9 +52858,21 @@
    },
    {
       "ds100" : "XNO",
-      "latlong" : null,
+      "latlong" : [
+         51.765556335449,
+         5.5322222709656
+      ],
       "name" : "Oss",
       "uic" : 8400495
+   },
+   {
+      "ds100" : "ONOSW",
+      "latlong" : [
+         51.758056640625,
+         5.5055556297302
+      ],
+      "name" : "Oss West",
+      "uic" : 8400496
    },
    {
       "ds100" : "EBRO",
@@ -51786,6 +53349,15 @@
       "uic" : 8004738
    },
    {
+      "ds100" : "ONOU",
+      "latlong" : [
+         51.587776184082,
+         4.5333333015442
+      ],
+      "name" : "Oudenbosch",
+      "uic" : 8400498
+   },
+   {
       "ds100" : "XDOU",
       "latlong" : null,
       "name" : "Outrup st",
@@ -51811,7 +53383,10 @@
    },
    {
       "ds100" : "XNOV",
-      "latlong" : null,
+      "latlong" : [
+         52.391109466553,
+         4.6061110496521
+      ],
       "name" : "Overveen",
       "uic" : 8400501
    },
@@ -53850,6 +55425,33 @@
       "uic" : 8012686
    },
    {
+      "ds100" : "ONPU",
+      "latlong" : [
+         52.50305557251,
+         4.9536108970642
+      ],
+      "name" : "Purmerend",
+      "uic" : 8400508
+   },
+   {
+      "ds100" : "ONPUO",
+      "latlong" : [
+         52.511390686035,
+         4.9683332443237
+      ],
+      "name" : "Purmerend Overwhere",
+      "uic" : 8400506
+   },
+   {
+      "ds100" : "PNABD",
+      "latlong" : [
+         52.496590632542,
+         5.0511112213135
+      ],
+      "name" : "Purmerend Weidevenne",
+      "uic" : 8400046
+   },
+   {
       "ds100" : "XAPZ",
       "latlong" : null,
       "name" : "Pusarnitz",
@@ -53872,6 +55474,15 @@
       ],
       "name" : "Putbus",
       "uic" : 8010401
+   },
+   {
+      "ds100" : "ONPT",
+      "latlong" : [
+         52.264999389648,
+         5.5752778053284
+      ],
+      "name" : "Putten",
+      "uic" : 8400509
    },
    {
       "ds100" : "APU",
@@ -54124,6 +55735,15 @@
       ],
       "name" : "Raaba",
       "uic" : 8100193
+   },
+   {
+      "ds100" : "ONRA",
+      "latlong" : [
+         52.391666412354,
+         6.2775001525879
+      ],
+      "name" : "Raalte",
+      "uic" : 8400513
    },
    {
       "ds100" : "DRAB",
@@ -54685,6 +56305,15 @@
       ],
       "name" : "Ravensburg",
       "uic" : 8004965
+   },
+   {
+      "ds100" : "ONRAV",
+      "latlong" : [
+         51.794166564941,
+         5.6358332633972
+      ],
+      "name" : "Ravenstein",
+      "uic" : 8400515
    },
    {
       "ds100" : "XIREC",
@@ -55497,6 +57126,15 @@
       "uic" : 8101912
    },
    {
+      "ds100" : "ONRE",
+      "latlong" : [
+         51.28321916653,
+         6.0789585113525
+      ],
+      "name" : "Reuver",
+      "uic" : 8400518
+   },
+   {
       "ds100" : "LRE",
       "latlong" : [
          51.503201,
@@ -55522,6 +57160,15 @@
       ],
       "name" : "Rheda-Wiedenbrück",
       "uic" : 8000315
+   },
+   {
+      "ds100" : "ONRH",
+      "latlong" : [
+         52.0101,
+         6.0314
+      ],
+      "name" : "Rheden (NL)",
+      "uic" : 8400519
    },
    {
       "ds100" : "KRBA",
@@ -55675,6 +57322,15 @@
       ],
       "name" : "Rheinzabern Rappengasse",
       "uic" : 8005071
+   },
+   {
+      "ds100" : "ONRHN",
+      "latlong" : [
+         51.958610534668,
+         5.5783333778381
+      ],
+      "name" : "Rhenen",
+      "uic" : 8400517
    },
    {
       "ds100" : "KRHE",
@@ -55969,6 +57625,33 @@
       "latlong" : null,
       "name" : "Riffelriß, Grainau",
       "uic" : 966907
+   },
+   {
+      "ds100" : "ONRIS",
+      "latlong" : [
+         52.3122215271,
+         6.5202779769897
+      ],
+      "name" : "Rijssen",
+      "uic" : 8400538
+   },
+   {
+      "ds100" : "ONRIW",
+      "latlong" : [
+         52.039722442627,
+         4.3191666603088
+      ],
+      "name" : "Rijswijk",
+      "uic" : 8400505
+   },
+   {
+      "ds100" : "ONRIB",
+      "latlong" : [
+         51.422779083252,
+         4.1611108779907
+      ],
+      "name" : "Rilland-Bath",
+      "uic" : 8400521
    },
    {
       "ds100" : "RRIM",
@@ -56283,6 +57966,15 @@
       "uic" : 8601996
    },
    {
+      "ds100" : "XNRM",
+      "latlong" : [
+         51.193054199219,
+         5.9941668510437
+      ],
+      "name" : "Roermond",
+      "uic" : 8400523
+   },
+   {
       "ds100" : "XFRSW",
       "latlong" : null,
       "name" : "Roeschwoog",
@@ -56517,6 +58209,15 @@
       "uic" : 8005161
    },
    {
+      "ds100" : "ONRS",
+      "latlong" : [
+         53.421262,
+         6.7587
+      ],
+      "name" : "Roodeschool",
+      "uic" : 8400525
+   },
+   {
       "ds100" : "XLRT",
       "latlong" : null,
       "name" : "Roodt/Syre",
@@ -56524,7 +58225,10 @@
    },
    {
       "ds100" : "XNRD",
-      "latlong" : null,
+      "latlong" : [
+         51.540279388428,
+         4.4583334922791
+      ],
       "name" : "Roosendaal",
       "uic" : 8400526
    },
@@ -56653,6 +58357,15 @@
       "latlong" : null,
       "name" : "Roskilde st",
       "uic" : 8602026
+   },
+   {
+      "ds100" : "ONROS",
+      "latlong" : [
+         51.714721679688,
+         5.3680553436279
+      ],
+      "name" : "Rosmalen",
+      "uic" : 8400524
    },
    {
       "ds100" : "WR",
@@ -57346,6 +59059,15 @@
       ],
       "name" : "Ruthenbeck",
       "uic" : 8012824
+   },
+   {
+      "ds100" : "ONRU",
+      "latlong" : [
+         52.0810888,
+         6.4492656
+      ],
+      "name" : "Ruurlo",
+      "uic" : 8400537
    },
    {
       "ds100" : "XTRY",
@@ -58323,6 +60045,24 @@
       "uic" : 8005289
    },
    {
+      "ds100" : "ONSN",
+      "latlong" : [
+         52.43388748169,
+         4.6325001716614
+      ],
+      "name" : "Santpoort Noord",
+      "uic" : 8400543
+   },
+   {
+      "ds100" : "ONSZ",
+      "latlong" : [
+         52.419723510742,
+         4.6313886642456
+      ],
+      "name" : "Santpoort Zuid",
+      "uic" : 8400544
+   },
+   {
       "ds100" : "XRXSJ",
       "latlong" : null,
       "name" : "Sapjane(Gr)",
@@ -58330,7 +60070,10 @@
    },
    {
       "ds100" : "XNSO",
-      "latlong" : null,
+      "latlong" : [
+         53.1589183,
+         6.7955648
+      ],
       "name" : "Sappemeer Oost",
       "uic" : 8400545
    },
@@ -58396,6 +60139,15 @@
       ],
       "name" : "Sasbach am Kaiserstuhl",
       "uic" : 8007287
+   },
+   {
+      "ds100" : "PNABS",
+      "latlong" : [
+         52.215278,
+         4.8936109542847
+      ],
+      "name" : "Sassenheim",
+      "uic" : 8400603
    },
    {
       "ds100" : "ESAS",
@@ -58473,6 +60225,15 @@
       "uic" : 8704969
    },
    {
+      "ds100" : "ONSAU",
+      "latlong" : [
+         53.29113,
+         6.5404
+      ],
+      "name" : "Sauwerd",
+      "uic" : 8400547
+   },
+   {
       "ds100" : "XFSV",
       "latlong" : null,
       "name" : "Saverne",
@@ -58531,6 +60292,15 @@
       ],
       "name" : "Schaftlach",
       "uic" : 8005311
+   },
+   {
+      "ds100" : "ONSG",
+      "latlong" : [
+         52.784442901611,
+         4.8052778244019
+      ],
+      "name" : "Schagen",
+      "uic" : 8400549
    },
    {
       "ds100" : "RSAI",
@@ -58669,7 +60439,10 @@
    },
    {
       "ds100" : "XNSE",
-      "latlong" : null,
+      "latlong" : [
+         53.1655362,
+         6.9777775
+      ],
       "name" : "Scheemda",
       "uic" : 8400551
    },
@@ -58771,7 +60544,10 @@
    },
    {
       "ds100" : "XNSC",
-      "latlong" : null,
+      "latlong" : [
+         51.921243812803,
+         4.4089937210083
+      ],
       "name" : "Schiedam Centrum",
       "uic" : 8400553
    },
@@ -58887,6 +60663,15 @@
       "uic" : 8007280
    },
    {
+      "ds100" : "ONSIG",
+      "latlong" : [
+         50.856388092041,
+         5.8722224235535
+      ],
+      "name" : "Schin op Geul",
+      "uic" : 8400555
+   },
+   {
       "ds100" : "XSSF",
       "latlong" : [
          47.1764022814468,
@@ -58896,8 +60681,20 @@
       "uic" : 8503285
    },
    {
+      "ds100" : "ONSI",
+      "latlong" : [
+         50.939167022705,
+         5.8744444847107
+      ],
+      "name" : "Schinnen",
+      "uic" : 8400554
+   },
+   {
       "ds100" : "XNSP",
-      "latlong" : null,
+      "latlong" : [
+         52.30944442749,
+         4.7619442939758
+      ],
       "name" : "Schiphol (Airport)",
       "uic" : 8400561
    },
@@ -61519,7 +63316,10 @@
    },
    {
       "ds100" : "XNSI",
-      "latlong" : null,
+      "latlong" : [
+         51.001667022705,
+         5.8586111068726
+      ],
       "name" : "Sittard",
       "uic" : 8400564
    },
@@ -61557,6 +63357,24 @@
       "uic" : 7800015
    },
    {
+      "ds100" : "ONSL",
+      "latlong" : [
+         51.829723358154,
+         4.7783331871033
+      ],
+      "name" : "Sliedrecht",
+      "uic" : 8400565
+   },
+   {
+      "ds100" : "PNABR",
+      "latlong" : [
+         51.829722,
+         4.8111109733581
+      ],
+      "name" : "Sliedrecht Baanhoek",
+      "uic" : 8400497
+   },
+   {
       "ds100" : "XPSLB",
       "latlong" : null,
       "name" : "Slubice",
@@ -61582,9 +63400,21 @@
    },
    {
       "ds100" : "XNSK",
-      "latlong" : null,
+      "latlong" : [
+         53.0328688,
+         5.6523969
+      ],
       "name" : "Sneek",
       "uic" : 8400566
+   },
+   {
+      "ds100" : "ONSKN",
+      "latlong" : [
+         53.0409319,
+         5.6631808
+      ],
+      "name" : "Sneek Noord",
+      "uic" : 8400574
    },
    {
       "ds100" : "ESOT",
@@ -61594,6 +63424,33 @@
       ],
       "name" : "Soest",
       "uic" : 8000076
+   },
+   {
+      "ds100" : "ONSOZ",
+      "latlong" : [
+         52.165279388428,
+         5.3030557632446
+      ],
+      "name" : "Soest Zuid",
+      "uic" : 8400571
+   },
+   {
+      "ds100" : "ONSO",
+      "latlong" : [
+         52.173332214355,
+         5.3099999427795
+      ],
+      "name" : "Soest(NL)",
+      "uic" : 8400567
+   },
+   {
+      "ds100" : "ONSOK",
+      "latlong" : [
+         52.183612823486,
+         5.3000001907349
+      ],
+      "name" : "Soestdijk",
+      "uic" : 8400569
    },
    {
       "ds100" : "DSOL",
@@ -61948,6 +63805,15 @@
       ],
       "name" : "Sparrieshoop",
       "uic" : 8007066
+   },
+   {
+      "ds100" : "ONSP",
+      "latlong" : [
+         50.94327,
+         5.850529
+      ],
+      "name" : "Spaubeek",
+      "uic" : 8400572
    },
    {
       "ds100" : "KSPA",
@@ -62760,6 +64626,15 @@
       "uic" : 8007333
    },
    {
+      "ds100" : "ONSVR",
+      "latlong" : [
+         52.8865535,
+         5.3600212
+      ],
+      "name" : "Stavoren",
+      "uic" : 8400575
+   },
+   {
       "ds100" : "LSF",
       "latlong" : [
          51.851258,
@@ -62796,8 +64671,20 @@
       "uic" : 8005682
    },
    {
+      "ds100" : "ONSTD",
+      "latlong" : [
+         53.3262092,
+         6.6875551
+      ],
+      "name" : "Stedum",
+      "uic" : 8400576
+   },
+   {
       "ds100" : "XNSW",
-      "latlong" : null,
+      "latlong" : [
+         52.791510992432,
+         6.1145557632446
+      ],
       "name" : "Steenwijk",
       "uic" : 8400578
    },
@@ -64279,7 +66166,10 @@
    },
    {
       "ds100" : "XNSU",
-      "latlong" : null,
+      "latlong" : [
+         51.061389923096,
+         5.8630557060242
+      ],
       "name" : "Susteren",
       "uic" : 8400582
    },
@@ -64300,6 +66190,15 @@
       "latlong" : null,
       "name" : "Svor",
       "uic" : 5400285
+   },
+   {
+      "ds100" : "ONSW",
+      "latlong" : [
+         51.23582,
+         6.03228
+      ],
+      "name" : "Swalmen",
+      "uic" : 8400583
    },
    {
       "ds100" : "XPSWB",
@@ -64827,6 +66726,15 @@
       "uic" : 8500028
    },
    {
+      "ds100" : "ONTE",
+      "latlong" : [
+         51.33894,
+         6.14253
+      ],
+      "name" : "Tegelen",
+      "uic" : 8400591
+   },
+   {
       "ds100" : "MTE",
       "latlong" : [
          47.713689,
@@ -64987,6 +66895,15 @@
       "latlong" : null,
       "name" : "Teplice v Cechach",
       "uic" : 5400101
+   },
+   {
+      "ds100" : "ONTBG",
+      "latlong" : [
+         51.9224549,
+         6.3642466
+      ],
+      "name" : "Terborg",
+      "uic" : 8400592
    },
    {
       "ds100" : "XPTE",
@@ -65364,6 +67281,24 @@
       "uic" : 8700529
    },
    {
+      "ds100" : "ONTL",
+      "latlong" : [
+         51.889446258545,
+         5.4222221374512
+      ],
+      "name" : "Tiel",
+      "uic" : 8400596
+   },
+   {
+      "ds100" : "PNAAU",
+      "latlong" : [
+         51.873889923096,
+         4.7208333015442
+      ],
+      "name" : "Tiel Passewaaij",
+      "uic" : 8400036
+   },
+   {
       "ds100" : "XBTI",
       "latlong" : null,
       "name" : "Tienen",
@@ -65380,8 +67315,29 @@
    },
    {
       "ds100" : "XNT",
-      "latlong" : null,
+      "latlong" : [
+         51.560554504395,
+         5.0836110115051
+      ],
       "name" : "Tilburg",
+      "uic" : 8400597
+   },
+   {
+      "ds100" : "PNAAF",
+      "latlong" : [
+         51.573612213135,
+         4.7044444084167
+      ],
+      "name" : "Tilburg Reeshof",
+      "uic" : 8400021
+   },
+   {
+      "ds100" : "ONTW",
+      "latlong" : [
+         51.564998626709,
+         5.0511112213135
+      ],
+      "name" : "Tilburg Universiteit",
       "uic" : 8400597
    },
    {
@@ -66102,6 +68058,15 @@
       "uic" : 8005927
    },
    {
+      "ds100" : "PNAAV",
+      "latlong" : [
+         52.237777709961,
+         4.7005553245544
+      ],
+      "name" : "Twello",
+      "uic" : 8400037
+   },
+   {
       "ds100" : "FTW",
       "latlong" : [
          51.33626,
@@ -66409,9 +68374,30 @@
    },
    {
       "ds100" : "XNUI",
-      "latlong" : null,
+      "latlong" : [
+         52.521667480469,
+         4.7016668319702
+      ],
       "name" : "Uitgeest",
       "uic" : 8400615
+   },
+   {
+      "ds100" : "ONUHZ",
+      "latlong" : [
+         53.4099568,
+         6.6748869
+      ],
+      "name" : "Uithuizen",
+      "uic" : 8400617
+   },
+   {
+      "ds100" : "ONUHM",
+      "latlong" : [
+         53.4145845,
+         6.7202975
+      ],
+      "name" : "Uithuizermeeden",
+      "uic" : 8400618
    },
    {
       "ds100" : "DUL",
@@ -67011,6 +68997,15 @@
       "uic" : 8006041
    },
    {
+      "ds100" : "ONUQT",
+      "latlong" : [
+         53.4014742,
+         6.6093776
+      ],
+      "name" : "Usquert",
+      "uic" : 8400619
+   },
+   {
       "ds100" : "FUS",
       "latlong" : [
          51.280542,
@@ -67065,6 +69060,15 @@
       "uic" : 8400623
    },
    {
+      "ds100" : "PNAAL",
+      "latlong" : [
+         52.087776184082,
+         4.6577777862549
+      ],
+      "name" : "Utrecht Maliebaan",
+      "uic" : 8400027
+   },
+   {
       "ds100" : "ONUO",
       "latlong" : [
          52.110000610352,
@@ -67074,13 +69078,31 @@
       "uic" : 8400620
    },
    {
+      "ds100" : "PNAAG",
+      "latlong" : [
+         52.1000753,
+         4.6497220993042
+      ],
+      "name" : "Utrecht Terwijde",
+      "uic" : 8400022
+   },
+   {
       "ds100" : "PNUVR",
       "latlong" : [
          52.078889,
-         5.121667
+         5.1216674
       ],
       "name" : "Utrecht Vaartsche Rijn",
       "uic" : 8400606
+   },
+   {
+      "ds100" : "PNAAX",
+      "latlong" : [
+         52.103055,
+         4.6483335494995
+      ],
+      "name" : "Utrecht Zuilen",
+      "uic" : 8400039
    },
    {
       "ds100" : "MUTG",
@@ -67222,6 +69244,15 @@
    },
    {
       "ds100" : "XNVB",
+      "latlong" : [
+         50.869720458984,
+         5.8322219848633
+      ],
+      "name" : "Valkenburg(NL)",
+      "uic" : 8400632
+   },
+   {
+      "ds100" : "XNVB",
       "latlong" : null,
       "name" : "Valkenburg(NL)",
       "uic" : 8400632
@@ -67299,6 +69330,15 @@
       "uic" : 5456709
    },
    {
+      "ds100" : "ONVS",
+      "latlong" : [
+         51.937257,
+         6.458839
+      ],
+      "name" : "Varsseveld",
+      "uic" : 8400635
+   },
+   {
       "ds100" : "AVF",
       "latlong" : [
          53.199049,
@@ -67344,8 +69384,44 @@
       "uic" : 8087020
    },
    {
+      "ds100" : "PNABO",
+      "latlong" : [
+         53.10324,
+         4.6455554962158
+      ],
+      "name" : "Veendam",
+      "uic" : 8400636
+   },
+   {
+      "ds100" : "ONVEC",
+      "latlong" : [
+         52.020000457764,
+         5.548611164093
+      ],
+      "name" : "Veenendaal Centrum",
+      "uic" : 8400627
+   },
+   {
+      "ds100" : "ONVEW",
+      "latlong" : [
+         52.028057098389,
+         5.531388759613
+      ],
+      "name" : "Veenendaal West",
+      "uic" : 8400628
+   },
+   {
       "ds100" : "XNVK",
       "latlong" : null,
+      "name" : "Veenendaal-De Klomp",
+      "uic" : 8400637
+   },
+   {
+      "ds100" : "XNVK",
+      "latlong" : [
+         52.045833587646,
+         5.5738887786865
+      ],
       "name" : "Veenendaal-De Klomp",
       "uic" : 8400637
    },
@@ -67488,6 +69564,15 @@
       "uic" : 8006068
    },
    {
+      "ds100" : "ONVL",
+      "latlong" : [
+         51.994720458984,
+         5.9802780151367
+      ],
+      "name" : "Velp",
+      "uic" : 8400640
+   },
+   {
       "ds100" : "BVLT",
       "latlong" : [
          52.684889,
@@ -67525,6 +69610,24 @@
       "latlong" : null,
       "name" : "Venlo",
       "uic" : 8400644
+   },
+   {
+      "ds100" : "XNVL",
+      "latlong" : [
+         51.363609313965,
+         6.1727776527405
+      ],
+      "name" : "Venlo",
+      "uic" : 8400644
+   },
+   {
+      "ds100" : "ONV",
+      "latlong" : [
+         51.526568099007,
+         6.0141777992248
+      ],
+      "name" : "Venray",
+      "uic" : 8400646
    },
    {
       "ds100" : "XIVT",
@@ -67702,6 +69805,15 @@
       ],
       "name" : "Vierkirchen-Esterhofen",
       "uic" : 8001922
+   },
+   {
+      "ds100" : "ONVI",
+      "latlong" : [
+         51.59193,
+         5.99714
+      ],
+      "name" : "Vierlingsbeek",
+      "uic" : 8400647
    },
    {
       "ds100" : "UVU",
@@ -67938,10 +70050,37 @@
       "uic" : 8400651
    },
    {
+      "ds100" : "XNVT",
+      "latlong" : [
+         52.103054046631,
+         5.0108332633972
+      ],
+      "name" : "Vleuten",
+      "uic" : 8400651
+   },
+   {
       "ds100" : "XNVI",
       "latlong" : null,
       "name" : "Vlissingen",
       "uic" : 8400652
+   },
+   {
+      "ds100" : "XNVI",
+      "latlong" : [
+         51.445835113525,
+         3.5952777862549
+      ],
+      "name" : "Vlissingen",
+      "uic" : 8400652
+   },
+   {
+      "ds100" : "ONVIS",
+      "latlong" : [
+         51.464721679688,
+         3.5952777862549
+      ],
+      "name" : "Vlissingen Souburg",
+      "uic" : 8400653
    },
    {
       "ds100" : "HVLO",
@@ -67960,6 +70099,15 @@
       ],
       "name" : "Voerde(Niederrhein)",
       "uic" : 8006098
+   },
+   {
+      "ds100" : "ONVOD",
+      "latlong" : [
+         50.887222290039,
+         5.9302778244019
+      ],
+      "name" : "Voerendaal",
+      "uic" : 8400656
    },
    {
       "ds100" : "WVOG",
@@ -68088,6 +70236,51 @@
       "uic" : 8006112
    },
    {
+      "ds100" : "ONVOB",
+      "latlong" : [
+         52.066665649414,
+         4.3594446182251
+      ],
+      "name" : "Voorburg",
+      "uic" : 8400658
+   },
+   {
+      "ds100" : "ONVOO",
+      "latlong" : [
+         52.224445343018,
+         4.4844446182251
+      ],
+      "name" : "Voorhout",
+      "uic" : 8400655
+   },
+   {
+      "ds100" : "ONVOS",
+      "latlong" : [
+         52.1252784729,
+         4.4324998855591
+      ],
+      "name" : "Voorschoten",
+      "uic" : 8400659
+   },
+   {
+      "ds100" : "PNAAW",
+      "latlong" : [
+         52.157501220703,
+         4.5533332824707
+      ],
+      "name" : "Voorst-Empe",
+      "uic" : 8400038
+   },
+   {
+      "ds100" : "ONVOR",
+      "latlong" : [
+         52.1071949,
+         6.3170457
+      ],
+      "name" : "Vorden",
+      "uic" : 8400661
+   },
+   {
       "ds100" : "XDVB",
       "latlong" : null,
       "name" : "Vordingborg st",
@@ -68139,10 +70332,37 @@
       "uic" : 8007068
    },
    {
+      "ds100" : "ONVZV",
+      "latlong" : [
+         52.40203,
+         6.60041
+      ],
+      "name" : "Vriezenveen",
+      "uic" : 8400664
+   },
+   {
       "ds100" : "XDVM",
       "latlong" : null,
       "name" : "Vroegum st",
       "uic" : 8602914
+   },
+   {
+      "ds100" : "ONVRH",
+      "latlong" : [
+         52.4571921,
+         6.5696679
+      ],
+      "name" : "Vroomshoop",
+      "uic" : 8400666
+   },
+   {
+      "ds100" : "ONVU",
+      "latlong" : [
+         51.655555725098,
+         5.2919445037842
+      ],
+      "name" : "Vught",
+      "uic" : 8400667
    },
    {
       "ds100" : "XTVP",
@@ -68284,6 +70504,33 @@
       ],
       "name" : "Wackershofen",
       "uic" : 8006135
+   },
+   {
+      "ds100" : "ONWA",
+      "latlong" : [
+         52.044166564941,
+         4.6497220993042
+      ],
+      "name" : "Waddinxveen",
+      "uic" : 8400675
+   },
+   {
+      "ds100" : "ONWAN",
+      "latlong" : [
+         52.055000305176,
+         4.6483335494995
+      ],
+      "name" : "Waddinxveen Noord",
+      "uic" : 8400674
+   },
+   {
+      "ds100" : "PNXTL",
+      "latlong" : [
+         52.02725,
+         4.6491
+      ],
+      "name" : "Waddinxveen Triangel",
+      "uic" : 8400677
    },
    {
       "ds100" : "NWAF",
@@ -68904,6 +71151,15 @@
       "uic" : 8013232
    },
    {
+      "ds100" : "ONWAR",
+      "latlong" : [
+         53.3908431,
+         6.5671364
+      ],
+      "name" : "Warffum",
+      "uic" : 8400679
+   },
+   {
       "ds100" : "DWAB",
       "latlong" : [
          50.668495,
@@ -69222,6 +71478,15 @@
       "uic" : 8400684
    },
    {
+      "ds100" : "XNWT",
+      "latlong" : [
+         51.248611450195,
+         5.7036108970642
+      ],
+      "name" : "Weert",
+      "uic" : 8400684
+   },
+   {
       "ds100" : "DWSN",
       "latlong" : [
          50.936358,
@@ -69233,6 +71498,15 @@
    {
       "ds100" : "XNWS",
       "latlong" : null,
+      "name" : "Weesp",
+      "uic" : 8400685
+   },
+   {
+      "ds100" : "XNWS",
+      "latlong" : [
+         52.3127784729,
+         5.0430555343628
+      ],
       "name" : "Weesp",
       "uic" : 8400685
    },
@@ -69313,6 +71587,15 @@
       ],
       "name" : "Wehdel",
       "uic" : 8007812
+   },
+   {
+      "ds100" : "ONWEL",
+      "latlong" : [
+         51.9578065,
+         6.213844
+      ],
+      "name" : "Wehl",
+      "uic" : 8400686
    },
    {
       "ds100" : "SWE",
@@ -70515,6 +72798,15 @@
       "uic" : 8006373
    },
    {
+      "ds100" : "PNABT",
+      "latlong" : [
+         51.96286,
+         4.4844446182251
+      ],
+      "name" : "Westervoort",
+      "uic" : 8400688
+   },
+   {
       "ds100" : "DWES",
       "latlong" : [
          51.137616,
@@ -70612,6 +72904,15 @@
       ],
       "name" : "Wetzlar",
       "uic" : 8000383
+   },
+   {
+      "ds100" : "ONWEZ",
+      "latlong" : [
+         52.454166412354,
+         6.0025000572205
+      ],
+      "name" : "Wezep",
+      "uic" : 8400690
    },
    {
       "ds100" : "MWS",
@@ -70806,6 +73107,15 @@
       "uic" : 711550
    },
    {
+      "ds100" : "ONWID",
+      "latlong" : [
+         52.361389160156,
+         6.5916666984558
+      ],
+      "name" : "Wierden",
+      "uic" : 8400691
+   },
+   {
       "ds100" : "HWRN",
       "latlong" : [
          52.892588,
@@ -70984,6 +73294,24 @@
       ],
       "name" : "Wiesthal",
       "uic" : 8006426
+   },
+   {
+      "ds100" : "ONWCH",
+      "latlong" : [
+         51.811668395996,
+         5.730833530426
+      ],
+      "name" : "Wijchen",
+      "uic" : 8400710
+   },
+   {
+      "ds100" : "ONWIH",
+      "latlong" : [
+         52.390277862549,
+         6.1405553817749
+      ],
+      "name" : "Wijhe",
+      "uic" : 8400711
    },
    {
       "ds100" : "XSWI",
@@ -71403,6 +73731,15 @@
       "uic" : 8400696
    },
    {
+      "ds100" : "XNWI",
+      "latlong" : [
+         53.1392377,
+         7.035101
+      ],
+      "name" : "Winschoten",
+      "uic" : 8400696
+   },
+   {
       "ds100" : "AWI",
       "latlong" : [
          53.353839,
@@ -71410,6 +73747,15 @@
       ],
       "name" : "Winsen(Luhe)",
       "uic" : 8006484
+   },
+   {
+      "ds100" : "ONWS",
+      "latlong" : [
+         53.3300994,
+         6.5202905
+      ],
+      "name" : "Winsum",
+      "uic" : 8400697
    },
    {
       "ds100" : "TWIN",
@@ -71452,6 +73798,24 @@
       "latlong" : null,
       "name" : "Winterswijk",
       "uic" : 8400698
+   },
+   {
+      "ds100" : "XNWW",
+      "latlong" : [
+         51.9677307,
+         6.7155181
+      ],
+      "name" : "Winterswijk",
+      "uic" : 8400698
+   },
+   {
+      "ds100" : "PNW",
+      "latlong" : [
+         51.97453,
+         4.4324998855591
+      ],
+      "name" : "Winterswijk West",
+      "uic" : 8400013
    },
    {
       "ds100" : "XSWT",
@@ -71709,6 +74073,15 @@
       "uic" : 8400702
    },
    {
+      "ds100" : "XNWO",
+      "latlong" : [
+         52.084999084473,
+         4.8936109542847
+      ],
+      "name" : "Woerden",
+      "uic" : 8400702
+   },
+   {
       "ds100" : "UWOF",
       "latlong" : [
          51.55552,
@@ -71812,6 +74185,15 @@
       ],
       "name" : "Wolfhagen",
       "uic" : 8006549
+   },
+   {
+      "ds100" : "ONWOH",
+      "latlong" : [
+         52.005554199219,
+         5.7936110496521
+      ],
+      "name" : "Wolfheze",
+      "uic" : 8400704
    },
    {
       "ds100" : "MWO",
@@ -71967,8 +74349,35 @@
       "uic" : 8006561
    },
    {
+      "ds100" : "ONWOV",
+      "latlong" : [
+         52.880832672119,
+         6.0036110877991
+      ],
+      "name" : "Wolvega",
+      "uic" : 8400705
+   },
+   {
+      "ds100" : "ONWOK",
+      "latlong" : [
+         52.9724864,
+         5.4564285
+      ],
+      "name" : "Workum",
+      "uic" : 8400706
+   },
+   {
       "ds100" : "XNWM",
       "latlong" : null,
+      "name" : "Wormerveer",
+      "uic" : 8400707
+   },
+   {
+      "ds100" : "XNWM",
+      "latlong" : [
+         52.489166259766,
+         4.7922220230103
+      ],
       "name" : "Wormerveer",
       "uic" : 8400707
    },
@@ -72687,8 +75096,29 @@
       "uic" : 860883
    },
    {
+      "ds100" : "XNZAA",
+      "latlong" : [
+         52.438888549805,
+         4.8136110305786
+      ],
+      "name" : "Zaandam",
+      "uic" : 8400731
+   },
+   {
+      "ds100" : "XNZAA",
+      "latlong" : [
+         52.456665039062,
+         4.8202776908875
+      ],
+      "name" : "Zaandam Kogerveld",
+      "uic" : 8400728
+   },
+   {
       "ds100" : "XNKZ",
-      "latlong" : null,
+      "latlong" : [
+         52.469165802002,
+         4.3249998092651
+      ],
       "name" : "Zaandijk Zaanse Schans",
       "uic" : 8400364
    },
@@ -72753,8 +75183,26 @@
       "uic" : 8006633
    },
    {
+      "ds100" : "ONZAB",
+      "latlong" : [
+         51.80888748169,
+         5.2633333206177
+      ],
+      "name" : "Zaltbommel",
+      "uic" : 8400732
+   },
+   {
       "ds100" : "XNZA",
       "latlong" : null,
+      "name" : "Zandvoort aan Zee",
+      "uic" : 8400733
+   },
+   {
+      "ds100" : "XNZA",
+      "latlong" : [
+         52.3752784729,
+         4.5327777862549
+      ],
       "name" : "Zandvoort aan Zee",
       "uic" : 8400733
    },
@@ -73053,6 +75501,15 @@
       "uic" : 8013393
    },
    {
+      "ds100" : "ONZEA",
+      "latlong" : [
+         51.920056,
+         5.7228408
+      ],
+      "name" : "Zetten-Andelst",
+      "uic" : 8400734
+   },
+   {
       "ds100" : "XFZ",
       "latlong" : null,
       "name" : "Zetting",
@@ -73117,6 +75574,24 @@
       "latlong" : null,
       "name" : "Zevenaar",
       "uic" : 8400735
+   },
+   {
+      "ds100" : "XNZV",
+      "latlong" : [
+         51.923053741455,
+         6.0719442367554
+      ],
+      "name" : "Zevenaar",
+      "uic" : 8400735
+   },
+   {
+      "ds100" : "ONZEB",
+      "latlong" : [
+         51.64042,
+         4.60904
+      ],
+      "name" : "Zevenbergen",
+      "uic" : 8400737
    },
    {
       "ds100" : "XPZG",
@@ -73359,6 +75834,24 @@
       "uic" : 8013413
    },
    {
+      "ds100" : "ONZO",
+      "latlong" : [
+         52.047500610352,
+         4.4772224426269
+      ],
+      "name" : "Zoetermeer",
+      "uic" : 8400741
+   },
+   {
+      "ds100" : "ONZOO",
+      "latlong" : [
+         52.046390533447,
+         4.4927778244019
+      ],
+      "name" : "Zoetermeer Oost",
+      "uic" : 8400740
+   },
+   {
       "ds100" : "XSZG",
       "latlong" : [
          47.2880447598482,
@@ -73485,6 +75978,24 @@
       "uic" : 8400742
    },
    {
+      "ds100" : "XNZB",
+      "latlong" : [
+         53.159612280006,
+         6.8679141998291
+      ],
+      "name" : "Zuidbroek",
+      "uic" : 8400742
+   },
+   {
+      "ds100" : "ONZH",
+      "latlong" : [
+         53.2486292,
+         6.4062361
+      ],
+      "name" : "Zuidhorn",
+      "uic" : 8400743
+   },
+   {
       "ds100" : "XEZM",
       "latlong" : null,
       "name" : "Zumarraga",
@@ -73498,6 +76009,15 @@
       ],
       "name" : "Zusenhofen",
       "uic" : 8006678
+   },
+   {
+      "ds100" : "ONZTP",
+      "latlong" : [
+         52.145278930664,
+         6.1941666603088
+      ],
+      "name" : "Zutphen",
+      "uic" : 8400744
    },
    {
       "ds100" : "RZUN",
@@ -73596,6 +76116,15 @@
       "uic" : 8400752
    },
    {
+      "ds100" : "XNZW",
+      "latlong" : [
+         51.814998626709,
+         4.6416668891907
+      ],
+      "name" : "Zwijndrecht(NL)",
+      "uic" : 8400752
+   },
+   {
       "ds100" : "RZW",
       "latlong" : [
          49.416029,
@@ -73615,9 +76144,21 @@
    },
    {
       "ds100" : "XNZL",
-      "latlong" : null,
+      "latlong" : [
+         52.504722595215,
+         6.0919442176819
+      ],
       "name" : "Zwolle",
       "uic" : 8400747
+   },
+   {
+      "ds100" : "PNZSH",
+      "latlong" : [
+         52.52764,
+         6.05146
+      ],
+      "name" : "Zwolle Stadshagen",
+      "uic" : 8400746
    },
    {
       "ds100" : "DZWO",
