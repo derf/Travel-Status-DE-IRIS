@@ -87,10 +87,10 @@ If the changes you made are suitable for inclusion in Travel::Status::DE::IRIS,
 please [open a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) afterwards.
 
 Please only include stations which are usable with DB IRIS, that is, which have
-both DS100 and UIC numbers. If
+both DS100 and EVA numbers. If
 
 ```
-curl -s https://iris.noncd.db.de/iris-tts/timetable/station/UICNUMBER
+curl -s https://iris.noncd.db.de/iris-tts/timetable/station/EVANUMBER
 ```
 
 and
@@ -101,3 +101,6 @@ curl -s https://iris.noncd.db.de/iris-tts/timetable/station/DS100
 
 return a `<station>` element with "name", "eva" and "ds100" attributes, you're
 good to go.
+
+Note that although EVA numbers are often identical with UIC station IDs,
+there are stations where this is not the case.

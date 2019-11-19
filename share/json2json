@@ -14,7 +14,7 @@ my $stations = JSON->new->utf8->decode($json_str);
 my $have_duplicates = 0;
 my @names           = map { $_->{name} } @{$stations};
 my @ds100           = map { $_->{ds100} } sort { $a->{ds100} cmp $b->{ds100} } @{$stations};
-my @uic_ids         = map { $_->{uic} } sort { $a->{uic} <=> $b->{uic} } @{$stations};
+my @eva_ids         = map { $_->{eva} } sort { $a->{eva} <=> $b->{eva} } @{$stations};
 
 for my $i ( 1 .. $#names ) {
 	if ( $names[ $i - 1 ] eq $names[$i] ) {
@@ -28,9 +28,9 @@ for my $i ( 1 .. $#ds100 ) {
 		$have_duplicates = 1;
 	}
 }
-for my $i ( 1 .. $#uic_ids ) {
-	if ( $uic_ids[ $i - 1 ] == $uic_ids[$i] ) {
-		say "Duplicate UIC ID: $uic_ids[$i]";
+for my $i ( 1 .. $#eva_ids ) {
+	if ( $eva_ids[ $i - 1 ] == $eva_ids[$i] ) {
+		say "Duplicate EVA ID: $eva_ids[$i]";
 		$have_duplicates = 1;
 	}
 }

@@ -17,7 +17,7 @@ shift @csv_lines;
 
 for my $line (@csv_lines) {
 	if ( $csv->parse($line) ) {
-		my ( $name, $ds100, $uic, $lat, $lon ) = $csv->fields;
+		my ( $name, $ds100, $eva, $lat, $lon ) = $csv->fields;
 
 		if ( not $name ) {
 			say "Station name is mandatory -- skipping this line: $line";
@@ -27,16 +27,16 @@ for my $line (@csv_lines) {
 			say "DS100 is mandatory at the moment -- skipping this line: $line";
 			next;
 		}
-		if ( not $uic or $uic !~ m{ ^ \d+ $ }x ) {
+		if ( not $eva or $eva !~ m{ ^ \d+ $ }x ) {
 			say
-"UIC is mandatory and must be numeric -- skipping this line: $line";
+"EVA is mandatory and must be numeric -- skipping this line: $line";
 			next;
 		}
 
 		my $station = {
 			name    => $name,
 			ds100   => $ds100,
-			uic     => 0 + $uic,
+			eva     => 0 + $eva,
 			latlong => undef
 		};
 		if ( $lat and $lon ) {
@@ -51,7 +51,7 @@ for my $line (@csv_lines) {
 my $have_duplicates = 0;
 my @names           = map { $_->{name} } @stations;
 my @ds100           = map { $_->{ds100} } sort { $a->{ds100} cmp $b->{ds100} } @stations;
-my @uic_ids         = map { $_->{uic} } sort { $a->{uic} <=> $b->{uic} } @stations;
+my @eva_ids         = map { $_->{eva} } sort { $a->{eva} <=> $b->{eva} } @stations;
 
 for my $i ( 1 .. $#names ) {
 	if ( $names[ $i - 1 ] eq $names[$i] ) {
@@ -65,9 +65,9 @@ for my $i ( 1 .. $#ds100 ) {
 		$have_duplicates = 1;
 	}
 }
-for my $i ( 1 .. $#uic_ids ) {
-	if ( $uic_ids[ $i - 1 ] == $uic_ids[$i] ) {
-		say "Duplicate UIC ID: $uic_ids[$i]";
+for my $i ( 1 .. $#eva_ids ) {
+	if ( $eva_ids[ $i - 1 ] == $eva_ids[$i] ) {
+		say "Duplicate EVA ID: $eva_ids[$i]";
 		$have_duplicates = 1;
 	}
 }

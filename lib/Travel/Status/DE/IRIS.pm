@@ -724,7 +724,7 @@ Returns a list of hashes describing related stations whose
 arrivals/departures are included in B<results>. Only useful when setting
 B<with_related> to a true value, see its documentation above for details.
 
-Each hash contains the keys B<uic> (UIC/EVA number; known as IBNR in Germany),
+Each hash contains the keys B<uic> (EVA number; often same as UIC station ID),
 B<name> (station name), and B<ds100> (station code). Note that stations
 returned by B<related_stations> are not necessarily known to
 Travel::Status::DE::IRIS::Stations(3pm).

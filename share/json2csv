@@ -14,11 +14,11 @@ my $csv      = Text::CSV->new( { eol => "\n" } );
 
 my $buf = '';
 
-$csv->combine( 'name', 'DS100', 'UIC (IBNR)', 'Latitude', 'Longitude' );
+$csv->combine( 'name', 'DS100', 'EVA (not always identical with UIC ID)', 'Latitude', 'Longitude' );
 $buf .= $csv->string;
 
 for my $station ( @{$stations} ) {
-	my @fields = ( $station->{name}, $station->{ds100}, $station->{uic} );
+	my @fields = ( $station->{name}, $station->{ds100}, $station->{eva} );
 	if ( $station->{latlong} ) {
 		push( @fields, $station->{latlong}[0], $station->{latlong}[1] );
 	}

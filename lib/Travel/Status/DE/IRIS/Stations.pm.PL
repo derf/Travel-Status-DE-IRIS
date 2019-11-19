@@ -47,7 +47,7 @@ for my $station (@{$stations}) {
 			"['%s','%s',%s,%s,%s],\n",
 			$station->{ds100},
 			$station->{name},
-			$station->{uic},
+			$station->{eva},
 			$station->{latlong}[1],
 			$station->{latlong}[0],
 		);
@@ -57,7 +57,7 @@ for my $station (@{$stations}) {
 			"['%s','%s',%s],\n",
 			$station->{ds100},
 			$station->{name},
-			$station->{uic}
+			$station->{eva}
 		);
 	}
 }
@@ -205,7 +205,7 @@ that it may contain space characters.
 
 =item * Station name
 
-=item * International station number (UIC number / IBNR, "Internationale Bahnhofsnummer")
+=item * EVA station number (often, but not always, same as UIC station number)
 
 =item * Station longitude, if available
 
@@ -225,7 +225,7 @@ Returns a list of all known stations, lexically sorted by station name.
 
 Returns a list of stations matching I<$in>.
 
-If a I<$in> is a valid station (either DS100 code or UIC/EVA number),
+If a I<$in> is a valid station (either DS100 code or EVA number),
 a single array reference describing the station is returned. Otherwise,
 I<$in> is passed to get_station_by_name(I<$in>) (see below).
 
