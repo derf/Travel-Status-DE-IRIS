@@ -19,6 +19,11 @@ Dependencies
 * Text::LevenshteinXS
 * XML::LibXML
 
+Additional dependencies for building this module:
+
+* File::Slurp
+* JSON
+
 Note about Text::LevenshteinXS: This module is old and unmaintained, but
 appears to be packaged for slightly more distros than its successor
 Text::Levenshtein::XS. If it is not available for your distro (and you do
