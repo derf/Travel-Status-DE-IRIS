@@ -45,6 +45,18 @@
       "name" : "Aalen Hbf"
    },
    {
+      "ds100" : "XBAAS",
+      "eva" : 8800351,
+      "latlong" : null,
+      "name" : "Aalst"
+   },
+   {
+      "ds100" : "OBAAK",
+      "eva" : 8800604,
+      "latlong" : null,
+      "name" : "Aalst,Kerrebroek"
+   },
+   {
       "ds100" : "ONAAL",
       "eva" : 8400045,
       "latlong" : [
@@ -76,6 +88,18 @@
          7.90820373353681
       ],
       "name" : "Aarburg-Oftringen"
+   },
+   {
+      "ds100" : "XBAAR",
+      "eva" : 8800032,
+      "latlong" : null,
+      "name" : "Aarschot"
+   },
+   {
+      "ds100" : "OBAAS",
+      "eva" : 8800594,
+      "latlong" : null,
+      "name" : "Aarsele"
    },
    {
       "ds100" : "ONAB",
@@ -163,6 +187,12 @@
          9.964024
       ],
       "name" : "Achterwehr"
+   },
+   {
+      "ds100" : "XBACR",
+      "eva" : 8800387,
+      "latlong" : null,
+      "name" : "Acren"
    },
    {
       "ds100" : "HADB",
@@ -520,6 +550,12 @@
          8.60860513449754
       ],
       "name" : "Airolo"
+   },
+   {
+      "ds100" : "XBAI",
+      "eva" : 8800478,
+      "latlong" : null,
+      "name" : "Aiseau"
    },
    {
       "ds100" : "XFAX",
@@ -1629,6 +1665,12 @@
       "name" : "Am Weinberg, Kassel"
    },
    {
+      "ds100" : "OBAM",
+      "eva" : 8800467,
+      "latlong" : null,
+      "name" : "Amay"
+   },
+   {
       "ds100" : "NAM",
       "eva" : 8000566,
       "latlong" : [
@@ -1705,6 +1747,12 @@
          12.410919
       ],
       "name" : "Ampfing"
+   },
+   {
+      "ds100" : "OBAP",
+      "eva" : 8800468,
+      "latlong" : null,
+      "name" : "Ampsin"
    },
    {
       "ds100" : "LAMS",
@@ -1846,6 +1894,12 @@
          8.67797953563967
       ],
       "name" : "Andelfingen"
+   },
+   {
+      "ds100" : "XBANN",
+      "eva" : 8800019,
+      "latlong" : null,
+      "name" : "Andenne"
    },
    {
       "ds100" : "XSAN",
@@ -2028,10 +2082,22 @@
       "name" : "Ansbach"
    },
    {
+      "ds100" : "OBASM",
+      "eva" : 8800562,
+      "latlong" : null,
+      "name" : "Anseremme"
+   },
+   {
       "ds100" : "XFAN",
       "eva" : 8700146,
       "latlong" : null,
       "name" : "Antibes"
+   },
+   {
+      "ds100" : "OBATG",
+      "eva" : 8800580,
+      "latlong" : null,
+      "name" : "Antoing"
    },
    {
       "ds100" : "DATL",
@@ -2053,6 +2119,18 @@
       "eva" : 8800008,
       "latlong" : null,
       "name" : "Antwerpen-Berchem"
+   },
+   {
+      "ds100" : "XBLUB",
+      "eva" : 8800187,
+      "latlong" : null,
+      "name" : "Antwerpen-Luchtbal"
+   },
+   {
+      "ds100" : "OBAND",
+      "eva" : 8800188,
+      "latlong" : null,
+      "name" : "Antwerpen-Noorderdokken"
    },
    {
       "ds100" : "XBAZ",
@@ -2077,6 +2155,12 @@
          8.85959
       ],
       "name" : "Anzefahr"
+   },
+   {
+      "ds100" : "XBAZG",
+      "eva" : 8800374,
+      "latlong" : null,
+      "name" : "Anzegem"
    },
    {
       "ds100" : "MAK",
@@ -2139,6 +2223,12 @@
       "name" : "Apolda"
    },
    {
+      "ds100" : "XBAP",
+      "eva" : 8800380,
+      "latlong" : null,
+      "name" : "Appelterre"
+   },
+   {
       "ds100" : "RAP",
       "eva" : 8000596,
       "latlong" : [
@@ -2185,6 +2275,12 @@
       "eva" : 8070304,
       "latlong" : null,
       "name" : "Arbste"
+   },
+   {
+      "ds100" : "XBARC",
+      "eva" : 8800503,
+      "latlong" : null,
+      "name" : "Archennes"
    },
    {
       "ds100" : "EARE",
@@ -2586,6 +2682,12 @@
       "name" : "Assenheim(Oberhess)"
    },
    {
+      "ds100" : "OBASE",
+      "eva" : 8800547,
+      "latlong" : null,
+      "name" : "Assesse"
+   },
+   {
       "ds100" : "FAH",
       "eva" : 8000635,
       "latlong" : [
@@ -2593,6 +2695,18 @@
          7.867355
       ],
       "name" : "Assmannshausen"
+   },
+   {
+      "ds100" : "XBATH",
+      "eva" : 8800163,
+      "latlong" : null,
+      "name" : "Ath"
+   },
+   {
+      "ds100" : "XBAH",
+      "eva" : 8800147,
+      "latlong" : null,
+      "name" : "Athus"
    },
    {
       "ds100" : "EAT",
@@ -2955,6 +3069,12 @@
       "name" : "Avignon TGV"
    },
    {
+      "ds100" : "OBAE",
+      "eva" : 8800553,
+      "latlong" : null,
+      "name" : "Aye"
+   },
+   {
       "ds100" : "MAY",
       "eva" : 8000675,
       "latlong" : [
@@ -2962,6 +3082,12 @@
          11.769578
       ],
       "name" : "Aying"
+   },
+   {
+      "ds100" : "XBAY",
+      "eva" : 8800176,
+      "latlong" : null,
+      "name" : "Aywaille"
    },
    {
       "ds100" : "FAL",
@@ -3016,6 +3142,12 @@
          5.2808332443237
       ],
       "name" : "Baarn"
+   },
+   {
+      "ds100" : "XBBRZ",
+      "eva" : 8800319,
+      "latlong" : null,
+      "name" : "Baasrode-Zuid"
    },
    {
       "ds100" : "FLAS",
@@ -4761,6 +4893,24 @@
       "name" : "Balduinstein"
    },
    {
+      "ds100" : "OBBGD",
+      "eva" : 8800440,
+      "latlong" : null,
+      "name" : "Balegem-Dorp"
+   },
+   {
+      "ds100" : "OBBGZ",
+      "eva" : 8800441,
+      "latlong" : null,
+      "name" : "Balegem-Zuid"
+   },
+   {
+      "ds100" : "XBBAL",
+      "eva" : 8800202,
+      "latlong" : null,
+      "name" : "Balen"
+   },
+   {
       "ds100" : "XSBAL",
       "eva" : 8505306,
       "latlong" : [
@@ -4846,6 +4996,12 @@
          10.899489
       ],
       "name" : "Bamberg"
+   },
+   {
+      "ds100" : "OBBMG",
+      "eva" : 8800359,
+      "latlong" : null,
+      "name" : "Bambrugge"
    },
    {
       "ds100" : "RBAM",
@@ -5130,6 +5286,18 @@
       "name" : "Baruth(Mark)"
    },
    {
+      "ds100" : "OBBV",
+      "eva" : 8800162,
+      "latlong" : null,
+      "name" : "Barvaux"
+   },
+   {
+      "ds100" : "OBOH",
+      "eva" : 8800469,
+      "latlong" : null,
+      "name" : "Bas-Oha"
+   },
+   {
       "ds100" : "XLBA",
       "eva" : 8270060,
       "latlong" : null,
@@ -5185,6 +5353,12 @@
          7.57251267011701
       ],
       "name" : "Basel St Johann"
+   },
+   {
+      "ds100" : "XBBW",
+      "eva" : 8800501,
+      "latlong" : null,
+      "name" : "Basse-Wavre"
    },
    {
       "ds100" : "XSBD",
@@ -5358,6 +5532,12 @@
       "name" : "Bayrischzell"
    },
    {
+      "ds100" : "OBBGG",
+      "eva" : 8800564,
+      "latlong" : null,
+      "name" : "Beauraing"
+   },
+   {
       "ds100" : "LBBZ",
       "eva" : 8011119,
       "latlong" : [
@@ -5472,6 +5652,12 @@
       "name" : "Beernem"
    },
    {
+      "ds100" : "OBBSL",
+      "eva" : 8800584,
+      "latlong" : null,
+      "name" : "Beersel"
+   },
+   {
       "ds100" : "ONBED",
       "eva" : 8400097,
       "latlong" : [
@@ -5499,6 +5685,12 @@
       "name" : "Beetz-Sommerfeld"
    },
    {
+      "ds100" : "OBGDK",
+      "eva" : 8800208,
+      "latlong" : null,
+      "name" : "Begijnendijk"
+   },
+   {
       "ds100" : "NBEH",
       "eva" : 8000850,
       "latlong" : [
@@ -5515,6 +5707,12 @@
          8.821022
       ],
       "name" : "Beienheim"
+   },
+   {
+      "ds100" : "OBBGE",
+      "eva" : 8800493,
+      "latlong" : null,
+      "name" : "Beignee"
    },
    {
       "ds100" : "ONBEL",
@@ -5595,6 +5793,12 @@
       "name" : "Bellegarde(Ain)"
    },
    {
+      "ds100" : "XBBLL",
+      "eva" : 8800299,
+      "latlong" : null,
+      "name" : "Bellem"
+   },
+   {
       "ds100" : "MBNB",
       "eva" : 8000862,
       "latlong" : [
@@ -5644,6 +5848,12 @@
          7.49863601858042
       ],
       "name" : "Belp"
+   },
+   {
+      "ds100" : "XBBSL",
+      "eva" : 8800355,
+      "latlong" : null,
+      "name" : "Belsele"
    },
    {
       "ds100" : "XLBUL",
@@ -6054,6 +6264,12 @@
       "name" : "Beringen Bad Bf"
    },
    {
+      "ds100" : "XBBRG",
+      "eva" : 8800203,
+      "latlong" : null,
+      "name" : "Beringen(B)"
+   },
+   {
       "ds100" : "RBEF",
       "eva" : 8000901,
       "latlong" : [
@@ -6094,6 +6310,12 @@
          14.165217
       ],
       "name" : "Berkenbrück"
+   },
+   {
+      "ds100" : "OBRL",
+      "eva" : 8800205,
+      "latlong" : null,
+      "name" : "Berlaar"
    },
    {
       "ds100" : "BALE",
@@ -7650,6 +7872,12 @@
       "name" : "Bertsdorf"
    },
    {
+      "ds100" : "OBBZ",
+      "eva" : 8800036,
+      "latlong" : null,
+      "name" : "Berzee"
+   },
+   {
       "ds100" : "FBEZ",
       "eva" : 8000921,
       "latlong" : [
@@ -7842,10 +8070,22 @@
       "name" : "Beutersitz"
    },
    {
+      "ds100" : "XBBZ",
+      "eva" : 8800539,
+      "latlong" : null,
+      "name" : "Beuzet"
+   },
+   {
       "ds100" : "XIBVA",
       "eva" : 8301199,
       "latlong" : null,
       "name" : "Bevera"
+   },
+   {
+      "ds100" : "XBBV",
+      "eva" : 8800037,
+      "latlong" : null,
+      "name" : "Beveren"
    },
    {
       "ds100" : "XNBK",
@@ -8127,6 +8367,12 @@
       "name" : "Bieren-Rödinghausen"
    },
    {
+      "ds100" : "XBBG",
+      "eva" : 8800499,
+      "latlong" : null,
+      "name" : "Bierges"
+   },
+   {
       "ds100" : "TBIE",
       "eva" : 8000959,
       "latlong" : [
@@ -8286,6 +8532,12 @@
       "name" : "Bily Kostel nad Nisou"
    },
    {
+      "ds100" : "XBBI",
+      "eva" : 8800038,
+      "latlong" : null,
+      "name" : "Bilzen"
+   },
+   {
       "ds100" : "RBIN",
       "eva" : 8000973,
       "latlong" : [
@@ -8293,6 +8545,12 @@
          9.083631
       ],
       "name" : "Binau"
+   },
+   {
+      "ds100" : "XBBH",
+      "eva" : 8800418,
+      "latlong" : null,
+      "name" : "Binche"
    },
    {
       "ds100" : "LBIF",
@@ -8535,6 +8793,12 @@
       "name" : "Bisingen"
    },
    {
+      "ds100" : "XBBSG",
+      "eva" : 8800347,
+      "latlong" : null,
+      "name" : "Bissegem"
+   },
+   {
       "ds100" : "HBSS",
       "eva" : 8001000,
       "latlong" : [
@@ -8610,6 +8874,12 @@
       "name" : "Blaj"
    },
    {
+      "ds100" : "XBBF",
+      "eva" : 8800598,
+      "latlong" : null,
+      "name" : "Blandain(fr)"
+   },
+   {
       "ds100" : "FBLK",
       "eva" : 8007282,
       "latlong" : [
@@ -8635,6 +8905,12 @@
          7.348499
       ],
       "name" : "Blankenberg(Sieg)"
+   },
+   {
+      "ds100" : "XBBLB",
+      "eva" : 8800039,
+      "latlong" : null,
+      "name" : "Blankenberge"
    },
    {
       "ds100" : "LBK",
@@ -8704,6 +8980,18 @@
          11.698549
       ],
       "name" : "Blankenstein(Saale)"
+   },
+   {
+      "ds100" : "XBBLM",
+      "eva" : 8800535,
+      "latlong" : null,
+      "name" : "Blanmont"
+   },
+   {
+      "ds100" : "XBBLT",
+      "eva" : 8800040,
+      "latlong" : null,
+      "name" : "Blaton"
    },
    {
       "ds100" : "TBL",
@@ -8785,6 +9073,12 @@
          6.486442
       ],
       "name" : "Blens"
+   },
+   {
+      "ds100" : "OBLRT",
+      "eva" : 8800256,
+      "latlong" : null,
+      "name" : "Bleret"
    },
    {
       "ds100" : "XNBL",
@@ -9063,6 +9357,12 @@
       "name" : "Bockenheim-Kindenheim"
    },
    {
+      "ds100" : "XBBOS",
+      "eva" : 8800282,
+      "latlong" : null,
+      "name" : "Bockstael"
+   },
+   {
       "ds100" : "EBCK",
       "eva" : 8001045,
       "latlong" : [
@@ -9162,6 +9462,12 @@
       "name" : "Bodio TI"
    },
    {
+      "ds100" : "XBBCT",
+      "eva" : 8800195,
+      "latlong" : null,
+      "name" : "Boechout"
+   },
+   {
       "ds100" : "XFBN",
       "eva" : 8702850,
       "latlong" : null,
@@ -9201,6 +9507,12 @@
       "name" : "Boisheim"
    },
    {
+      "ds100" : "XBBFV",
+      "eva" : 8800526,
+      "latlong" : null,
+      "name" : "Boitsfort/Bosvoorde"
+   },
+   {
       "ds100" : "WBZ",
       "eva" : 8011230,
       "latlong" : [
@@ -9219,6 +9531,12 @@
       "name" : "Bokholt"
    },
    {
+      "ds100" : "XBBJ",
+      "eva" : 8800210,
+      "latlong" : null,
+      "name" : "Bokrijk"
+   },
+   {
       "ds100" : "XFBOW",
       "eva" : 8700293,
       "latlong" : null,
@@ -9235,6 +9553,12 @@
       "eva" : 8300084,
       "latlong" : null,
       "name" : "Bolzano/Bozen"
+   },
+   {
+      "ds100" : "OBM",
+      "eva" : 8800279,
+      "latlong" : null,
+      "name" : "Bomal"
    },
    {
       "ds100" : "TBD",
@@ -9399,6 +9723,12 @@
       "name" : "Bonn-Ramersdorf"
    },
    {
+      "ds100" : "OBBOS",
+      "eva" : 8800207,
+      "latlong" : null,
+      "name" : "Booischot"
+   },
+   {
       "ds100" : "HBHB",
       "eva" : 8001089,
       "latlong" : [
@@ -9408,10 +9738,22 @@
       "name" : "Bookholzberg"
    },
    {
+      "ds100" : "OBO",
+      "eva" : 8800315,
+      "latlong" : null,
+      "name" : "Boom"
+   },
+   {
       "ds100" : "XBBDL",
       "eva" : 8800581,
       "latlong" : null,
       "name" : "Boondael/Boondaal"
+   },
+   {
+      "ds100" : "XBBMB",
+      "eva" : 8800326,
+      "latlong" : null,
+      "name" : "Boortmeerbeek"
    },
    {
       "ds100" : "ABOS",
@@ -9499,6 +9841,12 @@
          10.043711
       ],
       "name" : "Bordesholm"
+   },
+   {
+      "ds100" : "XBBO",
+      "eva" : 8800232,
+      "latlong" : null,
+      "name" : "Bordet"
    },
    {
       "ds100" : "XIBD",
@@ -9592,6 +9940,12 @@
          6.4736108779907
       ],
       "name" : "Borne(NL)"
+   },
+   {
+      "ds100" : "XBBNM",
+      "eva" : 8800353,
+      "latlong" : null,
+      "name" : "Bornem"
    },
    {
       "ds100" : "EBHT",
@@ -9711,6 +10065,18 @@
       "name" : "Bous(Saar)"
    },
    {
+      "ds100" : "XBBSU",
+      "eva" : 8800409,
+      "latlong" : null,
+      "name" : "Boussu"
+   },
+   {
+      "ds100" : "XBBWL",
+      "eva" : 8800198,
+      "latlong" : null,
+      "name" : "Bouwel"
+   },
+   {
       "ds100" : "XFBZV",
       "eva" : 8700333,
       "latlong" : null,
@@ -9798,6 +10164,12 @@
       "name" : "Brackwede"
    },
    {
+      "ds100" : "XBBQ",
+      "eva" : 8800430,
+      "latlong" : null,
+      "name" : "Bracquegnies"
+   },
+   {
       "ds100" : "WBRH",
       "eva" : 8011248,
       "latlong" : [
@@ -9805,6 +10177,18 @@
          10.951992
       ],
       "name" : "Brahlstorf"
+   },
+   {
+      "ds100" : "XBBLA",
+      "eva" : 8800042,
+      "latlong" : null,
+      "name" : "Braine-lAlleud"
+   },
+   {
+      "ds100" : "XBBLC",
+      "eva" : 8800041,
+      "latlong" : null,
+      "name" : "Braine-le-Comte"
    },
    {
       "ds100" : "HBKE",
@@ -10917,6 +11301,12 @@
       "name" : "Bruckmühl"
    },
    {
+      "ds100" : "OBBGL",
+      "eva" : 8800390,
+      "latlong" : null,
+      "name" : "Brugelette"
+   },
+   {
       "ds100" : "XSBRU",
       "eva" : 8500309,
       "latlong" : [
@@ -10930,6 +11320,12 @@
       "eva" : 8800029,
       "latlong" : null,
       "name" : "Brugge"
+   },
+   {
+      "ds100" : "XBBP",
+      "eva" : 8800307,
+      "latlong" : null,
+      "name" : "Brugge-St.-Pieters"
    },
    {
       "ds100" : "XFBAH",
@@ -10989,6 +11385,18 @@
       "name" : "Bruxelles-Central"
    },
    {
+      "ds100" : "XBBK",
+      "eva" : 8800211,
+      "latlong" : null,
+      "name" : "Bruxelles-Chapelle"
+   },
+   {
+      "ds100" : "XBBCS",
+      "eva" : 8800212,
+      "latlong" : null,
+      "name" : "Bruxelles-Congres"
+   },
+   {
       "ds100" : "XBBLX",
       "eva" : 8800005,
       "latlong" : null,
@@ -11005,6 +11413,12 @@
       "eva" : 8800002,
       "latlong" : null,
       "name" : "Bruxelles-Nord"
+   },
+   {
+      "ds100" : "XBBSM",
+      "eva" : 8800146,
+      "latlong" : null,
+      "name" : "Bruxelles-Schuman"
    },
    {
       "ds100" : "RBRN",
@@ -11247,6 +11661,12 @@
       "name" : "Bucuresti Nord Gara A"
    },
    {
+      "ds100" : "XBBD",
+      "eva" : 8800213,
+      "latlong" : null,
+      "name" : "Buda(B)"
+   },
+   {
       "ds100" : "XMBF",
       "eva" : 5500133,
       "latlong" : null,
@@ -11292,6 +11712,12 @@
       "name" : "Bufleben"
    },
    {
+      "ds100" : "XBBHT",
+      "eva" : 8800044,
+      "latlong" : null,
+      "name" : "Buggenhout"
+   },
+   {
       "ds100" : "RBGG",
       "eva" : 8001262,
       "latlong" : [
@@ -11317,6 +11743,12 @@
          6.2962148
       ],
       "name" : "Buitenpost"
+   },
+   {
+      "ds100" : "XBBZG",
+      "eva" : 8800400,
+      "latlong" : null,
+      "name" : "Buizingen"
    },
    {
       "ds100" : "EBUD",
@@ -11659,6 +12091,12 @@
          9.099292
       ],
       "name" : "Burladingen West"
+   },
+   {
+      "ds100" : "XBBT",
+      "eva" : 8800360,
+      "latlong" : null,
+      "name" : "Burst"
    },
    {
       "ds100" : "DBUS",
@@ -12348,6 +12786,12 @@
       "name" : "Caldes de Malavella"
    },
    {
+      "ds100" : "XBCLL",
+      "eva" : 8800578,
+      "latlong" : null,
+      "name" : "Callenelle"
+   },
+   {
       "ds100" : "TCA",
       "eva" : 8001320,
       "latlong" : [
@@ -12373,6 +12817,12 @@
          8.741854
       ],
       "name" : "Calw"
+   },
+   {
+      "ds100" : "OBCC",
+      "eva" : 8800391,
+      "latlong" : null,
+      "name" : "Cambron-Casteau"
    },
    {
       "ds100" : "UCB",
@@ -12478,6 +12928,18 @@
       "eva" : 8301155,
       "latlong" : null,
       "name" : "Carimate"
+   },
+   {
+      "ds100" : "OBCBG",
+      "eva" : 8800569,
+      "latlong" : null,
+      "name" : "Carlsbourg"
+   },
+   {
+      "ds100" : "OBCN",
+      "eva" : 8800433,
+      "latlong" : null,
+      "name" : "Carnieres"
    },
    {
       "ds100" : "XFCNO",
@@ -12591,6 +13053,12 @@
       "name" : "Cernovice u Chomutova"
    },
    {
+      "ds100" : "XBCM",
+      "eva" : 8800517,
+      "latlong" : null,
+      "name" : "Ceroux-Mousty"
+   },
+   {
       "ds100" : "XTCKA",
       "eva" : 5400271,
       "latlong" : null,
@@ -12675,16 +13143,46 @@
       "name" : "Champigneulles"
    },
    {
+      "ds100" : "OBCD",
+      "eva" : 8800521,
+      "latlong" : null,
+      "name" : "Chapelle-Dieu"
+   },
+   {
+      "ds100" : "OBCPN",
+      "eva" : 8800551,
+      "latlong" : null,
+      "name" : "Chapois"
+   },
+   {
       "ds100" : "XBCH",
       "eva" : 8800024,
       "latlong" : null,
       "name" : "Charleroi Sud"
    },
    {
+      "ds100" : "XBCO",
+      "eva" : 8800509,
+      "latlong" : null,
+      "name" : "Charleroi-Ouest"
+   },
+   {
+      "ds100" : "XBCS",
+      "eva" : 8800536,
+      "latlong" : null,
+      "name" : "Chastre"
+   },
+   {
       "ds100" : "XFCT",
       "eva" : 8700261,
       "latlong" : null,
       "name" : "Chateau-Thierry"
+   },
+   {
+      "ds100" : "OBCDS",
+      "eva" : 8800470,
+      "latlong" : null,
+      "name" : "Chateau-de-Seilles"
    },
    {
       "ds100" : "XFCH",
@@ -13140,6 +13638,12 @@
       "name" : "Châtelet"
    },
    {
+      "ds100" : "XBCY",
+      "eva" : 8800046,
+      "latlong" : null,
+      "name" : "Ciney"
+   },
+   {
       "ds100" : "XFCIG",
       "eva" : 8703107,
       "latlong" : null,
@@ -13287,10 +13791,22 @@
       "name" : "Colmar"
    },
    {
+      "ds100" : "OBCLT",
+      "eva" : 8800276,
+      "latlong" : null,
+      "name" : "Comblain-la-Tour"
+   },
+   {
       "ds100" : "XFCQ",
       "eva" : 8703137,
       "latlong" : null,
       "name" : "Combs la Ville Quincy"
+   },
+   {
+      "ds100" : "XBCK",
+      "eva" : 8800350,
+      "latlong" : null,
+      "name" : "Comines/Komen"
    },
    {
       "ds100" : "XIC",
@@ -13324,6 +13840,12 @@
          7.427916
       ],
       "name" : "Contwig"
+   },
+   {
+      "ds100" : "XBC",
+      "eva" : 8800175,
+      "latlong" : null,
+      "name" : "Coo"
    },
    {
       "ds100" : "HCOP",
@@ -13443,10 +13965,28 @@
       "name" : "Cottbus-Willmersdorf Nord"
    },
    {
+      "ds100" : "XBCU",
+      "eva" : 8800474,
+      "latlong" : null,
+      "name" : "Couillet"
+   },
+   {
       "ds100" : "XFCOL",
       "eva" : 8703169,
       "latlong" : null,
       "name" : "Coulommiers"
+   },
+   {
+      "ds100" : "XBCSH",
+      "eva" : 8800495,
+      "latlong" : null,
+      "name" : "Cour-sur-Heure"
+   },
+   {
+      "ds100" : "XBCC",
+      "eva" : 8800423,
+      "latlong" : null,
+      "name" : "Courcelles-Motte"
    },
    {
       "ds100" : "XFCSN",
@@ -13455,10 +13995,28 @@
       "name" : "Courcelles-sur-Nied"
    },
    {
+      "ds100" : "OBCR",
+      "eva" : 8800546,
+      "latlong" : null,
+      "name" : "Courriere"
+   },
+   {
+      "ds100" : "XBCSE",
+      "eva" : 8800516,
+      "latlong" : null,
+      "name" : "Court-St.-Etienne"
+   },
+   {
       "ds100" : "XFCOU",
       "eva" : 8700184,
       "latlong" : null,
       "name" : "Coutras"
+   },
+   {
+      "ds100" : "OBCOU",
+      "eva" : 8800182,
+      "latlong" : null,
+      "name" : "Couvin"
    },
    {
       "ds100" : "TC",
@@ -14028,6 +14586,12 @@
       "name" : "Dausenau"
    },
    {
+      "ds100" : "OBDSM",
+      "eva" : 8800543,
+      "latlong" : null,
+      "name" : "Dave-St.-Martin"
+   },
+   {
       "ds100" : "EDVB",
       "eva" : 8001390,
       "latlong" : [
@@ -14068,6 +14632,24 @@
          6.1446496
       ],
       "name" : "De Vink"
+   },
+   {
+      "ds100" : "XBDH",
+      "eva" : 8800453,
+      "latlong" : null,
+      "name" : "De,Hoek"
+   },
+   {
+      "ds100" : "XBDP",
+      "eva" : 8800047,
+      "latlong" : null,
+      "name" : "De,Panne"
+   },
+   {
+      "ds100" : "XBDN",
+      "eva" : 8800048,
+      "latlong" : null,
+      "name" : "De,Pinte"
    },
    {
       "ds100" : "XMD",
@@ -14187,6 +14769,12 @@
       "name" : "Deinum"
    },
    {
+      "ds100" : "XBDZ",
+      "eva" : 8800049,
+      "latlong" : null,
+      "name" : "Deinze"
+   },
+   {
       "ds100" : "MDS",
       "eva" : 8001404,
       "latlong" : [
@@ -14299,6 +14887,12 @@
       "eva" : 8070426,
       "latlong" : null,
       "name" : "Delmenhorst Hasporter Damm"
+   },
+   {
+      "ds100" : "OBDA",
+      "eva" : 8800228,
+      "latlong" : null,
+      "name" : "Delta"
    },
    {
       "ds100" : "XSDE",
@@ -14422,6 +15016,12 @@
       "eva" : 8800050,
       "latlong" : null,
       "name" : "Denderleeuw"
+   },
+   {
+      "ds100" : "XBDD",
+      "eva" : 8800051,
+      "latlong" : null,
+      "name" : "Dendermonde"
    },
    {
       "ds100" : "SDBO",
@@ -14763,6 +15363,12 @@
       "name" : "Diedorf(Schwab)"
    },
    {
+      "ds100" : "XBDM",
+      "eva" : 8800246,
+      "latlong" : null,
+      "name" : "Diegem"
+   },
+   {
       "ds100" : "ONDIM",
       "eva" : 8400165,
       "latlong" : [
@@ -14854,6 +15460,12 @@
          8.74885906156379
       ],
       "name" : "Diessenhofen URh"
+   },
+   {
+      "ds100" : "XBDI",
+      "eva" : 8800052,
+      "latlong" : null,
+      "name" : "Diest"
    },
    {
       "ds100" : "NDT",
@@ -14979,6 +15591,18 @@
       "name" : "Dijon Ville"
    },
    {
+      "ds100" : "XBDK",
+      "eva" : 8800053,
+      "latlong" : null,
+      "name" : "Diksmuide"
+   },
+   {
+      "ds100" : "XBDB",
+      "eva" : 8800285,
+      "latlong" : null,
+      "name" : "Dilbeek"
+   },
+   {
       "ds100" : "FDBT",
       "eva" : 8001460,
       "latlong" : [
@@ -15013,6 +15637,12 @@
          6.72215
       ],
       "name" : "Dillingen(Saar)"
+   },
+   {
+      "ds100" : "XBDT",
+      "eva" : 8800054,
+      "latlong" : null,
+      "name" : "Dinant"
    },
    {
       "ds100" : "EDGD",
@@ -16374,6 +17004,12 @@
       "name" : "Drohndorf-Mehringen"
    },
    {
+      "ds100" : "XBDR",
+      "eva" : 8800296,
+      "latlong" : null,
+      "name" : "Drongen"
+   },
+   {
       "ds100" : "ONDP",
       "eva" : 8400192,
       "latlong" : [
@@ -16425,10 +17061,22 @@
       "name" : "Dudweiler"
    },
    {
+      "ds100" : "XBDU",
+      "eva" : 8800218,
+      "latlong" : null,
+      "name" : "Duffel"
+   },
+   {
       "ds100" : "XRDS",
       "eva" : 7800024,
       "latlong" : null,
       "name" : "Dugo Selo"
+   },
+   {
+      "ds100" : "XBDBG",
+      "eva" : 8800305,
+      "latlong" : null,
+      "name" : "Duinbergen"
    },
    {
       "ds100" : "EDEF",
@@ -17262,6 +17910,12 @@
       "name" : "Ebstorf(Uelzen)"
    },
    {
+      "ds100" : "XBEC",
+      "eva" : 8800413,
+      "latlong" : null,
+      "name" : "Ecaussinnes"
+   },
+   {
       "ds100" : "AECH",
       "eva" : 8001646,
       "latlong" : [
@@ -17376,6 +18030,12 @@
       "name" : "Ede(B)"
    },
    {
+      "ds100" : "XBED",
+      "eva" : 8800367,
+      "latlong" : null,
+      "name" : "Ede(B)"
+   },
+   {
       "ds100" : "XNEW",
       "eva" : 8400200,
       "latlong" : [
@@ -17455,6 +18115,12 @@
          12.163234
       ],
       "name" : "Edling"
+   },
+   {
+      "ds100" : "OBEE",
+      "eva" : 8800332,
+      "latlong" : null,
+      "name" : "Eeklo"
    },
    {
       "ds100" : "PNEHV",
@@ -17766,6 +18432,12 @@
       "name" : "Eich(Sachs)"
    },
    {
+      "ds100" : "OBEH",
+      "eva" : 8800379,
+      "latlong" : null,
+      "name" : "Eichem"
+   },
+   {
       "ds100" : "EEHS",
       "eva" : 8001700,
       "latlong" : [
@@ -17962,6 +18634,12 @@
          5.9390330314636
       ],
       "name" : "Eindhoven Strijp-S"
+   },
+   {
+      "ds100" : "OBEN",
+      "eva" : 8800364,
+      "latlong" : null,
+      "name" : "Eine"
    },
    {
       "ds100" : "AEF",
@@ -18163,6 +18841,18 @@
          7.447326
       ],
       "name" : "Eitorf"
+   },
+   {
+      "ds100" : "OBENZ",
+      "eva" : 8800361,
+      "latlong" : null,
+      "name" : "Eke-Nazareth"
+   },
+   {
+      "ds100" : "XBEK",
+      "eva" : 8800189,
+      "latlong" : null,
+      "name" : "Ekeren"
    },
    {
       "ds100" : "LELD",
@@ -18663,6 +19353,12 @@
       "name" : "Engertsham"
    },
    {
+      "ds100" : "XBEG",
+      "eva" : 8800027,
+      "latlong" : null,
+      "name" : "Enghien/Edingen"
+   },
+   {
       "ds100" : "XBEN",
       "eva" : 8800464,
       "latlong" : null,
@@ -18822,6 +19518,12 @@
       "name" : "Epinal"
    },
    {
+      "ds100" : "XBEM",
+      "eva" : 8800215,
+      "latlong" : null,
+      "name" : "Eppegem"
+   },
+   {
       "ds100" : "SEP",
       "eva" : 8001812,
       "latlong" : [
@@ -18921,6 +19623,12 @@
       "name" : "Erbach(Württ)"
    },
    {
+      "ds100" : "OBEL",
+      "eva" : 8800393,
+      "latlong" : null,
+      "name" : "Erbisoeul"
+   },
+   {
       "ds100" : "RETE",
       "eva" : 723573,
       "latlong" : null,
@@ -18970,6 +19678,12 @@
          11.303305
       ],
       "name" : "Erdweg"
+   },
+   {
+      "ds100" : "XBEB",
+      "eva" : 8800290,
+      "latlong" : null,
+      "name" : "Erembodegem"
    },
    {
       "ds100" : "KEST",
@@ -19212,6 +19926,12 @@
       "name" : "Ermelo"
    },
    {
+      "ds100" : "XBEA",
+      "eva" : 8800537,
+      "latlong" : null,
+      "name" : "Ernage"
+   },
+   {
       "ds100" : "EEK",
       "eva" : 8001851,
       "latlong" : [
@@ -19248,6 +19968,12 @@
       "name" : "Ernstthal am Rennsteig"
    },
    {
+      "ds100" : "OBEPM",
+      "eva" : 8800358,
+      "latlong" : null,
+      "name" : "Erpe-Mere"
+   },
+   {
       "ds100" : "KERP",
       "eva" : 8001858,
       "latlong" : [
@@ -19266,10 +19992,22 @@
       "name" : "Erpolzheim"
    },
    {
+      "ds100" : "XBEW",
+      "eva" : 8800250,
+      "latlong" : null,
+      "name" : "Erps-Kwerps"
+   },
+   {
       "ds100" : "XBEQ",
       "eva" : 8800023,
       "latlong" : null,
       "name" : "Erquelinnes"
+   },
+   {
+      "ds100" : "XBEQV",
+      "eva" : 8800492,
+      "latlong" : null,
+      "name" : "Erquelinnes-Village"
    },
    {
       "ds100" : "TERS",
@@ -19519,6 +20257,12 @@
          7.616211
       ],
       "name" : "Esens(Ostfriesl)"
+   },
+   {
+      "ds100" : "XBEX",
+      "eva" : 8800273,
+      "latlong" : null,
+      "name" : "Esneux"
    },
    {
       "ds100" : "HEKP",
@@ -19776,6 +20520,12 @@
       "name" : "Essen-Überruhr"
    },
    {
+      "ds100" : "XBEL",
+      "eva" : 8800288,
+      "latlong" : null,
+      "name" : "Essene-Lombeek"
+   },
+   {
       "ds100" : "TE",
       "eva" : 8001920,
       "latlong" : [
@@ -19849,6 +20599,12 @@
          10.232251
       ],
       "name" : "Ettenhausen"
+   },
+   {
+      "ds100" : "XBEE",
+      "eva" : 8800227,
+      "latlong" : null,
+      "name" : "Etterbeek"
    },
    {
       "ds100" : "NET",
@@ -20079,6 +20835,12 @@
       "name" : "Eutzsch"
    },
    {
+      "ds100" : "OBEV",
+      "eva" : 8800231,
+      "latlong" : null,
+      "name" : "Evere"
+   },
+   {
       "ds100" : "XFEV",
       "eva" : 8700219,
       "latlong" : null,
@@ -20119,6 +20881,12 @@
          9.23139
       ],
       "name" : "Eystrup"
+   },
+   {
+      "ds100" : "XBEZ",
+      "eva" : 8800254,
+      "latlong" : null,
+      "name" : "Ezemaal"
    },
    {
       "ds100" : "NEN",
@@ -20247,6 +21015,12 @@
       "name" : "Fallersleben"
    },
    {
+      "ds100" : "XBFX",
+      "eva" : 8800415,
+      "latlong" : null,
+      "name" : "Familleureux"
+   },
+   {
       "ds100" : "BFS",
       "eva" : 8011533,
       "latlong" : [
@@ -20263,6 +21037,12 @@
          11.11486
       ],
       "name" : "Farchant"
+   },
+   {
+      "ds100" : "XBFC",
+      "eva" : 8800476,
+      "latlong" : null,
+      "name" : "Farciennes"
    },
    {
       "ds100" : "MFP",
@@ -20296,6 +21076,12 @@
          9.616047
       ],
       "name" : "Faurndau"
+   },
+   {
+      "ds100" : "XBFA",
+      "eva" : 8800515,
+      "latlong" : null,
+      "name" : "Faux"
    },
    {
       "ds100" : "TFV",
@@ -20556,6 +21342,12 @@
       "name" : "Feudingen"
    },
    {
+      "ds100" : "OBFHC",
+      "eva" : 8800259,
+      "latlong" : null,
+      "name" : "Fexhe-le-Haut-Cloche"
+   },
+   {
       "ds100" : "TFI",
       "eva" : 8001982,
       "latlong" : [
@@ -20763,6 +21555,12 @@
       "name" : "Flaurling"
    },
    {
+      "ds100" : "XBFW",
+      "eva" : 8800483,
+      "latlong" : null,
+      "name" : "Flawinne"
+   },
+   {
       "ds100" : "LFG",
       "eva" : 8011544,
       "latlong" : [
@@ -20790,6 +21588,18 @@
       "name" : "Flehingen"
    },
    {
+      "ds100" : "OBFLG",
+      "eva" : 8800461,
+      "latlong" : null,
+      "name" : "Flemalle-Grande"
+   },
+   {
+      "ds100" : "XBFH",
+      "eva" : 8800015,
+      "latlong" : null,
+      "name" : "Flemalle-Haute"
+   },
+   {
       "ds100" : "AF",
       "eva" : 8000103,
       "latlong" : [
@@ -20809,6 +21619,12 @@
       "eva" : 8700217,
       "latlong" : null,
       "name" : "Flers"
+   },
+   {
+      "ds100" : "XBFL",
+      "eva" : 8800055,
+      "latlong" : null,
+      "name" : "Fleurus"
    },
    {
       "ds100" : "FFD",
@@ -20845,6 +21661,24 @@
          8.333801
       ],
       "name" : "Flomersheim"
+   },
+   {
+      "ds100" : "XBFF",
+      "eva" : 8800482,
+      "latlong" : null,
+      "name" : "Floreffe"
+   },
+   {
+      "ds100" : "OBFLE",
+      "eva" : 8800559,
+      "latlong" : null,
+      "name" : "Florenville"
+   },
+   {
+      "ds100" : "XBFV",
+      "eva" : 8800504,
+      "latlong" : null,
+      "name" : "Florival"
    },
    {
       "ds100" : "DFM",
@@ -20925,6 +21759,12 @@
       "name" : "Fontaine"
    },
    {
+      "ds100" : "XBFTV",
+      "eva" : 8800489,
+      "latlong" : null,
+      "name" : "Fontaine-Valmont"
+   },
+   {
       "ds100" : "XFFA",
       "eva" : 8700535,
       "latlong" : null,
@@ -20970,10 +21810,22 @@
       "name" : "Forchheim(b Karlsruhe)"
    },
    {
+      "ds100" : "OBFH",
+      "eva" : 8800435,
+      "latlong" : null,
+      "name" : "Forchies"
+   },
+   {
       "ds100" : "XBFM",
       "eva" : 8800397,
       "latlong" : null,
       "name" : "Forest Midi/Vorst Zuid"
+   },
+   {
+      "ds100" : "XBVO",
+      "eva" : 8800447,
+      "latlong" : null,
+      "name" : "Forest,Est/Vorst,Oost"
    },
    {
       "ds100" : "TFB",
@@ -20983,6 +21835,12 @@
          9.642498
       ],
       "name" : "Fornsbach"
+   },
+   {
+      "ds100" : "OBFRS",
+      "eva" : 8800554,
+      "latlong" : null,
+      "name" : "Forrieres"
    },
    {
       "ds100" : "BFO",
@@ -21060,6 +21918,18 @@
       "name" : "Fraipont"
    },
    {
+      "ds100" : "XBFS",
+      "eva" : 8800407,
+      "latlong" : null,
+      "name" : "Frameries"
+   },
+   {
+      "ds100" : "XBFCM",
+      "eva" : 8800591,
+      "latlong" : null,
+      "name" : "Franchimont"
+   },
+   {
       "ds100" : "ONFR",
       "eva" : 8400232,
       "latlong" : [
@@ -21067,6 +21937,12 @@
          5.879133
       ],
       "name" : "Franeker"
+   },
+   {
+      "ds100" : "XBFE",
+      "eva" : 8800481,
+      "latlong" : null,
+      "name" : "Franiere"
    },
    {
       "ds100" : "FFRK",
@@ -22434,6 +23310,12 @@
       "name" : "Frouard"
    },
    {
+      "ds100" : "XBFY",
+      "eva" : 8800395,
+      "latlong" : null,
+      "name" : "Froyennes"
+   },
+   {
       "ds100" : "XSFR",
       "eva" : 8507478,
       "latlong" : [
@@ -22833,6 +23715,12 @@
       "name" : "Gallarate"
    },
    {
+      "ds100" : "XBGM",
+      "eva" : 8800445,
+      "latlong" : null,
+      "name" : "Galmaarden"
+   },
+   {
       "ds100" : "TGAM",
       "eva" : 8002177,
       "latlong" : [
@@ -22992,6 +23880,12 @@
       "name" : "Gars(Inn)"
    },
    {
+      "ds100" : "XBGS",
+      "eva" : 8800502,
+      "latlong" : null,
+      "name" : "Gastuche"
+   },
+   {
       "ds100" : "LGAL",
       "eva" : 8011599,
       "latlong" : [
@@ -23055,6 +23949,12 @@
       "name" : "Gauting"
    },
    {
+      "ds100" : "OBGVA",
+      "eva" : 8800362,
+      "latlong" : null,
+      "name" : "Gavere-Asper"
+   },
+   {
       "ds100" : "XPG",
       "eva" : 5100009,
       "latlong" : null,
@@ -23092,6 +23992,18 @@
          10.595388
       ],
       "name" : "Gebra(Hainleite)"
+   },
+   {
+      "ds100" : "OBGDE",
+      "eva" : 8800567,
+      "latlong" : null,
+      "name" : "Gedinne"
+   },
+   {
+      "ds100" : "XBGE",
+      "eva" : 8800056,
+      "latlong" : null,
+      "name" : "Geel"
    },
    {
       "ds100" : "HGEE",
@@ -23427,6 +24339,12 @@
       "name" : "Gelterkinden"
    },
    {
+      "ds100" : "XBGX",
+      "eva" : 8800057,
+      "latlong" : null,
+      "name" : "Gembloux"
+   },
+   {
       "ds100" : "TGEM",
       "eva" : 8002228,
       "latlong" : [
@@ -23478,6 +24396,12 @@
       "name" : "Gendorf"
    },
    {
+      "ds100" : "OBGC",
+      "eva" : 8800563,
+      "latlong" : null,
+      "name" : "Gendron-Celles"
+   },
+   {
       "ds100" : "RGB",
       "eva" : 8002235,
       "latlong" : [
@@ -23491,6 +24415,12 @@
       "eva" : 8800111,
       "latlong" : null,
       "name" : "Genk"
+   },
+   {
+      "ds100" : "XBGL",
+      "eva" : 8800408,
+      "latlong" : null,
+      "name" : "Genly"
    },
    {
       "ds100" : "SGN",
@@ -23542,6 +24472,12 @@
          12.157103
       ],
       "name" : "Genthin"
+   },
+   {
+      "ds100" : "XBGV",
+      "eva" : 8800530,
+      "latlong" : null,
+      "name" : "Genval"
    },
    {
       "ds100" : "XSGE",
@@ -23623,6 +24559,12 @@
          12.082181
       ],
       "name" : "Gera-Zwötzen"
+   },
+   {
+      "ds100" : "XBGEB",
+      "eva" : 8800059,
+      "latlong" : null,
+      "name" : "Geraardsbergen"
    },
    {
       "ds100" : "UGBG",
@@ -23946,6 +24888,12 @@
       "name" : "Gevrey-Chambertin"
    },
    {
+      "ds100" : "OBGH",
+      "eva" : 8800394,
+      "latlong" : null,
+      "name" : "Ghlin"
+   },
+   {
       "ds100" : "TGB",
       "eva" : 8002272,
       "latlong" : [
@@ -24255,6 +25203,12 @@
       "name" : "Gloggnitz"
    },
    {
+      "ds100" : "XBGO",
+      "eva" : 8800239,
+      "latlong" : null,
+      "name" : "Glons"
+   },
+   {
       "ds100" : "DGLO",
       "eva" : 8070199,
       "latlong" : [
@@ -24366,6 +25320,12 @@
       "name" : "Gochsheim(Baden)"
    },
    {
+      "ds100" : "XBGVL",
+      "eva" : 8800419,
+      "latlong" : null,
+      "name" : "Godarville"
+   },
+   {
       "ds100" : "HGOH",
       "eva" : 8002299,
       "latlong" : [
@@ -24373,6 +25333,12 @@
          9.356871
       ],
       "name" : "Godelheim"
+   },
+   {
+      "ds100" : "XBGON",
+      "eva" : 8800524,
+      "latlong" : null,
+      "name" : "Godinne"
    },
    {
       "ds100" : "RGOR",
@@ -24543,6 +25509,12 @@
       "name" : "Gondelsheim(Baden)"
    },
    {
+      "ds100" : "OBGT",
+      "eva" : 8800436,
+      "latlong" : null,
+      "name" : "Gontrode"
+   },
+   {
       "ds100" : "ONGO",
       "eva" : 8400254,
       "latlong" : [
@@ -24696,6 +25668,12 @@
       "name" : "Gouvy"
    },
    {
+      "ds100" : "XBGPN",
+      "eva" : 8800420,
+      "latlong" : null,
+      "name" : "Gouy-lez-Pieton"
+   },
+   {
       "ds100" : "DKH",
       "eva" : 8011676,
       "latlong" : [
@@ -24844,6 +25822,12 @@
          11.153259
       ],
       "name" : "Grafrath"
+   },
+   {
+      "ds100" : "OBGRE",
+      "eva" : 8800568,
+      "latlong" : null,
+      "name" : "Graide"
    },
    {
       "ds100" : "XAGR",
@@ -25222,6 +26206,12 @@
          11.698619
       ],
       "name" : "Gronsdorf"
+   },
+   {
+      "ds100" : "XBGRB",
+      "eva" : 8800284,
+      "latlong" : null,
+      "name" : "Groot-Bijgaarden"
    },
    {
       "ds100" : "ONGRI",
@@ -25792,6 +26782,12 @@
          14.378843
       ],
       "name" : "Grunow(Niederlausitz)"
+   },
+   {
+      "ds100" : "OBGR",
+      "eva" : 8800061,
+      "latlong" : null,
+      "name" : "Grupont"
    },
    {
       "ds100" : "MGFL",
@@ -26532,6 +27528,12 @@
       "name" : "Güttingen"
    },
    {
+      "ds100" : "XBHC",
+      "eva" : 8800325,
+      "latlong" : null,
+      "name" : "Haacht"
+   },
+   {
       "ds100" : "XBHA",
       "eva" : 8800366,
       "latlong" : null,
@@ -26587,6 +27589,12 @@
       "eva" : 8402735,
       "latlong" : null,
       "name" : "Haarlem Spaarnwoude"
+   },
+   {
+      "ds100" : "XBHBY",
+      "eva" : 8800555,
+      "latlong" : null,
+      "name" : "Habay"
    },
    {
       "ds100" : "KHAC",
@@ -26883,6 +27891,12 @@
       "name" : "Hainichen"
    },
    {
+      "ds100" : "XBHI",
+      "eva" : 8800410,
+      "latlong" : null,
+      "name" : "Hainin"
+   },
+   {
       "ds100" : "RHAI",
       "eva" : 8002529,
       "latlong" : [
@@ -27087,6 +28101,12 @@
       "name" : "Halle Zscherbener Straße"
    },
    {
+      "ds100" : "XBHAL",
+      "eva" : 8800006,
+      "latlong" : null,
+      "name" : "Halle(B)"
+   },
+   {
       "ds100" : "LHHB",
       "eva" : 8011811,
       "latlong" : null,
@@ -27226,6 +28246,24 @@
          7.611683
       ],
       "name" : "Haltingen"
+   },
+   {
+      "ds100" : "OBHAH",
+      "eva" : 8800494,
+      "latlong" : null,
+      "name" : "Ham-sur-Heure"
+   },
+   {
+      "ds100" : "XBHM",
+      "eva" : 8800479,
+      "latlong" : null,
+      "name" : "Ham-sur-Sambre"
+   },
+   {
+      "ds100" : "XBHBS",
+      "eva" : 8800323,
+      "latlong" : null,
+      "name" : "Hambos"
    },
    {
       "ds100" : "AAI",
@@ -27897,6 +28935,12 @@
       "name" : "Hamminkeln"
    },
    {
+      "ds100" : "OBHM",
+      "eva" : 8800277,
+      "latlong" : null,
+      "name" : "Hamoir"
+   },
+   {
       "ds100" : "FH",
       "eva" : 8000150,
       "latlong" : [
@@ -28104,6 +29148,12 @@
       "name" : "Hannover-Vinnhorst"
    },
    {
+      "ds100" : "XBHBK",
+      "eva" : 8800298,
+      "latlong" : null,
+      "name" : "Hansbeke"
+   },
+   {
       "ds100" : "SHN",
       "eva" : 8002588,
       "latlong" : [
@@ -28138,6 +29188,12 @@
          10.698455
       ],
       "name" : "Harburg(Schwab)"
+   },
+   {
+      "ds100" : "XBHCS",
+      "eva" : 8800575,
+      "latlong" : null,
+      "name" : "Harchies"
    },
    {
       "ds100" : "XAHA",
@@ -28200,6 +29256,18 @@
       "name" : "Hardinxveld-Giessendam"
    },
    {
+      "ds100" : "XBHRB",
+      "eva" : 8800161,
+      "latlong" : null,
+      "name" : "Harelbeke"
+   },
+   {
+      "ds100" : "OBHN",
+      "eva" : 8800233,
+      "latlong" : null,
+      "name" : "Haren(B)"
+   },
+   {
       "ds100" : "HHAR",
       "eva" : 8002598,
       "latlong" : [
@@ -28216,6 +29284,12 @@
          5.7852778434753
       ],
       "name" : "Haren(NL)"
+   },
+   {
+      "ds100" : "XBHNZ",
+      "eva" : 8800587,
+      "latlong" : null,
+      "name" : "Haren-Zuid/Haren-Sud"
    },
    {
       "ds100" : "HHLE",
@@ -28689,6 +29763,18 @@
       "name" : "Hausham"
    },
    {
+      "ds100" : "OBHTF",
+      "eva" : 8800466,
+      "latlong" : null,
+      "name" : "Haute-Flone"
+   },
+   {
+      "ds100" : "OBHVN",
+      "eva" : 8800552,
+      "latlong" : null,
+      "name" : "Haversin"
+   },
+   {
       "ds100" : "EHBK",
       "eva" : 8002670,
       "latlong" : [
@@ -28696,6 +29782,12 @@
          7.407711
       ],
       "name" : "Havixbeck"
+   },
+   {
+      "ds100" : "XBHVR",
+      "eva" : 8800428,
+      "latlong" : null,
+      "name" : "Havre"
    },
    {
       "ds100" : "XFHA",
@@ -28951,6 +30043,12 @@
          9.101029
       ],
       "name" : "Heide(Holst)"
+   },
+   {
+      "ds100" : "XBHD",
+      "eva" : 8800062,
+      "latlong" : null,
+      "name" : "Heide,(B)"
    },
    {
       "ds100" : "RH",
@@ -29514,6 +30612,18 @@
       "name" : "Heinzenhausen"
    },
    {
+      "ds100" : "XBHS",
+      "eva" : 8800306,
+      "latlong" : null,
+      "name" : "Heist"
+   },
+   {
+      "ds100" : "XBHSB",
+      "eva" : 8800206,
+      "latlong" : null,
+      "name" : "Heist-op-den-Berg"
+   },
+   {
       "ds100" : "RHE",
       "eva" : 8002727,
       "latlong" : [
@@ -29530,6 +30640,12 @@
          10.7484904082008
       ],
       "name" : "Heiterwang-Plansee"
+   },
+   {
+      "ds100" : "XBHJ",
+      "eva" : 8800342,
+      "latlong" : null,
+      "name" : "Heizijde"
    },
    {
       "ds100" : "UHD",
@@ -29638,6 +30754,12 @@
          8.714725
       ],
       "name" : "Helpup"
+   },
+   {
+      "ds100" : "OBHKM",
+      "eva" : 8800313,
+      "latlong" : null,
+      "name" : "Hemiksem"
    },
    {
       "ds100" : "ONHDW",
@@ -29814,6 +30936,12 @@
       "name" : "Hennigsdorf(b Berlin)"
    },
    {
+      "ds100" : "XBHNY",
+      "eva" : 8800403,
+      "latlong" : null,
+      "name" : "Hennuyeres"
+   },
+   {
       "ds100" : "AUB",
       "eva" : 8007053,
       "latlong" : [
@@ -29929,6 +31057,12 @@
          7.953074
       ],
       "name" : "Herdorf"
+   },
+   {
+      "ds100" : "OBHNT",
+      "eva" : 8800252,
+      "latlong" : null,
+      "name" : "Herent"
    },
    {
       "ds100" : "XBHR",
@@ -30049,6 +31183,12 @@
          7.21783
       ],
       "name" : "Herne"
+   },
+   {
+      "ds100" : "XBHRN",
+      "eva" : 8800443,
+      "latlong" : null,
+      "name" : "Herne(B)"
    },
    {
       "ds100" : "EHBO",
@@ -30184,6 +31324,12 @@
          11.423826
       ],
       "name" : "Hersbruck(r Pegnitz)"
+   },
+   {
+      "ds100" : "XBHX",
+      "eva" : 8800064,
+      "latlong" : null,
+      "name" : "Herseaux"
    },
    {
       "ds100" : "XBHL",
@@ -30465,6 +31611,12 @@
       "name" : "Heufeldmühle"
    },
    {
+      "ds100" : "XBHSN",
+      "eva" : 8800204,
+      "latlong" : null,
+      "name" : "Heusden"
+   },
+   {
       "ds100" : "FHEU",
       "eva" : 8002822,
       "latlong" : [
@@ -30472,6 +31624,18 @@
          8.802202
       ],
       "name" : "Heusenstamm"
+   },
+   {
+      "ds100" : "XBHEV",
+      "eva" : 8800327,
+      "latlong" : null,
+      "name" : "Hever(B)"
+   },
+   {
+      "ds100" : "XBHVL",
+      "eva" : 8800508,
+      "latlong" : null,
+      "name" : "Heverlee"
    },
    {
       "ds100" : "HHIS",
@@ -30544,6 +31708,12 @@
          9.963169
       ],
       "name" : "Hildesheim Ost"
+   },
+   {
+      "ds100" : "XBHG",
+      "eva" : 8800370,
+      "latlong" : null,
+      "name" : "Hillegem"
    },
    {
       "ds100" : "XNHO",
@@ -30781,6 +31951,12 @@
       "eva" : 5401059,
       "latlong" : null,
       "name" : "Hnevice"
+   },
+   {
+      "ds100" : "OBHBP",
+      "eva" : 8800311,
+      "latlong" : null,
+      "name" : "Hoboken-Polder"
    },
    {
       "ds100" : "KHO",
@@ -31080,6 +32256,12 @@
       "name" : "Hofheim(Taunus)"
    },
    {
+      "ds100" : "OBHF",
+      "eva" : 8800234,
+      "latlong" : null,
+      "name" : "Hofstade"
+   },
+   {
       "ds100" : "KHOG",
       "eva" : 8002939,
       "latlong" : [
@@ -31332,6 +32514,12 @@
       "name" : "Hollandsche Rading"
    },
    {
+      "ds100" : "XBHK",
+      "eva" : 8800451,
+      "latlong" : null,
+      "name" : "Holleken"
+   },
+   {
       "ds100" : "FKHST",
       "eva" : 711180,
       "latlong" : null,
@@ -31528,6 +32716,12 @@
          7.252882
       ],
       "name" : "Honrath"
+   },
+   {
+      "ds100" : "XBHY",
+      "eva" : 8800272,
+      "latlong" : null,
+      "name" : "Hony"
    },
    {
       "ds100" : "XNHD",
@@ -31812,6 +33006,18 @@
       "name" : "Hosena"
    },
    {
+      "ds100" : "XBHRG",
+      "eva" : 8800386,
+      "latlong" : null,
+      "name" : "Houraing"
+   },
+   {
+      "ds100" : "XBHP",
+      "eva" : 8800487,
+      "latlong" : null,
+      "name" : "Hourpes"
+   },
+   {
       "ds100" : "ONHT",
       "eva" : 8400340,
       "latlong" : [
@@ -31837,6 +33043,18 @@
          5.5483094
       ],
       "name" : "Houthem-St. Gerlach"
+   },
+   {
+      "ds100" : "OBHO",
+      "eva" : 8800065,
+      "latlong" : null,
+      "name" : "Houyet"
+   },
+   {
+      "ds100" : "XBHV",
+      "eva" : 8800220,
+      "latlong" : null,
+      "name" : "Hove(B)"
    },
    {
       "ds100" : "BHW",
@@ -31954,6 +33172,12 @@
          7.783929
       ],
       "name" : "Hugstetten"
+   },
+   {
+      "ds100" : "OBHZG",
+      "eva" : 8800585,
+      "latlong" : null,
+      "name" : "Huizingen"
    },
    {
       "ds100" : "THUB",
@@ -32532,6 +33756,18 @@
       "name" : "Idar-Oberstein"
    },
    {
+      "ds100" : "OBID",
+      "eva" : 8800376,
+      "latlong" : null,
+      "name" : "Iddergem"
+   },
+   {
+      "ds100" : "XBIG",
+      "eva" : 8800382,
+      "latlong" : null,
+      "name" : "Idegem"
+   },
+   {
       "ds100" : "FIST",
       "eva" : 8003041,
       "latlong" : [
@@ -32539,6 +33775,12 @@
          8.257264
       ],
       "name" : "Idstein(Taunus)"
+   },
+   {
+      "ds100" : "XBI",
+      "eva" : 8800066,
+      "latlong" : null,
+      "name" : "Ieper"
    },
    {
       "ds100" : "MSTA",
@@ -33153,6 +34395,12 @@
       "name" : "Ivanic Grad"
    },
    {
+      "ds100" : "XBIZ",
+      "eva" : 8800067,
+      "latlong" : null,
+      "name" : "Izegem"
+   },
+   {
       "ds100" : "WJAB",
       "eva" : 8011939,
       "latlong" : [
@@ -33211,6 +34459,24 @@
          6.565209
       ],
       "name" : "Jakobwüllesheim"
+   },
+   {
+      "ds100" : "XBJB",
+      "eva" : 8800522,
+      "latlong" : null,
+      "name" : "Jambes"
+   },
+   {
+      "ds100" : "OBJBE",
+      "eva" : 8800542,
+      "latlong" : null,
+      "name" : "Jambes-Est"
+   },
+   {
+      "ds100" : "OBJ",
+      "eva" : 8800068,
+      "latlong" : null,
+      "name" : "Jamioulx"
    },
    {
       "ds100" : "XDJP",
@@ -33301,6 +34567,24 @@
       "eva" : 5100259,
       "latlong" : null,
       "name" : "Jelenia Gora"
+   },
+   {
+      "ds100" : "XBJM",
+      "eva" : 8800571,
+      "latlong" : null,
+      "name" : "Jemappes"
+   },
+   {
+      "ds100" : "OBJSM",
+      "eva" : 8800460,
+      "latlong" : null,
+      "name" : "Jemeppe-sur-Meuse"
+   },
+   {
+      "ds100" : "XBJS",
+      "eva" : 8800069,
+      "latlong" : null,
+      "name" : "Jemeppe-sur-Sambre"
    },
    {
       "ds100" : "UJP",
@@ -33412,6 +34696,12 @@
          8.57327389270922
       ],
       "name" : "Jestetten"
+   },
+   {
+      "ds100" : "XBJT",
+      "eva" : 8800070,
+      "latlong" : null,
+      "name" : "Jette"
    },
    {
       "ds100" : "MJEB",
@@ -33568,6 +34858,18 @@
          9.213664
       ],
       "name" : "Jungnau"
+   },
+   {
+      "ds100" : "XBJU",
+      "eva" : 8800071,
+      "latlong" : null,
+      "name" : "Jurbise"
+   },
+   {
+      "ds100" : "XBJV",
+      "eva" : 8800589,
+      "latlong" : null,
+      "name" : "Juslenville"
    },
    {
       "ds100" : "XFJU",
@@ -33927,6 +35229,12 @@
       "name" : "Kall"
    },
    {
+      "ds100" : "XBKH",
+      "eva" : 8800183,
+      "latlong" : null,
+      "name" : "Kalmthout"
+   },
+   {
       "ds100" : "XAKAL",
       "eva" : 8101019,
       "latlong" : null,
@@ -34090,6 +35398,18 @@
          5.4813890457153
       ],
       "name" : "Kapelle-Biezelinge"
+   },
+   {
+      "ds100" : "XBKB",
+      "eva" : 8800317,
+      "latlong" : null,
+      "name" : "Kapelle-op-den-Bos"
+   },
+   {
+      "ds100" : "XBKP",
+      "eva" : 8800072,
+      "latlong" : null,
+      "name" : "Kapellen(B)"
    },
    {
       "ds100" : "RKPD",
@@ -34812,6 +36132,12 @@
       "name" : "Kersbach"
    },
    {
+      "ds100" : "XBKS",
+      "eva" : 8800196,
+      "latlong" : null,
+      "name" : "Kessel"
+   },
+   {
       "ds100" : "XSKW",
       "eva" : 8506123,
       "latlong" : [
@@ -34951,6 +36277,18 @@
          10.070212
       ],
       "name" : "Kiel-Russee"
+   },
+   {
+      "ds100" : "XBKW",
+      "eva" : 8800226,
+      "latlong" : null,
+      "name" : "Kiewit"
+   },
+   {
+      "ds100" : "XBKU",
+      "eva" : 8800192,
+      "latlong" : null,
+      "name" : "Kijkuit"
    },
    {
       "ds100" : "XSKB",
@@ -35913,6 +37251,12 @@
       "name" : "Knittlingen-Kleinvillars"
    },
    {
+      "ds100" : "XBKN",
+      "eva" : 8800074,
+      "latlong" : null,
+      "name" : "Knokke"
+   },
+   {
       "ds100" : "RKG",
       "eva" : 8003349,
       "latlong" : [
@@ -36054,6 +37398,12 @@
       "name" : "Kohlstetten"
    },
    {
+      "ds100" : "XBKE",
+      "eva" : 8800075,
+      "latlong" : null,
+      "name" : "Koksijde"
+   },
+   {
       "ds100" : "MKMR",
       "eva" : 8003397,
       "latlong" : [
@@ -36174,6 +37524,12 @@
       "name" : "Konstanz-Wollmatingen"
    },
    {
+      "ds100" : "XBKTH",
+      "eva" : 8800219,
+      "latlong" : null,
+      "name" : "Kontich-Lint"
+   },
+   {
       "ds100" : "SKZ",
       "eva" : 8003402,
       "latlong" : [
@@ -36277,6 +37633,12 @@
       "eva" : 8601343,
       "latlong" : null,
       "name" : "Korsoer st"
+   },
+   {
+      "ds100" : "XBKM",
+      "eva" : 8800076,
+      "latlong" : null,
+      "name" : "Kortemark"
    },
    {
       "ds100" : "XBKO",
@@ -37104,6 +38466,12 @@
       "name" : "Kutzenhausen"
    },
    {
+      "ds100" : "XBKT",
+      "eva" : 8800294,
+      "latlong" : null,
+      "name" : "Kwatrecht"
+   },
+   {
       "ds100" : "LKYA",
       "eva" : 8012141,
       "latlong" : [
@@ -37797,6 +39165,30 @@
       "name" : "La Souterraine"
    },
    {
+      "ds100" : "XBLH",
+      "eva" : 8800529,
+      "latlong" : null,
+      "name" : "La,Hulpe"
+   },
+   {
+      "ds100" : "OBLC",
+      "eva" : 8800416,
+      "latlong" : null,
+      "name" : "La,Louviere-Centre"
+   },
+   {
+      "ds100" : "XBLLS",
+      "eva" : 8800078,
+      "latlong" : null,
+      "name" : "La,Louviere-Sud"
+   },
+   {
+      "ds100" : "XBRC",
+      "eva" : 8800514,
+      "latlong" : null,
+      "name" : "La,Roche"
+   },
+   {
       "ds100" : "XALAA",
       "eva" : 8101180,
       "latlong" : null,
@@ -37828,6 +39220,12 @@
          12.315237
       ],
       "name" : "Laberweinting"
+   },
+   {
+      "ds100" : "XBLBS",
+      "eva" : 8800490,
+      "latlong" : null,
+      "name" : "Labuissiere"
    },
    {
       "ds100" : "XSLH",
@@ -38037,6 +39435,18 @@
       "name" : "Landeck-Zams"
    },
    {
+      "ds100" : "XBLDG",
+      "eva" : 8800297,
+      "latlong" : null,
+      "name" : "Landegem"
+   },
+   {
+      "ds100" : "XBLDL",
+      "eva" : 8800486,
+      "latlong" : null,
+      "name" : "Landelies"
+   },
+   {
       "ds100" : "XBLD",
       "eva" : 8800079,
       "latlong" : null,
@@ -38119,6 +39529,12 @@
          12.140728
       ],
       "name" : "Landshut(Bay)Süd"
+   },
+   {
+      "ds100" : "OBLKT",
+      "eva" : 8800437,
+      "latlong" : null,
+      "name" : "Landskouter"
    },
    {
       "ds100" : "SLD",
@@ -38997,6 +40413,12 @@
       "name" : "Le Raincy Villemomble Montferm"
    },
    {
+      "ds100" : "XBLCP",
+      "eva" : 8800475,
+      "latlong" : null,
+      "name" : "Le,Campinaire"
+   },
+   {
       "ds100" : "SLCH",
       "eva" : 8000563,
       "latlong" : [
@@ -39019,6 +40441,12 @@
       "eva" : 8800343,
       "latlong" : null,
       "name" : "Lebbeke"
+   },
+   {
+      "ds100" : "XBLDE",
+      "eva" : 8800291,
+      "latlong" : null,
+      "name" : "Lede"
    },
    {
       "ds100" : "HLEE",
@@ -39187,6 +40615,12 @@
          10.427937
       ],
       "name" : "Leiferde(b Gifhorn)"
+   },
+   {
+      "ds100" : "OBLON",
+      "eva" : 8800550,
+      "latlong" : null,
+      "name" : "Leignon"
    },
    {
       "ds100" : "ELEI",
@@ -39672,6 +41106,12 @@
       "name" : "Lelystad Centrum"
    },
    {
+      "ds100" : "OBLMN",
+      "eva" : 8800462,
+      "latlong" : null,
+      "name" : "Leman"
+   },
+   {
       "ds100" : "ELBK",
       "eva" : 8003630,
       "latlong" : [
@@ -39679,6 +41119,12 @@
          7.02548
       ],
       "name" : "Lembeck"
+   },
+   {
+      "ds100" : "XBLBK",
+      "eva" : 8800401,
+      "latlong" : null,
+      "name" : "Lembeek"
    },
    {
       "ds100" : "HLMF",
@@ -39834,6 +41280,12 @@
       "name" : "Lennestadt-Meggen"
    },
    {
+      "ds100" : "OBLN",
+      "eva" : 8800392,
+      "latlong" : null,
+      "name" : "Lens(B)"
+   },
+   {
       "ds100" : "XFLN",
       "eva" : 8700244,
       "latlong" : null,
@@ -39964,6 +41416,12 @@
          7.305961
       ],
       "name" : "Leschede"
+   },
+   {
+      "ds100" : "XBLSS",
+      "eva" : 8800081,
+      "latlong" : null,
+      "name" : "Lessines"
    },
    {
       "ds100" : "ELE",
@@ -40140,6 +41598,18 @@
       "name" : "Leuven"
    },
    {
+      "ds100" : "XBLZ",
+      "eva" : 8800028,
+      "latlong" : null,
+      "name" : "Leuze"
+   },
+   {
+      "ds100" : "XBLV",
+      "eva" : 8800417,
+      "latlong" : null,
+      "name" : "Leval"
+   },
+   {
       "ds100" : "KBAY",
       "eva" : 8000832,
       "latlong" : [
@@ -40195,6 +41665,12 @@
       "eva" : 5400198,
       "latlong" : null,
       "name" : "Liberec"
+   },
+   {
+      "ds100" : "XBLBM",
+      "eva" : 8800021,
+      "latlong" : null,
+      "name" : "Libramont"
    },
    {
       "ds100" : "FLI",
@@ -40305,6 +41781,12 @@
       "name" : "Lichtenvoorde-Groenlo"
    },
    {
+      "ds100" : "XBLC",
+      "eva" : 8800082,
+      "latlong" : null,
+      "name" : "Lichtervelde"
+   },
+   {
       "ds100" : "FLIB",
       "eva" : 8003677,
       "latlong" : null,
@@ -40329,6 +41811,12 @@
       "name" : "Lieblos"
    },
    {
+      "ds100" : "XBLDK",
+      "eva" : 8800289,
+      "latlong" : null,
+      "name" : "Liedekerke"
+   },
+   {
       "ds100" : "FLDB",
       "eva" : 8007159,
       "latlong" : [
@@ -40351,6 +41839,18 @@
       "eva" : 8100141,
       "latlong" : null,
       "name" : "Lienz in Osttirol"
+   },
+   {
+      "ds100" : "XBLR",
+      "eva" : 8800083,
+      "latlong" : null,
+      "name" : "Lier(B)"
+   },
+   {
+      "ds100" : "OBLID",
+      "eva" : 8800442,
+      "latlong" : null,
+      "name" : "Lierde"
    },
    {
       "ds100" : "XBLI",
@@ -40386,6 +41886,12 @@
       "name" : "Liezen"
    },
    {
+      "ds100" : "XBLY",
+      "eva" : 8800511,
+      "latlong" : null,
+      "name" : "Ligny"
+   },
+   {
       "ds100" : "XFLIE",
       "eva" : 8704949,
       "latlong" : null,
@@ -40396,6 +41902,18 @@
       "eva" : 8700030,
       "latlong" : null,
       "name" : "Lille Flandres"
+   },
+   {
+      "ds100" : "XBLIL",
+      "eva" : 8800454,
+      "latlong" : null,
+      "name" : "Lillois"
+   },
+   {
+      "ds100" : "XBLIM",
+      "eva" : 8800498,
+      "latlong" : null,
+      "name" : "Limal"
    },
    {
       "ds100" : "DLIM",
@@ -40572,6 +42090,12 @@
       "name" : "Lingenfeld"
    },
    {
+      "ds100" : "XBLIN",
+      "eva" : 8800450,
+      "latlong" : null,
+      "name" : "Linkebeek"
+   },
+   {
       "ds100" : "RLING",
       "eva" : 8079018,
       "latlong" : [
@@ -40683,6 +42207,12 @@
       "name" : "Lissendorf"
    },
    {
+      "ds100" : "XBLW",
+      "eva" : 8800308,
+      "latlong" : null,
+      "name" : "Lissewege"
+   },
+   {
       "ds100" : "ELIS",
       "eva" : 8003715,
       "latlong" : [
@@ -40710,16 +42240,34 @@
       "name" : "Livorno Centrale"
    },
    {
+      "ds100" : "XBLJ",
+      "eva" : 8800235,
+      "latlong" : null,
+      "name" : "Liège-Carré"
+   },
+   {
       "ds100" : "XBLIG",
       "eva" : 8800012,
       "latlong" : null,
       "name" : "Liège-Guillemins"
    },
    {
+      "ds100" : "XBLP",
+      "eva" : 8800586,
+      "latlong" : null,
+      "name" : "Liège-Saint-Lambert"
+   },
+   {
       "ds100" : "XZL",
       "eva" : 7900003,
       "latlong" : null,
       "name" : "Ljubljana"
+   },
+   {
+      "ds100" : "XBLOB",
+      "eva" : 8800126,
+      "latlong" : null,
+      "name" : "Lobbes"
    },
    {
       "ds100" : "LLO",
@@ -40765,6 +42313,12 @@
          11.43089
       ],
       "name" : "Lochham"
+   },
+   {
+      "ds100" : "XBLOD",
+      "eva" : 8800510,
+      "latlong" : null,
+      "name" : "Lodelinsart"
    },
    {
       "ds100" : "XDLF",
@@ -40845,6 +42399,12 @@
       "name" : "Loitsch-Hohenleuben"
    },
    {
+      "ds100" : "XBLOK",
+      "eva" : 8800127,
+      "latlong" : null,
+      "name" : "Lokeren"
+   },
+   {
       "ds100" : "FLOL",
       "eva" : 8000234,
       "latlong" : [
@@ -40852,6 +42412,18 @@
          8.70174
       ],
       "name" : "Lollar"
+   },
+   {
+      "ds100" : "XBLOM",
+      "eva" : 8800128,
+      "latlong" : null,
+      "name" : "Lommel"
+   },
+   {
+      "ds100" : "XBLOZ",
+      "eva" : 8800158,
+      "latlong" : null,
+      "name" : "Londerzeel"
    },
    {
       "ds100" : "XFLNG",
@@ -40879,6 +42451,12 @@
          9.917377
       ],
       "name" : "Lonsee"
+   },
+   {
+      "ds100" : "XBLN",
+      "eva" : 8800538,
+      "latlong" : null,
+      "name" : "Lonzee"
    },
    {
       "ds100" : "XALDF",
@@ -40956,6 +42534,12 @@
       "name" : "Lorsch"
    },
    {
+      "ds100" : "XBLT",
+      "eva" : 8800399,
+      "latlong" : null,
+      "name" : "Lot"
+   },
+   {
       "ds100" : "BLOS",
       "eva" : 8012255,
       "latlong" : [
@@ -40984,6 +42568,12 @@
       "eva" : 8700105,
       "latlong" : null,
       "name" : "Lourdes"
+   },
+   {
+      "ds100" : "XBLNU",
+      "eva" : 8800533,
+      "latlong" : null,
+      "name" : "Louvain-la-Neuve"
    },
    {
       "ds100" : "XTLO",
@@ -41370,6 +42960,12 @@
       "name" : "Lustenau"
    },
    {
+      "ds100" : "XBLS",
+      "eva" : 8800523,
+      "latlong" : null,
+      "name" : "Lustin"
+   },
+   {
       "ds100" : "XSLZ",
       "eva" : 8500208,
       "latlong" : [
@@ -41443,6 +43039,12 @@
       "eva" : 8701439,
       "latlong" : null,
       "name" : "Lutterbach"
+   },
+   {
+      "ds100" : "XBLU",
+      "eva" : 8800422,
+      "latlong" : null,
+      "name" : "Luttre"
    },
    {
       "ds100" : "ELUT",
@@ -42039,6 +43641,12 @@
       "name" : "Machnin hrad"
    },
    {
+      "ds100" : "OBMF",
+      "eva" : 8800388,
+      "latlong" : null,
+      "name" : "Maffle"
+   },
+   {
       "ds100" : "LMGH",
       "eva" : 8080660,
       "latlong" : [
@@ -42396,6 +44004,12 @@
       "name" : "Malczyce"
    },
    {
+      "ds100" : "XBMAL",
+      "eva" : 8800318,
+      "latlong" : null,
+      "name" : "Malderen"
+   },
+   {
       "ds100" : "WGRN",
       "eva" : 8011650,
       "latlong" : null,
@@ -42741,6 +44355,12 @@
       "name" : "Marbeck-Heiden"
    },
    {
+      "ds100" : "XBMAR",
+      "eva" : 8800156,
+      "latlong" : null,
+      "name" : "Marbehan"
+   },
+   {
       "ds100" : "FMBS",
       "eva" : 8003856,
       "latlong" : [
@@ -42759,10 +44379,22 @@
       "name" : "Marburg(Lahn)"
    },
    {
+      "ds100" : "OBMFN",
+      "eva" : 8800281,
+      "latlong" : null,
+      "name" : "Marche-en-Famenne"
+   },
+   {
       "ds100" : "XBMD",
       "eva" : 8800473,
       "latlong" : null,
       "name" : "Marche-les-Dames"
+   },
+   {
+      "ds100" : "XBMCE",
+      "eva" : 8800414,
+      "latlong" : null,
+      "name" : "Marche-lez-Ecaussinnes"
    },
    {
       "ds100" : "XAMG",
@@ -42778,6 +44410,12 @@
       "eva" : 8800122,
       "latlong" : null,
       "name" : "Marchienne au Pont"
+   },
+   {
+      "ds100" : "XBMIZ",
+      "eva" : 8800485,
+      "latlong" : null,
+      "name" : "Marchienne-Zone"
    },
    {
       "ds100" : "XAMR",
@@ -42813,10 +44451,22 @@
       "name" : "Maria Veen"
    },
    {
+      "ds100" : "XBMI",
+      "eva" : 8800301,
+      "latlong" : null,
+      "name" : "Maria-Aalter"
+   },
+   {
       "ds100" : "XZM",
       "eva" : 7900006,
       "latlong" : null,
       "name" : "Maribor"
+   },
+   {
+      "ds100" : "OBMB",
+      "eva" : 8800132,
+      "latlong" : null,
+      "name" : "Mariembourg"
    },
    {
       "ds100" : "ONMB",
@@ -43272,6 +44922,12 @@
       "name" : "Maselheim"
    },
    {
+      "ds100" : "XBMSP",
+      "eva" : 8800405,
+      "latlong" : null,
+      "name" : "Masnuy-St.-Pierre"
+   },
+   {
       "ds100" : "EMAN",
       "eva" : 8003909,
       "latlong" : [
@@ -43318,6 +44974,12 @@
       "eva" : 8700249,
       "latlong" : null,
       "name" : "Maubeuge"
+   },
+   {
+      "ds100" : "XBMB",
+      "eva" : 8800579,
+      "latlong" : null,
+      "name" : "Maubray"
    },
    {
       "ds100" : "RMAU",
@@ -43458,10 +45120,22 @@
       "name" : "Mayschoß"
    },
    {
+      "ds100" : "OBMZY",
+      "eva" : 8800520,
+      "latlong" : null,
+      "name" : "Mazy"
+   },
+   {
       "ds100" : "XBMCH",
       "eva" : 8800010,
       "latlong" : null,
       "name" : "Mechelen"
+   },
+   {
+      "ds100" : "XBMNP",
+      "eva" : 8800179,
+      "latlong" : null,
+      "name" : "Mechelen-Nekkerspoel"
    },
    {
       "ds100" : "KMCH",
@@ -43683,6 +45357,12 @@
       "name" : "Meisdorf"
    },
    {
+      "ds100" : "OBMSR",
+      "eva" : 8800230,
+      "latlong" : null,
+      "name" : "Meiser"
+   },
+   {
       "ds100" : "MMEI",
       "eva" : 8003952,
       "latlong" : [
@@ -43764,6 +45444,12 @@
       "name" : "Melk"
    },
    {
+      "ds100" : "OBMK",
+      "eva" : 8800223,
+      "latlong" : null,
+      "name" : "Melkouwen"
+   },
+   {
       "ds100" : "HMEL",
       "eva" : 8003956,
       "latlong" : [
@@ -43771,6 +45457,12 @@
          8.343221
       ],
       "name" : "Melle"
+   },
+   {
+      "ds100" : "XBMEL",
+      "eva" : 8800295,
+      "latlong" : null,
+      "name" : "Melle(B)"
    },
    {
       "ds100" : "UMEL",
@@ -43809,6 +45501,12 @@
       "name" : "Mellrichstadt Bf"
    },
    {
+      "ds100" : "OBMXH",
+      "eva" : 8800280,
+      "latlong" : null,
+      "name" : "Melreux-Hotton"
+   },
+   {
       "ds100" : "XSMS",
       "eva" : 8509412,
       "latlong" : [
@@ -43825,6 +45523,12 @@
          10.03083
       ],
       "name" : "Melsdorf"
+   },
+   {
+      "ds100" : "OBMSM",
+      "eva" : 8800356,
+      "latlong" : null,
+      "name" : "Melsele"
    },
    {
       "ds100" : "FMLS",
@@ -43912,6 +45616,12 @@
          8.97860209024968
       ],
       "name" : "Mendrisio"
+   },
+   {
+      "ds100" : "XBMEN",
+      "eva" : 8800153,
+      "latlong" : null,
+      "name" : "Menen"
    },
    {
       "ds100" : "TMG",
@@ -44046,6 +45756,12 @@
       "name" : "Mering-St Afra"
    },
    {
+      "ds100" : "XBMED",
+      "eva" : 8800229,
+      "latlong" : null,
+      "name" : "Merode"
+   },
+   {
       "ds100" : "XLM",
       "eva" : 8200110,
       "latlong" : null,
@@ -44116,6 +45832,12 @@
       "eva" : 8701637,
       "latlong" : null,
       "name" : "Merxheim(Colmar)"
+   },
+   {
+      "ds100" : "XBMY",
+      "eva" : 8800271,
+      "latlong" : null,
+      "name" : "Mery(B)"
    },
    {
       "ds100" : "KMEZ",
@@ -44269,6 +45991,12 @@
          11.079214
       ],
       "name" : "Meuselbach-Schwarzmühle"
+   },
+   {
+      "ds100" : "OBMGA",
+      "eva" : 8800389,
+      "latlong" : null,
+      "name" : "Mevergnies-Attre"
    },
    {
       "ds100" : "WME",
@@ -44757,6 +46485,12 @@
       "name" : "Modane"
    },
    {
+      "ds100" : "OBMBG",
+      "eva" : 8800583,
+      "latlong" : null,
+      "name" : "Moensberg"
+   },
+   {
       "ds100" : "KMO",
       "eva" : 8000644,
       "latlong" : [
@@ -44781,6 +46515,12 @@
       "name" : "Mol"
    },
    {
+      "ds100" : "XBMOL",
+      "eva" : 8800339,
+      "latlong" : null,
+      "name" : "Mollem"
+   },
+   {
       "ds100" : "XSMOS",
       "eva" : 8509415,
       "latlong" : [
@@ -44788,6 +46528,12 @@
          9.27680343664119
       ],
       "name" : "Mols"
+   },
+   {
+      "ds100" : "OBMML",
+      "eva" : 8800258,
+      "latlong" : null,
+      "name" : "Momalle"
    },
    {
       "ds100" : "XFMH",
@@ -44839,6 +46585,12 @@
          8.208162
       ],
       "name" : "Monsheim"
+   },
+   {
+      "ds100" : "XBMG",
+      "eva" : 8800534,
+      "latlong" : null,
+      "name" : "Mont-St.-Guibert"
    },
    {
       "ds100" : "FMT",
@@ -44931,6 +46683,12 @@
       "name" : "Moorbekhalle"
    },
    {
+      "ds100" : "OBMT",
+      "eva" : 8800438,
+      "latlong" : null,
+      "name" : "Moortsele"
+   },
+   {
       "ds100" : "SMBT",
       "eva" : 8079265,
       "latlong" : [
@@ -44997,6 +46755,12 @@
       "name" : "Moritzburg"
    },
    {
+      "ds100" : "OBMZ",
+      "eva" : 8800432,
+      "latlong" : null,
+      "name" : "Morlanwelz"
+   },
+   {
       "ds100" : "NMOU",
       "eva" : 8004090,
       "latlong" : [
@@ -45013,6 +46777,30 @@
          8.432464
       ],
       "name" : "Morsum"
+   },
+   {
+      "ds100" : "XBMOR",
+      "eva" : 8800194,
+      "latlong" : null,
+      "name" : "Mortsel"
+   },
+   {
+      "ds100" : "OBMDW",
+      "eva" : 8800222,
+      "latlong" : null,
+      "name" : "Mortsel-Deurnesteenweg"
+   },
+   {
+      "ds100" : "OBMOL",
+      "eva" : 8800607,
+      "latlong" : null,
+      "name" : "Mortsel-Liersesteenw"
+   },
+   {
+      "ds100" : "XBMOG",
+      "eva" : 8800221,
+      "latlong" : null,
+      "name" : "Mortsel-Oude-God"
    },
    {
       "ds100" : "RMOW",
@@ -46710,6 +48498,12 @@
       "name" : "Namborn"
    },
    {
+      "ds100" : "OBNC",
+      "eva" : 8800472,
+      "latlong" : null,
+      "name" : "Nameche"
+   },
+   {
       "ds100" : "KNAM",
       "eva" : 8004200,
       "latlong" : [
@@ -46741,6 +48535,12 @@
       "eva" : 8700018,
       "latlong" : null,
       "name" : "Nancy Ville"
+   },
+   {
+      "ds100" : "OBNN",
+      "eva" : 8800544,
+      "latlong" : null,
+      "name" : "Naninne"
    },
    {
       "ds100" : "XFNA",
@@ -46798,6 +48598,12 @@
          13.239198
       ],
       "name" : "Nassenheide"
+   },
+   {
+      "ds100" : "OBNT",
+      "eva" : 8800549,
+      "latlong" : null,
+      "name" : "Natoye"
    },
    {
       "ds100" : "HNAH",
@@ -47071,6 +48877,12 @@
       "eva" : 8800130,
       "latlong" : null,
       "name" : "Neerpelt"
+   },
+   {
+      "ds100" : "XBNW",
+      "eva" : 8800255,
+      "latlong" : null,
+      "name" : "Neerwinden"
    },
    {
       "ds100" : "ANEZ",
@@ -47701,6 +49513,12 @@
          9.186653
       ],
       "name" : "Neufra(Hohenz)"
+   },
+   {
+      "ds100" : "XBNF",
+      "eva" : 8800404,
+      "latlong" : null,
+      "name" : "Neufvilles"
    },
    {
       "ds100" : "DNF",
@@ -49080,6 +50898,12 @@
       "name" : "Niefern"
    },
    {
+      "ds100" : "OBNL",
+      "eva" : 8800314,
+      "latlong" : null,
+      "name" : "Niel"
+   },
+   {
       "ds100" : "LNM",
       "eva" : 8012506,
       "latlong" : [
@@ -49170,6 +50994,12 @@
       "name" : "Nieuwerkerk a. d. Ijssel"
    },
    {
+      "ds100" : "OBNWK",
+      "eva" : 8800334,
+      "latlong" : null,
+      "name" : "Nieuwkerken-Waas"
+   },
+   {
       "ds100" : "KNIV",
       "eva" : 8004434,
       "latlong" : [
@@ -49195,6 +51025,12 @@
          5.4938888549805
       ],
       "name" : "Nijkerk"
+   },
+   {
+      "ds100" : "XBNJ",
+      "eva" : 8800197,
+      "latlong" : null,
+      "name" : "Nijlen"
    },
    {
       "ds100" : "XNNM",
@@ -49269,6 +51105,18 @@
       "name" : "Nimburg(Baden)"
    },
    {
+      "ds100" : "XBNY",
+      "eva" : 8800426,
+      "latlong" : null,
+      "name" : "Nimy"
+   },
+   {
+      "ds100" : "XBNN",
+      "eva" : 8800378,
+      "latlong" : null,
+      "name" : "Ninove"
+   },
+   {
       "ds100" : "FERW",
       "eva" : 8001819,
       "latlong" : [
@@ -49285,6 +51133,12 @@
          6.440942
       ],
       "name" : "Nittel"
+   },
+   {
+      "ds100" : "XBNV",
+      "eva" : 8800152,
+      "latlong" : null,
+      "name" : "Nivelles"
    },
    {
       "ds100" : "XDNN",
@@ -49618,6 +51472,12 @@
          9.852585
       ],
       "name" : "Nortorf"
+   },
+   {
+      "ds100" : "XBNG",
+      "eva" : 8800248,
+      "latlong" : null,
+      "name" : "Nossegem"
    },
    {
       "ds100" : "WNOS",
@@ -50044,6 +51904,12 @@
          9.916749
       ],
       "name" : "Nützen"
+   },
+   {
+      "ds100" : "XBOX",
+      "eva" : 8800456,
+      "latlong" : null,
+      "name" : "Obaix-Buzet"
    },
    {
       "ds100" : "FORA",
@@ -51300,6 +53166,12 @@
       "name" : "Okarben"
    },
    {
+      "ds100" : "OBOG",
+      "eva" : 8800377,
+      "latlong" : null,
+      "name" : "Okegem"
+   },
+   {
       "ds100" : "HOK",
       "eva" : 8004665,
       "latlong" : [
@@ -51529,6 +53401,12 @@
          5.8400001525879
       ],
       "name" : "Oosterbeek"
+   },
+   {
+      "ds100" : "XBOK",
+      "eva" : 8800303,
+      "latlong" : null,
+      "name" : "Oostkamp"
    },
    {
       "ds100" : "XSZP",
@@ -52191,6 +54069,12 @@
       "name" : "Otterwisch"
    },
    {
+      "ds100" : "XBOT",
+      "eva" : 8800138,
+      "latlong" : null,
+      "name" : "Ottignies"
+   },
+   {
       "ds100" : "MOTG",
       "eva" : 8004730,
       "latlong" : [
@@ -52260,6 +54144,24 @@
       "name" : "Otzing"
    },
    {
+      "ds100" : "XBOD",
+      "eva" : 8800507,
+      "latlong" : null,
+      "name" : "Oud-Heverlee"
+   },
+   {
+      "ds100" : "OBOD",
+      "eva" : 8800320,
+      "latlong" : null,
+      "name" : "Oudegem"
+   },
+   {
+      "ds100" : "XBOA",
+      "eva" : 8800149,
+      "latlong" : null,
+      "name" : "Oudenaarde"
+   },
+   {
       "ds100" : "ONOU",
       "eva" : 8400498,
       "latlong" : [
@@ -52291,6 +54193,12 @@
          7.288817
       ],
       "name" : "Overath"
+   },
+   {
+      "ds100" : "XBOP",
+      "eva" : 8800201,
+      "latlong" : null,
+      "name" : "Overpelt"
    },
    {
       "ds100" : "XNOV",
@@ -52410,6 +54318,12 @@
       "name" : "Paindorf"
    },
    {
+      "ds100" : "OBPSL",
+      "eva" : 8800570,
+      "latlong" : null,
+      "name" : "Paliseul"
+   },
+   {
       "ds100" : "SPZ",
       "eva" : 8004748,
       "latlong" : [
@@ -52474,6 +54388,12 @@
          11.790459
       ],
       "name" : "Papiermühle(Stadtr)"
+   },
+   {
+      "ds100" : "XBPG",
+      "eva" : 8800385,
+      "latlong" : null,
+      "name" : "Papignies"
    },
    {
       "ds100" : "MPP",
@@ -52671,6 +54591,12 @@
       "name" : "Pechbrunn"
    },
    {
+      "ds100" : "XBPE",
+      "eva" : 8800505,
+      "latlong" : null,
+      "name" : "Pecrot"
+   },
+   {
       "ds100" : "WPD",
       "eva" : 8012617,
       "latlong" : [
@@ -52806,6 +54732,12 @@
       "name" : "Pepinster"
    },
    {
+      "ds100" : "XBPC",
+      "eva" : 8800588,
+      "latlong" : null,
+      "name" : "Pepinster-Cite"
+   },
+   {
       "ds100" : "XFPGX",
       "eva" : 8700405,
       "latlong" : null,
@@ -52849,6 +54781,12 @@
       "eva" : 8700164,
       "latlong" : null,
       "name" : "Perpignan"
+   },
+   {
+      "ds100" : "XBPW",
+      "eva" : 8800577,
+      "latlong" : null,
+      "name" : "Peruwelz"
    },
    {
       "ds100" : "XIPDG",
@@ -53154,6 +55092,12 @@
       "name" : "Pfäffingen"
    },
    {
+      "ds100" : "OBPH",
+      "eva" : 8800140,
+      "latlong" : null,
+      "name" : "Philippeville"
+   },
+   {
       "ds100" : "RPB",
       "eva" : 8004813,
       "latlong" : [
@@ -53206,6 +55150,12 @@
       "eva" : 5102756,
       "latlong" : null,
       "name" : "Piensk"
+   },
+   {
+      "ds100" : "OBPN",
+      "eva" : 8800434,
+      "latlong" : null,
+      "name" : "Pieton"
    },
    {
       "ds100" : "XAPV",
@@ -53574,6 +55524,12 @@
       "name" : "Poitiers"
    },
    {
+      "ds100" : "OBPO",
+      "eva" : 8800141,
+      "latlong" : null,
+      "name" : "Poix-St-Hubert"
+   },
+   {
       "ds100" : "XTPI",
       "eva" : 5465000,
       "latlong" : null,
@@ -53628,10 +55584,22 @@
       "name" : "Pont-Ste-Maxence"
    },
    {
+      "ds100" : "XBPT",
+      "eva" : 8800421,
+      "latlong" : null,
+      "name" : "Pont-a-Celles"
+   },
+   {
       "ds100" : "XFPM",
       "eva" : 8700366,
       "latlong" : null,
       "name" : "Pont-a-Mousson"
+   },
+   {
+      "ds100" : "OBPS",
+      "eva" : 8800459,
+      "latlong" : null,
+      "name" : "Pont-de-Seraing"
    },
    {
       "ds100" : "XIPW",
@@ -53647,6 +55615,12 @@
          9.896077579131
       ],
       "name" : "Pontresina"
+   },
+   {
+      "ds100" : "XBPP",
+      "eva" : 8800142,
+      "latlong" : null,
+      "name" : "Poperinge"
    },
    {
       "ds100" : "NPOP",
@@ -53857,6 +55831,12 @@
       "eva" : 8704301,
       "latlong" : null,
       "name" : "Pougues les Eaux"
+   },
+   {
+      "ds100" : "XBPS",
+      "eva" : 8800177,
+      "latlong" : null,
+      "name" : "Poulseur"
    },
    {
       "ds100" : "XPPG",
@@ -54198,6 +56178,12 @@
       "name" : "Prosselsheim"
    },
    {
+      "ds100" : "OBP",
+      "eva" : 8800496,
+      "latlong" : null,
+      "name" : "Pry"
+   },
+   {
       "ds100" : "XPPRY",
       "eva" : 5102886,
       "latlong" : null,
@@ -54381,6 +56367,12 @@
       "name" : "Putzkau"
    },
    {
+      "ds100" : "XBPU",
+      "eva" : 8800316,
+      "latlong" : null,
+      "name" : "Puurs"
+   },
+   {
       "ds100" : "XAPN",
       "eva" : 8100006,
       "latlong" : [
@@ -54486,6 +56478,12 @@
       "name" : "Quakenbrück"
    },
    {
+      "ds100" : "XBQR",
+      "eva" : 8800572,
+      "latlong" : null,
+      "name" : "Quaregnon"
+   },
+   {
       "ds100" : "LQB",
       "eva" : 8010290,
       "latlong" : [
@@ -54571,6 +56569,12 @@
          7.059386
       ],
       "name" : "Quierschied"
+   },
+   {
+      "ds100" : "XBQV",
+      "eva" : 8800412,
+      "latlong" : null,
+      "name" : "Quievrain"
    },
    {
       "ds100" : "XFQ",
@@ -55164,6 +57168,12 @@
       "name" : "Re(I)"
    },
    {
+      "ds100" : "XBRB",
+      "eva" : 8800384,
+      "latlong" : null,
+      "name" : "Rebaix"
+   },
+   {
       "ds100" : "MRH",
       "eva" : 8004966,
       "latlong" : [
@@ -55707,6 +57717,12 @@
       "name" : "Remagen"
    },
    {
+      "ds100" : "OBRMC",
+      "eva" : 8800257,
+      "latlong" : null,
+      "name" : "Remicourt"
+   },
+   {
       "ds100" : "XFRT",
       "eva" : 8701879,
       "latlong" : null,
@@ -56193,6 +58209,12 @@
       "name" : "Rheydt-Odenkirchen"
    },
    {
+      "ds100" : "XBRH",
+      "eva" : 8800541,
+      "latlong" : null,
+      "name" : "Rhisnes"
+   },
+   {
       "ds100" : "KRHD",
       "eva" : 8005074,
       "latlong" : [
@@ -56592,6 +58614,12 @@
       "name" : "Ritterhude"
    },
    {
+      "ds100" : "XBRV",
+      "eva" : 8800014,
+      "latlong" : null,
+      "name" : "Rivage"
+   },
+   {
       "ds100" : "XSRB",
       "eva" : 8505216,
       "latlong" : [
@@ -56605,6 +58633,12 @@
       "eva" : 8700489,
       "latlong" : null,
       "name" : "Rivesaltes"
+   },
+   {
+      "ds100" : "XBRA",
+      "eva" : 8800531,
+      "latlong" : null,
+      "name" : "Rixensart"
    },
    {
       "ds100" : "XFROA",
@@ -56803,6 +58837,12 @@
       "eva" : 8700412,
       "latlong" : null,
       "name" : "Roeschwoog"
+   },
+   {
+      "ds100" : "XBRL",
+      "eva" : 8800164,
+      "latlong" : null,
+      "name" : "Roeselare"
    },
    {
       "ds100" : "WRGT",
@@ -57022,6 +59062,12 @@
          9.651786
       ],
       "name" : "Ronnenberg"
+   },
+   {
+      "ds100" : "OBRR",
+      "eva" : 8800165,
+      "latlong" : null,
+      "name" : "Ronse/Renaix"
    },
    {
       "ds100" : "FRON",
@@ -57597,6 +59643,12 @@
       "name" : "Rouffach"
    },
    {
+      "ds100" : "XBRX",
+      "eva" : 8800424,
+      "latlong" : null,
+      "name" : "Roux"
+   },
+   {
       "ds100" : "XIRR",
       "eva" : 8300113,
       "latlong" : null,
@@ -57760,6 +59812,18 @@
          13.334949
       ],
       "name" : "Ruhstorf"
+   },
+   {
+      "ds100" : "XBRK",
+      "eva" : 8800398,
+      "latlong" : null,
+      "name" : "Ruisbroek"
+   },
+   {
+      "ds100" : "PBRUS",
+      "eva" : 8800099,
+      "latlong" : null,
+      "name" : "Ruisbroek-Sauvegarde"
    },
    {
       "ds100" : "XARU",
@@ -58956,6 +61020,12 @@
       "name" : "Sarstedt"
    },
    {
+      "ds100" : "OBSB",
+      "eva" : 8800545,
+      "latlong" : null,
+      "name" : "Sart-Bernard"
+   },
+   {
       "ds100" : "RSAS",
       "eva" : 8007287,
       "latlong" : [
@@ -59304,6 +61374,12 @@
       "name" : "Scheidt(Saar)"
    },
    {
+      "ds100" : "OBSWK",
+      "eva" : 8800439,
+      "latlong" : null,
+      "name" : "Scheldewindeke"
+   },
+   {
       "ds100" : "TSK",
       "eva" : 8005333,
       "latlong" : [
@@ -59313,6 +61389,12 @@
       "name" : "Schelklingen"
    },
    {
+      "ds100" : "XBSB",
+      "eva" : 8800293,
+      "latlong" : null,
+      "name" : "Schellebelle"
+   },
+   {
       "ds100" : "TSX",
       "eva" : 8005334,
       "latlong" : [
@@ -59320,6 +61402,12 @@
          9.829031
       ],
       "name" : "Schemmerberg"
+   },
+   {
+      "ds100" : "OBSD",
+      "eva" : 8800383,
+      "latlong" : null,
+      "name" : "Schendelbeke"
    },
    {
       "ds100" : "RSZL",
@@ -59929,6 +62017,12 @@
          10.304913
       ],
       "name" : "Schonungen"
+   },
+   {
+      "ds100" : "OBSC",
+      "eva" : 8800166,
+      "latlong" : null,
+      "name" : "Schoonaarde"
    },
    {
       "ds100" : "RSCH",
@@ -61050,6 +63144,18 @@
       "name" : "Schüttorf"
    },
    {
+      "ds100" : "OBSGX",
+      "eva" : 8800471,
+      "latlong" : null,
+      "name" : "Sclaigneaux"
+   },
+   {
+      "ds100" : "OBSN",
+      "eva" : 8800457,
+      "latlong" : null,
+      "name" : "Sclessin"
+   },
+   {
       "ds100" : "XSST",
       "eva" : 8509268,
       "latlong" : [
@@ -61593,6 +63699,12 @@
       "name" : "Sersheim"
    },
    {
+      "ds100" : "XBSK",
+      "eva" : 8800292,
+      "latlong" : null,
+      "name" : "Serskamp"
+   },
+   {
       "ds100" : "XISGI",
       "eva" : 8300866,
       "latlong" : null,
@@ -61908,6 +64020,12 @@
       "name" : "Sillian"
    },
    {
+      "ds100" : "XBSL",
+      "eva" : 8800167,
+      "latlong" : null,
+      "name" : "Silly"
+   },
+   {
       "ds100" : "XASLZ",
       "eva" : 8100586,
       "latlong" : null,
@@ -61945,6 +64063,12 @@
          8.704856
       ],
       "name" : "Simtshausen"
+   },
+   {
+      "ds100" : "XBSI",
+      "eva" : 8800333,
+      "latlong" : null,
+      "name" : "Sinaai"
    },
    {
       "ds100" : "XUSN",
@@ -62047,6 +64171,42 @@
       "eva" : 8800373,
       "latlong" : null,
       "name" : "Sint-Denijs-Boekel"
+   },
+   {
+      "ds100" : "XBSJ",
+      "eva" : 8800582,
+      "latlong" : null,
+      "name" : "Sint-Job/Saint-Job"
+   },
+   {
+      "ds100" : "XBSKW",
+      "eva" : 8800217,
+      "latlong" : null,
+      "name" : "Sint-Katelijne-Waver"
+   },
+   {
+      "ds100" : "XBSM",
+      "eva" : 8800190,
+      "latlong" : null,
+      "name" : "Sint-Mariaburg"
+   },
+   {
+      "ds100" : "XBSMB",
+      "eva" : 8800286,
+      "latlong" : null,
+      "name" : "Sint-Martens-Bodegem"
+   },
+   {
+      "ds100" : "XBSN",
+      "eva" : 8800143,
+      "latlong" : null,
+      "name" : "Sint-Niklaas"
+   },
+   {
+      "ds100" : "XBSTD",
+      "eva" : 8800209,
+      "latlong" : null,
+      "name" : "Sint-Truiden"
    },
    {
       "ds100" : "RSZM",
@@ -62152,6 +64312,12 @@
       "eva" : 7800015,
       "latlong" : null,
       "name" : "Slavonski Brod"
+   },
+   {
+      "ds100" : "OBSLG",
+      "eva" : 8800330,
+      "latlong" : null,
+      "name" : "Sleidinge"
    },
    {
       "ds100" : "ONSL",
@@ -62268,6 +64434,12 @@
       "name" : "Sohland"
    },
    {
+      "ds100" : "XBSO",
+      "eva" : 8800144,
+      "latlong" : null,
+      "name" : "Soignies"
+   },
+   {
       "ds100" : "XTSO",
       "eva" : 5400199,
       "latlong" : null,
@@ -62362,6 +64534,12 @@
          11.294178
       ],
       "name" : "Solpke"
+   },
+   {
+      "ds100" : "XBSS",
+      "eva" : 8800491,
+      "latlong" : null,
+      "name" : "Solre-sur-Sambre"
    },
    {
       "ds100" : "ASON",
@@ -62569,6 +64747,12 @@
       "eva" : 8800168,
       "latlong" : null,
       "name" : "Spa"
+   },
+   {
+      "ds100" : "XBGN",
+      "eva" : 8800592,
+      "latlong" : null,
+      "name" : "Spa-Géronstère"
    },
    {
       "ds100" : "TSP",
@@ -63133,6 +65317,36 @@
       "eva" : 8100009,
       "latlong" : null,
       "name" : "St. Valentin"
+   },
+   {
+      "ds100" : "XBSAB",
+      "eva" : 8800283,
+      "latlong" : null,
+      "name" : "St.-Agatha-Berchem"
+   },
+   {
+      "ds100" : "XBSDB",
+      "eva" : 8800540,
+      "latlong" : null,
+      "name" : "St.-Denis-Bovesse"
+   },
+   {
+      "ds100" : "XBSGR",
+      "eva" : 8800452,
+      "latlong" : null,
+      "name" : "St.-Genesius-Rode"
+   },
+   {
+      "ds100" : "XBSGD",
+      "eva" : 8800344,
+      "latlong" : null,
+      "name" : "St.-Gillis"
+   },
+   {
+      "ds100" : "XBSJW",
+      "eva" : 8800506,
+      "latlong" : null,
+      "name" : "St.-Joris-Weert"
    },
    {
       "ds100" : "XAJO",
@@ -64018,6 +66232,12 @@
          11.400845
       ],
       "name" : "Stockdorf"
+   },
+   {
+      "ds100" : "XBSC",
+      "eva" : 8800556,
+      "latlong" : null,
+      "name" : "Stockem"
    },
    {
       "ds100" : "XASRA",
@@ -64956,6 +67176,12 @@
       "name" : "Swisttal-Odendorf"
    },
    {
+      "ds100" : "OBSY",
+      "eva" : 8800278,
+      "latlong" : null,
+      "name" : "Sy(B)"
+   },
+   {
       "ds100" : "HSYK",
       "eva" : 8005809,
       "latlong" : [
@@ -65595,6 +67821,12 @@
       "name" : "Templin-Ahrensdorf"
    },
    {
+      "ds100" : "XBTM",
+      "eva" : 8800354,
+      "latlong" : null,
+      "name" : "Temse"
+   },
+   {
       "ds100" : "XFTND",
       "eva" : 8704703,
       "latlong" : null,
@@ -65650,6 +67882,18 @@
       "eva" : 8700077,
       "latlong" : null,
       "name" : "Tergnier"
+   },
+   {
+      "ds100" : "XBTH",
+      "eva" : 8800368,
+      "latlong" : null,
+      "name" : "Terhagen"
+   },
+   {
+      "ds100" : "XBTN",
+      "eva" : 8800287,
+      "latlong" : null,
+      "name" : "Ternat"
    },
    {
       "ds100" : "WTHN",
@@ -65889,6 +68133,12 @@
       "name" : "Thesdorf"
    },
    {
+      "ds100" : "XBTX",
+      "eva" : 8800590,
+      "latlong" : null,
+      "name" : "Theux"
+   },
+   {
       "ds100" : "TTI",
       "eva" : 8007867,
       "latlong" : [
@@ -65896,6 +68146,12 @@
          9.095629
       ],
       "name" : "Thiergarten(Hohenz)"
+   },
+   {
+      "ds100" : "XBTU",
+      "eva" : 8800429,
+      "latlong" : null,
+      "name" : "Thieu"
    },
    {
       "ds100" : "XFTHV",
@@ -65911,6 +68167,18 @@
          12.2556397
       ],
       "name" : "Thoßfell"
+   },
+   {
+      "ds100" : "XBTIN",
+      "eva" : 8800488,
+      "latlong" : null,
+      "name" : "Thuin"
+   },
+   {
+      "ds100" : "XBTLN",
+      "eva" : 8800411,
+      "latlong" : null,
+      "name" : "Thulin"
    },
    {
       "ds100" : "XSTH",
@@ -66024,6 +68292,18 @@
       "name" : "Tiel Passewaaij"
    },
    {
+      "ds100" : "XBTIE",
+      "eva" : 8800200,
+      "latlong" : null,
+      "name" : "Tielen"
+   },
+   {
+      "ds100" : "XBTT",
+      "eva" : 8800084,
+      "latlong" : null,
+      "name" : "Tielt"
+   },
+   {
       "ds100" : "XBTI",
       "eva" : 8800085,
       "latlong" : null,
@@ -66064,6 +68344,18 @@
          5.0511112213135
       ],
       "name" : "Tilburg Universiteit"
+   },
+   {
+      "ds100" : "XBTF",
+      "eva" : 8800270,
+      "latlong" : null,
+      "name" : "Tilff"
+   },
+   {
+      "ds100" : "XBTY",
+      "eva" : 8800512,
+      "latlong" : null,
+      "name" : "Tilly"
    },
    {
       "ds100" : "ATIM",
@@ -66135,6 +68427,12 @@
       "name" : "Toender st"
    },
    {
+      "ds100" : "XBTB",
+      "eva" : 8800444,
+      "latlong" : null,
+      "name" : "Tollembeek"
+   },
+   {
       "ds100" : "XDTP",
       "eva" : 8602588,
       "latlong" : null,
@@ -66163,6 +68461,12 @@
          14.008758
       ],
       "name" : "Torgelow"
+   },
+   {
+      "ds100" : "XBTR",
+      "eva" : 8800087,
+      "latlong" : null,
+      "name" : "Torhout"
    },
    {
       "ds100" : "XITUP",
@@ -66606,6 +68910,12 @@
       "name" : "Trochtelfingen(b Bopfingen)"
    },
    {
+      "ds100" : "XBTP",
+      "eva" : 8800088,
+      "latlong" : null,
+      "name" : "Trois-Ponts"
+   },
+   {
       "ds100" : "KT",
       "eva" : 8000135,
       "latlong" : [
@@ -66678,6 +68988,12 @@
       "name" : "Tschagguns"
    },
    {
+      "ds100" : "XBTZ",
+      "eva" : 8800402,
+      "latlong" : null,
+      "name" : "Tubize"
+   },
+   {
       "ds100" : "MTUL",
       "eva" : 8005924,
       "latlong" : [
@@ -66718,6 +69034,12 @@
          8.25344123675291
       ],
       "name" : "Turgi"
+   },
+   {
+      "ds100" : "XBTUH",
+      "eva" : 8800171,
+      "latlong" : null,
+      "name" : "Turnhout"
    },
    {
       "ds100" : "TTU",
@@ -67114,6 +69436,18 @@
          6.7202975
       ],
       "name" : "Uithuizermeeden"
+   },
+   {
+      "ds100" : "XBUK",
+      "eva" : 8800449,
+      "latlong" : null,
+      "name" : "Ukkel-Kalevoet/Uccle"
+   },
+   {
+      "ds100" : "XBUS",
+      "eva" : 8800448,
+      "latlong" : null,
+      "name" : "Ukkel-Stalle/Uccle-S"
    },
    {
       "ds100" : "DUL",
@@ -68277,6 +70611,12 @@
       "name" : "Velp"
    },
    {
+      "ds100" : "XBVT",
+      "eva" : 8800251,
+      "latlong" : null,
+      "name" : "Veltem"
+   },
+   {
       "ds100" : "BVLT",
       "eva" : 8013185,
       "latlong" : [
@@ -68415,6 +70755,12 @@
       "name" : "Verona Porta Nuova"
    },
    {
+      "ds100" : "XBVK",
+      "eva" : 8800253,
+      "latlong" : null,
+      "name" : "Vertrijk"
+   },
+   {
       "ds100" : "XBVC",
       "eva" : 8800016,
       "latlong" : null,
@@ -68451,6 +70797,18 @@
       "name" : "Vettweiß"
    },
    {
+      "ds100" : "XBVE",
+      "eva" : 8800089,
+      "latlong" : null,
+      "name" : "Veurne"
+   },
+   {
+      "ds100" : "XBVM",
+      "eva" : 8800446,
+      "latlong" : null,
+      "name" : "Viane-Moerbeke"
+   },
+   {
       "ds100" : "XDVSJ",
       "eva" : 8602825,
       "latlong" : null,
@@ -68463,6 +70821,12 @@
       "name" : "Vicenza"
    },
    {
+      "ds100" : "OBVE",
+      "eva" : 8800375,
+      "latlong" : null,
+      "name" : "Vichte"
+   },
+   {
       "ds100" : "NVIC",
       "eva" : 8070561,
       "latlong" : [
@@ -68470,6 +70834,12 @@
          12.889255
       ],
       "name" : "Viechtach"
+   },
+   {
+      "ds100" : "XBVS",
+      "eva" : 8800274,
+      "latlong" : null,
+      "name" : "Vielsalm"
    },
    {
       "ds100" : "HVBG",
@@ -68547,6 +70917,12 @@
       "name" : "Vievola"
    },
    {
+      "ds100" : "OBVH",
+      "eva" : 8800357,
+      "latlong" : null,
+      "name" : "Vijfhuizen"
+   },
+   {
       "ds100" : "XTVL",
       "eva" : 5403384,
       "latlong" : null,
@@ -68586,6 +70962,12 @@
       "name" : "Villars les Dombes"
    },
    {
+      "ds100" : "XBVIP",
+      "eva" : 8800574,
+      "latlong" : null,
+      "name" : "Ville-Pommeroeul"
+   },
+   {
       "ds100" : "XFVDS",
       "eva" : 8704852,
       "latlong" : null,
@@ -68596,6 +70978,12 @@
       "eva" : 8702156,
       "latlong" : null,
       "name" : "Villers Cotterets"
+   },
+   {
+      "ds100" : "XBVIV",
+      "eva" : 8800513,
+      "latlong" : null,
+      "name" : "Villers-la-Ville"
    },
    {
       "ds100" : "XFVG",
@@ -68700,6 +71088,12 @@
       "name" : "Vipiteno-Val di Vizze/Sterzing-Pfitsch"
    },
    {
+      "ds100" : "OBVTN",
+      "eva" : 8800561,
+      "latlong" : null,
+      "name" : "Virton"
+   },
+   {
       "ds100" : "XDVY",
       "eva" : 8602867,
       "latlong" : null,
@@ -68740,6 +71134,12 @@
       "eva" : 8700520,
       "latlong" : null,
       "name" : "Vittel"
+   },
+   {
+      "ds100" : "XBVI",
+      "eva" : 8800557,
+      "latlong" : null,
+      "name" : "Viville"
    },
    {
       "ds100" : "XNVT",
@@ -69000,6 +71400,12 @@
       "name" : "Vormwald Dorf"
    },
    {
+      "ds100" : "OBVX",
+      "eva" : 8800260,
+      "latlong" : null,
+      "name" : "Voroux-Goreux"
+   },
+   {
       "ds100" : "NV",
       "eva" : 8006120,
       "latlong" : [
@@ -69154,6 +71560,12 @@
          11.3216663976922
       ],
       "name" : "Völs"
+   },
+   {
+      "ds100" : "OBWT",
+      "eva" : 8800331,
+      "latlong" : null,
+      "name" : "Waarschoot"
    },
    {
       "ds100" : "FWAB",
@@ -69349,6 +71761,12 @@
          10.365956
       ],
       "name" : "Wakendorf"
+   },
+   {
+      "ds100" : "OBWCT",
+      "eva" : 8800091,
+      "latlong" : null,
+      "name" : "Walcourt"
    },
    {
       "ds100" : "XAWA",
@@ -69783,6 +72201,18 @@
       "name" : "Warburg(Westf)"
    },
    {
+      "ds100" : "XBWG",
+      "eva" : 8800092,
+      "latlong" : null,
+      "name" : "Waregem"
+   },
+   {
+      "ds100" : "XBWMM",
+      "eva" : 8800093,
+      "latlong" : null,
+      "name" : "Waremme"
+   },
+   {
       "ds100" : "WWR",
       "eva" : 8010361,
       "latlong" : [
@@ -70080,6 +72510,12 @@
       "name" : "Watzenborn-Steinberg"
    },
    {
+      "ds100" : "XBWV",
+      "eva" : 8800500,
+      "latlong" : null,
+      "name" : "Wavre"
+   },
+   {
       "ds100" : "LWBU",
       "eva" : 8013246,
       "latlong" : [
@@ -70129,6 +72565,12 @@
          7.343095
       ],
       "name" : "Weener"
+   },
+   {
+      "ds100" : "XBWD",
+      "eva" : 8800216,
+      "latlong" : null,
+      "name" : "Weerde"
    },
    {
       "ds100" : "XNWT",
@@ -70914,6 +73356,12 @@
       "name" : "Welkers"
    },
    {
+      "ds100" : "XBWL",
+      "eva" : 8800365,
+      "latlong" : null,
+      "name" : "Welle"
+   },
+   {
       "ds100" : "LWL",
       "eva" : 8013271,
       "latlong" : [
@@ -71280,6 +73728,12 @@
       "name" : "Werther"
    },
    {
+      "ds100" : "XBWK",
+      "eva" : 8800349,
+      "latlong" : null,
+      "name" : "Wervik"
+   },
+   {
       "ds100" : "EWES",
       "eva" : 8000242,
       "latlong" : [
@@ -71508,6 +73962,12 @@
       "name" : "Wetter(Ruhr)"
    },
    {
+      "ds100" : "XBWN",
+      "eva" : 8800094,
+      "latlong" : null,
+      "name" : "Wetteren"
+   },
+   {
       "ds100" : "LWZE",
       "eva" : 8013297,
       "latlong" : [
@@ -71535,6 +73995,18 @@
       "name" : "Wetzlar"
    },
    {
+      "ds100" : "XBWE",
+      "eva" : 8800348,
+      "latlong" : null,
+      "name" : "Wevelgem"
+   },
+   {
+      "ds100" : "XBWZ",
+      "eva" : 8800241,
+      "latlong" : null,
+      "name" : "Wezemaal"
+   },
+   {
       "ds100" : "ONWEZ",
       "eva" : 8400690,
       "latlong" : [
@@ -71551,6 +74023,12 @@
          11.251768
       ],
       "name" : "Weßling(Oberbay)"
+   },
+   {
+      "ds100" : "OBWH",
+      "eva" : 8800321,
+      "latlong" : null,
+      "name" : "Wichelen"
    },
    {
       "ds100" : "EWIC",
@@ -71934,6 +74412,12 @@
       "name" : "Wijchen"
    },
    {
+      "ds100" : "XBWJ",
+      "eva" : 8800322,
+      "latlong" : null,
+      "name" : "Wijgmaal"
+   },
+   {
       "ds100" : "ONWIH",
       "eva" : 8400711,
       "latlong" : [
@@ -72013,6 +74497,12 @@
          10.026229
       ],
       "name" : "Wildeck-Obersuhl"
+   },
+   {
+      "ds100" : "OBWI",
+      "eva" : 8800193,
+      "latlong" : null,
+      "name" : "Wildert"
    },
    {
       "ds100" : "HWIH",
@@ -72136,6 +74626,12 @@
          9.011652
       ],
       "name" : "Willebadessen"
+   },
+   {
+      "ds100" : "XBWB",
+      "eva" : 8800352,
+      "latlong" : null,
+      "name" : "Willebroek"
    },
    {
       "ds100" : "FWLN",
@@ -72960,6 +75456,12 @@
       "name" : "Wolvega"
    },
    {
+      "ds100" : "OBWG",
+      "eva" : 8800329,
+      "latlong" : null,
+      "name" : "Wondelgem"
+   },
+   {
       "ds100" : "ONWOK",
       "eva" : 8400706,
       "latlong" : [
@@ -73686,6 +76188,12 @@
       "name" : "Yves-Gomezee"
    },
    {
+      "ds100" : "XBYV",
+      "eva" : 8800095,
+      "latlong" : null,
+      "name" : "Yvoir"
+   },
+   {
       "ds100" : "HDUD",
       "eva" : 860883,
       "latlong" : null,
@@ -73788,6 +76296,12 @@
       "name" : "Zaltbommel"
    },
    {
+      "ds100" : "OBZB",
+      "eva" : 8800381,
+      "latlong" : null,
+      "name" : "Zandbergen"
+   },
+   {
       "ds100" : "XNZA",
       "eva" : 8400733,
       "latlong" : [
@@ -73827,6 +76341,12 @@
       "name" : "Zasieki"
    },
    {
+      "ds100" : "XBZM",
+      "eva" : 8800247,
+      "latlong" : null,
+      "name" : "Zaventem"
+   },
+   {
       "ds100" : "XPZAW",
       "eva" : 5100212,
       "latlong" : null,
@@ -73855,6 +76375,12 @@
       "eva" : 8800184,
       "latlong" : null,
       "name" : "Zeebrugge-Dorp"
+   },
+   {
+      "ds100" : "PBZ",
+      "eva" : 8800100,
+      "latlong" : null,
+      "name" : "Zeebrugge-Strand"
    },
    {
       "ds100" : "BZS",
@@ -73909,6 +76435,12 @@
          12.131488
       ],
       "name" : "Zeitz"
+   },
+   {
+      "ds100" : "XBZE",
+      "eva" : 8800096,
+      "latlong" : null,
+      "name" : "Zele"
    },
    {
       "ds100" : "XTZRC",
@@ -73999,6 +76531,12 @@
          12.865143
       ],
       "name" : "Zellerthal"
+   },
+   {
+      "ds100" : "XBZL",
+      "eva" : 8800337,
+      "latlong" : null,
+      "name" : "Zellik"
    },
    {
       "ds100" : "XAZW",
@@ -74313,6 +76851,12 @@
       "name" : "Zimmersrode"
    },
    {
+      "ds100" : "OBZM",
+      "eva" : 8800363,
+      "latlong" : null,
+      "name" : "Zingem"
+   },
+   {
       "ds100" : "WZ",
       "eva" : 8010392,
       "latlong" : [
@@ -74491,6 +77035,12 @@
          13.438571
       ],
       "name" : "Zossen"
+   },
+   {
+      "ds100" : "XBZT",
+      "eva" : 8800098,
+      "latlong" : null,
+      "name" : "Zottegem"
    },
    {
       "ds100" : "RZT",
@@ -74686,6 +77236,12 @@
          13.276937
       ],
       "name" : "Zwieselau"
+   },
+   {
+      "ds100" : "OBZW",
+      "eva" : 8800336,
+      "latlong" : null,
+      "name" : "Zwijndrecht(B)"
    },
    {
       "ds100" : "XNZW",
