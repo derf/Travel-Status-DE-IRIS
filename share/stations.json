@@ -26547,6 +26547,15 @@
       "name" : "Haan"
    },
    {
+      "ds100" : "KGUA",
+      "eva" : 8000138,
+      "latlong" : [
+         51.21378326,
+         7.0041472
+      ],
+      "name" : "Haan-Gruiten"
+   },
+   {
       "ds100" : "MHR",
       "eva" : 8002491,
       "latlong" : [
