@@ -1,9 +1,9 @@
-git HEAD
+Travel::Status::DE::IRIS 1.36 - Fri Nov 22 2019
 
     * Update stations list, prune duplicates and outdated entries
       (251 additions, 155 deletions). Incorporates patches by Moritz Schlarb
       and https://github.com/Knuspel -- Thanks!
-    * Update documentation to reflect that EVA IDs use by DB IRIS are not
+    * Update documentation to reflect that EVA IDs used by DB IRIS are not
       the same as UIC station IDs (they just happen to be identical in 99% of
       cases)
     * Stations are now stored in share/stations.json. See README.md for
