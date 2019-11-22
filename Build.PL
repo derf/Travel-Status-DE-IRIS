@@ -7,7 +7,7 @@ use Module::Build;
 Module::Build->new(
 
 	build_requires => {
-		'File::Slurp' => 9999.26,
+		'File::Slurp' => 9999.19,
 		'JSON' => 0,
 		'Test::Compile' => 0,
 		'Test::Fatal' => 0,
