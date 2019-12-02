@@ -52502,37 +52502,55 @@
    {
       "ds100" : "XFPA",
       "eva" : 8700010,
-      "latlong" : null,
+      "latlong" : [
+         48.842285,
+         2.364891
+      ],
       "name" : "Paris Austerlitz"
    },
    {
       "ds100" : "XFPO",
       "eva" : 8700011,
-      "latlong" : null,
+      "latlong" : [
+         48.876742,
+         2.358424
+      ],
       "name" : "Paris Est"
    },
    {
       "ds100" : "XFPG",
       "eva" : 8700012,
-      "latlong" : null,
+      "latlong" : [
+         48.844888,
+         2.37352
+      ],
       "name" : "Paris Gare de Lyon"
    },
    {
       "ds100" : "XFPMP",
       "eva" : 8700013,
-      "latlong" : null,
+      "latlong" : [
+         48.841172,
+         2.320514
+      ],
       "name" : "Paris Montparnasse"
    },
    {
       "ds100" : "XFPN",
       "eva" : 8700014,
-      "latlong" : null,
+      "latlong" : [
+         48.880185,
+         2.355151
+      ],
       "name" : "Paris Nord"
    },
    {
       "ds100" : "XFPSL",
       "eva" : 8700015,
-      "latlong" : null,
+      "latlong" : [
+         48.876242,
+         2.325331
+      ],
       "name" : "Paris St Lazare"
    },
    {
@@ -64241,7 +64259,10 @@
    {
       "ds100" : "XFSTG",
       "eva" : 8700023,
-      "latlong" : null,
+      "latlong" : [
+         48.584967,
+         7.734584
+      ],
       "name" : "Strasbourg"
    },
    {
