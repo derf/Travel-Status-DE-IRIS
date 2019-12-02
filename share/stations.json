@@ -78,6 +78,18 @@
       "name" : "Aarburg-Oftringen"
    },
    {
+      "ds100" : "XBAAR",
+      "eva" : 8800032,
+      "latlong" : null,
+      "name" : "Aarschot"
+   },
+   {
+      "ds100" : "OBAAS",
+      "eva" : 8800594,
+      "latlong" : null,
+      "name" : "Aarsele"
+   },
+   {
       "ds100" : "ONAB",
       "eva" : 8400047,
       "latlong" : [
@@ -17376,6 +17388,12 @@
       "name" : "Ede(B)"
    },
    {
+      "ds100" : "XBED",
+      "eva" : 8800367,
+      "latlong" : null,
+      "name" : "Ede(B)"
+   },
+   {
       "ds100" : "XNEW",
       "eva" : 8400200,
       "latlong" : [
@@ -28377,12 +28395,6 @@
       "name" : "Haslach"
    },
    {
-      "ds100" : "XDHZ",
-      "eva" : 8600904,
-      "latlong" : null,
-      "name" : "Haslev,st"
-   },
-   {
       "ds100" : "NHCH",
       "eva" : 8002622,
       "latlong" : [
@@ -28702,6 +28714,12 @@
          7.407711
       ],
       "name" : "Havixbeck"
+   },
+   {
+      "ds100" : "XBHVR",
+      "eva" : 8800428,
+      "latlong" : null,
+      "name" : "Havre"
    },
    {
       "ds100" : "XFHA",
@@ -36034,12 +36052,6 @@
       "eva" : 8601312,
       "latlong" : null,
       "name" : "Koege st"
-   },
-   {
-      "ds100" : "PDKNS",
-      "eva" : 8600797,
-      "latlong" : null,
-      "name" : "Koege,Nord,St."
    },
    {
       "ds100" : "XFKO",
