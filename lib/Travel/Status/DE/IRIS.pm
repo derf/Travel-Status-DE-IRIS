@@ -43,7 +43,7 @@ sub new {
 		  // DateTime->now( time_zone => 'Europe/Berlin' ),
 		developer_mode => $opt{developer_mode},
 		iris_base      => $opt{iris_base}
-		  // 'http://iris.noncd.db.de/iris-tts/timetable',
+		  // 'https://iris.noncd.db.de/iris-tts/timetable',
 		lookahead  => $opt{lookahead}  // ( 2 * 60 ),
 		lookbehind => $opt{lookbehind} // ( 0 * 60 ),
 		main_cache => $opt{main_cache},
