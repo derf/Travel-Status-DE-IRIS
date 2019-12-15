@@ -1,3 +1,9 @@
+Travel::Status::DE::IRIS 1.38 - Sun Dec 15 2019
+
+    * Add geocoordinates for belgian stations
+      (patch by https://github.com/Knuspel)
+    * New IRIS option: "keep_transfers"
+
 Travel::Status::DE::IRIS 1.37 - Sat Dec 07 2019
 
     * Add geocoordinates for french stations served by Thalys/TGV
