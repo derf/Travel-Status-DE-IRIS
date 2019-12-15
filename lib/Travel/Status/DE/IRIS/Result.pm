@@ -1013,7 +1013,7 @@ see also B<is_transfer>.
 =item $result->old_train_no
 
 Number of the pre-tarnsfer train, unique per day. E.g. C<< 2225 >> for
-C<< IC 2225 >>. See also B<is_transfer>. Only defined if a transfer took
+C<< IC 2225 >>. Only defined if a transfer took
 place, see also B<is_transfer>.
 
 =item $result->origin

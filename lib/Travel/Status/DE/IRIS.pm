@@ -44,10 +44,11 @@ sub new {
 		developer_mode => $opt{developer_mode},
 		iris_base      => $opt{iris_base}
 		  // 'https://iris.noncd.db.de/iris-tts/timetable',
-		lookahead  => $opt{lookahead}  // ( 2 * 60 ),
-		lookbehind => $opt{lookbehind} // ( 0 * 60 ),
-		main_cache => $opt{main_cache},
-		rt_cache   => $opt{realtime_cache},
+		keep_transfers  => $opt{keep_transfers},
+		lookahead       => $opt{lookahead} // ( 2 * 60 ),
+		lookbehind      => $opt{lookbehind} // ( 0 * 60 ),
+		main_cache      => $opt{main_cache},
+		rt_cache        => $opt{realtime_cache},
 		serializable    => $opt{serializable},
 		user_agent      => $opt{user_agent},
 		with_related    => $opt{with_related},
@@ -83,6 +84,7 @@ sub new {
 		my $ref_status = Travel::Status::DE::IRIS->new(
 			datetime       => $self->{datetime},
 			developer_mode => $self->{developer_mode},
+			keep_transfers => $self->{keep_transfers},
 			lookahead      => $self->{lookahead},
 			lookbehind     => $self->{lookbehind},
 			station        => $ref->{uic},
@@ -124,22 +126,26 @@ sub new {
 
 	$self->get_realtime;
 
-	# tra (transfer?) indicates a train changing its ID, so there are two
-	# results for the same train. Remove the departure-only trains from the
-	# result set and merge them with their arrival-only counterpart.
-	# This way, in case the arrival is available but the departure isn't,
-	# nothing gets lost.
-	my @merge_candidates
-	  = grep { $_->transfer and $_->departure } @{ $self->{results} };
-	@{ $self->{results} }
-	  = grep { not( $_->transfer and $_->departure ) } @{ $self->{results} };
+	if ( not $self->{keep_transfers} ) {
 
-	for my $transfer (@merge_candidates) {
-		my $result
-		  = first { $_->transfer and $_->transfer eq $transfer->train_id }
-		@{ $self->{results} };
-		if ($result) {
-			$result->merge_with_departure($transfer);
+		# tra (transfer?) indicates a train changing its ID, so there are two
+		# results for the same train. Remove the departure-only trains from the
+		# result set and merge them with their arrival-only counterpart.
+		# This way, in case the arrival is available but the departure isn't,
+		# nothing gets lost.
+		my @merge_candidates
+		  = grep { $_->transfer and $_->departure } @{ $self->{results} };
+		@{ $self->{results} }
+		  = grep { not( $_->transfer and $_->departure ) }
+		  @{ $self->{results} };
+
+		for my $transfer (@merge_candidates) {
+			my $result
+			  = first { $_->transfer and $_->transfer eq $transfer->train_id }
+			@{ $self->{results} };
+			if ($result) {
+				$result->merge_with_departure($transfer);
+			}
 		}
 	}
 
@@ -653,6 +659,27 @@ current date and time.
 =item B<iris_base> => I<url>
 
 IRIS base url, defaults to C<< http://iris.noncd.db.de/iris-tts/timetable >>.
+
+=item B<keep_transfers> => I<bool>
+
+A train may change its ID and number at a station, indicating that although the
+previous logical train ends here, the physical train will continue its journey
+under a new number to a new destination. A notable example is the Berlin
+Ringbahn, which travels round and round from Berlin SE<uuml>dkreuz to Berlin
+SE<uuml>dkreuz. Each train number corresponds to a single revolution, but the
+actual trains just keep going.
+
+The IRIS backend returns two results for each transfer train: An arrival-only
+result using the old ID (linked to the new one) and a departure-only result
+using the new ID (linked to the old one). By default, this library merges these
+into a single result with both arrival and departure time. Train number, ID,
+and route are taken from the departure only. The original train ID and number
+are available using the B<old_train_id> and B<old_train_no> accessors.
+
+In case this is not desirable (e.g. because you intend to track a single
+train to its destination station and do not want to implement special cases
+for transfer trains), set B<keep_transfers> to a true value. In this case,
+backend data will be reported as-is and transfer trains will not be merged.
 
 =item B<lookahead> => I<int>
 
