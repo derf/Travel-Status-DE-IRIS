@@ -56,7 +56,10 @@
    {
       "ds100" : "XBAAL",
       "eva" : 8800300,
-      "latlong" : null,
+      "latlong" : [
+         51.09198,
+         3.449044
+      ],
       "name" : "Aalter"
    },
    {
@@ -800,7 +803,10 @@
    {
       "ds100" : "XBAE",
       "eva" : 8800225,
-      "latlong" : null,
+      "latlong" : [
+         50.886819,
+         5.292533
+      ],
       "name" : "Alken(B)"
    },
    {
@@ -1922,7 +1928,10 @@
    {
       "ds100" : "XBAL",
       "eva" : 8800033,
-      "latlong" : null,
+      "latlong" : [
+         50.612882,
+         5.599524
+      ],
       "name" : "Angleur"
    },
    {
@@ -2015,7 +2024,10 @@
    {
       "ds100" : "XBANS",
       "eva" : 8800013,
-      "latlong" : null,
+      "latlong" : [
+         50.661028,
+         5.509686
+      ],
       "name" : "Ans(B)"
    },
    {
@@ -2045,19 +2057,28 @@
    {
       "ds100" : "XBAC",
       "eva" : 8800007,
-      "latlong" : null,
+      "latlong" : [
+         51.2155267220265,
+         4.42100465297699
+      ],
       "name" : "Antwerpen Centraal"
    },
    {
       "ds100" : "XBBC",
       "eva" : 8800008,
-      "latlong" : null,
+      "latlong" : [
+         51.199527,
+         4.432464
+      ],
       "name" : "Antwerpen-Berchem"
    },
    {
       "ds100" : "XBAZ",
       "eva" : 8800310,
-      "latlong" : null,
+      "latlong" : [
+         51.19754,
+         4.390969
+      ],
       "name" : "Antwerpen-Zuid"
    },
    {
@@ -2252,7 +2273,10 @@
    {
       "ds100" : "XBAR",
       "eva" : 8800022,
-      "latlong" : null,
+      "latlong" : [
+         49.680125,
+         5.809431
+      ],
       "name" : "Arlon"
    },
    {
@@ -2555,7 +2579,10 @@
    {
       "ds100" : "XBASS",
       "eva" : 8800338,
-      "latlong" : null,
+      "latlong" : [
+         50.906497,
+         4.208335
+      ],
       "name" : "Asse"
    },
    {
@@ -2915,7 +2942,10 @@
    {
       "ds100" : "XBAU",
       "eva" : 8800106,
-      "latlong" : null,
+      "latlong" : [
+         50.449063,
+         4.631098
+      ],
       "name" : "Auvelais"
    },
    {
@@ -5468,7 +5498,10 @@
    {
       "ds100" : "XBBE",
       "eva" : 8800302,
-      "latlong" : null,
+      "latlong" : [
+         51.128225,
+         3.329119
+      ],
       "name" : "Beernem"
    },
    {
@@ -7637,7 +7670,10 @@
    {
       "ds100" : "XBBX",
       "eva" : 8800035,
-      "latlong" : null,
+      "latlong" : [
+         49.852709,
+         5.267723
+      ],
       "name" : "Bertrix"
    },
    {
@@ -8156,7 +8192,10 @@
    {
       "ds100" : "XBBA",
       "eva" : 8800262,
-      "latlong" : null,
+      "latlong" : [
+         50.658179,
+         5.457387
+      ],
       "name" : "Bierset-Awans"
    },
    {
@@ -9410,7 +9449,10 @@
    {
       "ds100" : "XBBDL",
       "eva" : 8800581,
-      "latlong" : null,
+      "latlong" : [
+         50.801835,
+         4.393567
+      ],
       "name" : "Boondael/Boondaal"
    },
    {
@@ -10430,7 +10472,10 @@
    {
       "ds100" : "XBBS",
       "eva" : 8800107,
-      "latlong" : null,
+      "latlong" : [
+         50.644506,
+         5.612648
+      ],
       "name" : "Bressoux"
    },
    {
@@ -10928,7 +10973,10 @@
    {
       "ds100" : "XBBR",
       "eva" : 8800029,
-      "latlong" : null,
+      "latlong" : [
+         51.1972299862631,
+         3.21706295013428
+      ],
       "name" : "Brugge"
    },
    {
@@ -10973,37 +11021,55 @@
    {
       "ds100" : "XBBNL",
       "eva" : 8800043,
-      "latlong" : null,
+      "latlong" : [
+         50.8985400058829,
+         4.48302268981934
+      ],
       "name" : "Brussels Airport - Zaventem"
    },
    {
       "ds100" : "XBB",
       "eva" : 8800004,
-      "latlong" : null,
+      "latlong" : [
+         50.835374,
+         4.335695
+      ],
       "name" : "Bruxelles Midi"
    },
    {
       "ds100" : "XBBL",
       "eva" : 8800003,
-      "latlong" : null,
+      "latlong" : [
+         50.845496,
+         4.357062
+      ],
       "name" : "Bruxelles-Central"
    },
    {
       "ds100" : "XBBLX",
       "eva" : 8800005,
-      "latlong" : null,
+      "latlong" : [
+         50.838808,
+         4.373998
+      ],
       "name" : "Bruxelles-Luxembourg"
    },
    {
       "ds100" : "XBBME",
       "eva" : 8898004,
-      "latlong" : null,
+      "latlong" : [
+         50.835895,
+         4.335317
+      ],
       "name" : "Bruxelles-Midi Eurostar"
    },
    {
       "ds100" : "XBBN",
       "eva" : 8800002,
-      "latlong" : null,
+      "latlong" : [
+         50.860238,
+         4.361458
+      ],
       "name" : "Bruxelles-Nord"
    },
    {
@@ -12677,7 +12743,10 @@
    {
       "ds100" : "XBCH",
       "eva" : 8800024,
-      "latlong" : null,
+      "latlong" : [
+         50.404422,
+         4.438774
+      ],
       "name" : "Charleroi Sud"
    },
    {
@@ -13016,7 +13085,10 @@
    {
       "ds100" : "XBCE",
       "eva" : 8800264,
-      "latlong" : null,
+      "latlong" : [
+         50.60792,
+         5.616433
+      ],
       "name" : "Chenee"
    },
    {
@@ -13136,7 +13208,10 @@
    {
       "ds100" : "XBCL",
       "eva" : 8800045,
-      "latlong" : null,
+      "latlong" : [
+         50.409555,
+         4.52054
+      ],
       "name" : "Châtelet"
    },
    {
@@ -14420,7 +14495,10 @@
    {
       "ds100" : "XBDL",
       "eva" : 8800050,
-      "latlong" : null,
+      "latlong" : [
+         50.891494,
+         4.071376
+      ],
       "name" : "Denderleeuw"
    },
    {
@@ -14798,7 +14876,10 @@
    {
       "ds100" : "XBDBK",
       "eva" : 8800240,
-      "latlong" : null,
+      "latlong" : [
+         50.910506,
+         5.420378
+      ],
       "name" : "Diepenbeek"
    },
    {
@@ -15257,7 +15338,10 @@
    {
       "ds100" : "XBDG",
       "eva" : 8800269,
-      "latlong" : null,
+      "latlong" : [
+         50.616244,
+         5.936494
+      ],
       "name" : "Dolhain-Gileppe"
    },
    {
@@ -17372,7 +17456,10 @@
    {
       "ds100" : "XBED",
       "eva" : 8800367,
-      "latlong" : null,
+      "latlong" : [
+         50.911144,
+         3.987542
+      ],
       "name" : "Ede(B)"
    },
    {
@@ -18665,7 +18752,10 @@
    {
       "ds100" : "XBEN",
       "eva" : 8800464,
-      "latlong" : null,
+      "latlong" : [
+         50.582831,
+         5.402714
+      ],
       "name" : "Engis"
    },
    {
@@ -19268,7 +19358,10 @@
    {
       "ds100" : "XBEQ",
       "eva" : 8800023,
-      "latlong" : null,
+      "latlong" : [
+         50.30368,
+         4.112295
+      ],
       "name" : "Erquelinnes"
    },
    {
@@ -19583,7 +19676,10 @@
    {
       "ds100" : "XBES",
       "eva" : 8800009,
-      "latlong" : null,
+      "latlong" : [
+         51.462641,
+         4.450999
+      ],
       "name" : "Essen(B)"
    },
    {
@@ -19967,7 +20063,10 @@
    {
       "ds100" : "XBEP",
       "eva" : 8800110,
-      "latlong" : null,
+      "latlong" : [
+         50.635364,
+         6.037155
+      ],
       "name" : "Eupen"
    },
    {
@@ -20972,7 +21071,10 @@
    {
       "ds100" : "XBFM",
       "eva" : 8800397,
-      "latlong" : null,
+      "latlong" : [
+         50.809081,
+         4.309788
+      ],
       "name" : "Forest Midi/Vorst Zuid"
    },
    {
@@ -21056,7 +21158,10 @@
    {
       "ds100" : "XBFR",
       "eva" : 8800266,
-      "latlong" : null,
+      "latlong" : [
+         50.565059,
+         5.724186
+      ],
       "name" : "Fraipont"
    },
    {
@@ -23489,7 +23594,10 @@
    {
       "ds100" : "XBGK",
       "eva" : 8800111,
-      "latlong" : null,
+      "latlong" : [
+         50.967012,
+         5.496256
+      ],
       "name" : "Genk"
    },
    {
@@ -23519,19 +23627,28 @@
    {
       "ds100" : "XBGP",
       "eva" : 8800031,
-      "latlong" : null,
+      "latlong" : [
+         51.035627,
+         3.710612
+      ],
       "name" : "Gent St Pieters"
    },
    {
       "ds100" : "XBGD",
       "eva" : 8800058,
-      "latlong" : null,
+      "latlong" : [
+         51.055852,
+         3.740609
+      ],
       "name" : "Gent-Dampoort"
    },
    {
       "ds100" : "XBGB",
       "eva" : 8800328,
-      "latlong" : null,
+      "latlong" : [
+         51.038809,
+         3.756088
+      ],
       "name" : "Gentbrugge"
    },
    {
@@ -24692,7 +24809,10 @@
    {
       "ds100" : "XBGY",
       "eva" : 8800060,
-      "latlong" : null,
+      "latlong" : [
+         50.189724,
+         5.953735
+      ],
       "name" : "Gouvy"
    },
    {
@@ -25166,7 +25286,10 @@
    {
       "ds100" : "XBGR",
       "eva" : 8800527,
-      "latlong" : null,
+      "latlong" : [
+         50.766157,
+         4.449228
+      ],
       "name" : "Groenendaal"
    },
    {
@@ -26534,7 +26657,10 @@
    {
       "ds100" : "XBHA",
       "eva" : 8800366,
-      "latlong" : null,
+      "latlong" : [
+         50.906847,
+         4.023832
+      ],
       "name" : "Haaltert"
    },
    {
@@ -28442,7 +28568,10 @@
    {
       "ds100" : "XBHT",
       "eva" : 8800114,
-      "latlong" : null,
+      "latlong" : [
+         50.930875,
+         5.327061
+      ],
       "name" : "Hasselt"
    },
    {
@@ -29933,7 +30062,10 @@
    {
       "ds100" : "XBHR",
       "eva" : 8800063,
-      "latlong" : null,
+      "latlong" : [
+         51.181117,
+         4.828573
+      ],
       "name" : "Herentals"
    },
    {
@@ -29957,7 +30089,10 @@
    {
       "ds100" : "XBHE",
       "eva" : 8800116,
-      "latlong" : null,
+      "latlong" : [
+         50.718209,
+         6.041335
+      ],
       "name" : "Hergenrath"
    },
    {
@@ -30188,7 +30323,10 @@
    {
       "ds100" : "XBHL",
       "eva" : 8800236,
-      "latlong" : null,
+      "latlong" : [
+         50.660606,
+         5.622483
+      ],
       "name" : "Herstal"
    },
    {
@@ -30266,7 +30404,10 @@
    {
       "ds100" : "XBHZ",
       "eva" : 8800369,
-      "latlong" : null,
+      "latlong" : [
+         50.897121,
+         3.879834
+      ],
       "name" : "Herzele"
    },
    {
@@ -30953,7 +31094,10 @@
    {
       "ds100" : "XBHO",
       "eva" : 8800528,
-      "latlong" : null,
+      "latlong" : [
+         50.759937,
+         4.468124
+      ],
       "name" : "Hoeilaart"
    },
    {
@@ -32048,7 +32192,10 @@
    {
       "ds100" : "XBHU",
       "eva" : 8800185,
-      "latlong" : null,
+      "latlong" : [
+         50.527026,
+         5.233456
+      ],
       "name" : "Huy(B)"
    },
    {
@@ -32846,7 +32993,10 @@
    {
       "ds100" : "XBIM",
       "eva" : 8800346,
-      "latlong" : null,
+      "latlong" : [
+         50.913985,
+         3.255353
+      ],
       "name" : "Ingelmunster"
    },
    {
@@ -36281,13 +36431,19 @@
    {
       "ds100" : "XBKO",
       "eva" : 8800249,
-      "latlong" : null,
+      "latlong" : [
+         50.892734,
+         4.54099
+      ],
       "name" : "Kortenberg"
    },
    {
       "ds100" : "XBKK",
       "eva" : 8800077,
-      "latlong" : null,
+      "latlong" : [
+         50.824461,
+         3.264297
+      ],
       "name" : "Kortrijk"
    },
    {
@@ -38039,7 +38195,10 @@
    {
       "ds100" : "XBLD",
       "eva" : 8800079,
-      "latlong" : null,
+      "latlong" : [
+         50.747801,
+         5.080262
+      ],
       "name" : "Landen"
    },
    {
@@ -38159,7 +38318,10 @@
    {
       "ds100" : "XBLO",
       "eva" : 8800243,
-      "latlong" : null,
+      "latlong" : [
+         51.002466,
+         4.863541
+      ],
       "name" : "Langdorp"
    },
    {
@@ -39017,7 +39179,10 @@
    {
       "ds100" : "XBLK",
       "eva" : 8800343,
-      "latlong" : null,
+      "latlong" : [
+         51.005288,
+         4.134273
+      ],
       "name" : "Lebbeke"
    },
    {
@@ -39902,7 +40067,10 @@
    {
       "ds100" : "XBLB",
       "eva" : 8800080,
-      "latlong" : null,
+      "latlong" : [
+         51.1175,
+         5.257835
+      ],
       "name" : "Leopoldsburg"
    },
    {
@@ -40136,7 +40304,10 @@
    {
       "ds100" : "XBLE",
       "eva" : 8800011,
-      "latlong" : null,
+      "latlong" : [
+         50.879089,
+         4.712388
+      ],
       "name" : "Leuven"
    },
    {
@@ -40355,7 +40526,10 @@
    {
       "ds100" : "XBLI",
       "eva" : 8800238,
-      "latlong" : null,
+      "latlong" : [
+         50.698226,
+         5.568457
+      ],
       "name" : "Liers"
    },
    {
@@ -40712,7 +40886,10 @@
    {
       "ds100" : "XBLIG",
       "eva" : 8800012,
-      "latlong" : null,
+      "latlong" : [
+         50.624297,
+         5.566667
+      ],
       "name" : "Liège-Guillemins"
    },
    {
@@ -42524,7 +42701,10 @@
    {
       "ds100" : "XBMA",
       "eva" : 8800121,
-      "latlong" : null,
+      "latlong" : [
+         50.505847,
+         4.23515
+      ],
       "name" : "Manage"
    },
    {
@@ -42761,7 +42941,10 @@
    {
       "ds100" : "XBMD",
       "eva" : 8800473,
-      "latlong" : null,
+      "latlong" : [
+         50.480624,
+         4.965371
+      ],
       "name" : "Marche-les-Dames"
    },
    {
@@ -42776,7 +42959,10 @@
    {
       "ds100" : "XBMP",
       "eva" : 8800122,
-      "latlong" : null,
+      "latlong" : [
+         50.412171,
+         4.394223
+      ],
       "name" : "Marchienne au Pont"
    },
    {
@@ -43100,7 +43286,10 @@
    {
       "ds100" : "XBMR",
       "eva" : 8800154,
-      "latlong" : null,
+      "latlong" : [
+         50.202821,
+         5.313892
+      ],
       "name" : "Marloie"
    },
    {
@@ -43460,7 +43649,10 @@
    {
       "ds100" : "XBMCH",
       "eva" : 8800010,
-      "latlong" : null,
+      "latlong" : [
+         51.017504,
+         4.483468
+      ],
       "name" : "Mechelen"
    },
    {
@@ -44009,7 +44201,10 @@
    {
       "ds100" : "XBMER",
       "eva" : 8800340,
-      "latlong" : null,
+      "latlong" : [
+         50.954427,
+         4.223222
+      ],
       "name" : "Merchtem"
    },
    {
@@ -44024,7 +44219,10 @@
    {
       "ds100" : "XBME",
       "eva" : 8800123,
-      "latlong" : null,
+      "latlong" : [
+         51.020048,
+         3.764727
+      ],
       "name" : "Merelbeke"
    },
    {
@@ -44495,7 +44693,10 @@
    {
       "ds100" : "XBMM",
       "eva" : 8800237,
-      "latlong" : null,
+      "latlong" : [
+         50.69303,
+         5.599803
+      ],
       "name" : "Milmort"
    },
    {
@@ -44777,7 +44978,10 @@
    {
       "ds100" : "XBML",
       "eva" : 8800124,
-      "latlong" : null,
+      "latlong" : [
+         51.190772,
+         5.115104
+      ],
       "name" : "Mol"
    },
    {
@@ -44828,7 +45032,10 @@
    {
       "ds100" : "XBMS",
       "eva" : 8800025,
-      "latlong" : null,
+      "latlong" : [
+         50.4561242358052,
+         3.94467115402222
+      ],
       "name" : "Mons"
    },
    {
@@ -45092,13 +45299,19 @@
    {
       "ds100" : "XBMN",
       "eva" : 8800159,
-      "latlong" : null,
+      "latlong" : [
+         50.740133,
+         3.227702
+      ],
       "name" : "Mouscron"
    },
    {
       "ds100" : "XBMT",
       "eva" : 8800480,
-      "latlong" : null,
+      "latlong" : [
+         50.452829,
+         4.695101
+      ],
       "name" : "Moustier"
    },
    {
@@ -45161,7 +45374,10 @@
    {
       "ds100" : "XBMU",
       "eva" : 8800129,
-      "latlong" : null,
+      "latlong" : [
+         51.008443,
+         4.513627
+      ],
       "name" : "Muizen"
    },
    {
@@ -45248,7 +45464,10 @@
    {
       "ds100" : "XBMZ",
       "eva" : 8800372,
-      "latlong" : null,
+      "latlong" : [
+         50.875673,
+         3.733238
+      ],
       "name" : "Munkzwalm"
    },
    {
@@ -46727,7 +46946,10 @@
    {
       "ds100" : "XBNA",
       "eva" : 8800018,
-      "latlong" : null,
+      "latlong" : [
+         50.468983,
+         4.862499
+      ],
       "name" : "Namur"
    },
    {
@@ -47069,7 +47291,10 @@
    {
       "ds100" : "XBN",
       "eva" : 8800130,
-      "latlong" : null,
+      "latlong" : [
+         51.222369,
+         5.43717
+      ],
       "name" : "Neerpelt"
    },
    {
@@ -47282,7 +47507,10 @@
    {
       "ds100" : "XBNE",
       "eva" : 8800267,
-      "latlong" : null,
+      "latlong" : [
+         50.571963,
+         5.742084
+      ],
       "name" : "Nessonvaux"
    },
    {
@@ -47675,7 +47903,10 @@
    {
       "ds100" : "XBNC",
       "eva" : 8800181,
-      "latlong" : null,
+      "latlong" : [
+         49.854318,
+         5.452559
+      ],
       "name" : "Neufchateau(B)"
    },
    {
@@ -50879,7 +51110,10 @@
    {
       "ds100" : "XBOB",
       "eva" : 8800427,
-      "latlong" : null,
+      "latlong" : [
+         50.469873,
+         4.008397
+      ],
       "name" : "Obourg"
    },
    {
@@ -51440,7 +51674,10 @@
    {
       "ds100" : "XBOL",
       "eva" : 8800605,
-      "latlong" : null,
+      "latlong" : [
+         51.17389,
+         4.902968
+      ],
       "name" : "Olen"
    },
    {
@@ -51518,7 +51755,10 @@
    {
       "ds100" : "XBO",
       "eva" : 8800030,
-      "latlong" : null,
+      "latlong" : [
+         51.22849,
+         2.926824
+      ],
       "name" : "Oostende"
    },
    {
@@ -51611,7 +51851,10 @@
    {
       "ds100" : "XBOW",
       "eva" : 8800150,
-      "latlong" : null,
+      "latlong" : [
+         50.974761,
+         4.187166
+      ],
       "name" : "Opwijk"
    },
    {
@@ -52820,7 +53063,10 @@
    {
       "ds100" : "XBP",
       "eva" : 8800178,
-      "latlong" : null,
+      "latlong" : [
+         50.568179,
+         5.80615
+      ],
       "name" : "Pepinster"
    },
    {
@@ -54185,7 +54431,10 @@
    {
       "ds100" : "XBPO",
       "eva" : 8800532,
-      "latlong" : null,
+      "latlong" : [
+         50.693848,
+         4.549341
+      ],
       "name" : "Profondsart"
    },
    {
@@ -54551,7 +54800,10 @@
    {
       "ds100" : "XBQ",
       "eva" : 8800026,
-      "latlong" : null,
+      "latlong" : [
+         50.34068,
+         3.909372
+      ],
       "name" : "Quevy"
    },
    {
@@ -56645,7 +56897,10 @@
    {
       "ds100" : "XBJ",
       "eva" : 8800020,
-      "latlong" : null,
+      "latlong" : [
+         50.160356,
+         5.266761
+      ],
       "name" : "Rochefort-Jemelle"
    },
    {
@@ -57020,7 +57275,10 @@
    {
       "ds100" : "XBRO",
       "eva" : 8800155,
-      "latlong" : null,
+      "latlong" : [
+         50.457737,
+         4.82842
+      ],
       "name" : "Ronet"
    },
    {
@@ -58490,7 +58748,10 @@
    {
       "ds100" : "XBSG",
       "eva" : 8800133,
-      "latlong" : null,
+      "latlong" : [
+         50.44286,
+         3.820253
+      ],
       "name" : "Saint Ghislain"
    },
    {
@@ -60062,7 +60323,10 @@
    {
       "ds100" : "XBSU",
       "eva" : 8800245,
-      "latlong" : null,
+      "latlong" : [
+         50.964046,
+         5.185625
+      ],
       "name" : "Schulen"
    },
    {
@@ -62063,7 +62327,10 @@
    {
       "ds100" : "XBSD",
       "eva" : 8800373,
-      "latlong" : null,
+      "latlong" : [
+         50.874297,
+         3.698395
+      ],
       "name" : "Sint-Denijs-Boekel"
    },
    {
@@ -62585,7 +62852,10 @@
    {
       "ds100" : "XBSP",
       "eva" : 8800168,
-      "latlong" : null,
+      "latlong" : [
+         50.49008,
+         5.855501
+      ],
       "name" : "Spa"
    },
    {
@@ -63383,7 +63653,10 @@
    {
       "ds100" : "XBSA",
       "eva" : 8800169,
-      "latlong" : null,
+      "latlong" : [
+         50.528132,
+         5.22
+      ],
       "name" : "Statte"
    },
    {
@@ -65237,7 +65510,10 @@
    {
       "ds100" : "XBTA",
       "eva" : 8800135,
-      "latlong" : null,
+      "latlong" : [
+         50.432594,
+         4.609938
+      ],
       "name" : "Tamines"
    },
    {
@@ -65711,7 +65987,10 @@
    {
       "ds100" : "XBTE",
       "eva" : 8800244,
-      "latlong" : null,
+      "latlong" : [
+         51.009783,
+         4.946862
+      ],
       "name" : "Testelt"
    },
    {
@@ -66047,7 +66326,10 @@
    {
       "ds100" : "XBTI",
       "eva" : 8800085,
-      "latlong" : null,
+      "latlong" : [
+         50.807759,
+         4.925612
+      ],
       "name" : "Tienen"
    },
    {
@@ -66164,7 +66446,10 @@
    {
       "ds100" : "XBTG",
       "eva" : 8800086,
-      "latlong" : null,
+      "latlong" : [
+         50.784001,
+         5.473756
+      ],
       "name" : "Tongeren"
    },
    {
@@ -66236,7 +66521,10 @@
    {
       "ds100" : "XBTO",
       "eva" : 8800170,
-      "latlong" : null,
+      "latlong" : [
+         50.612981,
+         3.396825
+      ],
       "name" : "Tournai"
    },
    {
@@ -66662,7 +66950,10 @@
    {
       "ds100" : "XBT",
       "eva" : 8800265,
-      "latlong" : null,
+      "latlong" : [
+         50.573195,
+         5.688715
+      ],
       "name" : "Trooz"
    },
    {
@@ -68438,13 +68729,19 @@
    {
       "ds100" : "XBVC",
       "eva" : 8800016,
-      "latlong" : null,
+      "latlong" : [
+         50.588135,
+         5.854917
+      ],
       "name" : "Verviers Central"
    },
    {
       "ds100" : "XBVP",
       "eva" : 8800268,
-      "latlong" : null,
+      "latlong" : [
+         50.590921,
+         5.865335
+      ],
       "name" : "Verviers-Palais"
    },
    {
@@ -68696,7 +68993,10 @@
    {
       "ds100" : "XBVV",
       "eva" : 8800090,
-      "latlong" : null,
+      "latlong" : [
+         50.924565,
+         4.433039
+      ],
       "name" : "Vilvoorde"
    },
    {
@@ -70055,13 +70355,19 @@
    {
       "ds100" : "XBWA",
       "eva" : 8800136,
-      "latlong" : null,
+      "latlong" : [
+         50.714847,
+         4.383535
+      ],
       "name" : "Waterloo"
    },
    {
       "ds100" : "XBWM",
       "eva" : 8800525,
-      "latlong" : null,
+      "latlong" : [
+         50.809296,
+         4.399851
+      ],
       "name" : "Watermael/Watermaal"
    },
    {
@@ -70922,7 +71228,10 @@
    {
       "ds100" : "XBW",
       "eva" : 8800017,
-      "latlong" : null,
+      "latlong" : [
+         50.659509,
+         5.975021
+      ],
       "name" : "Welkenraedt"
    },
    {
@@ -71330,7 +71639,10 @@
    {
       "ds100" : "XBWT",
       "eva" : 8800324,
-      "latlong" : null,
+      "latlong" : [
+         50.957924,
+         4.638829
+      ],
       "name" : "Wespelaar-Tildonk"
    },
    {
@@ -72857,7 +73169,10 @@
    {
       "ds100" : "XBWO",
       "eva" : 8821709,
-      "latlong" : null,
+      "latlong" : [
+         51.168361,
+         4.786144
+      ],
       "name" : "Wolfstee"
    },
    {
@@ -73703,7 +74018,10 @@
    {
       "ds100" : "XBYG",
       "eva" : 8800497,
-      "latlong" : null,
+      "latlong" : [
+         50.236944,
+         4.495307
+      ],
       "name" : "Yves-Gomezee"
    },
    {
@@ -73868,13 +74186,19 @@
    {
       "ds100" : "XBZD",
       "eva" : 8800345,
-      "latlong" : null,
+      "latlong" : [
+         51.127047,
+         3.16414
+      ],
       "name" : "Zedelgem"
    },
    {
       "ds100" : "XBZ",
       "eva" : 8800184,
-      "latlong" : null,
+      "latlong" : [
+         51.326383,
+         3.19517
+      ],
       "name" : "Zeebrugge-Dorp"
    },
    {
@@ -74213,7 +74537,10 @@
    {
       "ds100" : "XBZI",
       "eva" : 8800097,
-      "latlong" : null,
+      "latlong" : [
+         51.006394,
+         4.988276
+      ],
       "name" : "Zichem"
    },
    {
@@ -74468,7 +74795,10 @@
    {
       "ds100" : "XBZO",
       "eva" : 8800145,
-      "latlong" : null,
+      "latlong" : [
+         51.033548,
+         5.3299
+      ],
       "name" : "Zolder"
    },
    {
