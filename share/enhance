@@ -1,0 +1,41 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use 5.010;
+
+use File::Slurp qw(read_file write_file);
+use JSON;
+use LWP::UserAgent;
+
+my $json_str = read_file('stations.json');
+my $stations = JSON->new->utf8->decode($json_str);
+@{$stations} = sort { $a->{name} cmp $b->{name} } @{$stations};
+
+my $ua = LWP::UserAgent->new();
+$ua->env_proxy;
+
+for my $station ( @{$stations} ) {
+	if ( not $station->{latlong} ) {
+		say "Requesting location for $station->{name} ...";
+		my $res = $ua->get(
+			'https://marudor.de/api/station/v1/station/' . $station->{eva} );
+		if ( $res->is_error ) {
+			say '    marudor.de returned error ' . $res->status_line;
+		}
+		else {
+			my $content = $res->decoded_content;
+			my $json    = JSON->new->utf8->decode($content);
+			if ( $json and $json->{location} and $json->{location}{latitude} ) {
+				$station->{latlong} = [ $json->{location}{latitude},
+					$json->{location}{longitude} ];
+			}
+			else {
+				say '    marudor.de has no location';
+			}
+		}
+	}
+}
+
+my $json_out = JSON->new->utf8->canonical->pretty->encode($stations);
+write_file( 'stations.json', $json_out );
