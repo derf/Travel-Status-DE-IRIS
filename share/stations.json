@@ -7578,6 +7578,11 @@
       "name" : "Bernburg-Friedenshall"
    },
    {
+      "ds100" : "LBGR",
+      "eva" : "8011605",
+      "name" : "Bernburg-Roschwitz"
+   },
+   {
       "ds100" : "LBGS",
       "eva" : 8011169,
       "latlong" : [
@@ -8197,6 +8202,11 @@
          5.457387
       ],
       "name" : "Bierset-Awans"
+   },
+   {
+      "ds100" : "LBSR",
+      "eva" : "8011187",
+      "name" : "Biesenrode"
    },
    {
       "ds100" : "WBT",
@@ -15645,6 +15655,11 @@
       "name" : "Dornstetten"
    },
    {
+      "ds100" : "TDSA",
+      "eva" : "8001510",
+      "name" : "Dornstetten-Aach"
+   },
+   {
       "ds100" : "EDRN",
       "eva" : 8006709,
       "latlong" : [
@@ -20151,6 +20166,11 @@
       "name" : "Eutin"
    },
    {
+      "ds100" : "TETN",
+      "eva" : "8001944",
+      "name" : "Eutingen Nord"
+   },
+   {
       "ds100" : "TET",
       "eva" : 8000101,
       "latlong" : [
@@ -20519,7 +20539,10 @@
    {
       "ds100" : "MFOL",
       "eva" : 8001966,
-      "latlong" : null,
+      "latlong" : [
+         47.895336,
+         11.852244
+      ],
       "name" : "Feldolling"
    },
    {
@@ -21370,6 +21393,11 @@
          8.668864
       ],
       "name" : "Frankfurt(M)Taunusanlage"
+   },
+   {
+      "ds100" : "FFGG",
+      "eva" : "8002060",
+      "name" : "Frankfurt(Main)-Gateway Gardens"
    },
    {
       "ds100" : "FF",
@@ -22447,6 +22475,16 @@
          12.587542
       ],
       "name" : "Friesack(Mark)"
+   },
+   {
+      "ds100" : "LFI",
+      "eva" : "8011586",
+      "name" : "Friesdorf"
+   },
+   {
+      "ds100" : "LFIO",
+      "eva" : "8011587",
+      "name" : "Friesdorf Ost"
    },
    {
       "ds100" : "RFH",
@@ -25962,6 +26000,11 @@
       "name" : "Gräfenroda"
    },
    {
+      "ds100" : "LGRK",
+      "eva" : "8011685",
+      "name" : "Gräfenstuhl-Klippmühle"
+   },
+   {
       "ds100" : "UGTA",
       "eva" : 8011687,
       "latlong" : [
@@ -27419,7 +27462,10 @@
    {
       "ds100" : "AELB",
       "eva" : 8002551,
-      "latlong" : null,
+      "latlong" : [
+         53.5345,
+         10.0245
+      ],
       "name" : "Hamburg Elbbrücken"
    },
    {
@@ -35973,6 +36019,11 @@
       "name" : "Klostermansfeld"
    },
    {
+      "ds100" : "LKMR",
+      "eva" : "8010204",
+      "name" : "Klostermansfeld Randsiedlung"
+   },
+   {
       "ds100" : "RKLB",
       "eva" : 8003343,
       "latlong" : [
@@ -39464,7 +39515,10 @@
    {
       "ds100" : "LLES",
       "eva" : 8012200,
-      "latlong" : null,
+      "latlong" : [
+         51.376358,
+         12.3969877
+      ],
       "name" : "Leipzig Essener Straße"
    },
    {
@@ -39538,6 +39592,11 @@
          12.267345
       ],
       "name" : "Leipzig Miltitzer Allee"
+   },
+   {
+      "ds100" : "LLMS",
+      "eva" : "8012273",
+      "name" : "Leipzig Mockauer Straße"
    },
    {
       "ds100" : "LLN",
@@ -42852,6 +42911,11 @@
       "name" : "Mannheim-Waldhof"
    },
    {
+      "ds100" : "LMAS",
+      "eva" : "8012300",
+      "name" : "Mansfeld(Südharz)"
+   },
+   {
       "ds100" : "XLMN",
       "eva" : 8270690,
       "latlong" : null,
@@ -43090,6 +43154,11 @@
          12.372615
       ],
       "name" : "Markkleeberg"
+   },
+   {
+      "ds100" : "LMAM",
+      "eva" : "8012309",
+      "name" : "Markkleeberg Mitte"
    },
    {
       "ds100" : "LMAN",
@@ -46727,7 +46796,10 @@
    {
       "ds100" : "EMEK",
       "eva" : 8003934,
-      "latlong" : null,
+      "latlong" : [
+         51.924006,
+         7.579568
+      ],
       "name" : "Münster-Mecklenbeck"
    },
    {
@@ -57431,7 +57503,10 @@
    {
       "ds100" : "MRAI",
       "eva" : 8005169,
-      "latlong" : null,
+      "latlong" : [
+         47.851651,
+         12.089467
+      ],
       "name" : "Rosenheim Aicherpark"
    },
    {
@@ -64260,6 +64335,11 @@
       "name" : "Stettfeld(Baden)"
    },
    {
+      "ds100" : "RSFW",
+      "eva" : "8005933",
+      "name" : "Stettfeld-Weiher"
+   },
+   {
       "ds100" : "XASY",
       "eva" : 8100010,
       "latlong" : null,
@@ -68377,6 +68457,16 @@
          11.76438
       ],
       "name" : "Vaterstetten"
+   },
+   {
+      "ds100" : "LVT",
+      "eva" : "8013182",
+      "name" : "Vatterode"
+   },
+   {
+      "ds100" : "LVTT",
+      "eva" : "8079152",
+      "name" : "Vatteröder Teich"
    },
    {
       "ds100" : "HVEC",
@@ -72784,6 +72874,11 @@
          10.661064
       ],
       "name" : "Wipperdorf"
+   },
+   {
+      "ds100" : "LWIP",
+      "eva" : "8013319",
+      "name" : "Wippra"
    },
    {
       "ds100" : "KWIR",
