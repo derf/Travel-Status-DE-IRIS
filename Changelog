@@ -1,3 +1,9 @@
+Travel::Status::DE::IRIS 1.39 - Tue Dec 17 2019
+
+    * Add missing geocoordinates to nearly all remaining stations
+      (thanks to @marudor)
+    * Add stations opened this year (thanks to @marudor)
+
 Travel::Status::DE::IRIS 1.38 - Sun Dec 15 2019
 
     * Add geocoordinates for belgian stations
