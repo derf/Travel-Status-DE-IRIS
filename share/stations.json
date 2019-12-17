@@ -51990,6 +51990,12 @@
       "name" : "Nordholz"
    },
    {
+      "ds100" : "HNDH",
+      "eva" : 8004467,
+      "latlong" : null,
+      "name" : "Nordhorn"
+   },
+   {
       "ds100" : "HNDB",
       "eva" : 8004465,
       "latlong" : null,
