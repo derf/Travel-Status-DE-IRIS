@@ -1,0 +1,51 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use 5.010;
+
+use File::Slurp qw(read_file write_file);
+use JSON;
+use XML::LibXML;
+
+my $json_str = read_file('stations.json');
+my $stations = JSON->new->utf8->decode($json_str);
+@{$stations} = sort { $a->{name} cmp $b->{name} } @{$stations};
+
+my $xml_str = read_file('stations.xml');
+my $tree    = XML::LibXML->load_xml( string => $xml_str );
+
+for my $station ( $tree->findnodes('//station') ) {
+	my $name  = $station->getAttribute('name');
+	my $eva   = $station->getAttribute('eva');
+	my $ds100 = $station->getAttribute('ds100');
+
+	for my $j_station ( @{$stations} ) {
+		my $j_name  = $j_station->{name};
+		my $j_ds100 = $j_station->{ds100};
+		my $j_eva   = $j_station->{eva};
+		if ( $j_ds100 eq $ds100 and $j_name ne $name ) {
+			printf( "%8s has been renamed: %30s -> %30s\n",
+				$ds100, $j_name, $name );
+			last;
+		}
+		elsif ( $j_eva == $eva and $j_name ne $name ) {
+			printf( "%d mismatch: (%s -> %s), (%s -> %s)\n",
+				$eva, $j_name, $name, $j_ds100, $ds100 );
+			last;
+		}
+		elsif ( $j_name eq $name and $j_ds100 ne $ds100 ) {
+			printf( "%30s has been recoded: %8s -> %8s\n",
+				$name, $j_ds100, $ds100 );
+			last;
+		}
+		elsif ( $j_name eq $name and $j_eva != $eva ) {
+			printf( "%30s has been recoded: %d -> %d\n", $name,
+				$j_eva != $eva );
+			last;
+		}
+	}
+}
+
+my $json_out = JSON->new->utf8->canonical->pretty->encode($stations);
+write_file( 'stations.json', $json_out );
