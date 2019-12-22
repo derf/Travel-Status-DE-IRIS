@@ -13,8 +13,9 @@ my $stations = JSON->new->utf8->decode($json_str);
 
 my $have_duplicates = 0;
 my @names           = map { $_->{name} } @{$stations};
-my @ds100           = map { $_->{ds100} } sort { $a->{ds100} cmp $b->{ds100} } @{$stations};
-my @eva_ids         = map { $_->{eva} } sort { $a->{eva} <=> $b->{eva} } @{$stations};
+my @ds100
+  = map { $_->{ds100} } sort { $a->{ds100} cmp $b->{ds100} } @{$stations};
+my @eva_ids = map { $_->{eva} } sort { $a->{eva} <=> $b->{eva} } @{$stations};
 
 for my $i ( 1 .. $#names ) {
 	if ( $names[ $i - 1 ] eq $names[$i] ) {
@@ -38,6 +39,19 @@ for my $i ( 1 .. $#eva_ids ) {
 if ($have_duplicates) {
 	say "Thank you for your contribution.";
 	say "Please remove duplicate entries before opening a pull request.";
+}
+
+for my $station ( @{$stations} ) {
+	$station->{eva} = 0 + $station->{eva};
+	if (    $station->{latlong}
+		and $station->{latlong}[0] == 0
+		and $station->{latlong}[1] == 0 )
+	{
+		$station->{latlong} = undef;
+	}
+	elsif ( not exists $station->{latlong} ) {
+		$station->{latlong} = undef;
+	}
 }
 
 my $json_out = JSON->new->utf8->canonical->pretty->encode($stations);
