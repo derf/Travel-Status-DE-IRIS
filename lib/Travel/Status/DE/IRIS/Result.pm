@@ -118,7 +118,7 @@ Travel::Status::DE::IRIS::Result->mk_ro_accessors(
 	  sched_route_end start
 	  station station_uic
 	  stop_no time train_id train_no transfer type
-	  unknown_t unknown_o wing_id)
+	  unknown_t unknown_o wing_id wing_of)
 );
 
 sub is_additional {
@@ -400,8 +400,12 @@ sub set_unscheduled {
 sub add_arrival_wingref {
 	my ( $self, $ref ) = @_;
 
-	$ref->{is_wing} = 1;
+	my $backref = $self;
+
 	weaken($ref);
+	weaken($backref);
+	$ref->{is_wing} = 1;
+	$ref->{wing_of} = $self;
 	push( @{ $self->{arrival_wings} }, $ref );
 	return $self;
 }
@@ -409,8 +413,12 @@ sub add_arrival_wingref {
 sub add_departure_wingref {
 	my ( $self, $ref ) = @_;
 
-	$ref->{is_wing} = 1;
+	my $backref = $self;
+
 	weaken($ref);
+	weaken($backref);
+	$ref->{is_wing} = 1;
+	$ref->{wing_of} = $self;
 	push( @{ $self->{departure_wings} }, $ref );
 	return $self;
 }
