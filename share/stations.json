@@ -28587,6 +28587,12 @@
       "name" : "Haltingen"
    },
    {
+      "ds100" : "EOBG",
+      "eva" : 8002535,
+      "latlong" : null,
+      "name" : "Halver-Oberbrügge"
+   },
+   {
       "ds100" : "AAI",
       "eva" : 8002547,
       "latlong" : [
@@ -36613,6 +36619,12 @@
          10.070212
       ],
       "name" : "Kiel-Russee"
+   },
+   {
+      "ds100" : "EKIE",
+      "eva" : 8003297,
+      "latlong" : null,
+      "name" : "Kierspe"
    },
    {
       "ds100" : "XSKB",
