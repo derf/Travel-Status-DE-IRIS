@@ -22764,15 +22764,6 @@
       "name" : "Freiburg Messe/Universität"
    },
    {
-      "ds100" : "RFW",
-      "eva" : 8002066,
-      "latlong" : [
-         48.027326,
-         7.812882
-      ],
-      "name" : "Freiburg West"
-   },
-   {
       "ds100" : "RF",
       "eva" : 8000107,
       "latlong" : [
@@ -22789,6 +22780,15 @@
          7.850973
       ],
       "name" : "Freiburg-Herdern"
+   },
+   {
+      "ds100" : "RFLW",
+      "eva" : 8002066,
+      "latlong" : [
+         48.027326,
+         7.812882
+      ],
+      "name" : "Freiburg-Landwasser"
    },
    {
       "ds100" : "RFLT",
