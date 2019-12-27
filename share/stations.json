@@ -13416,6 +13416,15 @@
       "name" : "Chemnitz Annenstraße"
    },
    {
+      "ds100" : "DCANB",
+      "eva" : 8017475,
+      "latlong" : [
+         50.825004,
+         12.9269
+      ],
+      "name" : "Chemnitz Bernsbachplatz"
+   },
+   {
       "ds100" : "DC  E",
       "eva" : 8017476,
       "latlong" : [
@@ -13533,6 +13542,15 @@
       "name" : "Chemnitz Riemenschneiderstraße"
    },
    {
+      "ds100" : "DCANR",
+      "eva" : 8017480,
+      "latlong" : [
+         50.817897,
+         12.929305
+      ],
+      "name" : "Chemnitz Rosenbergstraße"
+   },
+   {
       "ds100" : "DC  R",
       "eva" : 8017410,
       "latlong" : [
@@ -13578,6 +13596,15 @@
       "name" : "Chemnitz Schule Altchemnitz"
    },
    {
+      "ds100" : "DCANS",
+      "eva" : 8017478,
+      "latlong" : [
+         50.821175,
+         12.927087
+      ],
+      "name" : "Chemnitz Stadlerplatz"
+   },
+   {
       "ds100" : "DC  B",
       "eva" : 8071816,
       "latlong" : [
@@ -13594,6 +13621,24 @@
          12.926823
       ],
       "name" : "Chemnitz Süd"
+   },
+   {
+      "ds100" : "DCANH",
+      "eva" : 8017479,
+      "latlong" : [
+         50.8137,
+         12.930901
+      ],
+      "name" : "Chemnitz TU Campus"
+   },
+   {
+      "ds100" : "DCANT",
+      "eva" : 8017481,
+      "latlong" : [
+         50.811498,
+         12.924603
+      ],
+      "name" : "Chemnitz Technopark"
    },
    {
       "ds100" : "DC  T",
@@ -18919,6 +18964,21 @@
          7.5956
       ],
       "name" : "Eimeldingen"
+   },
+   {
+      "ds100" : "HEBM",
+      "eva" : 8001717,
+      "latlong" : [
+         51.8185308,
+         9.87529278
+      ],
+      "name" : "Einbeck Mitte"
+   },
+   {
+      "ds100" : "HEBA",
+      "eva" : 8001723,
+      "latlong" : null,
+      "name" : "Einbeck Otto-Hahn-Straße"
    },
    {
       "ds100" : "HEB",
@@ -30807,6 +30867,15 @@
       "name" : "Heimenkirch"
    },
    {
+      "ds100" : "THMD",
+      "eva" : 8007328,
+      "latlong" : [
+         48.851473,
+         8.985433
+      ],
+      "name" : "Heimerdingen"
+   },
+   {
       "ds100" : "KHEH",
       "eva" : 8002711,
       "latlong" : [
@@ -34398,6 +34467,12 @@
       "name" : "Ingelmunster"
    },
    {
+      "ds100" : "MIA",
+      "eva" : 8003074,
+      "latlong" : null,
+      "name" : "Ingolstadt Audi"
+   },
+   {
       "ds100" : "MIH",
       "eva" : 8000183,
       "latlong" : [
@@ -35305,6 +35380,15 @@
          6.367977
       ],
       "name" : "Jülich"
+   },
+   {
+      "ds100" : "KJAA",
+      "eva" : 8003114,
+      "latlong" : [
+         50.936068,
+         6.357111
+      ],
+      "name" : "Jülich An den Aspen"
    },
    {
       "ds100" : "KJSU",
@@ -50070,6 +50154,12 @@
       "name" : "Neuenhagen(b Berlin)"
    },
    {
+      "ds100" : "HNEH",
+      "eva" : 8004262,
+      "latlong" : null,
+      "name" : "Neuenhaus"
+   },
+   {
       "ds100" : "HNES",
       "eva" : 8004261,
       "latlong" : null,
@@ -52741,6 +52831,15 @@
          7.6296304606003
       ],
       "name" : "Oberburg"
+   },
+   {
+      "ds100" : "DOCA",
+      "eva" : 8012518,
+      "latlong" : [
+         50.860248,
+         13.665174
+      ],
+      "name" : "Obercarsdorf"
    },
    {
       "ds100" : "NON",
@@ -57313,6 +57412,12 @@
          8.476397
       ],
       "name" : "Quelle-Kupferheide"
+   },
+   {
+      "ds100" : "HQDF",
+      "eva" : 8004912,
+      "latlong" : null,
+      "name" : "Quendorf"
    },
    {
       "ds100" : "LQ",
@@ -67594,6 +67699,15 @@
          13.833611
       ],
       "name" : "Strausberg"
+   },
+   {
+      "ds100" : "BSTV",
+      "eva" : 8089187,
+      "latlong" : [
+         52.532164,
+         13.8336233
+      ],
+      "name" : "Strausberg (S)"
    },
    {
       "ds100" : "BSTN",
