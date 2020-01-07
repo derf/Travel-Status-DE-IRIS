@@ -799,8 +799,19 @@ sub TO_JSON {
 	my %copy = %{$self};
 	delete $copy{arrival_wings};
 	delete $copy{departure_wings};
+	delete $copy{realtime_xml};
 	delete $copy{replaced_by};
 	delete $copy{replacement_for};
+	delete $copy{strptime_obj};
+	delete $copy{wing_of};
+
+	for my $datetime_key (
+		qw(arrival departure sched_arrival sched_departure start datetime))
+	{
+		if ( defined $copy{$datetime_key} ) {
+			$copy{$datetime_key} = $copy{$datetime_key}->epoch;
+		}
+	}
 
 	return {%copy};
 }
