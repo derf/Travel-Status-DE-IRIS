@@ -12,6 +12,7 @@ use DateTime;
 use DateTime::Format::Strptime;
 use Encode qw(decode);
 use Getopt::Long qw(:config no_ignore_case bundling);
+use JSON;
 use List::Util qw(first max);
 use List::MoreUtils qw(none);
 use Travel::Status::DE::IRIS;
@@ -26,6 +27,7 @@ my $with_related   = 1;
 my ( $filter_via, $track_via, $status_via );
 my ( @grep_class, @grep_type, @grep_platform );
 my ( %edata,      @edata_pre );
+my $json_output    = 0;
 
 my @output;
 
@@ -47,6 +49,7 @@ GetOptions(
 	'V|track-via=s'      => \$track_via,
 	'x|exact|no-related' => sub { $with_related = 0 },
 	'devmode'            => \$developer_mode,
+	'json'               => \$json_output,
 	'version'            => \&show_version,
 
 ) or show_help(1);
@@ -412,6 +415,11 @@ if ( $status_via and $status_via->warnstr ) {
 }
 
 sanitize_options();
+
+if ($json_output) {
+	say JSON->new->convert_blessed->encode( [ $status->results ] );
+	exit 0;
+}
 
 for my $d ( $status->results() ) {
 
