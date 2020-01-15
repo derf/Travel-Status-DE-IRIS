@@ -613,6 +613,15 @@ or I<dd>.I<mm>.I<YYYY> format, or C<< tomorrow >>.  Note that typically only
 slight (a few hours max) deviations from the current time are supported by the
 IRIS backend, larger ones will not return data.
 
+=item B<--json>
+
+List departures as JSON. Outputs a JSON list containing one hash for each
+departure. The B<--output> option has no effect when using B<--json>.
+
+Note that JSON output is NOT compatible between releases. Its structure is not
+part of the db-iris / Travel::Status::DE::IRIS versioning scheme; it may change
+in backwards-incompatible ways anytime.
+
 =item B<-l>, B<--lookahead> I<int>
 
 Do not return results which are more than I<int> minutes in the future.
@@ -622,6 +631,14 @@ Note that this is only an upper limit, not a guarantee to get every train
 with a departure in less than I<int> minutes. This guarantee holds only for
 I<int> below 120. However, any non-negative number is accepted for this
 option.
+
+=item B<--no-cache>
+
+If the Cache::File module is available, server replies are cached in
+F<~/.cache/db-iris-schedule> and F<~/.cache/db-iris-realtime> (or paths
+relative to C<$XDG_CACHE_HOME>, if set). Use this option to disable caching
+altogether. Note that this will significantly decrease db-iris responsiveness,
+especially on mobile networks such as WifiOnICE.
 
 =item B<-o>, B<--output> I<outputtypes>
 
@@ -792,6 +809,14 @@ None.
 =item * LWP::UserAgent(3pm)
 
 =item * XML::LibXML(3pm)
+
+=back
+
+=head1 RECOMMENDS
+
+=over
+
+=item * Cache::File(3pm)
 
 =back
 
