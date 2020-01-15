@@ -1,3 +1,9 @@
+Travel::Status::DE::IRIS 1.42 - Wed Jan 15 2020
+
+    * Result: Fix TO_JSON method
+    * db-iris: Cache backend results by default
+    * db-iris: New options: --json and --no-cache
+
 Travel::Status::DE::IRIS 1.41 - Sun Dec 29 2019
 
     * Result: Add "wing_of" accessor

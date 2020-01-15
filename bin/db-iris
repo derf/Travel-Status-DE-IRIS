@@ -6,7 +6,7 @@ use utf8;
 
 no if $] >= 5.018, warnings => 'experimental::smartmatch';
 
-our $VERSION = '1.41';
+our $VERSION = '1.42';
 
 use DateTime;
 use DateTime::Format::Strptime;
@@ -571,7 +571,7 @@ B<db-iris> [B<-rx>] [B<-d> I<date>] [B<-o> I<output-flags>]
 
 =head1 VERSION
 
-version 1.41
+version 1.42
 
 =head1 DESCRIPTION
 
@@ -615,10 +615,12 @@ IRIS backend, larger ones will not return data.
 
 =item B<--json>
 
-List departures as JSON. Outputs a JSON list containing one hash for each
-departure. The B<--output> option has no effect when using B<--json>.
+List results as JSON, see Travel::Status::DE::IRIS::Result(3pm) for a partial
+documentation of arrival/departure keys. The B<--output> option has no effect
+when using B<--json>.
 
-Note that JSON output is NOT compatible between releases. Its structure is not
+Note that JSON entries not mentioned in Travel::Status::DE::IRIS::Result(3pm)
+are NOT guaranteed to be compatible between releases. Their structure is not
 part of the db-iris / Travel::Status::DE::IRIS versioning scheme; it may change
 in backwards-incompatible ways anytime.
 
@@ -826,7 +828,7 @@ There are no known bugs at the moment.
 
 =head1 AUTHOR
 
-Copyright (C) 2013-2019 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
+Copyright (C) 2013-2020 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
 
 The station data used by this script is provided by DB
 Station&Service AG, Europaplatz 1, 10557 Berlin, Germany and available
