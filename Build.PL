@@ -21,6 +21,9 @@ Module::Build->new(
 	},
 	module_name => 'Travel::Status::DE::IRIS',
 	license => 'perl',
+	recommends => {
+		'Cache::File' => 0,
+	},
 	requires => {
 		'perl' => '5.14.2',
 		'Carp' => 0,

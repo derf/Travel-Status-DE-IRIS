@@ -24,10 +24,12 @@ my $developer_mode = 0;
 my $lookahead      = 2 * 60;
 my $realtime       = 0;
 my $with_related   = 1;
-my ( $filter_via, $track_via, $status_via );
-my ( @grep_class, @grep_type, @grep_platform );
-my ( %edata,      @edata_pre );
 my $json_output    = 0;
+my $use_cache      = 1;
+my ( $schedule_cache, $realtime_cache );
+my ( $filter_via,     $track_via, $status_via );
+my ( @grep_class,     @grep_type, @grep_platform );
+my ( %edata,          @edata_pre );
 
 my @output;
 
@@ -48,6 +50,7 @@ GetOptions(
 	'v|via=s'            => \$filter_via,
 	'V|track-via=s'      => \$track_via,
 	'x|exact|no-related' => sub { $with_related = 0 },
+	'cache!'             => \$use_cache,
 	'devmode'            => \$developer_mode,
 	'json'               => \$json_output,
 	'version'            => \&show_version,
@@ -134,18 +137,45 @@ for my $efield (@edata_pre) {
 	}
 }
 
+if ($use_cache) {
+	my $cache_path          = $ENV{XDG_CACHE_HOME} // "$ENV{HOME}/.cache";
+	my $schedule_cache_path = "${cache_path}/db-iris-schedule";
+	my $realtime_cache_path = "${cache_path}/db-iris-realtime";
+	eval {
+		use Cache::File;
+		$schedule_cache = Cache::File->new(
+			cache_root     => $schedule_cache_path,
+			defaut_expires => '6 hours',
+			lock_level     => Cache::File::LOCK_LOCAL(),
+		);
+		$realtime_cache = Cache::File->new(
+			cache_root     => $realtime_cache_path,
+			defaut_expires => '180 seconds',
+			lock_level     => Cache::File::LOCK_LOCAL(),
+		);
+	};
+	if ($@) {
+		$schedule_cache = undef;
+		$realtime_cache = undef;
+	}
+}
+
 my $status = Travel::Status::DE::IRIS->new(
 	datetime       => $datetime,
 	developer_mode => $developer_mode,
 	lookahead      => $lookahead,
+	main_cache     => $schedule_cache,
+	realtime_cache => $realtime_cache,
 	station        => $station,
 	with_related   => $with_related,
 );
 if ($track_via) {
 	$status_via = Travel::Status::DE::IRIS->new(
-		datetime  => $datetime,
-		station   => $track_via,
-		lookahead => $lookahead + 3 * 60,
+		datetime       => $datetime,
+		lookahead      => $lookahead + 3 * 60,
+		main_cache     => $schedule_cache,
+		realtime_cache => $realtime_cache,
+		station        => $track_via,
 	);
 }
 
