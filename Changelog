@@ -1,3 +1,8 @@
+Travel::Status::DE::IRIS 1.43 - Tue Jan 21 2020
+
+    * db-iris: Correctly set cache expiry. In 1.42, backend replies were cached
+      indefinitely due to a typo
+
 Travel::Status::DE::IRIS 1.42 - Wed Jan 15 2020
 
     * Result: Fix TO_JSON method
