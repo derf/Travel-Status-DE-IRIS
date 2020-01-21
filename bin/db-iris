@@ -144,14 +144,14 @@ if ($use_cache) {
 	eval {
 		use Cache::File;
 		$schedule_cache = Cache::File->new(
-			cache_root     => $schedule_cache_path,
-			defaut_expires => '6 hours',
-			lock_level     => Cache::File::LOCK_LOCAL(),
+			cache_root      => $schedule_cache_path,
+			default_expires => '6 hours',
+			lock_level      => Cache::File::LOCK_LOCAL(),
 		);
 		$realtime_cache = Cache::File->new(
-			cache_root     => $realtime_cache_path,
-			defaut_expires => '180 seconds',
-			lock_level     => Cache::File::LOCK_LOCAL(),
+			cache_root      => $realtime_cache_path,
+			default_expires => '180 seconds',
+			lock_level      => Cache::File::LOCK_LOCAL(),
 		);
 	};
 	if ($@) {
