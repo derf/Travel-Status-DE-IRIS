@@ -670,8 +670,9 @@ sub info {
 sub line {
 	my ($self) = @_;
 
-	return
-	  sprintf( '%s %s', $self->{type}, $self->{line_no} // $self->{train_no} );
+	return sprintf( '%s %s',
+		$self->{type} // 'Zug',
+		$self->{line_no} // $self->{train_no} // '-' );
 }
 
 sub route_pre {
