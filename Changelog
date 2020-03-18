@@ -1,3 +1,7 @@
+Travel::Status::DE::IRIS 1.45 - Wed Mar 18 2020
+
+    * Provide properly versioned Stations.pm file
+
 Travel::Status::DE::IRIS 1.44 - Wed Mar 18 2020
 
     * Add delay code 67 (Behördliche Anordnung). Patch by @marudor
