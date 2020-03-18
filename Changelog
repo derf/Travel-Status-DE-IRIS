@@ -1,3 +1,7 @@
+Travel::Status::DE::IRIS 1.44 - Wed Mar 18 2020
+
+    * Add delay code 67 (Behördliche Anordnung). Patch by @marudor
+
 Travel::Status::DE::IRIS 1.43 - Tue Jan 21 2020
 
     * db-iris: Correctly set cache expiry. In 1.42, backend replies were cached
