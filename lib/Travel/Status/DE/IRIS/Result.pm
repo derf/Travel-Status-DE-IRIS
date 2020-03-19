@@ -1356,7 +1356,7 @@ Source: correlation between IRIS and DB RIS (bahn.de).
 
 Source: correlation between IRIS and DB RIS (bahn.de).
 
-=item d 67 : "BehE<ouml>rdliche Anordnung"
+=item f 67 : "BehE<ouml>rdliche Anordnung"
 
 Source: L<https://twitter.com/DodoMedia/status/1238816272240070659>.
 
