@@ -3,6 +3,75 @@ Travel::Status::DE::IRIS - Interface to IRIS based web departure monitors
 
 <https://finalrewind.org/projects/Travel-Status-DE-IRIS/>
 
+Travel::Status::DE::IRIS and the accompanying **db-iris** program provide both
+human- and machine-readable access to departure data at german train stations.
+They can be used by Perl scripts or modules, on the command-line, and (via JSON
+output) by other programs.
+
+Local Installation
+---
+
+This will install db-iris and Travel::Status::DE::IRIS to a local directory.
+They will not be made available system-wide; db-iris will not be added to
+your program PATH. See the next section for system-wide installation.
+
+All you need for this variant is **perl** (v5.14.2 or newer), **carton**
+(packaged for many operating systems), and **libxml2** with development headers
+(packaged as `libxml2-dev` on Debian-based Linux distributions).
+
+After installing these, run the following command to install the remaining
+dependencies:
+
+```
+carton install
+```
+
+You are now ready to use db-iris by providing Perl with the module paths
+set up by carton and Travel::Status::DE::IRIS:
+
+```
+perl -Ilocal/lib/perl5 -Ilib bin/db-iris --version
+```
+
+For documentation, see `perldoc -F lib/Travel/Status/DE/IRIS.pm` and
+`perldoc -F bin/db-iris`.
+
+System-Wide Installation
+---
+
+This will install db-iris and Travel::Status::DE::IRIS in system-wide
+directories in `/usr/local`, allowing them to be used on the command line and
+by Perl scripts without the need to specify search paths or module directories.
+Building and installation is managed by the **Module::Build** perl module.
+
+For this variant, you must install Module::Build and all dependencies (see the
+Dependencies section below) yourself. Many of them are packaged for Debian and
+other Linux distributions. Run `perl Build.PL` to check dependency availability
+-- if it complains about "ERRORS/WARNINGS FOUND IN PREREQUISITES", install the
+modules it mentions and run `perl Build.PL` again. Repeat this process until it
+no longer complains about missing prerequisites.
+
+You are now ready to build and install the module.
+
+If you downloaded a release tarball, use the following commands:
+
+```
+perl Build.PL
+./Build
+sudo ./Build install
+```
+
+If you are working with the git version, use these instead:
+
+```
+perl Build.PL
+./Build
+./Build manifest
+sudo ./Build install
+```
+
+You can now use Travel::Status::DE::IRIS and db-iris like any other perl
+module. See `man Travel::Status::DE::IRIS` and `man db-iris` for documentation.
 
 Dependencies
 ---
@@ -43,31 +112,6 @@ or
 ```
 sed -i 's/Text::LevenshteinXS/Text::Levenshtein/g' Build.PL lib/Travel/Status/DE/IRIS/Stations.pm
 ```
-
-Installation
----
-
-From a release tarball:
-
-```
-perl Build.PL
-./Build
-sudo ./Build install
-```
-
-From git:
-
-```
-perl Build.PL
-./Build
-./Build manifest
-sudo ./Build install
-```
-
-See also the Module::Build documentation.
-
-You can then run `man Travel::Status::DE::IRIS`.
-This distribution also ships the script 'db-iris', see `man db-iris`.
 
 Managing stations
 ---
