@@ -1,0 +1,11 @@
+#!/bin/sh
+
+mkdir -p out
+
+docker run --rm -v "${PWD}:/orig:ro" -v "${PWD}/scripts:/scripts:ro" \
+	-v "${PWD}/out:/out" -e USER=$(id -u) -e GROUP=$(id -g) \
+	-e "DEBEMAIL=${DEBEMAIL}" -e "DEBFULLNAME=${DEBFULLNAME}" \
+	-e "LOGNAME=${LOGNAME}" \
+	debian:buster /scripts/makedeb-docker-helper
+
+echo "Debian package has been written to $(pwd)/out"

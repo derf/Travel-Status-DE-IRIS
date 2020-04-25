@@ -1,0 +1,34 @@
+#!/bin/sh
+
+set -e
+
+export DEBIAN_FRONTEND=noninteractive
+
+apt-get update
+apt-get -y install \
+	apt-file dh-make-perl libmodule-build-perl \
+	libcache-perl libclass-accessor-perl libdatetime-perl \
+	libdatetime-format-strptime-perl libgeo-distance-xs-perl \
+	liblist-compare-perl liblist-moreutils-perl liblist-utilsby-perl \
+	libwww-perl libtext-levenshteinxs-perl libxml-libxml-perl \
+	libfile-slurp-perl libjson-perl libjson-xs-perl \
+	libtest-compile-perl libtest-number-delta-perl libtest-pod-perl \
+	libtest-fatal-perl libtest-simple-perl libtext-csv-perl
+
+apt-file update
+apt-cache dumpavail | dpkg --merge-avail
+
+mkdir -p /src/app
+cp -a /orig/Build.PL /orig/Changelog /orig/README.md /src/app
+cp -a /orig/bin /orig/examples /orig/lib /orig/share /orig/t /src/app
+cd /src/app
+
+sed -i 's/sign => 1/sign => 0/' Build.PL
+perl Build.PL
+perl Build
+perl Build manifest
+perl Build dist
+mv Travel-Status-DE-IRIS-*.tar.gz ../app.tar.gz
+dh-make-perl --build
+chown ${USER}:${GROUP} ../*.deb
+mv -v ../*.deb /out
