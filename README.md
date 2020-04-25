@@ -85,6 +85,7 @@ Dependencies
 * List::MoreUtils
 * List::UtilsBy
 * LWP::UserAgent
+* LWP::Protocol::https
 * Text::LevenshteinXS
 * XML::LibXML
 

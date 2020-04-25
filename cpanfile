@@ -11,6 +11,7 @@ requires 'List::MoreUtils';
 requires 'List::Util';
 requires 'List::UtilsBy';
 requires 'LWP::UserAgent';
+requires 'LWP::Protocol::https';
 requires 'Text::LevenshteinXS';
 requires 'XML::LibXML';
 

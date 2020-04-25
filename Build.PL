@@ -38,6 +38,7 @@ Module::Build->new(
 		'List::Util' => 0,
 		'List::UtilsBy' => 0,
 		'LWP::UserAgent' => 0,
+		'LWP::Protocol::https' => 0,
 		'Text::LevenshteinXS' => 0,
 		'XML::LibXML' => 0,
 	},
