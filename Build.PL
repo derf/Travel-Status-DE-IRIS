@@ -31,7 +31,7 @@ Module::Build->new(
 		'DateTime' => 0,
 		'DateTime::Format::Strptime' => 0,
 		'Encode' => 0,
-		'Geo::Distance' => 0,
+		'Geo::Distance' => '!= 0.21',
 		'Getopt::Long' => 0,
 		'List::Compare' => '0.29',
 		'List::MoreUtils' => 0,
