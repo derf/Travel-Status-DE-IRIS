@@ -3,6 +3,7 @@
 set -e
 
 export DEBIAN_FRONTEND=noninteractive
+export APT_LISTCHANGES_FRONTEND=none
 
 apt-get update
 apt-get -y install \
@@ -23,7 +24,7 @@ cp -a /orig/Build.PL /orig/Changelog /orig/README.md /src/app
 cp -a /orig/bin /orig/examples /orig/lib /orig/share /orig/t /src/app
 cd /src/app
 
-sed -i 's/sign => 1/sign => 0/' Build.PL
+sed -i 's/sign *=> *1/sign => 0/' Build.PL
 perl Build.PL
 perl Build
 perl Build manifest
