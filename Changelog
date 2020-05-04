@@ -1,4 +1,4 @@
-git HEAD
+Travel::Status::DE::IRIS 1.46 - Mon May 04 2020
 
     * Document LWP::Protocol::https dependency
     * Discourage building with Geo::Distance 0.21.

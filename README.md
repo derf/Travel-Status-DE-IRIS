@@ -48,7 +48,7 @@ rm libtravel-status-de-iris-perl_dev_all.deb
 Note that dpkg, unlike apt, does not automatically install missing
 dependencies. If a dependency is not satisfied yet, `dpkg -i` will complain
 about unmet dependencies and bail out. `apt --fix-broken install` installs
-these dependencies and also silently finishes the Travel::Status::DE::VRR
+these dependencies and also silently finishes the Travel::Status::DE::IRIS
 installation.
 
 Uninstallation works as usual:
@@ -75,7 +75,7 @@ libraries with development headers:
 Now, use a tool of your choice to install the module. Minimum working example:
 
 ```
-cpanm Travel::Status::DE::VRR
+cpanm Travel::Status::DE::IRIS
 ```
 
 If you run this as root, it will install script and module to `/usr/local` by
