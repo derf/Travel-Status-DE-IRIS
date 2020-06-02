@@ -212,7 +212,13 @@ sub get_station {
 	my $iter_depth = 0;
 	my @ret;
 	my @queue = ( $opt{name} );
-	my @seen;
+
+	# @seen holds station IDs which were already seen during recursive
+	# 'meta' descent. This avoids infinite loops of 'meta' references.
+	# As Norddeich and Norddeich Mole are illegaly coupled in the backend
+	# (they are different stations with different departure times), we pre-seed
+	# @seen with their eva IDs.
+	my @seen = ( 8007768, 8004449 );
 
 	while ( @queue and $iter_depth < 12 ) {
 		my $station = shift(@queue);
