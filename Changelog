@@ -1,3 +1,8 @@
+Travel::Status::DE::IRIS 1.47 - Sat Jun 06 2020
+
+    * Work around (probably incorrect) IRIS coupling of
+      Norddeich and Norddeich Mole stations
+
 Travel::Status::DE::IRIS 1.46 - Mon May 04 2020
 
     * Document LWP::Protocol::https dependency
