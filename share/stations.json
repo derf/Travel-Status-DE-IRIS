@@ -50634,6 +50634,15 @@
       "name" : "Neuruppin Rheinsberger Tor"
    },
    {
+      "ds100" : "WNRS",
+      "eva" : 8080175,
+      "latlong" : [
+         52.92535,
+         12.82751
+      ],
+      "name" : "Neuruppin Seedamm"
+   },
+   {
       "ds100" : "WNR",
       "eva" : 8010246,
       "latlong" : [
