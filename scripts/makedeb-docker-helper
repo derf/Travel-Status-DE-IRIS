@@ -30,6 +30,6 @@ perl Build
 perl Build manifest
 perl Build dist
 mv Travel-Status-DE-IRIS-*.tar.gz ../app.tar.gz
-dh-make-perl --build --version "${VERSION}"
+dh-make-perl --depends "libjson-perl, libcache-perl" --build --version "${VERSION}"
 chown ${USER}:${GROUP} ../*.deb
 mv -v ../*.deb /out
