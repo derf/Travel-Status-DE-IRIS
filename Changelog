@@ -1,3 +1,8 @@
+Travel::Status::DE::IRIS 1.48 - Sat Aug 22 2020
+
+    * Add stations Neuruppin Seedamm (temporary, teardown expected Dec 2020),
+      Amriswil, and Baar(CH)
+
 Travel::Status::DE::IRIS 1.47 - Sat Jun 06 2020
 
     * Work around (probably incorrect) IRIS coupling of
