@@ -325,14 +325,14 @@ sub add_result {
 
 	my %data = (
 		raw_id       => $id,
-		classes      => $e_tl->getAttribute('f'),    # D N S F
-		train_no     => $e_tl->getAttribute('n'),    # dep number
-		type         => $e_tl->getAttribute('c'),    # S/ICE/ERB/...
+		classes      => $e_tl->getAttribute('f'), # D N S F
+		operator     => $e_tl->getAttribute('o'), # coded operator: 03/80/R2/...
+		train_no     => $e_tl->getAttribute('n'), # dep number
+		type         => $e_tl->getAttribute('c'), # S/ICE/ERB/...
 		station      => $station_name,
-		station_uic  => $station_uic + 0,            # UIC IDs are numbers
+		station_uic  => $station_uic + 0,         # UIC IDs are numbers
 		strptime_obj => $self->{strptime_obj},
 
-		#unknown_o    => $e_tl->getAttribute('o'),    # owner: 03/80/R2/...
 		#unknown_t    => $e_tl->getAttribute('t'),    # p
 	);
 

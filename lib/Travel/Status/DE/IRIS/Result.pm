@@ -113,7 +113,7 @@ Travel::Status::DE::IRIS::Result->mk_ro_accessors(
 	  date datetime delay
 	  departure departure_delay departure_is_additional departure_is_cancelled
 	  ds100 is_transfer is_unscheduled is_wing
-	  line_no old_train_id old_train_no platform raw_id
+	  line_no old_train_id old_train_no operator platform raw_id
 	  realtime_xml route_start route_end
 	  sched_arrival sched_departure sched_platform sched_route_start
 	  sched_route_end start
