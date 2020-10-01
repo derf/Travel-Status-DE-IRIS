@@ -34851,6 +34851,15 @@
       "name" : "Jacobsdorf(Mark)"
    },
    {
+      "ds100" : "HJAH",
+      "eva" : 8003105,
+      "latlong" : [
+         53.34492,
+         8.18455
+      ],
+      "name" : "Jaderberg"
+   },
+   {
       "ds100" : "WJS",
       "eva" : 8011947,
       "latlong" : [
