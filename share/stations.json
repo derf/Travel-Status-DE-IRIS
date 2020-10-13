@@ -1734,7 +1734,7 @@
          52.153888702393,
          5.3705554008484
       ],
-      "name" : "Amersfoort"
+      "name" : "Amersfoort Centraal"
    },
    {
       "ds100" : "ONAMS",
@@ -7872,7 +7872,7 @@
          51.79612,
          11.751455
       ],
-      "name" : "Bernburg"
+      "name" : "Bernburg Hbf"
    },
    {
       "ds100" : "LBGF",
@@ -8764,15 +8764,6 @@
          7.859433
       ],
       "name" : "Binolen"
-   },
-   {
-      "ds100" : "KBIF",
-      "eva" : 8071257,
-      "latlong" : [
-         50.79497,
-         6.533342
-      ],
-      "name" : "Binsfeld"
    },
    {
       "ds100" : "WBIO",
@@ -34920,15 +34911,6 @@
       "name" : "Jahnsdorf(Erzgeb)"
    },
    {
-      "ds100" : "KJW",
-      "eva" : 8071022,
-      "latlong" : [
-         50.766705,
-         6.565209
-      ],
-      "name" : "Jakobwüllesheim"
-   },
-   {
       "ds100" : "XDJP",
       "eva" : 8601177,
       "latlong" : [
@@ -38754,15 +38736,6 @@
       "name" : "Kruiningen-Yerseke"
    },
    {
-      "ds100" : "MKRS",
-      "eva" : 8001179,
-      "latlong" : [
-         48.23542,
-         10.361165
-      ],
-      "name" : "Krumbach(Schw)Schule"
-   },
-   {
       "ds100" : "MKRB",
       "eva" : 8003457,
       "latlong" : [
@@ -38770,6 +38743,15 @@
          10.358619
       ],
       "name" : "Krumbach(Schwab)"
+   },
+   {
+      "ds100" : "MKRS",
+      "eva" : 8001179,
+      "latlong" : [
+         48.23542,
+         10.361165
+      ],
+      "name" : "Krumbach(Schwab)Schule"
    },
    {
       "ds100" : "DKRU",
@@ -52551,6 +52533,15 @@
       "name" : "Nörten-Hardenberg"
    },
    {
+      "ds100" : "KBIF",
+      "eva" : 8071257,
+      "latlong" : [
+         50.79497,
+         6.533342
+      ],
+      "name" : "Nörvenich-Binsfeld"
+   },
+   {
       "ds100" : "DNUN",
       "eva" : 8012523,
       "latlong" : [
@@ -53520,7 +53511,7 @@
          50.173246,
          8.586918
       ],
-      "name" : "OberurselWeißkirchen/Steinbach"
+      "name" : "Oberursel-Weißkirchen/Steinbach"
    },
    {
       "ds100" : "DOG",
@@ -72331,6 +72322,15 @@
          6.602616
       ],
       "name" : "Vettweiß"
+   },
+   {
+      "ds100" : "KJW",
+      "eva" : 8071022,
+      "latlong" : [
+         50.766705,
+         6.565209
+      ],
+      "name" : "Vettweiß-Jakobwüllesheim"
    },
    {
       "ds100" : "XDVSJ",
