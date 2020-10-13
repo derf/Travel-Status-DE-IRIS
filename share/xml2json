@@ -40,8 +40,7 @@ for my $station ( $tree->findnodes('//station') ) {
 			last;
 		}
 		elsif ( $j_name eq $name and $j_eva != $eva ) {
-			printf( "%30s has been recoded: %d -> %d\n", $name,
-				$j_eva != $eva );
+			printf( "%30s has been recoded: %d -> %d\n", $name, $j_eva, $eva );
 			last;
 		}
 	}
