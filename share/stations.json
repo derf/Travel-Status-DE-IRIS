@@ -7886,7 +7886,10 @@
    {
       "ds100" : "LBGR",
       "eva" : 8011605,
-      "latlong" : null,
+      "latlong" : [
+         51.7811,
+         11.7593
+      ],
       "name" : "Bernburg-Roschwitz"
    },
    {
@@ -11515,6 +11518,15 @@
          8.61004816647745
       ],
       "name" : "Brunnen(CH)"
+   },
+   {
+      "ds100" : "MBRU",
+      "eva" : 8001265,
+      "latlong" : [
+         48.629771,
+         11.29911
+      ],
+      "name" : "Brunnen(Oberbay)"
    },
    {
       "ds100" : "XBBNL",
@@ -16559,7 +16571,10 @@
    {
       "ds100" : "TDSA",
       "eva" : 8001510,
-      "latlong" : null,
+      "latlong" : [
+         48.4733,
+         8.48291
+      ],
       "name" : "Dornstetten-Aach"
    },
    {
@@ -18995,7 +19010,10 @@
    {
       "ds100" : "HEBA",
       "eva" : 8001723,
-      "latlong" : null,
+      "latlong" : [
+         51.8144784,
+         9.89290953
+      ],
       "name" : "Einbeck Otto-Hahn-Straße"
    },
    {
@@ -19595,7 +19613,10 @@
    {
       "ds100" : "EEME",
       "eva" : 8001776,
-      "latlong" : null,
+      "latlong" : [
+         51.8743,
+         6.15417
+      ],
       "name" : "Emmerich-Elten"
    },
    {
@@ -21176,7 +21197,10 @@
    {
       "ds100" : "TETN",
       "eva" : 8001944,
-      "latlong" : null,
+      "latlong" : [
+         48.4847,
+         8.7531
+      ],
       "name" : "Eutingen Nord"
    },
    {
@@ -22469,7 +22493,10 @@
    {
       "ds100" : "FFGG",
       "eva" : 8002060,
-      "latlong" : null,
+      "latlong" : [
+         50.0565739,
+         8.59449506
+      ],
       "name" : "Frankfurt(Main)-Gateway Gardens"
    },
    {
@@ -28667,7 +28694,10 @@
    {
       "ds100" : "EOBG",
       "eva" : 8002535,
-      "latlong" : null,
+      "latlong" : [
+         51.191867,
+         7.574042
+      ],
       "name" : "Halver-Oberbrügge"
    },
    {
@@ -34487,7 +34517,10 @@
    {
       "ds100" : "MIA",
       "eva" : 8003074,
-      "latlong" : null,
+      "latlong" : [
+         48.7904959,
+         11.4074564
+      ],
       "name" : "Ingolstadt Audi"
    },
    {
@@ -36734,7 +36767,10 @@
    {
       "ds100" : "EKIE",
       "eva" : 8003297,
-      "latlong" : null,
+      "latlong" : [
+         51.1300136,
+         7.61622906
+      ],
       "name" : "Kierspe"
    },
    {
@@ -41393,7 +41429,10 @@
    {
       "ds100" : "LLMS",
       "eva" : 8012273,
-      "latlong" : null,
+      "latlong" : [
+         51.3738,
+         12.4121
+      ],
       "name" : "Leipzig Mockauer Straße"
    },
    {
@@ -50183,13 +50222,19 @@
    {
       "ds100" : "HNEH",
       "eva" : 8004262,
-      "latlong" : null,
+      "latlong" : [
+         52.5019,
+         6.96998
+      ],
       "name" : "Neuenhaus"
    },
    {
       "ds100" : "HNES",
       "eva" : 8004261,
-      "latlong" : null,
+      "latlong" : [
+         52.4871,
+         6.98405
+      ],
       "name" : "Neuenhaus Süd"
    },
    {
@@ -52157,13 +52202,19 @@
    {
       "ds100" : "HNDH",
       "eva" : 8004467,
-      "latlong" : null,
+      "latlong" : [
+         52.429883,
+         7.06479907
+      ],
       "name" : "Nordhorn"
    },
    {
       "ds100" : "HNDB",
       "eva" : 8004465,
-      "latlong" : null,
+      "latlong" : [
+         52.417,
+         7.07477
+      ],
       "name" : "Nordhorn-Blanke"
    },
    {
@@ -57452,7 +57503,10 @@
    {
       "ds100" : "HQDF",
       "eva" : 8004912,
-      "latlong" : null,
+      "latlong" : [
+         52.3384726,
+         7.17205524
+      ],
       "name" : "Quendorf"
    },
    {
@@ -58655,7 +58709,10 @@
    {
       "ds100" : "EREKK",
       "eva" : 8003305,
-      "latlong" : null,
+      "latlong" : [
+         51.7870373,
+         7.03519821
+      ],
       "name" : "Reken-Klein Reken"
    },
    {
@@ -67400,7 +67457,10 @@
    {
       "ds100" : "RSFW",
       "eva" : 8005933,
-      "latlong" : null,
+      "latlong" : [
+         49.1836249,
+         8.6369276
+      ],
       "name" : "Stettfeld-Weiher"
    },
    {
