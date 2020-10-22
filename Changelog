@@ -1,3 +1,8 @@
+Travel::Status::DE::IRIS 1.51 - Thu Oct 22 2020
+
+    * Add BER airport stations
+    * Rename Schönefeld airport to BER Terminal 5
+
 Travel::Status::DE::IRIS 1.50 - Thu Oct 15 2020
 
     * Add station Brunnen(Oberbay)
