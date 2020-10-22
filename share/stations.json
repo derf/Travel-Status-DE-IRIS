@@ -7605,15 +7605,6 @@
       "name" : "Berlin-Schöneberg"
    },
    {
-      "ds100" : "BFHS",
-      "eva" : 8010109,
-      "latlong" : [
-         52.391062,
-         13.51271
-      ],
-      "name" : "Berlin-Schönefeld Flughafen"
-   },
-   {
       "ds100" : "BSWP",
       "eva" : 8010041,
       "latlong" : [
@@ -22039,6 +22030,33 @@
          13.181082
       ],
       "name" : "Floßmühle"
+   },
+   {
+      "ds100" : "BFBI",
+      "eva" : "8011201",
+      "latlong" : [
+         52.3648038,
+         13.5119498
+      ],
+      "name" : "Flughafen BER - Terminal 1-2"
+   },
+   {
+      "ds100" : "BFBB",
+      "eva" : "8089201",
+      "latlong" : [
+         52.3648431,
+         13.5119176
+      ],
+      "name" : "Flughafen BER - Terminal 1-2 (S-Bahn)"
+   },
+   {
+      "ds100" : "BFHS",
+      "eva" : 8010109,
+      "latlong" : [
+         52.391062,
+         13.51271
+      ],
+      "name" : "Flughafen BER - Terminal 5 (Schönefeld)"
    },
    {
       "ds100" : "XAWIF",
