@@ -20,10 +20,17 @@ for my $station ( $tree->findnodes('//station') ) {
 	my $eva   = $station->getAttribute('eva');
 	my $ds100 = $station->getAttribute('ds100');
 
+	my $found = 0;
+
 	for my $j_station ( @{$stations} ) {
 		my $j_name  = $j_station->{name};
 		my $j_ds100 = $j_station->{ds100};
 		my $j_eva   = $j_station->{eva};
+
+		if ( $name eq $j_name or $eva == $j_eva ) {
+			$found = 1;
+		}
+
 		if ( $j_ds100 eq $ds100 and $j_name ne $name ) {
 			printf( "%8s has been renamed: %30s -> %30s\n",
 				$ds100, $j_name, $name );
@@ -43,6 +50,12 @@ for my $station ( $tree->findnodes('//station') ) {
 			printf( "%30s has been recoded: %d -> %d\n", $name, $j_eva, $eva );
 			last;
 		}
+	}
+
+	if (    not $found
+		and not( $ds100 =~ m{ ^ [OPXZ] }x or $name =~ m{ ^ Bahnhof, }x ) )
+	{
+		#say "missing $eva  $ds100  \"$name\"";
 	}
 }
 
