@@ -1,3 +1,8 @@
+Travel::Status::DE::IRIS 1.52 - Sun Nov 22 2020
+
+    * get_station_by_name: Fix crash (unhandled exception) when the station
+      name is an invalid regular expression
+
 Travel::Status::DE::IRIS 1.51 - Thu Oct 22 2020
 
     * Add BER airport stations
