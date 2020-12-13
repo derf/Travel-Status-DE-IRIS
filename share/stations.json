@@ -42597,15 +42597,6 @@
       "name" : "Lindach"
    },
    {
-      "ds100" : "MLI",
-      "eva" : 8000230,
-      "latlong" : [
-         47.544341,
-         9.680469
-      ],
-      "name" : "Lindau Hbf"
-   },
-   {
       "ds100" : "MLIA",
       "eva" : 8003692,
       "latlong" : [
@@ -42613,6 +42604,24 @@
          9.68466
       ],
       "name" : "Lindau-Aeschach"
+   },
+   {
+      "ds100" : "MLI",
+      "eva" : 8000230,
+      "latlong" : [
+         47.544341,
+         9.680469
+      ],
+      "name" : "Lindau-Insel"
+   },
+   {
+      "ds100" : "MLIR",
+      "eva" : 8003693,
+      "latlong" : [
+         47.55242921,
+         9.70284607
+      ],
+      "name" : "Lindau-Reutin"
    },
    {
       "ds100" : "BLNG",
