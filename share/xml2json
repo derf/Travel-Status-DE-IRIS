@@ -19,6 +19,7 @@ for my $station ( $tree->findnodes('//station') ) {
 	my $name  = $station->getAttribute('name');
 	my $eva   = $station->getAttribute('eva');
 	my $ds100 = $station->getAttribute('ds100');
+	my $is_db = $station->getAttribute('db') eq 'true';
 
 	my $found = 0;
 
@@ -43,22 +44,56 @@ for my $station ( $tree->findnodes('//station') ) {
 				$eva, $j_name, $name, $j_ds100, $ds100 );
 			last;
 		}
-		elsif ( $j_name eq $name and $j_ds100 ne $ds100 ) {
+		elsif ( $j_name eq $name and $j_ds100 ne $ds100 and $is_db ) {
 			printf( "%30s has been recoded: %8s -> %8s\n",
 				$name, $j_ds100, $ds100 );
 			last;
 		}
-		elsif ( $j_name eq $name and $j_eva != $eva ) {
+		elsif ( $j_name eq $name and $j_eva != $eva and $is_db ) {
 			printf( "%30s has been recoded: %d -> %d\n", $name, $j_eva, $eva );
 			last;
 		}
 	}
 
-	if (    not $found
-		and not( $ds100 =~ m{ ^ [OPXZ] }x or $name =~ m{ ^ Bahnhof, }x ) )
+	if (
+		not $found
+		and not( $ds100 =~ m{ ^ ( [OPXZ] | D[0-9] ) }x
+			or $name =~ m{ ^ Bahnhof, }x
+			or $name =~ m{ \(Gr\) $ }x )
+	  )
 	{
 		#say "missing $eva  $ds100  \"$name\"";
 	}
+}
+
+my @to_delete;
+
+for my $i ( 0 .. $#{$stations} ) {
+	my $j_station = $stations->[$i];
+	my $j_name    = $j_station->{name};
+	my $j_ds100   = $j_station->{ds100};
+	my $j_eva     = $j_station->{eva};
+
+	my $found = 0;
+
+	for my $station ( $tree->findnodes('//station') ) {
+		my $name  = $station->getAttribute('name');
+		my $eva   = $station->getAttribute('eva');
+		my $ds100 = $station->getAttribute('ds100');
+		my $is_db = $station->getAttribute('db') eq 'true';
+		if ( $name eq $j_name or $eva == $j_eva ) {
+			$found = 1;
+		}
+	}
+
+	if ( not $found ) {
+		say "station no longer exists: $j_eva  $j_ds100  \"$j_name\"";
+		unshift( @to_delete, $i );
+	}
+}
+
+for my $i (@to_delete) {
+	splice( @{$stations}, $i, 1 );
 }
 
 my $json_out = JSON->new->utf8->canonical->pretty->encode($stations);
