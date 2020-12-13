@@ -1,3 +1,8 @@
+Travel::Status::DE::IRIS 1.53 - Sun Dec 13 2020
+
+    * import station name changes and station removals from Winterfahrplan
+      2021
+
 Travel::Status::DE::IRIS 1.52 - Sun Nov 22 2020
 
     * get_station_by_name: Fix crash (unhandled exception) when the station
