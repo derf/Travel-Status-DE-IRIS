@@ -34,6 +34,8 @@ for my $station ( $tree->findnodes('//station') ) {
 		if ( $j_ds100 eq $ds100 and $j_name ne $name ) {
 			printf( "%8s has been renamed: %30s -> %30s\n",
 				$ds100, $j_name, $name );
+
+			#$j_station->{name} = $name;
 			last;
 		}
 		elsif ( $j_eva == $eva and $j_name ne $name ) {

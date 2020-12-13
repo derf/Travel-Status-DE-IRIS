@@ -4293,6 +4293,15 @@
       "name" : "Bad Salzuflen"
    },
    {
+      "ds100" : "ESYL",
+      "eva" : 8005810,
+      "latlong" : [
+         52.026884,
+         8.765529
+      ],
+      "name" : "Bad Salzuflen-Sylbach"
+   },
+   {
       "ds100" : "USZ",
       "eva" : 8010021,
       "latlong" : [
@@ -5643,6 +5652,15 @@
       "name" : "Beckingen(Saar)"
    },
    {
+      "ds100" : "ENBM",
+      "eva" : 8004251,
+      "latlong" : [
+         51.801951,
+         8.02136
+      ],
+      "name" : "Beckum-Neubeckum"
+   },
+   {
       "ds100" : "KBE",
       "eva" : 8000030,
       "latlong" : [
@@ -6480,15 +6498,6 @@
       "name" : "Berlin Betriebsbf Rummelsburg"
    },
    {
-      "ds100" : "BSCF",
-      "eva" : 8089007,
-      "latlong" : [
-         52.446905,
-         13.52368
-      ],
-      "name" : "Berlin Betriebsbf Schöneweide"
-   },
-   {
       "ds100" : "BBEU",
       "eva" : 8089118,
       "latlong" : [
@@ -6603,7 +6612,7 @@
          52.556011,
          13.524834
       ],
-      "name" : "Berlin Gehrenseestr."
+      "name" : "Berlin Gehrenseestraße"
    },
    {
       "ds100" : "BGS",
@@ -7351,6 +7360,15 @@
          13.5127169
       ],
       "name" : "Berlin-Hohenschönhausen (S)"
+   },
+   {
+      "ds100" : "BSCF",
+      "eva" : 8089007,
+      "latlong" : [
+         52.446905,
+         13.52368
+      ],
+      "name" : "Berlin-Johannisthal"
    },
    {
       "ds100" : "BKH",
@@ -8460,6 +8478,15 @@
       "name" : "Bielefeld Ost"
    },
    {
+      "ds100" : "EBWE",
+      "eva" : 8000048,
+      "latlong" : [
+         51.997378,
+         8.498426
+      ],
+      "name" : "Bielefeld-Brackwede"
+   },
+   {
       "ds100" : "EBIS",
       "eva" : 8000956,
       "latlong" : [
@@ -8467,6 +8494,24 @@
          8.520335
       ],
       "name" : "Bielefeld-Senne"
+   },
+   {
+      "ds100" : "ESES",
+      "eva" : 8005535,
+      "latlong" : [
+         51.940582,
+         8.567477
+      ],
+      "name" : "Bielefeld-Sennestadt"
+   },
+   {
+      "ds100" : "EWIL",
+      "eva" : 8006466,
+      "latlong" : [
+         51.957007,
+         8.531378
+      ],
+      "name" : "Bielefeld-Windelsbleiche"
    },
    {
       "ds100" : "LBF",
@@ -9313,15 +9358,6 @@
          13.87204
       ],
       "name" : "Blumenhagen"
-   },
-   {
-      "ds100" : "EBKP",
-      "eva" : 8001030,
-      "latlong" : [
-         51.695217,
-         6.613118
-      ],
-      "name" : "Blumenkamp"
    },
    {
       "ds100" : "WBMT",
@@ -10240,15 +10276,6 @@
          6.231463
       ],
       "name" : "Brachelen"
-   },
-   {
-      "ds100" : "EBWE",
-      "eva" : 8000048,
-      "latlong" : [
-         51.997378,
-         8.498426
-      ],
-      "name" : "Brackwede"
    },
    {
       "ds100" : "WBRH",
@@ -12625,15 +12652,6 @@
          11.064149
       ],
       "name" : "Bösdorf(Sachs-Anh)"
-   },
-   {
-      "ds100" : "EBSL",
-      "eva" : 8001065,
-      "latlong" : [
-         51.90703,
-         7.487687
-      ],
-      "name" : "Bösensell"
    },
    {
       "ds100" : "EBSP",
@@ -15946,15 +15964,6 @@
          6.72215
       ],
       "name" : "Dillingen(Saar)"
-   },
-   {
-      "ds100" : "EDGD",
-      "eva" : 8001465,
-      "latlong" : [
-         51.770232,
-         6.607872
-      ],
-      "name" : "Dingden"
    },
    {
       "ds100" : "MDIF",
@@ -21093,16 +21102,7 @@
          49.010104,
          8.393553
       ],
-      "name" : "Europapl./PostGalerie (Kaiserstr), Karlsruhe"
-   },
-   {
-      "ds100" : "RKSEK",
-      "eva" : 723614,
-      "latlong" : [
-         49.00965,
-         8.395017
-      ],
-      "name" : "Europapl./PostGalerie (Karlstr.), Karlsruhe"
+      "name" : "Europaplatz/Postgal. (Kaiser), Karlsruhe"
    },
    {
       "ds100" : "RKSE",
@@ -21112,6 +21112,15 @@
          8.394891
       ],
       "name" : "Europaplatz/Postgalerie (Karls, Karlsruhe"
+   },
+   {
+      "ds100" : "RKSEK",
+      "eva" : 723614,
+      "latlong" : [
+         49.00965,
+         8.395017
+      ],
+      "name" : "Europaplatz/Postgalerie (Karlstr.), Karlsruhe"
    },
    {
       "ds100" : "KEU",
@@ -22033,7 +22042,7 @@
    },
    {
       "ds100" : "BFBI",
-      "eva" : "8011201",
+      "eva" : 8011201,
       "latlong" : [
          52.3648038,
          13.5119498
@@ -22042,7 +22051,7 @@
    },
    {
       "ds100" : "BFBB",
-      "eva" : "8089201",
+      "eva" : 8089201,
       "latlong" : [
          52.3648431,
          13.5119176
@@ -24118,15 +24127,6 @@
          11.575401
       ],
       "name" : "Gaißach"
-   },
-   {
-      "ds100" : "SGSZ",
-      "eva" : 8002175,
-      "latlong" : [
-         49.43549,
-         7.744124
-      ],
-      "name" : "Galgenschanze"
    },
    {
       "ds100" : "XIGA",
@@ -28584,15 +28584,6 @@
       "name" : "Halle(Saale)Hbf Gl. 13a"
    },
    {
-      "ds100" : "EHWS",
-      "eva" : 8080630,
-      "latlong" : [
-         52.061643,
-         8.343797
-      ],
-      "name" : "Halle(W) Gerry-Weber-Stadion"
-   },
-   {
       "ds100" : "EHAL",
       "eva" : 8002539,
       "latlong" : [
@@ -28600,6 +28591,15 @@
          8.357729
       ],
       "name" : "Halle(Westf)"
+   },
+   {
+      "ds100" : "EHWS",
+      "eva" : 8080630,
+      "latlong" : [
+         52.061643,
+         8.343797
+      ],
+      "name" : "Halle(Westf) OWL-Arena"
    },
    {
       "ds100" : "LHAD",
@@ -29401,6 +29401,15 @@
          6.601745
       ],
       "name" : "Hamminkeln"
+   },
+   {
+      "ds100" : "EDGD",
+      "eva" : 8001465,
+      "latlong" : [
+         51.770232,
+         6.607872
+      ],
+      "name" : "Hamminkeln-Dingden"
    },
    {
       "ds100" : "FH",
@@ -35631,6 +35640,15 @@
       "name" : "Kaisersesch"
    },
    {
+      "ds100" : "SGSZ",
+      "eva" : 8002175,
+      "latlong" : [
+         49.43549,
+         7.744124
+      ],
+      "name" : "Kaiserslautern Galgenschanze"
+   },
+   {
       "ds100" : "SKL",
       "eva" : 8000189,
       "latlong" : [
@@ -39868,6 +39886,15 @@
          10.84437
       ],
       "name" : "Lagerlechfeld"
+   },
+   {
+      "ds100" : "FLSR",
+      "eva" : 8005291,
+      "latlong" : [
+         50.871196,
+         8.756045
+      ],
+      "name" : "Lahntal-Sarnau"
    },
    {
       "ds100" : "RLSW",
@@ -44523,6 +44550,15 @@
       "name" : "Mainz Römisches Theater"
    },
    {
+      "ds100" : "FWFK",
+      "eva" : 8006136,
+      "latlong" : [
+         50.014915,
+         8.235108
+      ],
+      "name" : "Mainz Waggonfabrik"
+   },
+   {
       "ds100" : "FMB",
       "eva" : 8000241,
       "latlong" : [
@@ -47391,7 +47427,7 @@
          51.766262,
          5.21764
       ],
-      "name" : "Mook Molenhoek"
+      "name" : "Mook-Molenhoek"
    },
    {
       "ds100" : "AMBH",
@@ -49308,7 +49344,7 @@
          48.689798,
          6.174096
       ],
-      "name" : "Nancy Ville"
+      "name" : "Nancy"
    },
    {
       "ds100" : "XFNA",
@@ -50031,15 +50067,6 @@
       "name" : "Neu-Ulm"
    },
    {
-      "ds100" : "ENBM",
-      "eva" : 8004251,
-      "latlong" : [
-         51.801951,
-         8.02136
-      ],
-      "name" : "Neubeckum"
-   },
-   {
       "ds100" : "MNB",
       "eva" : 8004252,
       "latlong" : [
@@ -50184,15 +50211,6 @@
       "name" : "Neuenbürg(Enz)"
    },
    {
-      "ds100" : "TNEE",
-      "eva" : 8070278,
-      "latlong" : [
-         48.8172,
-         8.577871
-      ],
-      "name" : "Neuenbürg(Enz) Eyachbrücke"
-   },
-   {
       "ds100" : "TNEB",
       "eva" : 8070276,
       "latlong" : [
@@ -50209,6 +50227,15 @@
          8.598864
       ],
       "name" : "Neuenbürg(Enz) Süd"
+   },
+   {
+      "ds100" : "TNEE",
+      "eva" : 8070278,
+      "latlong" : [
+         48.8172,
+         8.577871
+      ],
+      "name" : "Neuenbürg(Enz)-Rotenbach Eyachbrücke"
    },
    {
       "ds100" : "NNDU",
@@ -50553,15 +50580,6 @@
       "name" : "Neumarkt-Kallham"
    },
    {
-      "ds100" : "XANKD",
-      "eva" : 8100134,
-      "latlong" : [
-         47.954675,
-         13.224806
-      ],
-      "name" : "Neumarkt-Köstendorf"
-   },
-   {
       "ds100" : "MNR",
       "eva" : 8000720,
       "latlong" : [
@@ -50569,6 +50587,15 @@
          12.503075
       ],
       "name" : "Neumarkt-St Veit"
+   },
+   {
+      "ds100" : "XANKD",
+      "eva" : 8100134,
+      "latlong" : [
+         47.954675,
+         13.224806
+      ],
+      "name" : "Neumarkt/Wallersee"
    },
    {
       "ds100" : "UNME",
@@ -55215,6 +55242,15 @@
       "name" : "Paderborn-Schloss Neuhaus"
    },
    {
+      "ds100" : "ESEL",
+      "eva" : 8005534,
+      "latlong" : [
+         51.77024,
+         8.713704
+      ],
+      "name" : "Paderborn-Sennelager"
+   },
+   {
       "ds100" : "XIPP",
       "eva" : 8300098,
       "latlong" : [
@@ -55915,15 +55951,6 @@
          13.1997265750904
       ],
       "name" : "Pfarrwerfen"
-   },
-   {
-      "ds100" : "FPD",
-      "eva" : 8004788,
-      "latlong" : [
-         49.634634,
-         8.279654
-      ],
-      "name" : "Pfeddersheim"
    },
    {
       "ds100" : "MPFT",
@@ -62127,15 +62154,6 @@
       "name" : "Sargans"
    },
    {
-      "ds100" : "FLSR",
-      "eva" : 8005291,
-      "latlong" : [
-         50.871196,
-         8.756045
-      ],
-      "name" : "Sarnau"
-   },
-   {
       "ds100" : "WSAW",
       "eva" : 8012842,
       "latlong" : [
@@ -64818,6 +64836,15 @@
       "name" : "Senden"
    },
    {
+      "ds100" : "EBSL",
+      "eva" : 8001065,
+      "latlong" : [
+         51.90703,
+         7.487687
+      ],
+      "name" : "Senden-Bösensell"
+   },
+   {
       "ds100" : "BSN",
       "eva" : 8010327,
       "latlong" : [
@@ -64825,24 +64852,6 @@
          14.003905
       ],
       "name" : "Senftenberg"
-   },
-   {
-      "ds100" : "ESEL",
-      "eva" : 8005534,
-      "latlong" : [
-         51.77024,
-         8.713704
-      ],
-      "name" : "Sennelager"
-   },
-   {
-      "ds100" : "ESES",
-      "eva" : 8005535,
-      "latlong" : [
-         51.940582,
-         8.567477
-      ],
-      "name" : "Sennestadt"
    },
    {
       "ds100" : "TSE",
@@ -66570,7 +66579,7 @@
          47.4532118156642,
          9.63825154067703
       ],
-      "name" : "St. Margrethen"
+      "name" : "St. Margrethen SG"
    },
    {
       "ds100" : "XSMZ",
@@ -68533,15 +68542,6 @@
          8.809786
       ],
       "name" : "Syke"
-   },
-   {
-      "ds100" : "ESYL",
-      "eva" : 8005810,
-      "latlong" : [
-         52.026884,
-         8.765529
-      ],
-      "name" : "Sylbach"
    },
    {
       "ds100" : "DSY",
@@ -73224,15 +73224,6 @@
       "name" : "Wagersrott"
    },
    {
-      "ds100" : "FWFK",
-      "eva" : 8006136,
-      "latlong" : [
-         50.014915,
-         8.235108
-      ],
-      "name" : "Waggonfabrik"
-   },
-   {
       "ds100" : "RWG",
       "eva" : 8006137,
       "latlong" : [
@@ -75330,6 +75321,15 @@
       "name" : "Wesel Feldmark"
    },
    {
+      "ds100" : "EBKP",
+      "eva" : 8001030,
+      "latlong" : [
+         51.695217,
+         6.613118
+      ],
+      "name" : "Wesel-Blumenkamp"
+   },
+   {
       "ds100" : "WWE",
       "eva" : 8013293,
       "latlong" : [
@@ -76128,7 +76128,7 @@
          53.518795,
          8.114901
       ],
-      "name" : "Wilhelmshaven Hbf"
+      "name" : "Wilhelmshaven"
    },
    {
       "ds100" : "BWHO",
@@ -76327,15 +76327,6 @@
          6.406578
       ],
       "name" : "Wincheringen"
-   },
-   {
-      "ds100" : "EWIL",
-      "eva" : 8006466,
-      "latlong" : [
-         51.957007,
-         8.531378
-      ],
-      "name" : "Windelsbleiche"
    },
    {
       "ds100" : "RWND",
@@ -77112,6 +77103,15 @@
       "name" : "Worms Hbf"
    },
    {
+      "ds100" : "FPD",
+      "eva" : 8004788,
+      "latlong" : [
+         49.634634,
+         8.279654
+      ],
+      "name" : "Worms-Pfeddersheim"
+   },
+   {
       "ds100" : "AWPW",
       "eva" : 8007122,
       "latlong" : [
@@ -77370,7 +77370,7 @@
          52.888351,
          12.456704
       ],
-      "name" : "Wusterhausen(Dosse) NE"
+      "name" : "Wusterhausen(Dosse)"
    },
    {
       "ds100" : "BWUS",
