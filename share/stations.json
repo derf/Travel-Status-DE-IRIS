@@ -76599,6 +76599,15 @@
       "name" : "Wuppertal-Barmen"
    },
    {
+      "ds100" : "KWHD",
+      "eva" : 8006601,
+      "latlong" : [
+         51.2539996,
+         7.05543146
+      ],
+      "name" : "Wuppertal-Hahnenfurth/Düssel"
+   },
+   {
       "ds100" : "KWLP",
       "eva" : 8006607,
       "latlong" : [
