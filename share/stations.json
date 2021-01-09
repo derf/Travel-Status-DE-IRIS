@@ -33237,6 +33237,15 @@
       "name" : "Houthem-St. Gerlach"
    },
    {
+      "ds100" : "XLHW",
+      "eva" : "8200250",
+      "latlong" : [
+         49.5811,
+         6.1325
+      ],
+      "name" : "Howald"
+   },
+   {
       "ds100" : "BHW",
       "eva" : 8010177,
       "latlong" : [
