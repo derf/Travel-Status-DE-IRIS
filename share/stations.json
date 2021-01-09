@@ -13905,6 +13905,15 @@
       "name" : "Coburg Nord"
    },
    {
+      "ds100" : "NCBD",
+      "eva" : 8001333,
+      "latlong" : [
+         50.2867,
+         10.9297
+      ],
+      "name" : "Coburg-Beiersdorf"
+   },
+   {
       "ds100" : "NCNS",
       "eva" : 8001339,
       "latlong" : [
@@ -19591,6 +19600,15 @@
          9.292419
       ],
       "name" : "Engstingen"
+   },
+   {
+      "ds100" : "TENS",
+      "eva" : 8003335,
+      "latlong" : [
+         48.384,
+         9.2843
+      ],
+      "name" : "Engstingen Schulzentrum"
    },
    {
       "ds100" : "TENG",
@@ -33238,7 +33256,7 @@
    },
    {
       "ds100" : "XLHW",
-      "eva" : "8200250",
+      "eva" : 8200250,
       "latlong" : [
          49.5811,
          6.1325
@@ -38716,6 +38734,15 @@
          14.725668
       ],
       "name" : "Kurort Jonsdorf Hst"
+   },
+   {
+      "ds100" : "DKP",
+      "eva" : 8012133,
+      "latlong" : [
+         50.8059076,
+         13.6765462
+      ],
+      "name" : "Kurort Kipsdorf"
    },
    {
       "ds100" : "DKOW",
@@ -57789,6 +57816,15 @@
       "name" : "Rechenberg"
    },
    {
+      "ds100" : "DRBS",
+      "eva" : 8017220,
+      "latlong" : [
+         50.7371,
+         13.543867
+      ],
+      "name" : "Rechenberg Schule"
+   },
+   {
       "ds100" : "TRC",
       "eva" : 8004968,
       "latlong" : [
@@ -62530,6 +62566,15 @@
          10.978087
       ],
       "name" : "Schmiechen(Schwab)"
+   },
+   {
+      "ds100" : "DSBG",
+      "eva" : 8012884,
+      "latlong" : [
+         50.8338467,
+         13.6775064
+      ],
+      "name" : "Schmiedeberg (Dresden)"
    },
    {
       "ds100" : "DNAS",
