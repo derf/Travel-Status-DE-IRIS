@@ -1,3 +1,7 @@
+Travel::Status::DE::IRIS 1.54 - Sat Jan 09 2021
+
+    * Add stations DKP, DRBS, DSBG, KWHD, NCBD, TENS, XLHW
+
 Travel::Status::DE::IRIS 1.53 - Sun Dec 13 2020
 
     * import station name changes and station removals from Winterfahrplan
