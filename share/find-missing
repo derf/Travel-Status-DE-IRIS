@@ -1,0 +1,13 @@
+#!/bin/zsh
+
+: > missing.txt
+
+./xml2json | fgrep missing | shuf | while read m eva x ; do
+	if [[ $x != *,* ]] && db-iris -x $eva &> /dev/null; then
+		echo "\n$m $eva $x"
+		echo $m $eva $x >> missing.txt
+	else
+		echo -n .
+	fi
+	sleep .2
+done
