@@ -1,3 +1,12 @@
+Travel::Status::DE::IRIS 1.55 - Tue May 04 2021
+
+    * Fix transfer trains getting lost when requested from a related station.
+      Notable offender: "Berlin Südkreuz" lacked S 41 / S42 (ring line
+      from Südkreuz (S) to Südkreuz (S) with transfer to/from the next/previous
+      incarnation), as it referenced "Berlin Südkreuz (S)". "Berlin Südkreuz (S)"
+      itself worked fine.
+
+
 Travel::Status::DE::IRIS 1.54 - Sat Jan 09 2021
 
     * Add stations DKP, DRBS, DSBG, KWHD, NCBD, TENS, XLHW
