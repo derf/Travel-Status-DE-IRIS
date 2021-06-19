@@ -63,9 +63,12 @@ my %translation = (
 	,    # xlsx: "Vorübergehend verminderte Geschwindigkeit auf der Strecke"
 	43 => 'Verspätung eines vorausfahrenden Zuges',
 	44 => 'Warten auf einen entgegenkommenden Zug',
+
+	# TODO for Oct 2021: switch 45, 46 to "Vorfahrt eines anderen Zuges"
 	45 =>
 	  'Überholung durch anderen Zug',    # xlsx: "Vorfahrt eines anderen Zuges"
 	46 => 'Warten auf freie Einfahrt',    # xlsx: "Vorfahrt eines anderen Zuges"
+
 	47 => 'Verspätete Bereitstellung'
 	,    # xlsx: "Verspätete Bereitstellung des Zuges"
 	48 => 'Verspätung aus vorheriger Fahrt',
