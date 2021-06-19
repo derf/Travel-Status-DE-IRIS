@@ -116,8 +116,8 @@ my %translation = (
 	93 => 'Behindertengerechte Einrichtung fehlt',
 	94 => 'Ersatzbewirtschaftung',
 	95 => 'Universal-WC fehlt',
-	96 => 'Überbesetzung mit Kulanzleistungen',     # r 97
-	97 => 'Überbesetzung ohne Kulanzleistungen',    # r 96
+	96 => 'Der Zug ist stark überbesetzt',          # r 97
+	97 => 'Der Zug ist überbesetzt',                # r 96
 	98 => 'Sonstige Qualitätsmängel',
 	99 => 'Verzögerungen im Betriebsablauf',
 
