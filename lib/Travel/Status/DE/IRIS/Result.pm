@@ -37,10 +37,10 @@ my %translation = (
 	17 => 'Beschädigung einer Brücke',
 	18 => 'Umgestürzter Baum auf der Strecke',
 	19 => 'Unfall an einem Bahnübergang',
-	20 => 'Tiere im Gleis',                            # xlsx: missing
+	20 => 'Tiere im Gleis',                           # xlsx: missing
 	21 => 'Warten auf Anschlussreisende',
 	22 => 'Witterungsbedingte Beeinträchtigung',
-	23 => 'Feuerwehreinsatz auf Bahngelände',         # xlsx: missing
+	23 => 'Feuerwehreinsatz auf Bahngelände',        # xlsx: missing
 	24 => 'Verspätung im Ausland',
 	25 => 'Bereitstellung weiterer Wagen',
 	26 => 'Abhängen von Wagen',
@@ -95,10 +95,10 @@ my %translation = (
 	70 => 'WLAN nicht verfügbar',
 	71 => 'WLAN in einzelnen Wagen nicht verfügbar',
 	72 => 'Info/Entertainment nicht verfügbar',
-	73 => 'Heute: Mehrzweckabteil vorne',
-	74 => 'Heute: Mehrzweckabteil hinten',
-	75 => 'Heute: 1. Klasse vorne',
-	76 => 'Heute: 1. Klasse hinten',
+	73 => 'Heute: Mehrzweckabteil vorne',                   # r 74
+	74 => 'Heute: Mehrzweckabteil hinten',                  # r 73
+	75 => 'Heute: 1. Klasse vorne',                         # r 76
+	76 => 'Heute: 1. Klasse hinten',                        # r 75
 	77 => '1. Klasse fehlt',
 	79 => 'Mehrzweckabteil fehlt',
 	80 => 'Andere Reihenfolge der Wagen',
@@ -795,8 +795,11 @@ sub sched_route {
 
 sub superseded_messages {
 	my ( $self, $msg ) = @_;
-
 	my %superseded = (
+		73 => [74],
+		74 => [73],
+		75 => [76],
+		76 => [75],
 		84 => [ 80, 82, 85 ],
 		88 => [ 80, 82, 83, 85, 86, 87, 90, 91, 92, 93, 96, 97, 98 ],
 		89 => [ 86, 87 ],
