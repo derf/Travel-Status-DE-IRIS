@@ -17370,6 +17370,15 @@
       "name" : "Durlach Untermühlstraße, Karlsruhe"
    },
    {
+      "ds100" : "RKDTB",
+      "eva" : "377903",
+      "latlong" : [
+         49.009485,
+         8.418562
+      ],
+      "name" : "Durlacher Tor/KIT-Campus Süd, Karlsruhe"
+   },
+   {
       "ds100" : "RDRM",
       "eva" : 8001616,
       "latlong" : [
@@ -35676,6 +35685,15 @@
       "name" : "Karlsruhe Hbf"
    },
    {
+      "ds100" : "RK  S",
+      "eva" : "8089390",
+      "latlong" : [
+         48.991717,
+         8.400955
+      ],
+      "name" : "Karlsruhe Hbf Südausgang"
+   },
+   {
       "ds100" : "RKMAK",
       "eva" : 8079035,
       "latlong" : [
@@ -37620,6 +37638,15 @@
       "name" : "Konstanz"
    },
    {
+      "ds100" : "RKOH",
+      "eva" : "8073400",
+      "latlong" : [
+         47.659864,
+         9.179538
+      ],
+      "name" : "Konstanz Hafen"
+   },
+   {
       "ds100" : "RKOF",
       "eva" : 8003404,
       "latlong" : [
@@ -38079,6 +38106,15 @@
       "name" : "Kressbronn"
    },
    {
+      "ds100" : "RKRB",
+      "eva" : "8073432",
+      "latlong" : [
+         47.586184,
+         9.599262
+      ],
+      "name" : "Kressbronn Hafen"
+   },
+   {
       "ds100" : "DKRO",
       "eva" : 8012098,
       "latlong" : [
@@ -38257,6 +38293,15 @@
          8.516874
       ],
       "name" : "Kronberg(Taunus)"
+   },
+   {
+      "ds100" : "RKBPS",
+      "eva" : "721393",
+      "latlong" : [
+         49.007977,
+         8.409938
+      ],
+      "name" : "Kronenplatz (Fritz-Erler-Str.), Karlsruhe"
    },
    {
       "ds100" : "RKBP",
@@ -50625,15 +50670,6 @@
       "name" : "Nieder Flörsheim-Dalsheim"
    },
    {
-      "ds100" : "FNO",
-      "eva" : 8004348,
-      "latlong" : [
-         50.645379,
-         9.034132
-      ],
-      "name" : "Nieder-Ohmen"
-   },
-   {
       "ds100" : "FNOL",
       "eva" : 8004349,
       "latlong" : [
@@ -50650,6 +50686,15 @@
          8.767357
       ],
       "name" : "Nieder Wöllstadt"
+   },
+   {
+      "ds100" : "FNO",
+      "eva" : 8004348,
+      "latlong" : [
+         50.645379,
+         9.034132
+      ],
+      "name" : "Nieder-Ohmen"
    },
    {
       "ds100" : "MNAR",
@@ -58482,6 +58527,15 @@
       "name" : "Rheinfelden(CH)"
    },
    {
+      "ds100" : "RKHN",
+      "eva" : "362391",
+      "latlong" : [
+         49.015578,
+         8.347322
+      ],
+      "name" : "Rheinhafen, Karlsruhe"
+   },
+   {
       "ds100" : "KRH",
       "eva" : 8000317,
       "latlong" : [
@@ -60703,6 +60757,15 @@
          8.404045
       ],
       "name" : "Rüppurr Tulpenstraße, Karlsruhe"
+   },
+   {
+      "ds100" : "RKRT",
+      "eva" : "721759",
+      "latlong" : [
+         49.005034,
+         8.41042
+      ],
+      "name" : "Rüppurrer Tor, Karlsruhe"
    },
    {
       "ds100" : "XSRL",
@@ -68922,6 +68985,15 @@
       "name" : "Tittmoning-Wiesmühl"
    },
    {
+      "ds100" : "RKTI",
+      "eva" : "721450",
+      "latlong" : [
+         48.99665,
+         8.410369
+      ],
+      "name" : "Tivoli, Karlsruhe"
+   },
+   {
       "ds100" : "XDTB",
       "eva" : 8602563,
       "latlong" : [
@@ -69514,6 +69586,15 @@
          9.904905
       ],
       "name" : "Tschagguns"
+   },
+   {
+      "ds100" : "RKTUT",
+      "eva" : "720995",
+      "latlong" : [
+         49.006769,
+         8.431264
+      ],
+      "name" : "Tullastraße/Verkehrsbetriebe, Karlsruhe"
    },
    {
       "ds100" : "MTUL",
@@ -74167,6 +74248,15 @@
          12.926189
       ],
       "name" : "Werder(Havel)"
+   },
+   {
+      "ds100" : "RKWE",
+      "eva" : "721465",
+      "latlong" : [
+         49.00045,
+         8.410569
+      ],
+      "name" : "Werderstraße, Karlsruhe"
    },
    {
       "ds100" : "EWHL",
