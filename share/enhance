@@ -19,7 +19,7 @@ for my $station ( @{$stations} ) {
 	if ( not $station->{latlong} ) {
 		say "Requesting location for $station->{name} ...";
 		my $res = $ua->get(
-			'https://marudor.de/api/station/v1/station/' . $station->{eva} );
+			sprintf('https://marudor.de/api/station/v1/station/%07d', $station->{eva}) );
 		if ( $res->is_error ) {
 			say '    marudor.de returned error ' . $res->status_line;
 		}
