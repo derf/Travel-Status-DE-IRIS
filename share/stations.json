@@ -9018,6 +9018,51 @@
       "name" : "Blankenloch"
    },
    {
+      "ds100" : "PQSBI",
+      "eva" : 721245,
+      "latlong" : [
+         49.064732,
+         8.471398
+      ],
+      "name" : "Blankenloch Kirche, Stutensee"
+   },
+   {
+      "ds100" : "PQSBL",
+      "eva" : 721219,
+      "latlong" : [
+         49.068742,
+         8.474738
+      ],
+      "name" : "Blankenloch Mühlenweg, Stutensee"
+   },
+   {
+      "ds100" : "PQSBN",
+      "eva" : 721274,
+      "latlong" : [
+         49.073306,
+         8.467376
+      ],
+      "name" : "Blankenloch Nord, Stutensee"
+   },
+   {
+      "ds100" : "PQSBS",
+      "eva" : 720338,
+      "latlong" : [
+         49.057026,
+         8.466729
+      ],
+      "name" : "Blankenloch Süd, Stutensee"
+   },
+   {
+      "ds100" : "PQSBT",
+      "eva" : 721228,
+      "latlong" : [
+         49.060342,
+         8.469406
+      ],
+      "name" : "Blankenloch Tolna-Platz, Stutensee"
+   },
+   {
       "ds100" : "WBLS",
       "eva" : 8011205,
       "latlong" : [
@@ -12526,6 +12571,15 @@
          9.066751
       ],
       "name" : "Büches-Düdelsheim"
+   },
+   {
+      "ds100" : "PQSBC",
+      "eva" : 721230,
+      "latlong" : [
+         49.047961,
+         8.461102
+      ],
+      "name" : "Büchig, Stutensee"
    },
    {
       "ds100" : "HBKB",
@@ -17371,7 +17425,7 @@
    },
    {
       "ds100" : "RKDTB",
-      "eva" : "377903",
+      "eva" : 377903,
       "latlong" : [
          49.009485,
          8.418562
@@ -18340,6 +18394,24 @@
          8.397941
       ],
       "name" : "Eggenstein Bf"
+   },
+   {
+      "ds100" : "PQESW",
+      "eva" : 720702,
+      "latlong" : [
+         49.079745,
+         8.399657
+      ],
+      "name" : "Eggenstein Spöcker Weg, Eggenstein-Leopoldshafen"
+   },
+   {
+      "ds100" : "PQEGS",
+      "eva" : 720703,
+      "latlong" : [
+         49.071428,
+         8.396257
+      ],
+      "name" : "Eggenstein Süd, Eggenstein-Leopoldshafen"
    },
    {
       "ds100" : "LEGD",
@@ -20844,24 +20916,6 @@
       "name" : "Europaplatz/Postgal. (Kaiser), Karlsruhe"
    },
    {
-      "ds100" : "RKSE",
-      "eva" : 722002,
-      "latlong" : [
-         49.009409,
-         8.394891
-      ],
-      "name" : "Europaplatz/Postgalerie (Karlstr.), Karlsruhe"
-   },
-   {
-      "ds100" : "RKSEK",
-      "eva" : 723614,
-      "latlong" : [
-         49.00965,
-         8.395017
-      ],
-      "name" : "Europaplatz/Postgalerie (Karlstr.), Karlsruhe"
-   },
-   {
       "ds100" : "KEU",
       "eva" : 8000100,
       "latlong" : [
@@ -21886,6 +21940,33 @@
          8.361491
       ],
       "name" : "Forbach(Schwarzw)"
+   },
+   {
+      "ds100" : "PQRFB",
+      "eva" : 720562,
+      "latlong" : [
+         48.978396,
+         8.316833
+      ],
+      "name" : "Forchheim Hallenbad, Rheinstetten"
+   },
+   {
+      "ds100" : "PQRFS",
+      "eva" : 723912,
+      "latlong" : [
+         48.974997,
+         8.31248
+      ],
+      "name" : "Forchheim Hauptstraße, Rheinstetten"
+   },
+   {
+      "ds100" : "PQRFO",
+      "eva" : 720560,
+      "latlong" : [
+         48.970273,
+         8.307766
+      ],
+      "name" : "Forchheim Oberfeldstraße, Rheinstetten"
    },
    {
       "ds100" : "NFO",
@@ -23245,6 +23326,33 @@
          9.079258
       ],
       "name" : "Friedrichstadt"
+   },
+   {
+      "ds100" : "PQSFM",
+      "eva" : 721299,
+      "latlong" : [
+         49.104299,
+         8.475259
+      ],
+      "name" : "Friedrichstal Mitte, Stutensee"
+   },
+   {
+      "ds100" : "PQSFN",
+      "eva" : 721297,
+      "latlong" : [
+         49.109261,
+         8.47671
+      ],
+      "name" : "Friedrichstal Nord, Stutensee"
+   },
+   {
+      "ds100" : "PQSFP",
+      "eva" : 721301,
+      "latlong" : [
+         49.100986,
+         8.474331
+      ],
+      "name" : "Friedrichstal Saint-Riquier-Platz, Stutensee"
    },
    {
       "ds100" : "RFRT",
@@ -35154,6 +35262,15 @@
       "name" : "Jütrichau"
    },
    {
+      "ds100" : "PQEKN",
+      "eva" : 720846,
+      "latlong" : [
+         49.097069,
+         8.43033
+      ],
+      "name" : "KIT-Campus Nord Bahnhof, Eggenstein-Leopoldshafen"
+   },
+   {
       "ds100" : "FKBH1",
       "eva" : 710446,
       "latlong" : [
@@ -35686,7 +35803,7 @@
    },
    {
       "ds100" : "RK  S",
-      "eva" : "8089390",
+      "eva" : 8089390,
       "latlong" : [
          48.991717,
          8.400955
@@ -37639,7 +37756,7 @@
    },
    {
       "ds100" : "RKOH",
-      "eva" : "8073400",
+      "eva" : 8073400,
       "latlong" : [
          47.659864,
          9.179538
@@ -38107,7 +38224,7 @@
    },
    {
       "ds100" : "RKRB",
-      "eva" : "8073432",
+      "eva" : 8073432,
       "latlong" : [
          47.586184,
          9.599262
@@ -38296,7 +38413,7 @@
    },
    {
       "ds100" : "RKBPS",
-      "eva" : "721393",
+      "eva" : 721393,
       "latlong" : [
          49.007977,
          8.409938
@@ -41614,6 +41731,15 @@
          8.401099
       ],
       "name" : "Leopoldshafen Leopoldstr."
+   },
+   {
+      "ds100" : "PQELV",
+      "eva" : 721674,
+      "latlong" : [
+         49.090469,
+         8.400281
+      ],
+      "name" : "Leopoldshafen Viermorgen, Eggenstein-Leopoldshafen"
    },
    {
       "ds100" : "ELEO",
@@ -47680,6 +47806,69 @@
          8.730987
       ],
       "name" : "Mörlenbach"
+   },
+   {
+      "ds100" : "PQRMA",
+      "eva" : 723652,
+      "latlong" : [
+         48.956471,
+         8.285496
+      ],
+      "name" : "Mörsch Am Hang, Rheinstetten"
+   },
+   {
+      "ds100" : "PQRMB",
+      "eva" : 723109,
+      "latlong" : [
+         48.958631,
+         8.284194
+      ],
+      "name" : "Mörsch Bach-West, Rheinstetten"
+   },
+   {
+      "ds100" : "PQRMK",
+      "eva" : 724172,
+      "latlong" : [
+         48.952933,
+         8.291028
+      ],
+      "name" : "Mörsch Merkurstraße, Rheinstetten"
+   },
+   {
+      "ds100" : "PQRMI",
+      "eva" : 367217,
+      "latlong" : [
+         48.966171,
+         8.302972
+      ],
+      "name" : "Mörsch Narzissenstraße, Rheinstetten"
+   },
+   {
+      "ds100" : "PQRMD",
+      "eva" : 723654,
+      "latlong" : [
+         48.958565,
+         8.294234
+      ],
+      "name" : "Mörsch Rheinaustraße, Rheinstetten"
+   },
+   {
+      "ds100" : "PQRMO",
+      "eva" : 721818,
+      "latlong" : [
+         48.961461,
+         8.297293
+      ],
+      "name" : "Mörsch Römerstraße, Rheinstetten"
+   },
+   {
+      "ds100" : "PQRMS",
+      "eva" : 720606,
+      "latlong" : [
+         48.967657,
+         8.305044
+      ],
+      "name" : "Mörsch Rösselsbrünnle, Rheinstetten"
    },
    {
       "ds100" : "LMOS",
@@ -58528,7 +58717,7 @@
    },
    {
       "ds100" : "RKHN",
-      "eva" : "362391",
+      "eva" : 362391,
       "latlong" : [
          49.015578,
          8.347322
@@ -60760,7 +60949,7 @@
    },
    {
       "ds100" : "RKRT",
-      "eva" : "721759",
+      "eva" : 721759,
       "latlong" : [
          49.005034,
          8.41042
@@ -65475,6 +65664,24 @@
       "name" : "Sprötze"
    },
    {
+      "ds100" : "PQSSH",
+      "eva" : 721296,
+      "latlong" : [
+         49.111495,
+         8.50091
+      ],
+      "name" : "Spöck Hochhaus, Stutensee"
+   },
+   {
+      "ds100" : "PQSSR",
+      "eva" : 721295,
+      "latlong" : [
+         49.112662,
+         8.504845
+      ],
+      "name" : "Spöck Richard-Hecht-Schule, Stutensee"
+   },
+   {
       "ds100" : "MSAB",
       "eva" : 8005639,
       "latlong" : [
@@ -68986,7 +69193,7 @@
    },
    {
       "ds100" : "RKTI",
-      "eva" : "721450",
+      "eva" : 721450,
       "latlong" : [
          48.99665,
          8.410369
@@ -69589,7 +69796,7 @@
    },
    {
       "ds100" : "RKTUT",
-      "eva" : "720995",
+      "eva" : 720995,
       "latlong" : [
          49.006769,
          8.431264
@@ -74251,7 +74458,7 @@
    },
    {
       "ds100" : "RKWE",
-      "eva" : "721465",
+      "eva" : 721465,
       "latlong" : [
          49.00045,
          8.410569
