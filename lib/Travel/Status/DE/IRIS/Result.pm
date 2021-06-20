@@ -15,7 +15,7 @@ use List::Compare;
 use List::MoreUtils qw(none uniq firstval);
 use Scalar::Util qw(weaken);
 
-our $VERSION = '1.55';
+our $VERSION = '1.56';
 
 my %translation = (
 	1 => 'Nähere Informationen in Kürze',
@@ -865,7 +865,7 @@ arrival/departure received by Travel::Status::DE::IRIS
 
 =head1 VERSION
 
-version 1.55
+version 1.56
 
 =head1 DESCRIPTION
 
