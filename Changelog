@@ -1,3 +1,10 @@
+git HEAD
+
+    * Update IRIS station list. Adds support for lots of
+      Albtal-Verkehrs-Gesellschaft stations around Karlsruhe
+    * Update some delay/qos messages ahead of a DB-wide change planned for
+      October 2021
+
 Travel::Status::DE::IRIS 1.55 - Tue May 04 2021
 
     * Fix transfer trains getting lost when requested from a related station.
