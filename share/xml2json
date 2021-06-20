@@ -6,6 +6,7 @@ use 5.010;
 
 use File::Slurp qw(read_file write_file);
 use JSON;
+use List::Util qw(any);
 use XML::LibXML;
 
 my $json_str = read_file('stations.json');
@@ -14,6 +15,15 @@ my $stations = JSON->new->utf8->decode($json_str);
 
 my $xml_str = read_file('stations.xml');
 my $tree    = XML::LibXML->load_xml( string => $xml_str );
+
+my @missing;
+
+if ( -e "missing.txt" ) {
+	for my $line ( read_file("missing.txt") ) {
+		chomp $line;
+		push( @missing, $line );
+	}
+}
 
 for my $station ( $tree->findnodes('//station') ) {
 	my $name  = $station->getAttribute('name');
@@ -44,25 +54,37 @@ for my $station ( $tree->findnodes('//station') ) {
 				$eva, $j_name, $name, $j_ds100, $ds100 );
 			last;
 		}
-		elsif ( $j_name eq $name and $j_ds100 ne $ds100 and $is_db ) {
+		elsif ( $j_name eq $name
+			and $j_ds100 ne $ds100
+			and $is_db
+			and $ds100 !~ m{ ^ PQ }x )
+		{
 			printf( "%30s has been recoded: %8s -> %8s\n",
 				$name, $j_ds100, $ds100 );
 			last;
 		}
-		elsif ( $j_name eq $name and $j_eva != $eva and $is_db ) {
+		elsif ( $j_name eq $name
+			and $j_eva != $eva
+			and $is_db
+			and $ds100 !~ m{ ^ PQ }x )
+		{
 			printf( "%30s has been recoded: %d -> %d\n", $name, $j_eva, $eva );
 			last;
 		}
 	}
 
-	if (
-		not $found
-		and not( $ds100 =~ m{ ^ ( [OPXZ] | D[0-9] ) }x
-			or $name =~ m{ ^ Bahnhof, }x
-			or $name =~ m{ \(Gr\) $ }x )
-	  )
+	if ( not $found
+		and any { $_ eq $name } @missing )
 	{
-		#say "missing $eva  $ds100  \"$name\"";
+		say "missing $eva  $ds100  \"$name\"";
+		push(
+			@{$stations},
+			{
+				name  => $name,
+				ds100 => $ds100,
+				eva   => $eva,
+			}
+		);
 	}
 }
 

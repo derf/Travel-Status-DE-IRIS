@@ -1,13 +1,59 @@
-#!/bin/zsh
+#!/usr/bin/env perl
 
-: > missing.txt
+use strict;
+use warnings;
+use 5.010;
 
-./xml2json | fgrep missing | shuf | while read m eva x ; do
-	if [[ $x != *,* ]] && db-iris -x $eva &> /dev/null; then
-		echo "\n$m $eva $x"
-		echo $m $eva $x >> missing.txt
-	else
-		echo -n .
-	fi
-	sleep .2
-done
+use Cache::File;
+use List::Util qw(uniq);
+use Travel::Status::DE::IRIS;
+use Travel::Status::DE::IRIS::Stations;
+
+my ($station) = @ARGV;
+
+my $cache_path          = $ENV{XDG_CACHE_HOME} // "$ENV{HOME}/.cache";
+my $schedule_cache_path = "${cache_path}/db-iris-schedule";
+my $realtime_cache_path = "${cache_path}/db-iris-realtime";
+my ( $schedule_cache, $realtime_cache );
+
+eval {
+	use Cache::File;
+	$schedule_cache = Cache::File->new(
+		cache_root      => $schedule_cache_path,
+		default_expires => '6 hours',
+		lock_level      => Cache::File::LOCK_LOCAL(),
+	);
+	$realtime_cache = Cache::File->new(
+		cache_root      => $realtime_cache_path,
+		default_expires => '180 seconds',
+		lock_level      => Cache::File::LOCK_LOCAL(),
+	);
+};
+if ($@) {
+	$schedule_cache = undef;
+	$realtime_cache = undef;
+}
+
+my $status = Travel::Status::DE::IRIS->new(
+	station        => $station,
+	main_cache     => $schedule_cache,
+	realtime_cache => $realtime_cache,
+	with_related   => 1,
+);
+
+my @missing;
+
+for my $result ( $status->results ) {
+	for my $name ( $result->route_pre, $result->route_post ) {
+		my @matches
+		  = Travel::Status::DE::IRIS::Stations::get_station_by_name($name);
+		if ( @matches != 1 ) {
+			push( @missing, $name );
+		}
+		elsif ( $matches[0][1] ne $name ) {
+			push( @missing, $name );
+		}
+	}
+}
+
+say join( "\n", uniq @missing );
