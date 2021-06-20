@@ -22410,6 +22410,15 @@
       "name" : "Frankfurt(M)Taunusanlage"
    },
    {
+      "ds100" : "FSTLM",
+      "eva" : 8071169,
+      "latlong" : [
+         50.089204,
+         8.671591
+      ],
+      "name" : "Frankfurt(Main) Stresemannallee/Mörfelder Landstr"
+   },
+   {
       "ds100" : "FFGG",
       "eva" : 8002060,
       "latlong" : [
