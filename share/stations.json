@@ -17613,6 +17613,15 @@
       "name" : "Dörverden"
    },
    {
+      "ds100" : "OSDOK",
+      "eva" : 8503501,
+      "latlong" : [
+         47.5755,
+         8.25643
+      ],
+      "name" : "Döttingen"
+   },
+   {
       "ds100" : "KDUL",
       "eva" : 8001571,
       "latlong" : [
@@ -35640,6 +35649,15 @@
       "name" : "Kaiserslautern-Hohenecken"
    },
    {
+      "ds100" : "OSKAI",
+      "eva" : 8503413,
+      "latlong" : [
+         47.56657,
+         8.41884
+      ],
+      "name" : "Kaiserstuhl AG"
+   },
+   {
       "ds100" : "NKAL",
       "eva" : 8003154,
       "latlong" : [
@@ -37530,6 +37548,15 @@
       "name" : "Klingenthal"
    },
    {
+      "ds100" : "PSAXH",
+      "eva" : 8516176,
+      "latlong" : [
+         47.58213,
+         8.24873
+      ],
+      "name" : "Klingnau"
+   },
+   {
       "ds100" : "HBKM",
       "eva" : 8007893,
       "latlong" : [
@@ -37753,6 +37780,15 @@
          7.46075
       ],
       "name" : "Kobern-Gondorf"
+   },
+   {
+      "ds100" : "OSKOD",
+      "eva" : 8503411,
+      "latlong" : [
+         47.60939,
+         8.24013
+      ],
+      "name" : "Koblenz Dorf"
    },
    {
       "ds100" : "KKO",
@@ -46213,6 +46249,15 @@
          9.744501
       ],
       "name" : "Mellendorf"
+   },
+   {
+      "ds100" : "OSMEX",
+      "eva" : 8503414,
+      "latlong" : [
+         47.56846,
+         8.35255
+      ],
+      "name" : "Mellikon"
    },
    {
       "ds100" : "UMEN",
@@ -59472,6 +59517,15 @@
       "name" : "Riestedt"
    },
    {
+      "ds100" : "OSRIT",
+      "eva" : 8503410,
+      "latlong" : [
+         47.6008,
+         8.27728
+      ],
+      "name" : "Rietheim(CH)"
+   },
+   {
       "ds100" : "TRH",
       "eva" : 8005097,
       "latlong" : [
@@ -61306,6 +61360,15 @@
          8.279365
       ],
       "name" : "Rülzheim Freizeitzentrum"
+   },
+   {
+      "ds100" : "OSRRU",
+      "eva" : 8503415,
+      "latlong" : [
+         47.56531,
+         8.37403
+      ],
+      "name" : "Rümikon AG"
    },
    {
       "ds100" : "XSRU",
@@ -65059,6 +65122,15 @@
          12.397722
       ],
       "name" : "Sieversdorf(Neust/D)"
+   },
+   {
+      "ds100" : "OSSGW",
+      "eva" : 8503502,
+      "latlong" : [
+         47.52049,
+         8.2406
+      ],
+      "name" : "Siggenthal-Würenlingen"
    },
    {
       "ds100" : "XUSG",
@@ -78595,6 +78667,15 @@
          7.356643
       ],
       "name" : "Zweibrücken Hbf"
+   },
+   {
+      "ds100" : "OSZWI",
+      "eva" : 8503405,
+      "latlong" : [
+         47.57052,
+         8.46803
+      ],
+      "name" : "Zweidlen"
    },
    {
       "ds100" : "LGDG",
