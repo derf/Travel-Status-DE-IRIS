@@ -1107,6 +1107,15 @@
       "name" : "Alt Schwerin"
    },
    {
+      "ds100" : "OAATA",
+      "eva" : 8100630,
+      "latlong" : [
+         47.352072,
+         9.661128
+      ],
+      "name" : "Altach"
+   },
+   {
       "ds100" : "TACH",
       "eva" : 8000508,
       "latlong" : [
@@ -9223,6 +9232,24 @@
          9.81444231263391
       ],
       "name" : "Bludenz"
+   },
+   {
+      "ds100" : "OABUF",
+      "eva" : 8100699,
+      "latlong" : [
+         47.136311,
+         9.8389
+      ],
+      "name" : "Bludenz Brunnenfeld"
+   },
+   {
+      "ds100" : "OABLM",
+      "eva" : 8100667,
+      "latlong" : [
+         47.142067,
+         9.831148
+      ],
+      "name" : "Bludenz-Moos"
    },
    {
       "ds100" : "BBLU",
@@ -21429,6 +21456,15 @@
       "name" : "Feldkirch"
    },
    {
+      "ds100" : "OAFKA",
+      "eva" : 8100791,
+      "latlong" : [
+         47.255203,
+         9.621217
+      ],
+      "name" : "Feldkirch Amberg"
+   },
+   {
       "ds100" : "XAFT",
       "eva" : 8100039,
       "latlong" : [
@@ -29826,6 +29862,15 @@
       "name" : "Haselbrunn"
    },
    {
+      "ds100" : "OAHSS",
+      "eva" : 8100981,
+      "latlong" : [
+         47.432609,
+         9.749185
+      ],
+      "name" : "Haselstauden (Dornbirn)"
+   },
+   {
       "ds100" : "RHS",
       "eva" : 8002621,
       "latlong" : [
@@ -29914,6 +29959,15 @@
          9.389097
       ],
       "name" : "Haste"
+   },
+   {
+      "ds100" : "OAHAT",
+      "eva" : 8100921,
+      "latlong" : [
+         47.397997,
+         9.724847
+      ],
+      "name" : "Hatlerdorf(Dornbirn)"
    },
    {
       "ds100" : "FHAT",
@@ -35730,6 +35784,15 @@
       "name" : "Kaltenberg"
    },
    {
+      "ds100" : "OAKAL",
+      "eva" : 8100282,
+      "latlong" : [
+         47.085384,
+         9.888115
+      ],
+      "name" : "Kaltenbrunnen im Montafon"
+   },
+   {
       "ds100" : "NKCK",
       "eva" : 8070807,
       "latlong" : [
@@ -37276,6 +37339,15 @@
          13.274112
       ],
       "name" : "Klatovy"
+   },
+   {
+      "ds100" : "OAKV",
+      "eva" : 8101100,
+      "latlong" : [
+         47.308944,
+         9.624272
+      ],
+      "name" : "Klaus in Vorarlberg"
    },
    {
       "ds100" : "AKC",
@@ -43216,6 +43288,15 @@
          8.566262
       ],
       "name" : "Lorsch"
+   },
+   {
+      "ds100" : "OALRU",
+      "eva" : 8101175,
+      "latlong" : [
+         47.130716,
+         9.853631
+      ],
+      "name" : "Lorüns"
    },
    {
       "ds100" : "BLOS",
@@ -52873,6 +52954,15 @@
          9.916749
       ],
       "name" : "Nützen"
+   },
+   {
+      "ds100" : "OANU",
+      "eva" : 8101289,
+      "latlong" : [
+         47.170751,
+         9.794401
+      ],
+      "name" : "Nüziders"
    },
    {
       "ds100" : "FORA",
@@ -62892,6 +62982,15 @@
       "name" : "Schliersee"
    },
    {
+      "ds100" : "OASLN",
+      "eva" : 8101543,
+      "latlong" : [
+         47.194893,
+         9.690518
+      ],
+      "name" : "Schlins-Beschling"
+   },
+   {
       "ds100" : "PQKGT",
       "eva" : 721642,
       "latlong" : [
@@ -63493,6 +63592,15 @@
          9.624754
       ],
       "name" : "Schwarmstedt"
+   },
+   {
+      "ds100" : "OASWV",
+      "eva" : 8101634,
+      "latlong" : [
+         47.446134,
+         9.754395
+      ],
+      "name" : "Schwarzach i Vorarl."
    },
    {
       "ds100" : "XASW",
@@ -68254,6 +68362,15 @@
          8.636748
       ],
       "name" : "Sulz(Neckar)"
+   },
+   {
+      "ds100" : "OASR",
+      "eva" : 8101585,
+      "latlong" : [
+         47.293869,
+         9.634743
+      ],
+      "name" : "Sulz-Röthis"
    },
    {
       "ds100" : "MSBH",
