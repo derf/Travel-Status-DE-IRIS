@@ -293,6 +293,9 @@ sub format_delay {
 	elsif ( $d->departure_is_cancelled ) {
 		$delay .= ' ⊖';
 	}
+	elsif ( $d->start < $datetime and not $d->has_realtime ) {
+		$delay = '  ?';
+	}
 
 	return $delay;
 }
