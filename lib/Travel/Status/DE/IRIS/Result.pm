@@ -267,6 +267,7 @@ sub set_ar {
 	my ( $self, %attrib ) = @_;
 
 	if ( $attrib{status} and $attrib{status} eq 'c' ) {
+		$self->{has_realtime}         = $self->{arrival_has_realtime} = 1;
 		$self->{arrival_is_cancelled} = 1;
 	}
 	elsif ( $attrib{status} and $attrib{status} eq 'a' ) {
@@ -331,6 +332,7 @@ sub set_dp {
 	my ( $self, %attrib ) = @_;
 
 	if ( $attrib{status} and $attrib{status} eq 'c' ) {
+		$self->{has_realtime}           = $self->{arrival_has_realtime} = 1;
 		$self->{departure_is_cancelled} = 1;
 	}
 	elsif ( $attrib{status} and $attrib{status} eq 'a' ) {
