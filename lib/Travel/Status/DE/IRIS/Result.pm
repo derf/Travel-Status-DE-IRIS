@@ -12,7 +12,7 @@ use Carp qw(cluck);
 use DateTime;
 use DateTime::Format::Strptime;
 use List::Compare;
-use List::MoreUtils qw(none uniq firstval);
+use List::MoreUtils qw(none uniq lastval);
 use Scalar::Util qw(weaken);
 
 our $VERSION = '1.56';
@@ -86,7 +86,7 @@ my %translation = (
 	59 => 'Schnee und Eis',
 	60 => 'Witterungsbedingt verminderte Geschwindigkeit',
 	61 => 'Defekte Tür',
-	62 => 'Behobener Defekt am Zug',
+	62 => 'Behobener Defekt am Zug',                         # r 36
 	63 => 'Technische Untersuchung am Zug',
 	64 => 'Defekt an einer Weiche',    # xlsx: "Reparatur an der Weiche"
 	65 => 'Erdrutsch',
@@ -564,16 +564,22 @@ sub destination {
 sub delay_messages {
 	my ($self) = @_;
 
-	my @keys   = reverse sort keys %{ $self->{messages} };
+	my @keys   = sort keys %{ $self->{messages} };
 	my @msgs   = grep { $_->[1] eq 'd' } map { $self->{messages}{$_} } @keys;
 	my @msgids = uniq( map { $_->[2] } @msgs );
 	my @ret;
 
 	for my $id (@msgids) {
-		my $msg = firstval { $_->[2] == $id } @msgs;
-		push( @ret,
-			[ $self->parse_ts( $msg->[0] ), $self->translate_msg($id) ] );
+		if ( my @superseded = $self->superseded_messages($id) ) {
+			@ret = grep { not( $_->[2] ~~ \@superseded ) } @ret;
+		}
+		my $msg = lastval { $_->[2] == $id } @msgs;
+		push( @ret, $msg );
 	}
+
+	@ret = reverse
+	  map { [ $self->parse_ts( $_->[0] ), $self->translate_msg( $_->[2] ) ] }
+	  @ret;
 
 	return @ret;
 }
@@ -799,6 +805,7 @@ sub sched_route {
 sub superseded_messages {
 	my ( $self, $msg ) = @_;
 	my %superseded = (
+		62 => [36],
 		73 => [74],
 		74 => [73],
 		75 => [76],
