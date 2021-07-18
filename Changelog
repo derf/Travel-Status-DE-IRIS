@@ -1,4 +1,4 @@
-git HEAD
+Travel::Status::DE::IRIS 1.57 - Sun Jul 18 2021
 
     * Result: Add arrival_has_realtime, departure_has_realtime, has_realtime
       accessors
