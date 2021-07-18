@@ -1,3 +1,12 @@
+git HEAD
+
+    * Result: Add arrival_has_realtime, departure_has_realtime, has_realtime
+      accessors
+    * Result->delay_messages: Leave out superseded messages (right now, the
+      only case is "Defekt am Zug" -> "Behobener Defekt am Zug")
+    * Stations: Add swiss and austrian stations reachable from Waldshut and
+      Lindau
+
 Travel::Status::DE::IRIS 1.56 - Sun Jun 20 2021
 
     * Update IRIS station list. Adds support for lots of

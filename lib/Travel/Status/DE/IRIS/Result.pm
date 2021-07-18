@@ -905,6 +905,10 @@ Estimated arrival delay in minutes (integer number). undef if no realtime
 data is available, the train starts at the specified station, or there is
 no scheduled arrival time (e.g. due to diversions). May be negative.
 
+=item $result->arrival_has_realtime
+
+True if "arrival" is based on real-time data.
+
 =item $result->arrival_is_additional
 
 True if the arrival at this stop is an additional (unscheduled) event, i.e.,
@@ -974,6 +978,10 @@ Estimated departure delay in minutes (integer number). undef if no realtime
 data is available, the train terminates at the specified station, or there is
 no scheduled departure time (e.g. due to diversions). May be negative.
 
+=item $result->departure_has_realtime
+
+True if "departure" is based on real-time data.
+
 =item $result->departure_is_additional
 
 True if the train's departure at this stop is unscheduled (additional), i.e.,
@@ -993,6 +1001,14 @@ empty list) otherwise.
 =item $result->destination
 
 Alias for route_end.
+
+=item $result->has_realtime
+
+True if arrival or departure time are based on real-time data. Note that this
+is different from C<< defined($esult->delay) >>. If delay is defined, some kind
+of realtime information for the train is available, but not necessarily its
+arrival/departure time. If has_realtime is true, arrival/departure time are
+available. This behaviour may change in the future.
 
 =item $result->info
 
