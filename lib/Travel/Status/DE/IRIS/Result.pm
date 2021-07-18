@@ -130,10 +130,10 @@ my %translation = (
 );
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
-	qw(arrival arrival_delay arrival_is_additional arrival_is_cancelled
+	qw(arrival arrival_delay arrival_has_realtime arrival_is_additional arrival_is_cancelled
 	  date datetime delay
-	  departure departure_delay departure_is_additional departure_is_cancelled
-	  ds100 is_transfer is_unscheduled is_wing
+	  departure departure_delay departure_has_realtime departure_is_additional departure_is_cancelled
+	  ds100 has_realtime is_transfer is_unscheduled is_wing
 	  line_no old_train_id old_train_no operator platform raw_id
 	  realtime_xml route_start route_end
 	  sched_arrival sched_departure sched_platform sched_route_start
@@ -285,7 +285,8 @@ sub set_ar {
 	}
 
 	if ( $attrib{arrival_ts} ) {
-		$self->{arrival} = $self->parse_ts( $attrib{arrival_ts} );
+		$self->{has_realtime} = $self->{arrival_has_realtime} = 1;
+		$self->{arrival}      = $self->parse_ts( $attrib{arrival_ts} );
 		if ( not $self->{arrival_is_cancelled} ) {
 			$self->{delay} = $self->{arrival_delay}
 			  = $self->arrival->subtract_datetime( $self->sched_arrival )
@@ -348,7 +349,8 @@ sub set_dp {
 	}
 
 	if ( $attrib{departure_ts} ) {
-		$self->{departure} = $self->parse_ts( $attrib{departure_ts} );
+		$self->{has_realtime} = $self->{departure_has_realtime} = 1;
+		$self->{departure}    = $self->parse_ts( $attrib{departure_ts} );
 		if ( not $self->{departure_is_cancelled} ) {
 			$self->{delay} = $self->{departure_delay}
 			  = $self->departure->subtract_datetime( $self->sched_departure )
