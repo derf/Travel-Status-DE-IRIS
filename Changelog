@@ -1,3 +1,9 @@
+Travel::Status::DE::IRIS 1.58 - Mon Jul 19 2021
+
+    * Result->has_realtime: Fix cancellations not being reported as realtime
+    * db-iris: Annotate arrival/departure times which should have realtime
+      data, but don't, with a question mark.
+
 Travel::Status::DE::IRIS 1.57 - Sun Jul 18 2021
 
     * Result: Add arrival_has_realtime, departure_has_realtime, has_realtime
