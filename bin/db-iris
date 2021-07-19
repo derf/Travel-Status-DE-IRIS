@@ -581,17 +581,31 @@ version 1.57
 db-iris is an interface to the DeutscheBahn departure monitor
 available at L<https://iris.noncd.db.de/wbt/js/index.html>.
 
-It requests all departures at I<station> and lists them on stdout, similar to
-the big departure screens installed at most main stations. I<station> can be
-a DS100 station code (such as "EE"), a normal station name
-(such as "Essen Hbf" or "Dortmund UniversitE<auml>t"), or an IBNR / european station
-number (such as 8000098). If no exact match is found, B<db-iris> will try to
-find station names similar to I<station>.
+It requests all trains departing from (or arriving at) I<station> in the next
+two hours and lists them on stdout.  I<station> can be a DS100 station code
+(such as "EE"), a normal station name (such as "Essen Hbf" or "Dortmund
+UniversitE<auml>t"), or an IBNR / european station number (such as 8000098). If
+no exact match is found, B<db-iris> will try to find station names similar to
+I<station>.
 
-An exclamation mark (C<< ! >>) next to a destination indicates that at least
-one stop on the train's route has been canceled. Use B<-oc> to see the canceled
-stops.  An exclamation mark next to a platform indicates that it is not the
-scheduled one.
+By default, db-iris shows the following data for each train:
+
+=over
+
+=item * scheduled departure time (see also B<-ot>, B<-r>).
+
+=item * delay in minutes, cancellation, or a question mark (C<< ? >>)
+indicating that no real-time data is available.
+
+=item * train line or number.
+
+=item * destination (see also B<-or>). An exclamation mark (C<< ! >>)
+indicates that at least one stop has been cancelled (see B<-oc>).
+
+=item * platform. An exclamation mark (C<< ! >>) indicates that it is not
+the scheduled one.
+
+=back
 
 =head1 OPTIONS
 
@@ -630,7 +644,7 @@ in backwards-incompatible ways anytime.
 =item B<-l>, B<--lookahead> I<int>
 
 Do not return results which are more than I<int> minutes in the future.
-Defaults to 240 (4 hours).
+Defaults to 120 (2 hours).
 
 Note that this is only an upper limit, not a guarantee to get every train
 with a departure in less than I<int> minutes. This guarantee holds only for
