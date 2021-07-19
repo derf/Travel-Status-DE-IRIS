@@ -21393,6 +21393,15 @@
       "name" : "Fehraltorf"
    },
    {
+      "ds100" : "OAFE",
+      "eva" : 8100176,
+      "latlong" : [
+         46.94952,
+         16.01186
+      ],
+      "name" : "Fehring"
+   },
+   {
       "ds100" : "NFZ",
       "eva" : 8001969,
       "latlong" : [
@@ -21409,6 +21418,15 @@
          11.290224
       ],
       "name" : "Feldafing"
+   },
+   {
+      "ds100" : "OAF",
+      "eva" : 8100175,
+      "latlong" : [
+         46.95853,
+         15.88898
+      ],
+      "name" : "Feldbach/Raab"
    },
    {
       "ds100" : "WFEL",
@@ -25558,6 +25576,15 @@
          12.500671
       ],
       "name" : "Glauchau-Schönbörnchen"
+   },
+   {
+      "ds100" : "OAGL",
+      "eva" : 8100195,
+      "latlong" : [
+         47.09931,
+         15.70951
+      ],
+      "name" : "Gleisdorf"
    },
    {
       "ds100" : "KGL",
@@ -32571,6 +32598,15 @@
       "name" : "Hodenhagen"
    },
    {
+      "ds100" : "OTHO",
+      "eva" : 5400056,
+      "latlong" : [
+         48.8564,
+         17.12194
+      ],
+      "name" : "Hodonin"
+   },
+   {
       "ds100" : "XBHO",
       "eva" : 8800528,
       "latlong" : [
@@ -35134,6 +35170,15 @@
          11.778555
       ],
       "name" : "Jenbach Zillertalbahn"
+   },
+   {
+      "ds100" : "OAJD",
+      "eva" : 8101010,
+      "latlong" : [
+         46.93506,
+         16.13887
+      ],
+      "name" : "Jennersdorf"
    },
    {
       "ds100" : "LJW",
@@ -54979,6 +55024,15 @@
          8.21478836445337
       ],
       "name" : "Othmarsingen"
+   },
+   {
+      "ds100" : "OTOT",
+      "eva" : 5400159,
+      "latlong" : [
+         49.20229,
+         17.53158
+      ],
+      "name" : "Otrokovice"
    },
    {
       "ds100" : "ROTU",
