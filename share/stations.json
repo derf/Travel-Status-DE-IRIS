@@ -46548,6 +46548,15 @@
       "name" : "Mengersgereuth-Hämmern Ost"
    },
    {
+      "ds100" : "RMEN",
+      "eva" : 8077779,
+      "latlong" : [
+         48.0067397,
+         9.1609604
+      ],
+      "name" : "Menningen-Leitishofen"
+   },
+   {
       "ds100" : "XFME",
       "eva" : 8700150,
       "latlong" : [
@@ -46915,6 +46924,15 @@
          11.546771
       ],
       "name" : "Meßdorf"
+   },
+   {
+      "ds100" : "RMSS",
+      "eva" : 8077778,
+      "latlong" : [
+         47.9951988,
+         9.1161128
+      ],
+      "name" : "Meßkirch"
    },
    {
       "ds100" : "XLMC",
@@ -62386,6 +62404,15 @@
          11.654774
       ],
       "name" : "Sauerlach"
+   },
+   {
+      "ds100" : "RSDO",
+      "eva" : 8077776,
+      "latlong" : [
+         47.944482,
+         9.0946518
+      ],
+      "name" : "Sauldorf"
    },
    {
       "ds100" : "MSGB",
