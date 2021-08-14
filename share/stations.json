@@ -1593,6 +1593,15 @@
       "name" : "Alveslohe"
    },
    {
+      "ds100" : "XVAL",
+      "eva" : 7400005,
+      "latlong" : [
+         56.89899,
+         14.55746
+      ],
+      "name" : "Alvesta station"
+   },
+   {
       "ds100" : "FAZB",
       "eva" : 8077275,
       "latlong" : [
@@ -43713,6 +43722,15 @@
       "name" : "Lumes Halte"
    },
    {
+      "ds100" : "XVLD",
+      "eva" : 7400115,
+      "latlong" : [
+         55.70661,
+         13.18639
+      ],
+      "name" : "Lund Central"
+   },
+   {
       "ds100" : "XDLD",
       "eva" : 8601509,
       "latlong" : [
@@ -67705,6 +67723,15 @@
          10.271229
       ],
       "name" : "Stockheim(Unterfr)"
+   },
+   {
+      "ds100" : "XVS",
+      "eva" : 7400002,
+      "latlong" : [
+         59.33221,
+         18.05566
+      ],
+      "name" : "Stockholm Central"
    },
    {
       "ds100" : "FSTK",
