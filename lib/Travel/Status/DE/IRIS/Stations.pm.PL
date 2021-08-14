@@ -80,6 +80,10 @@ sub normalize {
 sub get_station {
 	my ($name) = @_;
 
+	if (not $name) {
+		return;
+	}
+
 	my $ds100_match = firstval { $name eq $_->[0] } @stations;
 
 	if ($ds100_match) {
@@ -124,6 +128,10 @@ sub get_station_by_location {
 
 sub get_station_by_name {
 	my ($name) = @_;
+
+	if (not $name) {
+		return;
+	}
 
 	my $nname        = lc($name);
 	my $actual_match = firstval { $nname eq lc( $_->[1] ) } @stations;
