@@ -56493,6 +56493,15 @@
       "name" : "Platz der Deutschen Einheit, Kassel"
    },
    {
+      "ds100" : "WPU",
+      "eva" : 8012644,
+      "latlong" : [
+         53.46041,
+         12.25593
+      ],
+      "name" : "Plau am See Bahnhof"
+   },
+   {
       "ds100" : "UPL",
       "eva" : 8010274,
       "latlong" : [
