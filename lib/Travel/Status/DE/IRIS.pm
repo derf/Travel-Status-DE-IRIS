@@ -698,7 +698,7 @@ backend data will be reported as-is and transfer trains will not be merged.
 
 Compute only results which are scheduled less than I<int> minutes in the
 future.
-Default: 180 (3 hours).
+Default: 120 (2 hours).
 
 Note that the DeutscheBahn IRIS backend only provides schedules up to four to
 five hours into the future. So in most cases, setting this to a value above 240
