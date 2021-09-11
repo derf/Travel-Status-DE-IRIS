@@ -32031,6 +32031,15 @@
       "name" : "Hetschburg"
    },
    {
+      "ds100" : "OFHET",
+      "eva" : 8701141,
+      "latlong" : [
+         49.40765,
+         6.15672
+      ],
+      "name" : "Hettange Grande"
+   },
+   {
       "ds100" : "FHH",
       "eva" : 8002814,
       "latlong" : [
@@ -42489,6 +42498,15 @@
       "name" : "Liberec"
    },
    {
+      "ds100" : "XBLBM",
+      "eva" : 8800021,
+      "latlong" : [
+         49.92072,
+         5.37951
+      ],
+      "name" : "Libramont"
+   },
+   {
       "ds100" : "FLI",
       "eva" : 8003673,
       "latlong" : [
@@ -44847,6 +44865,15 @@
       "name" : "Maishofen-Saalbach"
    },
    {
+      "ds100" : "OFMZM",
+      "eva" : 8701650,
+      "latlong" : [
+         49.2152,
+         6.15831
+      ],
+      "name" : "Maizieres-les-Metz"
+   },
+   {
       "ds100" : "XTMV",
       "eva" : 5401899,
       "latlong" : [
@@ -45268,6 +45295,15 @@
          6.906067
       ],
       "name" : "Marbeck-Heiden"
+   },
+   {
+      "ds100" : "XBMAR",
+      "eva" : 8800156,
+      "latlong" : [
+         49.72739,
+         5.53967
+      ],
+      "name" : "Marbehan"
    },
    {
       "ds100" : "FMBS",
@@ -46879,6 +46915,15 @@
          6.979813
       ],
       "name" : "Mettmann Zentrum"
+   },
+   {
+      "ds100" : "OFMZN",
+      "eva" : 8701651,
+      "latlong" : [
+         49.13697,
+         6.16716
+      ],
+      "name" : "Metz Nord"
    },
    {
       "ds100" : "XFMZV",
@@ -72675,6 +72720,15 @@
       "name" : "Villmar"
    },
    {
+      "ds100" : "XAVIS",
+      "eva" : 8102260,
+      "latlong" : [
+         47.54968,
+         10.63196
+      ],
+      "name" : "Vils Stadt"
+   },
+   {
       "ds100" : "XAV",
       "eva" : 8100116,
       "latlong" : [
@@ -73762,6 +73816,15 @@
          10.576211
       ],
       "name" : "Waltershausen Schnepfenthal"
+   },
+   {
+      "ds100" : "OFWL",
+      "eva" : 8702265,
+      "latlong" : [
+         49.22391,
+         6.15963
+      ],
+      "name" : "Walygator Parc"
    },
    {
       "ds100" : "UWA",
