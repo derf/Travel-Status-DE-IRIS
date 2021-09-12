@@ -558,15 +558,6 @@
       "name" : "Akkrum"
    },
    {
-      "ds100" : "XIAO",
-      "eva" : 8300133,
-      "latlong" : [
-         44.007929,
-         8.171387
-      ],
-      "name" : "Alassio"
-   },
-   {
       "ds100" : "XUAI",
       "eva" : 5300096,
       "latlong" : [
@@ -592,15 +583,6 @@
          8.131774
       ],
       "name" : "Albbruck"
-   },
-   {
-      "ds100" : "XIAB",
-      "eva" : 8300132,
-      "latlong" : [
-         44.047308,
-         8.221556
-      ],
-      "name" : "Albenga"
    },
    {
       "ds100" : "AAL",
@@ -2644,24 +2626,6 @@
          10.145564
       ],
       "name" : "Ashausen"
-   },
-   {
-      "ds100" : "XKA",
-      "eva" : 7000107,
-      "latlong" : [
-         51.143431,
-         0.875153
-      ],
-      "name" : "Ashford(Kent)"
-   },
-   {
-      "ds100" : "XKAI",
-      "eva" : 7098107,
-      "latlong" : [
-         51.143256,
-         0.874723
-      ],
-      "name" : "Ashford(Kent) Int."
    },
    {
       "ds100" : "TAX",
@@ -13527,15 +13491,6 @@
       "name" : "Chemnitz Stadlerplatz"
    },
    {
-      "ds100" : "DC  B",
-      "eva" : 8071816,
-      "latlong" : [
-         50.833196,
-         12.925169
-      ],
-      "name" : "Chemnitz Stefan-Heym-Platz"
-   },
-   {
       "ds100" : "DCD",
       "eva" : 8010185,
       "latlong" : [
@@ -15550,15 +15505,6 @@
          16.975801
       ],
       "name" : "Devinska Nova Ves"
-   },
-   {
-      "ds100" : "XIDM",
-      "eva" : 8300149,
-      "latlong" : [
-         43.909659,
-         8.078514
-      ],
-      "name" : "Diano Marina"
    },
    {
       "ds100" : "ONDI",
@@ -17980,15 +17926,6 @@
          11.678565
       ],
       "name" : "Dütschow"
-   },
-   {
-      "ds100" : "XKEI",
-      "eva" : 7004419,
-      "latlong" : [
-         51.442894,
-         0.320865
-      ],
-      "name" : "Ebbsfleet International Eurostar"
    },
    {
       "ds100" : "NEE",
@@ -21438,15 +21375,6 @@
       "name" : "Feldbach/Raab"
    },
    {
-      "ds100" : "WFEL",
-      "eva" : 8011534,
-      "latlong" : [
-         53.330754,
-         13.431271
-      ],
-      "name" : "Feldberg(Meckl)"
-   },
-   {
       "ds100" : "RFB",
       "eva" : 8001971,
       "latlong" : [
@@ -21697,15 +21625,6 @@
          7.583509
       ],
       "name" : "Filsen"
-   },
-   {
-      "ds100" : "XIFLM",
-      "eva" : 8300144,
-      "latlong" : [
-         44.169247,
-         8.340404
-      ],
-      "name" : "Finale Ligure Marina"
    },
    {
       "ds100" : "BFIH",
@@ -36063,15 +35982,6 @@
       "name" : "Kapsweyer"
    },
    {
-      "ds100" : "WKGW",
-      "eva" : 8011989,
-      "latlong" : [
-         53.49952404,
-         12.76242345
-      ],
-      "name" : "Kargow"
-   },
-   {
       "ds100" : "XTKV",
       "eva" : 5400006,
       "latlong" : [
@@ -37431,15 +37341,6 @@
       "name" : "Kledering b.Wien"
    },
    {
-      "ds100" : "WKLE",
-      "eva" : 8012020,
-      "latlong" : [
-         53.62316794,
-         13.06042745
-      ],
-      "name" : "Kleeth"
-   },
-   {
       "ds100" : "WKB",
       "eva" : 8012021,
       "latlong" : [
@@ -37717,15 +37618,6 @@
          14.59074098
       ],
       "name" : "Klitten"
-   },
-   {
-      "ds100" : "WKC",
-      "eva" : 8012049,
-      "latlong" : [
-         53.470795,
-         12.86687
-      ],
-      "name" : "Klockow(b Waren/Müritz)"
    },
    {
       "ds100" : "TBR",
@@ -51039,15 +50931,6 @@
       "name" : "Neuruppin Rheinsberger Tor"
    },
    {
-      "ds100" : "WNRS",
-      "eva" : 8080175,
-      "latlong" : [
-         52.92535,
-         12.82751
-      ],
-      "name" : "Neuruppin Seedamm"
-   },
-   {
       "ds100" : "WNR",
       "eva" : 8010246,
       "latlong" : [
@@ -53919,15 +53802,6 @@
       "name" : "Oberöwisheim"
    },
    {
-      "ds100" : "MOBG",
-      "eva" : 8070803,
-      "latlong" : [
-         47.998779,
-         12.403156
-      ],
-      "name" : "Obing"
-   },
-   {
       "ds100" : "XBOB",
       "eva" : 8800427,
       "latlong" : [
@@ -56475,15 +56349,6 @@
       "name" : "Pisa Centrale"
    },
    {
-      "ds100" : "MPTH",
-      "eva" : 8072764,
-      "latlong" : [
-         47.986762,
-         12.376341
-      ],
-      "name" : "Pittenhart"
-   },
-   {
       "ds100" : "WPZ",
       "eva" : 8010273,
       "latlong" : [
@@ -57366,15 +57231,6 @@
       "name" : "Pritzwalk West"
    },
    {
-      "ds100" : "APSH",
-      "eva" : 8007318,
-      "latlong" : [
-         54.365139,
-         10.292991
-      ],
-      "name" : "Probsteierhagen"
-   },
-   {
       "ds100" : "UPR",
       "eva" : 8010288,
       "latlong" : [
@@ -58012,15 +57868,6 @@
          13.4680981613571
       ],
       "name" : "Radstadt"
-   },
-   {
-      "ds100" : "ERAE",
-      "eva" : 8004918,
-      "latlong" : [
-         51.965867,
-         7.867547
-      ],
-      "name" : "Raestrup-Everswinkel"
    },
    {
       "ds100" : "XSRF",
@@ -62172,15 +62019,6 @@
       "name" : "San Candido/Innichen"
    },
    {
-      "ds100" : "XISAR",
-      "eva" : 8300182,
-      "latlong" : [
-         43.829038,
-         7.784346
-      ],
-      "name" : "San Remo"
-   },
-   {
       "ds100" : "NSND",
       "eva" : 8005279,
       "latlong" : [
@@ -62530,15 +62368,6 @@
          7.362095
       ],
       "name" : "Saverne"
-   },
-   {
-      "ds100" : "XISAV",
-      "eva" : 8300185,
-      "latlong" : [
-         44.307276,
-         8.470105
-      ],
-      "name" : "Savona"
    },
    {
       "ds100" : "XASVZ",
@@ -64456,15 +64285,6 @@
          12.04008
       ],
       "name" : "Schönhausen(Elbe)"
-   },
-   {
-      "ds100" : "ASCK",
-      "eva" : 8007314,
-      "latlong" : [
-         54.332873,
-         10.229329
-      ],
-      "name" : "Schönkirchen Bf"
    },
    {
       "ds100" : "RSOM",
@@ -69210,15 +69030,6 @@
       "name" : "Taufkirchen an der Pram"
    },
    {
-      "ds100" : "XDTA",
-      "eva" : 8602526,
-      "latlong" : [
-         55.545016,
-         9.61571
-      ],
-      "name" : "Taulov st"
-   },
-   {
       "ds100" : "LTNH",
       "eva" : 8013095,
       "latlong" : [
@@ -69460,15 +69271,6 @@
          6.3642466
       ],
       "name" : "Terborg"
-   },
-   {
-      "ds100" : "XPTE",
-      "eva" : 5100084,
-      "latlong" : [
-         52.07414,
-         23.601227
-      ],
-      "name" : "Terespol"
    },
    {
       "ds100" : "XATW",
@@ -70315,15 +70117,6 @@
          7.299635
       ],
       "name" : "Treis-Karden"
-   },
-   {
-      "ds100" : "XVTF",
-      "eva" : 7400795,
-      "latlong" : [
-         55.372579,
-         13.151892
-      ],
-      "name" : "Trelleborg F"
    },
    {
       "ds100" : "XITR",
@@ -71856,15 +71649,6 @@
       "name" : "Val-de-Reuil"
    },
    {
-      "ds100" : "XDVAL",
-      "eva" : 8602714,
-      "latlong" : [
-         55.663794,
-         12.514324
-      ],
-      "name" : "Valby(Koebenhavn)"
-   },
-   {
       "ds100" : "XIVO",
       "eva" : 8300443,
       "latlong" : [
@@ -72925,15 +72709,6 @@
          7.706011
       ],
       "name" : "Vogelweh"
-   },
-   {
-      "ds100" : "XIVOG",
-      "eva" : 8300492,
-      "latlong" : [
-         44.997908,
-         9.008735
-      ],
-      "name" : "Voghera"
    },
    {
       "ds100" : "MVG",
