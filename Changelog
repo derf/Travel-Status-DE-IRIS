@@ -1,3 +1,8 @@
+Travel::Status::DE::IRIS 1.60 - Sun Sep 12 2021
+
+    * Update IRIS station list; remove stations which no longer receive train
+      services
+
 Travel::Status::DE::IRIS 1.59 - Sat Aug 14 2021
 
     * Stations: get_station, get_station_by_name: Return immediately if
