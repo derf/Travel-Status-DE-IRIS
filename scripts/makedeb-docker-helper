@@ -25,6 +25,7 @@ cp -a /orig/bin /orig/examples /orig/lib /orig/share /orig/t /src/app
 cd /src/app
 
 sed -i 's/sign *=> *1/sign => 0/' Build.PL
+sed -i 's/GIS::Distance/Geo::Distance/' Build.PL
 export DB_IRIS_DEB_BUILD=1
 perl Build.PL
 perl Build
