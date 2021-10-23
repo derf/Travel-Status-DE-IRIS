@@ -1,3 +1,8 @@
+Travel::Status::DE::IRIS 1.61 - Sat Oct 23 2021
+
+    * Switch to GIS::Distance(::Fast), as Geo::Distance is deprecated and
+      Geo::Distance::XS is no longer available
+
 Travel::Status::DE::IRIS 1.60 - Sun Sep 12 2021
 
     * Update IRIS station list; remove stations which no longer receive train
