@@ -4,7 +4,8 @@ requires 'Class::Accessor';
 requires 'DateTime';
 requires 'DateTime::Format::Strptime';
 requires 'Encode';
-requires 'Geo::Distance' => '!= 0.21';
+requires 'GIS::Distance';
+requires 'GIS::Distance::Fast';
 requires 'Getopt::Long';
 requires 'List::Compare' => '0.29',
 requires 'List::MoreUtils';

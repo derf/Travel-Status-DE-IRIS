@@ -23,15 +23,20 @@ use warnings;
 use 5.014;
 use utf8;
 
-use Geo::Distance;
+EOF
+
+if ($ENV{DB_IRIS_DEB_BUILD}) {
+	$buf .= "use Geo::Distance;\n"
+}
+else {
+	$buf .= "use GIS::Distance;\n";
+}
+
+$buf .= <<'EOF';
 use List::Util qw(min);
 use List::UtilsBy qw(uniq_by);
 use List::MoreUtils qw(firstval pairwise);
 use Text::LevenshteinXS qw(distance);
-
-# TODO Geo::Distance is kinda deprecated, it is recommended to use GIS::Distance
-# instead. However, since GIS::Distance is not packaged for Debian, I'll stick
-# with Geo::Distance for now (which works fine enough here)
 
 # TODO switch to Text::Levenshtein::XS once AUR/Debian packages become available
 
@@ -104,7 +109,16 @@ sub get_station_by_location {
 
 	$num_matches //= 10;
 
-	my $geo = Geo::Distance->new();
+EOF
+
+if ($ENV{DB_IRIS_DEB_BUILD}) {
+	$buf .= "\tmy \$dist = Geo::Distance->new();\n";
+}
+else {
+	$buf .= "\tmy \$dist = GIS::Distance->new();\n";
+}
+
+$buf .= <<'EOF';
 
 	# we only use geolocations inside germany.
 	# For these, this fast preprocessing step will let through all
@@ -116,7 +130,16 @@ sub get_station_by_location {
 		  < 1
 	} @stations;
 	my @distances
-	  = map { $geo->distance( 'kilometer', $lon, $lat, $_->[3], $_->[4] ) }
+EOF
+
+if ($ENV{DB_IRIS_DEB_BUILD}) {
+	$buf .= '= map { $dist->distance( \'kilometer\', $lon, $lat, $_->[3], $_->[4] ) }';
+}
+else {
+	$buf .= '= map { $dist->distance_metal( $lat, $lon, $_->[4], $_->[3] ) }';
+}
+
+$buf .= <<'EOF';
 	  @candidates;
 	my @station_map = pairwise { [ $a, $b ] } @candidates, @distances;
 
@@ -272,7 +295,7 @@ None.
 
 =over
 
-=item * Geo::Distance(3pm)
+=item * GIS::Distance(3pm)
 
 =item * List::MoreUtils(3pm)
 
