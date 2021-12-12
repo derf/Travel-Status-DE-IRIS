@@ -576,15 +576,6 @@
       "name" : "Alba Iulia"
    },
    {
-      "ds100" : "XIAT",
-      "eva" : 8300950,
-      "latlong" : [
-         45.783184,
-         9.079832
-      ],
-      "name" : "Albate-Camerlata"
-   },
-   {
       "ds100" : "RAL",
       "eva" : 8000463,
       "latlong" : [
@@ -12861,15 +12852,6 @@
       "name" : "Caldern"
    },
    {
-      "ds100" : "XECM",
-      "eva" : 7100076,
-      "latlong" : [
-         41.841178,
-         2.800607
-      ],
-      "name" : "Caldes de Malavella"
-   },
-   {
       "ds100" : "TCA",
       "eva" : 8001320,
       "latlong" : [
@@ -21627,15 +21609,6 @@
       "name" : "Fieberbrunn"
    },
    {
-      "ds100" : "XEFI",
-      "eva" : 7100078,
-      "latlong" : [
-         42.264952,
-         2.969276
-      ],
-      "name" : "Figueres"
-   },
-   {
       "ds100" : "TFIL",
       "eva" : 8001984,
       "latlong" : [
@@ -21805,15 +21778,6 @@
          7.31956255071774
       ],
       "name" : "Flamatt"
-   },
-   {
-      "ds100" : "XEFL",
-      "eva" : 7100130,
-      "latlong" : [
-         42.047541,
-         2.957239
-      ],
-      "name" : "Flassa"
    },
    {
       "ds100" : "XAFG",
@@ -23578,15 +23542,6 @@
          11.301957
       ],
       "name" : "Friesdorf"
-   },
-   {
-      "ds100" : "LFIO",
-      "eva" : 8011587,
-      "latlong" : [
-         51.59782,
-         11.323432
-      ],
-      "name" : "Friesdorf Ost"
    },
    {
       "ds100" : "RFH",
@@ -26190,15 +26145,6 @@
       "name" : "Gramsbergen"
    },
    {
-      "ds100" : "XEGR",
-      "eva" : 7100075,
-      "latlong" : [
-         41.599307,
-         2.291623
-      ],
-      "name" : "Granollers"
-   },
-   {
       "ds100" : "WGRA",
       "eva" : 8011691,
       "latlong" : [
@@ -27178,15 +27124,6 @@
          10.833007
       ],
       "name" : "Gräfenroda"
-   },
-   {
-      "ds100" : "LGRK",
-      "eva" : 8011685,
-      "latlong" : [
-         51.602149,
-         11.404245
-      ],
-      "name" : "Gräfenstuhl-Klippmühle"
    },
    {
       "ds100" : "UGTA",
@@ -37746,15 +37683,6 @@
       "name" : "Klostermansfeld"
    },
    {
-      "ds100" : "LKMR",
-      "eva" : 8010204,
-      "latlong" : [
-         51.59109,
-         11.498511
-      ],
-      "name" : "Klostermansfeld Randsiedlung"
-   },
-   {
       "ds100" : "RKLB",
       "eva" : 8003343,
       "latlong" : [
@@ -45178,15 +45106,6 @@
          8.482603
       ],
       "name" : "Mannheim-Waldhof"
-   },
-   {
-      "ds100" : "LMAS",
-      "eva" : 8012300,
-      "latlong" : [
-         51.600325,
-         11.452086
-      ],
-      "name" : "Mansfeld(Südharz)"
    },
    {
       "ds100" : "XLMN",
@@ -60984,15 +60903,6 @@
       "name" : "Rovereto"
    },
    {
-      "ds100" : "XIRG",
-      "eva" : 8300238,
-      "latlong" : [
-         45.076985,
-         11.781064
-      ],
-      "name" : "Rovigo"
-   },
-   {
       "ds100" : "SROB",
       "eva" : 8005172,
       "latlong" : [
@@ -69786,15 +69696,6 @@
       "name" : "Tiefenau"
    },
    {
-      "ds100" : "NTFB",
-      "eva" : 8026544,
-      "latlong" : [
-         48.61502,
-         13.42308
-      ],
-      "name" : "Tiefenbach(b Passau)"
-   },
-   {
       "ds100" : "LTF",
       "eva" : 8017030,
       "latlong" : [
@@ -70522,15 +70423,6 @@
          9.904905
       ],
       "name" : "Tschagguns"
-   },
-   {
-      "ds100" : "RKTUT",
-      "eva" : 720995,
-      "latlong" : [
-         49.006769,
-         8.431264
-      ],
-      "name" : "Tullastraße/Verkehrsbetriebe, Karlsruhe"
    },
    {
       "ds100" : "MTUL",
@@ -71989,24 +71881,6 @@
          11.76438
       ],
       "name" : "Vaterstetten"
-   },
-   {
-      "ds100" : "LVT",
-      "eva" : 8013182,
-      "latlong" : [
-         51.597705,
-         11.428977
-      ],
-      "name" : "Vatterode"
-   },
-   {
-      "ds100" : "LVTT",
-      "eva" : 8079152,
-      "latlong" : [
-         51.598218,
-         11.412188
-      ],
-      "name" : "Vatteröder Teich"
    },
    {
       "ds100" : "HVEC",
@@ -76122,15 +75996,6 @@
       "name" : "Wil SG"
    },
    {
-      "ds100" : "MWBN",
-      "eva" : 8070620,
-      "latlong" : [
-         49.025162,
-         10.397122
-      ],
-      "name" : "Wilburgstetten Bf"
-   },
-   {
       "ds100" : "RWIN",
       "eva" : 8006430,
       "latlong" : [
@@ -76858,15 +76723,6 @@
          8.998558
       ],
       "name" : "Witzwort"
-   },
-   {
-      "ds100" : "XCV",
-      "eva" : 2000021,
-      "latlong" : [
-         55.197393,
-         34.317551
-      ],
-      "name" : "Wjasma"
    },
    {
       "ds100" : "XNWO",
