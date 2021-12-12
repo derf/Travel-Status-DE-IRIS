@@ -1,3 +1,7 @@
+Travel::Status::DE::IRIS 1.62 - Sun Dec 12 2021
+
+    * import station name changes and removals from Winterfahrplan 2022
+
 Travel::Status::DE::IRIS 1.61 - Sat Oct 23 2021
 
     * Switch to GIS::Distance(::Fast), as Geo::Distance is deprecated and
