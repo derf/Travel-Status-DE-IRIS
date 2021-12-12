@@ -17460,7 +17460,7 @@
       "name" : "Durlach Untermühlstraße, Karlsruhe"
    },
    {
-      "ds100" : "RKDTB",
+      "ds100" : "RKDTD",
       "eva" : 377903,
       "latlong" : [
          49.009485,
@@ -28575,7 +28575,7 @@
       "name" : "Hallein"
    },
    {
-      "ds100" : "NHAL",
+      "ds100" : "NHAH",
       "eva" : 8002542,
       "latlong" : [
          49.929551,
@@ -32157,7 +32157,7 @@
       "name" : "Hilversum Media Park"
    },
    {
-      "ds100" : " XNHIS",
+      "ds100" : "XNHIS",
       "eva" : 8400570,
       "latlong" : [
          52.216110229492,
@@ -36051,7 +36051,7 @@
          49.008815,
          8.41788
       ],
-      "name" : "Karlsruhe Durlacher Tor / KIT-Campus Süd"
+      "name" : "Karlsruhe Durlacher Tor/KIT-Campus Süd"
    },
    {
       "ds100" : "RKEF",
@@ -36096,7 +36096,7 @@
          49.010457,
          8.386728
       ],
-      "name" : "Karlsruhe Mühlburger Tor (Kaiserallee)"
+      "name" : "Karlsruhe Mühlburger Tor"
    },
    {
       "ds100" : "RKW",
@@ -38016,6 +38016,15 @@
       "name" : "Komarom"
    },
    {
+      "ds100" : "PQKVS",
+      "eva" : 367072,
+      "latlong" : [
+         49.003793,
+         8.404054
+      ],
+      "name" : "Kongresszentrum, Karlsruhe"
+   },
+   {
       "ds100" : "XPKN",
       "eva" : 5100026,
       "latlong" : [
@@ -38700,22 +38709,22 @@
       "name" : "Kronberg(Taunus)"
    },
    {
-      "ds100" : "RKBPS",
-      "eva" : 721393,
-      "latlong" : [
-         49.007977,
-         8.409938
-      ],
-      "name" : "Kronenplatz (Fritz-Erler-Str.), Karlsruhe"
-   },
-   {
       "ds100" : "RKBP",
       "eva" : 721394,
       "latlong" : [
          49.009426,
          8.408456
       ],
-      "name" : "Kronenplatz (Kaiserstraße), Karlsruhe"
+      "name" : "Kronenplatz (U), Karlsruhe"
+   },
+   {
+      "ds100" : "RKBPS",
+      "eva" : 721393,
+      "latlong" : [
+         49.007977,
+         8.409938
+      ],
+      "name" : "Kronenplatz, Karlsruhe"
    },
    {
       "ds100" : "AKRH",
@@ -42345,6 +42354,15 @@
       "name" : "Leverkusen-Küppersteg"
    },
    {
+      "ds100" : "KLS",
+      "eva" : 8003669,
+      "latlong" : [
+         51.031616,
+         7.015128
+      ],
+      "name" : "Leverkusen-Manfort"
+   },
+   {
       "ds100" : "KLRH",
       "eva" : 8003672,
       "latlong" : [
@@ -42352,15 +42370,6 @@
          6.963464
       ],
       "name" : "Leverkusen-Rheindorf"
-   },
-   {
-      "ds100" : "KLS",
-      "eva" : 8003669,
-      "latlong" : [
-         51.031616,
-         7.015128
-      ],
-      "name" : "Leverkusen-Schlebusch"
    },
    {
       "ds100" : "XFLZ",
@@ -45259,15 +45268,6 @@
          10.480275
       ],
       "name" : "Maria Rain"
-   },
-   {
-      "ds100" : "EMV",
-      "eva" : 8003860,
-      "latlong" : [
-         51.839266,
-         7.098167
-      ],
-      "name" : "Maria Veen"
    },
    {
       "ds100" : "XZM",
@@ -48498,7 +48498,7 @@
          49.010687,
          8.381677
       ],
-      "name" : "Mühlburger Tor (Kaiserallee), Karlsruhe"
+      "name" : "Mühlburger Tor, Karlsruhe"
    },
    {
       "ds100" : "MMF",
@@ -58860,6 +58860,15 @@
       "name" : "Reken-Klein Reken"
    },
    {
+      "ds100" : "EMV",
+      "eva" : 8003860,
+      "latlong" : [
+         51.839266,
+         7.098167
+      ],
+      "name" : "Reken-Maria Veen"
+   },
+   {
       "ds100" : "XSRN",
       "eva" : 8503408,
       "latlong" : [
@@ -59265,7 +59274,7 @@
       "name" : "Rheinfelden(CH)"
    },
    {
-      "ds100" : "RKHN",
+      "ds100" : "RK  H",
       "eva" : 362391,
       "latlong" : [
          49.015578,
@@ -59739,7 +59748,7 @@
          48.248726,
          7.773037
       ],
-      "name" : "Ringsheim"
+      "name" : "Ringsheim/Europa-Park"
    },
    {
       "ds100" : "XDRI",
@@ -60813,7 +60822,7 @@
       "name" : "Rotterdam Lombardijen"
    },
    {
-      "ds100" : "XNRN",
+      "ds100" : "PNRN",
       "eva" : 8400531,
       "latlong" : [
          51.942222595215,
@@ -67605,7 +67614,7 @@
          47.85009,
          9.005731
       ],
-      "name" : "Stockach NE"
+      "name" : "Stockach"
    },
    {
       "ds100" : "NSOK",
@@ -70902,7 +70911,7 @@
       "name" : "Ulbersdorf"
    },
    {
-      "ds100" : "TU",
+      "ds100" : "TU  P",
       "eva" : 8000170,
       "latlong" : [
          48.399437,
@@ -72853,15 +72862,6 @@
          7.872214
       ],
       "name" : "Volkringhausen"
-   },
-   {
-      "ds100" : "PQKVS",
-      "eva" : 367072,
-      "latlong" : [
-         49.003793,
-         8.404054
-      ],
-      "name" : "Volkswohnung/Staatstheater, Karlsruhe"
    },
    {
       "ds100" : "HVOP",
