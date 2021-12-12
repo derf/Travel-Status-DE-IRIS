@@ -45,7 +45,7 @@ sub new {
 		iris_base      => $opt{iris_base}
 		  // 'https://iris.noncd.db.de/iris-tts/timetable',
 		keep_transfers  => $opt{keep_transfers},
-		lookahead       => $opt{lookahead} // ( 2 * 60 ),
+		lookahead       => $opt{lookahead}  // ( 2 * 60 ),
 		lookbehind      => $opt{lookbehind} // ( 0 * 60 ),
 		main_cache      => $opt{main_cache},
 		rt_cache        => $opt{realtime_cache},
@@ -90,6 +90,7 @@ sub new {
 		my $ref_status = Travel::Status::DE::IRIS->new(
 			datetime       => $self->{datetime},
 			developer_mode => $self->{developer_mode},
+			iris_base      => $self->{iris_base},
 			keep_transfers => $self->{keep_transfers},
 			lookahead      => $self->{lookahead},
 			lookbehind     => $self->{lookbehind},
