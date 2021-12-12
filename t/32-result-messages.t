@@ -33,14 +33,14 @@ my $abr    = $results[13];
 
 is_deeply(
 	[ $ice645->info ],
-	[ 'Witterungsbedingte Beeinträchtigung', 'Unwetter', 'Andere Reihenfolge der Wagen' ],
+	[ 'Witterungsbedingte Beeinträchtigung', 'Unwetter', 'Abweichende Wagenreihung' ],
 	'info: no dups, sorted, msg+qos'
 );
 
 is_deeply(
 	[ $ice645->messages ],
 	[
-		[ '2014-01-03T20:02:00', 'Andere Reihenfolge der Wagen' ],
+		[ '2014-01-03T20:02:00', 'Abweichende Wagenreihung' ],
 		[ '2014-01-03T20:01:00', 'Unwetter' ],
 		[ '2014-01-03T20:00:00', 'Witterungsbedingte Beeinträchtigung' ],
 		[ '2014-01-03T19:59:00', 'Witterungsbedingte Beeinträchtigung' ],
@@ -54,7 +54,7 @@ is_deeply(
 
 is_deeply(
 	[ $ice645->qos_messages ],
-	[ [ '2014-01-03T20:02:00', 'Andere Reihenfolge der Wagen' ] ],
+	[ [ '2014-01-03T20:02:00', 'Abweichende Wagenreihung' ] ],
 	'qos_messages'
 );
 
