@@ -2853,6 +2853,15 @@
       "name" : "Aufhausen(b Erding)"
    },
    {
+      "ds100" : "PQKAG",
+      "eva" : 150074,
+      "latlong" : [
+         48.99874,
+         8.40384
+      ],
+      "name" : "Augartenstraße, Karlsruhe"
+   },
+   {
       "ds100" : "RAUG",
       "eva" : 8000657,
       "latlong" : [
@@ -17451,6 +17460,15 @@
       "name" : "Durlach Untermühlstraße, Karlsruhe"
    },
    {
+      "ds100" : "PQKTR",
+      "eva" : 501001,
+      "latlong" : [
+         49.00877,
+         8.41826
+      ],
+      "name" : "Durlacher Tor/KIT-Campus Süd (U), Karlsruhe"
+   },
+   {
       "ds100" : "RKDTD",
       "eva" : 377903,
       "latlong" : [
@@ -20889,6 +20907,15 @@
       "name" : "Ettlingen West"
    },
    {
+      "ds100" : "RKME",
+      "eva" : 901012,
+      "latlong" : [
+         49.00544,
+         8.40345
+      ],
+      "name" : "Ettlinger Tor/Staatstheater (U), Karlsruhe"
+   },
+   {
       "ds100" : "EEZB",
       "eva" : 8001928,
       "latlong" : [
@@ -20986,6 +21013,15 @@
          8.393553
       ],
       "name" : "Europaplatz/Postgal. (Kaiser), Karlsruhe"
+   },
+   {
+      "ds100" : "PQKEU",
+      "eva" : 501004,
+      "latlong" : [
+         49.00997,
+         8.39432
+      ],
+      "name" : "Europaplatz/Postgalerie (U), Karlsruhe"
    },
    {
       "ds100" : "KEU",
@@ -37980,6 +38016,15 @@
       "name" : "Komarom"
    },
    {
+      "ds100" : "RKMK",
+      "eva" : 901013,
+      "latlong" : [
+         49.00249,
+         8.40307
+      ],
+      "name" : "Kongresszentrum (U), Karlsruhe"
+   },
+   {
       "ds100" : "PQKVS",
       "eva" : 367072,
       "latlong" : [
@@ -45432,13 +45477,22 @@
       "name" : "Marktoberdorf Schule"
    },
    {
-      "ds100" : "PQKMP",
-      "eva" : 371861,
+      "ds100" : "PQKMU",
+      "eva" : 401003,
       "latlong" : [
-         49.009485,
-         8.405563
+         49.00956,
+         8.40206
       ],
-      "name" : "Marktplatz, Karlsruhe"
+      "name" : "Marktplatz (Kaiserstraße U), Karlsruhe"
+   },
+   {
+      "ds100" : "PQKPZ",
+      "eva" : 151011,
+      "latlong" : [
+         49.00896,
+         8.40376
+      ],
+      "name" : "Marktplatz (Pyramide U), Karlsruhe"
    },
    {
       "ds100" : "NMR",
@@ -70315,6 +70369,15 @@
          9.904905
       ],
       "name" : "Tschagguns"
+   },
+   {
+      "ds100" : "RKTU",
+      "eva" : 723632,
+      "latlong" : [
+         49.006769,
+         8.431264
+      ],
+      "name" : "Tullastraße/Alter Schlachthof, Karlsruhe"
    },
    {
       "ds100" : "MTUL",
