@@ -13104,15 +13104,6 @@
       "name" : "Celle"
    },
    {
-      "ds100" : "XICTL",
-      "eva" : 8300375,
-      "latlong" : [
-         44.496372,
-         7.591296
-      ],
-      "name" : "Centallo"
-   },
-   {
       "ds100" : "XLCS",
       "eva" : 8270280,
       "latlong" : [
@@ -22158,15 +22149,6 @@
       "name" : "Forth"
    },
    {
-      "ds100" : "XIF",
-      "eva" : 8300020,
-      "latlong" : [
-         44.550582,
-         7.717916
-      ],
-      "name" : "Fossano"
-   },
-   {
       "ds100" : "XFFLT",
       "eva" : 8703343,
       "latlong" : [
@@ -29286,15 +29268,6 @@
       "name" : "Hammerau"
    },
    {
-      "ds100" : "MHMB",
-      "eva" : 966904,
-      "latlong" : [
-         47.466024,
-         11.046595
-      ],
-      "name" : "Hammersbach Zugspitzbahn, Grainau"
-   },
-   {
       "ds100" : "RHST",
       "eva" : 8070419,
       "latlong" : [
@@ -31642,15 +31615,6 @@
          13.886577
       ],
       "name" : "Herrensee"
-   },
-   {
-      "ds100" : "RKMH",
-      "eva" : 721376,
-      "latlong" : [
-         49.009815,
-         8.400056
-      ],
-      "name" : "Herrenstraße, Karlsruhe"
    },
    {
       "ds100" : "THL",
@@ -38565,24 +38529,6 @@
       "name" : "Kreuzau-Eifelstraße"
    },
    {
-      "ds100" : "KKRZ",
-      "eva" : 8003436,
-      "latlong" : [
-         50.506442,
-         6.978557
-      ],
-      "name" : "Kreuzberg(Ahr)"
-   },
-   {
-      "ds100" : "MKZB",
-      "eva" : 966903,
-      "latlong" : [
-         47.472102,
-         11.062936
-      ],
-      "name" : "Kreuzeck/Alpspitzbahn Bahnhof, Garmisch-Partenkirc"
-   },
-   {
       "ds100" : "XSKR",
       "eva" : 8506131,
       "latlong" : [
@@ -39256,15 +39202,6 @@
          6.975001
       ],
       "name" : "Köln Messe/Deutz"
-   },
-   {
-      "ds100" : "KKDZB",
-      "eva" : 8083368,
-      "latlong" : [
-         50.941299,
-         6.974641
-      ],
-      "name" : "Köln Messe/Deutz Gl. 9-10"
    },
    {
       "ds100" : "KKDT",
@@ -47403,15 +47340,6 @@
       "name" : "Mol"
    },
    {
-      "ds100" : "XSMOS",
-      "eva" : 8509415,
-      "latlong" : [
-         47.112987492662,
-         9.27680343664119
-      ],
-      "name" : "Mols"
-   },
-   {
       "ds100" : "PQKSK",
       "eva" : 723630,
       "latlong" : [
@@ -52164,15 +52092,6 @@
       "name" : "Noerre Nebel st"
    },
    {
-      "ds100" : "XDNP",
-      "eva" : 8601699,
-      "latlong" : [
-         55.683522,
-         12.571867
-      ],
-      "name" : "Noerreport st"
-   },
-   {
       "ds100" : "XLNZ",
       "eva" : 8270800,
       "latlong" : [
@@ -54009,15 +53928,6 @@
       "name" : "Oerel"
    },
    {
-      "ds100" : "XDKHO",
-      "eva" : 8601560,
-      "latlong" : [
-         55.6290128,
-         12.579355
-      ],
-      "name" : "Oerestad st"
-   },
-   {
       "ds100" : "NOER",
       "eva" : 8004629,
       "latlong" : [
@@ -54070,15 +53980,6 @@
          8.064317
       ],
       "name" : "Oesede"
-   },
-   {
-      "ds100" : "XDOP",
-      "eva" : 8601878,
-      "latlong" : [
-         55.692708,
-         12.587615
-      ],
-      "name" : "Oesterport st"
    },
    {
       "ds100" : "FOE",
@@ -58320,15 +58221,6 @@
       "name" : "Rebstein-Marbach"
    },
    {
-      "ds100" : "KREC",
-      "eva" : 8004967,
-      "latlong" : [
-         50.515427,
-         7.036514
-      ],
-      "name" : "Rech"
-   },
-   {
       "ds100" : "DRBG",
       "eva" : 8012727,
       "latlong" : [
@@ -59668,15 +59560,6 @@
          11.023813
       ],
       "name" : "Rietz in Tirol"
-   },
-   {
-      "ds100" : "MRFR",
-      "eva" : 966907,
-      "latlong" : [
-         47.43554,
-         10.987337
-      ],
-      "name" : "Riffelriß, Grainau"
    },
    {
       "ds100" : "ONRIS",
@@ -70567,15 +70450,6 @@
          8.644832
       ],
       "name" : "Twistringen"
-   },
-   {
-      "ds100" : "XPTY",
-      "eva" : 5100260,
-      "latlong" : [
-         50.136194,
-         18.964092
-      ],
-      "name" : "Tychy"
    },
    {
       "ds100" : "MTG",
