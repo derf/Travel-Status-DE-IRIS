@@ -10,6 +10,9 @@ use JSON;
 my $json_str = read_file('share/stations.json');
 my $stations = JSON->new->utf8->decode($json_str);
 
+my $meta_str = read_file('share/meta.json');
+my $meta     = JSON->new->utf8->decode($meta_str);
+
 my $buf = <<'EOF';
 package Travel::Status::DE::IRIS::Stations;
 
@@ -64,8 +67,26 @@ for my $station ( @{$stations} ) {
 $buf .= <<'EOF';
 );
 
+# Automatically generated, see share/meta.json
+my $meta = {
+EOF
+
+for my $eva (keys %{$meta}) {
+	$buf .= sprintf("%s => [%s],\n",
+		$eva,
+		join(q{,}, @{$meta->{$eva}})
+	);
+}
+
+$buf .= <<'EOF';
+};
+
 sub get_stations {
 	return @stations;
+}
+
+sub get_meta {
+	return $meta;
 }
 
 sub normalize {

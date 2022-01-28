@@ -1,0 +1,45 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use 5.010;
+
+use File::Slurp qw(read_file write_file);
+use JSON;
+use List::Util qw(any);
+use XML::LibXML;
+
+my $json_str = read_file('stations.json');
+my %known_eva;
+for my $station ( @{ JSON->new->utf8->decode($json_str) } ) {
+	$known_eva{ $station->{eva} } = 1;
+}
+
+# Norddeich and Norddeich Mole are illegaly coupled in the backend (they are
+# different stations with different departure times). Ignore their EVA IDs.
+delete $known_eva{8007768};
+delete $known_eva{8004449};
+
+my $xml_str = read_file('stations.xml');
+my $tree    = XML::LibXML->load_xml( string => $xml_str );
+
+my %meta;
+
+for my $station ( $tree->findnodes('//station') ) {
+	my $eva  = $station->getAttribute('eva');
+	my $meta = $station->getAttribute('meta');
+
+	if ( $known_eva{$eva} and $meta ) {
+		for my $ref ( split( qr{[|]}, $meta ) ) {
+			if ( $known_eva{$ref} ) {
+				push( @{ $meta{$eva} }, 0 + $ref );
+			}
+			else {
+				say "Note: Ignoring $eva -> $ref (unknown)";
+			}
+		}
+	}
+}
+
+my $json_out = JSON->new->utf8->canonical->pretty->encode( {%meta} );
+write_file( 'meta.json', $json_out );
