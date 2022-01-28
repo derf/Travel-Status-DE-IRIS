@@ -91,7 +91,6 @@ sub new {
 			datetime       => $self->{datetime},
 			developer_mode => $self->{developer_mode},
 			iris_base      => $self->{iris_base},
-			keep_transfers => $self->{keep_transfers},
 			lookahead      => $self->{lookahead},
 			lookbehind     => $self->{lookbehind},
 			station        => $ref->{uic},
