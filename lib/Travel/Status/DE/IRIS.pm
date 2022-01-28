@@ -65,6 +65,15 @@ sub new {
 
 	bless( $self, $class );
 
+	my $lookahead_steps = int( $self->{lookahead} / 60 );
+	if ( ( 60 - $self->{datetime}->minute ) < ( $self->{lookahead} % 60 ) ) {
+		$lookahead_steps++;
+	}
+	my $lookbehind_steps = int( $self->{lookbehind} / 60 );
+	if ( $self->{datetime}->minute < ( $self->{lookbehind} % 60 ) ) {
+		$lookbehind_steps++;
+	}
+
 	if ( not $self->{user_agent} ) {
 		my %lwp_options = %{ $opt{lwp_options} // { timeout => 10 } };
 		$self->{user_agent} = LWP::UserAgent->new(%lwp_options);
@@ -110,15 +119,6 @@ sub new {
 		return $self;
 	}
 
-	my $lookahead_steps = int( $self->{lookahead} / 60 );
-	if ( ( 60 - $self->{datetime}->minute ) < ( $self->{lookahead} % 60 ) ) {
-		$lookahead_steps++;
-	}
-	my $lookbehind_steps = int( $self->{lookbehind} / 60 );
-	if ( $self->{datetime}->minute < ( $self->{lookbehind} % 60 ) ) {
-		$lookbehind_steps++;
-	}
-
 	my $dt_req = $self->{datetime}->clone;
 	$self->get_timetable( $self->{station}{uic}, $dt_req );
 	for ( 1 .. $lookahead_steps ) {
@@ -133,6 +133,13 @@ sub new {
 
 	$self->get_realtime;
 
+	$self->postprocess_results;
+
+	return $self;
+}
+
+sub postprocess_results {
+	my ($self) = @_;
 	if ( not $self->{keep_transfers} ) {
 
 		# tra (transfer?) indicates a train changing its ID, so there are two
@@ -173,8 +180,6 @@ sub new {
 
 	# same goes for replacement refs (the <ref> tag in the fchg document)
 	$self->create_replacement_refs;
-
-	return $self;
 }
 
 sub get_with_cache {
