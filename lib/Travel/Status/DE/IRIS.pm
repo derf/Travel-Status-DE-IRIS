@@ -31,6 +31,72 @@ sub try_load_xml {
 	return ( $tree, undef );
 }
 
+sub new_p {
+	my ( $class, %opt ) = @_;
+	my $promise = $opt{promise}->new;
+
+	if ( not $opt{station} ) {
+		return $promise->reject('station flag must be passed');
+	}
+
+	my $self = $class->new( %opt, async => 1 );
+	$self->{promise} = $opt{promise};
+
+	my $lookahead_steps = int( $self->{lookahead} / 60 );
+	if ( ( 60 - $self->{datetime}->minute ) < ( $self->{lookahead} % 60 ) ) {
+		$lookahead_steps++;
+	}
+	my $lookbehind_steps = int( $self->{lookbehind} / 60 );
+	if ( $self->{datetime}->minute < ( $self->{lookbehind} % 60 ) ) {
+		$lookbehind_steps++;
+	}
+
+	$self->get_station_p(
+		name => $opt{station},
+	)->then(
+		sub {
+			my ($station) = @_;
+			$self->{station}          = $station;
+			$self->{related_stations} = [];
+
+			my $dt_req = $self->{datetime}->clone;
+			my @subreq
+			  = ( $self->get_timetable_p( $self->{station}{uic}, $dt_req ) );
+			for ( 1 .. $lookahead_steps ) {
+				$dt_req->add( hours => 1 );
+				push( @subreq,
+					$self->get_timetable_p( $self->{station}{uic}, $dt_req ) );
+			}
+			$dt_req = $self->{datetime}->clone;
+			for ( 1 .. $lookbehind_steps ) {
+				$dt_req->subtract( hours => 1 );
+				push( @subreq,
+					$self->get_timetable_p( $self->{station}{uic}, $dt_req ) );
+			}
+
+			return $self->{promise}->all(@subreq);
+		}
+	)->then(
+		sub {
+			return $self->get_realtime_p;
+		}
+	)->then(
+		sub {
+			$self->postprocess_results;
+			$promise->resolve($self);
+			return;
+		}
+	)->catch(
+		sub {
+			my ($err) = @_;
+			$promise->reject($err);
+			return;
+		}
+	)->wait;
+
+	return $promise;
+}
+
 sub new {
 	my ( $class, %opt ) = @_;
 
@@ -72,6 +138,10 @@ sub new {
 	my $lookbehind_steps = int( $self->{lookbehind} / 60 );
 	if ( $self->{datetime}->minute < ( $self->{lookbehind} % 60 ) ) {
 		$lookbehind_steps++;
+	}
+
+	if ( $opt{async} ) {
+		return $self;
 	}
 
 	if ( not $self->{user_agent} ) {
@@ -182,6 +252,55 @@ sub postprocess_results {
 	$self->create_replacement_refs;
 }
 
+sub get_with_cache_p {
+	my ( $self, $cache, $url ) = @_;
+
+	if ( $self->{developer_mode} ) {
+		say "GET $url";
+	}
+
+	my $promise = $self->{promise}->new;
+
+	if ($cache) {
+		my $content = $cache->thaw($url);
+		if ($content) {
+			if ( $self->{developer_mode} ) {
+				say '  cache hit';
+			}
+			return $promise->resolve($content);
+		}
+	}
+
+	if ( $self->{developer_mode} ) {
+		say '  cache miss';
+	}
+
+	my $res = $self->{user_agent}->get_p($url)->then(
+		sub {
+			my ($tx) = @_;
+			if ( my $err = $tx->error ) {
+				$promise->reject(
+					"GET $url returned HTTP $err->{code} $err->{messag}");
+				return;
+			}
+			my $content = $tx->res->body;
+			if ($cache) {
+				$cache->freeze( $url, \$content );
+			}
+			$promise->resolve($content);
+			return;
+		}
+	)->catch(
+		sub {
+			my ($err) = @_;
+			$promise->reject($err);
+			return;
+		}
+	)->wait;
+
+	return $promise;
+}
+
 sub get_with_cache {
 	my ( $self, $cache, $url ) = @_;
 
@@ -216,6 +335,48 @@ sub get_with_cache {
 	}
 
 	return ( $content, undef );
+}
+
+sub get_station_p {
+	my ( $self, %opt ) = @_;
+
+	my $promise = $self->{promise}->new;
+	my $station = $opt{name};
+
+	$self->get_with_cache_p( $self->{main_cache},
+		$self->{iris_base} . '/station/' . $station )->then(
+		sub {
+			my ($raw) = @_;
+			my ( $xml_st, $xml_err ) = try_load_xml($raw);
+			if ($xml_err) {
+				$promise->reject('Failed to parse station data: Invalid XML');
+				return;
+			}
+			my $station_node = ( $xml_st->findnodes('//station') )[0];
+
+			if ( not $station_node ) {
+				$promise->reject(
+					"Station '$station' has no associated timetable");
+				return;
+			}
+			$promise->resolve(
+				{
+					uic   => $station_node->getAttribute('eva'),
+					name  => $station_node->getAttribute('name'),
+					ds100 => $station_node->getAttribute('ds100'),
+				}
+			);
+			return;
+		}
+	)->catch(
+		sub {
+			my ($err) = @_;
+			$promise->reject($err);
+			return;
+		}
+	)->wait;
+
+	return $promise;
 }
 
 sub get_station {
@@ -393,6 +554,41 @@ sub add_result {
 	return $result;
 }
 
+sub get_timetable_p {
+	my ( $self, $eva, $dt ) = @_;
+
+	my $promise = $self->{promise}->new;
+
+	$self->get_with_cache_p( $self->{main_cache},
+		$dt->strftime( $self->{iris_base} . "/plan/${eva}/%y%m%d/%H" ) )->then(
+		sub {
+			my ($raw) = @_;
+			my ( $xml, $xml_err ) = try_load_xml($raw);
+			if ($xml_err) {
+				$promise->reject(
+					'Failed to parse a schedule part: Invalid XML');
+				return;
+			}
+			my $station
+			  = ( $xml->findnodes('/timetable') )[0]->getAttribute('station');
+
+			for my $s ( $xml->findnodes('/timetable/s') ) {
+
+				$self->add_result( $station, $eva, $s );
+			}
+			$promise->resolve;
+			return;
+		}
+	)->catch(
+		sub {
+			my ($err) = @_;
+			$promise->reject($err);
+			return;
+		}
+	)->wait;
+	return $promise;
+}
+
 sub get_timetable {
 	my ( $self, $eva, $dt ) = @_;
 
@@ -422,6 +618,36 @@ sub get_timetable {
 	return $self;
 }
 
+sub get_realtime_p {
+	my ($self) = @_;
+
+	my $promise = $self->{promise}->new;
+
+	my $eva = $self->{station}{uic};
+	$self->get_with_cache_p( $self->{rt_cache},
+		$self->{iris_base} . "/fchg/${eva}" )->then(
+		sub {
+			my ($raw) = @_;
+			my ( $xml, $xml_err ) = try_load_xml($raw);
+			if ($xml_err) {
+				$promise->reject(
+					'Failed to parse a schedule part: Invalid XML');
+				return;
+			}
+			$self->parse_realtime( $eva, $xml );
+			$promise->resolve;
+			return;
+		}
+	)->catch(
+		sub {
+			my ($err) = @_;
+			$promise->reject("Failed to fetch realtime data: $err");
+			return;
+		}
+	)->wait;
+	return $promise;
+}
+
 sub get_realtime {
 	my ($self) = @_;
 
@@ -443,6 +669,11 @@ sub get_realtime {
 		return $self;
 	}
 
+	$self->parse_realtime( $eva, $xml );
+}
+
+sub parse_realtime {
+	my ( $self, $eva, $xml ) = @_;
 	my $station = ( $xml->findnodes('/timetable') )[0]->getAttribute('station');
 
 	for my $s ( $xml->findnodes('/timetable/s') ) {
