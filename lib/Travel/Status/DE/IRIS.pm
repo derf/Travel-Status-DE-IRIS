@@ -31,6 +31,7 @@ sub try_load_xml {
 	return ( $tree, undef );
 }
 
+# "station" parameter must be an EVA or DS100 ID.
 sub new_p {
 	my ( $class, %opt ) = @_;
 	my $promise = $opt{promise}->new;
@@ -51,34 +52,90 @@ sub new_p {
 		$lookbehind_steps++;
 	}
 
-	$self->get_station_p(
-		name => $opt{station},
-	)->then(
-		sub {
-			my ($station) = @_;
-			$self->{station}          = $station;
-			$self->{related_stations} = [];
+	my @candidates = $opt{get_station}( $opt{station} );
 
-			my $dt_req = $self->{datetime}->clone;
-			my @subreq
-			  = ( $self->get_timetable_p( $self->{station}{uic}, $dt_req ) );
-			for ( 1 .. $lookahead_steps ) {
-				$dt_req->add( hours => 1 );
-				push( @subreq,
-					$self->get_timetable_p( $self->{station}{uic}, $dt_req ) );
-			}
-			$dt_req = $self->{datetime}->clone;
-			for ( 1 .. $lookbehind_steps ) {
-				$dt_req->subtract( hours => 1 );
-				push( @subreq,
-					$self->get_timetable_p( $self->{station}{uic}, $dt_req ) );
-			}
+	if ( @candidates == 0 ) {
+		return $promise->reject('station not found');
+	}
+	if ( @candidates >= 2 ) {
+		return $promise->reject('station identifier is ambiguous');
+	}
 
-			return $self->{promise}->all(@subreq);
+	$self->{station} = {
+		ds100 => $candidates[0][0],
+		name  => $candidates[0][1],
+		uic   => $candidates[0][2],
+	};
+	$self->{related_stations} = [];
+
+	my @queue = ( $self->{station}{uic} );
+	my @related_reqs;
+	my @related_stations;
+	my %seen       = ( $self->{station}{uic} => 1 );
+	my $iter_depth = 0;
+
+	while ( @queue and $iter_depth < 12 and $opt{with_related} ) {
+		my $eva = shift(@queue);
+		$iter_depth++;
+		for my $ref ( @{ $opt{meta}{$eva} // [] } ) {
+			if ( not $seen{$ref} ) {
+				push( @related_stations, $ref );
+				$seen{$ref} = 1;
+				push( @queue, $ref );
+			}
 		}
-	)->then(
+	}
+
+	for my $eva (@related_stations) {
+		@candidates = $opt{get_station}( $opt{station} );
+
+		if ( @candidates == 1 ) {
+			push(
+				@{ $self->{related_stations} },
+				{
+					ds100 => $candidates[0][0],
+					name  => $candidates[0][1],
+					uic   => $candidates[0][2],
+				}
+			);
+		}
+	}
+
+	my $dt_req = $self->{datetime}->clone;
+	my @timetable_reqs
+	  = ( $self->get_timetable_p( $self->{station}{uic}, $dt_req ) );
+
+	for my $eva (@related_stations) {
+		push( @timetable_reqs, $self->get_timetable_p( $eva, $dt_req ) );
+	}
+
+	for ( 1 .. $lookahead_steps ) {
+		$dt_req->add( hours => 1 );
+		push( @timetable_reqs,
+			$self->get_timetable_p( $self->{station}{uic}, $dt_req ) );
+		for my $eva (@related_stations) {
+			push( @timetable_reqs, $self->get_timetable_p( $eva, $dt_req ) );
+		}
+	}
+
+	$dt_req = $self->{datetime}->clone;
+	for ( 1 .. $lookbehind_steps ) {
+		$dt_req->subtract( hours => 1 );
+		push( @timetable_reqs,
+			$self->get_timetable_p( $self->{station}{uic}, $dt_req ) );
+		for my $eva (@related_stations) {
+			push( @timetable_reqs, $self->get_timetable_p( $eva, $dt_req ) );
+		}
+	}
+
+	$self->{promise}->all(@timetable_reqs)->then(
 		sub {
-			return $self->get_realtime_p;
+			my @realtime_reqs
+			  = ( $self->get_realtime_p( $self->{station}{uic} ) );
+			for my $eva (@related_stations) {
+				push( @realtime_reqs, $self->get_realtime_p( $eva, $dt_req ) );
+			}
+			return $self->{promise}->all(@realtime_reqs);
 		}
 	)->then(
 		sub {
@@ -619,11 +676,10 @@ sub get_timetable {
 }
 
 sub get_realtime_p {
-	my ($self) = @_;
+	my ( $self, $eva ) = @_;
 
 	my $promise = $self->{promise}->new;
 
-	my $eva = $self->{station}{uic};
 	$self->get_with_cache_p( $self->{rt_cache},
 		$self->{iris_base} . "/fchg/${eva}" )->then(
 		sub {
