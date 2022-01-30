@@ -337,7 +337,7 @@ sub get_with_cache_p {
 			my ($tx) = @_;
 			if ( my $err = $tx->error ) {
 				$promise->reject(
-					"GET $url returned HTTP $err->{code} $err->{messag}");
+					"GET $url returned HTTP $err->{code} $err->{message}");
 				return;
 			}
 			my $content = $tx->res->body;
