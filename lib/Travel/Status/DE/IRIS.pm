@@ -928,6 +928,8 @@ Travel::Status::DE::IRIS - Interface to IRIS based web departure monitors.
 
 =head1 SYNOPSIS
 
+Blocking variant:
+
     use Travel::Status::DE::IRIS;
     use Travel::Status::DE::IRIS::Stations;
 
@@ -942,6 +944,30 @@ Travel::Status::DE::IRIS - Interface to IRIS based web departure monitors.
             $r->date, $r->time, $r->delay || 0, $r->line, $r->destination
         );
     }
+
+Non-blocking variant:
+
+    use Mojo::Promise;
+    use Mojo::UserAgent;
+    use Travel::Status::DE::IRIS;
+    use Travel::Status::DE::IRIS::Stations;
+
+    # Get station code for "Essen Hbf" (-> "EE")
+    my $station = (Travel::Status::DE::IRIS::Stations::get_station_by_name(
+        'Essen Hbf'))[0][0];
+    
+    Travel::Status::DE::IRIS->new_p(station => $station,
+            promise => 'Mojo::Promise', user_agent => Mojo::UserAgent->new,
+            get_station => \&Travel::Status::DE::IRIS::Stations::get_station,
+            meta => Travel::Status::DE::IRIS::Stations::get_meta())->then(sub {
+        my ($status) = @_;
+        for my $r ($status->results) {
+            printf(
+                "%s %s +%-3d %10s -> %s\n",
+                $r->date, $r->time, $r->delay || 0, $r->line, $r->destination
+            );
+        }
+    })->wait;
 
 =head1 VERSION
 
@@ -1052,6 +1078,37 @@ Messe/Deutz (tief)" (KKDT).
 By default, Travel::Status::DE::IRIS only returns departures for the specified
 station. When this option is set to a true value, it will also return
 departures for all related stations.
+
+=back
+
+=item my $promise = Travel::Status::DE::IRIS->new_p(I<%opt>)
+
+Return a promise yielding a Travel::Status::DE::IRIS instance (C<< $status >>)
+on success, or an error message (same as C<< $status->errstr >>) on failure.
+
+In addition to the arguments of B<new>, the following mandatory arguments must
+be set:
+
+=over
+
+=item B<promise> => I<promises module>
+
+Promises implementation to use for internal promises as well as B<new_p> return
+value. Recommended: Mojo::Promise(3pm).
+
+=item B<get_station> => I<get_station ref>
+
+Reference to Travel::Status::DE::IRIS::Stations::get_station().
+
+=item B<meta> => I<meta dict>
+
+The dictionary returned by Travel::Status::DE::IRIS::Stations::get_meta().
+
+=item B<user_agent> => I<user agent>
+
+User agent instance to use for asynchronous requests. The object must support
+promises (i.e., it must implement a C<< get_p >> function). Recommended:
+Mojo::UserAgent(3pm).
 
 =back
 
