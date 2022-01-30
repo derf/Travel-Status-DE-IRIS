@@ -1,3 +1,8 @@
+Travel::Status::DE::IRIS 1.64 - Sun Jan 30 2022
+
+    * Add experimental "new_p" constructor for non-blocking operation with
+      Mojo::Promise and Mojo::UserAgent.
+
 Travel::Status::DE::IRIS 1.63 - Mon Jan 24 2022
 
     * update station database
