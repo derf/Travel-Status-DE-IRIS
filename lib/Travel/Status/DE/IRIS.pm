@@ -931,13 +931,8 @@ Travel::Status::DE::IRIS - Interface to IRIS based web departure monitors.
 Blocking variant:
 
     use Travel::Status::DE::IRIS;
-    use Travel::Status::DE::IRIS::Stations;
-
-    # Get station code for "Essen Hbf" (-> "EE")
-    my $station = (Travel::Status::DE::IRIS::Stations::get_station_by_name(
-        'Essen Hbf'))[0][0];
     
-    my $status = Travel::Status::DE::IRIS->new(station => $station);
+    my $status = Travel::Status::DE::IRIS->new(station => "Essen Hbf");
     for my $r ($status->results) {
         printf(
             "%s %s +%-3d %10s -> %s\n",
@@ -951,12 +946,8 @@ Non-blocking variant:
     use Mojo::UserAgent;
     use Travel::Status::DE::IRIS;
     use Travel::Status::DE::IRIS::Stations;
-
-    # Get station code for "Essen Hbf" (-> "EE")
-    my $station = (Travel::Status::DE::IRIS::Stations::get_station_by_name(
-        'Essen Hbf'))[0][0];
     
-    Travel::Status::DE::IRIS->new_p(station => $station,
+    Travel::Status::DE::IRIS->new_p(station => "Essen Hbf",
             promise => 'Mojo::Promise', user_agent => Mojo::UserAgent->new,
             get_station => \&Travel::Status::DE::IRIS::Stations::get_station,
             meta => Travel::Status::DE::IRIS::Stations::get_meta())->then(sub {
