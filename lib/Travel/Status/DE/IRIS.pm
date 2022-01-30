@@ -940,7 +940,7 @@ Blocking variant:
         );
     }
 
-Non-blocking variant:
+Non-blocking variant (EXPERIMENTAL):
 
     use Mojo::Promise;
     use Mojo::UserAgent;
@@ -1072,10 +1072,11 @@ departures for all related stations.
 
 =back
 
-=item my $promise = Travel::Status::DE::IRIS->new_p(I<%opt>)
+=item my $promise = Travel::Status::DE::IRIS->new_p(I<%opt>) (B<EXPERIMENTAL>)
 
 Return a promise yielding a Travel::Status::DE::IRIS instance (C<< $status >>)
 on success, or an error message (same as C<< $status->errstr >>) on failure.
+This function is experimental and may be changed or remove without warning.
 
 In addition to the arguments of B<new>, the following mandatory arguments must
 be set:
