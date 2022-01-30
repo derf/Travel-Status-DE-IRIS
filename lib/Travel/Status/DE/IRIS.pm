@@ -135,10 +135,20 @@ sub new_p {
 			for my $eva (@related_stations) {
 				push( @realtime_reqs, $self->get_realtime_p( $eva, $dt_req ) );
 			}
-			return $self->{promise}->all(@realtime_reqs);
+			return $self->{promise}->all_settled(@realtime_reqs);
 		}
 	)->then(
 		sub {
+			my @realtime_results = @_;
+
+			for my $realtime_result (@realtime_results) {
+				if ( $realtime_result->{status} eq 'rejected' ) {
+					$self->{warnstr} //= q{};
+					$self->{warnstr}
+					  .= "Realtime data request failed: $realtime_result->{reason}. ";
+				}
+			}
+
 			$self->postprocess_results;
 			$promise->resolve($self);
 			return;
