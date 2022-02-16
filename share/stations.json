@@ -4158,6 +4158,15 @@
       "name" : "Bad Saarow Klinikum"
    },
    {
+      "ds100" : "BBSS",
+      "eva" : 8011080,
+      "latlong" : [
+         52.2707389,
+         14.0711421
+      ],
+      "name" : "Bad Saarow-Pieskow"
+   },
+   {
       "ds100" : "HSCH",
       "eva" : 8000739,
       "latlong" : [
