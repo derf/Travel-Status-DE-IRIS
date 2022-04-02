@@ -1125,15 +1125,6 @@
       "name" : "Altdorf(CH)"
    },
    {
-      "ds100" : "MAF",
-      "eva" : 8026354,
-      "latlong" : [
-         48.554979,
-         12.102813
-      ],
-      "name" : "Altdorf(Niederbay)"
-   },
-   {
       "ds100" : "NAD",
       "eva" : 8000509,
       "latlong" : [
@@ -11970,15 +11961,6 @@
       "name" : "Burgdorf"
    },
    {
-      "ds100" : "XABU",
-      "eva" : 8100697,
-      "latlong" : [
-         46.894811,
-         15.834249
-      ],
-      "name" : "Burgfried b.Gnas"
-   },
-   {
       "ds100" : "FBUH",
       "eva" : 8001283,
       "latlong" : [
@@ -13660,15 +13642,6 @@
          -1.621044
       ],
       "name" : "Cherbourg"
-   },
-   {
-      "ds100" : "ONCH",
-      "eva" : 8400152,
-      "latlong" : [
-         50.876110076904,
-         6.213844
-      ],
-      "name" : "Chevremont(NL)"
    },
    {
       "ds100" : "XSCH",
@@ -27972,15 +27945,6 @@
       "name" : "Hademarschen"
    },
    {
-      "ds100" : "HHAD",
-      "eva" : 8002497,
-      "latlong" : [
-         52.711982,
-         9.639434
-      ],
-      "name" : "Hademstorf"
-   },
-   {
       "ds100" : "LHD",
       "eva" : 8011794,
       "latlong" : [
@@ -31210,15 +31174,6 @@
          8.648722
       ],
       "name" : "Hemsbach"
-   },
-   {
-      "ds100" : "AHSN",
-      "eva" : 8002750,
-      "latlong" : [
-         53.078795,
-         9.811174
-      ],
-      "name" : "Hemsen(b Soltau)"
    },
    {
       "ds100" : "XFHE",
@@ -34585,15 +34540,6 @@
          7.476667
       ],
       "name" : "Ingwiller"
-   },
-   {
-      "ds100" : "FIN",
-      "eva" : 8003077,
-      "latlong" : [
-         50.460379,
-         8.892407
-      ],
-      "name" : "Inheiden"
    },
    {
       "ds100" : "MINI",
@@ -46197,15 +46143,6 @@
       "name" : "Meiringen"
    },
    {
-      "ds100" : "LMDF",
-      "eva" : 8012325,
-      "latlong" : [
-         51.725714,
-         11.294529
-      ],
-      "name" : "Meisdorf"
-   },
-   {
       "ds100" : "MMEI",
       "eva" : 8003952,
       "latlong" : [
@@ -54025,15 +53962,6 @@
          13.573119
       ],
       "name" : "Oertzenhof"
-   },
-   {
-      "ds100" : "EOES",
-      "eva" : 8004631,
-      "latlong" : [
-         51.402051,
-         7.788853
-      ],
-      "name" : "Oese"
    },
    {
       "ds100" : "HOES",
@@ -65194,15 +65122,6 @@
          7.77138
       ],
       "name" : "Siershahn"
-   },
-   {
-      "ds100" : "LSIE",
-      "eva" : 8012992,
-      "latlong" : [
-         52.818929,
-         12.397722
-      ],
-      "name" : "Sieversdorf(Neust/D)"
    },
    {
       "ds100" : "OSSGW",
