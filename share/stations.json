@@ -4887,6 +4887,15 @@
       "name" : "Baitz"
    },
    {
+      "ds100" : "XTBNJ",
+      "eva" : 5400033,
+      "latlong" : [
+         50.472273,
+         14.922876
+      ],
+      "name" : "Bakov nad Jizerou"
+   },
+   {
       "ds100" : "NBAF",
       "eva" : 8000784,
       "latlong" : [
@@ -5767,6 +5776,24 @@
          14.835816
       ],
       "name" : "Bela pod Bezdezem"
+   },
+   {
+      "ds100" : "XTBPM",
+      "eva" : 5400439,
+      "latlong" : [
+         50.493245,
+         14.787354
+      ],
+      "name" : "Bela pod Bezdezem mesto"
+   },
+   {
+      "ds100" : "XTBPZ",
+      "eva" : 5400440,
+      "latlong" : [
+         50.500059,
+         14.866621
+      ],
+      "name" : "Bela pod Bezdezem zastavka"
    },
    {
       "ds100" : "ABE",
@@ -8215,6 +8242,15 @@
          11.63105
       ],
       "name" : "Beyendorf"
+   },
+   {
+      "ds100" : "XTBEZ",
+      "eva" : 5400464,
+      "latlong" : [
+         50.51606,
+         14.729392
+      ],
+      "name" : "Bezdez"
    },
    {
       "ds100" : "XFBZ",
@@ -11196,6 +11232,15 @@
       "name" : "Brixlegg"
    },
    {
+      "ds100" : "XTBRI",
+      "eva" : 5403721,
+      "latlong" : [
+         50.716591,
+         14.728753
+      ],
+      "name" : "Brniste"
+   },
+   {
       "ds100" : "XTBR",
       "eva" : 5400001,
       "latlong" : [
@@ -11266,6 +11311,15 @@
          9.03466211602638
       ],
       "name" : "Bronschhofen"
+   },
+   {
+      "ds100" : "OIBRO",
+      "eva" : 8301245,
+      "latlong" : [
+         46.405122,
+         11.315972
+      ],
+      "name" : "Bronzolo/Branzoll"
    },
    {
       "ds100" : "FBB",
@@ -18664,6 +18718,15 @@
          8.51653513850671
       ],
       "name" : "Eglisau"
+   },
+   {
+      "ds100" : "OIENT",
+      "eva" : 8301491,
+      "latlong" : [
+         46.3195,
+         11.257398
+      ],
+      "name" : "Egna-Termeno/Neumarkt-Tramin"
    },
    {
       "ds100" : "XSEN",
@@ -30339,6 +30402,15 @@
       "name" : "Hazebrouck"
    },
    {
+      "ds100" : "XTHZ",
+      "eva" : 5401021,
+      "latlong" : [
+         50.161849,
+         12.279022
+      ],
+      "name" : "Hazlov"
+   },
+   {
       "ds100" : "NHT",
       "eva" : 8002630,
       "latlong" : [
@@ -35325,6 +35397,15 @@
       "name" : "Jestetten"
    },
    {
+      "ds100" : "XTJSR",
+      "eva" : 5401370,
+      "latlong" : [
+         50.614626,
+         14.599075
+      ],
+      "name" : "Jestrebi"
+   },
+   {
       "ds100" : "MJEB",
       "eva" : 8003122,
       "latlong" : [
@@ -38817,6 +38898,15 @@
       "name" : "Krippen"
    },
    {
+      "ds100" : "XTKZY",
+      "eva" : 5401655,
+      "latlong" : [
+         50.751388,
+         14.918633
+      ],
+      "name" : "Krizany"
+   },
+   {
       "ds100" : "XNKA",
       "eva" : 8400368,
       "latlong" : [
@@ -38986,6 +39076,15 @@
          9.867762
       ],
       "name" : "Krupunder"
+   },
+   {
+      "ds100" : "XTKRU",
+      "eva" : 5401638,
+      "latlong" : [
+         50.771902,
+         14.941276
+      ],
+      "name" : "Krystofovo Udoli"
    },
    {
       "ds100" : "XPKZG",
@@ -40102,6 +40201,15 @@
          11.615907
       ],
       "name" : "Laineck"
+   },
+   {
+      "ds100" : "OILAL",
+      "eva" : 8301615,
+      "latlong" : [
+         46.434049,
+         11.323649
+      ],
+      "name" : "Laives/Leifers"
    },
    {
       "ds100" : "WLD",
@@ -42552,6 +42660,15 @@
       "name" : "Liberec"
    },
    {
+      "ds100" : "XTLHR",
+      "eva" : 5401739,
+      "latlong" : [
+         50.75351,
+         15.033038
+      ],
+      "name" : "Liberec-Horni Ruzodol"
+   },
+   {
       "ds100" : "XBLBM",
       "eva" : 8800021,
       "latlong" : [
@@ -44703,6 +44820,15 @@
       "name" : "Magdeburg-Sudenburg"
    },
    {
+      "ds100" : "OIMMC",
+      "eva" : 8301723,
+      "latlong" : [
+         46.288046,
+         11.232633
+      ],
+      "name" : "Magrè-Cortaccia"
+   },
+   {
       "ds100" : "TMAG",
       "eva" : 8003807,
       "latlong" : [
@@ -44944,6 +45070,15 @@
          6.15831
       ],
       "name" : "Maizieres-les-Metz"
+   },
+   {
+      "ds100" : "XTMLB",
+      "eva" : 5401892,
+      "latlong" : [
+         50.486764,
+         14.923091
+      ],
+      "name" : "Mala Bela"
    },
    {
       "ds100" : "XTMV",
@@ -47043,6 +47178,15 @@
       "name" : "Meyenburg"
    },
    {
+      "ds100" : "XIMZ",
+      "eva" : 8300102,
+      "latlong" : [
+         46.207269,
+         11.128421
+      ],
+      "name" : "Mezzocorona"
+   },
+   {
       "ds100" : "LMF",
       "eva" : 8012342,
       "latlong" : [
@@ -47527,6 +47671,15 @@
          14.886947
       ],
       "name" : "Mlada Boleslav hl.n."
+   },
+   {
+      "ds100" : "XTMBM",
+      "eva" : 5402007,
+      "latlong" : [
+         50.41921,
+         14.91617
+      ],
+      "name" : "Mlada Boleslav mesto"
    },
    {
       "ds100" : "OPMLK",
@@ -52974,6 +53127,15 @@
       "name" : "Nörvenich-Binsfeld"
    },
    {
+      "ds100" : "KRO",
+      "eva" : 8004371,
+      "latlong" : [
+         50.782608,
+         6.54732
+      ],
+      "name" : "Nörvenich-Rommelsheim"
+   },
+   {
       "ds100" : "DNUN",
       "eva" : 8012523,
       "latlong" : [
@@ -54459,6 +54621,15 @@
       "name" : "Oker"
    },
    {
+      "ds100" : "XTOKN",
+      "eva" : 5402223,
+      "latlong" : [
+         50.527269,
+         14.67445
+      ],
+      "name" : "Okna"
+   },
+   {
       "ds100" : "XDOB",
       "eva" : 8601780,
       "latlong" : [
@@ -54781,6 +54952,15 @@
          4.187166
       ],
       "name" : "Opwijk"
+   },
+   {
+      "ds100" : "XIOA",
+      "eva" : 8300123,
+      "latlong" : [
+         46.360913,
+         11.296978
+      ],
+      "name" : "Ora/Auer"
    },
    {
       "ds100" : "XFOR",
@@ -61398,6 +61578,15 @@
       "name" : "Rybniste"
    },
    {
+      "ds100" : "XTRTB",
+      "eva" : 5402736,
+      "latlong" : [
+         50.786923,
+         14.826152
+      ],
+      "name" : "Rynoltice"
+   },
+   {
       "ds100" : "XPR",
       "eva" : 5100082,
       "latlong" : [
@@ -62062,6 +62251,15 @@
          6.839254
       ],
       "name" : "Salmtal"
+   },
+   {
+      "ds100" : "OISSA",
+      "eva" : 8302197,
+      "latlong" : [
+         46.245752,
+         11.202825
+      ],
+      "name" : "Salorno/Salurn"
    },
    {
       "ds100" : "HSAL",
@@ -65817,6 +66015,15 @@
       "name" : "Skaerbaek st"
    },
    {
+      "ds100" : "XTSKA",
+      "eva" : 5402813,
+      "latlong" : [
+         50.741788,
+         14.522289
+      ],
+      "name" : "Skalice u Ceske Lipy"
+   },
+   {
       "ds100" : "XDSG",
       "eva" : 8602175,
       "latlong" : [
@@ -67174,6 +67381,15 @@
          8.352862
       ],
       "name" : "Starckstraße, Karlsruhe"
+   },
+   {
+      "ds100" : "XTSSY",
+      "eva" : 5402925,
+      "latlong" : [
+         50.587398,
+         14.629315
+      ],
+      "name" : "Stare Splavy"
    },
    {
       "ds100" : "MST",
@@ -72360,6 +72576,15 @@
       "name" : "Velky Senov zast."
    },
    {
+      "ds100" : "XTVVN",
+      "eva" : 5403357,
+      "latlong" : [
+         50.742552,
+         14.733275
+      ],
+      "name" : "Velky Valtinov"
+   },
+   {
       "ds100" : "FNV",
       "eva" : 8004415,
       "latlong" : [
@@ -73096,6 +73321,15 @@
          12.327484
       ],
       "name" : "Vojtanov"
+   },
+   {
+      "ds100" : "XTVO",
+      "eva" : 5403687,
+      "latlong" : [
+         50.162676,
+         12.313001
+      ],
+      "name" : "Vojtanov obec"
    },
    {
       "ds100" : "HVOL",
@@ -78291,6 +78525,15 @@
       "name" : "Zaisenhausen"
    },
    {
+      "ds100" : "XTZBO",
+      "eva" : 5400565,
+      "latlong" : [
+         50.678639,
+         14.650035
+      ],
+      "name" : "Zakupy-Bozikov"
+   },
+   {
       "ds100" : "ONZAB",
       "eva" : 8400732,
       "latlong" : [
@@ -78370,6 +78613,15 @@
          15.818092
       ],
       "name" : "Zbaszynek"
+   },
+   {
+      "ds100" : "XTZDI",
+      "eva" : 5403563,
+      "latlong" : [
+         50.770131,
+         14.87668
+      ],
+      "name" : "Zdislava"
    },
    {
       "ds100" : "XBZD",
@@ -79180,6 +79432,15 @@
          7.356643
       ],
       "name" : "Zweibrücken Hbf"
+   },
+   {
+      "ds100" : "SZWR",
+      "eva" : 8006682,
+      "latlong" : [
+         49.253021,
+         7.380099
+      ],
+      "name" : "Zweibrücken-Rosengarten"
    },
    {
       "ds100" : "OSZWI",
