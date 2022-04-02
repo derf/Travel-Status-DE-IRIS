@@ -1,0 +1,5 @@
+#!/bin/sh
+jq '.[] | .ds100' stations.json | cut -d '"' -f 2 | shuf | while read line; do
+	echo $line
+	./find-missing $line | tee -a missing.txt
+done
