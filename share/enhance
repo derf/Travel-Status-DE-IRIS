@@ -19,9 +19,11 @@ for my $station ( @{$stations} ) {
 	if ( not $station->{latlong} ) {
 		say "Requesting location for $station->{name} ...";
 		my $res = $ua->get(
-			sprintf('https://marudor.de/api/station/v1/station/%07d', $station->{eva}) );
+			sprintf( 'https://v5.db.transport.rest/stops/%07d',
+				$station->{eva} )
+		);
 		if ( $res->is_error ) {
-			say '    marudor.de returned error ' . $res->status_line;
+			say '    transport.rest returned error ' . $res->status_line;
 		}
 		else {
 			my $content = $res->decoded_content;
@@ -31,7 +33,7 @@ for my $station ( @{$stations} ) {
 					$json->{location}{longitude} ];
 			}
 			else {
-				say '    marudor.de has no location';
+				say '    transport.rest has no location';
 			}
 		}
 	}
