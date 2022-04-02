@@ -99,6 +99,15 @@
       "name" : "Abcoude"
    },
    {
+      "ds100" : "OMADA",
+      "eva" : 5500151,
+      "latlong" : [
+         47.690426,
+         17.541119
+      ],
+      "name" : "Abda"
+   },
+   {
       "ds100" : "KAB",
       "eva" : 8007826,
       "latlong" : [
@@ -5382,6 +5391,15 @@
       "name" : "Bassum"
    },
    {
+      "ds100" : "OPBAT",
+      "eva" : 5100370,
+      "latlong" : [
+         51.090947,
+         15.155849
+      ],
+      "name" : "Batowice Lubanskie"
+   },
+   {
       "ds100" : "RBZE",
       "eva" : 8000821,
       "latlong" : [
@@ -9594,6 +9612,33 @@
       "name" : "Bogen"
    },
    {
+      "ds100" : "OPBGZ",
+      "eva" : 5100429,
+      "latlong" : [
+         50.750166,
+         16.201933
+      ],
+      "name" : "Boguszow Gorce"
+   },
+   {
+      "ds100" : "OPBGW",
+      "eva" : 5100428,
+      "latlong" : [
+         50.747487,
+         16.221592
+      ],
+      "name" : "Boguszow Gorce Wsch."
+   },
+   {
+      "ds100" : "OPBOD",
+      "eva" : 5100511,
+      "latlong" : [
+         50.761717,
+         16.168628
+      ],
+      "name" : "Boguszow Gorce Zach."
+   },
+   {
       "ds100" : "HBOM",
       "eva" : 8001071,
       "latlong" : [
@@ -13608,6 +13653,15 @@
       "name" : "Chemnitz-Borna Hp"
    },
    {
+      "ds100" : "DCEO",
+      "eva" : 8071827,
+      "latlong" : [
+         50.784046,
+         12.963955
+      ],
+      "name" : "Chemnitz-Erfenschlag Ost"
+   },
+   {
       "ds100" : "DCHA",
       "eva" : 8011977,
       "latlong" : [
@@ -13804,6 +13858,15 @@
          4.52054
       ],
       "name" : "Châtelet"
+   },
+   {
+      "ds100" : "OPCIE",
+      "eva" : 5100732,
+      "latlong" : [
+         50.864679,
+         15.98318
+      ],
+      "name" : "Ciechanowice"
    },
    {
       "ds100" : "XFCIG",
@@ -18970,6 +19033,15 @@
          12.973014
       ],
       "name" : "Einsiedel"
+   },
+   {
+      "ds100" : "DEDP",
+      "eva" : 8071828,
+      "latlong" : [
+         50.767713,
+         12.974149
+      ],
+      "name" : "Einsiedel August-Bebel-Platz"
    },
    {
       "ds100" : "DEDB",
@@ -24291,6 +24363,15 @@
       "name" : "Gatersleben"
    },
    {
+      "ds100" : "OAGTX",
+      "eva" : 8100332,
+      "latlong" : [
+         48.010595,
+         16.980974
+      ],
+      "name" : "Gattendorf"
+   },
+   {
       "ds100" : "FGAL",
       "eva" : 8000375,
       "latlong" : [
@@ -27142,6 +27223,15 @@
          14.378843
       ],
       "name" : "Grunow(Niederlausitz)"
+   },
+   {
+      "ds100" : "OPGR",
+      "eva" : 5100109,
+      "latlong" : [
+         51.033946,
+         15.428618
+      ],
+      "name" : "Gryfow Sl."
    },
    {
       "ds100" : "MGFL",
@@ -34983,6 +35073,15 @@
       "name" : "Janovice nad Uhlavou"
    },
    {
+      "ds100" : "OPJWE",
+      "eva" : 5101483,
+      "latlong" : [
+         50.878181,
+         15.91879
+      ],
+      "name" : "Janowice Wielkie"
+   },
+   {
       "ds100" : "AJHH",
       "eva" : 8003115,
       "latlong" : [
@@ -35073,6 +35172,15 @@
       "name" : "Jelenia Gora"
    },
    {
+      "ds100" : "OPJGA",
+      "eva" : 5100374,
+      "latlong" : [
+         50.910039,
+         15.742934
+      ],
+      "name" : "Jelenia Gora Zabobrze"
+   },
+   {
       "ds100" : "UJP",
       "eva" : 8011956,
       "latlong" : [
@@ -35161,6 +35269,15 @@
          10.882937
       ],
       "name" : "Jerxheim"
+   },
+   {
+      "ds100" : "OPJRM",
+      "eva" : 5101455,
+      "latlong" : [
+         51.129852,
+         15.05641
+      ],
+      "name" : "Jerzmanki"
    },
    {
       "ds100" : "XAXRB",
@@ -36853,6 +36970,15 @@
          8.3541943098573
       ],
       "name" : "Killwangen-Spreitenbach"
+   },
+   {
+      "ds100" : "OMKIM",
+      "eva" : 5500653,
+      "latlong" : [
+         47.804356,
+         17.341621
+      ],
+      "name" : "Kimle-Karolyhaza"
    },
    {
       "ds100" : "XAKB",
@@ -39139,6 +39265,15 @@
          10.696338
       ],
       "name" : "Kutzenhausen"
+   },
+   {
+      "ds100" : "OPKWC",
+      "eva" : 5101849,
+      "latlong" : [
+         50.925033,
+         15.502617
+      ],
+      "name" : "Kwieciszowice"
    },
    {
       "ds100" : "LKYA",
@@ -42345,6 +42480,15 @@
       "name" : "Leuven"
    },
    {
+      "ds100" : "OMLEE",
+      "eva" : 5500771,
+      "latlong" : [
+         47.889861,
+         17.192481
+      ],
+      "name" : "Level"
+   },
+   {
       "ds100" : "KBAY",
       "eva" : 8000832,
       "latlong" : [
@@ -43893,6 +44037,15 @@
       "name" : "Läufelfingen"
    },
    {
+      "ds100" : "OMLEM",
+      "eva" : 5500765,
+      "latlong" : [
+         47.756263,
+         17.425562
+      ],
+      "name" : "Lébény-Mosonszentmiklos"
+   },
+   {
       "ds100" : "DL",
       "eva" : 8010212,
       "latlong" : [
@@ -45268,6 +45421,15 @@
          14.0994595972377
       ],
       "name" : "Marchtrenk"
+   },
+   {
+      "ds100" : "OPMW",
+      "eva" : 5100078,
+      "latlong" : [
+         50.851402,
+         16.007469
+      ],
+      "name" : "Marciszow"
    },
    {
       "ds100" : "MMGH",
@@ -47052,6 +47214,15 @@
       "name" : "Mikulasovice dolni nadrazi"
    },
    {
+      "ds100" : "OPMKU",
+      "eva" : 5102272,
+      "latlong" : [
+         51.095019,
+         15.109087
+      ],
+      "name" : "Mikulowa"
+   },
+   {
       "ds100" : "XIMB",
       "eva" : 8300046,
       "latlong" : [
@@ -47356,6 +47527,15 @@
          14.886947
       ],
       "name" : "Mlada Boleslav hl.n."
+   },
+   {
+      "ds100" : "OPMLK",
+      "eva" : 5102284,
+      "latlong" : [
+         50.988443,
+         15.45021
+      ],
+      "name" : "Mlynsko"
    },
    {
       "ds100" : "XTMY",
@@ -50373,6 +50553,15 @@
       "name" : "Neudietendorf"
    },
    {
+      "ds100" : "OANEF",
+      "eva" : 8100388,
+      "latlong" : [
+         48.008824,
+         16.938257
+      ],
+      "name" : "Neudorf b.Parndorf"
+   },
+   {
       "ds100" : "DNDF",
       "eva" : 8012442,
       "latlong" : [
@@ -51289,6 +51478,15 @@
          7.261766
       ],
       "name" : "Nice Ville"
+   },
+   {
+      "ds100" : "OANC",
+      "eva" : 8100499,
+      "latlong" : [
+         47.942817,
+         17.086247
+      ],
+      "name" : "Nickelsdorf"
    },
    {
       "ds100" : "FND",
@@ -54441,6 +54639,15 @@
       "name" : "Olst(NL)"
    },
    {
+      "ds100" : "OPOLL",
+      "eva" : 5102567,
+      "latlong" : [
+         51.069588,
+         15.379968
+      ],
+      "name" : "Olszyna Lubanska"
+   },
+   {
       "ds100" : "XSOL",
       "eva" : 8500218,
       "latlong" : [
@@ -55386,6 +55593,15 @@
       "name" : "Palzem"
    },
    {
+      "ds100" : "OAPAM",
+      "eva" : 8100543,
+      "latlong" : [
+         48.042058,
+         17.041417
+      ],
+      "name" : "Pama"
+   },
+   {
       "ds100" : "NPK",
       "eva" : 8004749,
       "latlong" : [
@@ -55546,6 +55762,15 @@
          16.8716517108747
       ],
       "name" : "Parndorf"
+   },
+   {
+      "ds100" : "OAPO",
+      "eva" : 8100515,
+      "latlong" : [
+         47.99214,
+         16.851161
+      ],
+      "name" : "Parndorf Ort"
    },
    {
       "ds100" : "NPB",
@@ -58300,6 +58525,15 @@
          11.169457
       ],
       "name" : "Rebdorf-Hofmühle"
+   },
+   {
+      "ds100" : "OPRBI",
+      "eva" : 5103044,
+      "latlong" : [
+         50.948423,
+         15.455666
+      ],
+      "name" : "Rebiszow"
    },
    {
       "ds100" : "XSRM",
@@ -61144,6 +61378,15 @@
          6.4492656
       ],
       "name" : "Ruurlo"
+   },
+   {
+      "ds100" : "OPRYI",
+      "eva" : 5103213,
+      "latlong" : [
+         50.910318,
+         15.645599
+      ],
+      "name" : "Rybnica"
    },
    {
       "ds100" : "XTRY",
@@ -64485,6 +64728,15 @@
       "name" : "Sedlitz Ost"
    },
    {
+      "ds100" : "OPSEZ",
+      "eva" : 5103361,
+      "latlong" : [
+         50.81336,
+         16.069827
+      ],
+      "name" : "Sedzislaw"
+   },
+   {
       "ds100" : "USE",
       "eva" : 8012961,
       "latlong" : [
@@ -66895,6 +67147,15 @@
          10.671721
       ],
       "name" : "Stapelburg"
+   },
+   {
+      "ds100" : "OPSH",
+      "eva" : 5103390,
+      "latlong" : [
+         50.913913,
+         15.56653
+      ],
+      "name" : "Stara Kamienica"
    },
    {
       "ds100" : "XTSR",
@@ -69507,6 +69768,15 @@
       "name" : "Thalheim(Erzgeb)"
    },
    {
+      "ds100" : "DTAM",
+      "eva" : 8013117,
+      "latlong" : [
+         50.701291,
+         12.854233
+      ],
+      "name" : "Thalheim(Erzgeb) Mitte"
+   },
+   {
       "ds100" : "DTL",
       "eva" : 8070690,
       "latlong" : [
@@ -70416,6 +70686,15 @@
       "name" : "Trostberg"
    },
    {
+      "ds100" : "OPTRZ",
+      "eva" : 5103839,
+      "latlong" : [
+         50.884716,
+         15.867894
+      ],
+      "name" : "Trzcinsko"
+   },
+   {
       "ds100" : "XATS",
       "eva" : 8100118,
       "latlong" : [
@@ -70675,6 +70954,15 @@
          8.637579
       ],
       "name" : "Ubbedissen"
+   },
+   {
+      "ds100" : "OPUB",
+      "eva" : 5103894,
+      "latlong" : [
+         51.055592,
+         15.42015
+      ],
+      "name" : "Ubocze"
    },
    {
       "ds100" : "RUO",
@@ -73278,6 +73566,15 @@
       "name" : "Wakendorf"
    },
    {
+      "ds100" : "XPWL",
+      "eva" : 5100064,
+      "latlong" : [
+         50.743909,
+         16.278602
+      ],
+      "name" : "Walbrzych Glowny"
+   },
+   {
       "ds100" : "XAWA",
       "eva" : 8100127,
       "latlong" : [
@@ -75636,6 +75933,15 @@
       "name" : "Wien Franz-Josefs-Bahnhof"
    },
    {
+      "ds100" : "OASMN",
+      "eva" : 8101556,
+      "latlong" : [
+         48.167403,
+         16.406707
+      ],
+      "name" : "Wien Grillgasse"
+   },
+   {
       "ds100" : "OAHAN",
       "eva" : 8101934,
       "latlong" : [
@@ -76635,6 +76941,15 @@
       "name" : "Wissingen"
    },
    {
+      "ds100" : "OPWTO",
+      "eva" : 5104173,
+      "latlong" : [
+         50.79415,
+         16.127331
+      ],
+      "name" : "Witkow Sl."
+   },
+   {
       "ds100" : "EWIK",
       "eva" : 8006505,
       "latlong" : [
@@ -76840,6 +77155,15 @@
          6.155867
       ],
       "name" : "Woippy"
+   },
+   {
+      "ds100" : "OPWOJ",
+      "eva" : 5104100,
+      "latlong" : [
+         50.884608,
+         15.821887
+      ],
+      "name" : "Wojanow"
    },
    {
       "ds100" : "RWO",
@@ -77994,6 +78318,15 @@
       "name" : "Zapfendorf"
    },
    {
+      "ds100" : "OPZRE",
+      "eva" : 5104380,
+      "latlong" : [
+         51.098138,
+         15.21827
+      ],
+      "name" : "Zareba"
+   },
+   {
       "ds100" : "WZAR",
       "eva" : 8013373,
       "latlong" : [
@@ -78804,6 +79137,15 @@
       "name" : "Zuidhorn"
    },
    {
+      "ds100" : "OAZU",
+      "eva" : 8101829,
+      "latlong" : [
+         47.968058,
+         17.024041
+      ],
+      "name" : "Zurndorf"
+   },
+   {
       "ds100" : "RZHN",
       "eva" : 8006678,
       "latlong" : [
@@ -79225,6 +79567,15 @@
          8.813508
       ],
       "name" : "Ötisheim"
+   },
+   {
+      "ds100" : "OMOTT",
+      "eva" : 5501019,
+      "latlong" : [
+         47.719677,
+         17.488783
+      ],
+      "name" : "Ötteveny"
    },
    {
       "ds100" : "XAOE",
