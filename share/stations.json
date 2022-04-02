@@ -1944,6 +1944,15 @@
       "name" : "Angern-Rogätz"
    },
    {
+      "ds100" : "OAANN",
+      "eva" : 8100619,
+      "latlong" : [
+         48.38487,
+         16.826647
+      ],
+      "name" : "Angern/March"
+   },
+   {
       "ds100" : "FANG",
       "eva" : 8000580,
       "latlong" : [
@@ -4536,6 +4545,15 @@
       "name" : "Bad Vilbel-Gronau"
    },
    {
+      "ds100" : "OABV",
+      "eva" : 8100708,
+      "latlong" : [
+         47.969569,
+         16.224028
+      ],
+      "name" : "Bad Vöslau"
+   },
+   {
       "ds100" : "TBWA",
       "eva" : 8000763,
       "latlong" : [
@@ -4678,6 +4696,15 @@
          10.228767
       ],
       "name" : "Baddeckenstedt"
+   },
+   {
+      "ds100" : "OABA",
+      "eva" : 8100025,
+      "latlong" : [
+         48.004042,
+         16.242798
+      ],
+      "name" : "Baden b.Wien"
    },
    {
       "ds100" : "XSBA",
@@ -7819,6 +7846,15 @@
          8.475368
       ],
       "name" : "Berne"
+   },
+   {
+      "ds100" : "OABT",
+      "eva" : 8100457,
+      "latlong" : [
+         48.688004,
+         16.879009
+      ],
+      "name" : "Bernhardsthal"
    },
    {
       "ds100" : "MBER",
@@ -15453,6 +15489,15 @@
       "name" : "Deuten"
    },
    {
+      "ds100" : "OADEW",
+      "eva" : 8100721,
+      "latlong" : [
+         48.302942,
+         16.563605
+      ],
+      "name" : "Deutsch Wagram"
+   },
+   {
       "ds100" : "LDTZ",
       "eva" : 8011371,
       "latlong" : [
@@ -17235,6 +17280,15 @@
       "name" : "Dronten"
    },
    {
+      "ds100" : "OADI",
+      "eva" : 8100221,
+      "latlong" : [
+         48.539907,
+         16.895693
+      ],
+      "name" : "Drösing"
+   },
+   {
       "ds100" : "XTDU",
       "eva" : 5400051,
       "latlong" : [
@@ -17674,6 +17728,15 @@
          6.49047
       ],
       "name" : "Düren-Lendersdorf"
+   },
+   {
+      "ds100" : "OADKT",
+      "eva" : 8100724,
+      "latlong" : [
+         48.470627,
+         16.86077
+      ],
+      "name" : "Dürnkrut"
    },
    {
       "ds100" : "RDBG",
@@ -34965,6 +35028,15 @@
       "name" : "Jechtingen"
    },
    {
+      "ds100" : "OAJE",
+      "eva" : 8101012,
+      "latlong" : [
+         48.494934,
+         16.878245
+      ],
+      "name" : "Jedenspeigen"
+   },
+   {
       "ds100" : "XTJL",
       "eva" : 5400282,
       "latlong" : [
@@ -41958,6 +42030,15 @@
       "name" : "Leoben Hbf"
    },
    {
+      "ds100" : "OALOD",
+      "eva" : 8101163,
+      "latlong" : [
+         47.93878,
+         16.230941
+      ],
+      "name" : "Leobersdorf"
+   },
+   {
       "ds100" : "XALG",
       "eva" : 8100051,
       "latlong" : [
@@ -48049,6 +48130,15 @@
          9.357979
       ],
       "name" : "Möckmühl"
+   },
+   {
+      "ds100" : "OAMOD",
+      "eva" : 8101230,
+      "latlong" : [
+         48.08579,
+         16.295744
+      ],
+      "name" : "Mödling"
    },
    {
       "ds100" : "LMGI",
@@ -57645,6 +57735,15 @@
       "name" : "Rabenau"
    },
    {
+      "ds100" : "OARAB",
+      "eva" : 8101416,
+      "latlong" : [
+         48.652012,
+         16.894579
+      ],
+      "name" : "Rabensburg"
+   },
+   {
       "ds100" : "LRAK",
       "eva" : 8012696,
       "latlong" : [
@@ -65097,6 +65196,15 @@
       "name" : "Sierksdorf"
    },
    {
+      "ds100" : "OASIM",
+      "eva" : 8101524,
+      "latlong" : [
+         48.511339,
+         16.891136
+      ],
+      "name" : "Sierndorf an der March"
+   },
+   {
       "ds100" : "XSSI",
       "eva" : 8501509,
       "latlong" : [
@@ -67473,6 +67581,15 @@
       "name" : "Stift Keppel-Allenbach"
    },
    {
+      "ds100" : "OASLD",
+      "eva" : 8101536,
+      "latlong" : [
+         48.411577,
+         16.84654
+      ],
+      "name" : "Stillfried"
+   },
+   {
       "ds100" : "RSTK",
       "eva" : 8077774,
       "latlong" : [
@@ -68767,6 +68884,15 @@
          12.567336
       ],
       "name" : "Tacherting"
+   },
+   {
+      "ds100" : "OATAL",
+      "eva" : 8101644,
+      "latlong" : [
+         48.364024,
+         16.786987
+      ],
+      "name" : "Tallesbrunn"
    },
    {
       "ds100" : "XBTA",
@@ -74268,6 +74394,15 @@
       "name" : "Weiherhof"
    },
    {
+      "ds100" : "OAWDL",
+      "eva" : 8101748,
+      "latlong" : [
+         48.349623,
+         16.75912
+      ],
+      "name" : "Weikendorf-Dörfles"
+   },
+   {
       "ds100" : "TWM",
       "eva" : 8006269,
       "latlong" : [
@@ -75501,6 +75636,15 @@
       "name" : "Wien Franz-Josefs-Bahnhof"
    },
    {
+      "ds100" : "OAHAN",
+      "eva" : 8101934,
+      "latlong" : [
+         48.241978,
+         16.38525
+      ],
+      "name" : "Wien Handelskai (Bahnsteige 1-2)"
+   },
+   {
       "ds100" : "XAWIE",
       "eva" : 8103000,
       "latlong" : [
@@ -75517,6 +75661,15 @@
          16.392876
       ],
       "name" : "Wien Hbf (Autoreisezuganlage)"
+   },
+   {
+      "ds100" : "OASRP",
+      "eva" : 8101590,
+      "latlong" : [
+         48.185705,
+         16.374553
+      ],
+      "name" : "Wien Hbf (Bahnsteige 1-2)"
    },
    {
       "ds100" : "XAHN",
@@ -75555,6 +75708,24 @@
       "name" : "Wien Kaiserebersdorf"
    },
    {
+      "ds100" : "OALOP",
+      "eva" : 8101170,
+      "latlong" : [
+         48.277098,
+         16.44777
+      ],
+      "name" : "Wien Leopoldau"
+   },
+   {
+      "ds100" : "OALIE",
+      "eva" : 8101150,
+      "latlong" : [
+         48.134916,
+         16.284274
+      ],
+      "name" : "Wien Liesing"
+   },
+   {
       "ds100" : "XAWG",
       "eva" : 8100514,
       "latlong" : [
@@ -75591,6 +75762,33 @@
       "name" : "Wien Praterstern"
    },
    {
+      "ds100" : "OASBF",
+      "eva" : 8101473,
+      "latlong" : [
+         48.188042,
+         16.381978
+      ],
+      "name" : "Wien Quartier Belvedere"
+   },
+   {
+      "ds100" : "OAREN",
+      "eva" : 8101433,
+      "latlong" : [
+         48.195279,
+         16.386104
+      ],
+      "name" : "Wien Rennweg"
+   },
+   {
+      "ds100" : "OAFLO",
+      "eva" : 8100796,
+      "latlong" : [
+         48.270914,
+         16.420703
+      ],
+      "name" : "Wien Siemensstraße"
+   },
+   {
       "ds100" : "XAWSG",
       "eva" : 8101553,
       "latlong" : [
@@ -75616,6 +75814,15 @@
          16.4850262303651
       ],
       "name" : "Wien Süßenbrunn"
+   },
+   {
+      "ds100" : "OATAG",
+      "eva" : 8101641,
+      "latlong" : [
+         48.234894,
+         16.383299
+      ],
+      "name" : "Wien Traisengasse"
    },
    {
       "ds100" : "XAWW",
