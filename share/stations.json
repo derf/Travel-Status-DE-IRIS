@@ -11907,6 +11907,15 @@
       "name" : "Budapest-Ferencváros"
    },
    {
+      "ds100" : "XMBL",
+      "eva" : 5500008,
+      "latlong" : [
+         47.464355,
+         19.020456
+      ],
+      "name" : "Budapest-Kelenföld"
+   },
+   {
       "ds100" : "XMBK",
       "eva" : 5500003,
       "latlong" : [
@@ -21303,15 +21312,6 @@
       "name" : "Eupen"
    },
    {
-      "ds100" : "RKSEP",
-      "eva" : 721358,
-      "latlong" : [
-         49.010104,
-         8.393553
-      ],
-      "name" : "Europaplatz/Postgal. (Kaiser), Karlsruhe"
-   },
-   {
       "ds100" : "PQKEU",
       "eva" : 501004,
       "latlong" : [
@@ -21319,6 +21319,15 @@
          8.39432
       ],
       "name" : "Europaplatz/Postgalerie (U), Karlsruhe"
+   },
+   {
+      "ds100" : "RKSEP",
+      "eva" : 721358,
+      "latlong" : [
+         49.010104,
+         8.393553
+      ],
+      "name" : "Europaplatz/Postgalerie, Karlsruhe"
    },
    {
       "ds100" : "KEU",
@@ -24261,7 +24270,7 @@
          49.483188,
          10.967191
       ],
-      "name" : "Fürth-Unterfarrnbach"
+      "name" : "Fürth-Klinikum"
    },
    {
       "ds100" : "NFUF",
@@ -36909,15 +36918,6 @@
       "name" : "Keitum"
    },
    {
-      "ds100" : "XMBL",
-      "eva" : 5500008,
-      "latlong" : [
-         47.464355,
-         19.020456
-      ],
-      "name" : "Kelenföld"
-   },
-   {
       "ds100" : "FKE",
       "eva" : 8007161,
       "latlong" : [
@@ -40074,7 +40074,7 @@
          50.676888,
          7.189242
       ],
-      "name" : "Königswinter, Clem.-August-Str."
+      "name" : "Königswinter, Clemens-August-Str."
    },
    {
       "ds100" : "UKZ",
@@ -42603,7 +42603,7 @@
          47.926722,
          1.906285
       ],
-      "name" : "Les-Aubrais-Orleans"
+      "name" : "Les Aubrais - Orléans"
    },
    {
       "ds100" : "XZLB",
@@ -60297,7 +60297,7 @@
          48.152021,
          7.770728
       ],
-      "name" : "Riegel-Malterdingen NE"
+      "name" : "Riegel-Malterdingen (SWEG)"
    },
    {
       "ds100" : "RRIE",
