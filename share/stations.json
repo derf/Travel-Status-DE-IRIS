@@ -2277,6 +2277,15 @@
       "name" : "Arbste"
    },
    {
+      "ds100" : "OIACS",
+      "eva" : 8301116,
+      "latlong" : [
+         45.85838,
+         8.86242
+      ],
+      "name" : "Arcisate"
+   },
+   {
       "ds100" : "EARE",
       "eva" : 8000597,
       "latlong" : [
@@ -12348,6 +12357,15 @@
       "name" : "Busto Arsizio"
    },
    {
+      "ds100" : "PIBAN",
+      "eva" : 8303051,
+      "latlong" : [
+         45.606161,
+         8.851399
+      ],
+      "name" : "Busto Arsizio Nord"
+   },
+   {
       "ds100" : "NBT",
       "eva" : 8001310,
       "latlong" : [
@@ -13059,6 +13077,15 @@
       "name" : "Cannes-la-Bocca"
    },
    {
+      "ds100" : "PICAG",
+      "eva" : 8301206,
+      "latlong" : [
+         45.837831,
+         8.90742
+      ],
+      "name" : "Cantello Gaggiolo"
+   },
+   {
       "ds100" : "ONCS",
       "eva" : 8400147,
       "latlong" : [
@@ -13327,6 +13354,15 @@
          4.348892
       ],
       "name" : "Chalons en Champagne"
+   },
+   {
+      "ds100" : "XPCP",
+      "eva" : 5100708,
+      "latlong" : [
+         49.925477,
+         18.311557
+      ],
+      "name" : "Chalupki"
    },
    {
       "ds100" : "NCH",
@@ -17676,6 +17712,15 @@
       "name" : "Dyreby st"
    },
    {
+      "ds100" : "OPDW",
+      "eva" : 5100100,
+      "latlong" : [
+         53.237993,
+         20.168
+      ],
+      "name" : "Dzialdowo"
+   },
+   {
       "ds100" : "XSDN",
       "eva" : 8502111,
       "latlong" : [
@@ -21751,6 +21796,15 @@
          8.009227
       ],
       "name" : "Ferndorf(Siegen)"
+   },
+   {
+      "ds100" : "PIFLP",
+      "eva" : 8319371,
+      "latlong" : [
+         45.608399,
+         8.755646
+      ],
+      "name" : "Ferno-Lonate Pozzolo"
    },
    {
       "ds100" : "XIFE",
@@ -34704,6 +34758,15 @@
       "name" : "Imsweiler"
    },
    {
+      "ds100" : "OIIO",
+      "eva" : 8301609,
+      "latlong" : [
+         45.846478,
+         8.8377
+      ],
+      "name" : "Induno-Olona"
+   },
+   {
       "ds100" : "KING",
       "eva" : 8003073,
       "latlong" : [
@@ -39400,6 +39463,15 @@
          12.390945
       ],
       "name" : "Kyritz"
+   },
+   {
+      "ds100" : "WKYA",
+      "eva" : 8017159,
+      "latlong" : [
+         52.949017,
+         12.38994
+      ],
+      "name" : "Kyritz Am Bürgerpark"
    },
    {
       "ds100" : "XTKT",
@@ -45178,6 +45250,15 @@
          13.001263
       ],
       "name" : "Malmö Central"
+   },
+   {
+      "ds100" : "XIFMA",
+      "eva" : 8303905,
+      "latlong" : [
+         45.627132,
+         8.711275
+      ],
+      "name" : "Malpensa Aeroporto"
    },
    {
       "ds100" : "RMS",
@@ -61569,6 +61650,15 @@
       "name" : "Rybnica"
    },
    {
+      "ds100" : "OPRY",
+      "eva" : 5100262,
+      "latlong" : [
+         50.089135,
+         18.547641
+      ],
+      "name" : "Rybnik(PL)"
+   },
+   {
       "ds100" : "XTRY",
       "eva" : 5400255,
       "latlong" : [
@@ -64701,6 +64791,15 @@
       "name" : "Schönewörde"
    },
    {
+      "ds100" : "OASLS",
+      "eva" : 8101545,
+      "latlong" : [
+         48.251102,
+         16.80723
+      ],
+      "name" : "Schönfeld-Lassee"
+   },
+   {
       "ds100" : "BSOE",
       "eva" : 8012914,
       "latlong" : [
@@ -65500,6 +65599,15 @@
          8.042565
       ],
       "name" : "Siebeldingen-Birkweiler"
+   },
+   {
+      "ds100" : "OASBL",
+      "eva" : 8101477,
+      "latlong" : [
+         48.245609,
+         16.704475
+      ],
+      "name" : "Siebenbrunn-Leopoldsdorf"
    },
    {
       "ds100" : "XSSW",
@@ -72333,6 +72441,15 @@
       "name" : "Varel(Oldb)"
    },
    {
+      "ds100" : "XIVRS",
+      "eva" : 8300050,
+      "latlong" : [
+         45.816212,
+         8.833295
+      ],
+      "name" : "Varese"
+   },
+   {
       "ds100" : "XTVD",
       "eva" : 5400220,
       "latlong" : [
@@ -75195,6 +75312,15 @@
       "name" : "Weinheim-Lützelsachsen"
    },
    {
+      "ds100" : "RWEZ",
+      "eva" : 8006283,
+      "latlong" : [
+         49.575797,
+         8.65636
+      ],
+      "name" : "Weinheim-Sulzbach"
+   },
+   {
       "ds100" : "TWR",
       "eva" : 8006289,
       "latlong" : [
@@ -76147,6 +76273,15 @@
          9.916483
       ],
       "name" : "Wiemersdorf"
+   },
+   {
+      "ds100" : "PAWAN",
+      "eva" : 8102888,
+      "latlong" : [
+         48.234804,
+         16.504501
+      ],
+      "name" : "Wien Aspern Nord"
    },
    {
       "ds100" : "XAWFL",
@@ -77344,6 +77479,15 @@
          8.998558
       ],
       "name" : "Witzwort"
+   },
+   {
+      "ds100" : "XPWOD",
+      "eva" : 5104095,
+      "latlong" : [
+         50.007989,
+         18.476374
+      ],
+      "name" : "Wodzislaw Sl."
    },
    {
       "ds100" : "XNWO",
