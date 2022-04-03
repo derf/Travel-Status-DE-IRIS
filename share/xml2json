@@ -13,6 +13,24 @@ my $json_str = read_file('stations.json');
 my $stations = JSON->new->utf8->decode($json_str);
 @{$stations} = sort { $a->{name} cmp $b->{name} } @{$stations};
 
+my %station_by_ds100;
+for my $station ( @{$stations} ) {
+	$station_by_ds100{ $station->{ds100} } = $station;
+}
+
+my %station_by_eva;
+for my $station ( @{$stations} ) {
+	$station_by_eva{ $station->{eva} } = $station;
+}
+
+my %station_by_name;
+for my $station ( @{$stations} ) {
+	$station_by_name{ $station->{name} } = $station;
+}
+
+my %xml_by_name;
+my %xml_by_eva;
+
 my $xml_str = read_file('stations.xml');
 my $tree    = XML::LibXML->load_xml( string => $xml_str );
 
@@ -31,46 +49,51 @@ for my $station ( $tree->findnodes('//station') ) {
 	my $ds100 = $station->getAttribute('ds100');
 	my $is_db = $station->getAttribute('db') eq 'true';
 
+	my $xml_station = {
+		name  => $name,
+		eva   => $eva,
+		ds100 => $ds100,
+		is_db => $is_db,
+	};
+	$xml_by_name{$name} = $xml_station;
+	$xml_by_eva{$eva}   = $xml_station;
+
 	my $found = 0;
 
-	for my $j_station ( @{$stations} ) {
-		my $j_name  = $j_station->{name};
-		my $j_ds100 = $j_station->{ds100};
-		my $j_eva   = $j_station->{eva};
+	if ( $station_by_name{$name} or $station_by_eva{$eva} ) {
+		$found = 1;
+	}
 
-		if ( $name eq $j_name or $eva == $j_eva ) {
-			$found = 1;
-		}
+	if (    $station_by_ds100{$ds100}
+		and $station_by_ds100{$ds100}{name} ne $name )
+	{
+		printf( "%8s has been renamed: %30s -> %30s\n",
+			$ds100, $station_by_ds100{$ds100}{name}, $name );
 
-		if ( $j_ds100 eq $ds100 and $j_name ne $name ) {
-			printf( "%8s has been renamed: %30s -> %30s\n",
-				$ds100, $j_name, $name );
-
-			#$j_station->{name} = $name;
-			last;
-		}
-		elsif ( $j_eva == $eva and $j_name ne $name ) {
-			printf( "%d mismatch: (%s -> %s), (%s -> %s)\n",
-				$eva, $j_name, $name, $j_ds100, $ds100 );
-			last;
-		}
-		elsif ( $j_name eq $name
-			and $j_ds100 ne $ds100
-			and $is_db
-			and $ds100 !~ m{ ^ PQ }x )
-		{
-			printf( "%30s has been recoded: %8s -> %8s\n",
-				$name, $j_ds100, $ds100 );
-			last;
-		}
-		elsif ( $j_name eq $name
-			and $j_eva != $eva
-			and $is_db
-			and $ds100 !~ m{ ^ PQ }x )
-		{
-			printf( "%30s has been recoded: %d -> %d\n", $name, $j_eva, $eva );
-			last;
-		}
+		#$station_by_ds100{$ds100}{name} = $name;
+	}
+	elsif ( $station_by_eva{$eva} and $station_by_eva{$eva}{name} ne $name ) {
+		printf(
+			"%d mismatch: (%s -> %s), (%s -> %s)\n",
+			$eva,  $station_by_eva{$eva}{name},
+			$name, $station_by_eva{$eva}{ds100}, $ds100
+		);
+	}
+	elsif ( $station_by_name{$name}
+		and $station_by_name{$name}{ds100} ne $ds100
+		and $is_db
+		and $ds100 !~ m{ ^ PQ }x )
+	{
+		printf( "%30s has been recoded: %8s -> %8s\n",
+			$name, $station_by_name{$name}{ds100}, $ds100 );
+	}
+	elsif ( $station_by_name{$name}
+		and $station_by_name{$name}{eva} ne $eva
+		and $is_db
+		and $ds100 !~ m{ ^ PQ }x )
+	{
+		printf( "%30s has been recoded: %d -> %d\n",
+			$name, $station_by_name{$name}{eva}, $eva );
 	}
 
 	if ( not $found
@@ -96,19 +119,7 @@ for my $i ( 0 .. $#{$stations} ) {
 	my $j_ds100   = $j_station->{ds100};
 	my $j_eva     = $j_station->{eva};
 
-	my $found = 0;
-
-	for my $station ( $tree->findnodes('//station') ) {
-		my $name  = $station->getAttribute('name');
-		my $eva   = $station->getAttribute('eva');
-		my $ds100 = $station->getAttribute('ds100');
-		my $is_db = $station->getAttribute('db') eq 'true';
-		if ( $name eq $j_name or $eva == $j_eva ) {
-			$found = 1;
-		}
-	}
-
-	if ( not $found ) {
+	if ( not( $xml_by_name{$j_name} or $xml_by_eva{$j_eva} ) ) {
 		say "station no longer exists: $j_eva  $j_ds100  \"$j_name\"";
 		unshift( @to_delete, $i );
 	}
