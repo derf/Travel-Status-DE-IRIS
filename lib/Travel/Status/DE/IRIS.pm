@@ -455,10 +455,12 @@ sub get_station {
 
 	# @seen holds station IDs which were already seen during recursive
 	# 'meta' descent. This avoids infinite loops of 'meta' references.
-	# As Norddeich and Norddeich Mole are illegaly coupled in the backend
-	# (they are different stations with different departure times), we pre-seed
-	# @seen with their eva IDs.
-	my @seen = ( 8007768, 8004449 );
+	# Additionally, we use it to skip stations shat should not be referenced.
+	# This includes Norddeich / Norddeich Mole (different stations commonly used
+	# by identical trains with different departure times), and Essen-Dellwig /
+	# Essen-Dellwig Ost (different stations used by different trains, but with
+	# identical platform numbers).
+	my @seen = ( 8007768, 8004449, 8001903, 8001904 );
 
 	while ( @queue and $iter_depth < 12 ) {
 		my $station = shift(@queue);
