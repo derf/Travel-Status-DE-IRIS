@@ -2925,8 +2925,8 @@
       "name" : "Aufhausen(b Erding)"
    },
    {
-      "ds100" : "PQKAG",
-      "eva" : 150074,
+      "ds100" : "RKAG",
+      "eva" : 721323,
       "latlong" : [
          48.99874,
          8.40384
@@ -16299,7 +16299,7 @@
       "name" : "Dießen"
    },
    {
-      "ds100" : "XLDI",
+      "ds100" : "OLDI",
       "eva" : 8200920,
       "latlong" : [
          49.528329,
@@ -19071,7 +19071,7 @@
       "name" : "Eggenstein Spöcker Weg, Eggenstein-Leopoldshafen"
    },
    {
-      "ds100" : "PQEGS",
+      "ds100" : "REGS",
       "eva" : 720703,
       "latlong" : [
          49.071428,
@@ -41139,7 +41139,7 @@
       "name" : "Lancken"
    },
    {
-      "ds100" : "OPLAT",
+      "ds100" : "XPLAN",
       "eva" : 5101932,
       "latlong" : [
          50.081431,
@@ -52290,7 +52290,7 @@
       "name" : "Neuruppin Rheinsberger Tor"
    },
    {
-      "ds100" : "WNR",
+      "ds100" : "WNRW",
       "eva" : 8010246,
       "latlong" : [
          52.926244,
@@ -80946,7 +80946,7 @@
       "name" : "Zittau Vorstadt"
    },
    {
-      "ds100" : "XSZI",
+      "ds100" : "PSZI",
       "eva" : 8509054,
       "latlong" : [
          46.9348427166025,
