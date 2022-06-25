@@ -11412,15 +11412,6 @@
       "name" : "Brniste"
    },
    {
-      "ds100" : "XTBDN",
-      "eva" : 5438015,
-      "latlong" : [
-         49.182897,
-         16.615733
-      ],
-      "name" : "Brno dolni nadrazi"
-   },
-   {
       "ds100" : "XTBR",
       "eva" : 5400001,
       "latlong" : [
@@ -51480,15 +51471,6 @@
       "name" : "Nestemice"
    },
    {
-      "ds100" : "D730823",
-      "eva" : 730823,
-      "latlong" : [
-         52.544431,
-         13.370133
-      ],
-      "name" : "Nettelbeckplatz/Wedding (S), Berlin"
-   },
-   {
       "ds100" : "KNEH",
       "eva" : 8004242,
       "latlong" : [
@@ -57940,15 +57922,6 @@
          10.908698
       ],
       "name" : "Plaue(Thür)"
-   },
-   {
-      "ds100" : "DPU",
-      "eva" : 8013463,
-      "latlong" : [
-         50.48624,
-         12.129382
-      ],
-      "name" : "Plauen(V) unt Bf"
    },
    {
       "ds100" : "DPM",
@@ -69667,15 +69640,6 @@
          10.956538
       ],
       "name" : "Stolberg(Harz)"
-   },
-   {
-      "ds100" : "KST G",
-      "eva" : 8099506,
-      "latlong" : [
-         50.797555,
-         6.22488
-      ],
-      "name" : "Stolberg(Rheinl)Gbf"
    },
    {
       "ds100" : "KST",
