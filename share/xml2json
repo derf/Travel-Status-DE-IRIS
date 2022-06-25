@@ -114,6 +114,7 @@ for my $station ( $tree->findnodes('//station') ) {
 my @to_delete;
 
 for my $i ( 0 .. $#{$stations} ) {
+	$stations->[$i]{eva} = 0 + $stations->[$i]{eva};
 	my $j_station = $stations->[$i];
 	my $j_name    = $j_station->{name};
 	my $j_ds100   = $j_station->{ds100};
