@@ -468,6 +468,15 @@
       "name" : "Ahrensfelde Nord"
    },
    {
+      "ds100" : "AARF",
+      "eva" : 8071338,
+      "latlong" : [
+         53.233409,
+         8.818139
+      ],
+      "name" : "Ahrensfelde(Bz. Bremen)"
+   },
+   {
       "ds100" : "KAH",
       "eva" : 8000448,
       "latlong" : [
@@ -11338,6 +11347,15 @@
          8.465779
       ],
       "name" : "Brigachtal Klengen"
+   },
+   {
+      "ds100" : "ABRI",
+      "eva" : 8071333,
+      "latlong" : [
+         53.414533,
+         9.013664
+      ],
+      "name" : "Brillit"
    },
    {
       "ds100" : "EBRS",
@@ -24732,6 +24750,15 @@
       "name" : "Gallarate"
    },
    {
+      "ds100" : "WGAL",
+      "eva" : 8011593,
+      "latlong" : [
+         53.516641,
+         12.129379
+      ],
+      "name" : "Gallin"
+   },
+   {
       "ds100" : "TGAM",
       "eva" : 8002177,
       "latlong" : [
@@ -37125,6 +37152,15 @@
       "name" : "Karlstadt(Main)"
    },
    {
+      "ds100" : "WKA",
+      "eva" : 8010188,
+      "latlong" : [
+         53.540373,
+         12.272118
+      ],
+      "name" : "Karow(Meckl)"
+   },
+   {
       "ds100" : "MKH",
       "eva" : 8003191,
       "latlong" : [
@@ -45376,6 +45412,15 @@
          11.411316
       ],
       "name" : "Lübstorf"
+   },
+   {
+      "ds100" : "WLZ",
+      "eva" : 8012265,
+      "latlong" : [
+         53.466877,
+         12.025535
+      ],
+      "name" : "Lübz"
    },
    {
       "ds100" : "ELS",
@@ -57024,6 +57069,15 @@
       "name" : "Passau Hbf"
    },
    {
+      "ds100" : "WPAW",
+      "eva" : 8012612,
+      "latlong" : [
+         53.50811,
+         12.054112
+      ],
+      "name" : "Passow(Meckl)"
+   },
+   {
       "ds100" : "WPS",
       "eva" : 8012611,
       "latlong" : [
@@ -58786,6 +58840,15 @@
          13.838399
       ],
       "name" : "Probostov"
+   },
+   {
+      "ds100" : "APSH",
+      "eva" : 8007318,
+      "latlong" : [
+         54.364899,
+         10.291408
+      ],
+      "name" : "Probsteierhagen"
    },
    {
       "ds100" : "UPR",
@@ -66112,6 +66175,15 @@
          12.04008
       ],
       "name" : "Schönhausen(Elbe)"
+   },
+   {
+      "ds100" : "ASCK",
+      "eva" : 8007314,
+      "latlong" : [
+         54.332691,
+         10.229356
+      ],
+      "name" : "Schönkirchen Bf"
    },
    {
       "ds100" : "RSOM",
