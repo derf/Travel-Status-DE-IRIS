@@ -26325,6 +26325,15 @@
       "name" : "Gnevkow"
    },
    {
+      "ds100" : "OAGNI",
+      "eva" : 8100857,
+      "latlong" : [
+         46.961986,
+         15.852711
+      ],
+      "name" : "Gniebing"
+   },
+   {
       "ds100" : "XPGN",
       "eva" : 5100013,
       "latlong" : [
@@ -26917,6 +26926,15 @@
          15.448298
       ],
       "name" : "Graz Ostbahnhof-Messe"
+   },
+   {
+      "ds100" : "OAGLM",
+      "eva" : 8103487,
+      "latlong" : [
+         47.039949,
+         15.462831
+      ],
+      "name" : "Graz-Liebenau Murpark"
    },
    {
       "ds100" : "FGSN",
@@ -30501,6 +30519,15 @@
       "name" : "Harsum"
    },
    {
+      "ds100" : "PAHA",
+      "eva" : 8102050,
+      "latlong" : [
+         47.041693,
+         15.507363
+      ],
+      "name" : "Hart b. Graz"
+   },
+   {
       "ds100" : "DHST",
       "eva" : 8011823,
       "latlong" : [
@@ -33469,6 +33496,15 @@
          16.9007221022991
       ],
       "name" : "Hohenau"
+   },
+   {
+      "ds100" : "OAHHR",
+      "eva" : 8100945,
+      "latlong" : [
+         46.944322,
+         16.060353
+      ],
+      "name" : "Hohenbrugg an der Raab"
    },
    {
       "ds100" : "MHOB",
@@ -42138,6 +42174,24 @@
       "name" : "Laveno Mombello"
    },
    {
+      "ds100" : "OALH",
+      "eva" : 8100194,
+      "latlong" : [
+         47.078899,
+         15.588473
+      ],
+      "name" : "Laßnitzhöhe"
+   },
+   {
+      "ds100" : "OALNT",
+      "eva" : 8101161,
+      "latlong" : [
+         47.088167,
+         15.656341
+      ],
+      "name" : "Laßnitzthal"
+   },
+   {
       "ds100" : "XFBLM",
       "eva" : 8703684,
       "latlong" : [
@@ -45079,6 +45133,15 @@
          14.215417
       ],
       "name" : "Löcknitz"
+   },
+   {
+      "ds100" : "OALOF",
+      "eva" : 8101164,
+      "latlong" : [
+         46.954641,
+         15.9461
+      ],
+      "name" : "Lödersdorf"
    },
    {
       "ds100" : "HLOD",
@@ -48706,6 +48769,15 @@
          6.641535
       ],
       "name" : "Moers"
+   },
+   {
+      "ds100" : "OAMOG",
+      "eva" : 8101231,
+      "latlong" : [
+         46.945481,
+         16.228604
+      ],
+      "name" : "Mogersdorf"
    },
    {
       "ds100" : "WMOI",
@@ -61830,6 +61902,15 @@
       "name" : "Rohr-Bad Hall"
    },
    {
+      "ds100" : "OARRH",
+      "eva" : 8101454,
+      "latlong" : [
+         46.976314,
+         15.812412
+      ],
+      "name" : "Rohr/Raab"
+   },
+   {
       "ds100" : "MRBI",
       "eva" : 8000256,
       "latlong" : [
@@ -70029,6 +70110,15 @@
       "name" : "Stubersheim"
    },
    {
+      "ds100" : "OASU",
+      "eva" : 8100196,
+      "latlong" : [
+         46.99903,
+         15.774747
+      ],
+      "name" : "Studenzen-Fladnitz"
+   },
+   {
       "ds100" : "LSTF",
       "eva" : 8010343,
       "latlong" : [
@@ -70855,6 +70945,15 @@
          12.567336
       ],
       "name" : "Tacherting"
+   },
+   {
+      "ds100" : "OATSM",
+      "eva" : 8100318,
+      "latlong" : [
+         47.045657,
+         15.757767
+      ],
+      "name" : "Takern-St.Margarethen"
    },
    {
       "ds100" : "OATAL",
