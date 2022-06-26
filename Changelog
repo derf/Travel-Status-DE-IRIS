@@ -1,3 +1,10 @@
+Travel::Status::DE::IRIS 1.66 - Sun Jun 26 2022
+
+    * Treat Essen-Dellwig and Essen-Dellwig Ost as separate stations.
+      Although they are grouped in the IRIS backend, they are distinct
+      stations. Both have platforms 1 & 2, so grouping them leads to confusion.
+    * Update IRIS station list
+
 Travel::Status::DE::IRIS 1.65 - Sun Apr 03 2022
 
     * Update IRIS station list
