@@ -8478,6 +8478,15 @@
       "name" : "Bichlbach-Berwang"
    },
    {
+      "ds100" : "RBIC",
+      "eva" : 8077777,
+      "latlong" : [
+         47.967528,
+         9.101812
+      ],
+      "name" : "Bichtlingen"
+   },
+   {
       "ds100" : "FBI",
       "eva" : 8000948,
       "latlong" : [
