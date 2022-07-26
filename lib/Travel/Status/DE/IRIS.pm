@@ -87,7 +87,7 @@ sub new_p {
 	}
 
 	for my $eva (@related_stations) {
-		@candidates = $opt{get_station}( $opt{station} );
+		@candidates = $opt{get_station}($eva);
 
 		if ( @candidates == 1 ) {
 			push(
