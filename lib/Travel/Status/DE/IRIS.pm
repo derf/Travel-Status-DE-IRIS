@@ -293,7 +293,7 @@ sub postprocess_results {
 		for my $transfer (@merge_candidates) {
 			my $result
 			  = first { $_->transfer and $_->transfer eq $transfer->train_id }
-			@{ $self->{results} };
+			  @{ $self->{results} };
 			if ($result) {
 				$result->merge_with_departure($transfer);
 			}
@@ -848,7 +848,7 @@ sub get_result_by_train {
 	my ( $self, $type, $train_no ) = @_;
 
 	my $res = first { $_->type eq $type and $_->train_no eq $train_no }
-	@{ $self->{results} };
+	  @{ $self->{results} };
 	return $res;
 }
 
