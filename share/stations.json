@@ -9198,15 +9198,6 @@
       "name" : "Blankenburg(Harz)"
    },
    {
-      "ds100" : "BBFD",
-      "eva" : 8089186,
-      "latlong" : [
-         52.3380121,
-         13.4156182
-      ],
-      "name" : "Blankenfelde (S)"
-   },
-   {
       "ds100" : "BBF",
       "eva" : 8010053,
       "latlong" : [
@@ -58896,15 +58887,6 @@
       "name" : "Probostov"
    },
    {
-      "ds100" : "APSH",
-      "eva" : 8007318,
-      "latlong" : [
-         54.364899,
-         10.291408
-      ],
-      "name" : "Probsteierhagen"
-   },
-   {
       "ds100" : "UPR",
       "eva" : 8010288,
       "latlong" : [
@@ -66238,15 +66220,6 @@
          12.04008
       ],
       "name" : "Schönhausen(Elbe)"
-   },
-   {
-      "ds100" : "ASCK",
-      "eva" : 8007314,
-      "latlong" : [
-         54.332691,
-         10.229356
-      ],
-      "name" : "Schönkirchen Bf"
    },
    {
       "ds100" : "RSOM",
