@@ -4941,6 +4941,15 @@
       "name" : "Baiersdorf"
    },
    {
+      "ds100" : "OFBLS",
+      "eva" : 8700735,
+      "latlong" : [
+         43.653326,
+         4.007166
+      ],
+      "name" : "Baillargues(L Mazes)"
+   },
+   {
       "ds100" : "XFBX",
       "eva" : 8700510,
       "latlong" : [
@@ -5641,6 +5650,15 @@
          12.011773
       ],
       "name" : "Bayrischzell"
+   },
+   {
+      "ds100" : "OFBER",
+      "eva" : 8700696,
+      "latlong" : [
+         43.800039,
+         4.645086
+      ],
+      "name" : "Beaucaire(Gard)"
    },
    {
       "ds100" : "LBBZ",
@@ -18720,6 +18738,15 @@
       "name" : "Ebertsheim"
    },
    {
+      "ds100" : "PQKEB",
+      "eva" : 721347,
+      "latlong" : [
+         48.994617,
+         8.394675
+      ],
+      "name" : "Ebertstraße, Karlsruhe"
+   },
+   {
       "ds100" : "NEG",
       "eva" : 8001640,
       "latlong" : [
@@ -24318,6 +24345,15 @@
       "name" : "Frontenex"
    },
    {
+      "ds100" : "OFFTG",
+      "eva" : 8701164,
+      "latlong" : [
+         43.44581,
+         3.759136
+      ],
+      "name" : "Frontignan"
+   },
+   {
       "ds100" : "LFE",
       "eva" : 8010119,
       "latlong" : [
@@ -27160,6 +27196,15 @@
          13.8389947493261
       ],
       "name" : "Grieskirchen-Gallspach"
+   },
+   {
+      "ds100" : "OAGWT",
+      "eva" : 8100907,
+      "latlong" : [
+         47.509456,
+         12.467751
+      ],
+      "name" : "Grieswirt"
    },
    {
       "ds100" : "RGSS",
@@ -35496,6 +35541,15 @@
       "name" : "Innsbruck Hötting"
    },
    {
+      "ds100" : "PAIM",
+      "eva" : 8105987,
+      "latlong" : [
+         47.273201,
+         11.407662
+      ],
+      "name" : "Innsbruck Messe"
+   },
+   {
       "ds100" : "XAIW",
       "eva" : 8100109,
       "latlong" : [
@@ -38286,6 +38340,15 @@
       "name" : "Kitzbühel Hahnenkamm"
    },
    {
+      "ds100" : "OASSE",
+      "eva" : 8101593,
+      "latlong" : [
+         47.453435,
+         12.370523
+      ],
+      "name" : "Kitzbühel Schwarzsee"
+   },
+   {
       "ds100" : "NKN",
       "eva" : 8000479,
       "latlong" : [
@@ -38806,6 +38869,15 @@
          8.341001
       ],
       "name" : "Knielingen Herweghstraße, Karlsruhe"
+   },
+   {
+      "ds100" : "PQKRC",
+      "eva" : 723325,
+      "latlong" : [
+         49.03488,
+         8.336614
+      ],
+      "name" : "Knielingen Rheinbergstraße (Schleife), Karlsruhe"
    },
    {
       "ds100" : "RKIS",
@@ -43387,6 +43459,15 @@
          13.14131
       ],
       "name" : "Leubsdorf(Sachs)"
+   },
+   {
+      "ds100" : "OFLUT",
+      "eva" : 8701462,
+      "latlong" : [
+         42.932778,
+         3.012861
+      ],
+      "name" : "Leucate-la-Franqui"
    },
    {
       "ds100" : "XLLD",
@@ -54252,6 +54333,15 @@
       "name" : "Nîmes"
    },
    {
+      "ds100" : "PFNPG",
+      "eva" : 8770397,
+      "latlong" : [
+         43.816822,
+         4.507704
+      ],
+      "name" : "Nîmes Pont du Gard"
+   },
+   {
       "ds100" : "DNB",
       "eva" : 8012509,
       "latlong" : [
@@ -55033,6 +55123,15 @@
          9.154222
       ],
       "name" : "Obernburg-Elsenfeld"
+   },
+   {
+      "ds100" : "OAWOB",
+      "eva" : 8101792,
+      "latlong" : [
+         47.497149,
+         12.39065
+      ],
+      "name" : "Oberndorf in Tirol"
    },
    {
       "ds100" : "TOB",
@@ -57645,6 +57744,15 @@
       "name" : "Pfaffenhofen(Ilm)"
    },
    {
+      "ds100" : "OAPFS",
+      "eva" : 8101351,
+      "latlong" : [
+         47.468537,
+         12.581132
+      ],
+      "name" : "Pfaffenschwendt"
+   },
+   {
       "ds100" : "SPF",
       "eva" : 8004784,
       "latlong" : [
@@ -58435,6 +58543,15 @@
          3.102604
       ],
       "name" : "Port Vendres Ville"
+   },
+   {
+      "ds100" : "OFPOV",
+      "eva" : 8700490,
+      "latlong" : [
+         43.019928,
+         3.038821
+      ],
+      "name" : "Port-la-Nouvelle"
    },
    {
       "ds100" : "HPTH",
@@ -63790,6 +63907,15 @@
          11.202825
       ],
       "name" : "Salorno/Salurn"
+   },
+   {
+      "ds100" : "OFSLP",
+      "eva" : 8701991,
+      "latlong" : [
+         42.835568,
+         2.917494
+      ],
+      "name" : "Salses(Perpignan)"
    },
    {
       "ds100" : "HSAL",
@@ -74502,6 +74628,15 @@
       "name" : "Verden(Aller)"
    },
    {
+      "ds100" : "OFVGC",
+      "eva" : 8702590,
+      "latlong" : [
+         43.739793,
+         4.218961
+      ],
+      "name" : "Vergeze-Codognan"
+   },
+   {
       "ds100" : "TVRD",
       "eva" : 8007233,
       "latlong" : [
@@ -78759,6 +78894,15 @@
       "name" : "Wincheringen"
    },
    {
+      "ds100" : "OAWIN",
+      "eva" : 8101776,
+      "latlong" : [
+         47.438917,
+         12.185507
+      ],
+      "name" : "Windau im Brixental"
+   },
+   {
       "ds100" : "RWND",
       "eva" : 8006468,
       "latlong" : [
@@ -79945,6 +80089,15 @@
          12.060581
       ],
       "name" : "Wörgl Hbf"
+   },
+   {
+      "ds100" : "OASOL",
+      "eva" : 8101571,
+      "latlong" : [
+         47.486821,
+         12.109135
+      ],
+      "name" : "Wörgl Süd-Bruckhäusl"
    },
    {
       "ds100" : "LWOZ",
