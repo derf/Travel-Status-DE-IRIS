@@ -52011,6 +52011,15 @@
       "name" : "Neuhausen Bad Bf"
    },
    {
+      "ds100" : "PSNPF",
+      "eva" : 8518924,
+      "latlong" : [
+         47.679648,
+         8.617455
+      ],
+      "name" : "Neuhausen Rheinfall"
+   },
+   {
       "ds100" : "XSNE",
       "eva" : 8503423,
       "latlong" : [
