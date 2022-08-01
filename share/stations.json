@@ -14427,6 +14427,15 @@
       "name" : "Colmar"
    },
    {
+      "ds100" : "OIGNA",
+      "eva" : 8301581,
+      "latlong" : [
+         46.024743,
+         8.752086
+      ],
+      "name" : "Colmegna"
+   },
+   {
       "ds100" : "XFCQ",
       "eva" : 8703137,
       "latlong" : [
@@ -25756,6 +25765,15 @@
          6.660372
       ],
       "name" : "Gerolstein"
+   },
+   {
+      "ds100" : "OSG",
+      "eva" : 8505410,
+      "latlong" : [
+         46.122043,
+         8.784969
+      ],
+      "name" : "Gerra (Gambarogno)"
    },
    {
       "ds100" : "DGD",
@@ -45657,6 +45675,15 @@
       "name" : "Maastricht Randwyck"
    },
    {
+      "ds100" : "OIM C",
+      "eva" : 8300864,
+      "latlong" : [
+         46.043216,
+         8.737452
+      ],
+      "name" : "Maccagno"
+   },
+   {
       "ds100" : "LMAC",
       "eva" : 8012284,
       "latlong" : [
@@ -45682,6 +45709,15 @@
          14.969514
       ],
       "name" : "Machnin hrad"
+   },
+   {
+      "ds100" : "OSMGV",
+      "eva" : 8505406,
+      "latlong" : [
+         46.145316,
+         8.850186
+      ],
+      "name" : "Magadino-Vira"
    },
    {
       "ds100" : "LMGH",
@@ -46908,6 +46944,15 @@
       "name" : "Marnheim"
    },
    {
+      "ds100" : "OSMME",
+      "eva" : 8505303,
+      "latlong" : [
+         45.932496,
+         8.974084
+      ],
+      "name" : "Maroggia-Melano"
+   },
+   {
       "ds100" : "BMQU",
       "eva" : 8012315,
       "latlong" : [
@@ -47574,6 +47619,15 @@
       "name" : "Meldorf"
    },
    {
+      "ds100" : "OSMED",
+      "eva" : 8505302,
+      "latlong" : [
+         45.955931,
+         8.948393
+      ],
+      "name" : "Melide"
+   },
+   {
       "ds100" : "XAME",
       "eva" : 8100005,
       "latlong" : [
@@ -47743,6 +47797,15 @@
          8.97860209024968
       ],
       "name" : "Mendrisio"
+   },
+   {
+      "ds100" : "PSMPP",
+      "eva" : 8518475,
+      "latlong" : [
+         45.877131,
+         8.983091
+      ],
+      "name" : "Mendrisio S. Martino"
    },
    {
       "ds100" : "TMG",
@@ -57852,6 +57915,15 @@
       "name" : "Pino transito"
    },
    {
+      "ds100" : "OIPTZ",
+      "eva" : 8300914,
+      "latlong" : [
+         46.098689,
+         8.736616
+      ],
+      "name" : "Pino-Tronzano"
+   },
+   {
       "ds100" : "NPI",
       "eva" : 8004820,
       "latlong" : [
@@ -59326,6 +59398,15 @@
          7.947819
       ],
       "name" : "Quakenbrück"
+   },
+   {
+      "ds100" : "OSQ",
+      "eva" : 8505405,
+      "latlong" : [
+         46.151302,
+         8.887329
+      ],
+      "name" : "Quartino"
    },
    {
       "ds100" : "LQB",
@@ -63439,6 +63520,15 @@
          8.974282
       ],
       "name" : "S. Antonino"
+   },
+   {
+      "ds100" : "OSSNR",
+      "eva" : 8505407,
+      "latlong" : [
+         46.135158,
+         8.807056
+      ],
+      "name" : "S. Nazzaro"
    },
    {
       "ds100" : "NSL",
