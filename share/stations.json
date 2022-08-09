@@ -32373,6 +32373,15 @@
       "name" : "Heringsdorf Neuhof"
    },
    {
+      "ds100" : "OSHS",
+      "eva" : 8506290,
+      "latlong" : [
+         47.390169,
+         9.276814
+      ],
+      "name" : "Herisau"
+   },
+   {
       "ds100" : "DHN",
       "eva" : 8010166,
       "latlong" : [
@@ -72916,6 +72925,15 @@
          8.644832
       ],
       "name" : "Twistringen"
+   },
+   {
+      "ds100" : "OSTGM",
+      "eva" : 8506198,
+      "latlong" : [
+         47.653589,
+         9.139504
+      ],
+      "name" : "Tägerwilen Dorf"
    },
    {
       "ds100" : "MTG",
