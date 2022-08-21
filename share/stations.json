@@ -26289,6 +26289,15 @@
       "name" : "Gloggnitz"
    },
    {
+      "ds100" : "XPGLO",
+      "eva" : 5100012,
+      "latlong" : [
+         51.668953,
+         16.079715
+      ],
+      "name" : "Glogow"
+   },
+   {
       "ds100" : "DGLO",
       "eva" : 8070199,
       "latlong" : [
@@ -44665,6 +44674,15 @@
          15.293196
       ],
       "name" : "Luban Sl."
+   },
+   {
+      "ds100" : "XPLUG",
+      "eva" : 5100308,
+      "latlong" : [
+         51.393955,
+         16.195838
+      ],
+      "name" : "Lubin Gorniczy"
    },
    {
       "ds100" : "BLU",
