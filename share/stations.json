@@ -126,6 +126,15 @@
       "name" : "Abensberg"
    },
    {
+      "ds100" : "OAAB",
+      "eva" : 8100204,
+      "latlong" : [
+         46.754254,
+         12.511744
+      ],
+      "name" : "Abfaltersbach"
+   },
+   {
       "ds100" : "OAADH",
       "eva" : 8100202,
       "latlong" : [
@@ -13536,6 +13545,15 @@
       "name" : "Ceska Kubice"
    },
    {
+      "ds100" : "XTCLH",
+      "eva" : 5400064,
+      "latlong" : [
+         50.682369,
+         14.522784
+      ],
+      "name" : "Ceska Lipa - Holy vrch"
+   },
+   {
       "ds100" : "XTCL",
       "eva" : 5400045,
       "latlong" : [
@@ -23319,6 +23337,15 @@
       "name" : "Frankleben"
    },
    {
+      "ds100" : "XTFNP",
+      "eva" : 5400961,
+      "latlong" : [
+         50.723917,
+         14.331889
+      ],
+      "name" : "Frantiskov nad Ploucnici"
+   },
+   {
       "ds100" : "XTF",
       "eva" : 5400197,
       "latlong" : [
@@ -31761,6 +31788,15 @@
       "name" : "Heinebach"
    },
    {
+      "ds100" : "PAARF",
+      "eva" : 8105982,
+      "latlong" : [
+         46.745894,
+         12.444433
+      ],
+      "name" : "Heinfels"
+   },
+   {
       "ds100" : "ONHEN",
       "eva" : 8400310,
       "latlong" : [
@@ -34243,6 +34279,15 @@
          14.556988
       ],
       "name" : "Horni Podluzi"
+   },
+   {
+      "ds100" : "XTHOP",
+      "eva" : 5402438,
+      "latlong" : [
+         50.706083,
+         14.4
+      ],
+      "name" : "Horni Police"
    },
    {
       "ds100" : "XTHPT",
@@ -37024,6 +37069,15 @@
          13.77925
       ],
       "name" : "Karez"
+   },
+   {
+      "ds100" : "XTKAJ",
+      "eva" : 5401443,
+      "latlong" : [
+         50.77378,
+         14.983921
+      ],
+      "name" : "Karlov pod Jestedem"
    },
    {
       "ds100" : "XTKV",
@@ -45144,6 +45198,15 @@
       "name" : "Luzern"
    },
    {
+      "ds100" : "XTLVV",
+      "eva" : 5401883,
+      "latlong" : [
+         50.780684,
+         14.786851
+      ],
+      "name" : "Lvova"
+   },
+   {
       "ds100" : "XFLPD",
       "eva" : 8700152,
       "latlong" : [
@@ -48796,6 +48859,15 @@
          12.33299
       ],
       "name" : "Mittergars"
+   },
+   {
+      "ds100" : "OAMIW",
+      "eva" : 8100417,
+      "latlong" : [
+         46.76967,
+         12.595038
+      ],
+      "name" : "Mittewald an der Drau"
    },
    {
       "ds100" : "DMW",
@@ -54180,6 +54252,15 @@
       "name" : "Noveant"
    },
    {
+      "ds100" : "XTNOV",
+      "eva" : 5402196,
+      "latlong" : [
+         50.760063,
+         14.941708
+      ],
+      "name" : "Novina"
+   },
+   {
       "ds100" : "XRNV",
       "eva" : 7800009,
       "latlong" : [
@@ -56376,6 +56457,15 @@
       "name" : "Oss West"
    },
    {
+      "ds100" : "XTOST",
+      "eva" : 5402280,
+      "latlong" : [
+         50.763182,
+         15.014287
+      ],
+      "name" : "Ostasov"
+   },
+   {
       "ds100" : "EBRO",
       "eva" : 8001183,
       "latlong" : [
@@ -57580,6 +57670,15 @@
          2.879399
       ],
       "name" : "Perpignan"
+   },
+   {
+      "ds100" : "XTPPR",
+      "eva" : 5402342,
+      "latlong" : [
+         50.677308,
+         14.718308
+      ],
+      "name" : "Pertoltice pod Ralskem"
    },
    {
       "ds100" : "XIPDG",
@@ -69129,6 +69228,15 @@
       "name" : "Starnberg Nord"
    },
    {
+      "ds100" : "XTSTS",
+      "eva" : 5402929,
+      "latlong" : [
+         50.720708,
+         14.374579
+      ],
+      "name" : "Stary Sachov"
+   },
+   {
       "ds100" : "XBSA",
       "eva" : 8800169,
       "latlong" : [
@@ -70254,6 +70362,15 @@
       "name" : "Struthütten"
    },
    {
+      "ds100" : "XTSTR",
+      "eva" : 5402962,
+      "latlong" : [
+         50.698271,
+         14.449854
+      ],
+      "name" : "Struznice"
+   },
+   {
       "ds100" : "HSUB",
       "eva" : 8005763,
       "latlong" : [
@@ -71262,6 +71379,15 @@
       "name" : "Tarvisio Boscoverde"
    },
    {
+      "ds100" : "OATAS",
+      "eva" : 8101646,
+      "latlong" : [
+         46.74691,
+         12.466088
+      ],
+      "name" : "Tassenbach"
+   },
+   {
       "ds100" : "XMTA",
       "eva" : 5500010,
       "latlong" : [
@@ -71710,6 +71836,15 @@
          11.819821
       ],
       "name" : "Teutschenthal Ost"
+   },
+   {
+      "ds100" : "OATHL",
+      "eva" : 8100324,
+      "latlong" : [
+         46.784224,
+         12.670772
+      ],
+      "name" : "Thal"
    },
    {
       "ds100" : "LTL",
@@ -74673,6 +74808,15 @@
       "name" : "Verona Porta Nuova"
    },
    {
+      "ds100" : "OIVE",
+      "eva" : 8300499,
+      "latlong" : [
+         46.732383,
+         12.328867
+      ],
+      "name" : "Versciaco-Elmo/Vierschach-Helm"
+   },
+   {
       "ds100" : "XBVC",
       "eva" : 8800016,
       "latlong" : [
@@ -77200,6 +77344,15 @@
          8.579385
       ],
       "name" : "Weiterstadt"
+   },
+   {
+      "ds100" : "OAWLB",
+      "eva" : 8101784,
+      "latlong" : [
+         46.742963,
+         12.389554
+      ],
+      "name" : "Weitlanbrunn"
    },
    {
       "ds100" : "DWX",
@@ -80521,6 +80674,15 @@
          5.2633333206177
       ],
       "name" : "Zaltbommel"
+   },
+   {
+      "ds100" : "XTZAN",
+      "eva" : 5403779,
+      "latlong" : [
+         50.712105,
+         14.389716
+      ],
+      "name" : "Zandov"
    },
    {
       "ds100" : "XNZA",
