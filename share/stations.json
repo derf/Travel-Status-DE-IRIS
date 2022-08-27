@@ -47592,6 +47592,15 @@
       "name" : "Meiningen"
    },
    {
+      "ds100" : "LMEI",
+      "eva" : 8010231,
+      "latlong" : [
+         51.903194,
+         12.256306
+      ],
+      "name" : "Meinsdorf"
+   },
+   {
       "ds100" : "XSM",
       "eva" : 8508308,
       "latlong" : [
