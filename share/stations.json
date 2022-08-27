@@ -8190,15 +8190,6 @@
       "name" : "Bettembourg"
    },
    {
-      "ds100" : "XLXBB",
-      "eva" : 8271141,
-      "latlong" : [
-         49.472074,
-         6.107859
-      ],
-      "name" : "Bettembourg(fr)"
-   },
-   {
       "ds100" : "NBMS",
       "eva" : 8000928,
       "latlong" : [
@@ -10690,15 +10681,6 @@
          16.893236
       ],
       "name" : "Breclav"
-   },
-   {
-      "ds100" : "XTXBE",
-      "eva" : 5403739,
-      "latlong" : [
-         48.712551,
-         16.868402
-      ],
-      "name" : "Breclav(Gr)"
    },
    {
       "ds100" : "XNBR",
@@ -16558,15 +16540,6 @@
          15.6551776
       ],
       "name" : "Dobova"
-   },
-   {
-      "ds100" : "XZXDO",
-      "eva" : 7900042,
-      "latlong" : [
-         45.8906308,
-         15.6802375
-      ],
-      "name" : "Dobova(Gr)"
    },
    {
       "ds100" : "OTDY",
@@ -31302,15 +31275,6 @@
       "name" : "Hegyeshalom"
    },
    {
-      "ds100" : "XMXHY",
-      "eva" : 5501629,
-      "latlong" : [
-         47.938258,
-         17.095845
-      ],
-      "name" : "Hegyeshalom(Gr)"
-   },
-   {
       "ds100" : "AHI",
       "eva" : 8000155,
       "latlong" : [
@@ -35694,15 +35658,6 @@
       "name" : "Iselle di Trasquera"
    },
    {
-      "ds100" : "XIXIT",
-      "eva" : 8300366,
-      "latlong" : [
-         46.187965,
-         8.187302
-      ],
-      "name" : "Iselle transito"
-   },
-   {
       "ds100" : "EIL",
       "eva" : 8000186,
       "latlong" : [
@@ -36169,15 +36124,6 @@
          15.05641
       ],
       "name" : "Jerzmanki"
-   },
-   {
-      "ds100" : "XAXRB",
-      "eva" : 7900043,
-      "latlong" : [
-         46.481412,
-         14.020333
-      ],
-      "name" : "Jesenice(Gr)"
    },
    {
       "ds100" : "XZJ",
@@ -58041,15 +57987,6 @@
       "name" : "Pinnow(Uckermark)"
    },
    {
-      "ds100" : "XSXPT",
-      "eva" : 8505409,
-      "latlong" : [
-         46.1045508232004,
-         8.7570199823613
-      ],
-      "name" : "Pino transito"
-   },
-   {
       "ds100" : "OIPTZ",
       "eva" : 8300914,
       "latlong" : [
@@ -64339,15 +64276,6 @@
          21.360366
       ],
       "name" : "Sap"
-   },
-   {
-      "ds100" : "XRXSJ",
-      "eva" : 7800076,
-      "latlong" : [
-         45.505158,
-         14.244213
-      ],
-      "name" : "Sapjane(Gr)"
    },
    {
       "ds100" : "XSSR",
@@ -70954,15 +70882,6 @@
          18.862057
       ],
       "name" : "Szob"
-   },
-   {
-      "ds100" : "XMXSB",
-      "eva" : 5603743,
-      "latlong" : [
-         47.824896,
-         18.844774
-      ],
-      "name" : "Szob(Gr)"
    },
    {
       "ds100" : "XMSN",
