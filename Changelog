@@ -1,3 +1,7 @@
+Travel::Status::DE::IRIS 1.70 - Sat Sep 03 2022
+
+    * Update IRIS station list
+
 Travel::Status::DE::IRIS 1.69 - Tue Aug 02 2022
 
     * Repair Travel::Status::DE::IRIS::Stations module
