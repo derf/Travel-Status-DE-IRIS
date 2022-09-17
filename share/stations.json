@@ -14472,15 +14472,6 @@
       "name" : "Combs la Ville Quincy"
    },
    {
-      "ds100" : "D8303046",
-      "eva" : 8303046,
-      "latlong" : [
-         45.784498,
-         9.07951
-      ],
-      "name" : "Como Nord Camerlata"
-   },
-   {
       "ds100" : "XIC",
       "eva" : 8300056,
       "latlong" : [
@@ -36153,15 +36144,6 @@
       "name" : "Jerichow"
    },
    {
-      "ds100" : "D8600217",
-      "eva" : 8600217,
-      "latlong" : [
-         55.474537,
-         8.485835
-      ],
-      "name" : "Jerne St."
-   },
-   {
       "ds100" : "HJRX",
       "eva" : 8003118,
       "latlong" : [
@@ -39814,15 +39796,6 @@
          7.752633
       ],
       "name" : "Krimmeri-Meinau"
-   },
-   {
-      "ds100" : "XTKM",
-      "eva" : 5401649,
-      "latlong" : [
-         50.489755,
-         13.276007
-      ],
-      "name" : "Krimov"
    },
    {
       "ds100" : "DKRP",
@@ -64267,15 +64240,6 @@
          8.986954
       ],
       "name" : "Sandebeck"
-   },
-   {
-      "ds100" : "HSAB",
-      "eva" : 8005285,
-      "latlong" : [
-         53.507247,
-         8.014777
-      ],
-      "name" : "Sanderbusch"
    },
    {
       "ds100" : "LSA",
