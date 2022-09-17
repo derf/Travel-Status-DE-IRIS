@@ -5247,6 +5247,15 @@
       "name" : "Barchel"
    },
    {
+      "ds100" : "PIFAN",
+      "eva" : 8346045,
+      "latlong" : [
+         45.083788,
+         6.710151
+      ],
+      "name" : "Bardonecchia Confine"
+   },
+   {
       "ds100" : "ABAD",
       "eva" : 8000801,
       "latlong" : [
@@ -43974,6 +43983,15 @@
       "name" : "Limone"
    },
    {
+      "ds100" : "PIXL",
+      "eva" : 8310061,
+      "latlong" : [
+         44.153045,
+         7.573601
+      ],
+      "name" : "Limone Confine"
+   },
+   {
       "ds100" : "LLI",
       "eva" : 8012233,
       "latlong" : [
@@ -56106,6 +56124,15 @@
       "name" : "Olen(Belgien)"
    },
    {
+      "ds100" : "XIOM",
+      "eva" : 8300467,
+      "latlong" : [
+         43.878398,
+         7.535091
+      ],
+      "name" : "Olivetta-S. Michele"
+   },
+   {
       "ds100" : "XTOV",
       "eva" : 5402243,
       "latlong" : [
@@ -56959,6 +56986,15 @@
          4.5333333015442
       ],
       "name" : "Oudenbosch"
+   },
+   {
+      "ds100" : "OIOC",
+      "eva" : 8300010,
+      "latlong" : [
+         45.037638,
+         6.830669
+      ],
+      "name" : "Oulx-Cesana-Claviere-Sestriere"
    },
    {
       "ds100" : "XDOU",
