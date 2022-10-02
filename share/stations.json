@@ -24273,6 +24273,15 @@
       "name" : "Friesdorf"
    },
    {
+      "ds100" : "LFIO",
+      "eva" : 8011587,
+      "latlong" : [
+         51.59775,
+         11.323154
+      ],
+      "name" : "Friesdorf Ost"
+   },
+   {
       "ds100" : "RFH",
       "eva" : 8002123,
       "latlong" : [
@@ -27970,6 +27979,15 @@
          10.833007
       ],
       "name" : "Gräfenroda"
+   },
+   {
+      "ds100" : "LGRK",
+      "eva" : 8011685,
+      "latlong" : [
+         51.602127,
+         11.404255
+      ],
+      "name" : "Gräfenstuhl-Klippmühle"
    },
    {
       "ds100" : "UGTA",
@@ -38824,6 +38842,15 @@
          11.491904
       ],
       "name" : "Klostermansfeld"
+   },
+   {
+      "ds100" : "LKMR",
+      "eva" : 8010204,
+      "latlong" : [
+         51.590999,
+         11.498588
+      ],
+      "name" : "Klostermansfeld Randsiedlung"
    },
    {
       "ds100" : "RKLB",
@@ -74392,6 +74419,24 @@
          11.76438
       ],
       "name" : "Vaterstetten"
+   },
+   {
+      "ds100" : "LVT",
+      "eva" : 8013182,
+      "latlong" : [
+         51.597687,
+         11.428993
+      ],
+      "name" : "Vatterode"
+   },
+   {
+      "ds100" : "LVTT",
+      "eva" : 8079152,
+      "latlong" : [
+         51.598127,
+         11.412183
+      ],
+      "name" : "Vatteröder Teich"
    },
    {
       "ds100" : "HVEC",
