@@ -10179,6 +10179,15 @@
       "name" : "Bordesholm"
    },
    {
+      "ds100" : "ASBRN",
+      "eva" : 8075385,
+      "latlong" : [
+         54.584452,
+         9.819097
+      ],
+      "name" : "Boren-Lindaunis Schleibrücke Nord"
+   },
+   {
       "ds100" : "EBOR",
       "eva" : 8001093,
       "latlong" : [
@@ -61666,6 +61675,15 @@
          9.820489
       ],
       "name" : "Rieseby"
+   },
+   {
+      "ds100" : "ASBRS",
+      "eva" : 8085385,
+      "latlong" : [
+         54.582384,
+         9.821102
+      ],
+      "name" : "Rieseby Schleibrücke Süd"
    },
    {
       "ds100" : "HRIE",
