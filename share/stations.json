@@ -70299,6 +70299,15 @@
       "name" : "Stendal Hbf"
    },
    {
+      "ds100" : "LSFH",
+      "eva" : 8013045,
+      "latlong" : [
+         52.616237,
+         11.848367
+      ],
+      "name" : "Stendal Hochschule"
+   },
+   {
       "ds100" : "LSV",
       "eva" : 8013046,
       "latlong" : [
