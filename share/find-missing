@@ -44,6 +44,9 @@ my $status = Travel::Status::DE::IRIS->new(
 my @missing;
 
 for my $result ( $status->results ) {
+	if ( $result->type eq 'Bus' ) {
+		next;
+	}
 	for my $name ( $result->route_pre, $result->route_post ) {
 		my @matches
 		  = Travel::Status::DE::IRIS::Stations::get_station_by_name($name);
