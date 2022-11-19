@@ -130,9 +130,9 @@ my %translation = (
 );
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
-	qw(arrival arrival_delay arrival_has_realtime arrival_is_additional arrival_is_cancelled
+	qw(arrival arrival_delay arrival_has_realtime arrival_is_additional arrival_is_cancelled arrival_hidden
 	  date datetime delay
-	  departure departure_delay departure_has_realtime departure_is_additional departure_is_cancelled
+	  departure departure_delay departure_has_realtime departure_is_additional departure_is_cancelled departure_hidden
 	  ds100 has_realtime is_transfer is_unscheduled is_wing
 	  line_no old_train_id old_train_no operator platform raw_id
 	  realtime_xml route_start route_end
@@ -278,6 +278,10 @@ sub set_ar {
 		$self->{arrival_is_cancelled}  = 0;
 	}
 
+	if ( $attrib{arrival_hidden} ) {
+		$self->{arrival_hidden} = $attrib{arrival_hidden};
+	}
+
 	# unscheduled arrivals may not appear in the plan, but we do need to
 	# know their planned arrival time
 	if ( $attrib{plan_arrival_ts} ) {
@@ -341,6 +345,10 @@ sub set_dp {
 	else {
 		$self->{departure_is_additional} = 0;
 		$self->{departure_is_cancelled}  = 0;
+	}
+
+	if ( $attrib{departure_hidden} ) {
+		$self->{departure_hidden} = $attrib{departure_hidden};
 	}
 
 	# unscheduled arrivals may not appear in the plan, but we do need to
@@ -911,6 +919,11 @@ no scheduled arrival time (e.g. due to diversions). May be negative.
 
 True if "arrival" is based on real-time data.
 
+=item $result->arrival_hidden
+
+True if arrival should not be displayed to customers.
+This often indicates an entry-only stop near the beginning of a train's journey.
+
 =item $result->arrival_is_additional
 
 True if the arrival at this stop is an additional (unscheduled) event, i.e.,
@@ -983,6 +996,11 @@ no scheduled departure time (e.g. due to diversions). May be negative.
 =item $result->departure_has_realtime
 
 True if "departure" is based on real-time data.
+
+=item $result->departure_hidden
+
+True if departure should not be displayed to customers.
+This often indicates an exit-only stop near the end of a train's journey.
 
 =item $result->departure_is_additional
 
