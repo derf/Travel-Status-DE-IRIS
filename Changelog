@@ -1,3 +1,7 @@
+Travel::Status::DE::IRIS 1.73 - Mon Oct 03 2022
+
+    * Result: Add arrival_hidden and departure_hidden accessors
+
 Travel::Status::DE::IRIS 1.72 - Mon Oct 03 2022
 
     * Update IRIS station list
