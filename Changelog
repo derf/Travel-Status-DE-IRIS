@@ -1,4 +1,9 @@
-Travel::Status::DE::IRIS 1.73 - Mon Oct 03 2022
+Travel::Status::DE::IRIS 1.74 - Tue Nov 22 2022
+
+    * Stations: Use GIS::Distance, as documented. Release 1.73 accidentally
+      used Geo::Distance in the bundled Stations.pm file instead.
+
+Travel::Status::DE::IRIS 1.73 - Sat Nov 19 2022
 
     * Result: Add arrival_hidden and departure_hidden accessors
 
