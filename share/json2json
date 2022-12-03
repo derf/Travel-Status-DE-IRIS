@@ -9,7 +9,8 @@ use JSON;
 
 my $json_str = read_file('stations.json');
 my $stations = JSON->new->utf8->decode($json_str);
-@{$stations} = sort { $a->{name} cmp $b->{name} } @{$stations};
+@{$stations}
+  = sort { $a->{name} cmp $b->{name} or $a->{eva} <=> $b->{eva} } @{$stations};
 
 my $have_duplicates = 0;
 my @names           = map { $_->{name} } @{$stations};
