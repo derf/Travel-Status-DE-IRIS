@@ -20,6 +20,10 @@ for my $station ( @{ JSON->new->utf8->decode($json_str) } ) {
 delete $known_eva{8007768};
 delete $known_eva{8004449};
 
+# same goes for Essen-Dellwig / Essen-Dellwig Ost
+delete $known_eva{8001903};
+delete $known_eva{8001904};
+
 my $xml_str = read_file('stations.xml');
 my $tree    = XML::LibXML->load_xml( string => $xml_str );
 
