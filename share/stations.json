@@ -6048,6 +6048,15 @@
       "name" : "Benesov n. Ploucnici"
    },
    {
+      "ds100" : "OTBP",
+      "eva" : 5400034,
+      "latlong" : [
+         49.779484,
+         14.682756
+      ],
+      "name" : "Benesov u Prahy"
+   },
+   {
       "ds100" : "XFBTR",
       "eva" : 8700557,
       "latlong" : [
@@ -9835,6 +9844,15 @@
          18.359444
       ],
       "name" : "Bohumin"
+   },
+   {
+      "ds100" : "OTBHO",
+      "eva" : 5400525,
+      "latlong" : [
+         50.491312,
+         14.149453
+      ],
+      "name" : "Bohusovice nad Ohri"
    },
    {
       "ds100" : "KBOI",
@@ -14301,6 +14319,15 @@
       "name" : "Cintegabelle"
    },
    {
+      "ds100" : "OTCTV",
+      "eva" : 5400688,
+      "latlong" : [
+         50.366974,
+         14.419722
+      ],
+      "name" : "Citov"
+   },
+   {
       "ds100" : "OTCZA",
       "eva" : 5400769,
       "latlong" : [
@@ -16668,6 +16695,15 @@
       "name" : "Doksy"
    },
    {
+      "ds100" : "OTDLX",
+      "eva" : 5403665,
+      "latlong" : [
+         50.224189,
+         14.348941
+      ],
+      "name" : "Dolany"
+   },
+   {
       "ds100" : "XFDO",
       "eva" : 8700116,
       "latlong" : [
@@ -16711,6 +16747,15 @@
          11.079009
       ],
       "name" : "Dollnstein"
+   },
+   {
+      "ds100" : "OTDBE",
+      "eva" : 5400864,
+      "latlong" : [
+         50.389752,
+         14.435705
+      ],
+      "name" : "Dolni Berkovice"
    },
    {
       "ds100" : "XTDH",
@@ -34551,6 +34596,15 @@
       "name" : "Horni Kamenice"
    },
    {
+      "ds100" : "OTHPO",
+      "eva" : 5401121,
+      "latlong" : [
+         50.422788,
+         14.386381
+      ],
+      "name" : "Horni Pocaply"
+   },
+   {
       "ds100" : "XTHP",
       "eva" : 5401122,
       "latlong" : [
@@ -34731,6 +34785,15 @@
       "name" : "Hranice na Morave"
    },
    {
+      "ds100" : "OTHDL",
+      "eva" : 5401192,
+      "latlong" : [
+         50.48538,
+         14.173697
+      ],
+      "name" : "Hrdly"
+   },
+   {
       "ds100" : "XTHY",
       "eva" : 5401220,
       "latlong" : [
@@ -34738,6 +34801,15 @@
          12.581061
       ],
       "name" : "Hrebeny"
+   },
+   {
+      "ds100" : "OTHCB",
+      "eva" : 5401200,
+      "latlong" : [
+         50.458106,
+         14.229798
+      ],
+      "name" : "Hrobce"
    },
    {
       "ds100" : "RHAR",
@@ -42345,6 +42417,15 @@
       "name" : "Lansingerland-Zoetermeer"
    },
    {
+      "ds100" : "OALSO",
+      "eva" : 8101178,
+      "latlong" : [
+         48.460991,
+         14.521471
+      ],
+      "name" : "Lasberg-St. Oswald"
+   },
+   {
       "ds100" : "OJLAS",
       "eva" : 7900031,
       "latlong" : [
@@ -44181,6 +44262,24 @@
       "name" : "Lezignan"
    },
    {
+      "ds100" : "OTLVL",
+      "eva" : 5401734,
+      "latlong" : [
+         50.188924,
+         14.37243
+      ],
+      "name" : "Libcice n.Vlt.-Letky"
+   },
+   {
+      "ds100" : "OTLNV",
+      "eva" : 5401733,
+      "latlong" : [
+         50.199828,
+         14.364322
+      ],
+      "name" : "Libcice nad Vltavou"
+   },
+   {
       "ds100" : "XTL",
       "eva" : 5400198,
       "latlong" : [
@@ -45160,6 +45259,15 @@
          14.059588
       ],
       "name" : "Lovosice"
+   },
+   {
+      "ds100" : "OTLSM",
+      "eva" : 5401840,
+      "latlong" : [
+         50.521732,
+         14.045492
+      ],
+      "name" : "Lovosice mesto"
    },
    {
       "ds100" : "HLOX",
@@ -49491,6 +49599,15 @@
       "name" : "Mlada Boleslav mesto"
    },
    {
+      "ds100" : "OTMVY",
+      "eva" : 5402019,
+      "latlong" : [
+         50.319079,
+         14.347539
+      ],
+      "name" : "Mlcechvosty"
+   },
+   {
       "ds100" : "OPMLK",
       "eva" : 5102284,
       "latlong" : [
@@ -52290,6 +52407,24 @@
       "name" : "Nejdek-Tisova"
    },
    {
+      "ds100" : "OTNEL",
+      "eva" : 5402112,
+      "latlong" : [
+         50.283527,
+         14.308634
+      ],
+      "name" : "Nelahozeves"
+   },
+   {
+      "ds100" : "OTNLZ",
+      "eva" : 5402113,
+      "latlong" : [
+         50.2626,
+         14.302386
+      ],
+      "name" : "Nelahozeves zamek"
+   },
+   {
       "ds100" : "TNL",
       "eva" : 8004233,
       "latlong" : [
@@ -54979,6 +55114,15 @@
          12.719386
       ],
       "name" : "Nove Hamry"
+   },
+   {
+      "ds100" : "OTNOL",
+      "eva" : 5402191,
+      "latlong" : [
+         50.301568,
+         14.31658
+      ],
+      "name" : "Nove Ouholice"
    },
    {
       "ds100" : "XYNZ",
@@ -59661,6 +59805,42 @@
       "name" : "Praha-Holesovice"
    },
    {
+      "ds100" : "OTPHX",
+      "eva" : 5403680,
+      "latlong" : [
+         50.106143,
+         14.437188
+      ],
+      "name" : "Praha-Holesovice zastavka"
+   },
+   {
+      "ds100" : "XTPL",
+      "eva" : 5400130,
+      "latlong" : [
+         50.100686,
+         14.502297
+      ],
+      "name" : "Praha-Liben"
+   },
+   {
+      "ds100" : "XTPPO",
+      "eva" : 5457027,
+      "latlong" : [
+         50.113739,
+         14.400297
+      ],
+      "name" : "Praha-Podbaba"
+   },
+   {
+      "ds100" : "XTPSE",
+      "eva" : 5402511,
+      "latlong" : [
+         50.132373,
+         14.393663
+      ],
+      "name" : "Praha-Sedlec"
+   },
+   {
       "ds100" : "XTPM",
       "eva" : 5400204,
       "latlong" : [
@@ -61974,6 +62154,15 @@
       "name" : "Reußen"
    },
    {
+      "ds100" : "OTREZ",
+      "eva" : 5402747,
+      "latlong" : [
+         50.178677,
+         14.354416
+      ],
+      "name" : "Rez"
+   },
+   {
       "ds100" : "ERHA",
       "eva" : 8005055,
       "latlong" : [
@@ -63745,6 +63934,24 @@
          11.033601
       ],
       "name" : "Rovereto"
+   },
+   {
+      "ds100" : "XTROZ",
+      "eva" : 5402699,
+      "latlong" : [
+         50.159934,
+         14.398463
+      ],
+      "name" : "Roztoky u Prahy"
+   },
+   {
+      "ds100" : "OTRYZ",
+      "eva" : 5402700,
+      "latlong" : [
+         50.168348,
+         14.366111
+      ],
+      "name" : "Roztoky-Zalov"
    },
    {
       "ds100" : "SROB",
@@ -74133,6 +74340,15 @@
       "name" : "Uhlstädt"
    },
    {
+      "ds100" : "OTUHY",
+      "eva" : 5403232,
+      "latlong" : [
+         50.170523,
+         14.351485
+      ],
+      "name" : "Uholicky"
+   },
+   {
       "ds100" : "BUD",
       "eva" : 8013165,
       "latlong" : [
@@ -75681,6 +75897,15 @@
       "name" : "Vesele pod Rabstejnem"
    },
    {
+      "ds100" : "OTV",
+      "eva" : 5400113,
+      "latlong" : [
+         49.193791,
+         14.717014
+      ],
+      "name" : "Veseli nad Luznici"
+   },
+   {
       "ds100" : "BV",
       "eva" : 8013188,
       "latlong" : [
@@ -76363,6 +76588,15 @@
          9.735868
       ],
       "name" : "Voßloch"
+   },
+   {
+      "ds100" : "OTVNY",
+      "eva" : 5403444,
+      "latlong" : [
+         50.335233,
+         14.371513
+      ],
+      "name" : "Vranany"
    },
    {
       "ds100" : "ONVZV",
