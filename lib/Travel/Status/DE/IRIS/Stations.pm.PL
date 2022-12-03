@@ -264,6 +264,10 @@ that it may contain space characters.
 
 =back
 
+Note that station names are not unique.
+A single station may be present multiple times with different EVA numbers and DS100 codes.
+At the moment, EVA numbers and DS100 codes are unique.
+
 =head1 METHODS
 
 =over
@@ -276,7 +280,7 @@ Returns a list of all known stations, lexically sorted by station name.
 
 Returns a list of stations matching I<$in>.
 
-If a I<$in> is a valid station (either DS100 code or EVA number),
+If a I<$in> is a valid station identifier (either DS100 code or EVA number),
 a single array reference describing the station is returned. Otherwise,
 I<$in> is passed to get_station_by_name(I<$in>) (see below).
 
@@ -289,18 +293,17 @@ returns the closest I<$num_matches> (defaults to 10) matches. Note that
 stations which are located more than 70 kilometers away from I<$lon>/I<$lat>
 may be ignored when computing the closest matches.
 
-Note that location-based lookup is only supported for stations inside Germany,
-since the station list data source does not provide geolocation data for
-non-german stations.
-
 =item Travel::Status::DE::IRIS::Stations::get_station_by_name(I<$name>)
 
 Returns a list of stations where the station name matches I<$name>.
 
 Matching happens in two steps: If a case-insensitive exact match exists, only
-this one is returned. Otherwise, all stations whose name contains I<$name> as
-a substring (also case-insensitive) and all stations whose name has a low
-Levenshtein distance to I<$name> are returned.
+this one is returned. For station names that correspond to several EVA/DS100
+codes, the match with the lowest EVA number is returned.
+
+Otherwise, all stations whose name contains I<$name> as a substring (also
+case-insensitive) and all stations whose name has a low Levenshtein distance to
+I<$name> are returned.
 
 This two-step behaviour makes sure that not-prefix-free stations can still be
 matched directly. For instance, both "Essen-Steele" and "Essen-Steele Ost"
@@ -339,7 +342,7 @@ Travel::Status::DE::IRIS(3pm).
 
 Station data: Copyright (C) 2016 by DB Station&Service AG, Europaplatz 1, 10557 Berlin, Germany
 
-Lookup code: Copyright (C) 2014-2020 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
+Lookup code: Copyright (C) 2014-2022 by Daniel Friesel E<lt>derf@finalrewind.orgE<gt>
 
 =head1 LICENSE
 
