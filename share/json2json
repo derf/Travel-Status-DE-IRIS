@@ -17,12 +17,6 @@ my @ds100
   = map { $_->{ds100} } sort { $a->{ds100} cmp $b->{ds100} } @{$stations};
 my @eva_ids = map { $_->{eva} } sort { $a->{eva} <=> $b->{eva} } @{$stations};
 
-for my $i ( 1 .. $#names ) {
-	if ( $names[ $i - 1 ] eq $names[$i] ) {
-		say "Duplicate station name: $names[$i]";
-		$have_duplicates = 1;
-	}
-}
 for my $i ( 1 .. $#ds100 ) {
 	if ( $ds100[ $i - 1 ] eq $ds100[$i] ) {
 		say "Duplicate DS100 code: $ds100[$i]";
