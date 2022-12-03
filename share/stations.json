@@ -9141,7 +9141,7 @@
          48.565034,
          6.385848
       ],
-      "name" : "Blainville-Damelevieres"
+      "name" : "Blainville-Damelevières"
    },
    {
       "ds100" : "XUBL",
@@ -13686,7 +13686,7 @@
          45.571498,
          5.919756
       ],
-      "name" : "Chambery-Challes-E"
+      "name" : "Chambéry-Challes-les-Eaux"
    },
    {
       "ds100" : "NCHA",
@@ -31050,15 +31050,6 @@
       "name" : "Hatting in Tirol"
    },
    {
-      "ds100" : "EHTM",
-      "eva" : 8002640,
-      "latlong" : [
-         51.397198,
-         7.180538
-      ],
-      "name" : "Hattingen(R) Mitte"
-   },
-   {
       "ds100" : "EHAT",
       "eva" : 8002639,
       "latlong" : [
@@ -31066,6 +31057,15 @@
          7.169865
       ],
       "name" : "Hattingen(Ruhr)"
+   },
+   {
+      "ds100" : "EHTM",
+      "eva" : 8002640,
+      "latlong" : [
+         51.397198,
+         7.180538
+      ],
+      "name" : "Hattingen(Ruhr) Mitte"
    },
    {
       "ds100" : "HHTF",
@@ -60180,7 +60180,7 @@
          49.783664,
          22.776364
       ],
-      "name" : "Przemysl Gl."
+      "name" : "Przemysl Glowny"
    },
    {
       "ds100" : "OPPMZ",
@@ -75606,7 +75606,7 @@
          48.836308,
          14.45318
       ],
-      "name" : "Velesyn mesto"
+      "name" : "Velesin mesto"
    },
    {
       "ds100" : "WV",
@@ -80592,7 +80592,7 @@
          50.007989,
          18.476374
       ],
-      "name" : "Wodzislaw Sl."
+      "name" : "Wodzislaw Slaski"
    },
    {
       "ds100" : "XNWO",
