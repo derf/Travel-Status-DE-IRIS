@@ -491,6 +491,9 @@ sub get_station {
 		my $station_node = ( $xml_st->findnodes('//station') )[0];
 
 		if ( not $station_node ) {
+			if ( $self->{developer_mode} ) {
+				say '  no timetable';
+			}
 			if ( $opt{root} ) {
 				$self->{errstr}
 				  = "Station '$station' has no associated timetable";
@@ -680,6 +683,12 @@ sub get_timetable {
 	for my $s ( $xml->findnodes('/timetable/s') ) {
 
 		$self->add_result( $station, $eva, $s );
+	}
+
+	if ( $self->{developer_mode}
+		and not scalar $xml->findnodes('/timetable/s') )
+	{
+		say '  no scheduled trains';
 	}
 
 	return $self;
