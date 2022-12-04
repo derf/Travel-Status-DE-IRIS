@@ -1,3 +1,15 @@
+Travel::Status::DE::IRIS 1.75 - Sun Dec 04 2022
+
+    * Update station list
+    * Note that station names are no longer considered unique.
+      get_stations() and the get_station_by_... set of functions may return
+      multiple entries with the same name, but different DS100 and EVA IDs.
+      For now, get_station_by_name() retains its behaviour of only returning a
+      single match if the name matches exactly -- for multiple stations with
+      the same name, it returns the one with the lowest EVA number.
+      get_station_by_name() return value and semantics may change in a future
+      major release.
+
 Travel::Status::DE::IRIS 1.74 - Tue Nov 22 2022
 
     * Stations: Use GIS::Distance, as documented. Release 1.73 accidentally
