@@ -9,8 +9,9 @@ use JSON;
 use List::Util qw(any);
 use XML::LibXML;
 
+my $json     = JSON->new->utf8;
 my $json_str = read_file('stations.json');
-my $stations = JSON->new->utf8->decode($json_str);
+my $stations = $json->decode($json_str);
 @{$stations} = sort { $a->{name} cmp $b->{name} } @{$stations};
 
 my %station_by_ds100;
@@ -37,11 +38,17 @@ my $tree    = XML::LibXML->load_xml( string => $xml_str );
 
 my @missing;
 
-if ( -e "missing.txt" ) {
-	for my $line ( read_file("missing.txt") ) {
+if ( -e 'missing.txt' ) {
+	for my $line ( read_file('missing.txt') ) {
 		chomp $line;
 		push( @missing, $line );
 	}
+}
+
+my %renamed;
+if ( -e 'renamed.json' ) {
+	$json_str = read_file('renamed.json');
+	%renamed  = %{ $json->decode($json_str) };
 }
 
 for my $station ( $tree->findnodes('//station') ) {
@@ -84,8 +91,8 @@ for my $station ( $tree->findnodes('//station') ) {
 	{
 		printf( "%8s has been renamed: %30s -> %30s\n",
 			$ds100, $station_by_ds100{$ds100}{name}, $name );
-
-		#$station_by_ds100{$ds100}{name} = $name;
+		$renamed{ $station_by_ds100{$ds100}{name} } = $name;
+		$station_by_ds100{$ds100}{name} = $name;
 	}
 	elsif ( $station_by_eva{$eva} and $station_by_eva{$eva}{name} ne $name ) {
 		printf(
@@ -159,5 +166,8 @@ for my $i (@to_delete) {
 	splice( @{$stations}, $i, 1 );
 }
 
-my $json_out = JSON->new->utf8->canonical->pretty->encode($stations);
+my $json_out = $json->canonical->pretty->encode($stations);
 write_file( 'stations.json', $json_out );
+
+$json_out = $json->encode( \%renamed );
+write_file( 'renamed.json', $json_out );
