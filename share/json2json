@@ -12,11 +12,27 @@ my $stations = JSON->new->utf8->decode($json_str);
 @{$stations}
   = sort { $a->{name} cmp $b->{name} or $a->{eva} <=> $b->{eva} } @{$stations};
 
+$json_str = read_file('old_stations.json');
+my $old_stations = JSON->new->utf8->decode($json_str);
+@{$old_stations}
+  = sort { $a->{name} cmp $b->{name} or $a->{eva} <=> $b->{eva} }
+  @{$old_stations};
+
 my $have_duplicates = 0;
 my @names           = map { $_->{name} } @{$stations};
 my @ds100
   = map { $_->{ds100} } sort { $a->{ds100} cmp $b->{ds100} } @{$stations};
 my @eva_ids = map { $_->{eva} } sort { $a->{eva} <=> $b->{eva} } @{$stations};
+
+my %name   = map { $_ => 1 } @names;
+my %ds100  = map { $_ => 1 } @ds100;
+my %eva_id = map { $_ => 1 } @eva_ids;
+
+my @old_names = map { $_->{name} } @{$old_stations};
+my @old_ds100
+  = map { $_->{ds100} } sort { $a->{ds100} cmp $b->{ds100} } @{$old_stations};
+my @old_eva_ids
+  = map { $_->{eva} } sort { $a->{eva} <=> $b->{eva} } @{$old_stations};
 
 for my $i ( 1 .. $#ds100 ) {
 	if ( $ds100[ $i - 1 ] eq $ds100[$i] ) {
@@ -28,6 +44,24 @@ for my $i ( 1 .. $#eva_ids ) {
 	if ( $eva_ids[ $i - 1 ] == $eva_ids[$i] ) {
 		say "Duplicate EVA ID: $eva_ids[$i]";
 		$have_duplicates = 1;
+	}
+}
+
+for my $old_ds100 (@old_ds100) {
+	if ( $ds100{$old_ds100} ) {
+		say "Old DS100 also present in new station list: $old_ds100";
+	}
+}
+
+for my $old_eva (@old_eva_ids) {
+	if ( $eva_id{$old_eva} ) {
+		say "Old EVA also present in new station list: $old_eva";
+	}
+}
+
+for my $old_name (@old_names) {
+	if ( $name{$old_name} ) {
+		say "Old name also present in new station list: $old_name";
 	}
 }
 
@@ -51,3 +85,6 @@ for my $station ( @{$stations} ) {
 
 my $json_out = JSON->new->utf8->canonical->pretty->encode($stations);
 write_file( 'stations.json', $json_out );
+
+$json_out = JSON->new->utf8->canonical->pretty->encode($old_stations);
+write_file( 'old_stations.json', $json_out );
