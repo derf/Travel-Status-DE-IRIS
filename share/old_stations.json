@@ -804,15 +804,6 @@
       "ds100" : "LFIO",
       "eva" : 8011587,
       "latlong" : [
-         51.59775,
-         11.323154
-      ],
-      "name" : "Friesdorf Ost"
-   },
-   {
-      "ds100" : "LFIO",
-      "eva" : 8011587,
-      "latlong" : [
          51.59782,
          11.323432
       ],
@@ -898,15 +889,6 @@
          8.632519
       ],
       "name" : "Groß Ippener DHE"
-   },
-   {
-      "ds100" : "LGRK",
-      "eva" : 8011685,
-      "latlong" : [
-         51.602127,
-         11.404255
-      ],
-      "name" : "Gräfenstuhl-Klippmühle"
    },
    {
       "ds100" : "LGRK",
@@ -1177,15 +1159,6 @@
          12.86687
       ],
       "name" : "Klockow(b Waren/Müritz)"
-   },
-   {
-      "ds100" : "LKMR",
-      "eva" : 8010204,
-      "latlong" : [
-         51.590999,
-         11.498588
-      ],
-      "name" : "Klostermansfeld Randsiedlung"
    },
    {
       "ds100" : "LKMR",
@@ -1812,15 +1785,6 @@
       "ds100" : "APSH",
       "eva" : 8007318,
       "latlong" : [
-         54.364899,
-         10.291408
-      ],
-      "name" : "Probsteierhagen"
-   },
-   {
-      "ds100" : "APSH",
-      "eva" : 8007318,
-      "latlong" : [
          54.365139,
          10.292991
       ],
@@ -2095,15 +2059,6 @@
          8.758503
       ],
       "name" : "Schömberg(b Balingen)"
-   },
-   {
-      "ds100" : "ASCK",
-      "eva" : 8007314,
-      "latlong" : [
-         54.332691,
-         10.229356
-      ],
-      "name" : "Schönkirchen Bf"
    },
    {
       "ds100" : "ASCK",
@@ -2437,24 +2392,6 @@
          11.428993
       ],
       "name" : "Vatterode"
-   },
-   {
-      "ds100" : "LVT",
-      "eva" : 8013182,
-      "latlong" : [
-         51.597705,
-         11.428977
-      ],
-      "name" : "Vatterode"
-   },
-   {
-      "ds100" : "LVTT",
-      "eva" : 8079152,
-      "latlong" : [
-         51.598127,
-         11.412183
-      ],
-      "name" : "Vatteröder Teich"
    },
    {
       "ds100" : "LVTT",
