@@ -1314,6 +1314,15 @@
       "name" : "Marienberg(Sachs)"
    },
    {
+      "ds100" : "PQKMP",
+      "eva" : 371861,
+      "latlong" : [
+         49.009485,
+         8.405563
+      ],
+      "name" : "Marktplatz, Karlsruhe"
+   },
+   {
       "ds100" : "LMDF",
       "eva" : 8012325,
       "latlong" : [
