@@ -12,11 +12,22 @@ use XML::LibXML;
 my $json     = JSON->new->utf8;
 my $json_str = read_file('stations.json');
 my $stations = $json->decode($json_str);
-@{$stations} = sort { $a->{name} cmp $b->{name} } @{$stations};
+@{$stations}
+  = sort { $a->{name} cmp $b->{name} or $a->{eva} <=> $b->{eva} } @{$stations};
+
+$json_str = read_file('old_stations.json');
+my $old_stations = $json->decode($json_str);
+@{$old_stations} = sort { $a->{name} cmp $b->{name} or $a->{eva} <=> $b->{eva} }
+  @{$old_stations};
 
 my %station_by_ds100;
 for my $station ( @{$stations} ) {
 	$station_by_ds100{ $station->{ds100} } = $station;
+}
+
+my %old_station_by_ds100;
+for my $old_station ( @{$old_stations} ) {
+	$old_station_by_ds100{ $old_station->{ds100} } = $old_station;
 }
 
 my %station_by_eva;
@@ -24,9 +35,19 @@ for my $station ( @{$stations} ) {
 	$station_by_eva{ $station->{eva} } = $station;
 }
 
+my %old_station_by_eva;
+for my $old_station ( @{$old_stations} ) {
+	$old_station_by_eva{ $old_station->{eva} } = $old_station;
+}
+
 my %station_by_name;
 for my $station ( @{$stations} ) {
 	push( @{ $station_by_name{ $station->{name} } }, $station );
+}
+
+my %old_station_by_name;
+for my $old_station ( @{$old_stations} ) {
+	push( @{ $old_station_by_name{ $old_station->{name} } }, $old_station );
 }
 
 my %xml_by_ds100;
@@ -37,6 +58,54 @@ my $xml_str = read_file('stations.xml');
 my $tree    = XML::LibXML->load_xml( string => $xml_str );
 
 my @missing;
+
+sub add_station {
+	my ( $name, $ds100, $eva ) = @_;
+	my $station = {
+		name  => $name,
+		ds100 => $ds100,
+		eva   => $eva,
+	};
+	push( @{$stations}, $station );
+	$station_by_eva{$eva}     = $station;
+	$station_by_ds100{$ds100} = $station;
+	push( @{ $station_by_name{$name} }, $station );
+}
+
+sub add_old_station {
+	my ( $name, $ds100, $eva ) = @_;
+	my $station = {
+		name  => $name,
+		ds100 => $ds100,
+		eva   => $eva,
+	};
+	push( @{$old_stations}, $station );
+	$old_station_by_eva{$eva}     = $station;
+	$old_station_by_ds100{$ds100} = $station;
+	push( @{ $old_station_by_name{$name} }, $station );
+}
+
+sub delete_station {
+	my ( $name, $ds100, $eva ) = @_;
+	delete $station_by_name{$name};
+	delete $station_by_ds100{$ds100};
+	delete $station_by_eva{$eva};
+	@{$stations} = grep {
+		$_->{name} ne $name and $_->{ds100} ne $ds100 and $_->{eva} != $eva
+	} @{$stations};
+}
+
+sub delete_old_station {
+	my ( $name, $ds100, $eva ) = @_;
+	delete $old_station_by_name{$name};
+	delete $old_station_by_ds100{$ds100};
+	delete $old_station_by_eva{$eva};
+	@{$old_stations} = grep {
+		$_->{name} ne $name and $_->{ds100} ne $ds100 and $_->{eva} != $eva
+	} @{$old_stations};
+}
+
+# TODO falls ein eintrag aus old_stations im XML auftaucht sollte er aus old_stations raus und wieder in stations rein
 
 if ( -e 'missing.txt' ) {
 	for my $line ( read_file('missing.txt') ) {
@@ -106,44 +175,46 @@ for my $station ( $tree->findnodes('//station') ) {
 		and $is_db )
 	{
 		printf( "%30s has a new DS100 alias: %8s\n", $name, $ds100 );
-		my $station = {
-			name  => $name,
-			ds100 => $ds100,
-			eva   => $eva,
-		};
-		push( @{$stations}, $station );
-		$station_by_eva{$eva}     = $station;
-		$station_by_ds100{$ds100} = $station;
-		push( @{ $station_by_name{$name} }, $station );
+		add_station( $name, $ds100, $eva );
 	}
 	elsif ( $station_by_name{$name}
-		and not any { $_->{eva} eq $eva } @{ $station_by_name{$name} }
+		and not any { $_->{eva} == $eva } @{ $station_by_name{$name} }
 		and $is_db )
 	{
 		printf( "%30s has a new EVA alias: %d\n", $name, $eva );
-		my $station = {
-			name  => $name,
-			ds100 => $ds100,
-			eva   => $eva,
-		};
-		push( @{$stations}, $station );
-		$station_by_eva{$eva}     = $station;
-		$station_by_ds100{$ds100} = $station;
-		push( @{ $station_by_name{$name} }, $station );
+		add_station( $name, $ds100, $eva );
+	}
+
+	if (
+		$name !~ m{Betriebsstelle nicht bekannt}
+		and my $old = (
+			$old_station_by_name{$name} // $old_station_by_ds100{$ds100}
+			  // $old_station_by_eva{$eva}
+		)
+	  )
+	{
+		printf( "%30s has re-appeared as %s %d\n", $name, $ds100, $eva );
+		if ( ref($old) eq 'ARRAY' ) {
+			for my $o ( @{$old} ) {
+				delete_old_station( $o->{name}, $o->{ds100}, $o->{eva} );
+			}
+		}
+		else {
+			delete_old_station( $old->{name}, $old->{ds100}, $old->{eva} );
+		}
+		add_station( $name, $ds100, $eva );
 	}
 
 	if ( not $found
 		and any { $_ eq $name } @missing )
 	{
 		say "missing $eva  $ds100  \"$name\"";
-		push(
-			@{$stations},
-			{
-				name  => $name,
-				ds100 => $ds100,
-				eva   => $eva,
-			}
-		);
+
+		# TODO remove from old_stations
+		add_station( $name, $ds100, $eva );
+		if ( $old_station_by_name{$name} ) {
+			delete_old_station( $name, $ds100, $eva );
+		}
 	}
 }
 
@@ -159,7 +230,12 @@ for my $i ( 0 .. $#{$stations} ) {
 	if ( not( $xml_by_name{$j_name} or $xml_by_eva{$j_eva} ) ) {
 		say "station no longer exists: $j_eva  $j_ds100  \"$j_name\"";
 		unshift( @to_delete, $i );
+		add_old_station( $j_name, $j_ds100, $j_eva );
 	}
+}
+
+for my $i ( 0 .. $#{$old_stations} ) {
+	$old_stations->[$i]{eva} = 0 + $old_stations->[$i]{eva};
 }
 
 for my $i (@to_delete) {
@@ -168,6 +244,9 @@ for my $i (@to_delete) {
 
 my $json_out = $json->canonical->pretty->encode($stations);
 write_file( 'stations.json', $json_out );
+
+$json_out = $json->canonical->pretty->encode($old_stations);
+write_file( 'old_stations.json', $json_out );
 
 $json_out = $json->encode( \%renamed );
 write_file( 'renamed.json', $json_out );
