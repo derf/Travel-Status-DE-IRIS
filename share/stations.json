@@ -14769,6 +14769,15 @@
       "name" : "Cottbus-Willmersdorf Nord"
    },
    {
+      "ds100" : "PQSMC",
+      "eva" : 839433,
+      "latlong" : [
+         49.242756,
+         6.972429
+      ],
+      "name" : "Cottbuser Platz Malstatt, Saarbrücken"
+   },
+   {
       "ds100" : "XFCOL",
       "eva" : 8703169,
       "latlong" : [
@@ -19951,6 +19960,24 @@
          7.447326
       ],
       "name" : "Eitorf"
+   },
+   {
+      "ds100" : "PQHEN",
+      "eva" : 836588,
+      "latlong" : [
+         49.36224,
+         6.933443
+      ],
+      "name" : "Eiweiler Nord, Heusweiler"
+   },
+   {
+      "ds100" : "PQHE",
+      "eva" : 836587,
+      "latlong" : [
+         49.356676,
+         6.934809
+      ],
+      "name" : "Eiweiler, Heusweiler"
    },
    {
       "ds100" : "XBEK",
@@ -26433,6 +26460,15 @@
       "name" : "Gisors Embranchement"
    },
    {
+      "ds100" : "PQRGI",
+      "eva" : 839548,
+      "latlong" : [
+         49.314328,
+         6.933425
+      ],
+      "name" : "Gisorsstr., Riegelsberg"
+   },
+   {
       "ds100" : "HGT",
       "eva" : 8002281,
       "latlong" : [
@@ -28908,6 +28944,15 @@
       "name" : "Gößnitz"
    },
    {
+      "ds100" : "PQRGC",
+      "eva" : 836533,
+      "latlong" : [
+         49.311128,
+         6.93783
+      ],
+      "name" : "Güchenbach, Riegelsberg"
+   },
+   {
       "ds100" : "SGD",
       "eva" : 8002452,
       "latlong" : [
@@ -31266,6 +31311,15 @@
       "name" : "Haupeltshofen"
    },
    {
+      "ds100" : "PQSH",
+      "eva" : 836075,
+      "latlong" : [
+         49.240113,
+         6.990165
+      ],
+      "name" : "Hauptbahnhof, Saarbrücken"
+   },
+   {
       "ds100" : "PQKHP",
       "eva" : 363402,
       "latlong" : [
@@ -32256,6 +32310,15 @@
       "name" : "Heinrich-Heine-Straße, Kassel"
    },
    {
+      "ds100" : "PQSMH",
+      "eva" : 838333,
+      "latlong" : [
+         49.274937,
+         6.962109
+      ],
+      "name" : "Heinrichshaus Malstatt, Saarbrücken"
+   },
+   {
       "ds100" : "KHEBK",
       "eva" : 8002725,
       "latlong" : [
@@ -32362,6 +32425,15 @@
          11.183186
       ],
       "name" : "Heldrungen"
+   },
+   {
+      "ds100" : "PQSHW",
+      "eva" : 837196,
+      "latlong" : [
+         49.229182,
+         7.011532
+      ],
+      "name" : "Hellwigstr., Saarbrücken"
    },
    {
       "ds100" : "NHB",
@@ -35946,6 +36018,15 @@
       "name" : "Imsweiler"
    },
    {
+      "ds100" : "PQHIH",
+      "eva" : 837275,
+      "latlong" : [
+         49.344891,
+         6.937326
+      ],
+      "name" : "In der Hommersbach, Heusweiler"
+   },
+   {
       "ds100" : "OIIO",
       "eva" : 8301609,
       "latlong" : [
@@ -36630,6 +36711,15 @@
       "name" : "Jerichow"
    },
    {
+      "ds100" : "D8600217",
+      "eva" : 8600217,
+      "latlong" : [
+         55.474537,
+         8.485835
+      ],
+      "name" : "Jerne St."
+   },
+   {
       "ds100" : "HJRX",
       "eva" : 8003118,
       "latlong" : [
@@ -36808,6 +36898,15 @@
          6.017705
       ],
       "name" : "Joeuf"
+   },
+   {
+      "ds100" : "PQSJ",
+      "eva" : 838107,
+      "latlong" : [
+         49.23605,
+         6.996295
+      ],
+      "name" : "Johanneskirche, Saarbrücken"
    },
    {
       "ds100" : "DJ",
@@ -37222,6 +37321,15 @@
          7.6997976
       ],
       "name" : "Kaiserslautern-Hohenecken"
+   },
+   {
+      "ds100" : "PQSK",
+      "eva" : 835228,
+      "latlong" : [
+         49.23765,
+         6.994102
+      ],
+      "name" : "Kaiserstr., Saarbrücken"
    },
    {
       "ds100" : "OSKAI",
@@ -38772,6 +38880,15 @@
       "name" : "Kirchseeon"
    },
    {
+      "ds100" : "PQRP",
+      "eva" : 836341,
+      "latlong" : [
+         49.307433,
+         6.944724
+      ],
+      "name" : "Kirchstr., Riegelsberg"
+   },
+   {
       "ds100" : "MKW",
       "eva" : 8084066,
       "latlong" : [
@@ -38842,6 +38959,15 @@
          8.355684
       ],
       "name" : "Kirschbaumwasen"
+   },
+   {
+      "ds100" : "PQHK",
+      "eva" : 836586,
+      "latlong" : [
+         49.349691,
+         6.936562
+      ],
+      "name" : "Kirschhof, Heusweiler"
    },
    {
       "ds100" : "MKIS",
@@ -42165,6 +42291,24 @@
       "name" : "Landstuhl"
    },
    {
+      "ds100" : "PQLLN",
+      "eva" : 836590,
+      "latlong" : [
+         49.391527,
+         6.926548
+      ],
+      "name" : "Landsweiler Nord, Lebach"
+   },
+   {
+      "ds100" : "PQLLS",
+      "eva" : 836589,
+      "latlong" : [
+         49.387338,
+         6.928948
+      ],
+      "name" : "Landsweiler Süd, Lebach"
+   },
+   {
       "ds100" : "SLWR",
       "eva" : 8003516,
       "latlong" : [
@@ -42172,6 +42316,15 @@
          7.119316
       ],
       "name" : "Landsweiler-Reden"
+   },
+   {
+      "ds100" : "PQSL",
+      "eva" : 838367,
+      "latlong" : [
+         49.233281,
+         7.001078
+      ],
+      "name" : "Landwehrplatz, Saarbrücken"
    },
    {
       "ds100" : "FLGS",
@@ -43117,6 +43270,15 @@
          6.907231
       ],
       "name" : "Lebach"
+   },
+   {
+      "ds100" : "PQLES",
+      "eva" : 836591,
+      "latlong" : [
+         49.402395,
+         6.919258
+      ],
+      "name" : "Lebach Süd"
    },
    {
       "ds100" : "SLCJ",
@@ -45711,6 +45873,15 @@
       "name" : "Ludwigsthal"
    },
    {
+      "ds100" : "PQSML",
+      "eva" : 835814,
+      "latlong" : [
+         49.241192,
+         6.978308
+      ],
+      "name" : "Ludwigstr. Malstatt, Saarbrücken"
+   },
+   {
       "ds100" : "XSL",
       "eva" : 8505300,
       "latlong" : [
@@ -47689,6 +47860,15 @@
          11.862093
       ],
       "name" : "Markt Schwaben"
+   },
+   {
+      "ds100" : "PQHM",
+      "eva" : 836472,
+      "latlong" : [
+         49.33681,
+         6.930009
+      ],
+      "name" : "Markt, Heusweiler"
    },
    {
       "ds100" : "NMT",
@@ -51172,6 +51352,15 @@
          13.386844
       ],
       "name" : "Mühlenbeck-Mönchmühle"
+   },
+   {
+      "ds100" : "PQRWL",
+      "eva" : 836475,
+      "latlong" : [
+         49.326203,
+         6.922233
+      ],
+      "name" : "Mühlenstr. Walpershofen, Riegelsberg"
    },
    {
       "ds100" : "UMH",
@@ -58374,6 +58563,15 @@
       "name" : "Paris St Lazare"
    },
    {
+      "ds100" : "PQSMP",
+      "eva" : 836174,
+      "latlong" : [
+         49.246738,
+         6.967728
+      ],
+      "name" : "Pariser Platz/St.Paulus Malstatt, Saarbrücken"
+   },
+   {
       "ds100" : "WPA",
       "eva" : 8012609,
       "latlong" : [
@@ -61326,6 +61524,15 @@
       "name" : "Rastow"
    },
    {
+      "ds100" : "PQSMR",
+      "eva" : 837878,
+      "latlong" : [
+         49.250504,
+         6.963368
+      ],
+      "name" : "Rastpfuhl Malstatt, Saarbrücken"
+   },
+   {
       "ds100" : "FKRAT",
       "eva" : 712896,
       "latlong" : [
@@ -61333,6 +61540,15 @@
          9.49221
       ],
       "name" : "Rathaus, Kassel"
+   },
+   {
+      "ds100" : "PQRR",
+      "eva" : 837116,
+      "latlong" : [
+         49.301761,
+         6.943762
+      ],
+      "name" : "Rathaus, Riegelsberg"
    },
    {
       "ds100" : "FKRFF",
@@ -62800,6 +63016,24 @@
          7.770728
       ],
       "name" : "Riegel-Malterdingen (SWEG)"
+   },
+   {
+      "ds100" : "PQRS",
+      "eva" : 839562,
+      "latlong" : [
+         49.2943,
+         6.953399
+      ],
+      "name" : "Riegelsberg Süd, Riegelsberg"
+   },
+   {
+      "ds100" : "PQRRH",
+      "eva" : 839563,
+      "latlong" : [
+         49.308835,
+         6.940302
+      ],
+      "name" : "Riegelsberghalle, Riegelsberg"
    },
    {
       "ds100" : "RRIE",
@@ -64600,6 +64834,15 @@
          13.526134
       ],
       "name" : "Röhrnbach"
+   },
+   {
+      "ds100" : "PQSR",
+      "eva" : 836945,
+      "latlong" : [
+         49.227043,
+         7.021258
+      ],
+      "name" : "Römerkastell, Saarbrücken"
    },
    {
       "ds100" : "FROH",
@@ -66834,6 +67077,15 @@
       "name" : "Schulen"
    },
    {
+      "ds100" : "PQHWS",
+      "eva" : 835885,
+      "latlong" : [
+         49.333466,
+         6.925272
+      ],
+      "name" : "Schulzentrum, Heusweiler"
+   },
+   {
       "ds100" : "ESCT",
       "eva" : 8007080,
       "latlong" : [
@@ -68515,6 +68767,15 @@
          11.080807
       ],
       "name" : "Siedenlangenbeck"
+   },
+   {
+      "ds100" : "PQSMS",
+      "eva" : 835558,
+      "latlong" : [
+         49.255547,
+         6.960455
+      ],
+      "name" : "Siedlerheim Malstatt, Saarbrücken"
    },
    {
       "ds100" : "ESIH",
@@ -73980,6 +74241,15 @@
       "name" : "Trier Süd"
    },
    {
+      "ds100" : "PQSTS",
+      "eva" : 836375,
+      "latlong" : [
+         49.240508,
+         6.985904
+      ],
+      "name" : "Trierer Str., Saarbrücken"
+   },
+   {
       "ds100" : "NTF",
       "eva" : 8005907,
       "latlong" : [
@@ -74563,6 +74833,15 @@
          9.585528
       ],
       "name" : "Uhingen"
+   },
+   {
+      "ds100" : "PQSU",
+      "eva" : 836104,
+      "latlong" : [
+         49.23125,
+         7.006939
+      ],
+      "name" : "Uhlandstr., Saarbrücken"
    },
    {
       "ds100" : "RUDM",
@@ -77497,6 +77776,24 @@
          11.921079
       ],
       "name" : "Wallwitz(Saalkr)"
+   },
+   {
+      "ds100" : "PQRWM",
+      "eva" : 836412,
+      "latlong" : [
+         49.322256,
+         6.919743
+      ],
+      "name" : "Walpershofen Mitte, Riegelsberg"
+   },
+   {
+      "ds100" : "PQRWE",
+      "eva" : 836348,
+      "latlong" : [
+         49.317888,
+         6.91444
+      ],
+      "name" : "Walpershofen/Etzenhofen, Riegelsberg"
    },
    {
       "ds100" : "MWKN",
@@ -81043,6 +81340,15 @@
          12.07314
       ],
       "name" : "Wolfsgefärth"
+   },
+   {
+      "ds100" : "PQRW",
+      "eva" : 836831,
+      "latlong" : [
+         49.296709,
+         6.949201
+      ],
+      "name" : "Wolfskaulstr., Riegelsberg"
    },
    {
       "ds100" : "NWM",
