@@ -9,15 +9,6 @@
       "name" : "Ahrensfelde(Bz. Bremen)"
    },
    {
-      "ds100" : "XIAE",
-      "eva" : 8300358,
-      "latlong" : [
-         43.8707,
-         7.553207
-      ],
-      "name" : "Airole"
-   },
-   {
       "ds100" : "XIAO",
       "eva" : 8300133,
       "latlong" : [
@@ -34,15 +25,6 @@
          23.576231
       ],
       "name" : "Alba Iulia"
-   },
-   {
-      "ds100" : "XIAT",
-      "eva" : 8300950,
-      "latlong" : [
-         45.783184,
-         9.079832
-      ],
-      "name" : "Albate-Camerlata"
    },
    {
       "ds100" : "XIAB",
@@ -261,15 +243,6 @@
       "name" : "Bettembourg(fr)"
    },
    {
-      "ds100" : "XIBVA",
-      "eva" : 8301199,
-      "latlong" : [
-         43.825194,
-         7.579073
-      ],
-      "name" : "Bevera"
-   },
-   {
       "ds100" : "RBIC",
       "eva" : 8077777,
       "latlong" : [
@@ -387,15 +360,6 @@
       "name" : "Brtniky"
    },
    {
-      "ds100" : "XABU",
-      "eva" : 8100697,
-      "latlong" : [
-         46.894811,
-         15.834249
-      ],
-      "name" : "Burgfried b.Gnas"
-   },
-   {
       "ds100" : "XEBU",
       "eva" : 7100005,
       "latlong" : [
@@ -421,15 +385,6 @@
          13.014504
       ],
       "name" : "Böbrach"
-   },
-   {
-      "ds100" : "XECM",
-      "eva" : 7100076,
-      "latlong" : [
-         41.841178,
-         2.800607
-      ],
-      "name" : "Caldes de Malavella"
    },
    {
       "ds100" : "XICTL",
@@ -466,15 +421,6 @@
          12.925169
       ],
       "name" : "Chemnitz Stefan-Heym-Platz"
-   },
-   {
-      "ds100" : "ONCH",
-      "eva" : 8400152,
-      "latlong" : [
-         50.876110076904,
-         6.213844
-      ],
-      "name" : "Chevremont(NL)"
    },
    {
       "ds100" : "XICU",
@@ -720,15 +666,6 @@
       "name" : "Eutzsch"
    },
    {
-      "ds100" : "WFEL",
-      "eva" : 8011534,
-      "latlong" : [
-         53.330754,
-         13.431271
-      ],
-      "name" : "Feldberg(Meckl)"
-   },
-   {
       "ds100" : "XIFE",
       "eva" : 8300209,
       "latlong" : [
@@ -747,15 +684,6 @@
       "name" : "Feuchtwangen Bf"
    },
    {
-      "ds100" : "XEFI",
-      "eva" : 7100078,
-      "latlong" : [
-         42.264952,
-         2.969276
-      ],
-      "name" : "Figueres"
-   },
-   {
       "ds100" : "XIFLM",
       "eva" : 8300144,
       "latlong" : [
@@ -772,15 +700,6 @@
          10.150691
       ],
       "name" : "Fladungen"
-   },
-   {
-      "ds100" : "XEFL",
-      "eva" : 7100130,
-      "latlong" : [
-         42.047541,
-         2.957239
-      ],
-      "name" : "Flassa"
    },
    {
       "ds100" : "XIF",
@@ -873,15 +792,6 @@
       "name" : "Gottlieben (Schifflände)"
    },
    {
-      "ds100" : "XEGR",
-      "eva" : 7100075,
-      "latlong" : [
-         41.599307,
-         2.291623
-      ],
-      "name" : "Granollers"
-   },
-   {
       "ds100" : "HGIP",
       "eva" : 8070403,
       "latlong" : [
@@ -952,15 +862,6 @@
          11.987868
       ],
       "name" : "Halle(Saale)Hbf Gl. 13a"
-   },
-   {
-      "ds100" : "MHMB",
-      "eva" : 966904,
-      "latlong" : [
-         47.466024,
-         11.046595
-      ],
-      "name" : "Hammersbach Zugspitzbahn, Grainau"
    },
    {
       "ds100" : "FHAX",
@@ -1116,15 +1017,6 @@
       "name" : "Kainzenbad"
    },
    {
-      "ds100" : "WKGW",
-      "eva" : 8011989,
-      "latlong" : [
-         53.49952404,
-         12.76242345
-      ],
-      "name" : "Kargow"
-   },
-   {
       "ds100" : "XMK",
       "eva" : 5500092,
       "latlong" : [
@@ -1134,15 +1026,6 @@
       "name" : "Kelebia"
    },
    {
-      "ds100" : "WKLE",
-      "eva" : 8012020,
-      "latlong" : [
-         53.62316794,
-         13.06042745
-      ],
-      "name" : "Kleeth"
-   },
-   {
       "ds100" : "DKFR",
       "eva" : 8017344,
       "latlong" : [
@@ -1150,15 +1033,6 @@
          13.104999
       ],
       "name" : "Kleinforst Rosensee"
-   },
-   {
-      "ds100" : "WKC",
-      "eva" : 8012049,
-      "latlong" : [
-         53.470795,
-         12.86687
-      ],
-      "name" : "Klockow(b Waren/Müritz)"
    },
    {
       "ds100" : "LKMR",
@@ -1213,15 +1087,6 @@
          6.978557
       ],
       "name" : "Kreuzberg(Ahr)"
-   },
-   {
-      "ds100" : "MKZB",
-      "eva" : 966903,
-      "latlong" : [
-         47.472102,
-         11.062936
-      ],
-      "name" : "Kreuzeck/Alpspitzbahn Bahnhof, Garmisch-Partenkirc"
    },
    {
       "ds100" : "XTKM",
@@ -1584,15 +1449,6 @@
       "name" : "Nykoebing F st"
    },
    {
-      "ds100" : "NND",
-      "eva" : 8098493,
-      "latlong" : [
-         49.431761,
-         11.127479
-      ],
-      "name" : "Nürnberg Frankenstadion Sonderbahnsteig"
-   },
-   {
       "ds100" : "ROGI",
       "eva" : 8007437,
       "latlong" : [
@@ -1825,15 +1681,6 @@
          7.036514
       ],
       "name" : "Rech"
-   },
-   {
-      "ds100" : "MRFR",
-      "eva" : 966907,
-      "latlong" : [
-         47.43554,
-         10.987337
-      ],
-      "name" : "Riffelriß, Grainau"
    },
    {
       "ds100" : "XIRI",
@@ -2124,15 +1971,6 @@
       "name" : "Simeria"
    },
    {
-      "ds100" : "XZSL",
-      "eva" : 7900048,
-      "latlong" : [
-         46.1743369,
-         14.3356158
-      ],
-      "name" : "Skofja Loka"
-   },
-   {
       "ds100" : "XDSGE",
       "eva" : 8602254,
       "latlong" : [
@@ -2338,15 +2176,6 @@
          13.151892
       ],
       "name" : "Trelleborg F"
-   },
-   {
-      "ds100" : "XATK",
-      "eva" : 8100379,
-      "latlong" : [
-         48.027377,
-         12.860483
-      ],
-      "name" : "Trimmelkam"
    },
    {
       "ds100" : "UTRO",
@@ -2563,15 +2392,6 @@
          7.140685
       ],
       "name" : "Wittring"
-   },
-   {
-      "ds100" : "XCV",
-      "eva" : 2000021,
-      "latlong" : [
-         55.197393,
-         34.317551
-      ],
-      "name" : "Wjasma"
    },
    {
       "ds100" : "XPZD",

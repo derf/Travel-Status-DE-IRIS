@@ -558,6 +558,15 @@
       "name" : "Ainring"
    },
    {
+      "ds100" : "XIAE",
+      "eva" : 8300358,
+      "latlong" : [
+         43.870703,
+         7.553204
+      ],
+      "name" : "Airole"
+   },
+   {
       "ds100" : "XSAI",
       "eva" : 8505201,
       "latlong" : [
@@ -592,6 +601,15 @@
          5.843611240387
       ],
       "name" : "Akkrum"
+   },
+   {
+      "ds100" : "XIAT",
+      "eva" : 8300950,
+      "latlong" : [
+         45.776776,
+         9.0731
+      ],
+      "name" : "Albate Camerlata"
    },
    {
       "ds100" : "RAL",
@@ -8289,6 +8307,15 @@
       "name" : "Beutersitz"
    },
    {
+      "ds100" : "XIBVA",
+      "eva" : 8301199,
+      "latlong" : [
+         43.825191,
+         7.579075
+      ],
+      "name" : "Bevera"
+   },
+   {
       "ds100" : "HWEH",
       "eva" : 8087065,
       "latlong" : [
@@ -12330,6 +12357,15 @@
       "name" : "Burgdorf"
    },
    {
+      "ds100" : "XABU",
+      "eva" : 8100697,
+      "latlong" : [
+         46.894809,
+         15.834247
+      ],
+      "name" : "Burgfried b.Gnas"
+   },
+   {
       "ds100" : "FBUH",
       "eva" : 8001283,
       "latlong" : [
@@ -13239,6 +13275,15 @@
       "name" : "Caldern"
    },
    {
+      "ds100" : "XECM",
+      "eva" : 7100076,
+      "latlong" : [
+         41.841182,
+         2.800607
+      ],
+      "name" : "Caldes de Malavella"
+   },
+   {
       "ds100" : "TCA",
       "eva" : 8001320,
       "latlong" : [
@@ -14128,6 +14173,15 @@
          -1.621044
       ],
       "name" : "Cherbourg"
+   },
+   {
+      "ds100" : "ONCH",
+      "eva" : 8400152,
+      "latlong" : [
+         50.875898,
+         6.059619
+      ],
+      "name" : "Chevremont(NL)"
    },
    {
       "ds100" : "XSCH",
@@ -22257,6 +22311,15 @@
       "name" : "Feldbach/Raab"
    },
    {
+      "ds100" : "WFEL",
+      "eva" : 8011534,
+      "latlong" : [
+         53.330753,
+         13.431268
+      ],
+      "name" : "Feldberg(Meckl)"
+   },
+   {
       "ds100" : "RFB",
       "eva" : 8001971,
       "latlong" : [
@@ -22473,6 +22536,15 @@
       "name" : "Fieberbrunn"
    },
    {
+      "ds100" : "XEFI",
+      "eva" : 7100078,
+      "latlong" : [
+         42.264951,
+         2.969272
+      ],
+      "name" : "Figueres"
+   },
+   {
       "ds100" : "TFIL",
       "eva" : 8001984,
       "latlong" : [
@@ -22642,6 +22714,15 @@
          7.31956255071774
       ],
       "name" : "Flamatt"
+   },
+   {
+      "ds100" : "XEFL",
+      "eva" : 7100130,
+      "latlong" : [
+         42.047538,
+         2.957235
+      ],
+      "name" : "Flassa"
    },
    {
       "ds100" : "XAFG",
@@ -27144,6 +27225,15 @@
       "name" : "Gramsbergen"
    },
    {
+      "ds100" : "XEGR",
+      "eva" : 7100075,
+      "latlong" : [
+         41.599309,
+         2.29162
+      ],
+      "name" : "Granollers"
+   },
+   {
       "ds100" : "WGRA",
       "eva" : 8011691,
       "latlong" : [
@@ -30382,6 +30472,15 @@
          12.946134
       ],
       "name" : "Hammerau"
+   },
+   {
+      "ds100" : "MHMB",
+      "eva" : 966904,
+      "latlong" : [
+         47.465984,
+         11.046044
+      ],
+      "name" : "Hammersbach Zugspitzbahn, Grainau"
    },
    {
       "ds100" : "RHST",
@@ -37449,6 +37548,15 @@
       "name" : "Karez"
    },
    {
+      "ds100" : "WKGW",
+      "eva" : 8011989,
+      "latlong" : [
+         53.499499,
+         12.762489
+      ],
+      "name" : "Kargow"
+   },
+   {
       "ds100" : "XTKAJ",
       "eva" : 5401443,
       "latlong" : [
@@ -38880,6 +38988,15 @@
       "name" : "Kledering b.Wien"
    },
    {
+      "ds100" : "WKLE",
+      "eva" : 8012020,
+      "latlong" : [
+         53.623136,
+         13.06049
+      ],
+      "name" : "Kleeth"
+   },
+   {
       "ds100" : "WKB",
       "eva" : 8012021,
       "latlong" : [
@@ -39157,6 +39274,15 @@
          14.59074098
       ],
       "name" : "Klitten"
+   },
+   {
+      "ds100" : "WKC",
+      "eva" : 8012049,
+      "latlong" : [
+         53.470778,
+         12.866818
+      ],
+      "name" : "Klockow(b Waren/Müritz)"
    },
    {
       "ds100" : "TBR",
@@ -40210,6 +40336,15 @@
          6.49194
       ],
       "name" : "Kreuzau-Eifelstraße"
+   },
+   {
+      "ds100" : "MKZB",
+      "eva" : 966903,
+      "latlong" : [
+         47.471557,
+         11.062593
+      ],
+      "name" : "Kreuzeck/Alpspitzbahn Bahnhof, Garmisch-Partenkirc"
    },
    {
       "ds100" : "XSKR",
@@ -55332,6 +55467,15 @@
       "name" : "Nürnberg Frankenstadion"
    },
    {
+      "ds100" : "NND",
+      "eva" : 8098493,
+      "latlong" : [
+         49.434253,
+         11.122928
+      ],
+      "name" : "Nürnberg Frankenstadion Sonderbahnsteig"
+   },
+   {
       "ds100" : "NN",
       "eva" : 8000284,
       "latlong" : [
@@ -62712,6 +62856,15 @@
       "name" : "Rietz in Tirol"
    },
    {
+      "ds100" : "MRFR",
+      "eva" : 966907,
+      "latlong" : [
+         47.432679,
+         10.985717
+      ],
+      "name" : "Riffelriß, Grainau"
+   },
+   {
       "ds100" : "ONRIS",
       "eva" : 8400538,
       "latlong" : [
@@ -68814,6 +68967,15 @@
       "name" : "Skanderborg st"
    },
    {
+      "ds100" : "XZSL",
+      "eva" : 7900048,
+      "latlong" : [
+         46.174333,
+         14.335619
+      ],
+      "name" : "Skofja Loka"
+   },
+   {
       "ds100" : "XRSL",
       "eva" : 7800015,
       "latlong" : [
@@ -73744,6 +73906,15 @@
          10.679144
       ],
       "name" : "Triesdorf"
+   },
+   {
+      "ds100" : "XATK",
+      "eva" : 8100379,
+      "latlong" : [
+         48.027378,
+         12.86048
+      ],
+      "name" : "Trimmelkam"
    },
    {
       "ds100" : "UTR",
@@ -80584,6 +80755,15 @@
          8.998558
       ],
       "name" : "Witzwort"
+   },
+   {
+      "ds100" : "XCV",
+      "eva" : 2000021,
+      "latlong" : [
+         55.197393,
+         34.317551
+      ],
+      "name" : "Wjasma"
    },
    {
       "ds100" : "XPWOD",
