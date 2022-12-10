@@ -2556,6 +2556,15 @@
       "name" : "Arras(F)"
    },
    {
+      "ds100" : "OFARS",
+      "eva" : 8700627,
+      "latlong" : [
+         49.074765,
+         6.078955
+      ],
+      "name" : "Ars-sur-Moselle"
+   },
+   {
       "ds100" : "KARS",
       "eva" : 8000611,
       "latlong" : [
@@ -9909,6 +9918,15 @@
       "name" : "Bokholt"
    },
    {
+      "ds100" : "OTBDL",
+      "eva" : 5400534,
+      "latlong" : [
+         50.733455,
+         14.188007
+      ],
+      "name" : "Boletice nad Labem"
+   },
+   {
       "ds100" : "XFBOW",
       "eva" : 8700293,
       "latlong" : [
@@ -15577,6 +15595,15 @@
          14.23002
       ],
       "name" : "Decin-Prostredni Zleb"
+   },
+   {
+      "ds100" : "OTDSM",
+      "eva" : 5400790,
+      "latlong" : [
+         50.766598,
+         14.214939
+      ],
+      "name" : "Decin-Stare Mesto"
    },
    {
       "ds100" : "HDEH",
@@ -40284,6 +40311,15 @@
       "name" : "Krensitz"
    },
    {
+      "ds100" : "OTKUD",
+      "eva" : 5401646,
+      "latlong" : [
+         50.756719,
+         14.203774
+      ],
+      "name" : "Kresice u Decina"
+   },
+   {
       "ds100" : "TKN",
       "eva" : 8003432,
       "latlong" : [
@@ -46998,6 +47034,15 @@
       "name" : "Malczyce"
    },
    {
+      "ds100" : "OTMBL",
+      "eva" : 5401901,
+      "latlong" : [
+         50.671753,
+         14.168429
+      ],
+      "name" : "Male Brezno nad Labe"
+   },
+   {
       "ds100" : "WGRN",
       "eva" : 8011650,
       "latlong" : [
@@ -47356,6 +47401,15 @@
          9.431171
       ],
       "name" : "Marbach-Grafeneck"
+   },
+   {
+      "ds100" : "OFMRB",
+      "eva" : 8701580,
+      "latlong" : [
+         48.801008,
+         6.109321
+      ],
+      "name" : "Marbache"
    },
    {
       "ds100" : "EMHD",
@@ -59551,6 +59605,15 @@
          14.5747
       ],
       "name" : "Pommritz"
+   },
+   {
+      "ds100" : "OFPMY",
+      "eva" : 8701779,
+      "latlong" : [
+         48.773932,
+         6.131246
+      ],
+      "name" : "Pompey"
    },
    {
       "ds100" : "DPO",
@@ -72027,6 +72090,15 @@
       "name" : "Susteren"
    },
    {
+      "ds100" : "OTSDV",
+      "eva" : 5402997,
+      "latlong" : [
+         50.662197,
+         14.098673
+      ],
+      "name" : "Svadov"
+   },
+   {
       "ds100" : "XTSV",
       "eva" : 5400131,
       "latlong" : [
@@ -72655,6 +72727,15 @@
          18.790155
       ],
       "name" : "Tczew"
+   },
+   {
+      "ds100" : "OTTEC",
+      "eva" : 5403099,
+      "latlong" : [
+         50.700141,
+         14.203127
+      ],
+      "name" : "Techlovice"
    },
    {
       "ds100" : "XSTE",
@@ -75474,6 +75555,15 @@
       "name" : "Vallendar"
    },
    {
+      "ds100" : "OTVTI",
+      "eva" : 5403278,
+      "latlong" : [
+         50.672409,
+         14.121829
+      ],
+      "name" : "Valtirov"
+   },
+   {
       "ds100" : "XDVA",
       "eva" : 8602722,
       "latlong" : [
@@ -75787,6 +75877,15 @@
          12.803137
       ],
       "name" : "Velgast"
+   },
+   {
+      "ds100" : "OTVBR",
+      "eva" : 5403321,
+      "latlong" : [
+         50.664211,
+         14.146333
+      ],
+      "name" : "Velke Brezno"
    },
    {
       "ds100" : "XTVV",
