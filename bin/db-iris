@@ -10,10 +10,10 @@ our $VERSION = '1.75';
 
 use DateTime;
 use DateTime::Format::Strptime;
-use Encode qw(decode);
+use Encode       qw(decode);
 use Getopt::Long qw(:config no_ignore_case bundling);
 use JSON;
-use List::Util qw(first max);
+use List::Util      qw(first max);
 use List::MoreUtils qw(none);
 use Travel::Status::DE::IRIS;
 use Travel::Status::DE::IRIS::Stations;
@@ -462,7 +462,7 @@ for my $d ( $status->results() ) {
 	@via = ( $d->route_post, $d->route_end );
 
 	if (   ( $filter_via and not( first { $_ =~ m{$filter_via}io } @via ) )
-		or ( @grep_class and none { $_ ~~ \@grep_class } $d->classes )
+		or ( @grep_class    and none { $_ ~~ \@grep_class } $d->classes )
 		or ( @grep_platform and not( $d->platform ~~ \@grep_platform ) )
 		or ( @grep_type     and not( $d->type     ~~ \@grep_type ) )
 		or $d->is_wing )
@@ -482,8 +482,7 @@ for my $d ( $status->results() ) {
 		my $d_via = first {
 			$_->train_id eq $d->train_id
 			  or ( $_->old_train_id and $_->old_train_id eq $d->train_id );
-		}
-		$status_via->results;
+		} $status_via->results;
 		if (   not $d_via
 			or not $d_via->sched_arrival
 			or $d_via->sched_arrival < $d->departure )
