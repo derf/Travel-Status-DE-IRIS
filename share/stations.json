@@ -504,6 +504,15 @@
       "name" : "Aich(Niederbay)"
    },
    {
+      "ds100" : "OAAAS",
+      "eva" : 8100597,
+      "latlong" : [
+         47.420471,
+         13.82069
+      ],
+      "name" : "Aich-Assach"
+   },
+   {
       "ds100" : "MAI",
       "eva" : 8000452,
       "latlong" : [
@@ -5985,6 +5994,15 @@
       "name" : "Belfort Ville"
    },
    {
+      "ds100" : "XFBMT",
+      "eva" : 8730082,
+      "latlong" : [
+         47.585936,
+         6.89763
+      ],
+      "name" : "Belfort-Montbéliard TGV"
+   },
+   {
       "ds100" : "LBGH",
       "eva" : 8011132,
       "latlong" : [
@@ -8179,6 +8197,15 @@
          8.006031
       ],
       "name" : "Berzhahn"
+   },
+   {
+      "ds100" : "XFBTV",
+      "eva" : 8730086,
+      "latlong" : [
+         47.307558,
+         5.952675
+      ],
+      "name" : "Besançon Franche-Comté TGV"
    },
    {
       "ds100" : "XFB",
@@ -11968,6 +11995,15 @@
          4.378385
       ],
       "name" : "Bruxelles-Schuman"
+   },
+   {
+      "ds100" : "XPBG",
+      "eva" : 5100003,
+      "latlong" : [
+         50.852975,
+         17.471183
+      ],
+      "name" : "Brzeg"
    },
    {
       "ds100" : "RBRN",
@@ -25254,6 +25290,15 @@
       "name" : "Gaimersheim"
    },
    {
+      "ds100" : "OAGAH",
+      "eva" : 8100819,
+      "latlong" : [
+         47.488942,
+         14.545931
+      ],
+      "name" : "Gaishorn"
+   },
+   {
       "ds100" : "MGAI",
       "eva" : 8002173,
       "latlong" : [
@@ -37665,6 +37710,15 @@
       "name" : "Kamenz(Sachs)"
    },
    {
+      "ds100" : "OAKMN",
+      "eva" : 8101061,
+      "latlong" : [
+         47.390043,
+         14.90434
+      ],
+      "name" : "Kammern im Liesingtal"
+   },
+   {
       "ds100" : "FKMP",
       "eva" : 8003170,
       "latlong" : [
@@ -38320,6 +38374,15 @@
          12.197821
       ],
       "name" : "Kavelstorf"
+   },
+   {
+      "ds100" : "XPKE",
+      "eva" : 5100119,
+      "latlong" : [
+         50.344357,
+         18.204765
+      ],
+      "name" : "Kedzierzyn Kozle"
    },
    {
       "ds100" : "OAKFM",
@@ -50211,6 +50274,15 @@
       "name" : "Modane"
    },
    {
+      "ds100" : "D8705091",
+      "eva" : 8705091,
+      "latlong" : [
+         45.140007,
+         6.684406
+      ],
+      "name" : "Modane(Fr)"
+   },
+   {
       "ds100" : "KMO",
       "eva" : 8000644,
       "latlong" : [
@@ -55033,6 +55105,15 @@
          12.82213
       ],
       "name" : "Niederzwönitz"
+   },
+   {
+      "ds100" : "OANIO",
+      "eva" : 8101273,
+      "latlong" : [
+         47.482218,
+         14.014614
+      ],
+      "name" : "Niederöblarn"
    },
    {
       "ds100" : "TNF",
@@ -60786,6 +60867,15 @@
       "name" : "Protivin zast."
    },
    {
+      "ds100" : "OAPRU",
+      "eva" : 8101386,
+      "latlong" : [
+         47.423429,
+         13.875012
+      ],
+      "name" : "Pruggern"
+   },
+   {
       "ds100" : "XPPRZ",
       "eva" : 5100234,
       "latlong" : [
@@ -61315,6 +61405,15 @@
          16.894579
       ],
       "name" : "Rabensburg"
+   },
+   {
+      "ds100" : "XPRA",
+      "eva" : 5100263,
+      "latlong" : [
+         50.090349,
+         18.226393
+      ],
+      "name" : "Raciborz"
    },
    {
       "ds100" : "LRAK",
@@ -70956,6 +71055,15 @@
       "name" : "Starckstraße, Karlsruhe"
    },
    {
+      "ds100" : "OTSMU",
+      "eva" : 5400089,
+      "latlong" : [
+         49.076572,
+         17.423108
+      ],
+      "name" : "Stare Mesto u Uh.Hrad."
+   },
+   {
       "ds100" : "XTSSY",
       "eva" : 5402925,
       "latlong" : [
@@ -71125,6 +71233,15 @@
          7.9488227239598
       ],
       "name" : "Stein-Säckingen"
+   },
+   {
+      "ds100" : "OASEN",
+      "eva" : 8101494,
+      "latlong" : [
+         47.436706,
+         13.941379
+      ],
+      "name" : "Stein/Enns"
    },
    {
       "ds100" : "DSTI",
@@ -82269,6 +82386,15 @@
       "name" : "Wörrstadt"
    },
    {
+      "ds100" : "OASBW",
+      "eva" : 8100425,
+      "latlong" : [
+         47.545601,
+         14.14041
+      ],
+      "name" : "Wörschach Schwefelbad"
+   },
+   {
       "ds100" : "FWOD",
       "eva" : 8006535,
       "latlong" : [
@@ -82483,6 +82609,15 @@
          9.943503
       ],
       "name" : "Würzburg Süd"
+   },
+   {
+      "ds100" : "NWHO",
+      "eva" : 8006580,
+      "latlong" : [
+         49.761137,
+         9.953261
+      ],
+      "name" : "Würzburg-Heidingsfeld Ost"
    },
    {
       "ds100" : "NWZ",
@@ -84031,6 +84166,15 @@
          9.853409
       ],
       "name" : "Äpfingen"
+   },
+   {
+      "ds100" : "OAOE",
+      "eva" : 8100133,
+      "latlong" : [
+         47.460914,
+         13.988114
+      ],
+      "name" : "Öblarn"
    },
    {
       "ds100" : "TOE",
