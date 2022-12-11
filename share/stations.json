@@ -49572,6 +49572,15 @@
       "name" : "Metzingen(Württ)"
    },
    {
+      "ds100" : "TNHU",
+      "eva" : 8070678,
+      "latlong" : [
+         48.532647,
+         9.307106
+      ],
+      "name" : "Metzingen-Neuhausen"
+   },
+   {
       "ds100" : "XFMU",
       "eva" : 8714732,
       "latlong" : [

@@ -1206,15 +1206,6 @@
       "name" : "Menningen-Leitishofen"
    },
    {
-      "ds100" : "TNHU",
-      "eva" : 8070678,
-      "latlong" : [
-         48.532647,
-         9.307106
-      ],
-      "name" : "Metzingen-Neuhausen"
-   },
-   {
       "ds100" : "FMICH",
       "eva" : 8070165,
       "latlong" : [
