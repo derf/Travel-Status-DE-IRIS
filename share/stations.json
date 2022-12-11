@@ -49518,6 +49518,15 @@
       "name" : "Mering-St Afra"
    },
    {
+      "ds100" : "TMKL",
+      "eva" : 8003983,
+      "latlong" : [
+         48.5211319,
+         9.7410035
+      ],
+      "name" : "Merklingen - Schwäbische Alb"
+   },
+   {
       "ds100" : "XLM",
       "eva" : 8200110,
       "latlong" : [
