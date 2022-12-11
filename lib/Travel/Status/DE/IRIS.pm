@@ -54,6 +54,15 @@ sub new_p {
 
 	my @candidates = $opt{get_station}( $opt{station} );
 
+	if ( @candidates != 1 and $opt{station} =~ m{^\d+$} ) {
+		@candidates = (
+			[
+				"D$opt{station}", "Betriebsstelle nicht bekannt $opt{station}",
+				$opt{station}
+			]
+		);
+	}
+
 	if ( @candidates == 0 ) {
 		return $promise->reject('station not found');
 	}
