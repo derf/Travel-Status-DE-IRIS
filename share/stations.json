@@ -12483,6 +12483,15 @@
       "name" : "Burgbernheim-Wildbad"
    },
    {
+      "ds100" : "KBGL",
+      "eva" : 8070342,
+      "latlong" : [
+         50.457926,
+         7.283761
+      ],
+      "name" : "Burgbrohl"
+   },
+   {
       "ds100" : "HBGD",
       "eva" : 8001279,
       "latlong" : [
