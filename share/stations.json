@@ -882,6 +882,15 @@
       "name" : "Alkmaar Noord"
    },
    {
+      "ds100" : "OSALL",
+      "eva" : 8501035,
+      "latlong" : [
+         46.47575,
+         6.399699
+      ],
+      "name" : "Allaman"
+   },
+   {
       "ds100" : "FADD",
       "eva" : 8000492,
       "latlong" : [
@@ -2104,6 +2113,15 @@
          13.032757
       ],
       "name" : "Annaburg"
+   },
+   {
+      "ds100" : "OFANM",
+      "eva" : 8700131,
+      "latlong" : [
+         46.199341,
+         6.236401
+      ],
+      "name" : "Annemasse"
    },
    {
       "ds100" : "RAN",
@@ -14499,6 +14517,15 @@
       "name" : "Châtelet"
    },
    {
+      "ds100" : "D8516274",
+      "eva" : 8516274,
+      "latlong" : [
+         46.196599,
+         6.197334
+      ],
+      "name" : "Chêne-Bourg"
+   },
+   {
       "ds100" : "OTCC",
       "eva" : 5400048,
       "latlong" : [
@@ -14542,6 +14569,15 @@
          1.520423
       ],
       "name" : "Cintegabelle"
+   },
+   {
+      "ds100" : "OJCIR",
+      "eva" : 7900087,
+      "latlong" : [
+         46.641538,
+         15.664593
+      ],
+      "name" : "Cirknica"
    },
    {
       "ds100" : "OTCTV",
@@ -14812,6 +14848,15 @@
          9.537588
       ],
       "name" : "Coppenbrügge"
+   },
+   {
+      "ds100" : "OSCPP",
+      "eva" : 8501023,
+      "latlong" : [
+         46.317396,
+         6.187824
+      ],
+      "name" : "Coppet"
    },
    {
       "ds100" : "XFCOM",
@@ -19699,6 +19744,15 @@
          14.64616
       ],
       "name" : "Eibau"
+   },
+   {
+      "ds100" : "MEIB",
+      "eva" : 966906,
+      "latlong" : [
+         47.454828,
+         10.99361
+      ],
+      "name" : "Eibsee Zugspitzbahn, Grainau"
    },
    {
       "ds100" : "DEI",
@@ -26118,6 +26172,15 @@
       "name" : "Genève-Aéroport"
    },
    {
+      "ds100" : "D8516273",
+      "eva" : 8516273,
+      "latlong" : [
+         46.201444,
+         6.166573
+      ],
+      "name" : "Genève-Eaux-Vives"
+   },
+   {
       "ds100" : "NGE",
       "eva" : 8002237,
       "latlong" : [
@@ -26710,6 +26773,15 @@
          7.444848
       ],
       "name" : "Glan-Münchweiler"
+   },
+   {
+      "ds100" : "OSGLD",
+      "eva" : 8501031,
+      "latlong" : [
+         46.42017,
+         6.2695
+      ],
+      "name" : "Gland"
    },
    {
       "ds100" : "XNGB",
@@ -31642,6 +31714,15 @@
          8.181665
       ],
       "name" : "Hausach"
+   },
+   {
+      "ds100" : "MGHB",
+      "eva" : 966902,
+      "latlong" : [
+         47.483027,
+         11.09045
+      ],
+      "name" : "Hausberg, Garmisch-Partenkirchen"
    },
    {
       "ds100" : "KHAD",
@@ -42388,6 +42469,15 @@
          22.22751
       ],
       "name" : "Lancut"
+   },
+   {
+      "ds100" : "PSAXG",
+      "eva" : 8516155,
+      "latlong" : [
+         46.187088,
+         6.125429
+      ],
+      "name" : "Lancy Pont-Rouge"
    },
    {
       "ds100" : "MLDI",
@@ -55908,6 +55998,15 @@
       "name" : "Nymburk hl.n."
    },
    {
+      "ds100" : "OSNY",
+      "eva" : 8501030,
+      "latlong" : [
+         46.384321,
+         6.235619
+      ],
+      "name" : "Nyon"
+   },
+   {
       "ds100" : "OTNK",
       "eva" : 5400215,
       "latlong" : [
@@ -59272,6 +59371,15 @@
          10.701178
       ],
       "name" : "Peschiera del Garda"
+   },
+   {
+      "ds100" : "OJPEN",
+      "eva" : 7900171,
+      "latlong" : [
+         46.60986,
+         15.680423
+      ],
+      "name" : "Pesnica"
    },
    {
       "ds100" : "XLP",
@@ -62676,6 +62784,15 @@
       "name" : "Rendsburg"
    },
    {
+      "ds100" : "OSRNV",
+      "eva" : 8501118,
+      "latlong" : [
+         46.537039,
+         6.578935
+      ],
+      "name" : "Renens VD"
+   },
+   {
       "ds100" : "XFR",
       "eva" : 8700025,
       "latlong" : [
@@ -64078,6 +64195,15 @@
          7.206835
       ],
       "name" : "Rolandseck"
+   },
+   {
+      "ds100" : "OSROL",
+      "eva" : 8501033,
+      "latlong" : [
+         46.462896,
+         6.336937
+      ],
+      "name" : "Rolle"
    },
    {
       "ds100" : "NRON",
@@ -69001,6 +69127,15 @@
          9.380518
       ],
       "name" : "Sennfeld"
+   },
+   {
+      "ds100" : "OJSEN",
+      "eva" : 7900064,
+      "latlong" : [
+         46.674223,
+         15.657977
+      ],
+      "name" : "Sentilj"
    },
    {
       "ds100" : "WSES",
@@ -76887,6 +77022,15 @@
       "name" : "Vettweiß-Jakobwüllesheim"
    },
    {
+      "ds100" : "OSVE",
+      "eva" : 8501200,
+      "latlong" : [
+         46.463165,
+         6.843533
+      ],
+      "name" : "Vevey"
+   },
+   {
       "ds100" : "XIVC",
       "eva" : 8300126,
       "latlong" : [
@@ -83779,6 +83923,24 @@
          8.51529569481037
       ],
       "name" : "Zug(CH)"
+   },
+   {
+      "ds100" : "MGRN",
+      "eva" : 966905,
+      "latlong" : [
+         47.471755,
+         11.022519
+      ],
+      "name" : "Zugspitzbahnhof, Grainau"
+   },
+   {
+      "ds100" : "MZP",
+      "eva" : 966908,
+      "latlong" : [
+         47.413496,
+         10.980153
+      ],
+      "name" : "Zugspitze Bahnhof Zugspitzplatt, Garmisch-Partenki"
    },
    {
       "ds100" : "XNZB",
