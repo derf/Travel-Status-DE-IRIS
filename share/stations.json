@@ -7191,24 +7191,6 @@
       "name" : "Berlin Treptower Park"
    },
    {
-      "ds100" : "BWS",
-      "eva" : 8010405,
-      "latlong" : [
-         52.421058,
-         13.179336
-      ],
-      "name" : "Berlin Wannsee"
-   },
-   {
-      "ds100" : "BWSS",
-      "eva" : 8089190,
-      "latlong" : [
-         52.421058,
-         13.179336
-      ],
-      "name" : "Berlin Wannsee (S)"
-   },
-   {
       "ds100" : "BWRS",
       "eva" : 8089045,
       "latlong" : [
@@ -7828,6 +7810,24 @@
          13.320996
       ],
       "name" : "Berlin-Waidmannslust"
+   },
+   {
+      "ds100" : "BWS",
+      "eva" : 8010405,
+      "latlong" : [
+         52.421058,
+         13.179336
+      ],
+      "name" : "Berlin-Wannsee"
+   },
+   {
+      "ds100" : "BWSS",
+      "eva" : 8089190,
+      "latlong" : [
+         52.421058,
+         13.179336
+      ],
+      "name" : "Berlin-Wannsee (S)"
    },
    {
       "ds100" : "BWAB",
@@ -13776,7 +13776,7 @@
          50.404422,
          4.438774
       ],
-      "name" : "Charleroi Sud"
+      "name" : "Charleroi Central"
    },
    {
       "ds100" : "XFCT",
@@ -20898,15 +20898,6 @@
       "name" : "Ergoldsbach"
    },
    {
-      "ds100" : "EERG",
-      "eva" : 8001836,
-      "latlong" : [
-         51.424705,
-         7.577534
-      ],
-      "name" : "Ergste"
-   },
-   {
       "ds100" : "TEK",
       "eva" : 8001838,
       "latlong" : [
@@ -24750,15 +24741,6 @@
       "name" : "Frutigen"
    },
    {
-      "ds100" : "EFRM",
-      "eva" : 8002130,
-      "latlong" : [
-         51.499263,
-         7.735929
-      ],
-      "name" : "Frömern"
-   },
-   {
       "ds100" : "EFOE",
       "eva" : 8000113,
       "latlong" : [
@@ -24766,6 +24748,15 @@
          7.762198
       ],
       "name" : "Fröndenberg"
+   },
+   {
+      "ds100" : "EFRM",
+      "eva" : 8002130,
+      "latlong" : [
+         51.499263,
+         7.735929
+      ],
+      "name" : "Fröndenberg-Frömern"
    },
    {
       "ds100" : "UFT",
@@ -38166,7 +38157,7 @@
          54.007081,
          12.197821
       ],
-      "name" : "Kavelstorf(Kr Rostock)"
+      "name" : "Kavelstorf"
    },
    {
       "ds100" : "OAKFM",
@@ -51460,6 +51451,15 @@
          6.871404
       ],
       "name" : "Mülheim(Ruhr)West"
+   },
+   {
+      "ds100" : "KUR",
+      "eva" : 8006035,
+      "latlong" : [
+         50.402613,
+         7.509072
+      ],
+      "name" : "Mülheim-Kärlich"
    },
    {
       "ds100" : "RML",
@@ -65691,15 +65691,6 @@
       "name" : "Sande"
    },
    {
-      "ds100" : "ESDB",
-      "eva" : 8005283,
-      "latlong" : [
-         51.818371,
-         8.986954
-      ],
-      "name" : "Sandebeck"
-   },
-   {
       "ds100" : "LSA",
       "eva" : 8012838,
       "latlong" : [
@@ -67644,6 +67635,15 @@
       "name" : "Schwerte(Ruhr)"
    },
    {
+      "ds100" : "EERG",
+      "eva" : 8001836,
+      "latlong" : [
+         51.424705,
+         7.577534
+      ],
+      "name" : "Schwerte-Ergste"
+   },
+   {
       "ds100" : "DSWOP",
       "eva" : 8070693,
       "latlong" : [
@@ -68001,7 +68001,7 @@
          53.184946,
          14.153814
       ],
-      "name" : "Schönow(Angerm)"
+      "name" : "Schönow(Uckermark)"
    },
    {
       "ds100" : "USCS",
@@ -71116,6 +71116,15 @@
          9.088447
       ],
       "name" : "Steinheim(Westf)"
+   },
+   {
+      "ds100" : "ESDB",
+      "eva" : 8005283,
+      "latlong" : [
+         51.818371,
+         8.986954
+      ],
+      "name" : "Steinheim-Sandebeck"
    },
    {
       "ds100" : "MSHG",
@@ -75456,15 +75465,6 @@
       "name" : "Urmersbach"
    },
    {
-      "ds100" : "KUR",
-      "eva" : 8006035,
-      "latlong" : [
-         50.402613,
-         7.509072
-      ],
-      "name" : "Urmitz"
-   },
-   {
       "ds100" : "KURR",
       "eva" : 8006036,
       "latlong" : [
@@ -76929,7 +76929,7 @@
          53.037712,
          13.385687
       ],
-      "name" : "Vogelsang(Gransee)"
+      "name" : "Vogelsang(Kr Oberhavel)"
    },
    {
       "ds100" : "SVO",
