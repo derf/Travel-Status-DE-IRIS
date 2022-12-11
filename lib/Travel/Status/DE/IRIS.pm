@@ -518,10 +518,15 @@ sub get_station {
 
 		if ( $station_node->getAttribute('ds100') =~ m{ ^ D \d+ $ }x ) {
 
-			# This is an invalid DS100 code, at least from DB perspective.
-			# So far it seems to refer to subway stations which do not have
-			# IRIS departures.
-			next;
+			# This used to indicate an invalid DS100 code, at least from DB
+			# perspective. It typically referred to subway stations which do not
+			# have IRIS departures.
+			# However, since Fahrplanwechsel 2022 / 2023, this does not seem
+			# to be the case anymore. There are some stations whose DS100 code
+			# IRIS does not know, for whatever reason. So for now, accept these
+			# stations as well.
+
+			#next;
 		}
 
 		push(
