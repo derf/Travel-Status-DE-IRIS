@@ -18927,7 +18927,7 @@
       "name" : "Ebertsheim"
    },
    {
-      "ds100" : "PQKEB",
+      "ds100" : "RKEB",
       "eva" : 721347,
       "latlong" : [
          48.994617,
@@ -30816,7 +30816,7 @@
       "name" : "Harblek"
    },
    {
-      "ds100" : "MHRG",
+      "ds100" : "MHRH",
       "eva" : 8002593,
       "latlong" : [
          48.778898,
@@ -42588,7 +42588,7 @@
       "name" : "Langensteinbach Bahnhof"
    },
    {
-      "ds100" : "PQKLS",
+      "ds100" : "RLSBS",
       "eva" : 720323,
       "latlong" : [
          48.920042,
@@ -45072,7 +45072,7 @@
       "name" : "Linkenheim Rathaus"
    },
    {
-      "ds100" : "PQLS",
+      "ds100" : "RLINZ",
       "eva" : 721699,
       "latlong" : [
          49.127524,
@@ -45081,7 +45081,7 @@
       "name" : "Linkenheim Schulzentrum, Linkenheim-Hochstetten"
    },
    {
-      "ds100" : "PQLSD",
+      "ds100" : "RLINS",
       "eva" : 721700,
       "latlong" : [
          49.116864,
