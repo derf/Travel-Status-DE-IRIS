@@ -239,7 +239,7 @@ sub get_station {
 		exit(1);
 	}
 	elsif ( @stations == 1 ) {
-		return $stations[0][0];
+		return $stations[0][2];
 	}
 	else {
 		say STDERR "The input '$input_name' is ambiguous. Please choose one "
