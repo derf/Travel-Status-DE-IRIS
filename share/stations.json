@@ -33309,6 +33309,15 @@
       "name" : "Herten(Baden)"
    },
    {
+      "ds100" : "D8002795",
+      "eva" : 8002795,
+      "latlong" : [
+         51.597013,
+         7.136941
+      ],
+      "name" : "Herten(Westf)"
+   },
+   {
       "ds100" : "EHDT",
       "eva" : 8000165,
       "latlong" : [
