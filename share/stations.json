@@ -2772,6 +2772,15 @@
       "name" : "Assmannshausen"
    },
    {
+      "ds100" : "XBAH",
+      "eva" : 8800147,
+      "latlong" : [
+         49.563491,
+         5.828947
+      ],
+      "name" : "Athus"
+   },
+   {
       "ds100" : "EAT",
       "eva" : 8000638,
       "latlong" : [
@@ -3175,6 +3184,15 @@
          4.786044
       ],
       "name" : "Avignon TGV"
+   },
+   {
+      "ds100" : "OFAVI",
+      "eva" : 8702475,
+      "latlong" : [
+         43.363873,
+         1.787271
+      ],
+      "name" : "Avignonet"
    },
    {
       "ds100" : "MAY",
@@ -5238,6 +5256,33 @@
       "name" : "Barby"
    },
    {
+      "ds100" : "OEBCA",
+      "eva" : 7100189,
+      "latlong" : [
+         41.409106,
+         2.18739
+      ],
+      "name" : "Barcelona Clot-Arago"
+   },
+   {
+      "ds100" : "OEBPG",
+      "eva" : 7100063,
+      "latlong" : [
+         41.392089,
+         2.164755
+      ],
+      "name" : "Barcelona P.Gracia"
+   },
+   {
+      "ds100" : "OEBSA",
+      "eva" : 7100089,
+      "latlong" : [
+         41.435885,
+         2.19353
+      ],
+      "name" : "Barcelona Sant Andreu Comtal"
+   },
+   {
       "ds100" : "XEBS",
       "eva" : 7100064,
       "latlong" : [
@@ -5659,6 +5704,15 @@
          12.011773
       ],
       "name" : "Bayrischzell"
+   },
+   {
+      "ds100" : "OFBZI",
+      "eva" : 8702486,
+      "latlong" : [
+         43.453568,
+         1.620503
+      ],
+      "name" : "Baziege"
    },
    {
       "ds100" : "OFBER",
@@ -10233,6 +10287,15 @@
       "name" : "Bordesholm"
    },
    {
+      "ds100" : "PELBU",
+      "eva" : 7179302,
+      "latlong" : [
+         42.037003,
+         2.915364
+      ],
+      "name" : "Bordils-Junya (APD.)"
+   },
+   {
       "ds100" : "ASBRN",
       "eva" : 8075385,
       "latlong" : [
@@ -10564,6 +10627,15 @@
          9.1832
       ],
       "name" : "Brakel(Höxter)"
+   },
+   {
+      "ds100" : "OFBA",
+      "eva" : 8702476,
+      "latlong" : [
+         43.244101,
+         2.119153
+      ],
+      "name" : "Bram"
    },
    {
       "ds100" : "XDBM",
@@ -11887,6 +11959,15 @@
          4.361458
       ],
       "name" : "Bruxelles-Nord"
+   },
+   {
+      "ds100" : "XBBSM",
+      "eva" : 8800146,
+      "latlong" : [
+         50.842377,
+         4.378385
+      ],
+      "name" : "Bruxelles-Schuman"
    },
    {
       "ds100" : "RBRN",
@@ -13329,6 +13410,15 @@
       "name" : "Calw"
    },
    {
+      "ds100" : "PEFNJ",
+      "eva" : 7179305,
+      "latlong" : [
+         42.122598,
+         2.965667
+      ],
+      "name" : "Camallera"
+   },
+   {
       "ds100" : "UCB",
       "eva" : 8013474,
       "latlong" : [
@@ -13615,6 +13705,15 @@
          10.062706
       ],
       "name" : "Celle"
+   },
+   {
+      "ds100" : "PEXML",
+      "eva" : 7179301,
+      "latlong" : [
+         42.027312,
+         2.874921
+      ],
+      "name" : "Celra"
    },
    {
       "ds100" : "XLCS",
@@ -14382,6 +14481,15 @@
       "name" : "Cimelice"
    },
    {
+      "ds100" : "XBCY",
+      "eva" : 8800046,
+      "latlong" : [
+         50.291365,
+         5.091158
+      ],
+      "name" : "Ciney"
+   },
+   {
       "ds100" : "XFCIG",
       "eva" : 8703107,
       "latlong" : [
@@ -14533,6 +14641,15 @@
          6.1975002288818
       ],
       "name" : "Coevorden"
+   },
+   {
+      "ds100" : "PEFBX",
+      "eva" : 7179314,
+      "latlong" : [
+         42.406801,
+         3.154378
+      ],
+      "name" : "Colera (APD.)"
    },
    {
       "ds100" : "XICIG",
@@ -23112,6 +23229,15 @@
       "name" : "Forest Midi/Vorst Zuid"
    },
    {
+      "ds100" : "PEAQQ",
+      "eva" : 7179205,
+      "latlong" : [
+         41.929725,
+         2.807286
+      ],
+      "name" : "Fornells (APD.)"
+   },
+   {
       "ds100" : "TFB",
       "eva" : 8002026,
       "latlong" : [
@@ -25774,6 +25900,15 @@
          7.84765271264558
       ],
       "name" : "Gelterkinden"
+   },
+   {
+      "ds100" : "XBGX",
+      "eva" : 8800057,
+      "latlong" : [
+         50.57066,
+         4.691362
+      ],
+      "name" : "Gembloux"
    },
    {
       "ds100" : "TGEM",
@@ -28510,6 +28645,15 @@
          8.460747
       ],
       "name" : "Grüntal-Wittlensweiler"
+   },
+   {
+      "ds100" : "PELGJ",
+      "eva" : 7179105,
+      "latlong" : [
+         41.714829,
+         2.533565
+      ],
+      "name" : "Gualba (APD.)"
    },
    {
       "ds100" : "BGU",
@@ -34353,6 +34497,15 @@
       "name" : "Hollandsche Rading"
    },
    {
+      "ds100" : "XLLH",
+      "eva" : 8270580,
+      "latlong" : [
+         49.595492,
+         6.120719
+      ],
+      "name" : "Hollerich"
+   },
+   {
       "ds100" : "FKHST",
       "eva" : 711180,
       "latlong" : [
@@ -34891,6 +35044,15 @@
          14.016105
       ],
       "name" : "Hosena"
+   },
+   {
+      "ds100" : "PETHX",
+      "eva" : 7179107,
+      "latlong" : [
+         41.747784,
+         2.631098
+      ],
+      "name" : "Hostalrich"
    },
    {
       "ds100" : "ONHT",
@@ -41904,6 +42066,15 @@
       "name" : "Laage(Meckl)"
    },
    {
+      "ds100" : "OFLBE",
+      "eva" : 8702524,
+      "latlong" : [
+         43.547361,
+         1.512974
+      ],
+      "name" : "Labege-Innopole"
+   },
+   {
       "ds100" : "MLBW",
       "eva" : 8003488,
       "latlong" : [
@@ -45270,6 +45441,15 @@
       "name" : "Ljubljana"
    },
    {
+      "ds100" : "OELLA",
+      "eva" : 7100207,
+      "latlong" : [
+         42.366691,
+         3.149101
+      ],
+      "name" : "Llanca"
+   },
+   {
       "ds100" : "LLO",
       "eva" : 8012241,
       "latlong" : [
@@ -46744,6 +46924,15 @@
          5.7172222137451
       ],
       "name" : "Maastricht Randwyck"
+   },
+   {
+      "ds100" : "OEMAM",
+      "eva" : 7100184,
+      "latlong" : [
+         41.775875,
+         2.67439
+      ],
+      "name" : "Macanet-Massanes"
    },
    {
       "ds100" : "OIM C",
@@ -58140,6 +58329,15 @@
       "name" : "Otterwisch"
    },
    {
+      "ds100" : "XBOT",
+      "eva" : 8800138,
+      "latlong" : [
+         50.673488,
+         4.569657
+      ],
+      "name" : "Ottignies"
+   },
+   {
       "ds100" : "MOTG",
       "eva" : 8004730,
       "latlong" : [
@@ -62838,6 +63036,15 @@
       "name" : "Rheydt-Odenkirchen"
    },
    {
+      "ds100" : "PIQEP",
+      "eva" : 8309660,
+      "latlong" : [
+         45.521132,
+         9.088571
+      ],
+      "name" : "Rho-Fiera Milano"
+   },
+   {
       "ds100" : "KRHD",
       "eva" : 8005074,
       "latlong" : [
@@ -63052,6 +63259,15 @@
          7.63347
       ],
       "name" : "Riehen Niederholz"
+   },
+   {
+      "ds100" : "PEASS",
+      "eva" : 7179106,
+      "latlong" : [
+         41.726731,
+         2.569558
+      ],
+      "name" : "Riells-Viabrea-Breda"
    },
    {
       "ds100" : "NRCK",
@@ -63322,6 +63538,15 @@
          8.753889
       ],
       "name" : "Ritterhude"
+   },
+   {
+      "ds100" : "PEDTE",
+      "eva" : 7179204,
+      "latlong" : [
+         41.895396,
+         2.811502
+      ],
+      "name" : "Riudellots"
    },
    {
       "ds100" : "XBRV",
@@ -65664,6 +65889,24 @@
       "name" : "San Candido/Innichen"
    },
    {
+      "ds100" : "OESCE",
+      "eva" : 7100468,
+      "latlong" : [
+         41.685156,
+         2.490704
+      ],
+      "name" : "San Celoni"
+   },
+   {
+      "ds100" : "PEPST",
+      "eva" : 7179304,
+      "latlong" : [
+         42.070326,
+         2.964606
+      ],
+      "name" : "San Jordi (APD.)"
+   },
+   {
       "ds100" : "PIHRH",
       "eva" : 8396239,
       "latlong" : [
@@ -65671,6 +65914,15 @@
          11.903372
       ],
       "name" : "San Lorenzo/St.Lorenzen"
+   },
+   {
+      "ds100" : "PEDEK",
+      "eva" : 7179306,
+      "latlong" : [
+         42.175248,
+         2.988859
+      ],
+      "name" : "San Miguel de Fluvia"
    },
    {
       "ds100" : "NSND",
@@ -69028,6 +69280,15 @@
          12.4250716261526
       ],
       "name" : "Sillian"
+   },
+   {
+      "ds100" : "OESIL",
+      "eva" : 7100473,
+      "latlong" : [
+         41.80767,
+         2.745189
+      ],
+      "name" : "Sils"
    },
    {
       "ds100" : "XASLZ",
@@ -76590,6 +76851,24 @@
       "name" : "Vievola"
    },
    {
+      "ds100" : "PEFKX",
+      "eva" : 7179311,
+      "latlong" : [
+         42.324918,
+         3.086249
+      ],
+      "name" : "Vilajuiga"
+   },
+   {
+      "ds100" : "PERVN",
+      "eva" : 7179308,
+      "latlong" : [
+         42.217919,
+         2.977191
+      ],
+      "name" : "Vilamalla"
+   },
+   {
       "ds100" : "XTVL",
       "eva" : 5403384,
       "latlong" : [
@@ -76653,6 +76932,15 @@
       "name" : "Villedieu les Poeles"
    },
    {
+      "ds100" : "OFVFL",
+      "eva" : 8702347,
+      "latlong" : [
+         43.398374,
+         1.71462
+      ],
+      "name" : "Villefranche-de-Lauragais"
+   },
+   {
       "ds100" : "OFVFM",
       "eva" : 8702169,
       "latlong" : [
@@ -76669,6 +76957,15 @@
          7.134361
       ],
       "name" : "Villeneuve Loubet"
+   },
+   {
+      "ds100" : "OFVIV",
+      "eva" : 8702593,
+      "latlong" : [
+         43.433036,
+         1.661081
+      ],
+      "name" : "Villenouvelle"
    },
    {
       "ds100" : "XFVR",
