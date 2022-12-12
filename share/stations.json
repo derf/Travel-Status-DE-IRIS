@@ -15669,6 +15669,15 @@
       "name" : "Dax"
    },
    {
+      "ds100" : "PQKDG",
+      "eva" : 300206,
+      "latlong" : [
+         48.991417,
+         8.33416
+      ],
+      "name" : "Daxlanden Dornröschenweg, Karlsruhe"
+   },
+   {
       "ds100" : "PQKDC",
       "eva" : 371406,
       "latlong" : [
@@ -68173,6 +68182,15 @@
          8.578679
       ],
       "name" : "Schwetzingen"
+   },
+   {
+      "ds100" : "RHKR",
+      "eva" : 8005493,
+      "latlong" : [
+         49.4068,
+         8.556337
+      ],
+      "name" : "Schwetzingen-Hirschacker"
    },
    {
       "ds100" : "TSBD",
