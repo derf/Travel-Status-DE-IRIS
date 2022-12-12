@@ -4140,6 +4140,15 @@
       "name" : "Bad Neuenahr"
    },
    {
+      "ds100" : "OABNS",
+      "eva" : 8100453,
+      "latlong" : [
+         47.942853,
+         16.844392
+      ],
+      "name" : "Bad Neusiedl am See"
+   },
+   {
       "ds100" : "NBNE",
       "eva" : 8000730,
       "latlong" : [
@@ -5551,6 +5560,15 @@
          7.57251267011701
       ],
       "name" : "Basel St Johann"
+   },
+   {
+      "ds100" : "OSBSS",
+      "eva" : 8500122,
+      "latlong" : [
+         47.336593,
+         7.246969
+      ],
+      "name" : "Bassecourt"
    },
    {
       "ds100" : "XSBD",
@@ -10053,6 +10071,15 @@
       "name" : "Bolzano/Bozen"
    },
    {
+      "ds100" : "OSBOC",
+      "eva" : 8500128,
+      "latlong" : [
+         47.492628,
+         7.016548
+      ],
+      "name" : "Boncourt"
+   },
+   {
       "ds100" : "TBD",
       "eva" : 8001080,
       "latlong" : [
@@ -12348,6 +12375,15 @@
       "name" : "Buitenpost"
    },
    {
+      "ds100" : "OSBUX",
+      "eva" : 8500144,
+      "latlong" : [
+         47.479288,
+         7.030194
+      ],
+      "name" : "Buix"
+   },
+   {
       "ds100" : "OTBUJ",
       "eva" : 5400646,
       "latlong" : [
@@ -13653,6 +13689,15 @@
       "name" : "Carimate"
    },
    {
+      "ds100" : "OICA",
+      "eva" : 8300074,
+      "latlong" : [
+         46.373767,
+         13.133033
+      ],
+      "name" : "Carnia"
+   },
+   {
       "ds100" : "OFCAR",
       "eva" : 8700830,
       "latlong" : [
@@ -13903,6 +13948,15 @@
          12.656832
       ],
       "name" : "Cham(Oberpf)"
+   },
+   {
+      "ds100" : "OSCHB",
+      "eva" : 8501020,
+      "latlong" : [
+         46.242309,
+         6.147426
+      ],
+      "name" : "Chambesy"
    },
    {
       "ds100" : "XFCY",
@@ -15003,6 +15057,51 @@
       "name" : "Courcelles-sur-Nied"
    },
    {
+      "ds100" : "OSCCH",
+      "eva" : 8500141,
+      "latlong" : [
+         47.439672,
+         7.057755
+      ],
+      "name" : "Courchavon"
+   },
+   {
+      "ds100" : "OSCOU",
+      "eva" : 8500121,
+      "latlong" : [
+         47.335182,
+         7.291528
+      ],
+      "name" : "Courfaivre"
+   },
+   {
+      "ds100" : "OSCUG",
+      "eva" : 8500125,
+      "latlong" : [
+         47.405666,
+         7.124625
+      ],
+      "name" : "Courgenay"
+   },
+   {
+      "ds100" : "OSCUM",
+      "eva" : 8500127,
+      "latlong" : [
+         47.45588,
+         7.055507
+      ],
+      "name" : "Courtemaîche"
+   },
+   {
+      "ds100" : "OSCUL",
+      "eva" : 8500120,
+      "latlong" : [
+         47.342751,
+         7.3181
+      ],
+      "name" : "Courtételle"
+   },
+   {
       "ds100" : "XFCOU",
       "eva" : 8700184,
       "latlong" : [
@@ -15046,6 +15145,15 @@
          2.468704
       ],
       "name" : "Creil"
+   },
+   {
+      "ds100" : "OSCXG",
+      "eva" : 8501012,
+      "latlong" : [
+         46.263766,
+         6.161251
+      ],
+      "name" : "Creux-de-Genthod"
    },
    {
       "ds100" : "NCRE",
@@ -15982,6 +16090,15 @@
          12.345218
       ],
       "name" : "Delitzsch unt Bf"
+   },
+   {
+      "ds100" : "OFDL",
+      "eva" : 8700132,
+      "latlong" : [
+         47.505914,
+         7.009761
+      ],
+      "name" : "Delle"
    },
    {
       "ds100" : "SDE",
@@ -22752,6 +22869,15 @@
       "name" : "Ferno-Lonate Pozzolo"
    },
    {
+      "ds100" : "OMFFD",
+      "eva" : 5501633,
+      "latlong" : [
+         47.617641,
+         16.850783
+      ],
+      "name" : "Fertöszeplak-Fertöd"
+   },
+   {
       "ds100" : "NFT",
       "eva" : 8001978,
       "latlong" : [
@@ -23956,6 +24082,15 @@
          13.503636
       ],
       "name" : "Frauenhain"
+   },
+   {
+      "ds100" : "OAFRK",
+      "eva" : 8100238,
+      "latlong" : [
+         47.840528,
+         16.916189
+      ],
+      "name" : "Frauenkirchen"
    },
    {
       "ds100" : "KFKO",
@@ -26082,6 +26217,15 @@
       "name" : "Gendorf"
    },
    {
+      "ds100" : "PSATA",
+      "eva" : 8516283,
+      "latlong" : [
+         46.22238,
+         6.144568
+      ],
+      "name" : "Geneve-Secheron"
+   },
+   {
       "ds100" : "RGB",
       "eva" : 8002235,
       "latlong" : [
@@ -26163,6 +26307,15 @@
       "name" : "Genthin"
    },
    {
+      "ds100" : "OSGEB",
+      "eva" : 8501021,
+      "latlong" : [
+         46.256737,
+         6.153799
+      ],
+      "name" : "Genthod-Bellevue"
+   },
+   {
       "ds100" : "XSGE",
       "eva" : 8501008,
       "latlong" : [
@@ -26179,6 +26332,15 @@
          6.11198571992426
       ],
       "name" : "Genève-Aéroport"
+   },
+   {
+      "ds100" : "D8516272",
+      "eva" : 8516272,
+      "latlong" : [
+         46.192194,
+         6.153503
+      ],
+      "name" : "Genève-Champel"
    },
    {
       "ds100" : "D8516273",
@@ -26928,6 +27090,15 @@
       "name" : "Glossen(b Oschatz)"
    },
    {
+      "ds100" : "OSGLO",
+      "eva" : 8500123,
+      "latlong" : [
+         47.335389,
+         7.209088
+      ],
+      "name" : "Glovelier"
+   },
+   {
       "ds100" : "WGF",
       "eva" : 8011641,
       "latlong" : [
@@ -27151,6 +27322,15 @@
          12.971864
       ],
       "name" : "Golm"
+   },
+   {
+      "ds100" : "OAGOL",
+      "eva" : 8100255,
+      "latlong" : [
+         47.891731,
+         16.905087
+      ],
+      "name" : "Gols"
    },
    {
       "ds100" : "WGOL",
@@ -42489,6 +42669,15 @@
       "name" : "Lancy Pont-Rouge"
    },
    {
+      "ds100" : "D8517142",
+      "eva" : 8517142,
+      "latlong" : [
+         46.174333,
+         6.129358
+      ],
+      "name" : "Lancy-Bachet"
+   },
+   {
       "ds100" : "MLDI",
       "eva" : 8003506,
       "latlong" : [
@@ -44647,6 +44836,15 @@
          1.906285
       ],
       "name" : "Les Aubrais - Orléans"
+   },
+   {
+      "ds100" : "OSLTL",
+      "eva" : 8501011,
+      "latlong" : [
+         46.250013,
+         6.147264
+      ],
+      "name" : "Les Tuileries"
    },
    {
       "ds100" : "XZLB",
@@ -49932,6 +50130,15 @@
       "name" : "Miekinia"
    },
    {
+      "ds100" : "OSMIS",
+      "eva" : 8501014,
+      "latlong" : [
+         46.299903,
+         6.16971
+      ],
+      "name" : "Mies"
+   },
+   {
       "ds100" : "MMIB",
       "eva" : 8004019,
       "latlong" : [
@@ -51316,6 +51523,15 @@
          12.225336
       ],
       "name" : "Mönchhagen"
+   },
+   {
+      "ds100" : "OAMHH",
+      "eva" : 8100484,
+      "latlong" : [
+         47.874732,
+         16.946869
+      ],
+      "name" : "Mönchhof-Halbturn"
    },
    {
       "ds100" : "NMOE",
@@ -54214,6 +54430,15 @@
          11.306843
       ],
       "name" : "Neuses(b Kronach)"
+   },
+   {
+      "ds100" : "OANEU",
+      "eva" : 8100434,
+      "latlong" : [
+         47.955644,
+         16.823465
+      ],
+      "name" : "Neusiedl am See"
    },
    {
       "ds100" : "NNSG",
@@ -58842,6 +59067,15 @@
       "name" : "Pama"
    },
    {
+      "ds100" : "OAPA",
+      "eva" : 8100448,
+      "latlong" : [
+         47.704099,
+         16.903433
+      ],
+      "name" : "Pamhagen"
+   },
+   {
       "ds100" : "NPK",
       "eva" : 8004749,
       "latlong" : [
@@ -60264,6 +60498,15 @@
       "name" : "Pont St Vincent"
    },
    {
+      "ds100" : "OSPOC",
+      "eva" : 8501013,
+      "latlong" : [
+         46.287309,
+         6.162627
+      ],
+      "name" : "Pont-Ceard"
+   },
+   {
       "ds100" : "XFPXE",
       "eva" : 8701786,
       "latlong" : [
@@ -60300,6 +60543,15 @@
       "name" : "Ponte Gardena-Laion/Waidbruck-Lajen"
    },
    {
+      "ds100" : "OIPOT",
+      "eva" : 8300108,
+      "latlong" : [
+         46.508408,
+         13.311442
+      ],
+      "name" : "Pontebba"
+   },
+   {
       "ds100" : "XSPT",
       "eva" : 8509255,
       "latlong" : [
@@ -60325,6 +60577,15 @@
          12.653684
       ],
       "name" : "Pordenone"
+   },
+   {
+      "ds100" : "OSPOR",
+      "eva" : 8500126,
+      "latlong" : [
+         47.420966,
+         7.080372
+      ],
+      "name" : "Porrentruy"
    },
    {
       "ds100" : "DPSC",
@@ -60649,6 +60910,15 @@
          14.437188
       ],
       "name" : "Praha-Holesovice zastavka"
+   },
+   {
+      "ds100" : "XTPHO",
+      "eva" : 5402498,
+      "latlong" : [
+         50.055102,
+         14.535872
+      ],
+      "name" : "Praha-Hostivar"
    },
    {
       "ds100" : "XTPL",
@@ -70884,6 +71154,24 @@
       "name" : "St-Sulpice-Lauriere"
    },
    {
+      "ds100" : "OSSUA",
+      "eva" : 8500124,
+      "latlong" : [
+         47.367696,
+         7.16594
+      ],
+      "name" : "St-Ursanne"
+   },
+   {
+      "ds100" : "OASAB",
+      "eva" : 8100431,
+      "latlong" : [
+         47.7828,
+         16.927991
+      ],
+      "name" : "St. Andrä am Zicksee"
+   },
+   {
       "ds100" : "XAAB",
       "eva" : 8100064,
       "latlong" : [
@@ -73350,6 +73638,15 @@
       "name" : "Tangermünde West"
    },
    {
+      "ds100" : "OSTNY",
+      "eva" : 8501015,
+      "latlong" : [
+         46.307607,
+         6.18101
+      ],
+      "name" : "Tannay"
+   },
+   {
       "ds100" : "DTA",
       "eva" : 8013087,
       "latlong" : [
@@ -75402,6 +75699,15 @@
       "name" : "Uffing a Staffelsee"
    },
    {
+      "ds100" : "OIU",
+      "eva" : 8302294,
+      "latlong" : [
+         46.502844,
+         13.495038
+      ],
+      "name" : "Ugovizza"
+   },
+   {
       "ds100" : "TUH",
       "eva" : 8005949,
       "latlong" : [
@@ -76878,6 +77184,15 @@
       "name" : "Ventschow"
    },
    {
+      "ds100" : "OIVEN",
+      "eva" : 8300625,
+      "latlong" : [
+         46.32919,
+         13.132404
+      ],
+      "name" : "Venzone"
+   },
+   {
       "ds100" : "XIVE",
       "eva" : 8300008,
       "latlong" : [
@@ -76984,6 +77299,15 @@
          12.328867
       ],
       "name" : "Versciaco-Elmo/Vierschach-Helm"
+   },
+   {
+      "ds100" : "OSVIX",
+      "eva" : 8501022,
+      "latlong" : [
+         46.279614,
+         6.165629
+      ],
+      "name" : "Versoix"
    },
    {
       "ds100" : "XBVC",
@@ -77272,6 +77596,15 @@
          7.134361
       ],
       "name" : "Villeneuve Loubet"
+   },
+   {
+      "ds100" : "XSVL",
+      "eva" : 8501303,
+      "latlong" : [
+         46.398371,
+         6.927007
+      ],
+      "name" : "Villeneuve(CH)"
    },
    {
       "ds100" : "OFVIV",
@@ -78318,6 +78651,15 @@
       "name" : "Wallenrod"
    },
    {
+      "ds100" : "OAWAN",
+      "eva" : 8100341,
+      "latlong" : [
+         47.733449,
+         16.930436
+      ],
+      "name" : "Wallern im Burgenland"
+   },
+   {
       "ds100" : "NWLD",
       "eva" : 8006181,
       "latlong" : [
@@ -79171,6 +79513,15 @@
          12.055613
       ],
       "name" : "Weida Mitte"
+   },
+   {
+      "ds100" : "OAWAS",
+      "eva" : 8100343,
+      "latlong" : [
+         47.925728,
+         16.863817
+      ],
+      "name" : "Weiden am See"
    },
    {
       "ds100" : "NWDO",
