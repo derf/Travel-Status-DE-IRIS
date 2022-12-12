@@ -127,6 +127,15 @@ my %translation = (
 	# it refers to, we don't show it to users.
 );
 
+# IRIS may return "Betriebsstelle nicht bekannt" for some recently added
+# stations. Fix those manually.
+my %fixup = (
+	8002795 => 'Herten(Westf)',
+	8003983 => 'Merklingen - Schwäbische Alb',
+	8005493 => 'Schwetzingen-Hirschacker',
+	8070678 => 'Metzingen-Neuhausen',
+);
+
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
 	qw(arrival arrival_delay arrival_has_realtime arrival_is_additional arrival_is_cancelled arrival_hidden
 	  date datetime delay
@@ -234,6 +243,9 @@ sub new {
 	$ref->{route_post} = $ref->{sched_route_post}
 	  = [ split( qr{[|]}, $ref->{route_post} // q{} ) ];
 
+	$ref->fixup_route( $ref->{route_pre} );
+	$ref->fixup_route( $ref->{route_post} );
+
 	$ref->{route_pre_incomplete}  = $ref->{route_end}  ? 1 : 0;
 	$ref->{route_post_incomplete} = $ref->{route_post} ? 1 : 0;
 
@@ -250,6 +262,17 @@ sub new {
 	  || $ref->{station};
 
 	return $ref;
+}
+
+sub fixup_route {
+	my ( $self, $route ) = @_;
+	for my $stop ( @{$route} ) {
+		if ( $stop =~ m{^Betriebsstelle nicht bekannt (\d+)$} ) {
+			if ( $fixup{$1} ) {
+				$stop = $fixup{$1};
+			}
+		}
+	}
 }
 
 sub parse_ts {
@@ -311,6 +334,7 @@ sub set_ar {
 
 	if ( defined $attrib{route_pre} ) {
 		$self->{route_pre} = [ split( qr{[|]}, $attrib{route_pre} // q{} ) ];
+		$self->fixup_route( $self->{route_pre} );
 		if ( @{ $self->{route_pre} } ) {
 			$self->{route_start} = $self->{route_pre}[0];
 		}
@@ -324,6 +348,7 @@ sub set_ar {
 	if ( $attrib{sched_route_pre} ) {
 		$self->{sched_route_pre}
 		  = [ split( qr{[|]}, $attrib{sched_route_pre} // q{} ) ];
+		$self->fixup_route( $self->{sched_route_pre} );
 		$self->{sched_route_start} = $self->{sched_route_pre}[0];
 	}
 
@@ -380,6 +405,7 @@ sub set_dp {
 
 	if ( defined $attrib{route_post} ) {
 		$self->{route_post} = [ split( qr{[|]}, $attrib{route_post} // q{} ) ];
+		$self->fixup_route( $self->{route_post} );
 		if ( @{ $self->{route_post} } ) {
 			$self->{route_end} = $self->{route_post}[-1];
 		}
@@ -393,6 +419,7 @@ sub set_dp {
 	if ( $attrib{sched_route_post} ) {
 		$self->{sched_route_post}
 		  = [ split( qr{[|]}, $attrib{sched_route_post} // q{} ) ];
+		$self->fixup_route( $self->{sched_route_post} );
 		$self->{sched_route_end} = $self->{sched_route_post}[-1];
 	}
 
