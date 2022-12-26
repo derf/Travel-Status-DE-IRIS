@@ -1,6 +1,10 @@
+Travel::Status::DE::IRIS 1.79 - Wed Dec 26 2022
+
+    * Stations: Further geoocordinate fixes for Dutch stations.
+
 Travel::Status::DE::IRIS 1.78 - Wed Dec 21 2022
 
-    * StationS: Fix geocoordinates for a variety of Dutch stations.
+    * Stations: Fix geocoordinates for a variety of Dutch stations.
       In some cases, they were off by several hundred kilometers.
 
 Travel::Status::DE::IRIS 1.77 - Mon Dec 12 2022
