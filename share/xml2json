@@ -73,11 +73,12 @@ sub add_station {
 }
 
 sub add_old_station {
-	my ( $name, $ds100, $eva ) = @_;
+	my ( $name, $ds100, $eva, $latlong ) = @_;
 	my $station = {
-		name  => $name,
-		ds100 => $ds100,
-		eva   => $eva,
+		name    => $name,
+		ds100   => $ds100,
+		eva     => $eva,
+		latlong => $latlong
 	};
 	push( @{$old_stations}, $station );
 	$old_station_by_eva{$eva}     = $station;
@@ -230,7 +231,7 @@ for my $i ( 0 .. $#{$stations} ) {
 	if ( not( $xml_by_name{$j_name} or $xml_by_eva{$j_eva} ) ) {
 		say "station no longer exists: $j_eva  $j_ds100  \"$j_name\"";
 		unshift( @to_delete, $i );
-		add_old_station( $j_name, $j_ds100, $j_eva );
+		add_old_station( $j_name, $j_ds100, $j_eva, $j_station->{latlong} );
 	}
 }
 
