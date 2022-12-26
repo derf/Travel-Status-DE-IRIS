@@ -1,3 +1,8 @@
+Travel::Status::DE::IRIS 1.80 - Wed Dec 26 2022
+
+    * Update stations list
+    * Fix MANIFEST (broken in 1.79)
+
 Travel::Status::DE::IRIS 1.79 - Wed Dec 26 2022
 
     * Stations: Further geoocordinate fixes for Dutch stations.
