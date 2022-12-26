@@ -2187,15 +2187,6 @@
       "name" : "Tullastraße/Verkehrsbetriebe, Karlsruhe"
    },
    {
-      "ds100" : "XPTY",
-      "eva" : 5100260,
-      "latlong" : [
-         50.136194,
-         18.964092
-      ],
-      "name" : "Tychy"
-   },
-   {
       "ds100" : "MURB",
       "eva" : 8005961,
       "latlong" : [

@@ -13842,6 +13842,15 @@
       "name" : "Cerbère"
    },
    {
+      "ds100" : "XICER",
+      "eva" : 8300095,
+      "latlong" : [
+         45.823933,
+         13.343705
+      ],
+      "name" : "Cervignano-Aquileia-Grado"
+   },
+   {
       "ds100" : "XTCKA",
       "eva" : 5400271,
       "latlong" : [
@@ -25459,6 +25468,15 @@
          8.327476
       ],
       "name" : "Gaggenau Mercedes-Benz Werk"
+   },
+   {
+      "ds100" : "PIXG",
+      "eva" : 8301213,
+      "latlong" : [
+         45.838415,
+         8.912652
+      ],
+      "name" : "Gaggiolo transito"
    },
    {
       "ds100" : "XFGN",
@@ -37710,6 +37728,33 @@
       "name" : "Kablow"
    },
    {
+      "ds100" : "OTKM",
+      "eva" : 5401408,
+      "latlong" : [
+         50.381491,
+         13.276861
+      ],
+      "name" : "Kadan"
+   },
+   {
+      "ds100" : "OTKAP",
+      "eva" : 5401409,
+      "latlong" : [
+         50.376448,
+         13.277023
+      ],
+      "name" : "Kadan predmesti"
+   },
+   {
+      "ds100" : "PTKBE",
+      "eva" : 5454561,
+      "latlong" : [
+         50.396854,
+         13.275342
+      ],
+      "name" : "Kadan-Bystrice"
+   },
+   {
       "ds100" : "XTKA",
       "eva" : 5400071,
       "latlong" : [
@@ -44757,6 +44802,15 @@
       "name" : "Leonberg"
    },
    {
+      "ds100" : "OALOG",
+      "eva" : 8101165,
+      "latlong" : [
+         48.274015,
+         14.253943
+      ],
+      "name" : "Leonding"
+   },
+   {
       "ds100" : "XBLB",
       "eva" : 8800080,
       "latlong" : [
@@ -50704,6 +50758,15 @@
          8.728328
       ],
       "name" : "Monbach-Neuhausen"
+   },
+   {
+      "ds100" : "XIMOF",
+      "eva" : 8300103,
+      "latlong" : [
+         45.807393,
+         13.543238
+      ],
+      "name" : "Monfalcone"
    },
    {
       "ds100" : "XIMW",
@@ -57807,6 +57870,15 @@
       "name" : "Offingen"
    },
    {
+      "ds100" : "OAOF",
+      "eva" : 8101308,
+      "latlong" : [
+         48.227766,
+         14.151439
+      ],
+      "name" : "Oftering"
+   },
+   {
       "ds100" : "ROFH",
       "eva" : 8004658,
       "latlong" : [
@@ -59049,6 +59121,15 @@
       "name" : "Paindorf"
    },
    {
+      "ds100" : "XIPAM",
+      "eva" : 8300967,
+      "latlong" : [
+         45.90676,
+         13.296763
+      ],
+      "name" : "Palmanova"
+   },
+   {
       "ds100" : "SPZ",
       "eva" : 8004748,
       "latlong" : [
@@ -59272,6 +59353,15 @@
          9.52399
       ],
       "name" : "Partenstein"
+   },
+   {
+      "ds100" : "OAPSG",
+      "eva" : 8101389,
+      "latlong" : [
+         48.256927,
+         14.208287
+      ],
+      "name" : "Pasching"
    },
    {
       "ds100" : "WP",
@@ -69543,6 +69633,15 @@
       "name" : "Seybothenreuth"
    },
    {
+      "ds100" : "OFSYS",
+      "eva" : 8700458,
+      "latlong" : [
+         45.963032,
+         5.831347
+      ],
+      "name" : "Seyssel-Corbonod"
+   },
+   {
       "ds100" : "RSIB",
       "eva" : 8005551,
       "latlong" : [
@@ -71332,6 +71431,15 @@
          9.53652077144969
       ],
       "name" : "Staad"
+   },
+   {
+      "ds100" : "PSNFC",
+      "eva" : 8517519,
+      "latlong" : [
+         45.849921,
+         8.944887
+      ],
+      "name" : "Stabio"
    },
    {
       "ds100" : "AST",
@@ -74034,6 +74142,15 @@
       "name" : "Templin-Ahrensdorf"
    },
    {
+      "ds100" : "OFHTV",
+      "eva" : 8701291,
+      "latlong" : [
+         45.922545,
+         5.500985
+      ],
+      "name" : "Tenay-Hauteville"
+   },
+   {
       "ds100" : "XFTND",
       "eva" : 8704703,
       "latlong" : [
@@ -75132,6 +75249,24 @@
       "name" : "Triesdorf"
    },
    {
+      "ds100" : "PITA",
+      "eva" : 8303213,
+      "latlong" : [
+         45.817425,
+         13.486211
+      ],
+      "name" : "Trieste Airport"
+   },
+   {
+      "ds100" : "XIT",
+      "eva" : 8300107,
+      "latlong" : [
+         45.657408,
+         13.770431
+      ],
+      "name" : "Trieste Centrale"
+   },
+   {
       "ds100" : "XATK",
       "eva" : 8100379,
       "latlong" : [
@@ -75436,6 +75571,15 @@
          8.644832
       ],
       "name" : "Twistringen"
+   },
+   {
+      "ds100" : "XPTY",
+      "eva" : 5100260,
+      "latlong" : [
+         50.136194,
+         18.964093
+      ],
+      "name" : "Tychy"
    },
    {
       "ds100" : "OSTGM",
@@ -79002,6 +79146,15 @@
       "name" : "Warszawa Centralna"
    },
    {
+      "ds100" : "XPWG",
+      "eva" : 5100172,
+      "latlong" : [
+         52.259185,
+         20.993714
+      ],
+      "name" : "Warszawa Gdanska"
+   },
+   {
       "ds100" : "XPWW",
       "eva" : 5100066,
       "latlong" : [
@@ -79817,6 +79970,15 @@
       "latlong" : [
          49.005306,
          8.377821
+      ],
+      "name" : "Weinbrennerplatz, Karlsruhe"
+   },
+   {
+      "ds100" : "PQKWP",
+      "eva" : 721672,
+      "latlong" : [
+         49.005387,
+         8.378666
       ],
       "name" : "Weinbrennerplatz, Karlsruhe"
    },
