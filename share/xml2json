@@ -9,6 +9,9 @@ use JSON;
 use List::Util qw(any);
 use XML::LibXML;
 
+# old / new / renamed / reappeared / missing
+my $mode = shift;
+
 my $json     = JSON->new->utf8;
 my $json_str = read_file('stations.json');
 my $stations = $json->decode($json_str);
@@ -161,8 +164,10 @@ for my $station ( $tree->findnodes('//station') ) {
 	{
 		printf( "%8s has been renamed: %30s -> %30s\n",
 			$ds100, $station_by_ds100{$ds100}{name}, $name );
-		$renamed{ $station_by_ds100{$ds100}{name} } = $name;
-		$station_by_ds100{$ds100}{name} = $name;
+		if ( not $mode or $mode eq 'renamed' ) {
+			$renamed{ $station_by_ds100{$ds100}{name} } = $name;
+			$station_by_ds100{$ds100}{name} = $name;
+		}
 	}
 	elsif ( $station_by_eva{$eva} and $station_by_eva{$eva}{name} ne $name ) {
 		printf(
@@ -176,14 +181,18 @@ for my $station ( $tree->findnodes('//station') ) {
 		and $is_db )
 	{
 		printf( "%30s has a new DS100 alias: %8s\n", $name, $ds100 );
-		add_station( $name, $ds100, $eva );
+		if ( not $mode or $mode eq 'new' ) {
+			add_station( $name, $ds100, $eva );
+		}
 	}
 	elsif ( $station_by_name{$name}
 		and not any { $_->{eva} == $eva } @{ $station_by_name{$name} }
 		and $is_db )
 	{
 		printf( "%30s has a new EVA alias: %d\n", $name, $eva );
-		add_station( $name, $ds100, $eva );
+		if ( not $mode or $mode eq 'new' ) {
+			add_station( $name, $ds100, $eva );
+		}
 	}
 
 	if (
@@ -195,15 +204,17 @@ for my $station ( $tree->findnodes('//station') ) {
 	  )
 	{
 		printf( "%30s has re-appeared as %s %d\n", $name, $ds100, $eva );
-		if ( ref($old) eq 'ARRAY' ) {
-			for my $o ( @{$old} ) {
-				delete_old_station( $o->{name}, $o->{ds100}, $o->{eva} );
+		if ( not $mode or $mode eq 'reappeared' ) {
+			if ( ref($old) eq 'ARRAY' ) {
+				for my $o ( @{$old} ) {
+					delete_old_station( $o->{name}, $o->{ds100}, $o->{eva} );
+				}
 			}
+			else {
+				delete_old_station( $old->{name}, $old->{ds100}, $old->{eva} );
+			}
+			add_station( $name, $ds100, $eva );
 		}
-		else {
-			delete_old_station( $old->{name}, $old->{ds100}, $old->{eva} );
-		}
-		add_station( $name, $ds100, $eva );
 	}
 
 	if ( not $found
@@ -211,10 +222,11 @@ for my $station ( $tree->findnodes('//station') ) {
 	{
 		say "missing $eva  $ds100  \"$name\"";
 
-		# TODO remove from old_stations
-		add_station( $name, $ds100, $eva );
-		if ( $old_station_by_name{$name} ) {
-			delete_old_station( $name, $ds100, $eva );
+		if ( not $mode or $mode eq 'missing' ) {
+			add_station( $name, $ds100, $eva );
+			if ( $old_station_by_name{$name} ) {
+				delete_old_station( $name, $ds100, $eva );
+			}
 		}
 	}
 }
@@ -230,8 +242,10 @@ for my $i ( 0 .. $#{$stations} ) {
 
 	if ( not( $xml_by_name{$j_name} or $xml_by_eva{$j_eva} ) ) {
 		say "station no longer exists: $j_eva  $j_ds100  \"$j_name\"";
-		unshift( @to_delete, $i );
-		add_old_station( $j_name, $j_ds100, $j_eva, $j_station->{latlong} );
+		if ( not $mode or $mode eq 'old' ) {
+			unshift( @to_delete, $i );
+			add_old_station( $j_name, $j_ds100, $j_eva, $j_station->{latlong} );
+		}
 	}
 }
 
