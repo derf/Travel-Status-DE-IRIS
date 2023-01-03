@@ -252,6 +252,15 @@
       "name" : "Bichtlingen"
    },
    {
+      "ds100" : "EBID",
+      "eva" : 8007076,
+      "latlong" : [
+         50.749987,
+         7.943623
+      ],
+      "name" : "Biersdorf(Westerw)"
+   },
+   {
       "ds100" : "RBZN",
       "eva" : 8070323,
       "latlong" : [
@@ -268,6 +277,15 @@
          13.4156182
       ],
       "name" : "Blankenfelde (S)"
+   },
+   {
+      "ds100" : "XSBS",
+      "eva" : 8507476,
+      "latlong" : [
+         46.5289699767961,
+         7.67548812869854
+      ],
+      "name" : "Blausee-Mitholz"
    },
    {
       "ds100" : "LBLG",
@@ -484,6 +502,24 @@
          9.442568
       ],
       "name" : "Deinste"
+   },
+   {
+      "ds100" : "LDAD",
+      "eva" : 8011362,
+      "latlong" : [
+         51.821189,
+         12.314419
+      ],
+      "name" : "Dessau Adria"
+   },
+   {
+      "ds100" : "LDWA",
+      "eva" : 8070259,
+      "latlong" : [
+         51.836564,
+         12.270566
+      ],
+      "name" : "Dessau-Waldersee"
    },
    {
       "ds100" : "XUD",
@@ -718,6 +754,15 @@
          10.339671
       ],
       "name" : "Friedrichsruh"
+   },
+   {
+      "ds100" : "WFL",
+      "eva" : 8011583,
+      "latlong" : [
+         53.030373,
+         13.703148
+      ],
+      "name" : "Friedrichswalde(bei Eberswalde)"
    },
    {
       "ds100" : "LFIO",
@@ -1017,6 +1062,15 @@
       "name" : "Kainzenbad"
    },
    {
+      "ds100" : "LKPB",
+      "eva" : 8070260,
+      "latlong" : [
+         51.816483,
+         12.33669
+      ],
+      "name" : "Kapen Biosphärenreservat"
+   },
+   {
       "ds100" : "XMK",
       "eva" : 5500092,
       "latlong" : [
@@ -1125,6 +1179,15 @@
       "name" : "Laußig(Düben)"
    },
    {
+      "ds100" : "XILVM",
+      "eva" : 8300606,
+      "latlong" : [
+         45.903142,
+         8.624525
+      ],
+      "name" : "Laveno Mombello"
+   },
+   {
       "ds100" : "XTLM",
       "eva" : 5401791,
       "latlong" : [
@@ -1141,6 +1204,15 @@
          10.336626
       ],
       "name" : "Livorno Centrale"
+   },
+   {
+      "ds100" : "XPMAL",
+      "eva" : 5102278,
+      "latlong" : [
+         51.215557,
+         16.485516
+      ],
+      "name" : "Malczyce"
    },
    {
       "ds100" : "XSMMS",
@@ -1222,6 +1294,15 @@
          9.734662
       ],
       "name" : "Middelfart st"
+   },
+   {
+      "ds100" : "XPMIE",
+      "eva" : 5102265,
+      "latlong" : [
+         51.18837,
+         16.737917
+      ],
+      "name" : "Miekinia"
    },
    {
       "ds100" : "XTMHN",
@@ -1368,6 +1449,15 @@
       "name" : "Neuruppin Seedamm"
    },
    {
+      "ds100" : "ANN",
+      "eva" : 8099507,
+      "latlong" : [
+         54.096228,
+         10.795431
+      ],
+      "name" : "Neustadt(Holst)Gbf"
+   },
+   {
       "ds100" : "XDNP",
       "eva" : 8601699,
       "latlong" : [
@@ -1384,6 +1474,15 @@
          8.980288
       ],
       "name" : "Nordsode"
+   },
+   {
+      "ds100" : "XINV",
+      "eva" : 8300007,
+      "latlong" : [
+         45.451262,
+         8.625109
+      ],
+      "name" : "Novara"
    },
    {
       "ds100" : "XJNB",
@@ -1494,6 +1593,15 @@
       "name" : "Okucani"
    },
    {
+      "ds100" : "LOR",
+      "eva" : 8012564,
+      "latlong" : [
+         51.800919,
+         12.390405
+      ],
+      "name" : "Oranienbaum(Anh)"
+   },
+   {
       "ds100" : "ZWO",
       "eva" : 2100012,
       "latlong" : [
@@ -1537,6 +1645,15 @@
          13.110174
       ],
       "name" : "Oschatz Südbf"
+   },
+   {
+      "ds100" : "LOST",
+      "eva" : 8012570,
+      "latlong" : [
+         51.783518,
+         12.03059
+      ],
+      "name" : "Osternienburg"
    },
    {
       "ds100" : "NOMR",
@@ -1672,6 +1789,15 @@
          12.574016
       ],
       "name" : "Rimini"
+   },
+   {
+      "ds100" : "WRIW",
+      "eva" : 8012768,
+      "latlong" : [
+         53.057004,
+         13.7075
+      ],
+      "name" : "Ringenwalde(Templin)"
    },
    {
       "ds100" : "XDR",
@@ -2232,6 +2358,15 @@
       "name" : "Velke Zernoseky"
    },
    {
+      "ds100" : "XIVE",
+      "eva" : 8300008,
+      "latlong" : [
+         45.330135,
+         8.416503
+      ],
+      "name" : "Vercelli"
+   },
+   {
       "ds100" : "XDVSJ",
       "eva" : 8602825,
       "latlong" : [
@@ -2365,6 +2500,15 @@
          7.140685
       ],
       "name" : "Wittring"
+   },
+   {
+      "ds100" : "XPWRL",
+      "eva" : 5104133,
+      "latlong" : [
+         51.142509,
+         16.866581
+      ],
+      "name" : "Wroclaw Lesnica"
    },
    {
       "ds100" : "XPZD",
