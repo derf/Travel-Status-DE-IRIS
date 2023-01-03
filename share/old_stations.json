@@ -1467,15 +1467,6 @@
       "name" : "Obing"
    },
    {
-      "ds100" : "XDKHO",
-      "eva" : 8601560,
-      "latlong" : [
-         55.6290128,
-         12.579355
-      ],
-      "name" : "Oerestad st"
-   },
-   {
       "ds100" : "EOES",
       "eva" : 8004631,
       "latlong" : [
