@@ -38745,6 +38745,33 @@
       "name" : "Karlstadt(Main)"
    },
    {
+      "ds100" : "RKKT",
+      "eva" : 180061,
+      "latlong" : [
+         49.005431,
+         8.396428
+      ],
+      "name" : "Karlstor/Bundesgerichtshof, Karlsruhe"
+   },
+   {
+      "ds100" : "PQKKF",
+      "eva" : 190061,
+      "latlong" : [
+         49.005512,
+         8.395574
+      ],
+      "name" : "Karlstor/Bundesgerichtshof, Karlsruhe"
+   },
+   {
+      "ds100" : "PQKK",
+      "eva" : 372061,
+      "latlong" : [
+         49.004434,
+         8.394478
+      ],
+      "name" : "Karlstor/Bundesgerichtshof, Karlsruhe"
+   },
+   {
       "ds100" : "RKKAR",
       "eva" : 721388,
       "latlong" : [
@@ -40750,6 +40777,15 @@
          7.973842
       ],
       "name" : "Kollnau"
+   },
+   {
+      "ds100" : "PQKKL",
+      "eva" : 361963,
+      "latlong" : [
+         48.997386,
+         8.393669
+      ],
+      "name" : "Kolpingplatz, Karlsruhe"
    },
    {
       "ds100" : "PQKKO",
