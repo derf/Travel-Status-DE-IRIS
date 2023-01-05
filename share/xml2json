@@ -10,7 +10,12 @@ use List::Util qw(any);
 use XML::LibXML;
 
 # old / new / renamed / reappeared / missing
-my $mode = shift;
+my $mode  = shift;
+my $extra = shift // q{};
+
+if ( $extra eq 'if-active' ) {
+	use Travel::Status::DE::IRIS;
+}
 
 my $json     = JSON->new->utf8;
 my $json_str = read_file('stations.json');
@@ -109,6 +114,21 @@ sub delete_old_station {
 	} @{$old_stations};
 }
 
+sub has_departures {
+	my ($eva) = @_;
+
+	my $status = Travel::Status::DE::IRIS->new(
+		station    => $eva,
+		lookbehind => 120,
+		lookahead  => 240
+	);
+
+	if ( $status->results ) {
+		return 1;
+	}
+	return;
+}
+
 # TODO falls ein eintrag aus old_stations im XML auftaucht sollte er aus old_stations raus und wieder in stations rein
 
 if ( -e 'missing.txt' ) {
@@ -205,15 +225,22 @@ for my $station ( $tree->findnodes('//station') ) {
 	{
 		printf( "%30s has re-appeared as %s %d\n", $name, $ds100, $eva );
 		if ( not $mode or $mode eq 'reappeared' ) {
-			if ( ref($old) eq 'ARRAY' ) {
-				for my $o ( @{$old} ) {
-					delete_old_station( $o->{name}, $o->{ds100}, $o->{eva} );
+			if ( $extra ne 'if-active' or has_departures($eva) ) {
+				if ( ref($old) eq 'ARRAY' ) {
+					for my $o ( @{$old} ) {
+						delete_old_station( $o->{name}, $o->{ds100},
+							$o->{eva} );
+					}
 				}
+				else {
+					delete_old_station( $old->{name}, $old->{ds100},
+						$old->{eva} );
+				}
+				add_station( $name, $ds100, $eva );
 			}
-			else {
-				delete_old_station( $old->{name}, $old->{ds100}, $old->{eva} );
+			if ( $extra eq 'if-active' ) {
+				sleep(1);
 			}
-			add_station( $name, $ds100, $eva );
 		}
 	}
 
