@@ -73197,6 +73197,15 @@
       "name" : "Stolberg(Harz)"
    },
    {
+      "ds100" : "KST G",
+      "eva" : 8099506,
+      "latlong" : [
+         50.795552,
+         6.220769
+      ],
+      "name" : "Stolberg(Rheinl)Gbf"
+   },
+   {
       "ds100" : "KST",
       "eva" : 8000348,
       "latlong" : [
