@@ -17,6 +17,22 @@ use Scalar::Util    qw(weaken);
 
 our $VERSION = '1.81';
 
+Travel::Status::DE::IRIS::Result->mk_ro_accessors(
+	qw(arrival arrival_delay arrival_has_realtime arrival_is_additional arrival_is_cancelled arrival_hidden
+	  date datetime delay
+	  departure departure_delay departure_has_realtime departure_is_additional departure_is_cancelled departure_hidden
+	  ds100 has_realtime is_transfer is_unscheduled is_wing
+	  line_no old_train_id old_train_no operator platform raw_id
+	  realtime_xml route_start route_end
+	  sched_arrival sched_departure sched_platform sched_route_start
+	  sched_route_end start
+	  station station_uic
+	  stop_no time train_id train_no transfer type
+	  unknown_t unknown_o wing_id wing_of)
+);
+
+# {{{ Data (message codes, station fixups)
+
 my %translation = (
 	1  => 'Nähere Informationen in Kürze',
 	2  => 'Polizeieinsatz',
@@ -136,57 +152,8 @@ my %fixup = (
 	8070678 => 'Metzingen-Neuhausen',
 );
 
-Travel::Status::DE::IRIS::Result->mk_ro_accessors(
-	qw(arrival arrival_delay arrival_has_realtime arrival_is_additional arrival_is_cancelled arrival_hidden
-	  date datetime delay
-	  departure departure_delay departure_has_realtime departure_is_additional departure_is_cancelled departure_hidden
-	  ds100 has_realtime is_transfer is_unscheduled is_wing
-	  line_no old_train_id old_train_no operator platform raw_id
-	  realtime_xml route_start route_end
-	  sched_arrival sched_departure sched_platform sched_route_start
-	  sched_route_end start
-	  station station_uic
-	  stop_no time train_id train_no transfer type
-	  unknown_t unknown_o wing_id wing_of)
-);
-
-sub is_additional {
-	my ($self) = @_;
-
-	if ( $self->{arrival_is_additional} and $self->{departure_is_additional} ) {
-		return 1;
-	}
-	if ( $self->{arrival_is_additional}
-		and not defined $self->{departure_is_additional} )
-	{
-		return 1;
-	}
-	if ( not defined $self->{arrival_is_additional}
-		and $self->{departure_is_additional} )
-	{
-		return 1;
-	}
-	return 0;
-}
-
-sub is_cancelled {
-	my ($self) = @_;
-
-	if ( $self->{arrival_is_cancelled} and $self->{departure_is_cancelled} ) {
-		return 1;
-	}
-	if ( $self->{arrival_is_cancelled}
-		and not defined $self->{departure_is_cancelled} )
-	{
-		return 1;
-	}
-	if ( not defined $self->{arrival_is_cancelled}
-		and $self->{departure_is_cancelled} )
-	{
-		return 1;
-	}
-	return 0;
-}
+# }}}
+# {{{ Constructor
 
 sub new {
 	my ( $obj, %opt ) = @_;
@@ -264,6 +231,9 @@ sub new {
 	return $ref;
 }
 
+# }}}
+# {{{ Internal Helpers
+
 sub fixup_route {
 	my ( $self, $route ) = @_;
 	for my $stop ( @{$route} ) {
@@ -283,6 +253,46 @@ sub parse_ts {
 	}
 	return;
 }
+
+# List::Compare does not keep the order of its arguments (even with unsorted).
+# So we need to re-sort all stops to maintain their original order.
+sub sorted_sublist {
+	my ( $self, $list, $sublist ) = @_;
+	my %pos;
+
+	if ( not $sublist or not @{$sublist} ) {
+		return;
+	}
+
+	for my $i ( 0 .. $#{$list} ) {
+		$pos{ $list->[$i] } = $i;
+	}
+
+	my @sorted = sort { $pos{$a} <=> $pos{$b} } @{$sublist};
+
+	return @sorted;
+}
+
+sub superseded_messages {
+	my ( $self, $msg ) = @_;
+	my %superseded = (
+		62 => [36],
+		73 => [74],
+		74 => [73],
+		75 => [76],
+		76 => [75],
+		84 => [ 80, 82, 85 ],
+		88 => [ 80, 82, 83, 85, 86, 87, 90, 91, 92, 93, 96, 97, 98 ],
+		89 => [ 86, 87 ],
+		96 => [97],
+		97 => [96],
+	);
+
+	return @{ $superseded{$msg} // [] };
+}
+
+# }}}
+# {{{ Internal Setters for IRIS.pm
 
 sub set_ar {
 	my ( $self, %attrib ) = @_;
@@ -491,7 +501,37 @@ sub add_reference {
 	return $self;
 }
 
-# never called externally
+sub merge_with_departure {
+	my ( $self, $result ) = @_;
+
+	# result must be departure-only
+
+	$self->{is_transfer} = 1;
+
+	$self->{old_train_id} = $self->{train_id};
+	$self->{old_train_no} = $self->{train_no};
+
+	# departure is preferred over arrival, so overwrite default values
+	$self->{date}     = $result->{date};
+	$self->{time}     = $result->{time};
+	$self->{epoch}    = $result->{epoch};
+	$self->{datetime} = $result->{datetime};
+	$self->{train_id} = $result->{train_id};
+	$self->{train_no} = $result->{train_no};
+
+	$self->{departure}        = $result->{departure};
+	$self->{departure_wings}  = $result->{departure_wings};
+	$self->{route_end}        = $result->{route_end};
+	$self->{route_post}       = $result->{route_post};
+	$self->{sched_departure}  = $result->{sched_departure};
+	$self->{sched_route_post} = $result->{sched_route_post};
+
+	# update realtime info only if applicable
+	$self->{is_cancelled} ||= $result->{is_cancelled};
+
+	return $self;
+}
+
 sub add_inverse_reference {
 	my ( $self, $ref ) = @_;
 
@@ -500,23 +540,45 @@ sub add_inverse_reference {
 	return $self;
 }
 
-# List::Compare does not keep the order of its arguments (even with unsorted).
-# So we need to re-sort all stops to maintain their original order.
-sub sorted_sublist {
-	my ( $self, $list, $sublist ) = @_;
-	my %pos;
+# }}}
+# {{{ Public Accessors
 
-	if ( not $sublist or not @{$sublist} ) {
-		return;
+sub is_additional {
+	my ($self) = @_;
+
+	if ( $self->{arrival_is_additional} and $self->{departure_is_additional} ) {
+		return 1;
 	}
-
-	for my $i ( 0 .. $#{$list} ) {
-		$pos{ $list->[$i] } = $i;
+	if ( $self->{arrival_is_additional}
+		and not defined $self->{departure_is_additional} )
+	{
+		return 1;
 	}
+	if ( not defined $self->{arrival_is_additional}
+		and $self->{departure_is_additional} )
+	{
+		return 1;
+	}
+	return 0;
+}
 
-	my @sorted = sort { $pos{$a} <=> $pos{$b} } @{$sublist};
+sub is_cancelled {
+	my ($self) = @_;
 
-	return @sorted;
+	if ( $self->{arrival_is_cancelled} and $self->{departure_is_cancelled} ) {
+		return 1;
+	}
+	if ( $self->{arrival_is_cancelled}
+		and not defined $self->{departure_is_cancelled} )
+	{
+		return 1;
+	}
+	if ( not defined $self->{arrival_is_cancelled}
+		and $self->{departure_is_cancelled} )
+	{
+		return 1;
+	}
+	return 0;
 }
 
 sub additional_stops {
@@ -553,37 +615,6 @@ sub classes {
 	my @classes = split( //, $self->{classes} // q{} );
 
 	return @classes;
-}
-
-sub merge_with_departure {
-	my ( $self, $result ) = @_;
-
-	# result must be departure-only
-
-	$self->{is_transfer} = 1;
-
-	$self->{old_train_id} = $self->{train_id};
-	$self->{old_train_no} = $self->{train_no};
-
-	# departure is preferred over arrival, so overwrite default values
-	$self->{date}     = $result->{date};
-	$self->{time}     = $result->{time};
-	$self->{epoch}    = $result->{epoch};
-	$self->{datetime} = $result->{datetime};
-	$self->{train_id} = $result->{train_id};
-	$self->{train_no} = $result->{train_no};
-
-	$self->{departure}        = $result->{departure};
-	$self->{departure_wings}  = $result->{departure_wings};
-	$self->{route_end}        = $result->{route_end};
-	$self->{route_post}       = $result->{route_post};
-	$self->{sched_departure}  = $result->{sched_departure};
-	$self->{sched_route_post} = $result->{sched_route_post};
-
-	# update realtime info only if applicable
-	$self->{is_cancelled} ||= $result->{is_cancelled};
-
-	return $self;
 }
 
 sub origin {
@@ -839,24 +870,6 @@ sub sched_route {
 		$self->sched_route_post );
 }
 
-sub superseded_messages {
-	my ( $self, $msg ) = @_;
-	my %superseded = (
-		62 => [36],
-		73 => [74],
-		74 => [73],
-		75 => [76],
-		76 => [75],
-		84 => [ 80, 82, 85 ],
-		88 => [ 80, 82, 83, 85, 86, 87, 90, 91, 92, 93, 96, 97, 98 ],
-		89 => [ 86, 87 ],
-		96 => [97],
-		97 => [96],
-	);
-
-	return @{ $superseded{$msg} // [] };
-}
-
 sub translate_msg {
 	my ( $self, $msg ) = @_;
 
@@ -885,6 +898,8 @@ sub TO_JSON {
 
 	return {%copy};
 }
+
+# }}}
 
 1;
 
