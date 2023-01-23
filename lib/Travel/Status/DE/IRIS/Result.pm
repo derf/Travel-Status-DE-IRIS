@@ -688,12 +688,6 @@ sub replacement_for {
 	return;
 }
 
-sub dump_message_codes {
-	my ($self) = @_;
-
-	return %translation;
-}
-
 sub qos_messages {
 	my ($self) = @_;
 
