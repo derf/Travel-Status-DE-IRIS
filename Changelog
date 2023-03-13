@@ -1,3 +1,7 @@
+Travel::Status::DE::IRIS 1.82 - Mon Mar 13 2023
+
+    * Add delay code 81
+
 Travel::Status::DE::IRIS 1.81 - Thu Jan 05 2023
 
     * Update stations list
