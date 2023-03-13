@@ -119,6 +119,7 @@ my %translation = (
 	77 => '1. Klasse fehlt',
 	79 => 'Mehrzweckabteil fehlt',
 	80 => 'Abweichende Wagenreihung',
+	81 => 'Fahrzeugtausch',
 	82 => 'Mehrere Wagen fehlen',
 	83 => 'Defekte fahrzeuggebundene Einstiegshilfe',
 	84 => 'Zug verkehrt richtig gereiht',                   # r 80 82 85
@@ -1498,6 +1499,8 @@ Source: correlation between IRIS and DB RIS (bahn.de).
 =item q 80 : "Abweichende Wagenreihung"
 
 Verified by L<https://iris.noncd.db.de/irisWebclient/Configuration>.
+
+=item q 81 : "Fahrzeugtausch"
 
 =item q 82 : "Mehrere Wagen fehlen"
 
