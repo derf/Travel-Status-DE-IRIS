@@ -5589,6 +5589,15 @@
       "name" : "Basel St Johann"
    },
    {
+      "ds100" : "OFBAM",
+      "eva" : 8700662,
+      "latlong" : [
+         49.38074,
+         6.235116
+      ],
+      "name" : "Basse-Ham"
+   },
+   {
       "ds100" : "OSBSS",
       "eva" : 8500122,
       "latlong" : [
@@ -40680,6 +40689,15 @@
       "name" : "Koebenhavns Lufthavn st"
    },
    {
+      "ds100" : "OFKOM",
+      "eva" : 8701341,
+      "latlong" : [
+         49.396543,
+         6.273419
+      ],
+      "name" : "Koenigsmacker"
+   },
+   {
       "ds100" : "XFKO",
       "eva" : 8701340,
       "latlong" : [
@@ -48355,6 +48373,15 @@
          12.256898
       ],
       "name" : "Mallersdorf"
+   },
+   {
+      "ds100" : "OFMAG",
+      "eva" : 8701481,
+      "latlong" : [
+         49.421551,
+         6.301798
+      ],
+      "name" : "Malling(F)"
    },
    {
       "ds100" : "WML",
