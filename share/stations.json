@@ -25227,6 +25227,15 @@
       "name" : "Frohburg"
    },
    {
+      "ds100" : "OAFO",
+      "eva" : 8100033,
+      "latlong" : [
+         47.266324,
+         15.326959
+      ],
+      "name" : "Frohnleiten"
+   },
+   {
       "ds100" : "TFR",
       "eva" : 8002133,
       "latlong" : [
