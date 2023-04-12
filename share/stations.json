@@ -54846,6 +54846,15 @@
       "name" : "Neumark(Sachs)"
    },
    {
+      "ds100" : "XANKW",
+      "eva" : 8100134,
+      "latlong" : [
+         47.954673,
+         13.224804
+      ],
+      "name" : "Neumarkt am Wallersee"
+   },
+   {
       "ds100" : "NNT",
       "eva" : 8004305,
       "latlong" : [
@@ -54871,15 +54880,6 @@
          12.503075
       ],
       "name" : "Neumarkt-St Veit"
-   },
-   {
-      "ds100" : "XANKD",
-      "eva" : 8100134,
-      "latlong" : [
-         47.954675,
-         13.224806
-      ],
-      "name" : "Neumarkt/Wallersee"
    },
    {
       "ds100" : "UNME",
