@@ -10575,6 +10575,15 @@
       "name" : "Bornholte(b Verl)"
    },
    {
+      "ds100" : "OTBOY",
+      "eva" : 5400550,
+      "latlong" : [
+         49.526851,
+         13.29946
+      ],
+      "name" : "Borovy"
+   },
+   {
       "ds100" : "XDBO",
       "eva" : 8600272,
       "latlong" : [
@@ -13959,6 +13968,15 @@
       "name" : "Cerbère"
    },
    {
+      "ds100" : "OTCPI",
+      "eva" : 5400740,
+      "latlong" : [
+         49.495919,
+         13.305024
+      ],
+      "name" : "Cervene Porici"
+   },
+   {
       "ds100" : "XICER",
       "eva" : 8300095,
       "latlong" : [
@@ -14974,6 +14992,15 @@
          2.547481
       ],
       "name" : "Combs la Ville Quincy"
+   },
+   {
+      "ds100" : "D8303046",
+      "eva" : 8303046,
+      "latlong" : [
+         45.784498,
+         9.07951
+      ],
+      "name" : "Como Nord Camerlata"
    },
    {
       "ds100" : "XIC",
@@ -16117,6 +16144,15 @@
          12.949727
       ],
       "name" : "Deggendorf Hbf"
+   },
+   {
+      "ds100" : "OTDHT",
+      "eva" : 5400794,
+      "latlong" : [
+         49.450748,
+         13.286299
+      ],
+      "name" : "Dehtin"
    },
    {
       "ds100" : "RDM",
@@ -23209,6 +23245,15 @@
          13.710388
       ],
       "name" : "Finsterwalde(Niederlausitz)"
+   },
+   {
+      "ds100" : "XIFRC",
+      "eva" : 8300180,
+      "latlong" : [
+         43.777575,
+         11.27659
+      ],
+      "name" : "Firenze Campo di Marte"
    },
    {
       "ds100" : "XIFRS",
@@ -33156,6 +33201,15 @@
       "name" : "Heldrungen"
    },
    {
+      "ds100" : "BHEL",
+      "eva" : 8011853,
+      "latlong" : [
+         52.27961,
+         14.47927
+      ],
+      "name" : "Helenesee"
+   },
+   {
       "ds100" : "PQSHW",
       "eva" : 837196,
       "latlong" : [
@@ -34855,6 +34909,15 @@
          7.642479
       ],
       "name" : "Hohegrete"
+   },
+   {
+      "ds100" : "BHOW",
+      "eva" : 8080710,
+      "latlong" : [
+         52.6723,
+         13.27069
+      ],
+      "name" : "Hohen Neuendorf West"
    },
    {
       "ds100" : "BHN",
@@ -37366,6 +37429,15 @@
          13.937671
       ],
       "name" : "Jatznick"
+   },
+   {
+      "ds100" : "OPJW",
+      "eva" : 5100077,
+      "latlong" : [
+         50.912394,
+         16.428928
+      ],
+      "name" : "Jaworzyna Sl."
    },
    {
       "ds100" : "LJEB",
@@ -41085,6 +41157,15 @@
       "name" : "Kortrijk"
    },
    {
+      "ds100" : "OPKS",
+      "eva" : 5100124,
+      "latlong" : [
+         52.07896,
+         16.641829
+      ],
+      "name" : "Koscian"
+   },
+   {
       "ds100" : "WKO",
       "eva" : 8012086,
       "latlong" : [
@@ -42858,6 +42939,15 @@
       "name" : "La Souterraine"
    },
    {
+      "ds100" : "XILS",
+      "eva" : 8300156,
+      "latlong" : [
+         44.111686,
+         9.813677
+      ],
+      "name" : "La Spezia Centrale"
+   },
+   {
       "ds100" : "XALAA",
       "eva" : 8101180,
       "latlong" : [
@@ -43783,6 +43873,15 @@
          15.232185
       ],
       "name" : "Lasko"
+   },
+   {
+      "ds100" : "XPLP",
+      "eva" : 5100128,
+      "latlong" : [
+         53.4913,
+         18.456337
+      ],
+      "name" : "Laskowice Pomorskie"
    },
    {
       "ds100" : "XPLSW",
@@ -45387,6 +45486,15 @@
       "name" : "Lessingstraße, Karlsruhe"
    },
    {
+      "ds100" : "XPLN",
+      "eva" : 5100036,
+      "latlong" : [
+         51.846409,
+         16.565573
+      ],
+      "name" : "Leszno"
+   },
+   {
       "ds100" : "ELE",
       "eva" : 8000227,
       "latlong" : [
@@ -45583,6 +45691,15 @@
          4.712388
       ],
       "name" : "Leuven"
+   },
+   {
+      "ds100" : "XILE",
+      "eva" : 8300159,
+      "latlong" : [
+         44.174107,
+         9.616139
+      ],
+      "name" : "Levanto"
    },
    {
       "ds100" : "OMLEE",
@@ -47257,6 +47374,15 @@
          6.134396
       ],
       "name" : "Luxembourg"
+   },
+   {
+      "ds100" : "OTLUY",
+      "eva" : 5401877,
+      "latlong" : [
+         49.548937,
+         13.314678
+      ],
+      "name" : "Luzany"
    },
    {
       "ds100" : "XSLU",
@@ -51235,6 +51361,15 @@
          16.228604
       ],
       "name" : "Mogersdorf"
+   },
+   {
+      "ds100" : "XPMG",
+      "eva" : 5100220,
+      "latlong" : [
+         52.658351,
+         17.945993
+      ],
+      "name" : "Mogilno"
    },
    {
       "ds100" : "WMOI",
@@ -58068,6 +58203,15 @@
       "name" : "Oberöwisheim"
    },
    {
+      "ds100" : "OPOB",
+      "eva" : 5100182,
+      "latlong" : [
+         51.298966,
+         16.90755
+      ],
+      "name" : "Oborniki Slaskie"
+   },
+   {
       "ds100" : "XBOB",
       "eva" : 8800427,
       "latlong" : [
@@ -61056,6 +61200,15 @@
       "name" : "Plzen zast."
    },
    {
+      "ds100" : "OTPDV",
+      "eva" : 5402393,
+      "latlong" : [
+         49.72171,
+         13.383041
+      ],
+      "name" : "Plzen-Doudlevce"
+   },
+   {
       "ds100" : "APLN",
       "eva" : 8004841,
       "latlong" : [
@@ -61810,6 +61963,15 @@
          13.322625
       ],
       "name" : "Prestice"
+   },
+   {
+      "ds100" : "OTPTZ",
+      "eva" : 5400265,
+      "latlong" : [
+         49.600814,
+         13.299109
+      ],
+      "name" : "Prestice-Zastavka"
    },
    {
       "ds100" : "NPRE",
@@ -62955,6 +63117,15 @@
       "name" : "Ranzo-S. Abbondio"
    },
    {
+      "ds100" : "XIRAP",
+      "eva" : 8300178,
+      "latlong" : [
+         44.35124,
+         9.231553
+      ],
+      "name" : "Rapallo"
+   },
+   {
       "ds100" : "RRA",
       "eva" : 8000306,
       "latlong" : [
@@ -63151,6 +63322,15 @@
          5.636461
       ],
       "name" : "Ravenstein"
+   },
+   {
+      "ds100" : "OPRW",
+      "eva" : 5100202,
+      "latlong" : [
+         51.608681,
+         16.840122
+      ],
+      "name" : "Rawicz"
    },
    {
       "ds100" : "XIREC",
@@ -71001,6 +71181,15 @@
       "name" : "Sluknov zast."
    },
    {
+      "ds100" : "OPSME",
+      "eva" : 5103477,
+      "latlong" : [
+         53.748068,
+         18.685994
+      ],
+      "name" : "Smetowo"
+   },
+   {
       "ds100" : "XNSK",
       "eva" : 8400566,
       "latlong" : [
@@ -74187,6 +74376,15 @@
       "name" : "Swalmen"
    },
    {
+      "ds100" : "OPSBD",
+      "eva" : 5103275,
+      "latlong" : [
+         50.860293,
+         16.33278
+      ],
+      "name" : "Swiebodzice"
+   },
+   {
       "ds100" : "XPSWB",
       "eva" : 5103284,
       "latlong" : [
@@ -75402,6 +75600,15 @@
       "name" : "Thyrow"
    },
    {
+      "ds100" : "OATM",
+      "eva" : 8101675,
+      "latlong" : [
+         46.540275,
+         13.64807
+      ],
+      "name" : "Thörl-Maglern"
+   },
+   {
       "ds100" : "NTHM",
       "eva" : 8005864,
       "latlong" : [
@@ -75625,6 +75832,15 @@
          9.03368895274131
       ],
       "name" : "Tobel-Affeltrangen"
+   },
+   {
+      "ds100" : "OTTOC",
+      "eva" : 5403136,
+      "latlong" : [
+         49.4293,
+         13.309204
+      ],
+      "name" : "Tocnik"
    },
    {
       "ds100" : "XDTON",
@@ -79504,6 +79720,15 @@
          16.278602
       ],
       "name" : "Walbrzych Glowny"
+   },
+   {
+      "ds100" : "OPWM",
+      "eva" : 5100210,
+      "latlong" : [
+         50.784451,
+         16.28404
+      ],
+      "name" : "Walbrzych Miasto"
    },
    {
       "ds100" : "XAWA",
@@ -85264,6 +85489,15 @@
          14.362164
       ],
       "name" : "Zliv"
+   },
+   {
+      "ds100" : "OPZM",
+      "eva" : 5104359,
+      "latlong" : [
+         51.474678,
+         16.901734
+      ],
+      "name" : "Zmigrod"
    },
    {
       "ds100" : "DZL",

@@ -927,15 +927,6 @@
       "name" : "Hegyeshalom(Gr)"
    },
    {
-      "ds100" : "BHEL",
-      "eva" : 8011853,
-      "latlong" : [
-         52.278758,
-         14.478219
-      ],
-      "name" : "Helenesee"
-   },
-   {
       "ds100" : "AHSN",
       "eva" : 8002750,
       "latlong" : [
@@ -970,15 +961,6 @@
          7.773047
       ],
       "name" : "Hinterweidenthal Ost"
-   },
-   {
-      "ds100" : "BHOW",
-      "eva" : 8080710,
-      "latlong" : [
-         52.672398,
-         13.271342
-      ],
-      "name" : "Hohen Neuendorf West"
    },
    {
       "ds100" : "XSHBS",
