@@ -33768,15 +33768,6 @@
       "name" : "Herrenberg"
    },
    {
-      "ds100" : "TZWE",
-      "eva" : 8002786,
-      "latlong" : [
-         48.584969,
-         8.867661
-      ],
-      "name" : "Herrenberg Zwerchweg"
-   },
-   {
       "ds100" : "BHE",
       "eva" : 8011863,
       "latlong" : [

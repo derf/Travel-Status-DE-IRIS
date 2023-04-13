@@ -2527,5 +2527,14 @@
          -2.320028
       ],
       "name" : "Zumarraga"
+   },
+   {
+      "ds100" : "TZWE",
+      "eva" : 8002786,
+      "latlong" : [
+         48.584969,
+         8.867661
+      ],
+      "name" : "Herrenberg Zwerchweg"
    }
 ]
