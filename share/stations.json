@@ -71523,6 +71523,24 @@
       "name" : "Sophienhof"
    },
    {
+      "ds100" : "PQKSP",
+      "eva" : 370602,
+      "latlong" : [
+         49.007733,
+         8.379304
+      ],
+      "name" : "Sophienstraße, Karlsruhe"
+   },
+   {
+      "ds100" : "PQKSQ",
+      "eva" : 721441,
+      "latlong" : [
+         49.007517,
+         8.379025
+      ],
+      "name" : "Sophienstraße, Karlsruhe"
+   },
+   {
       "ds100" : "XPSO",
       "eva" : 5100056,
       "latlong" : [
