@@ -135,6 +135,15 @@
       "name" : "Abfaltersbach"
    },
    {
+      "ds100" : "OAASG",
+      "eva" : 8100627,
+      "latlong" : [
+         48.625233,
+         14.846225
+      ],
+      "name" : "Abschlag"
+   },
+   {
       "ds100" : "OAADH",
       "eva" : 8100202,
       "latlong" : [
@@ -477,6 +486,15 @@
       "name" : "Ahrensfelde Nord"
    },
    {
+      "ds100" : "AARF",
+      "eva" : 8071338,
+      "latlong" : [
+         53.233409,
+         8.818139
+      ],
+      "name" : "Ahrensfelde(Bz. Bremen)"
+   },
+   {
       "ds100" : "KAH",
       "eva" : 8000448,
       "latlong" : [
@@ -610,6 +628,15 @@
          5.843195
       ],
       "name" : "Akkrum"
+   },
+   {
+      "ds100" : "XUAI",
+      "eva" : 5300096,
+      "latlong" : [
+         46.056349,
+         23.576234
+      ],
+      "name" : "Alba Iulia"
    },
    {
       "ds100" : "XIAT",
@@ -1566,6 +1593,15 @@
       "name" : "Altmorschen"
    },
    {
+      "ds100" : "PAYOR",
+      "eva" : 8169949,
+      "latlong" : [
+         48.837944,
+         14.989872
+      ],
+      "name" : "Altnagelberg"
+   },
+   {
       "ds100" : "XSAT",
       "eva" : 8506125,
       "latlong" : [
@@ -1636,6 +1672,15 @@
          9.793037
       ],
       "name" : "Alttann"
+   },
+   {
+      "ds100" : "OAAW",
+      "eva" : 8100643,
+      "latlong" : [
+         48.722559,
+         14.904807
+      ],
+      "name" : "Altweitra"
    },
    {
       "ds100" : "MAT",
@@ -1942,6 +1987,15 @@
          14.878112
       ],
       "name" : "Amstetten NÖ"
+   },
+   {
+      "ds100" : "TAM M",
+      "eva" : 8079075,
+      "latlong" : [
+         48.577851,
+         9.873958
+      ],
+      "name" : "Amstetten(W) Lokalbahn"
    },
    {
       "ds100" : "TAM",
@@ -2347,6 +2401,15 @@
          6.862374
       ],
       "name" : "Appingedam"
+   },
+   {
+      "ds100" : "XUA",
+      "eva" : 5300002,
+      "latlong" : [
+         46.189561,
+         21.32555
+      ],
+      "name" : "Arad"
    },
    {
       "ds100" : "XSAB",
@@ -3870,6 +3933,15 @@
       "name" : "Bad Hönningen"
    },
    {
+      "ds100" : "TIMN",
+      "eva" : 8070309,
+      "latlong" : [
+         48.403819,
+         8.770236
+      ],
+      "name" : "Bad Imnau"
+   },
+   {
       "ds100" : "XAIS",
       "eva" : 8100157,
       "latlong" : [
@@ -4833,6 +4905,15 @@
       "name" : "Bad Windsheim"
    },
    {
+      "ds100" : "TBW",
+      "eva" : 8000769,
+      "latlong" : [
+         47.910455,
+         9.890274
+      ],
+      "name" : "Bad Wurzach"
+   },
+   {
       "ds100" : "MBWH",
       "eva" : 8000768,
       "latlong" : [
@@ -5355,13 +5436,13 @@
       "name" : "Barcelona Sants"
    },
    {
-      "ds100" : "PIFAN",
-      "eva" : 8346045,
+      "ds100" : "ABCL",
+      "eva" : 8071336,
       "latlong" : [
-         45.083788,
-         6.710151
+         53.471983,
+         9.02739
       ],
-      "name" : "Bardonecchia Confine"
+      "name" : "Barchel"
    },
    {
       "ds100" : "ABAD",
@@ -5407,6 +5488,15 @@
          11.620875
       ],
       "name" : "Barleben"
+   },
+   {
+      "ds100" : "LBAS",
+      "eva" : 8011112,
+      "latlong" : [
+         52.214778,
+         11.640671
+      ],
+      "name" : "Barleber See"
    },
    {
       "ds100" : "ABMS",
@@ -5884,6 +5974,15 @@
          6.173479
       ],
       "name" : "Bedburg-Hau"
+   },
+   {
+      "ds100" : "OPBDW",
+      "eva" : 5100319,
+      "latlong" : [
+         52.072407,
+         15.31352
+      ],
+      "name" : "Bedow"
    },
    {
       "ds100" : "ONBD",
@@ -8046,6 +8145,15 @@
       "name" : "Berlin-Zehlendorf"
    },
    {
+      "ds100" : "XSBLS",
+      "eva" : 8506159,
+      "latlong" : [
+         47.675468,
+         9.017736
+      ],
+      "name" : "Berlingen URh"
+   },
+   {
       "ds100" : "XSBLG",
       "eva" : 8506135,
       "latlong" : [
@@ -8676,6 +8784,15 @@
       "name" : "Bichlbach-Berwang"
    },
    {
+      "ds100" : "RBIC",
+      "eva" : 8077777,
+      "latlong" : [
+         47.967528,
+         9.101812
+      ],
+      "name" : "Bichtlingen"
+   },
+   {
       "ds100" : "FBI",
       "eva" : 8000948,
       "latlong" : [
@@ -9108,6 +9225,15 @@
       "name" : "Binz LB"
    },
    {
+      "ds100" : "RBZN",
+      "eva" : 8070323,
+      "latlong" : [
+         47.631358,
+         7.620803
+      ],
+      "name" : "Binzen"
+   },
+   {
       "ds100" : "OFBIO",
       "eva" : 8700723,
       "latlong" : [
@@ -9412,6 +9538,15 @@
          10.961184
       ],
       "name" : "Blankenburg(Harz)"
+   },
+   {
+      "ds100" : "BBFD",
+      "eva" : 8089186,
+      "latlong" : [
+         52.338011,
+         13.415618
+      ],
+      "name" : "Blankenfelde (S)"
    },
    {
       "ds100" : "BBF",
@@ -10071,6 +10206,15 @@
       "name" : "Bohumin"
    },
    {
+      "ds100" : "OTBNV",
+      "eva" : 5400522,
+      "latlong" : [
+         49.096294,
+         17.926172
+      ],
+      "name" : "Bohuslavice nad Vlar"
+   },
+   {
       "ds100" : "OTBHO",
       "eva" : 5400525,
       "latlong" : [
@@ -10096,6 +10240,24 @@
          10.754481
       ],
       "name" : "Boizenburg(Elbe)"
+   },
+   {
+      "ds100" : "OTB",
+      "eva" : 5400267,
+      "latlong" : [
+         49.035968,
+         17.795262
+      ],
+      "name" : "Bojkovice"
+   },
+   {
+      "ds100" : "PTTPC",
+      "eva" : 5433005,
+      "latlong" : [
+         49.035437,
+         17.81137
+      ],
+      "name" : "Bojkovice mesto"
    },
    {
       "ds100" : "ABHT",
@@ -10611,6 +10773,15 @@
       "name" : "Borsdorf(Sachs)"
    },
    {
+      "ds100" : "XDBOP",
+      "eva" : 8600276,
+      "latlong" : [
+         55.494897,
+         11.97293
+      ],
+      "name" : "Borup st"
+   },
+   {
       "ds100" : "ONBOK",
       "eva" : 8400125,
       "latlong" : [
@@ -10861,6 +11032,15 @@
          13.72149
       ],
       "name" : "Brand Tropical Islands"
+   },
+   {
+      "ds100" : "PABL",
+      "eva" : 8102021,
+      "latlong" : [
+         48.865577,
+         15.019869
+      ],
+      "name" : "Brand b Litschau"
    },
    {
       "ds100" : "LBA",
@@ -11439,6 +11619,15 @@
       "name" : "Bremervörde"
    },
    {
+      "ds100" : "KBK",
+      "eva" : 8071651,
+      "latlong" : [
+         50.432838,
+         7.16878
+      ],
+      "name" : "Brenk"
+   },
+   {
       "ds100" : "XIBN",
       "eva" : 8300092,
       "latlong" : [
@@ -11808,6 +11997,15 @@
       "name" : "Brohl"
    },
    {
+      "ds100" : "KBROB",
+      "eva" : 8070338,
+      "latlong" : [
+         50.480507,
+         7.333076
+      ],
+      "name" : "Brohl(Brohltalbahn)"
+   },
+   {
       "ds100" : "ABRS",
       "eva" : 8001190,
       "latlong" : [
@@ -11833,6 +12031,15 @@
          11.315972
       ],
       "name" : "Bronzolo/Branzoll"
+   },
+   {
+      "ds100" : "XTBRT",
+      "eva" : 5400612,
+      "latlong" : [
+         50.951596,
+         14.438788
+      ],
+      "name" : "Brtniky"
    },
    {
       "ds100" : "FBB",
@@ -12013,6 +12220,24 @@
          11.915269
       ],
       "name" : "Bruckmühl"
+   },
+   {
+      "ds100" : "OABRF",
+      "eva" : 8100680,
+      "latlong" : [
+         48.60489,
+         14.848777
+      ],
+      "name" : "Bruderndorf b.Langschlag"
+   },
+   {
+      "ds100" : "PABLW",
+      "eva" : 8100915,
+      "latlong" : [
+         48.605501,
+         14.848607
+      ],
+      "name" : "Bruderndorf b.Langschlag Wasserstation"
    },
    {
       "ds100" : "XSBRU",
@@ -12411,6 +12636,15 @@
       "name" : "Bucuresti Nord Gara A"
    },
    {
+      "ds100" : "OPBUD",
+      "eva" : 5100600,
+      "latlong" : [
+         52.153283,
+         15.081535
+      ],
+      "name" : "Budachow"
+   },
+   {
       "ds100" : "XMBF",
       "eva" : 5500133,
       "latlong" : [
@@ -12798,6 +13032,15 @@
       "name" : "Burgthann"
    },
    {
+      "ds100" : "TBUW",
+      "eva" : 8001281,
+      "latlong" : [
+         47.923157,
+         9.344916
+      ],
+      "name" : "Burgweiler"
+   },
+   {
       "ds100" : "HBUR",
       "eva" : 8001301,
       "latlong" : [
@@ -12987,6 +13230,24 @@
       "name" : "Bydgoszcz Glowna"
    },
    {
+      "ds100" : "OTBY",
+      "eva" : 5400247,
+      "latlong" : [
+         49.067772,
+         18.014158
+      ],
+      "name" : "Bylnice"
+   },
+   {
+      "ds100" : "OPBYI",
+      "eva" : 5100649,
+      "latlong" : [
+         52.131188,
+         15.148082
+      ],
+      "name" : "Bytnica"
+   },
+   {
       "ds100" : "XSBAE",
       "eva" : 8503208,
       "latlong" : [
@@ -13102,6 +13363,15 @@
          9.035015
       ],
       "name" : "Böblingen Zimmerschlag"
+   },
+   {
+      "ds100" : "NBOB",
+      "eva" : 8070667,
+      "latlong" : [
+         49.053371,
+         13.014232
+      ],
+      "name" : "Böbrach"
    },
    {
       "ds100" : "TBCS",
@@ -13968,6 +14238,15 @@
       "name" : "Cerbère"
    },
    {
+      "ds100" : "XTCC",
+      "eva" : 5400730,
+      "latlong" : [
+         50.454322,
+         13.363355
+      ],
+      "name" : "Cernovice u Chomutova"
+   },
+   {
       "ds100" : "OTCPI",
       "eva" : 5400740,
       "latlong" : [
@@ -13984,6 +14263,15 @@
          13.343705
       ],
       "name" : "Cervignano-Aquileia-Grado"
+   },
+   {
+      "ds100" : "XICE",
+      "eva" : 8300193,
+      "latlong" : [
+         44.145476,
+         12.249511
+      ],
+      "name" : "Cesena"
    },
    {
       "ds100" : "XTCKA",
@@ -14029,6 +14317,15 @@
          14.533174
       ],
       "name" : "Ceska Lipa strelnice"
+   },
+   {
+      "ds100" : "XTTR",
+      "eva" : 5400002,
+      "latlong" : [
+         49.897323,
+         16.446808
+      ],
+      "name" : "Ceska Trebova"
    },
    {
       "ds100" : "XTCB",
@@ -14391,6 +14688,15 @@
       "name" : "Chemnitz Stadlerplatz"
    },
    {
+      "ds100" : "DC  B",
+      "eva" : 8071816,
+      "latlong" : [
+         50.833199,
+         12.925167
+      ],
+      "name" : "Chemnitz Stefan-Heym-Platz"
+   },
+   {
       "ds100" : "DCD",
       "eva" : 8010185,
       "latlong" : [
@@ -14607,6 +14913,15 @@
       "name" : "Chomutov mesto"
    },
    {
+      "ds100" : "ZUC",
+      "eva" : 2200010,
+      "latlong" : [
+         48.432711,
+         22.205549
+      ],
+      "name" : "Chop"
+   },
+   {
       "ds100" : "OTCTE",
       "eva" : 5401260,
       "latlong" : [
@@ -14740,6 +15055,15 @@
          15.98318
       ],
       "name" : "Ciechanowice"
+   },
+   {
+      "ds100" : "XPCI",
+      "eva" : 5100739,
+      "latlong" : [
+         52.039498,
+         15.233866
+      ],
+      "name" : "Ciemnice"
    },
    {
       "ds100" : "OTCL",
@@ -15471,6 +15795,15 @@
       "name" : "Cursdorf"
    },
    {
+      "ds100" : "XUCU",
+      "eva" : 5300001,
+      "latlong" : [
+         46.341011,
+         21.297702
+      ],
+      "name" : "Curtici"
+   },
+   {
       "ds100" : "ACV",
       "eva" : 8001352,
       "latlong" : [
@@ -15667,6 +16000,15 @@
          7.771283
       ],
       "name" : "Dahn"
+   },
+   {
+      "ds100" : "SDAS",
+      "eva" : 8079081,
+      "latlong" : [
+         49.149088,
+         7.776586
+      ],
+      "name" : "Dahn Süd"
    },
    {
       "ds100" : "ONDAL",
@@ -16173,6 +16515,15 @@
       "name" : "Deining(Oberpf)"
    },
    {
+      "ds100" : "ADS",
+      "eva" : 8070349,
+      "latlong" : [
+         53.532111,
+         9.442791
+      ],
+      "name" : "Deinste"
+   },
+   {
       "ds100" : "ONDM",
       "eva" : 8400168,
       "latlong" : [
@@ -16506,6 +16857,15 @@
       "name" : "Desio"
    },
    {
+      "ds100" : "LDAD",
+      "eva" : 8011362,
+      "latlong" : [
+         51.821132,
+         12.314781
+      ],
+      "name" : "Dessau Adria"
+   },
+   {
       "ds100" : "LD",
       "eva" : 8010077,
       "latlong" : [
@@ -16540,6 +16900,15 @@
          12.148546
       ],
       "name" : "Dessau-Mosigkau"
+   },
+   {
+      "ds100" : "LDWA",
+      "eva" : 8070259,
+      "latlong" : [
+         51.836431,
+         12.270734
+      ],
+      "name" : "Dessau-Waldersee"
    },
    {
       "ds100" : "EDTM",
@@ -16704,6 +17073,15 @@
       "name" : "Deutzen"
    },
    {
+      "ds100" : "XUD",
+      "eva" : 5300073,
+      "latlong" : [
+         45.884269,
+         22.91025
+      ],
+      "name" : "Deva"
+   },
+   {
       "ds100" : "XNDV",
       "eva" : 8400173,
       "latlong" : [
@@ -16857,6 +17235,15 @@
       "name" : "Diessenhofen"
    },
    {
+      "ds100" : "XSDHS",
+      "eva" : 8506152,
+      "latlong" : [
+         47.690417,
+         8.748868
+      ],
+      "name" : "Diessenhofen URh"
+   },
+   {
       "ds100" : "NDT",
       "eva" : 8001450,
       "latlong" : [
@@ -16873,6 +17260,15 @@
          8.61925589066777
       ],
       "name" : "Dietlikon"
+   },
+   {
+      "ds100" : "OADMS",
+      "eva" : 8100726,
+      "latlong" : [
+         48.750228,
+         14.946661
+      ],
+      "name" : "Dietmanns b.Gmünd"
    },
    {
       "ds100" : "MDRD",
@@ -17154,6 +17550,15 @@
       "name" : "Ditzingen"
    },
    {
+      "ds100" : "OTDVN",
+      "eva" : 5400811,
+      "latlong" : [
+         49.098569,
+         17.915996
+      ],
+      "name" : "Divnice"
+   },
+   {
       "ds100" : "XIDT",
       "eva" : 8300104,
       "latlong" : [
@@ -17280,6 +17685,15 @@
       "name" : "Doksy"
    },
    {
+      "ds100" : "OTDLN",
+      "eva" : 5400853,
+      "latlong" : [
+         50.603911,
+         15.170753
+      ],
+      "name" : "Dolanky"
+   },
+   {
       "ds100" : "OTDLX",
       "eva" : 5403665,
       "latlong" : [
@@ -17352,6 +17766,15 @@
       "name" : "Dolni Habartice"
    },
    {
+      "ds100" : "XTDKR",
+      "eva" : 5400872,
+      "latlong" : [
+         50.956423,
+         14.518703
+      ],
+      "name" : "Dolni Krecany"
+   },
+   {
       "ds100" : "XTDD",
       "eva" : 5400881,
       "latlong" : [
@@ -17404,6 +17827,15 @@
          10.298523
       ],
       "name" : "Dombühl"
+   },
+   {
+      "ds100" : "XTDI",
+      "eva" : 5400905,
+      "latlong" : [
+         50.479438,
+         13.351525
+      ],
+      "name" : "Domina"
    },
    {
       "ds100" : "XLDM",
@@ -18090,6 +18522,15 @@
       "name" : "Dottenheim"
    },
    {
+      "ds100" : "TDOD",
+      "eva" : 8029358,
+      "latlong" : [
+         48.227253,
+         8.780591
+      ],
+      "name" : "Dotternhausen-Dormettingen"
+   },
+   {
       "ds100" : "XSDO",
       "eva" : 8502212,
       "latlong" : [
@@ -18097,6 +18538,15 @@
          8.23468774088471
       ],
       "name" : "Dottikon-Dintikon"
+   },
+   {
+      "ds100" : "OTDUU",
+      "eva" : 5403657,
+      "latlong" : [
+         50.607903,
+         15.101635
+      ],
+      "name" : "Doubi u Turnova"
    },
    {
       "ds100" : "XFDR",
@@ -18124,6 +18574,15 @@
          11.124636
       ],
       "name" : "Drahtzug"
+   },
+   {
+      "ds100" : "XLDF",
+      "eva" : 8270360,
+      "latlong" : [
+         50.016907,
+         6.007293
+      ],
+      "name" : "Drauffelt"
    },
    {
       "ds100" : "OADR",
@@ -18810,6 +19269,15 @@
       "name" : "Dußlingen"
    },
    {
+      "ds100" : "OTDKL",
+      "eva" : 5400948,
+      "latlong" : [
+         50.413942,
+         15.797346
+      ],
+      "name" : "Dvur Kralove nad Labem"
+   },
+   {
       "ds100" : "XDDY",
       "eva" : 8600436,
       "latlong" : [
@@ -18943,6 +19411,15 @@
          7.295765
       ],
       "name" : "Dülmen"
+   },
+   {
+      "ds100" : "HDUS",
+      "eva" : 8070358,
+      "latlong" : [
+         52.918346,
+         8.618534
+      ],
+      "name" : "Dünsen DHE"
    },
    {
       "ds100" : "KDN",
@@ -20412,6 +20889,15 @@
       "name" : "Eisenberg(Pfalz)"
    },
    {
+      "ds100" : "NEHM",
+      "eva" : 8070856,
+      "latlong" : [
+         49.868639,
+         10.152516
+      ],
+      "name" : "Eisenheim"
+   },
+   {
       "ds100" : "BEHS",
       "eva" : 8011471,
       "latlong" : [
@@ -20970,6 +21456,24 @@
       "name" : "Endingen am Kaiserstuhl"
    },
    {
+      "ds100" : "TEND",
+      "eva" : 8029356,
+      "latlong" : [
+         48.257718,
+         8.837385
+      ],
+      "name" : "Endingen(Württ)"
+   },
+   {
+      "ds100" : "KENG",
+      "eva" : 8070368,
+      "latlong" : [
+         50.424289,
+         7.158056
+      ],
+      "name" : "Engeln"
+   },
+   {
       "ds100" : "KENL",
       "eva" : 8001789,
       "latlong" : [
@@ -21211,6 +21715,15 @@
          6.441381
       ],
       "name" : "Epinal"
+   },
+   {
+      "ds100" : "XUEB",
+      "eva" : 5300095,
+      "latlong" : [
+         47.099664,
+         21.876958
+      ],
+      "name" : "Episcopia Bihor"
    },
    {
       "ds100" : "SEP",
@@ -21582,6 +22095,15 @@
       "name" : "Ermatingen"
    },
    {
+      "ds100" : "XSEMS",
+      "eva" : 8506162,
+      "latlong" : [
+         47.674641,
+         9.085353
+      ],
+      "name" : "Ermatingen URh"
+   },
+   {
       "ds100" : "ONER",
       "eva" : 8400216,
       "latlong" : [
@@ -21717,6 +22239,15 @@
       "name" : "Erzingen(Baden)"
    },
    {
+      "ds100" : "TERZ",
+      "eva" : 8029357,
+      "latlong" : [
+         48.2545,
+         8.811514
+      ],
+      "name" : "Erzingen(Württ)"
+   },
+   {
       "ds100" : "XDE",
       "eva" : 8600508,
       "latlong" : [
@@ -21814,6 +22345,15 @@
          11.187945
       ],
       "name" : "Eschenlohe"
+   },
+   {
+      "ds100" : "NESD",
+      "eva" : 8070857,
+      "latlong" : [
+         49.866751,
+         10.166081
+      ],
+      "name" : "Escherndorf-Vogelsburg"
    },
    {
       "ds100" : "FEN",
@@ -21940,6 +22480,15 @@
          9.455955
       ],
       "name" : "Espenau-Mönchehof"
+   },
+   {
+      "ds100" : "AESL",
+      "eva" : 8071334,
+      "latlong" : [
+         53.490033,
+         9.272742
+      ],
+      "name" : "Essel"
    },
    {
       "ds100" : "EE",
@@ -23247,15 +23796,6 @@
       "name" : "Finsterwalde(Niederlausitz)"
    },
    {
-      "ds100" : "XIFRC",
-      "eva" : 8300180,
-      "latlong" : [
-         43.777575,
-         11.27659
-      ],
-      "name" : "Firenze Campo di Marte"
-   },
-   {
       "ds100" : "XIFRS",
       "eva" : 8300151,
       "latlong" : [
@@ -23335,6 +23875,15 @@
          8.451341
       ],
       "name" : "Fischweier, Karlsbad"
+   },
+   {
+      "ds100" : "NFD",
+      "eva" : 8002001,
+      "latlong" : [
+         50.519943,
+         10.150538
+      ],
+      "name" : "Fladungen"
    },
    {
       "ds100" : "XSFM",
@@ -25218,6 +25767,15 @@
       "name" : "Friesdorf"
    },
    {
+      "ds100" : "LFIO",
+      "eva" : 8011587,
+      "latlong" : [
+         51.59775,
+         11.323154
+      ],
+      "name" : "Friesdorf Ost"
+   },
+   {
       "ds100" : "RFH",
       "eva" : 8002123,
       "latlong" : [
@@ -25695,6 +26253,15 @@
       "name" : "Gadebusch"
    },
    {
+      "ds100" : "OPGKW",
+      "eva" : 5101171,
+      "latlong" : [
+         52.246214,
+         14.963498
+      ],
+      "name" : "Gadkow Wielki"
+   },
+   {
       "ds100" : "RGG",
       "eva" : 8002167,
       "latlong" : [
@@ -25758,6 +26325,15 @@
       "name" : "Gaimersheim"
    },
    {
+      "ds100" : "OAGSW",
+      "eva" : 8100246,
+      "latlong" : [
+         48.330261,
+         14.505596
+      ],
+      "name" : "Gaisbach-Wartberg"
+   },
+   {
       "ds100" : "OAGAH",
       "eva" : 8100819,
       "latlong" : [
@@ -25783,6 +26359,15 @@
          8.798832
       ],
       "name" : "Gallarate"
+   },
+   {
+      "ds100" : "WGAL",
+      "eva" : 8011593,
+      "latlong" : [
+         53.516641,
+         12.129379
+      ],
+      "name" : "Gallin"
    },
    {
       "ds100" : "TGAM",
@@ -26865,6 +27450,15 @@
       "name" : "Gersfeld(Rhön)"
    },
    {
+      "ds100" : "TGSN",
+      "eva" : 8007075,
+      "latlong" : [
+         48.624999,
+         10.02228
+      ],
+      "name" : "Gerstetten"
+   },
+   {
       "ds100" : "MGHF",
       "eva" : 8002256,
       "latlong" : [
@@ -27423,6 +28017,15 @@
       "name" : "Gmünd NÖ"
    },
    {
+      "ds100" : "PABGK",
+      "eva" : 8102020,
+      "latlong" : [
+         48.776611,
+         14.982888
+      ],
+      "name" : "Gmünd NÖ Böhmzeil"
+   },
+   {
       "ds100" : "LGND",
       "eva" : 8010084,
       "latlong" : [
@@ -27439,6 +28042,15 @@
          9.008099
       ],
       "name" : "Gnarrenburg"
+   },
+   {
+      "ds100" : "AGNBN",
+      "eva" : 8070036,
+      "latlong" : [
+         53.391781,
+         9.01539
+      ],
+      "name" : "Gnarrenburg Nord"
    },
    {
       "ds100" : "WGNV",
@@ -27790,6 +28402,15 @@
          12.983435
       ],
       "name" : "Gotteszell"
+   },
+   {
+      "ds100" : "XSGL",
+      "eva" : 8506163,
+      "latlong" : [
+         47.664654,
+         9.134694
+      ],
+      "name" : "Gottlieben (Schifflände)"
    },
    {
       "ds100" : "RG",
@@ -28161,6 +28782,15 @@
       "name" : "Grenoble"
    },
    {
+      "ds100" : "OFGEY",
+      "eva" : 8703396,
+      "latlong" : [
+         45.185025,
+         5.784702
+      ],
+      "name" : "Grenoble Universités Gières"
+   },
+   {
       "ds100" : "RGRZ",
       "eva" : 8002365,
       "latlong" : [
@@ -28503,6 +29133,15 @@
       "name" : "Groß Gerau-Dornheim"
    },
    {
+      "ds100" : "HGIP",
+      "eva" : 8070403,
+      "latlong" : [
+         52.939956,
+         8.63013
+      ],
+      "name" : "Groß Ippener DHE"
+   },
+   {
       "ds100" : "FGKA",
       "eva" : 8002388,
       "latlong" : [
@@ -28771,6 +29410,15 @@
          10.802815
       ],
       "name" : "Großfurra"
+   },
+   {
+      "ds100" : "OAGGE",
+      "eva" : 8100839,
+      "latlong" : [
+         48.57181,
+         14.96019
+      ],
+      "name" : "Großgerungs"
    },
    {
       "ds100" : "NGRG",
@@ -29061,6 +29709,15 @@
       "name" : "Gräfenroda"
    },
    {
+      "ds100" : "LGRK",
+      "eva" : 8011685,
+      "latlong" : [
+         51.602127,
+         11.404255
+      ],
+      "name" : "Gräfenstuhl-Klippmühle"
+   },
+   {
       "ds100" : "UGTA",
       "eva" : 8011687,
       "latlong" : [
@@ -29250,6 +29907,15 @@
       "name" : "Grüntal-Wittlensweiler"
    },
    {
+      "ds100" : "NSDT",
+      "eva" : 8070669,
+      "latlong" : [
+         49.064518,
+         12.944619
+      ],
+      "name" : "Gstadt(Wanderbahn)"
+   },
+   {
       "ds100" : "PELGJ",
       "eva" : 7179105,
       "latlong" : [
@@ -29266,6 +29932,15 @@
          14.706775
       ],
       "name" : "Guben"
+   },
+   {
+      "ds100" : "XPGU",
+      "eva" : 5101281,
+      "latlong" : [
+         51.97847,
+         14.721661
+      ],
+      "name" : "Gubin"
    },
    {
       "ds100" : "XDGA",
@@ -29412,6 +30087,15 @@
       "name" : "Gurten OÖ"
    },
    {
+      "ds100" : "TGSS",
+      "eva" : 8007074,
+      "latlong" : [
+         48.639939,
+         9.957953
+      ],
+      "name" : "Gussenstadt"
+   },
+   {
       "ds100" : "KGUS",
       "eva" : 8002477,
       "latlong" : [
@@ -29527,6 +30211,15 @@
          13.737704
       ],
       "name" : "Göhren(Rügen)"
+   },
+   {
+      "ds100" : "FGLD",
+      "eva" : 8070257,
+      "latlong" : [
+         49.599241,
+         8.016122
+      ],
+      "name" : "Göllheim-Dreisen"
    },
    {
       "ds100" : "RGOE",
@@ -29959,6 +30652,15 @@
          9.408946
       ],
       "name" : "Hagen(Han)"
+   },
+   {
+      "ds100" : "AHGN",
+      "eva" : 8071337,
+      "latlong" : [
+         53.549991,
+         9.459897
+      ],
+      "name" : "Hagen(Kr. Stade)"
    },
    {
       "ds100" : "EHGI",
@@ -32310,6 +33012,15 @@
       "name" : "Havixbeck"
    },
    {
+      "ds100" : "OTHVR",
+      "eva" : 5401020,
+      "latlong" : [
+         49.032777,
+         17.620017
+      ],
+      "name" : "Havrice"
+   },
+   {
       "ds100" : "XFHA",
       "eva" : 8700350,
       "latlong" : [
@@ -34434,6 +35145,15 @@
       "name" : "Hinterweidenthal Ort"
    },
    {
+      "ds100" : "SHW",
+      "eva" : 8079147,
+      "latlong" : [
+         49.203167,
+         7.773053
+      ],
+      "name" : "Hinterweidenthal Ost"
+   },
+   {
       "ds100" : "RHIZ",
       "eva" : 8002848,
       "latlong" : [
@@ -34738,6 +35458,15 @@
          9.595056
       ],
       "name" : "Hodenhagen"
+   },
+   {
+      "ds100" : "OTHNM",
+      "eva" : 5401068,
+      "latlong" : [
+         50.66769,
+         15.099999
+      ],
+      "name" : "Hodkovice nad Mohel."
    },
    {
       "ds100" : "OTHO",
@@ -35757,6 +36486,15 @@
       "name" : "Hostalrich"
    },
    {
+      "ds100" : "OTHTT",
+      "eva" : 5401151,
+      "latlong" : [
+         49.053704,
+         17.872407
+      ],
+      "name" : "Hostetin"
+   },
+   {
       "ds100" : "XBHP",
       "eva" : 8800487,
       "latlong" : [
@@ -35827,6 +36565,33 @@
          8.598683
       ],
       "name" : "Hoykenkamp"
+   },
+   {
+      "ds100" : "THKS",
+      "eva" : 8003004,
+      "latlong" : [
+         47.934843,
+         9.435563
+      ],
+      "name" : "Hoßkirch Königseggsee"
+   },
+   {
+      "ds100" : "OTHDI",
+      "eva" : 5401169,
+      "latlong" : [
+         49.044382,
+         17.574693
+      ],
+      "name" : "Hradcovice"
+   },
+   {
+      "ds100" : "XTHRK",
+      "eva" : 5400021,
+      "latlong" : [
+         50.214445,
+         15.809868
+      ],
+      "name" : "Hradec Kralove hl.n."
    },
    {
       "ds100" : "XTHR",
@@ -36441,6 +37206,15 @@
       "name" : "Hückelhoven-Baal"
    },
    {
+      "ds100" : "RHFH",
+      "eva" : 8007439,
+      "latlong" : [
+         49.290866,
+         9.08689
+      ],
+      "name" : "Hüffenhardt"
+   },
+   {
       "ds100" : "RHFM",
       "eva" : 8003014,
       "latlong" : [
@@ -36493,6 +37267,15 @@
          9.642462
       ],
       "name" : "Hütten"
+   },
+   {
+      "ds100" : "AHTB",
+      "eva" : 8007119,
+      "latlong" : [
+         53.272494,
+         8.961787
+      ],
+      "name" : "Hüttenbusch"
    },
    {
       "ds100" : "UHUE",
@@ -37395,6 +38178,15 @@
       "name" : "Janowice Wielkie"
    },
    {
+      "ds100" : "XTJRM",
+      "eva" : 5400068,
+      "latlong" : [
+         50.342109,
+         15.911311
+      ],
+      "name" : "Jaromer"
+   },
+   {
       "ds100" : "XPJR",
       "eva" : 5100233,
       "latlong" : [
@@ -37611,6 +38403,15 @@
       "name" : "Jerichow"
    },
    {
+      "ds100" : "OTJRM",
+      "eva" : 5401362,
+      "latlong" : [
+         50.707422,
+         15.08638
+      ],
+      "name" : "Jermanice"
+   },
+   {
       "ds100" : "D8600217",
       "eva" : 8600217,
       "latlong" : [
@@ -37627,6 +38428,15 @@
          10.882937
       ],
       "name" : "Jerxheim"
+   },
+   {
+      "ds100" : "OPJLU",
+      "eva" : 5101436,
+      "latlong" : [
+         52.306531,
+         14.86752
+      ],
+      "name" : "Jerzmanice Lubuskie"
    },
    {
       "ds100" : "OPJRM",
@@ -38556,6 +39366,15 @@
       "name" : "Kapellen-Wevelinghoven"
    },
    {
+      "ds100" : "LKPB",
+      "eva" : 8070260,
+      "latlong" : [
+         51.816125,
+         12.338207
+      ],
+      "name" : "Kapen Biosphärenreservat"
+   },
+   {
       "ds100" : "XAKP",
       "eva" : 8100031,
       "latlong" : [
@@ -39031,6 +39850,15 @@
          19.017165
       ],
       "name" : "Katowice"
+   },
+   {
+      "ds100" : "OAKAT",
+      "eva" : 8101029,
+      "latlong" : [
+         48.312246,
+         14.490755
+      ],
+      "name" : "Katsdorf"
    },
    {
       "ds100" : "SKTS",
@@ -40491,6 +41319,15 @@
       "name" : "Klostermansfeld"
    },
    {
+      "ds100" : "LKMR",
+      "eva" : 8010204,
+      "latlong" : [
+         51.590999,
+         11.498588
+      ],
+      "name" : "Klostermansfeld Randsiedlung"
+   },
+   {
       "ds100" : "RKLB",
       "eva" : 8003343,
       "latlong" : [
@@ -41067,6 +41904,15 @@
       "name" : "Korbach Hbf"
    },
    {
+      "ds100" : "FKBSB",
+      "eva" : 713366,
+      "latlong" : [
+         51.270992,
+         8.876992
+      ],
+      "name" : "Korbach Süd"
+   },
+   {
       "ds100" : "FKBS",
       "eva" : 8003406,
       "latlong" : [
@@ -41139,6 +41985,15 @@
       "name" : "Korschenbroich"
    },
    {
+      "ds100" : "XDKS",
+      "eva" : 8601343,
+      "latlong" : [
+         55.3572,
+         11.135127
+      ],
+      "name" : "Korsoer st"
+   },
+   {
       "ds100" : "XBKO",
       "eva" : 8800249,
       "latlong" : [
@@ -41200,6 +42055,15 @@
          5.410832
       ],
       "name" : "Koudum-Molkwerum"
+   },
+   {
+      "ds100" : "XTKO",
+      "eva" : 5401571,
+      "latlong" : [
+         50.430177,
+         13.035015
+      ],
+      "name" : "Kovarska"
    },
    {
       "ds100" : "OPKCW",
@@ -41625,6 +42489,15 @@
       "name" : "Krimmeri-Meinau"
    },
    {
+      "ds100" : "XTKM",
+      "eva" : 5401649,
+      "latlong" : [
+         50.489757,
+         13.276007
+      ],
+      "name" : "Krimov"
+   },
+   {
       "ds100" : "DKRP",
       "eva" : 8012105,
       "latlong" : [
@@ -41767,6 +42640,15 @@
          6.722691
       ],
       "name" : "Kropswolde"
+   },
+   {
+      "ds100" : "XPKRO",
+      "eva" : 5101694,
+      "latlong" : [
+         52.031866,
+         15.093994
+      ],
+      "name" : "Krosno Odrz"
    },
    {
       "ds100" : "XZKR",
@@ -41992,6 +42874,15 @@
          14.188364
       ],
       "name" : "Kunersdorf"
+   },
+   {
+      "ds100" : "OTKV",
+      "eva" : 5400280,
+      "latlong" : [
+         49.051951,
+         17.470068
+      ],
+      "name" : "Kunovice"
    },
    {
       "ds100" : "XPKU",
@@ -43821,6 +44712,15 @@
       "name" : "Langlau"
    },
    {
+      "ds100" : "OALSG",
+      "eva" : 8101176,
+      "latlong" : [
+         48.576979,
+         14.882325
+      ],
+      "name" : "Langschlag b.Großgerungs"
+   },
+   {
       "ds100" : "FLF",
       "eva" : 8003558,
       "latlong" : [
@@ -43864,6 +44764,15 @@
          14.521471
       ],
       "name" : "Lasberg-St. Oswald"
+   },
+   {
+      "ds100" : "XPLAO",
+      "eva" : 5101923,
+      "latlong" : [
+         52.036567,
+         15.301942
+      ],
+      "name" : "Laski Odrzanskie"
    },
    {
       "ds100" : "OJLAS",
@@ -44305,6 +45214,15 @@
          9.717546
       ],
       "name" : "Laven st"
+   },
+   {
+      "ds100" : "XILVM",
+      "eva" : 8300606,
+      "latlong" : [
+         45.903146,
+         8.624521
+      ],
+      "name" : "Laveno Mombello"
    },
    {
       "ds100" : "OALH",
@@ -46332,6 +47250,15 @@
       "name" : "Linz(Rhein)"
    },
    {
+      "ds100" : "OAFRR",
+      "eva" : 8100807,
+      "latlong" : [
+         48.285926,
+         14.323547
+      ],
+      "name" : "Linz/Donau Franckstraße"
+   },
+   {
       "ds100" : "XALW",
       "eva" : 8101195,
       "latlong" : [
@@ -46366,6 +47293,15 @@
          8.348785
       ],
       "name" : "Lippstadt"
+   },
+   {
+      "ds100" : "OTLSN",
+      "eva" : 5401785,
+      "latlong" : [
+         50.647527,
+         15.212445
+      ],
+      "name" : "Lisny"
    },
    {
       "ds100" : "FLIH",
@@ -46411,6 +47347,24 @@
          14.8251627
       ],
       "name" : "Litija"
+   },
+   {
+      "ds100" : "XTLM",
+      "eva" : 5401791,
+      "latlong" : [
+         50.532483,
+         14.138836
+      ],
+      "name" : "Litomerice mesto"
+   },
+   {
+      "ds100" : "PASKR",
+      "eva" : 8195426,
+      "latlong" : [
+         48.941986,
+         15.044275
+      ],
+      "name" : "Litschau"
    },
    {
       "ds100" : "OTLVI",
@@ -47230,6 +48184,15 @@
          8.735085
       ],
       "name" : "Lunestedt"
+   },
+   {
+      "ds100" : "OALUN",
+      "eva" : 8101185,
+      "latlong" : [
+         48.288749,
+         14.47835
+      ],
+      "name" : "Lungitz/Gusen"
    },
    {
       "ds100" : "ONLU",
@@ -48411,6 +49374,15 @@
       "name" : "Maizieres-les-Metz"
    },
    {
+      "ds100" : "OTCHT",
+      "eva" : 5401246,
+      "latlong" : [
+         48.95066,
+         14.868032
+      ],
+      "name" : "Majdalena"
+   },
+   {
       "ds100" : "XTMLB",
       "eva" : 5401892,
       "latlong" : [
@@ -48627,6 +49599,15 @@
       "name" : "Mammendorf"
    },
    {
+      "ds100" : "XSMMS",
+      "eva" : 8506155,
+      "latlong" : [
+         47.648339,
+         8.916715
+      ],
+      "name" : "Mammern URh"
+   },
+   {
       "ds100" : "XSMM",
       "eva" : 8506137,
       "latlong" : [
@@ -48670,6 +49651,15 @@
          10.834224
       ],
       "name" : "Manndorf"
+   },
+   {
+      "ds100" : "XSMBS",
+      "eva" : 8506160,
+      "latlong" : [
+         47.675163,
+         9.047598
+      ],
+      "name" : "Mannenbach URh"
    },
    {
       "ds100" : "XSMB",
@@ -48778,6 +49768,15 @@
          8.482603
       ],
       "name" : "Mannheim-Waldhof"
+   },
+   {
+      "ds100" : "LMAS",
+      "eva" : 8012300,
+      "latlong" : [
+         51.600321,
+         11.452086
+      ],
+      "name" : "Mansfeld(Südharz)"
    },
    {
       "ds100" : "XLMN",
@@ -50337,6 +51336,15 @@
       "name" : "Mengersgereuth-Hämmern Ost"
    },
    {
+      "ds100" : "RMEN",
+      "eva" : 8077779,
+      "latlong" : [
+         48.00673,
+         9.160943
+      ],
+      "name" : "Menningen-Leitishofen"
+   },
+   {
       "ds100" : "XFME",
       "eva" : 8700150,
       "latlong" : [
@@ -50922,6 +51930,24 @@
       "name" : "Mikulasovice dolni nadrazi"
    },
    {
+      "ds100" : "XTMHN",
+      "eva" : 5401976,
+      "latlong" : [
+         50.956468,
+         14.390211
+      ],
+      "name" : "Mikulasovice horni nadrazi"
+   },
+   {
+      "ds100" : "XTMHS",
+      "eva" : 5401977,
+      "latlong" : [
+         50.962356,
+         14.357535
+      ],
+      "name" : "Mikulasovice stred"
+   },
+   {
       "ds100" : "OPMKU",
       "eva" : 5102272,
       "latlong" : [
@@ -51345,6 +52371,15 @@
       "name" : "Modane(Fr)"
    },
    {
+      "ds100" : "XIMD",
+      "eva" : 8300214,
+      "latlong" : [
+         44.654616,
+         10.929948
+      ],
+      "name" : "Modena"
+   },
+   {
       "ds100" : "KMO",
       "eva" : 8000644,
       "latlong" : [
@@ -51595,6 +52630,15 @@
          9.991744
       ],
       "name" : "Moorbekhalle"
+   },
+   {
+      "ds100" : "SMBT",
+      "eva" : 8079265,
+      "latlong" : [
+         49.16606,
+         7.754805
+      ],
+      "name" : "Moosbachtal"
    },
    {
       "ds100" : "XAMB",
@@ -52785,6 +53829,15 @@
       "name" : "Mühltal"
    },
    {
+      "ds100" : "TMRN",
+      "eva" : 8070494,
+      "latlong" : [
+         48.420198,
+         8.760168
+      ],
+      "name" : "Mühringen"
+   },
+   {
       "ds100" : "EMLR",
       "eva" : 8000259,
       "latlong" : [
@@ -53847,6 +54900,15 @@
       "name" : "Naunhof"
    },
    {
+      "ds100" : "XTNAV",
+      "eva" : 5402100,
+      "latlong" : [
+         50.677209,
+         15.31805
+      ],
+      "name" : "Navarov"
+   },
+   {
       "ds100" : "KNEA",
       "eva" : 8004213,
       "latlong" : [
@@ -53908,6 +54970,15 @@
          8.942274
       ],
       "name" : "Neckarbischofsheim Nord"
+   },
+   {
+      "ds100" : "RNHS",
+      "eva" : 8007434,
+      "latlong" : [
+         49.296035,
+         8.963702
+      ],
+      "name" : "Neckarbischofsheim Stadt"
    },
    {
       "ds100" : "RNB",
@@ -55044,6 +56115,15 @@
       "name" : "Neumünster Süd AKN"
    },
    {
+      "ds100" : "PAKYX",
+      "eva" : 8114529,
+      "latlong" : [
+         48.821611,
+         14.971022
+      ],
+      "name" : "Neunagelberg"
+   },
+   {
       "ds100" : "LN",
       "eva" : 8012467,
       "latlong" : [
@@ -55528,6 +56608,15 @@
          12.690432
       ],
       "name" : "Neuötting"
+   },
+   {
+      "ds100" : "OTNZD",
+      "eva" : 5402134,
+      "latlong" : [
+         49.022295,
+         17.748841
+      ],
+      "name" : "Nezdenice"
    },
    {
       "ds100" : "XFNC",
@@ -56313,6 +57402,24 @@
       "name" : "Niesky"
    },
    {
+      "ds100" : "XPNI",
+      "eva" : 5102448,
+      "latlong" : [
+         52.025825,
+         15.34358
+      ],
+      "name" : "Nietkow"
+   },
+   {
+      "ds100" : "OPNTK",
+      "eva" : 5102487,
+      "latlong" : [
+         52.057072,
+         15.351931
+      ],
+      "name" : "Nietkowice"
+   },
+   {
       "ds100" : "KNIK",
       "eva" : 8004433,
       "latlong" : [
@@ -56745,6 +57852,15 @@
       "name" : "Nordhorn-Blanke"
    },
    {
+      "ds100" : "ANDS",
+      "eva" : 8007116,
+      "latlong" : [
+         53.331922,
+         8.980287
+      ],
+      "name" : "Nordsode"
+   },
+   {
       "ds100" : "HNOS",
       "eva" : 8000282,
       "latlong" : [
@@ -57004,6 +58120,33 @@
          5.892762
       ],
       "name" : "Nuth"
+   },
+   {
+      "ds100" : "NNBS",
+      "eva" : 8070668,
+      "latlong" : [
+         49.070657,
+         12.964764
+      ],
+      "name" : "Nußberg-Schönau"
+   },
+   {
+      "ds100" : "XDNE",
+      "eva" : 8613687,
+      "latlong" : [
+         55.652424,
+         12.516319
+      ],
+      "name" : "Ny Ellebjerg st"
+   },
+   {
+      "ds100" : "XDNY",
+      "eva" : 8601739,
+      "latlong" : [
+         55.31407,
+         10.802921
+      ],
+      "name" : "Nyborg st"
    },
    {
       "ds100" : "XMNH",
@@ -57571,6 +58714,15 @@
          11.333429
       ],
       "name" : "Oberferrieden"
+   },
+   {
+      "ds100" : "ROGI",
+      "eva" : 8007437,
+      "latlong" : [
+         49.255242,
+         9.04429
+      ],
+      "name" : "Obergimpern"
    },
    {
       "ds100" : "XSOB",
@@ -58203,6 +59355,15 @@
       "name" : "Oberöwisheim"
    },
    {
+      "ds100" : "MOBG",
+      "eva" : 8070803,
+      "latlong" : [
+         47.998622,
+         12.403271
+      ],
+      "name" : "Obing"
+   },
+   {
       "ds100" : "OPOB",
       "eva" : 5100182,
       "latlong" : [
@@ -58752,6 +59913,15 @@
       "name" : "Olbersleben-Ellersleben"
    },
    {
+      "ds100" : "OTOL",
+      "eva" : 5400155,
+      "latlong" : [
+         49.666957,
+         14.624146
+      ],
+      "name" : "Olbramovice"
+   },
+   {
       "ds100" : "MOL",
       "eva" : 8004667,
       "latlong" : [
@@ -59047,6 +60217,15 @@
          4.819398
       ],
       "name" : "Orange(Avignon)"
+   },
+   {
+      "ds100" : "LOR",
+      "eva" : 8012564,
+      "latlong" : [
+         51.800951,
+         12.390434
+      ],
+      "name" : "Oranienbaum(Anh)"
    },
    {
       "ds100" : "BOR",
@@ -59353,6 +60532,15 @@
          11.575921
       ],
       "name" : "Osterweddingen"
+   },
+   {
+      "ds100" : "NOMR",
+      "eva" : 8004711,
+      "latlong" : [
+         50.455787,
+         10.23483
+      ],
+      "name" : "Ostheim v Rhön"
    },
    {
       "ds100" : "FOS",
@@ -59922,6 +61110,15 @@
       "name" : "Pansdorf"
    },
    {
+      "ds100" : "XTPAN",
+      "eva" : 5402315,
+      "latlong" : [
+         50.948252,
+         14.463796
+      ],
+      "name" : "Pansky"
+   },
+   {
       "ds100" : "XFPAN",
       "eva" : 8704174,
       "latlong" : [
@@ -59992,6 +61189,15 @@
          15.756211
       ],
       "name" : "Pardubice hl.n."
+   },
+   {
+      "ds100" : "OTRSL",
+      "eva" : 5402678,
+      "latlong" : [
+         50.045555,
+         15.742746
+      ],
+      "name" : "Pardubice-Rosice nad Labem"
    },
    {
       "ds100" : "XFPA",
@@ -60066,6 +61272,15 @@
       "name" : "Parkentin"
    },
    {
+      "ds100" : "XIPM",
+      "eva" : 8300215,
+      "latlong" : [
+         44.81022,
+         10.32857
+      ],
+      "name" : "Parma(I)"
+   },
+   {
       "ds100" : "XAPD",
       "eva" : 8101335,
       "latlong" : [
@@ -60136,6 +61351,15 @@
          13.450776
       ],
       "name" : "Passau Hbf"
+   },
+   {
+      "ds100" : "WPAW",
+      "eva" : 8012612,
+      "latlong" : [
+         53.50811,
+         12.054112
+      ],
+      "name" : "Passow(Meckl)"
    },
    {
       "ds100" : "WPS",
@@ -60858,6 +62082,15 @@
       "name" : "Philippstraße, Karlsruhe"
    },
    {
+      "ds100" : "XIPZ",
+      "eva" : 8300230,
+      "latlong" : [
+         45.052101,
+         9.706363
+      ],
+      "name" : "Piacenza"
+   },
+   {
       "ds100" : "XAPC",
       "eva" : 8101356,
       "latlong" : [
@@ -60883,6 +62116,15 @@
          15.047399
       ],
       "name" : "Piensk"
+   },
+   {
+      "ds100" : "OTPIK",
+      "eva" : 5402359,
+      "latlong" : [
+         50.727279,
+         15.035447
+      ],
+      "name" : "Pilinkov"
    },
    {
       "ds100" : "XAPV",
@@ -61002,6 +62244,24 @@
       "name" : "Pisek"
    },
    {
+      "ds100" : "OTPZA",
+      "eva" : 5402366,
+      "latlong" : [
+         49.037586,
+         17.842743
+      ],
+      "name" : "Pitin zast."
+   },
+   {
+      "ds100" : "MPTH",
+      "eva" : 8072764,
+      "latlong" : [
+         47.986729,
+         12.375899
+      ],
+      "name" : "Pittenhart"
+   },
+   {
       "ds100" : "WPZ",
       "eva" : 8010273,
       "latlong" : [
@@ -61018,6 +62278,15 @@
          7.393638
       ],
       "name" : "Plaidt"
+   },
+   {
+      "ds100" : "OTPLL",
+      "eva" : 5402369,
+      "latlong" : [
+         49.353449,
+         14.706604
+      ],
+      "name" : "Plana nad Luznici"
    },
    {
       "ds100" : "MPL",
@@ -61162,6 +62431,15 @@
          7.868913
       ],
       "name" : "Plettenberg"
+   },
+   {
+      "ds100" : "OPPLI",
+      "eva" : 5102801,
+      "latlong" : [
+         52.204629,
+         15.016444
+      ],
+      "name" : "Pliszka"
    },
    {
       "ds100" : "TP",
@@ -61407,6 +62685,15 @@
       "name" : "Pont-de-Bois"
    },
    {
+      "ds100" : "OFPON",
+      "eva" : 8700406,
+      "latlong" : [
+         46.900598,
+         6.353315
+      ],
+      "name" : "Pontarlier"
+   },
+   {
       "ds100" : "XIPW",
       "eva" : 8300125,
       "latlong" : [
@@ -61432,6 +62719,24 @@
          9.896077579131
       ],
       "name" : "Pontresina"
+   },
+   {
+      "ds100" : "OTPPV",
+      "eva" : 5402455,
+      "latlong" : [
+         49.080599,
+         17.967288
+      ],
+      "name" : "Popov"
+   },
+   {
+      "ds100" : "OTPUH",
+      "eva" : 5402457,
+      "latlong" : [
+         49.046072,
+         17.527815
+      ],
+      "name" : "Popovice u Uh.Hradiste"
    },
    {
       "ds100" : "NPOP",
@@ -61839,6 +63144,15 @@
       "name" : "Praha-Smichov"
    },
    {
+      "ds100" : "XTPV",
+      "eva" : 5400275,
+      "latlong" : [
+         50.064666,
+         14.447832
+      ],
+      "name" : "Praha-Vrsovice"
+   },
+   {
       "ds100" : "OTPRV",
       "eva" : 5400171,
       "latlong" : [
@@ -61846,6 +63160,15 @@
          14.497497
       ],
       "name" : "Praha-Vysocany"
+   },
+   {
+      "ds100" : "PTPZH",
+      "eva" : 5457279,
+      "latlong" : [
+         50.062131,
+         14.503996
+      ],
+      "name" : "Praha-Zahradni Mesto"
    },
    {
       "ds100" : "XAPM",
@@ -62109,6 +63432,15 @@
       "name" : "Pritzwalk"
    },
    {
+      "ds100" : "WPRH",
+      "eva" : 8074703,
+      "latlong" : [
+         53.165864,
+         12.204888
+      ],
+      "name" : "Pritzwalk Hainholz"
+   },
+   {
       "ds100" : "WPRW",
       "eva" : 8017347,
       "latlong" : [
@@ -62125,6 +63457,15 @@
          13.838399
       ],
       "name" : "Probostov"
+   },
+   {
+      "ds100" : "APSH",
+      "eva" : 8007318,
+      "latlong" : [
+         54.364899,
+         10.291408
+      ],
+      "name" : "Probsteierhagen"
    },
    {
       "ds100" : "UPR",
@@ -62170,6 +63511,15 @@
          13.574515
       ],
       "name" : "Prora Ost"
+   },
+   {
+      "ds100" : "NPM",
+      "eva" : 8070858,
+      "latlong" : [
+         49.864108,
+         10.123373
+      ],
+      "name" : "Prosselsheim"
    },
    {
       "ds100" : "OTPR",
@@ -62224,15 +63574,6 @@
          22.503353
       ],
       "name" : "Przeworsk"
-   },
-   {
-      "ds100" : "XPPRY",
-      "eva" : 5102886,
-      "latlong" : [
-         51.977575,
-         15.438656
-      ],
-      "name" : "Przylep"
    },
    {
       "ds100" : "LPRL",
@@ -62296,6 +63637,15 @@
          11.353061
       ],
       "name" : "Puchheim"
+   },
+   {
+      "ds100" : "OAPUL",
+      "eva" : 8101405,
+      "latlong" : [
+         48.278384,
+         14.393501
+      ],
+      "name" : "Pulgarn"
    },
    {
       "ds100" : "KPUL",
@@ -62541,7 +63891,7 @@
       "name" : "Pürbach-Schrems"
    },
    {
-      "ds100" : "OMPK",
+      "ds100" : "XMPLK",
       "eva" : 5500055,
       "latlong" : [
          47.328089,
@@ -62863,6 +64213,24 @@
          12.44307
       ],
       "name" : "Radldorf(Niederbay)"
+   },
+   {
+      "ds100" : "OTRAO",
+      "eva" : 5402602,
+      "latlong" : [
+         50.694289,
+         15.108404
+      ],
+      "name" : "Radlo"
+   },
+   {
+      "ds100" : "OPRDN",
+      "eva" : 5103063,
+      "latlong" : [
+         52.090188,
+         15.268978
+      ],
+      "name" : "Radnica"
    },
    {
       "ds100" : "RRZ",
@@ -63529,6 +64897,15 @@
          12.125142
       ],
       "name" : "Regenstauf"
+   },
+   {
+      "ds100" : "XIRE",
+      "eva" : 8300220,
+      "latlong" : [
+         44.697675,
+         10.643048
+      ],
+      "name" : "Reggio dEmilia"
    },
    {
       "ds100" : "LRB",
@@ -64503,15 +65880,6 @@
       "name" : "Rheydt-Odenkirchen"
    },
    {
-      "ds100" : "PIQEP",
-      "eva" : 8309660,
-      "latlong" : [
-         45.521132,
-         9.088571
-      ],
-      "name" : "Rho-Fiera Milano"
-   },
-   {
       "ds100" : "KRHD",
       "eva" : 8005074,
       "latlong" : [
@@ -64879,6 +66247,15 @@
          8.757296
       ],
       "name" : "Rimbach"
+   },
+   {
+      "ds100" : "XIRI",
+      "eva" : 8300221,
+      "latlong" : [
+         44.064241,
+         12.574012
+      ],
+      "name" : "Rimini"
    },
    {
       "ds100" : "URGS",
@@ -65448,6 +66825,15 @@
       "name" : "Roma Termini"
    },
    {
+      "ds100" : "OFRP",
+      "eva" : 8700414,
+      "latlong" : [
+         45.048236,
+         5.052064
+      ],
+      "name" : "Romans-Bourg-d-Peage"
+   },
+   {
       "ds100" : "XSR",
       "eva" : 8506121,
       "latlong" : [
@@ -65455,6 +66841,15 @@
          9.37936259731519
       ],
       "name" : "Romanshorn"
+   },
+   {
+      "ds100" : "XSRHF",
+      "eva" : 8506112,
+      "latlong" : [
+         47.565557,
+         9.379965
+      ],
+      "name" : "Romanshorn (See)"
    },
    {
       "ds100" : "XFRO",
@@ -65574,6 +66969,15 @@
       "name" : "Rorschach Hafen"
    },
    {
+      "ds100" : "XSRSS",
+      "eva" : 8506113,
+      "latlong" : [
+         47.478964,
+         9.493634
+      ],
+      "name" : "Rorschach Hafen (See)"
+   },
+   {
       "ds100" : "FROS",
       "eva" : 8005163,
       "latlong" : [
@@ -65646,6 +67050,15 @@
       "name" : "Rosenheim Aicherpark"
    },
    {
+      "ds100" : "MROS",
+      "eva" : 8005173,
+      "latlong" : [
+         47.86693,
+         12.104416
+      ],
+      "name" : "Rosenheim Hochschule"
+   },
+   {
       "ds100" : "WROW",
       "eva" : 8012792,
       "latlong" : [
@@ -65653,6 +67066,15 @@
          12.343197
       ],
       "name" : "Rosenwinkel"
+   },
+   {
+      "ds100" : "XDRK",
+      "eva" : 8602026,
+      "latlong" : [
+         55.639012,
+         12.088855
+      ],
+      "name" : "Roskilde st"
    },
    {
       "ds100" : "ONROS",
@@ -65995,6 +67417,15 @@
          4.481581
       ],
       "name" : "Rotterdam Noord"
+   },
+   {
+      "ds100" : "XNRS",
+      "eva" : 8400015,
+      "latlong" : [
+         51.893809,
+         4.519605
+      ],
+      "name" : "Rotterdam Stadion"
    },
    {
       "ds100" : "ONROZ",
@@ -66348,6 +67779,15 @@
       "name" : "Ruschwedel"
    },
    {
+      "ds100" : "XTRS",
+      "eva" : 5402723,
+      "latlong" : [
+         50.450025,
+         13.169035
+      ],
+      "name" : "Rusova"
+   },
+   {
       "ds100" : "OPRUZ",
       "eva" : 5103196,
       "latlong" : [
@@ -66427,6 +67867,15 @@
          14.509805
       ],
       "name" : "Rybniste"
+   },
+   {
+      "ds100" : "OTRJ",
+      "eva" : 5400186,
+      "latlong" : [
+         50.683789,
+         15.143138
+      ],
+      "name" : "Rychnov u Jablonec nad Nisou"
    },
    {
       "ds100" : "XTRTB",
@@ -66690,6 +68139,15 @@
       "name" : "Rövershagen"
    },
    {
+      "ds100" : "WRVE",
+      "eva" : 8012818,
+      "latlong" : [
+         54.159999,
+         12.238301
+      ],
+      "name" : "Rövershagen Karls Erlebnisdorf"
+   },
+   {
       "ds100" : "FRS",
       "eva" : 8005208,
       "latlong" : [
@@ -66769,6 +68227,15 @@
          8.53274503651097
       ],
       "name" : "Rümlang"
+   },
+   {
+      "ds100" : "RRMM",
+      "eva" : 8070524,
+      "latlong" : [
+         47.643332,
+         7.640966
+      ],
+      "name" : "Rümmingen"
    },
    {
       "ds100" : "KRUN",
@@ -67716,6 +69183,15 @@
       "name" : "Sauerlach"
    },
    {
+      "ds100" : "RSDO",
+      "eva" : 8077776,
+      "latlong" : [
+         47.944408,
+         9.09454
+      ],
+      "name" : "Sauldorf"
+   },
+   {
       "ds100" : "MSGB",
       "eva" : 8005302,
       "latlong" : [
@@ -67878,6 +69354,15 @@
       "name" : "Schalksmühle"
    },
    {
+      "ds100" : "TSKS",
+      "eva" : 8007072,
+      "latlong" : [
+         48.612504,
+         9.910949
+      ],
+      "name" : "Schalkstetten"
+   },
+   {
       "ds100" : "RSAL",
       "eva" : 8005317,
       "latlong" : [
@@ -67948,6 +69433,15 @@
          12.245847
       ],
       "name" : "Scharstorf"
+   },
+   {
+      "ds100" : "MSC",
+      "eva" : 8005327,
+      "latlong" : [
+         47.926807,
+         12.126646
+      ],
+      "name" : "Schechen"
    },
    {
       "ds100" : "XNSE",
@@ -68389,6 +69883,15 @@
          8.42736
       ],
       "name" : "Schloss Gottesaue, Karlsruhe"
+   },
+   {
+      "ds100" : "OASH",
+      "eva" : 8100585,
+      "latlong" : [
+         48.341479,
+         14.505614
+      ],
+      "name" : "Schloss Haus"
    },
    {
       "ds100" : "RSRP",
@@ -69525,6 +71028,24 @@
       "name" : "Schöllkrippen"
    },
    {
+      "ds100" : "TSCS",
+      "eva" : 8072211,
+      "latlong" : [
+         48.21127,
+         8.771962
+      ],
+      "name" : "Schömberg Stausee"
+   },
+   {
+      "ds100" : "TSCB",
+      "eva" : 8029359,
+      "latlong" : [
+         48.20576,
+         8.75846
+      ],
+      "name" : "Schömberg(b Balingen)"
+   },
+   {
       "ds100" : "DSN",
       "eva" : 8012898,
       "latlong" : [
@@ -69532,6 +71053,15 @@
          14.234719
       ],
       "name" : "Schöna"
+   },
+   {
+      "ds100" : "PAKPF",
+      "eva" : 8133912,
+      "latlong" : [
+         48.932223,
+         15.038144
+      ],
+      "name" : "Schönau bei Litschau Dorfwirt"
    },
    {
       "ds100" : "USU",
@@ -69750,6 +71280,15 @@
       "name" : "Schönhausen(Elbe)"
    },
    {
+      "ds100" : "ASCK",
+      "eva" : 8007314,
+      "latlong" : [
+         54.332691,
+         10.229356
+      ],
+      "name" : "Schönkirchen Bf"
+   },
+   {
       "ds100" : "RSOM",
       "eva" : 8005409,
       "latlong" : [
@@ -69885,6 +71424,15 @@
       "name" : "Sebnitz(Sachs)"
    },
    {
+      "ds100" : "XTSBZ",
+      "eva" : 5402772,
+      "latlong" : [
+         50.593052,
+         14.05396
+      ],
+      "name" : "Sebuzin"
+   },
+   {
       "ds100" : "FSN",
       "eva" : 8005498,
       "latlong" : [
@@ -69919,6 +71467,15 @@
          12.985452
       ],
       "name" : "Seddin"
+   },
+   {
+      "ds100" : "OTSEO",
+      "eva" : 5402780,
+      "latlong" : [
+         50.636659,
+         15.099163
+      ],
+      "name" : "Sedlejovice"
    },
    {
       "ds100" : "BSEO",
@@ -70344,6 +71901,15 @@
       "name" : "Selzthal"
    },
    {
+      "ds100" : "OTSLY",
+      "eva" : 5402790,
+      "latlong" : [
+         50.603426,
+         15.324055
+      ],
+      "name" : "Semily"
+   },
+   {
       "ds100" : "XASEM",
       "eva" : 8100028,
       "latlong" : [
@@ -70585,6 +72151,15 @@
          7.203026
       ],
       "name" : "Siegburg/Bonn"
+   },
+   {
+      "ds100" : "RSGB",
+      "eva" : 8007438,
+      "latlong" : [
+         49.271243,
+         9.087429
+      ],
+      "name" : "Siegelsbach"
    },
    {
       "ds100" : "NSDF",
@@ -70857,6 +72432,15 @@
       "name" : "Simbach(Inn)"
    },
    {
+      "ds100" : "XUSI",
+      "eva" : 5300003,
+      "latlong" : [
+         45.846271,
+         23.013787
+      ],
+      "name" : "Simeria"
+   },
+   {
       "ds100" : "NSHU",
       "eva" : 8005572,
       "latlong" : [
@@ -71127,6 +72711,24 @@
       "name" : "Skofja Loka"
    },
    {
+      "ds100" : "XDSGE",
+      "eva" : 8602254,
+      "latlong" : [
+         55.407549,
+         11.348054
+      ],
+      "name" : "Slagelse st"
+   },
+   {
+      "ds100" : "OTSN",
+      "eva" : 5400268,
+      "latlong" : [
+         49.074298,
+         17.899779
+      ],
+      "name" : "Slavicin"
+   },
+   {
       "ds100" : "XRSL",
       "eva" : 7800015,
       "latlong" : [
@@ -71206,6 +72808,15 @@
          5.662809
       ],
       "name" : "Sneek Noord"
+   },
+   {
+      "ds100" : "OTSL",
+      "eva" : 5400219,
+      "latlong" : [
+         49.25526,
+         14.726075
+      ],
+      "name" : "Sobeslav"
    },
    {
       "ds100" : "ESOT",
@@ -71532,7 +73143,7 @@
       "name" : "Sophienstraße, Karlsruhe"
    },
    {
-      "ds100" : "PQKSQ",
+      "ds100" : "PQKSO",
       "eva" : 721441,
       "latlong" : [
          49.007517,
@@ -71566,6 +73177,15 @@
          10.697094
       ],
       "name" : "Sorge"
+   },
+   {
+      "ds100" : "XDSOR",
+      "eva" : 8602350,
+      "latlong" : [
+         55.419019,
+         11.568793
+      ],
+      "name" : "Soroe st"
    },
    {
       "ds100" : "XPSI",
@@ -71629,6 +73249,15 @@
          8.730425
       ],
       "name" : "Spaichingen Mitte"
+   },
+   {
+      "ds100" : "XTSPL",
+      "eva" : 5402894,
+      "latlong" : [
+         50.634358,
+         15.300917
+      ],
+      "name" : "Spalov"
    },
    {
       "ds100" : "XDSP",
@@ -72144,6 +73773,15 @@
       "name" : "St-Louis-la-Chaussee"
    },
    {
+      "ds100" : "OFMJI",
+      "eva" : 8700482,
+      "latlong" : [
+         45.150749,
+         5.323745
+      ],
+      "name" : "St-Marcellin(Isere)"
+   },
+   {
       "ds100" : "XSMC",
       "eva" : 8501403,
       "latlong" : [
@@ -72279,6 +73917,24 @@
       "name" : "St. Gallen(CH) Winkeln"
    },
    {
+      "ds100" : "OASGG",
+      "eva" : 8101501,
+      "latlong" : [
+         48.265323,
+         14.441314
+      ],
+      "name" : "St. Georgen/Gusen"
+   },
+   {
+      "ds100" : "OASGH",
+      "eva" : 8101502,
+      "latlong" : [
+         48.271175,
+         14.450996
+      ],
+      "name" : "St. Georgen/Gusen Ort"
+   },
+   {
       "ds100" : "XASJ",
       "eva" : 8100043,
       "latlong" : [
@@ -72349,6 +74005,15 @@
          11.499331
       ],
       "name" : "St.Jodok am Brenner"
+   },
+   {
+      "ds100" : "OASMW",
+      "eva" : 8101562,
+      "latlong" : [
+         48.663293,
+         14.841442
+      ],
+      "name" : "St.Martin b.Weitra"
    },
    {
       "ds100" : "XASE",
@@ -72576,6 +74241,15 @@
       "name" : "Stara Kamienica"
    },
    {
+      "ds100" : "XTSTP",
+      "eva" : 5400173,
+      "latlong" : [
+         50.516177,
+         15.486553
+      ],
+      "name" : "Stara Paka"
+   },
+   {
       "ds100" : "XTSR",
       "eva" : 5400241,
       "latlong" : [
@@ -72592,6 +74266,15 @@
          8.352862
       ],
       "name" : "Starckstraße, Karlsruhe"
+   },
+   {
+      "ds100" : "XTSKR",
+      "eva" : 5402921,
+      "latlong" : [
+         50.947794,
+         14.491942
+      ],
+      "name" : "Stare Krecany"
    },
    {
       "ds100" : "OTSMU",
@@ -72718,6 +74401,15 @@
          8.9810085806098
       ],
       "name" : "Steckborn"
+   },
+   {
+      "ds100" : "XSSBS",
+      "eva" : 8506157,
+      "latlong" : [
+         47.668655,
+         8.981437
+      ],
+      "name" : "Steckborn URh"
    },
    {
       "ds100" : "HSTF",
@@ -72880,6 +74572,15 @@
          11.382922
       ],
       "name" : "Steinbach am Wald"
+   },
+   {
+      "ds100" : "OASGP",
+      "eva" : 8101508,
+      "latlong" : [
+         48.64029,
+         14.842233
+      ],
+      "name" : "Steinbach-Bad Großpertholz"
    },
    {
       "ds100" : "USTH",
@@ -73233,6 +74934,15 @@
       "name" : "Stettbach"
    },
    {
+      "ds100" : "TSTT",
+      "eva" : 8070548,
+      "latlong" : [
+         48.353309,
+         8.812773
+      ],
+      "name" : "Stetten (b. Haigerloch)"
+   },
+   {
       "ds100" : "TSHG",
       "eva" : 8005724,
       "latlong" : [
@@ -73294,6 +75004,15 @@
          14.423419
       ],
       "name" : "Steyr"
+   },
+   {
+      "ds100" : "OASTY",
+      "eva" : 8101614,
+      "latlong" : [
+         48.284595,
+         14.361598
+      ],
+      "name" : "Steyregg"
    },
    {
       "ds100" : "LSTI",
@@ -73845,6 +75564,15 @@
       "name" : "Stubbenfelde"
    },
    {
+      "ds100" : "TSBH",
+      "eva" : 8007071,
+      "latlong" : [
+         48.59422,
+         9.920801
+      ],
+      "name" : "Stubersheim"
+   },
+   {
       "ds100" : "OASU",
       "eva" : 8100196,
       "latlong" : [
@@ -74106,6 +75834,15 @@
       "name" : "Subzin-Liessow"
    },
    {
+      "ds100" : "OTSLZ",
+      "eva" : 5402990,
+      "latlong" : [
+         48.892482,
+         14.880339
+      ],
+      "name" : "Suchdol n.Luznici z."
+   },
+   {
       "ds100" : "ASU",
       "eva" : 8005781,
       "latlong" : [
@@ -74295,6 +76032,15 @@
       "name" : "Sulzfeld(Baden)"
    },
    {
+      "ds100" : "OTSIC",
+      "eva" : 5403072,
+      "latlong" : [
+         49.030017,
+         17.724121
+      ],
+      "name" : "Sumice"
+   },
+   {
       "ds100" : "XASUM",
       "eva" : 8100316,
       "latlong" : [
@@ -74428,6 +76174,15 @@
          6.879764
       ],
       "name" : "Swisttal-Odendorf"
+   },
+   {
+      "ds100" : "OTSYC",
+      "eva" : 5403020,
+      "latlong" : [
+         50.629369,
+         15.07838
+      ],
+      "name" : "Sychrov"
    },
    {
       "ds100" : "HSYK",
@@ -74977,6 +76732,15 @@
          13.522575
       ],
       "name" : "Taufkirchen an der Pram"
+   },
+   {
+      "ds100" : "XDTA",
+      "eva" : 8602526,
+      "latlong" : [
+         55.545012,
+         9.615707
+      ],
+      "name" : "Taulov st"
    },
    {
       "ds100" : "LTNH",
@@ -76104,6 +77868,15 @@
       "name" : "Traunstein Klinikum"
    },
    {
+      "ds100" : "OSTR",
+      "eva" : 8504215,
+      "latlong" : [
+         46.942416,
+         6.676558
+      ],
+      "name" : "Travers"
+   },
+   {
       "ds100" : "XZT",
       "eva" : 7900037,
       "latlong" : [
@@ -76140,15 +77913,6 @@
       "name" : "Trebgast"
    },
    {
-      "ds100" : "LTB",
-      "eva" : 8013139,
-      "latlong" : [
-         51.753803,
-         12.758954
-      ],
-      "name" : "Trebitz(Elbe)"
-   },
-   {
       "ds100" : "BTZ",
       "eva" : 8013141,
       "latlong" : [
@@ -76156,6 +77920,24 @@
          14.216504
       ],
       "name" : "Trebnitz(Mark)"
+   },
+   {
+      "ds100" : "OTTBN",
+      "eva" : 5400104,
+      "latlong" : [
+         49.016272,
+         14.760189
+      ],
+      "name" : "Trebon"
+   },
+   {
+      "ds100" : "OTTLA",
+      "eva" : 5403195,
+      "latlong" : [
+         49.00731,
+         14.777736
+      ],
+      "name" : "Trebon lazne"
    },
    {
       "ds100" : "XTTRB",
@@ -76959,6 +78741,24 @@
       "name" : "Ugovizza"
    },
    {
+      "ds100" : "OTUH",
+      "eva" : 5403228,
+      "latlong" : [
+         49.066774,
+         17.457285
+      ],
+      "name" : "Uherske Hradiste"
+   },
+   {
+      "ds100" : "OTU",
+      "eva" : 5400290,
+      "latlong" : [
+         49.021819,
+         17.643829
+      ],
+      "name" : "Uhersky Brod"
+   },
+   {
       "ds100" : "TUH",
       "eva" : 8005949,
       "latlong" : [
@@ -77056,6 +78856,15 @@
          6.720264
       ],
       "name" : "Uithuizermeeden"
+   },
+   {
+      "ds100" : "OTUL",
+      "eva" : 5400279,
+      "latlong" : [
+         49.033172,
+         17.685944
+      ],
+      "name" : "Ujezdec u Luhacovic"
    },
    {
       "ds100" : "DUL",
@@ -77904,6 +79713,15 @@
       "name" : "Val-de-Reuil"
    },
    {
+      "ds100" : "XDVAL",
+      "eva" : 8602714,
+      "latlong" : [
+         55.663795,
+         12.514324
+      ],
+      "name" : "Valby(Koebenhavn)"
+   },
+   {
       "ds100" : "XIVO",
       "eva" : 8300443,
       "latlong" : [
@@ -78120,6 +79938,24 @@
       "name" : "Vaterstetten"
    },
    {
+      "ds100" : "LVT",
+      "eva" : 8013182,
+      "latlong" : [
+         51.597687,
+         11.428993
+      ],
+      "name" : "Vatterode"
+   },
+   {
+      "ds100" : "LVTT",
+      "eva" : 8079152,
+      "latlong" : [
+         51.598127,
+         11.412183
+      ],
+      "name" : "Vatteröder Teich"
+   },
+   {
       "ds100" : "HVEC",
       "eva" : 8006060,
       "latlong" : [
@@ -78219,6 +80055,15 @@
       "name" : "Vejle st"
    },
    {
+      "ds100" : "XTVY",
+      "eva" : 5400383,
+      "latlong" : [
+         50.500176,
+         13.033352
+      ],
+      "name" : "Vejprty"
+   },
+   {
       "ds100" : "EVLR",
       "eva" : 8006064,
       "latlong" : [
@@ -78309,6 +80154,15 @@
       "name" : "Velke Brezno"
    },
    {
+      "ds100" : "XTVH",
+      "eva" : 5403322,
+      "latlong" : [
+         50.711674,
+         15.313745
+      ],
+      "name" : "Velke Hamry"
+   },
+   {
       "ds100" : "XTVHM",
       "eva" : 5403684,
       "latlong" : [
@@ -78316,6 +80170,15 @@
          15.313547
       ],
       "name" : "Velke Hamry mesto"
+   },
+   {
+      "ds100" : "XTVZ",
+      "eva" : 5403344,
+      "latlong" : [
+         50.526092,
+         14.08055
+      ],
+      "name" : "Velke Zernoseky"
    },
    {
       "ds100" : "XTVV",
@@ -78615,6 +80478,15 @@
       "name" : "Veseli nad Luznici"
    },
    {
+      "ds100" : "OTVSK",
+      "eva" : 5403374,
+      "latlong" : [
+         49.042764,
+         17.502061
+      ],
+      "name" : "Vesky"
+   },
+   {
       "ds100" : "BV",
       "eva" : 8013188,
       "latlong" : [
@@ -78667,6 +80539,15 @@
          10.160391
       ],
       "name" : "Viby Jylland st"
+   },
+   {
+      "ds100" : "XDVSJ",
+      "eva" : 8602825,
+      "latlong" : [
+         55.549623,
+         12.024286
+      ],
+      "name" : "Viby Sjaelland st"
    },
    {
       "ds100" : "XIVC",
@@ -79110,6 +80991,15 @@
       "name" : "Vitry le François Gare"
    },
    {
+      "ds100" : "XFVT",
+      "eva" : 8700520,
+      "latlong" : [
+         48.202506,
+         5.941861
+      ],
+      "name" : "Vittel"
+   },
+   {
       "ds100" : "XNVT",
       "eva" : 8400651,
       "latlong" : [
@@ -79261,6 +81151,15 @@
          11.5641883894346
       ],
       "name" : "Volders-Baumkirchen"
+   },
+   {
+      "ds100" : "NVOLA",
+      "eva" : 8070860,
+      "latlong" : [
+         49.864306,
+         10.21722
+      ],
+      "name" : "Volkach-Astheim"
    },
    {
       "ds100" : "FVA",
@@ -79803,6 +81702,15 @@
       "name" : "Waldfischbach"
    },
    {
+      "ds100" : "TWHS",
+      "eva" : 8007073,
+      "latlong" : [
+         48.635193,
+         9.907731
+      ],
+      "name" : "Waldhausen(b Geislingen)"
+   },
+   {
       "ds100" : "TWY",
       "eva" : 8006157,
       "latlong" : [
@@ -80046,6 +81954,15 @@
       "name" : "Wallwitz(Saalkr)"
    },
    {
+      "ds100" : "XPWA",
+      "eva" : 5104188,
+      "latlong" : [
+         51.984583,
+         14.799436
+      ],
+      "name" : "Walowice"
+   },
+   {
       "ds100" : "PQRWM",
       "eva" : 836412,
       "latlong" : [
@@ -80125,6 +82042,15 @@
          10.576211
       ],
       "name" : "Waltershausen Schnepfenthal"
+   },
+   {
+      "ds100" : "OFWL",
+      "eva" : 8702265,
+      "latlong" : [
+         49.224274,
+         6.159705
+      ],
+      "name" : "Walygator Parc"
    },
    {
       "ds100" : "UWA",
@@ -81162,6 +83088,15 @@
       "name" : "Weinbrennerplatz, Karlsruhe"
    },
    {
+      "ds100" : "RKWPL",
+      "eva" : 723635,
+      "latlong" : [
+         49.005297,
+         8.377875
+      ],
+      "name" : "Weinbrennerplatz, Karlsruhe"
+   },
+   {
       "ds100" : "PQKWB",
       "eva" : 723636,
       "latlong" : [
@@ -81333,6 +83268,15 @@
       "name" : "Weitlanbrunn"
    },
    {
+      "ds100" : "OAWTR",
+      "eva" : 8101808,
+      "latlong" : [
+         48.700544,
+         14.901508
+      ],
+      "name" : "Weitra"
+   },
+   {
       "ds100" : "DWX",
       "eva" : 8013268,
       "latlong" : [
@@ -81349,6 +83293,15 @@
          13.802003
       ],
       "name" : "Weixdorf Bad"
+   },
+   {
+      "ds100" : "RWZ",
+      "eva" : 8070569,
+      "latlong" : [
+         47.768857,
+         8.476495
+      ],
+      "name" : "Weizen"
    },
    {
       "ds100" : "MWZH",
@@ -82150,6 +84103,15 @@
          6.002583
       ],
       "name" : "Wezep"
+   },
+   {
+      "ds100" : "XPWEZ",
+      "eva" : 5103997,
+      "latlong" : [
+         52.012719,
+         14.951632
+      ],
+      "name" : "Wezyska"
    },
    {
       "ds100" : "MWS",
@@ -82978,6 +84940,15 @@
          6.590462
       ],
       "name" : "Wiltingen(Saar)"
+   },
+   {
+      "ds100" : "XLWW",
+      "eva" : 8271120,
+      "latlong" : [
+         49.988204,
+         6.000812
+      ],
+      "name" : "Wilwerwiltz"
    },
    {
       "ds100" : "XFWI",
@@ -84699,6 +86670,15 @@
       "name" : "Zahna"
    },
    {
+      "ds100" : "OTZCE",
+      "eva" : 5403515,
+      "latlong" : [
+         49.021208,
+         17.777139
+      ],
+      "name" : "Zahorovice"
+   },
+   {
       "ds100" : "NZH",
       "eva" : 8006632,
       "latlong" : [
@@ -84841,6 +86821,15 @@
          14.87668
       ],
       "name" : "Zdislava"
+   },
+   {
+      "ds100" : "XPZD",
+      "eva" : 5100264,
+      "latlong" : [
+         49.87049,
+         18.623699
+      ],
+      "name" : "Zebrzydowice"
    },
    {
       "ds100" : "XBZD",
@@ -85309,6 +87298,15 @@
          15.513709
       ],
       "name" : "Zielona Gora Gl."
+   },
+   {
+      "ds100" : "XPPRY",
+      "eva" : 5102886,
+      "latlong" : [
+         51.977575,
+         15.438656
+      ],
+      "name" : "Zielona Gora Przylep"
    },
    {
       "ds100" : "FZB",
