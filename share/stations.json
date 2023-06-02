@@ -31797,6 +31797,15 @@
       "name" : "Hamburg-Othmarschen"
    },
    {
+      "ds100" : "AAS O",
+      "eva" : 8002562,
+      "latlong" : [
+         53.559556,
+         9.926941
+      ],
+      "name" : "Hamburg-Ottensen"
+   },
+   {
       "ds100" : "APB",
       "eva" : 8004862,
       "latlong" : [
@@ -62584,6 +62593,15 @@
          0.33306
       ],
       "name" : "Poitiers"
+   },
+   {
+      "ds100" : "OJPOJ",
+      "eva" : 7900185,
+      "latlong" : [
+         46.313441,
+         15.57676
+      ],
+      "name" : "Poljcane"
    },
    {
       "ds100" : "XTPI",
