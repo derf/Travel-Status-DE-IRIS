@@ -18936,6 +18936,15 @@
       "name" : "Dronten"
    },
    {
+      "ds100" : "OFDH",
+      "eva" : 8701020,
+      "latlong" : [
+         48.765995,
+         7.94757
+      ],
+      "name" : "Drusenheim"
+   },
+   {
       "ds100" : "OADI",
       "eva" : 8100221,
       "latlong" : [
@@ -26368,6 +26377,15 @@
          12.129379
       ],
       "name" : "Gallin"
+   },
+   {
+      "ds100" : "OFGB",
+      "eva" : 8701177,
+      "latlong" : [
+         48.694971,
+         7.879198
+      ],
+      "name" : "Gambsheim"
    },
    {
       "ds100" : "TGAM",
@@ -34569,6 +34587,15 @@
       "name" : "Herrlisheim près Colmar"
    },
    {
+      "ds100" : "OFHR",
+      "eva" : 8700308,
+      "latlong" : [
+         48.727997,
+         7.910543
+      ],
+      "name" : "Herrlisheim(Bas-Rhin)"
+   },
+   {
       "ds100" : "THH",
       "eva" : 8079099,
       "latlong" : [
@@ -35512,6 +35539,15 @@
          9.11028
       ],
       "name" : "Hoejslev st"
+   },
+   {
+      "ds100" : "PFHO",
+      "eva" : 8705312,
+      "latlong" : [
+         48.628622,
+         7.757942
+      ],
+      "name" : "Hoenheim-Tram"
    },
    {
       "ds100" : "ONHBK",
@@ -43846,6 +43882,15 @@
          9.813677
       ],
       "name" : "La Spezia Centrale"
+   },
+   {
+      "ds100" : "OFLWZ",
+      "eva" : 8701472,
+      "latlong" : [
+         48.665262,
+         7.824768
+      ],
+      "name" : "La Wantzenau"
    },
    {
       "ds100" : "XALAA",
@@ -71910,6 +71955,15 @@
       "name" : "Seltendorf"
    },
    {
+      "ds100" : "OFSEL",
+      "eva" : 8700456,
+      "latlong" : [
+         48.896662,
+         8.098373
+      ],
+      "name" : "Seltz"
+   },
+   {
       "ds100" : "XASZ",
       "eva" : 8100150,
       "latlong" : [
@@ -77443,6 +77497,15 @@
          13.413904
       ],
       "name" : "Tiefenau"
+   },
+   {
+      "ds100" : "NTFB",
+      "eva" : 8026544,
+      "latlong" : [
+         48.614284,
+         13.423025
+      ],
+      "name" : "Tiefenbach(b Passau)"
    },
    {
       "ds100" : "LTF",

@@ -1269,15 +1269,6 @@
       "name" : "Terespol"
    },
    {
-      "ds100" : "NTFB",
-      "eva" : 8026544,
-      "latlong" : [
-         48.61502,
-         13.42308
-      ],
-      "name" : "Tiefenbach(b Passau)"
-   },
-   {
       "ds100" : "XDTP",
       "eva" : 8602588,
       "latlong" : [
