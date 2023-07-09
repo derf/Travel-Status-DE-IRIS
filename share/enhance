@@ -19,7 +19,7 @@ for my $station ( @{$stations} ) {
 	if ( not $station->{latlong} ) {
 		say "Requesting location for $station->{name} ...";
 		my $res = $ua->get(
-			sprintf( 'https://v5.db.transport.rest/stops/%07d',
+			sprintf( 'https://v6.db.transport.rest/stops/%07d',
 				$station->{eva} )
 		);
 		if ( $res->is_error ) {
