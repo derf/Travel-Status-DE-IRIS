@@ -3186,6 +3186,15 @@
       "name" : "Augustusburg Bergstation"
    },
    {
+      "ds100" : "MAUH",
+      "eva" : 8071103,
+      "latlong" : [
+         49.006339,
+         10.623506
+      ],
+      "name" : "Auhausen"
+   },
+   {
       "ds100" : "AAU",
       "eva" : 8003078,
       "latlong" : [
@@ -10197,15 +10206,6 @@
       "name" : "Bohmte"
    },
    {
-      "ds100" : "OTBOH",
-      "eva" : 5400511,
-      "latlong" : [
-         50.672373,
-         13.878662
-      ],
-      "name" : "Bohosudov"
-   },
-   {
       "ds100" : "XTBO",
       "eva" : 5400038,
       "latlong" : [
@@ -14362,6 +14362,15 @@
          14.475366
       ],
       "name" : "Ceske Budejovice jiz.z."
+   },
+   {
+      "ds100" : "XTCHM",
+      "eva" : 5400752,
+      "latlong" : [
+         50.438896,
+         13.021019
+      ],
+      "name" : "Ceske Hamry"
    },
    {
       "ds100" : "XTCV",
@@ -42174,6 +42183,15 @@
       "name" : "Kovarska"
    },
    {
+      "ds100" : "XTKOM",
+      "eva" : 5401572,
+      "latlong" : [
+         50.44029,
+         13.0693
+      ],
+      "name" : "Kovarska mestys"
+   },
+   {
       "ds100" : "OPKCW",
       "eva" : 5101559,
       "latlong" : [
@@ -42604,6 +42622,15 @@
          13.276007
       ],
       "name" : "Krimov"
+   },
+   {
+      "ds100" : "XTKMZ",
+      "eva" : 5401650,
+      "latlong" : [
+         50.487645,
+         13.295262
+      ],
+      "name" : "Krimov zastavka"
    },
    {
       "ds100" : "DKRP",
@@ -51003,6 +51030,24 @@
       "name" : "Meckesheim"
    },
    {
+      "ds100" : "XTMED",
+      "eva" : 5401941,
+      "latlong" : [
+         50.428765,
+         13.130076
+      ],
+      "name" : "Medenec"
+   },
+   {
+      "ds100" : "XTMEZ",
+      "eva" : 5401942,
+      "latlong" : [
+         50.427282,
+         13.107621
+      ],
+      "name" : "Medenec zastavka"
+   },
+   {
       "ds100" : "BMZ",
       "eva" : 8012322,
       "latlong" : [
@@ -58111,6 +58156,15 @@
          12.755986
       ],
       "name" : "Nova Role zastavka"
+   },
+   {
+      "ds100" : "XTNVK",
+      "eva" : 5402177,
+      "latlong" : [
+         50.495618,
+         13.264743
+      ],
+      "name" : "Nova Ves u Krimova"
    },
    {
       "ds100" : "XTNH",
@@ -79488,6 +79542,15 @@
       "name" : "Unterschleißheim"
    },
    {
+      "ds100" : "MUSG",
+      "eva" : 8071104,
+      "latlong" : [
+         49.071754,
+         10.631965
+      ],
+      "name" : "Unterschwaningen"
+   },
+   {
       "ds100" : "NUST",
       "eva" : 8006016,
       "latlong" : [
@@ -80251,6 +80314,24 @@
          13.033352
       ],
       "name" : "Vejprty"
+   },
+   {
+      "ds100" : "XTVYK",
+      "eva" : 5403292,
+      "latlong" : [
+         50.483411,
+         13.033541
+      ],
+      "name" : "Vejprty koupaliste"
+   },
+   {
+      "ds100" : "XTVYZ",
+      "eva" : 5403293,
+      "latlong" : [
+         50.466286,
+         13.022601
+      ],
+      "name" : "Vejprty zastavka"
    },
    {
       "ds100" : "EVLR",
@@ -81531,6 +81612,15 @@
       "name" : "Vyhen"
    },
    {
+      "ds100" : "XTVSL",
+      "eva" : 5403488,
+      "latlong" : [
+         50.481002,
+         13.21115
+      ],
+      "name" : "Vysluni"
+   },
+   {
       "ds100" : "XTVP",
       "eva" : 5400237,
       "latlong" : [
@@ -81700,15 +81790,6 @@
          12.675032
       ],
       "name" : "Waffenbrunn"
-   },
-   {
-      "ds100" : "AWGR",
-      "eva" : 8007596,
-      "latlong" : [
-         54.662747,
-         9.793359
-      ],
-      "name" : "Wagersrott"
    },
    {
       "ds100" : "RWG",
@@ -85032,15 +85113,6 @@
       "name" : "Willingen"
    },
    {
-      "ds100" : "FSY",
-      "eva" : 8005762,
-      "latlong" : [
-         51.282462,
-         8.630247
-      ],
-      "name" : "Willingen-Stryck"
-   },
-   {
       "ds100" : "FWLM",
       "eva" : 8006454,
       "latlong" : [
@@ -87642,11 +87714,11 @@
       "name" : "Zirovice-Seniky"
    },
    {
-      "ds100" : "WZIR",
+      "ds100" : "WZIL",
       "eva" : 8013409,
       "latlong" : [
-         53.281036,
-         12.88692
+         53.281007,
+         12.885623
       ],
       "name" : "Zirtow-Leussow"
    },

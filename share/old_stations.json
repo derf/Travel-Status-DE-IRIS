@@ -198,6 +198,15 @@
       "name" : "Blumenberg"
    },
    {
+      "ds100" : "OTBOH",
+      "eva" : 5400511,
+      "latlong" : [
+         50.672373,
+         13.878662
+      ],
+      "name" : "Bohosudov"
+   },
+   {
       "ds100" : "XIBD",
       "eva" : 8300136,
       "latlong" : [
@@ -1386,6 +1395,15 @@
       "name" : "Wachenheim-Mölsheim"
    },
    {
+      "ds100" : "AWGR",
+      "eva" : 8007596,
+      "latlong" : [
+         54.662747,
+         9.793359
+      ],
+      "name" : "Wagersrott"
+   },
+   {
       "ds100" : "EWGO",
       "eva" : 8070571,
       "latlong" : [
@@ -1402,6 +1420,15 @@
          10.397122
       ],
       "name" : "Wilburgstetten Bf"
+   },
+   {
+      "ds100" : "FSY",
+      "eva" : 8005762,
+      "latlong" : [
+         51.282462,
+         8.630247
+      ],
+      "name" : "Willingen-Stryck"
    },
    {
       "ds100" : "XPWIT",
