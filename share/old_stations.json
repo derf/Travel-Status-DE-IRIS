@@ -270,6 +270,15 @@
       "name" : "Centallo"
    },
    {
+      "ds100" : "DC  B",
+      "eva" : 8071816,
+      "latlong" : [
+         50.833199,
+         12.925167
+      ],
+      "name" : "Chemnitz Stefan-Heym-Platz"
+   },
+   {
       "ds100" : "XICU",
       "eva" : 8300148,
       "latlong" : [
@@ -646,6 +655,15 @@
          12.639613
       ],
       "name" : "Laußig(Düben)"
+   },
+   {
+      "ds100" : "XILVM",
+      "eva" : 8300606,
+      "latlong" : [
+         45.903146,
+         8.624521
+      ],
+      "name" : "Laveno Mombello"
    },
    {
       "ds100" : "XILI",
@@ -1026,15 +1044,6 @@
       "name" : "Rech"
    },
    {
-      "ds100" : "PIQEP",
-      "eva" : 8309660,
-      "latlong" : [
-         45.521132,
-         9.088571
-      ],
-      "name" : "Rho-Fiera Milano"
-   },
-   {
       "ds100" : "WRIW",
       "eva" : 8012768,
       "latlong" : [
@@ -1393,15 +1402,6 @@
          10.397122
       ],
       "name" : "Wilburgstetten Bf"
-   },
-   {
-      "ds100" : "FSY",
-      "eva" : 8005762,
-      "latlong" : [
-         51.282472,
-         8.629398
-      ],
-      "name" : "Willingen-Stryck"
    },
    {
       "ds100" : "XPWIT",
