@@ -42714,6 +42714,15 @@
       "name" : "Krimov zastavka"
    },
    {
+      "ds100" : "XTKMS",
+      "eva" : 5401651,
+      "latlong" : [
+         50.49009,
+         13.324989
+      ],
+      "name" : "Krimov-Suchdol"
+   },
+   {
       "ds100" : "DKRP",
       "eva" : 8012105,
       "latlong" : [
