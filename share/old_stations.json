@@ -261,6 +261,15 @@
       "name" : "Brno dolni nadrazi"
    },
    {
+      "ds100" : "XTBK",
+      "eva" : 5400210,
+      "latlong" : [
+         49.23098,
+         16.596694
+      ],
+      "name" : "Brno-Kralovo Pole"
+   },
+   {
       "ds100" : "XEBU",
       "eva" : 7100005,
       "latlong" : [
@@ -277,15 +286,6 @@
          7.591296
       ],
       "name" : "Centallo"
-   },
-   {
-      "ds100" : "DC  B",
-      "eva" : 8071816,
-      "latlong" : [
-         50.833199,
-         12.925167
-      ],
-      "name" : "Chemnitz Stefan-Heym-Platz"
    },
    {
       "ds100" : "XICU",
@@ -999,6 +999,15 @@
       "name" : "Oswiecim"
    },
    {
+      "ds100" : "WPE",
+      "eva" : 8012627,
+      "latlong" : [
+         53.239977,
+         14.252349
+      ],
+      "name" : "Petershagen(Uckerm)"
+   },
+   {
       "ds100" : "MPFT",
       "eva" : 8026355,
       "latlong" : [
@@ -1033,6 +1042,15 @@
          12.129382
       ],
       "name" : "Plauen(V) unt Bf"
+   },
+   {
+      "ds100" : "APSH",
+      "eva" : 8007318,
+      "latlong" : [
+         54.364899,
+         10.291408
+      ],
+      "name" : "Probsteierhagen"
    },
    {
       "ds100" : "ERAE",
@@ -1177,6 +1195,15 @@
          13.084558
       ],
       "name" : "Schweta Gasth"
+   },
+   {
+      "ds100" : "ASCK",
+      "eva" : 8007314,
+      "latlong" : [
+         54.332691,
+         10.229356
+      ],
+      "name" : "Schönkirchen Bf"
    },
    {
       "ds100" : "XJSI",
@@ -1366,6 +1393,15 @@
          8.416503
       ],
       "name" : "Vercelli"
+   },
+   {
+      "ds100" : "XDVSJ",
+      "eva" : 8602825,
+      "latlong" : [
+         55.549623,
+         12.024286
+      ],
+      "name" : "Viby Sjaelland st"
    },
    {
       "ds100" : "XIVOG",

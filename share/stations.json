@@ -5436,20 +5436,20 @@
       "name" : "Barcelona P.Gracia"
    },
    {
-      "ds100" : "OEBSA",
+      "ds100" : "XEBS",
       "eva" : 7100089,
       "latlong" : [
-         41.435885,
-         2.19353
+         41.436137,
+         2.193602
       ],
       "name" : "Barcelona Sant Andreu Comtal"
    },
    {
-      "ds100" : "XEBS",
+      "ds100" : "XEB",
       "eva" : 7100064,
       "latlong" : [
-         41.378914,
-         2.140369
+         41.378911,
+         2.140368
       ],
       "name" : "Barcelona Sants"
    },
@@ -6172,6 +6172,15 @@
          14.866621
       ],
       "name" : "Bela pod Bezdezem zastavka"
+   },
+   {
+      "ds100" : "OTBSP",
+      "eva" : 5400441,
+      "latlong" : [
+         50.532582,
+         15.442506
+      ],
+      "name" : "Bela u Stare Paky"
    },
    {
       "ds100" : "ABE",
@@ -9072,6 +9081,15 @@
       "name" : "Biharkeresztes"
    },
    {
+      "ds100" : "OTBIT",
+      "eva" : 5400471,
+      "latlong" : [
+         50.452039,
+         15.732867
+      ],
+      "name" : "Bila Tremesna"
+   },
+   {
       "ds100" : "SBDS",
       "eva" : 8000967,
       "latlong" : [
@@ -10746,6 +10764,24 @@
       "name" : "Bornholte(b Verl)"
    },
    {
+      "ds100" : "OTBVE",
+      "eva" : 5400548,
+      "latlong" : [
+         50.509516,
+         15.603431
+      ],
+      "name" : "Borovnice"
+   },
+   {
+      "ds100" : "OTBVK",
+      "eva" : 5400549,
+      "latlong" : [
+         50.500023,
+         15.659218
+      ],
+      "name" : "Borovnicka"
+   },
+   {
       "ds100" : "OTBOY",
       "eva" : 5400550,
       "latlong" : [
@@ -11950,15 +11986,6 @@
          16.6130691
       ],
       "name" : "Brno hl.n."
-   },
-   {
-      "ds100" : "XTBK",
-      "eva" : 5400210,
-      "latlong" : [
-         49.23098,
-         16.596694
-      ],
-      "name" : "Brno-Kralovo Pole"
    },
    {
       "ds100" : "LBRO",
@@ -14713,6 +14740,15 @@
          12.927087
       ],
       "name" : "Chemnitz Stadlerplatz"
+   },
+   {
+      "ds100" : "DC  B",
+      "eva" : 8071816,
+      "latlong" : [
+         50.833199,
+         12.925167
+      ],
+      "name" : "Chemnitz Stefan-Heym-Platz"
    },
    {
       "ds100" : "DCD",
@@ -22921,6 +22957,33 @@
          8.40345
       ],
       "name" : "Ettlinger Tor/Staatstheater (U), Karlsruhe"
+   },
+   {
+      "ds100" : "PQKET",
+      "eva" : 130071,
+      "latlong" : [
+         49.005414,
+         8.403089
+      ],
+      "name" : "Ettlinger Tor/Staatstheater, Karlsruhe"
+   },
+   {
+      "ds100" : "D140071",
+      "eva" : 140071,
+      "latlong" : [
+         49.005414,
+         8.402892
+      ],
+      "name" : "Ettlinger Tor/Staatstheater, Karlsruhe"
+   },
+   {
+      "ds100" : "RKMEK",
+      "eva" : 721356,
+      "latlong" : [
+         49.005539,
+         8.401984
+      ],
+      "name" : "Ettlinger Tor/Staatstheater, Karlsruhe"
    },
    {
       "ds100" : "EEZB",
@@ -36405,6 +36468,15 @@
       "name" : "Horka"
    },
    {
+      "ds100" : "OTHSP",
+      "eva" : 5401096,
+      "latlong" : [
+         50.526811,
+         15.568724
+      ],
+      "name" : "Horka u Stare Paky"
+   },
+   {
       "ds100" : "XSHB",
       "eva" : 8506307,
       "latlong" : [
@@ -42147,6 +42219,15 @@
       "name" : "Koserow"
    },
    {
+      "ds100" : "XTKS",
+      "eva" : 5401556,
+      "latlong" : [
+         50.568817,
+         15.403664
+      ],
+      "name" : "Kostalov"
+   },
+   {
       "ds100" : "NKMG",
       "eva" : 8003413,
       "latlong" : [
@@ -42858,6 +42939,15 @@
       "name" : "Krumpendorf/Wörthersee"
    },
    {
+      "ds100" : "PTKBV",
+      "eva" : 5454427,
+      "latlong" : [
+         50.672211,
+         13.878653
+      ],
+      "name" : "Krupka-Bohosudov"
+   },
+   {
       "ds100" : "AKRS",
       "eva" : 8003460,
       "latlong" : [
@@ -42946,6 +43036,15 @@
          12.1656680163989
       ],
       "name" : "Kufstein"
+   },
+   {
+      "ds100" : "OTKK",
+      "eva" : 5401660,
+      "latlong" : [
+         50.395964,
+         15.88456
+      ],
+      "name" : "Kuks"
    },
    {
       "ds100" : "RKUL",
@@ -46809,6 +46908,15 @@
       "name" : "Leverkusen-Rheindorf"
    },
    {
+      "ds100" : "OTLOL",
+      "eva" : 5401716,
+      "latlong" : [
+         50.524564,
+         15.531706
+      ],
+      "name" : "Levinska Olesnice"
+   },
+   {
       "ds100" : "XFLZ",
       "eva" : 8702319,
       "latlong" : [
@@ -46861,6 +46969,15 @@
          5.37951
       ],
       "name" : "Libramont"
+   },
+   {
+      "ds100" : "OTLTT",
+      "eva" : 5401752,
+      "latlong" : [
+         50.556089,
+         15.417543
+      ],
+      "name" : "Libstat"
    },
    {
       "ds100" : "FLI",
@@ -52947,6 +53064,15 @@
       "name" : "Most"
    },
    {
+      "ds100" : "XTMT",
+      "eva" : 5402063,
+      "latlong" : [
+         50.490791,
+         15.692604
+      ],
+      "name" : "Mostek"
+   },
+   {
       "ds100" : "PFABX",
       "eva" : 8705360,
       "latlong" : [
@@ -55249,6 +55375,15 @@
          12.223233
       ],
       "name" : "Nedlitz"
+   },
+   {
+      "ds100" : "OTNVI",
+      "eva" : 5402109,
+      "latlong" : [
+         50.584225,
+         15.351958
+      ],
+      "name" : "Nedvezi"
    },
    {
       "ds100" : "SNF",
@@ -61929,15 +62064,6 @@
       "name" : "Petershagen Nord"
    },
    {
-      "ds100" : "WPE",
-      "eva" : 8012627,
-      "latlong" : [
-         53.239977,
-         14.252349
-      ],
-      "name" : "Petershagen(Uckerm)"
-   },
-   {
       "ds100" : "HLAD",
       "eva" : 8004777,
       "latlong" : [
@@ -62035,6 +62161,15 @@
          12.581132
       ],
       "name" : "Pfaffenschwendt"
+   },
+   {
+      "ds100" : "XLPK",
+      "eva" : 8200102,
+      "latlong" : [
+         49.618622,
+         6.132792
+      ],
+      "name" : "Pfaffenthal-Kirchberg"
    },
    {
       "ds100" : "SPF",
@@ -63646,15 +63781,6 @@
          13.838399
       ],
       "name" : "Probostov"
-   },
-   {
-      "ds100" : "APSH",
-      "eva" : 8007318,
-      "latlong" : [
-         54.364899,
-         10.291408
-      ],
-      "name" : "Probsteierhagen"
    },
    {
       "ds100" : "UPR",
@@ -71496,15 +71622,6 @@
       "name" : "Schönhausen(Elbe)"
    },
    {
-      "ds100" : "ASCK",
-      "eva" : 8007314,
-      "latlong" : [
-         54.332691,
-         10.229356
-      ],
-      "name" : "Schönkirchen Bf"
-   },
-   {
       "ds100" : "RSOM",
       "eva" : 8005409,
       "latlong" : [
@@ -73935,13 +74052,22 @@
       "name" : "St-Germain-des-Fosses"
    },
    {
+      "ds100" : "PFSGL",
+      "eva" : 8774407,
+      "latlong" : [
+         45.906418,
+         6.700559
+      ],
+      "name" : "St-Gervais-les-Bains"
+   },
+   {
       "ds100" : "XFSG",
       "eva" : 8704576,
       "latlong" : [
          45.906665,
          6.70186
       ],
-      "name" : "St-Gervais-les-Bains"
+      "name" : "St-Gervais-les-Bains-le-Fayet"
    },
    {
       "ds100" : "XFJL",
@@ -80811,15 +80937,6 @@
       "name" : "Viby Jylland st"
    },
    {
-      "ds100" : "XDVSJ",
-      "eva" : 8602825,
-      "latlong" : [
-         55.549623,
-         12.024286
-      ],
-      "name" : "Viby Sjaelland st"
-   },
-   {
       "ds100" : "XIVC",
       "eva" : 8300126,
       "latlong" : [
@@ -83349,11 +83466,29 @@
       "name" : "Weinbrennerplatz, Karlsruhe"
    },
    {
+      "ds100" : "RKWPS",
+      "eva" : 721834,
+      "latlong" : [
+         49.006294,
+         8.378261
+      ],
+      "name" : "Weinbrennerplatz, Karlsruhe"
+   },
+   {
       "ds100" : "RKWPL",
       "eva" : 723635,
       "latlong" : [
          49.005297,
          8.377875
+      ],
+      "name" : "Weinbrennerplatz, Karlsruhe"
+   },
+   {
+      "ds100" : "PQKWB",
+      "eva" : 723636,
+      "latlong" : [
+         49.005971,
+         8.377902
       ],
       "name" : "Weinbrennerplatz, Karlsruhe"
    },
@@ -87676,6 +87811,15 @@
          13.903359
       ],
       "name" : "Zinnowitz"
+   },
+   {
+      "ds100" : "OTZRC",
+      "eva" : 5403645,
+      "latlong" : [
+         50.403245,
+         15.848135
+      ],
+      "name" : "Zirec"
    },
    {
       "ds100" : "XAZL",
