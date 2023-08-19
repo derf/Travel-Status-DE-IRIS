@@ -216,6 +216,15 @@
       "name" : "Bordighera"
    },
    {
+      "ds100" : "XDBOP",
+      "eva" : 8600276,
+      "latlong" : [
+         55.494897,
+         11.97293
+      ],
+      "name" : "Borup st"
+   },
+   {
       "ds100" : "XFBZV",
       "eva" : 8700333,
       "latlong" : [
@@ -808,15 +817,6 @@
          13.101472
       ],
       "name" : "Naundorf (b Oschatz)"
-   },
-   {
-      "ds100" : "D730823",
-      "eva" : 730823,
-      "latlong" : [
-         52.544431,
-         13.370133
-      ],
-      "name" : "Nettelbeckplatz/Wedding (S), Berlin"
    },
    {
       "ds100" : "HNPL",

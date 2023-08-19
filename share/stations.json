@@ -2421,6 +2421,15 @@
       "name" : "Arad"
    },
    {
+      "ds100" : "RKAA",
+      "eva" : 723254,
+      "latlong" : [
+         49.003921,
+         8.386531
+      ],
+      "name" : "Arbeitsagentur, Karlsruhe"
+   },
+   {
       "ds100" : "XSAB",
       "eva" : 8506308,
       "latlong" : [
@@ -5398,6 +5407,24 @@
          21.234759
       ],
       "name" : "Barand"
+   },
+   {
+      "ds100" : "RKBR",
+      "eva" : 723861,
+      "latlong" : [
+         48.995022,
+         8.388841
+      ],
+      "name" : "Barbarossaplatz, Karlsruhe"
+   },
+   {
+      "ds100" : "PQKB",
+      "eva" : 723862,
+      "latlong" : [
+         48.994878,
+         8.389902
+      ],
+      "name" : "Barbarossaplatz, Karlsruhe"
    },
    {
       "ds100" : "RBRT",
@@ -10816,15 +10843,6 @@
          12.541165
       ],
       "name" : "Borsdorf(Sachs)"
-   },
-   {
-      "ds100" : "XDBOP",
-      "eva" : 8600276,
-      "latlong" : [
-         55.494897,
-         11.97293
-      ],
-      "name" : "Borup st"
    },
    {
       "ds100" : "ONBOK",
@@ -19978,6 +19996,15 @@
          8.108237
       ],
       "name" : "Ebertsheim"
+   },
+   {
+      "ds100" : "PQKEB",
+      "eva" : 360091,
+      "latlong" : [
+         48.994501,
+         8.395143
+      ],
+      "name" : "Ebertstraße, Karlsruhe"
    },
    {
       "ds100" : "RKEB",
@@ -38358,6 +38385,15 @@
       "name" : "Jaromer"
    },
    {
+      "ds100" : "XTJZ",
+      "eva" : 5401341,
+      "latlong" : [
+         50.356852,
+         15.911365
+      ],
+      "name" : "Jaromer zast."
+   },
+   {
       "ds100" : "XPJR",
       "eva" : 5100233,
       "latlong" : [
@@ -42219,6 +42255,15 @@
       "name" : "Koserow"
    },
    {
+      "ds100" : "XYK",
+      "eva" : 5600007,
+      "latlong" : [
+         48.722918,
+         21.268721
+      ],
+      "name" : "Kosice"
+   },
+   {
       "ds100" : "XTKS",
       "eva" : 5401556,
       "latlong" : [
@@ -43342,6 +43387,15 @@
          12.38994
       ],
       "name" : "Kyritz Am Bürgerpark"
+   },
+   {
+      "ds100" : "XYKY",
+      "eva" : 5600135,
+      "latlong" : [
+         48.85284,
+         21.223945
+      ],
+      "name" : "Kysak"
    },
    {
       "ds100" : "XTKT",
@@ -49696,6 +49750,15 @@
          11.219064
       ],
       "name" : "Malching(Oberbay)"
+   },
+   {
+      "ds100" : "WMAK",
+      "eva" : 8087006,
+      "latlong" : [
+         53.490842,
+         12.388924
+      ],
+      "name" : "Malchow Krebssee"
    },
    {
       "ds100" : "OTMBL",
@@ -56212,6 +56275,15 @@
          14.41266
       ],
       "name" : "Neuhausen(Cottbus)"
+   },
+   {
+      "ds100" : "NNHM",
+      "eva" : 8071117,
+      "latlong" : [
+         48.726523,
+         13.506715
+      ],
+      "name" : "Neuhausmühle"
    },
    {
       "ds100" : "FNF",
@@ -63081,6 +63153,15 @@
       "name" : "Poppenhausen"
    },
    {
+      "ds100" : "XYPT",
+      "eva" : 5600013,
+      "latlong" : [
+         49.060032,
+         20.294964
+      ],
+      "name" : "Poprad-Tatry"
+   },
+   {
       "ds100" : "XIPD",
       "eva" : 8300110,
       "latlong" : [
@@ -63934,6 +64015,15 @@
          13.470221
       ],
       "name" : "Prösen West"
+   },
+   {
+      "ds100" : "OPPSY",
+      "eva" : 5102920,
+      "latlong" : [
+         49.975601,
+         18.953477
+      ],
+      "name" : "Pszczyna"
    },
    {
       "ds100" : "PAWIV",
@@ -81333,6 +81423,15 @@
       "name" : "Vipiteno-Val di Vizze/Sterzing-Pfitsch"
    },
    {
+      "ds100" : "OFVGL",
+      "eva" : 8700460,
+      "latlong" : [
+         45.848276,
+         5.653765
+      ],
+      "name" : "Virieu-le-Grand-Belley"
+   },
+   {
       "ds100" : "XDVY",
       "eva" : 8602867,
       "latlong" : [
@@ -83815,6 +83914,24 @@
          14.638027
       ],
       "name" : "Weißwasser(Oberlausitz)"
+   },
+   {
+      "ds100" : "RKWN",
+      "eva" : 723959,
+      "latlong" : [
+         48.995355,
+         8.384931
+      ],
+      "name" : "Welfenstraße, Karlsruhe"
+   },
+   {
+      "ds100" : "PQKWE",
+      "eva" : 723960,
+      "latlong" : [
+         48.995292,
+         8.384922
+      ],
+      "name" : "Welfenstraße, Karlsruhe"
    },
    {
       "ds100" : "FWZ",
@@ -86967,6 +87084,15 @@
       "name" : "Yves-Gomezee"
    },
    {
+      "ds100" : "RKZK",
+      "eva" : 723255,
+      "latlong" : [
+         48.999795,
+         8.386109
+      ],
+      "name" : "ZKM, Karlsruhe"
+   },
+   {
       "ds100" : "HDUD",
       "eva" : 860883,
       "latlong" : [
@@ -87766,6 +87892,15 @@
          6.62574
       ],
       "name" : "Zieverich"
+   },
+   {
+      "ds100" : "XYZ",
+      "eva" : 5600020,
+      "latlong" : [
+         49.227043,
+         18.746006
+      ],
+      "name" : "Zilina"
    },
    {
       "ds100" : "NZF",
