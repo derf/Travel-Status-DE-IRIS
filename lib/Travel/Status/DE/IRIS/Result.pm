@@ -876,13 +876,35 @@ sub TO_JSON {
 	my ($self) = @_;
 
 	my %copy = %{$self};
-	delete $copy{arrival_wings};
-	delete $copy{departure_wings};
 	delete $copy{realtime_xml};
-	delete $copy{replaced_by};
-	delete $copy{replacement_for};
 	delete $copy{strptime_obj};
+
+	for my $ref_key (
+		qw(arrival_wings departure_wings replaced_by replacement_for))
+	{
+		delete $copy{$ref_key};
+		for my $train_ref ( @{ $self->{$ref_key} // [] } ) {
+			push(
+				@{ $copy{$ref_key} },
+				{
+					raw_id   => $train_ref->raw_id,
+					train    => $train_ref->train,
+					train_no => $train_ref->train_no,
+					type     => $train_ref->type,
+				}
+			);
+		}
+	}
+
 	delete $copy{wing_of};
+	if ( my $train_ref = $self->wing_of ) {
+		$copy{wing_of} = {
+			raw_id   => $train_ref->raw_id,
+			train    => $train_ref->train,
+			train_no => $train_ref->train_no,
+			type     => $train_ref->type,
+		};
+	}
 
 	for my $datetime_key (
 		qw(arrival departure sched_arrival sched_departure start datetime))
