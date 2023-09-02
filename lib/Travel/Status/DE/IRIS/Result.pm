@@ -466,6 +466,8 @@ sub set_unscheduled {
 	my ( $self, $unscheduled ) = @_;
 
 	$self->{is_unscheduled} = $unscheduled;
+
+	return $self;
 }
 
 sub add_arrival_wingref {
