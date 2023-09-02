@@ -1206,15 +1206,15 @@ This is a developer option. It may be removed without prior warning.
 
 =item $result->replaced_by
 
-Returns a list of references to Travel::Status::DE::IRIS::Result(3pm) objects
-which replace the (usually cancelled) arrival/departure of this train.
+Returns a list of weakened references to Travel::Status::DE::IRIS::Result(3pm)
+objects which replace the (usually cancelled) arrival/departure of this train.
 Returns nothing (false / empty list) otherwise.
 
 =item $result->replacement_for
 
-Returns a list of references to Travel::Status::DE::IRIS::Result(3pm) objects
-which this (usually unplanned) train is meant to replace.
-Returns nothing (false / empty list) otherwise.
+Returns a list of weakened references to Travel::Status::DE::IRIS::Result(3pm)
+objects which this (usually unplanned) train is meant to replace.  Returns
+nothing (false / empty list) otherwise.
 
 =item $result->route
 
