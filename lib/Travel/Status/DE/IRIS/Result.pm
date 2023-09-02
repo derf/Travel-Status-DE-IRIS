@@ -476,7 +476,7 @@ sub add_arrival_wingref {
 	weaken($ref);
 	weaken($backref);
 	$ref->{is_wing} = 1;
-	$ref->{wing_of} = $self;
+	$ref->{wing_of} = $backref;
 	push( @{ $self->{arrival_wings} }, $ref );
 	return $self;
 }
@@ -489,7 +489,7 @@ sub add_departure_wingref {
 	weaken($ref);
 	weaken($backref);
 	$ref->{is_wing} = 1;
-	$ref->{wing_of} = $self;
+	$ref->{wing_of} = $backref;
 	push( @{ $self->{departure_wings} }, $ref );
 	return $self;
 }
