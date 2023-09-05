@@ -245,7 +245,7 @@ for my $station ( $tree->findnodes('//station') ) {
 	}
 
 	if ( not $found
-		and any { $_ eq $name } @missing )
+		and any { $_ eq $name or $_ eq $ds100 } @missing )
 	{
 		say "missing $eva  $ds100  \"$name\"";
 
