@@ -23472,6 +23472,15 @@
       "name" : "Fangschleuse"
    },
    {
+      "ds100" : "BFTS",
+      "eva" : 8079310,
+      "latlong" : [
+         52.392288,
+         13.797417
+      ],
+      "name" : "Fangschleuse Tesla Süd"
+   },
+   {
       "ds100" : "MFCH",
       "eva" : 8001961,
       "latlong" : [
@@ -23938,6 +23947,15 @@
          13.710388
       ],
       "name" : "Finsterwalde(Niederlausitz)"
+   },
+   {
+      "ds100" : "XIFRC",
+      "eva" : 8300180,
+      "latlong" : [
+         43.777575,
+         11.27659
+      ],
+      "name" : "Firenze Campo di Marte"
    },
    {
       "ds100" : "XIFRS",
