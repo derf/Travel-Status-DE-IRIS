@@ -58212,6 +58212,15 @@
       "name" : "Nordhausen-Salza"
    },
    {
+      "ds100" : "NNOR",
+      "eva" : 8071974,
+      "latlong" : [
+         50.477217,
+         10.180724
+      ],
+      "name" : "Nordheim v. d. Rhön"
+   },
+   {
       "ds100" : "TNO",
       "eva" : 8004458,
       "latlong" : [
@@ -85192,6 +85201,15 @@
          9.040983279214
       ],
       "name" : "Wil SG"
+   },
+   {
+      "ds100" : "MWBN",
+      "eva" : 8070620,
+      "latlong" : [
+         49.025406,
+         10.397023
+      ],
+      "name" : "Wilburgstetten Bf"
    },
    {
       "ds100" : "RWIN",

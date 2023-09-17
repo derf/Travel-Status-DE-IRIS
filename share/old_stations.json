@@ -405,15 +405,6 @@
       "name" : "Finale Ligure Marina"
    },
    {
-      "ds100" : "XIFRC",
-      "eva" : 8300180,
-      "latlong" : [
-         43.777575,
-         11.27659
-      ],
-      "name" : "Firenze Campo di Marte"
-   },
-   {
       "ds100" : "XIF",
       "eva" : 8300020,
       "latlong" : [
@@ -1447,15 +1438,6 @@
          7.35000344
       ],
       "name" : "Wengern Ost"
-   },
-   {
-      "ds100" : "MWBN",
-      "eva" : 8070620,
-      "latlong" : [
-         49.025162,
-         10.397122
-      ],
-      "name" : "Wilburgstetten Bf"
    },
    {
       "ds100" : "FSY",
