@@ -1,3 +1,10 @@
+Travel::Status::DE::IRIS 1.90 - Sun Sep 17 2023
+
+    * Update stations list
+    * Result: weaken (circular) wing references
+    * Result: include arrival_wings departure_wings replaced_by replacement_for
+      in TO_JSON
+
 Travel::Status::DE::IRIS 1.89 - Sat Aug 19 2023
 
     * Update stations list
