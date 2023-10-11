@@ -1250,7 +1250,7 @@ train starts here.
 
 =item $result->sched_departure
 
-DateTime(3pm) object for the scehduled departure date and time. undef if the
+DateTime(3pm) object for the scheduled departure date and time. undef if the
 train ends here.
 
 =item $result->sched_platform
