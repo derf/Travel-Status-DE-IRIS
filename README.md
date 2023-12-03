@@ -1,6 +1,6 @@
 # db-iris - Commandline Client for DB IRIS Departure Monitor
 
-db-iris is a commandline client and Perl module for the DB IRIS departure
+**db-iris** is a commandline client and Perl module for the DB IRIS departure
 monitor located at iris.noncd.db.de. See the [Travel::Status::DE::IRIS
 homepage](https://finalrewind.org/projects/Travel-Status-DE-IRIS/) for details.
 
@@ -9,9 +9,10 @@ train stations via text and JSON output.
 
 ## Installation
 
-You have four installation options:
+You have five installation options:
 
-* Nightly `.deb` builds for Debian-based distributions
+* `.deb` releases for Debian-based distributions
+* finalrewind.org APT repository for Debian-based distributions
 * Installing the latest release from CPAN
 * Installation from source
 * Using a Docker image
@@ -20,41 +21,59 @@ Except for Docker, **db-iris** is available in your PATH after installation.
 You can run `db-iris --version` to verify this. Documentation is available via
 `man db-iris`.
 
-### Nightly Builds for Debian
+### Release Builds for Debian
 
 [lib.finalrewind.org/deb](https://lib.finalrewind.org/deb) provides Debian
-packages of both development and release versions. Note that these are not part
-of the official Debian repository and are not covered by its quality assurance
-process.
+packages of all release versions. Note that these are not part of the official
+Debian repository and are not covered by its quality assurance process.
 
 To install the latest release, run:
 
 ```
 wget https://lib.finalrewind.org/deb/libtravel-status-de-iris-perl_latest_all.deb
-sudo dpkg -i libtravel-status-de-iris-perl_latest_all.deb
-sudo apt --fix-broken install
+sudo apt install ./libtravel-status-de-iris-perl_latest_all.deb
 rm libtravel-status-de-iris-perl_latest_all.deb
 ```
-
-For a (possibly broken) development snapshot of the Git master branch, run:
-
-```
-wget https://lib.finalrewind.org/deb/libtravel-status-de-iris-perl_dev_all.deb
-sudo dpkg -i libtravel-status-de-iris-perl_dev_all.deb
-sudo apt --fix-broken install
-rm libtravel-status-de-iris-perl_dev_all.deb
-```
-
-Note that dpkg, unlike apt, does not automatically install missing
-dependencies. If a dependency is not satisfied yet, `dpkg -i` will complain
-about unmet dependencies and bail out. `apt --fix-broken install` installs
-these dependencies and also silently finishes the Travel::Status::DE::IRIS
-installation.
 
 Uninstallation works as usual:
 
 ```
 sudo apt remove libtravel-status-de-iris-perl
+```
+
+### finalrewind.org APT repository
+
+[lib.finalrewind.org/apt](https://lib.finalrewind.org/apt) provides an APT
+repository with Debian packages of the latest release versions. Note that this
+is not a Debian repository; it is operated under a best-effort SLA and if you
+use it you will have to trust me not to screw up your system with bogus
+packages. Also, note that the packages are not part of the official Debian
+repository and are not covered by its quality assurance process.
+
+To set up the repository and install the latest Travel::Status::DE::IRIS
+release, run:
+
+```
+curl -s https://finalrewind.org/apt.asc | sudo tee /etc/apt/trusted.gpg.d/finalrewind.asc
+echo 'deb https://lib.finalrewind.org/apt stable main' | sudo tee /etc/apt/sources.list.d/finalrewind.list
+sudo apt update
+sudo apt install libtravel-status-de-iris-perl
+```
+
+Afterwards, `apt update` and `apt upgrade` will automatically install new
+Travel::Status::DE::IRIS releases.
+
+Uninstallation of Travel::Status::DE::IRIS works as usual:
+
+```
+sudo apt remove libtravel-status-de-iris-perl
+```
+
+To remove the APT repository from your system, run:
+
+```
+sudo rm /etc/apt/trusted.gpg.d/finalrewind.asc \
+        /etc/apt/sources.list.d/finalrewind.list
 ```
 
 ### Installation from CPAN
