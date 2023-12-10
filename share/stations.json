@@ -7074,15 +7074,6 @@
       "name" : "Berlin Hbf"
    },
    {
-      "ds100" : "BHBF",
-      "eva" : 8089021,
-      "latlong" : [
-         52.525592,
-         13.369545
-      ],
-      "name" : "Berlin Hbf (S-Bahn)"
-   },
-   {
       "ds100" : "BL",
       "eva" : 8098160,
       "latlong" : [
@@ -7090,6 +7081,15 @@
          13.369545
       ],
       "name" : "Berlin Hbf"
+   },
+   {
+      "ds100" : "BHBF",
+      "eva" : 8089021,
+      "latlong" : [
+         52.525592,
+         13.369545
+      ],
+      "name" : "Berlin Hbf (S-Bahn)"
    },
    {
       "ds100" : "BHST",
@@ -24190,15 +24190,6 @@
          13.5119176
       ],
       "name" : "Flughafen BER (S-Bahn)"
-   },
-   {
-      "ds100" : "BFHS",
-      "eva" : 8010109,
-      "latlong" : [
-         52.391062,
-         13.51271
-      ],
-      "name" : "Schönefeld(bei Berlin)"
    },
    {
       "ds100" : "XAWIF",
@@ -71683,6 +71674,15 @@
          8.823385
       ],
       "name" : "Schöneck-Oberdorfelden"
+   },
+   {
+      "ds100" : "BFHS",
+      "eva" : 8010109,
+      "latlong" : [
+         52.391062,
+         13.51271
+      ],
+      "name" : "Schönefeld(bei Berlin)"
    },
    {
       "ds100" : "BSL",
