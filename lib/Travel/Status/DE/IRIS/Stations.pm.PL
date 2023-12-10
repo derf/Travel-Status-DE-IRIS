@@ -62,11 +62,8 @@ $buf .= <<'EOF';
 my $meta = {
 EOF
 
-for my $eva (keys %{$meta}) {
-	$buf .= sprintf("%s => [%s],\n",
-		$eva,
-		join(q{,}, @{$meta->{$eva}})
-	);
+for my $eva ( keys %{$meta} ) {
+	$buf .= sprintf( "%s => [%s],\n", $eva, join( q{,}, @{ $meta->{$eva} } ) );
 }
 
 $buf .= <<'EOF';
