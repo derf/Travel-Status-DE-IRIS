@@ -9,7 +9,7 @@ apt-get update
 apt-get -y install \
 	apt-file dh-make-perl libmodule-build-perl \
 	libcache-perl libclass-accessor-perl libdatetime-perl \
-	libdatetime-format-strptime-perl libgeo-distance-xs-perl \
+	libdatetime-format-strptime-perl libgis-distance-perl \
 	liblist-compare-perl liblist-moreutils-perl liblist-utilsby-perl \
 	libwww-perl libtext-levenshteinxs-perl libxml-libxml-perl \
 	libfile-slurp-perl libjson-perl libjson-xs-perl \
@@ -25,8 +25,6 @@ cp -a /orig/bin /orig/examples /orig/lib /orig/share /orig/t /src/app
 cd /src/app
 
 sed -i 's/sign *=> *1/sign => 0/' Build.PL
-sed -i 's/GIS::Distance/Geo::Distance/' Build.PL
-export DB_IRIS_DEB_BUILD=1
 perl Build.PL
 perl Build
 perl Build manifest

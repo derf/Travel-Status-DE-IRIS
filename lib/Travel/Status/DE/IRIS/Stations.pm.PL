@@ -26,16 +26,7 @@ use warnings;
 use 5.014;
 use utf8;
 
-EOF
-
-if ($ENV{DB_IRIS_DEB_BUILD}) {
-	$buf .= "use Geo::Distance;\n"
-}
-else {
-	$buf .= "use GIS::Distance;\n";
-}
-
-$buf .= <<'EOF';
+use GIS::Distance;
 use List::Util qw(min);
 use List::UtilsBy qw(uniq_by);
 use List::MoreUtils qw(firstval pairwise);
@@ -130,16 +121,7 @@ sub get_station_by_location {
 
 	$num_matches //= 10;
 
-EOF
-
-if ($ENV{DB_IRIS_DEB_BUILD}) {
-	$buf .= "\tmy \$dist = Geo::Distance->new();\n";
-}
-else {
-	$buf .= "\tmy \$dist = GIS::Distance->new();\n";
-}
-
-$buf .= <<'EOF';
+	my $dist = GIS::Distance->new();
 
 	# we only use geolocations inside germany.
 	# For these, this fast preprocessing step will let through all
@@ -150,18 +132,8 @@ $buf .= <<'EOF';
 		  and abs( $_->[4] - $lat )
 		  < 1
 	} @stations;
-	my @distances
-EOF
-
-if ($ENV{DB_IRIS_DEB_BUILD}) {
-	$buf .= '= map { $dist->distance( \'kilometer\', $lon, $lat, $_->[3], $_->[4] ) }';
-}
-else {
-	$buf .= '= map { $dist->distance_metal( $lat, $lon, $_->[4], $_->[3] ) }';
-}
-
-$buf .= <<'EOF';
-	  @candidates;
+	my @distances = map
+		{ $dist->distance_metal( $lat, $lon, $_->[4], $_->[3] ) } @candidates;
 	my @station_map = pairwise { [ $a, $b ] } @candidates, @distances;
 
 	@station_map = sort { $a->[1] <=> $b->[1] } @station_map;
