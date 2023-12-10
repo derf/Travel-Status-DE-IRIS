@@ -5,7 +5,7 @@ mkdir -p out
 docker run --rm -v "${PWD}:/orig:ro" -v "${PWD}/scripts:/scripts:ro" \
 	-v "${PWD}/out:/out" -e USER=$(id -u) -e GROUP=$(id -g) \
 	-e "DEBEMAIL=${DEBEMAIL}" -e "DEBFULLNAME=${DEBFULLNAME}" \
-	-e "LOGNAME=${LOGNAME}" -e "VERSION=$(git describe --dirty)-1" \
-	debian:buster /scripts/makedeb-docker-helper
+	-e "LOGNAME=${LOGNAME}" -e "VERSION=$(git describe --dirty)" \
+	debian:trixie /scripts/makedeb-docker-helper
 
 echo "Debian package has been written to $(pwd)/out"
