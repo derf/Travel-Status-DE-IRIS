@@ -7089,7 +7089,7 @@
          52.525592,
          13.369545
       ],
-      "name" : "Berlin Hbf (tief)"
+      "name" : "Berlin Hbf"
    },
    {
       "ds100" : "BHST",
@@ -24180,7 +24180,7 @@
          52.3648038,
          13.5119498
       ],
-      "name" : "Flughafen BER - Terminal 1-2"
+      "name" : "Flughafen BER"
    },
    {
       "ds100" : "BFBB",
@@ -24189,7 +24189,7 @@
          52.3648431,
          13.5119176
       ],
-      "name" : "Flughafen BER - Terminal 1-2 (S-Bahn)"
+      "name" : "Flughafen BER (S-Bahn)"
    },
    {
       "ds100" : "BFHS",
@@ -24198,7 +24198,7 @@
          52.391062,
          13.51271
       ],
-      "name" : "Flughafen BER - Terminal 5 (Schönefeld)"
+      "name" : "Schönefeld(bei Berlin)"
    },
    {
       "ds100" : "XAWIF",
