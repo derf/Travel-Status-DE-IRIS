@@ -6381,7 +6381,7 @@
       "name" : "Benesov n. Ploucnici"
    },
    {
-      "ds100" : "OTBP",
+      "ds100" : "XTBUP",
       "eva" : 5400034,
       "latlong" : [
          49.779484,
@@ -20763,7 +20763,7 @@
       "name" : "Eickendorf"
    },
    {
-      "ds100" : "ONEJ",
+      "ds100" : "XNEJ",
       "eva" : 8400219,
       "latlong" : [
          50.771965,
@@ -27504,11 +27504,11 @@
       "name" : "Germersheim"
    },
    {
-      "ds100" : "RGEM",
+      "ds100" : "RGEH",
       "eva" : 8002239,
       "latlong" : [
-         49.219876,
-         8.379305
+         49.220274,
+         8.379277
       ],
       "name" : "Germersheim Mitte/Rhein"
    },
@@ -72945,11 +72945,11 @@
       "name" : "Sindelfingen"
    },
    {
-      "ds100" : "KSID",
+      "ds100" : "KSIU",
       "eva" : 8005575,
       "latlong" : [
-         50.903707,
-         6.681106
+         50.899333,
+         6.669816
       ],
       "name" : "Sindorf"
    },
