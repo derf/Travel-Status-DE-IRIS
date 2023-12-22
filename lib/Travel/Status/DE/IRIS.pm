@@ -6,7 +6,7 @@ use 5.014;
 
 no if $] >= 5.018, warnings => 'experimental::smartmatch';
 
-our $VERSION = '1.92';
+our $VERSION = '1.93';
 
 use Carp qw(confess cluck);
 use DateTime;
@@ -987,7 +987,7 @@ Non-blocking variant (EXPERIMENTAL):
 
 =head1 VERSION
 
-version 1.92
+version 1.93
 
 =head1 DESCRIPTION
 

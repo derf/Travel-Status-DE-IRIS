@@ -1,3 +1,7 @@
+Travel::Status::DE::IRIS 1.93 - Fri Dec 22 2023
+
+    * Update stations list
+
 Travel::Status::DE::IRIS 1.92 - Tue Dec 12 2023
 
     * Update meta database (accidentally omitted in 1.91)
