@@ -585,15 +585,6 @@
       "name" : "Hinter dem Fasanenhof, Kassel"
    },
    {
-      "ds100" : "XSHBS",
-      "eva" : 8506111,
-      "latlong" : [
-         47.496639074807,
-         9.46295013675514
-      ],
-      "name" : "Horn(Bodensee), SF"
-   },
-   {
       "ds100" : "FIN",
       "eva" : 8003077,
       "latlong" : [
@@ -738,15 +729,6 @@
       "name" : "Laußig(Düben)"
    },
    {
-      "ds100" : "XILVM",
-      "eva" : 8300606,
-      "latlong" : [
-         45.903146,
-         8.624521
-      ],
-      "name" : "Laveno Mombello"
-   },
-   {
       "ds100" : "XILI",
       "eva" : 8300157,
       "latlong" : [
@@ -835,15 +817,6 @@
          27.55064
       ],
       "name" : "Minsk-Passajirskii"
-   },
-   {
-      "ds100" : "XFMOD",
-      "eva" : 8700127,
-      "latlong" : [
-         45.193095,
-         6.658469
-      ],
-      "name" : "Modane"
    },
    {
       "ds100" : "D8705091",
@@ -1141,15 +1114,6 @@
          8.7570199823613
       ],
       "name" : "Pino transito"
-   },
-   {
-      "ds100" : "XIPI",
-      "eva" : 8300169,
-      "latlong" : [
-         43.707973,
-         10.398174
-      ],
-      "name" : "Pisa Centrale"
    },
    {
       "ds100" : "DPU",
@@ -1681,15 +1645,6 @@
          7.35000344
       ],
       "name" : "Wengern Ost"
-   },
-   {
-      "ds100" : "FSY",
-      "eva" : 8005762,
-      "latlong" : [
-         51.282462,
-         8.630247
-      ],
-      "name" : "Willingen-Stryck"
    },
    {
       "ds100" : "XPWIT",

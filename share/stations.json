@@ -36486,6 +36486,15 @@
       "name" : "Horn(Bodensee)"
    },
    {
+      "ds100" : "XSHBS",
+      "eva" : 8506111,
+      "latlong" : [
+         47.496844,
+         9.46307
+      ],
+      "name" : "Horn(Bodensee), SF"
+   },
+   {
       "ds100" : "EHBM",
       "eva" : 8003000,
       "latlong" : [
@@ -45477,6 +45486,15 @@
       "name" : "Laven st"
    },
    {
+      "ds100" : "XILVM",
+      "eva" : 8300606,
+      "latlong" : [
+         45.903146,
+         8.624521
+      ],
+      "name" : "Laveno Mombello"
+   },
+   {
       "ds100" : "OALH",
       "eva" : 8100194,
       "latlong" : [
@@ -48987,6 +49005,15 @@
       "name" : "Lübeck-Kücknitz"
    },
    {
+      "ds100" : "ALMO",
+      "eva" : 8003775,
+      "latlong" : [
+         53.836801,
+         10.629502
+      ],
+      "name" : "Lübeck-Moisling"
+   },
+   {
       "ds100" : "ALTK",
       "eva" : 8006704,
       "latlong" : [
@@ -51534,6 +51561,15 @@
       "name" : "Melsungen-Röhrenfurth"
    },
    {
+      "ds100" : "FMSB",
+      "eva" : 8003962,
+      "latlong" : [
+         51.146392,
+         9.561233
+      ],
+      "name" : "Melsungen-Schwarzenberg"
+   },
+   {
       "ds100" : "XFMEL",
       "eva" : 8700540,
       "latlong" : [
@@ -52666,6 +52702,15 @@
          12.819504
       ],
       "name" : "Mockrehna"
+   },
+   {
+      "ds100" : "XFMOD",
+      "eva" : 8700127,
+      "latlong" : [
+         45.193097,
+         6.658472
+      ],
+      "name" : "Modane"
    },
    {
       "ds100" : "XIMD",
@@ -62575,6 +62620,15 @@
          13.935361
       ],
       "name" : "Pirna-Copitz Nord"
+   },
+   {
+      "ds100" : "XIPI",
+      "eva" : 8300169,
+      "latlong" : [
+         43.707971,
+         10.398173
+      ],
+      "name" : "Pisa Centrale"
    },
    {
       "ds100" : "OTPS",
@@ -85246,6 +85300,15 @@
          8.603635
       ],
       "name" : "Willingen"
+   },
+   {
+      "ds100" : "FSY",
+      "eva" : 8005762,
+      "latlong" : [
+         51.282462,
+         8.630247
+      ],
+      "name" : "Willingen-Stryck"
    },
    {
       "ds100" : "FWLM",
