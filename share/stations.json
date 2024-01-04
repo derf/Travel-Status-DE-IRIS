@@ -38259,6 +38259,15 @@
       "name" : "Jablonne v Podjestedi"
    },
    {
+      "ds100" : "OPJ",
+      "eva" : 5100113,
+      "latlong" : [
+         53.392931,
+         19.161649
+      ],
+      "name" : "Jablonowo Pomorskie"
+   },
+   {
       "ds100" : "BJF",
       "eva" : 8011940,
       "latlong" : [
@@ -39202,6 +39211,15 @@
          11.589104
       ],
       "name" : "Kahla(Thür)"
+   },
+   {
+      "ds100" : "MKAI",
+      "eva" : 8003146,
+      "latlong" : [
+         47.483054,
+         11.115494
+      ],
+      "name" : "Kainzenbad"
    },
    {
       "ds100" : "XSKI",
@@ -42280,6 +42298,15 @@
          13.0693
       ],
       "name" : "Kovarska mestys"
+   },
+   {
+      "ds100" : "OPKWP",
+      "eva" : 5100125,
+      "latlong" : [
+         53.16421,
+         18.869706
+      ],
+      "name" : "Kowalewo Pomorskie"
    },
    {
       "ds100" : "OPKCW",
@@ -77166,6 +77193,15 @@
       "name" : "Taufkirchen an der Pram"
    },
    {
+      "ds100" : "XDTA",
+      "eva" : 8602526,
+      "latlong" : [
+         55.545012,
+         9.615707
+      ],
+      "name" : "Taulov st"
+   },
+   {
       "ds100" : "LTNH",
       "eva" : 8013095,
       "latlong" : [
@@ -78127,6 +78163,33 @@
          8.862079
       ],
       "name" : "Tortona"
+   },
+   {
+      "ds100" : "XPTO",
+      "eva" : 5100062,
+      "latlong" : [
+         53.000103,
+         18.614601
+      ],
+      "name" : "Torun Glowny"
+   },
+   {
+      "ds100" : "OPTOT",
+      "eva" : 5103810,
+      "latlong" : [
+         53.011924,
+         18.619779
+      ],
+      "name" : "Torun Miasto"
+   },
+   {
+      "ds100" : "OPTOW",
+      "eva" : 5103812,
+      "latlong" : [
+         53.02636,
+         18.633245
+      ],
+      "name" : "Torun Wschodni"
    },
    {
       "ds100" : "ATST",
@@ -81423,6 +81486,15 @@
       "name" : "Vitry le François Gare"
    },
    {
+      "ds100" : "XFVT",
+      "eva" : 8700520,
+      "latlong" : [
+         48.202506,
+         5.941861
+      ],
+      "name" : "Vittel"
+   },
+   {
       "ds100" : "XNVT",
       "eva" : 8400651,
       "latlong" : [
@@ -81880,6 +81952,15 @@
          9.35804
       ],
       "name" : "Wabern(Bz Kassel)"
+   },
+   {
+      "ds100" : "OPWBR",
+      "eva" : 5103950,
+      "latlong" : [
+         53.263451,
+         18.980229
+      ],
+      "name" : "Wabrzezno"
    },
    {
       "ds100" : "RWCH",

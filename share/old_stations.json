@@ -630,15 +630,6 @@
       "name" : "Jägerhaus"
    },
    {
-      "ds100" : "MKAI",
-      "eva" : 8003146,
-      "latlong" : [
-         47.482981,
-         11.116723
-      ],
-      "name" : "Kainzenbad"
-   },
-   {
       "ds100" : "XMK",
       "eva" : 5500092,
       "latlong" : [
@@ -1431,15 +1422,6 @@
       "name" : "Taggia"
    },
    {
-      "ds100" : "XDTA",
-      "eva" : 8602526,
-      "latlong" : [
-         55.545012,
-         9.615707
-      ],
-      "name" : "Taulov st"
-   },
-   {
       "ds100" : "XPTE",
       "eva" : 5100084,
       "latlong" : [
@@ -1573,15 +1555,6 @@
          12.024286
       ],
       "name" : "Viby Sjaelland st"
-   },
-   {
-      "ds100" : "XFVT",
-      "eva" : 8700520,
-      "latlong" : [
-         48.202506,
-         5.941861
-      ],
-      "name" : "Vittel"
    },
    {
       "ds100" : "XIVOG",
