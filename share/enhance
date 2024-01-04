@@ -5,8 +5,7 @@ use warnings;
 use 5.010;
 
 use File::Slurp qw(read_file write_file);
-use JSON;
-use LWP::UserAgent;
+use Travel::Status::DE::HAFAS;
 
 my $json_str = read_file('stations.json');
 my $stations = JSON->new->utf8->decode($json_str);
@@ -18,24 +17,19 @@ $ua->env_proxy;
 for my $station ( @{$stations} ) {
 	if ( not $station->{latlong} ) {
 		say "Requesting location for $station->{name} ...";
-		my $res = $ua->get(
-			sprintf( 'https://v6.db.transport.rest/stops/%07d',
-				$station->{eva} )
+		my $hafas = Travel::Status::DE::HAFAS->new(
+			locationSearch => $station->{name},
 		);
-		if ( $res->is_error ) {
-			say '    transport.rest returned error ' . $res->status_line;
+		if (not scalar $hafas->results) {
+			say '    not found';
+			next;
 		}
-		else {
-			my $content = $res->decoded_content;
-			my $json    = JSON->new->utf8->decode($content);
-			if ( $json and $json->{location} and $json->{location}{latitude} ) {
-				$station->{latlong} = [ $json->{location}{latitude},
-					$json->{location}{longitude} ];
-			}
-			else {
-				say '    transport.rest has no location';
-			}
+		my $result = ($hafas->results)[0];
+		if ($result->name ne $station->{name}) {
+			say '    name mismatch: got ' . $result->name;
+			next;
 		}
+		$station->{latlong} = [ $result->lat, $result->lon ];
 	}
 }
 
