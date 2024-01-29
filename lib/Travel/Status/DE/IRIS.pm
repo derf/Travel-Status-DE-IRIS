@@ -237,11 +237,11 @@ sub new {
 
 	for my $ref (@related_stations) {
 
-       # We (the parent) perform transfer processing, so child requests must not
-       # do it themselves. Otherwise, trains from child requests will be
-       # processed twice and may be lost.
-       # Similarly, child requests must not perform requests to related
-       # stations -- we're already doing that right now.
+		# We (the parent) perform transfer processing, so child requests must not
+		# do it themselves. Otherwise, trains from child requests will be
+		# processed twice and may be lost.
+		# Similarly, child requests must not perform requests to related
+		# stations -- we're already doing that right now.
 		my $ref_status = Travel::Status::DE::IRIS->new(
 			datetime       => $self->{datetime},
 			developer_mode => $self->{developer_mode},
@@ -798,13 +798,13 @@ sub parse_realtime {
 			my $msgid = $e_m->getAttribute('id');
 			my $ts    = $e_m->getAttribute('ts');
 
-           # 0 and 1 (with key "f") are related to canceled trains and
-           # do not appear to hold information (or at least none we can access).
-           # All observed cases of message ID 900 were related to bus
-           # connections ("Anschlussbus wartet"). We can't access which bus
-           # it refers to, so we don't show that either.
-           # ID 1000 is a generic free text message, which (as we lack access
-           # to the text itself) is not helpful either.
+			# 0 and 1 (with key "f") are related to canceled trains and
+			# do not appear to hold information (or at least none we can access).
+			# All observed cases of message ID 900 were related to bus
+			# connections ("Anschlussbus wartet"). We can't access which bus
+			# it refers to, so we don't show that either.
+			# ID 1000 is a generic free text message, which (as we lack access
+			# to the text itself) is not helpful either.
 			if ( defined $value and $value > 1 and $value < 100 ) {
 				$messages{$msgid} = [ $ts, $type, $value ];
 			}
@@ -824,9 +824,9 @@ sub parse_realtime {
 				type     => $e_ref->getAttribute('c'),    # S/ICE/ERB/...
 				line_no  => $e_ref->getAttribute('l'),    # 1 -> S1, ...
 
-               #unknown_t => $e_ref->getAttribute('t'),    # p
-               #unknown_o => $e_ref->getAttribute('o'),    # owner: 03/80/R2/...
-               # TODO ps='a' -> rerouted and normally unscheduled train?
+				#unknown_t => $e_ref->getAttribute('t'),    # p
+				#unknown_o => $e_ref->getAttribute('o'),    # owner: 03/80/R2/...
+				# TODO ps='a' -> rerouted and normally unscheduled train?
 			);
 		}
 		if ($e_ar) {
