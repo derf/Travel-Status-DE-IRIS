@@ -14265,6 +14265,15 @@
       "name" : "Castrop-Rauxel-Merklinde"
    },
    {
+      "ds100" : "XICO",
+      "eva" : 8300192,
+      "latlong" : [
+         43.959903,
+         12.745023
+      ],
+      "name" : "Cattolica-SG Gabicce"
+   },
+   {
       "ds100" : "XFCAV",
       "eva" : 8700888,
       "latlong" : [
@@ -19528,6 +19537,15 @@
          7.295765
       ],
       "name" : "Dülmen"
+   },
+   {
+      "ds100" : "HDUS",
+      "eva" : 8070358,
+      "latlong" : [
+         52.918346,
+         8.618534
+      ],
+      "name" : "Dünsen DHE"
    },
    {
       "ds100" : "KDN",
@@ -29275,6 +29293,15 @@
          8.493656
       ],
       "name" : "Groß Gerau-Dornheim"
+   },
+   {
+      "ds100" : "HGIP",
+      "eva" : 8070403,
+      "latlong" : [
+         52.939956,
+         8.63013
+      ],
+      "name" : "Groß Ippener DHE"
    },
    {
       "ds100" : "FGKA",
@@ -62100,6 +62127,15 @@
       "name" : "Pertoltice pod Ralskem"
    },
    {
+      "ds100" : "XIPE",
+      "eva" : 8300216,
+      "latlong" : [
+         43.905968,
+         12.904752
+      ],
+      "name" : "Pesaro"
+   },
+   {
       "ds100" : "XIPDG",
       "eva" : 8300124,
       "latlong" : [
@@ -66382,6 +66418,15 @@
          12.436965
       ],
       "name" : "Ribnitz-Damgarten West"
+   },
+   {
+      "ds100" : "XIRN",
+      "eva" : 8300225,
+      "latlong" : [
+         43.999231,
+         12.658493
+      ],
+      "name" : "Riccione"
    },
    {
       "ds100" : "RRIH",

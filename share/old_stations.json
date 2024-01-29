@@ -279,15 +279,6 @@
       "name" : "Burgos Rosa de Lima"
    },
    {
-      "ds100" : "XICO",
-      "eva" : 8300192,
-      "latlong" : [
-         43.959903,
-         12.745023
-      ],
-      "name" : "Cattolica-SG Gabicce"
-   },
-   {
       "ds100" : "XICTL",
       "eva" : 8300375,
       "latlong" : [
@@ -340,15 +331,6 @@
          6.808067
       ],
       "name" : "Duisburg-Bissingheim"
-   },
-   {
-      "ds100" : "HDUS",
-      "eva" : 8070358,
-      "latlong" : [
-         52.918346,
-         8.618534
-      ],
-      "name" : "Dünsen DHE"
    },
    {
       "ds100" : "NDW",
@@ -493,15 +475,6 @@
          15.229226
       ],
       "name" : "Gorzow Wlkp."
-   },
-   {
-      "ds100" : "HGIP",
-      "eva" : 8070403,
-      "latlong" : [
-         52.939956,
-         8.63013
-      ],
-      "name" : "Groß Ippener DHE"
    },
    {
       "ds100" : "LGRK",
@@ -1071,15 +1044,6 @@
       "name" : "Osternienburg"
    },
    {
-      "ds100" : "XIPE",
-      "eva" : 8300216,
-      "latlong" : [
-         43.905968,
-         12.904752
-      ],
-      "name" : "Pesaro"
-   },
-   {
       "ds100" : "WPE",
       "eva" : 8012627,
       "latlong" : [
@@ -1141,15 +1105,6 @@
          7.036514
       ],
       "name" : "Rech"
-   },
-   {
-      "ds100" : "XIRN",
-      "eva" : 8300225,
-      "latlong" : [
-         43.999231,
-         12.658493
-      ],
-      "name" : "Riccione"
    },
    {
       "ds100" : "WRIW",
