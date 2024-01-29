@@ -5,14 +5,13 @@ use warnings;
 use 5.014;
 use utf8;
 
-no if $] >= 5.018, warnings => 'experimental::smartmatch';
-
 use parent 'Class::Accessor';
 use Carp qw(cluck);
 use DateTime;
 use DateTime::Format::Strptime;
 use List::Compare;
-use List::MoreUtils qw(none uniq lastval);
+use List::Util      qw(any);
+use List::MoreUtils qw(uniq lastval);
 use Scalar::Util    qw(weaken);
 
 our $VERSION = '1.93';
@@ -642,8 +641,8 @@ sub delay_messages {
 	my @ret;
 
 	for my $id (@msgids) {
-		if ( my @superseded = $self->superseded_messages($id) ) {
-			@ret = grep { not( $_->[2] ~~ \@superseded ) } @ret;
+		for my $superseded ( $self->superseded_messages($id) ) {
+			@ret = grep { not( $_->[2] == $superseded ) } @ret;
 		}
 		my $msg = lastval { $_->[2] == $id } @msgs;
 		push( @ret, $msg );
@@ -697,12 +696,12 @@ sub qos_messages {
 
 	my @keys = sort keys %{ $self->{messages} };
 	my @msgs
-	  = grep { $_->[1] ~~ [qw[f q]] } map { $self->{messages}{$_} } @keys;
+	  = grep { $_->[1] =~ m{^[fq]$} } map { $self->{messages}{$_} } @keys;
 	my @ret;
 
 	for my $msg (@msgs) {
-		if ( my @superseded = $self->superseded_messages( $msg->[2] ) ) {
-			@ret = grep { not( $_->[2] ~~ \@superseded ) } @ret;
+		for my $superseded ( $self->superseded_messages( $msg->[2] ) ) {
+			@ret = grep { not( $_->[2] == $superseded ) } @ret;
 		}
 		@ret = grep { $_->[2] != $msg->[2] } @ret;
 
@@ -834,7 +833,7 @@ sub route_interesting {
 
 		while ( @via_show < $max_parts and @via_main ) {
 			my $stop = shift(@via_main);
-			if ( $stop ~~ \@via_show or $stop eq $last_stop ) {
+			if ( any { $stop eq $_ } @via_show or $stop eq $last_stop ) {
 				next;
 			}
 			push( @via_show, $stop );

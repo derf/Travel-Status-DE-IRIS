@@ -4,14 +4,12 @@ use strict;
 use warnings;
 use 5.014;
 
-no if $] >= 5.018, warnings => 'experimental::smartmatch';
-
 our $VERSION = '1.93';
 
 use Carp qw(confess cluck);
 use DateTime;
 use DateTime::Format::Strptime;
-use List::Util      qw(first);
+use List::Util      qw(none first);
 use List::MoreUtils qw(uniq);
 use List::UtilsBy   qw(uniq_by);
 use LWP::UserAgent;
@@ -554,8 +552,12 @@ sub get_station {
 		if ( $opt{recursive} and defined $station_node->getAttribute('meta') ) {
 			my @refs
 			  = uniq( split( m{ \| }x, $station_node->getAttribute('meta') ) );
-			@refs = grep { not( $_ ~~ \@seen or $_ ~~ \@queue ) } @refs;
-			push( @queue, @refs );
+			for my $ref (@refs) {
+				if ( none { $_ == $ref } @seen and none { $_ == $ref } @queue )
+				{
+					push( @queue, @refs );
+				}
+			}
 			$opt{root} = 0;
 		}
 	}
