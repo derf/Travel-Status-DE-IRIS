@@ -55,22 +55,21 @@ my %translation = (
 	20 => 'Tiere im Gleis',                           # xlsx: missing
 	21 => 'Warten auf Anschlussreisende',
 	22 => 'Witterungsbedingte Beeinträchtigung',
-	23 => 'Feuerwehreinsatz auf Bahngelände',         # xlsx: missing
+	23 => 'Betriebsstabilisierung',
 	24 => 'Verspätung im Ausland',
 	25 => 'Bereitstellung weiterer Wagen',
 	26 => 'Abhängen von Wagen',
 	28 => 'Gegenstände auf der Strecke',
 	29 => 'Ersatzverkehr mit Bus ist eingerichtet',
 	31 => 'Bauarbeiten',
-	32 => 'Verzögerung beim Ein-/Ausstieg'
-	,    # xlsx: "Unterstützung beim Ein- und Ausstieg"
+	32 => 'Längere Haltezeit am Bahnhof',
 	33 => 'Defekt an der Oberleitung',    # xlsx: "Reparatur an der Oberleitung"
 	34 => 'Defekt an einem Signal',       # xlsx: "Reparatur an einem Signal"
 	35 => 'Streckensperrung',
-	36 => 'Defekt am Zug',                # xlsx: "Reparatur am Zug"
-	37 => 'Defekt am Wagen',              # xlsx: missing
+	36 => 'Technische Störung am Zug',
+	37 => 'Kurzfristiger Fahrzeugausfall',
 	38 => 'Defekt an der Strecke',        # xlsx: "Reparatur an der Strecke"
-	39 => 'Anhängen von zusätzlichen Wagen',    # xlsx: missing
+	39 => 'Stau / Hohes Verkehrsaufkommen',
 	40 => 'Defektes Stellwerk',
 	41 => 'Defekt an einem Bahnübergang'
 	,    # xlsx: "Technischer Defekt an einem Bahnüburgang"
@@ -78,13 +77,10 @@ my %translation = (
 	,    # xlsx: "Vorübergehend verminderte Geschwindigkeit auf der Strecke"
 	43 => 'Verspätung eines vorausfahrenden Zuges',
 	44 => 'Warten auf einen entgegenkommenden Zug',
+	45 => 'Vorfahrt eines anderen Zuges',
+	46 => 'Vorfahrt eines anderen Zuges',
 
-	# TODO for Oct 2021: switch 45, 46 to "Vorfahrt eines anderen Zuges"
-	45 => 'Überholung durch anderen Zug', # xlsx: "Vorfahrt eines anderen Zuges"
-	46 => 'Warten auf freie Einfahrt',    # xlsx: "Vorfahrt eines anderen Zuges"
-
-	47 =>
-	  'Verspätete Bereitstellung', # xlsx: "Verspätete Bereitstellung des Zuges"
+	47 => 'Verspätete Bereitstellung',
 	48 => 'Verspätung aus vorheriger Fahrt',
 	49 => 'Kurzfristiger Personalausfall',
 	50 => 'Kurzfristige Erkrankung von Personal',
@@ -92,16 +88,16 @@ my %translation = (
 	52 => 'Streik',
 	53 => 'Unwetterauswirkungen',
 	54 => 'Verfügbarkeit der Gleise derzeit eingeschränkt',
-	55 => 'Defekt an einem anderen Zug',
+	55 => 'Technischer Defekt an einem anderen Zug',
 	56 => 'Warten auf Anschlussreisende',                     # aus einem Bus
 	57 => 'Zusätzlicher Halt', # xslx: "Zusätzlicher Halt zum Ein- und Ausstieg"
 	58 => 'Umleitung',         # xlsx: "Umleitung des Zuges"
 	59 => 'Schnee und Eis',
 	60 => 'Witterungsbedingt verminderte Geschwindigkeit',
 	61 => 'Defekte Tür',
-	62 => 'Behobener Defekt am Zug',                         # r 36
+	62 => 'Behobener Defekt am Zug',
 	63 => 'Technische Untersuchung am Zug',
-	64 => 'Defekt an einer Weiche',    # xlsx: "Reparatur an der Weiche"
+	64 => 'Defekt an einer Weiche',
 	65 => 'Erdrutsch',
 	66 => 'Hochwasser',
 	67 => 'Behördliche Maßnahme',
@@ -111,10 +107,10 @@ my %translation = (
 	70 => 'WLAN nicht verfügbar',
 	71 => 'WLAN in einzelnen Wagen nicht verfügbar',
 	72 => 'Info/Entertainment nicht verfügbar',
-	73 => 'Heute: Mehrzweckabteil vorne',                   # r 74
-	74 => 'Heute: Mehrzweckabteil hinten',                  # r 73
-	75 => 'Heute: 1. Klasse vorne',                         # r 76
-	76 => 'Heute: 1. Klasse hinten',                        # r 75
+	73 => 'Heute: Mehrzweckabteil vorne',
+	74 => 'Heute: Mehrzweckabteil hinten',
+	75 => 'Heute: 1. Klasse vorne',
+	76 => 'Heute: 1. Klasse hinten',
 	77 => '1. Klasse fehlt',
 	78 => 'Ersatzverkehr mit Bus ist eingerichtet',
 	79 => 'Mehrzweckabteil fehlt',
@@ -122,20 +118,20 @@ my %translation = (
 	81 => 'Fahrzeugtausch',
 	82 => 'Mehrere Wagen fehlen',
 	83 => 'Defekte fahrzeuggebundene Einstiegshilfe',
-	84 => 'Zug verkehrt richtig gereiht',                   # r 80 82 85
+	84 => 'Zug verkehrt richtig gereiht',
 	85 => 'Ein Wagen fehlt',
 	86 => 'Gesamter Zug ohne Reservierung',
 	87 => 'Einzelne Wagen ohne Reservierung',
-	88 => 'Keine Qualitätsmängel',    # r 80 82 83 85 86 87 90 91 92 93 96 97 98
-	89 => 'Reservierungen sind wieder vorhanden',    # -> 86 87
+	88 => 'Keine Qualitätsmängel',
+	89 => 'Reservierungen sind wieder vorhanden',
 	90 => 'Kein gastronomisches Angebot',
 	91 => 'Fahrradmitnahme nicht möglich',
 	92 => 'Eingeschränkte Fahrradbeförderung',
 	93 => 'Behindertengerechte Einrichtung fehlt',
 	94 => 'Ersatzbewirtschaftung',
 	95 => 'Universal-WC fehlt',
-	96 => 'Der Zug ist stark überbesetzt',           # r 97
-	97 => 'Der Zug ist überbesetzt',                 # r 96
+	96 => 'Überbesetzung mit Kulanzleistungen',
+	97 => 'Überbesetzung ohne Kulanzleistungen',
 	98 => 'Sonstige Qualitätsmängel',
 	99 => 'Verzögerungen im Betriebsablauf',
 
@@ -282,11 +278,11 @@ sub superseded_messages {
 		74 => [73],
 		75 => [76],
 		76 => [75],
-		84 => [ 80, 82, 85 ],
-		88 => [ 80, 82, 83, 85, 86, 87, 90, 91, 92, 93, 96, 97, 98 ],
+		84 => [ 73, 74, 75, 76, 80 ],
+		88 => [
+			70, 71, 72, 77, 79, 82, 83, 85, 90, 91, 92, 93, 94, 95, 96, 97, 98
+		],
 		89 => [ 86, 87 ],
-		96 => [97],
-		97 => [96],
 	);
 
 	return @{ $superseded{$msg} // [] };
