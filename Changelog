@@ -1,3 +1,7 @@
+Travel::Status::DE::IRIS 1.95 - Thu Feb 22 2024
+
+    * Update qos/delay message texts
+
 Travel::Status::DE::IRIS 1.94 - Mon Jan 29 2024
 
     * Update stations list

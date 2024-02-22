@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use 5.014;
 
-our $VERSION = '1.94';
+our $VERSION = '1.95';
 
 use Carp qw(confess cluck);
 use DateTime;
@@ -989,7 +989,7 @@ Non-blocking variant (EXPERIMENTAL):
 
 =head1 VERSION
 
-version 1.94
+version 1.95
 
 =head1 DESCRIPTION
 
