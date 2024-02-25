@@ -29871,6 +29871,15 @@
       "name" : "Gräfenroda"
    },
    {
+      "ds100" : "LGRK",
+      "eva" : 8011685,
+      "latlong" : [
+         51.602127,
+         11.404255
+      ],
+      "name" : "Gräfenstuhl-Klippmühle"
+   },
+   {
       "ds100" : "UGTA",
       "eva" : 8011687,
       "latlong" : [
@@ -41571,6 +41580,15 @@
       "name" : "Klostermansfeld"
    },
    {
+      "ds100" : "LKMR",
+      "eva" : 8010204,
+      "latlong" : [
+         51.590999,
+         11.498588
+      ],
+      "name" : "Klostermansfeld Randsiedlung"
+   },
+   {
       "ds100" : "RKLB",
       "eva" : 8003343,
       "latlong" : [
@@ -50146,6 +50164,15 @@
          8.482603
       ],
       "name" : "Mannheim-Waldhof"
+   },
+   {
+      "ds100" : "LMAS",
+      "eva" : 8012300,
+      "latlong" : [
+         51.600321,
+         11.452086
+      ],
+      "name" : "Mansfeld(Südharz)"
    },
    {
       "ds100" : "XLMN",
@@ -60892,6 +60919,15 @@
          12.041588
       ],
       "name" : "Ostermünchen"
+   },
+   {
+      "ds100" : "LOST",
+      "eva" : 8012570,
+      "latlong" : [
+         51.78353,
+         12.030632
+      ],
+      "name" : "Osternienburg"
    },
    {
       "ds100" : "HOTL",
@@ -80476,6 +80512,15 @@
          11.76438
       ],
       "name" : "Vaterstetten"
+   },
+   {
+      "ds100" : "LVT",
+      "eva" : 8013182,
+      "latlong" : [
+         51.597687,
+         11.428993
+      ],
+      "name" : "Vatterode"
    },
    {
       "ds100" : "HVEC",

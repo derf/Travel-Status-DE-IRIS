@@ -477,15 +477,6 @@
       "name" : "Gorzow Wlkp."
    },
    {
-      "ds100" : "LGRK",
-      "eva" : 8011685,
-      "latlong" : [
-         51.602127,
-         11.404255
-      ],
-      "name" : "Gräfenstuhl-Klippmühle"
-   },
-   {
       "ds100" : "TGSS",
       "eva" : 8007074,
       "latlong" : [
@@ -621,15 +612,6 @@
       "name" : "Kleinforst Rosensee"
    },
    {
-      "ds100" : "LKMR",
-      "eva" : 8010204,
-      "latlong" : [
-         51.590999,
-         11.498588
-      ],
-      "name" : "Klostermansfeld Randsiedlung"
-   },
-   {
       "ds100" : "LKNF",
       "eva" : 8012059,
       "latlong" : [
@@ -709,15 +691,6 @@
          16.485516
       ],
       "name" : "Malczyce"
-   },
-   {
-      "ds100" : "LMAS",
-      "eva" : 8012300,
-      "latlong" : [
-         51.600321,
-         11.452086
-      ],
-      "name" : "Mansfeld(Südharz)"
    },
    {
       "ds100" : "DMG",
@@ -1033,15 +1006,6 @@
          13.110174
       ],
       "name" : "Oschatz Südbf"
-   },
-   {
-      "ds100" : "LOST",
-      "eva" : 8012570,
-      "latlong" : [
-         51.783518,
-         12.03059
-      ],
-      "name" : "Osternienburg"
    },
    {
       "ds100" : "WPE",
@@ -1474,15 +1438,6 @@
          12.514324
       ],
       "name" : "Valby(Koebenhavn)"
-   },
-   {
-      "ds100" : "LVT",
-      "eva" : 8013182,
-      "latlong" : [
-         51.597687,
-         11.428993
-      ],
-      "name" : "Vatterode"
    },
    {
       "ds100" : "LVTT",
