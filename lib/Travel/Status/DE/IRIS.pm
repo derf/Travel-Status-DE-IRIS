@@ -554,7 +554,7 @@ sub get_station {
 			for my $ref (@refs) {
 				if ( none { $_ == $ref } @seen and none { $_ == $ref } @queue )
 				{
-					push( @queue, @refs );
+					push( @queue, $ref );
 				}
 			}
 			$opt{root} = 0;
