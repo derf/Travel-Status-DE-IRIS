@@ -1,3 +1,10 @@
+Travel::Status::DE::IRIS 1.96 - Sun Feb 25 2024
+
+    * Re-add Wipperliese stations (service resumes on March 29th, 2024)
+    * IRIS->new / get_station: correctly handle non-EVA station identifiers
+      in with_related mode. Previously, these caused (harmless, but annoying)
+      "isn't numeric in numeric eq (==)" warnings.
+
 Travel::Status::DE::IRIS 1.95 - Thu Feb 22 2024
 
     * Update qos/delay message texts
