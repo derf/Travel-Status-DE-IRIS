@@ -471,7 +471,6 @@ sub get_station {
 
 	while ( @queue and $iter_depth < 12 ) {
 		my $station = shift(@queue);
-		push( @seen, $station );
 		$iter_depth++;
 
 		my ( $raw, $err )
