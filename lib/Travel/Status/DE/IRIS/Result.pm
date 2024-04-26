@@ -25,7 +25,7 @@ Travel::Status::DE::IRIS::Result->mk_ro_accessors(
 	  realtime_xml route_start route_end
 	  sched_arrival sched_departure sched_platform sched_route_start
 	  sched_route_end start
-	  station station_uic
+	  station station_eva station_uic
 	  stop_no time train_id train_no transfer type
 	  unknown_t unknown_o wing_id wing_of)
 );
@@ -1284,7 +1284,7 @@ DateTime(3pm) object for the scheduled start of the train on its route
 
 Name of the station this train result belongs to.
 
-=item $result->station_uic
+=item $result->station_eva
 
 EVA number of the station this train result belongs to.
 This is often, but not always, identical with the UIC station number.

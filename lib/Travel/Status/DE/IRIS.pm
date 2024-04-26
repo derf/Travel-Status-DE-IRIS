@@ -68,17 +68,19 @@ sub new_p {
 		return $promise->reject('station identifier is ambiguous');
 	}
 
+	# "uic" is deprecated
 	$self->{station} = {
 		ds100 => $candidates[0][0],
+		eva   => $candidates[0][2],
 		name  => $candidates[0][1],
 		uic   => $candidates[0][2],
 	};
 	$self->{related_stations} = [];
 
-	my @queue = ( $self->{station}{uic} );
+	my @queue = ( $self->{station}{eva} );
 	my @related_reqs;
 	my @related_stations;
-	my %seen       = ( $self->{station}{uic} => 1 );
+	my %seen       = ( $self->{station}{eva} => 1 );
 	my $iter_depth = 0;
 
 	while ( @queue and $iter_depth < 12 and $opt{with_related} ) {
@@ -97,10 +99,13 @@ sub new_p {
 		@candidates = $opt{get_station}($eva);
 
 		if ( @candidates == 1 ) {
+
+			# "uic" is deprecated
 			push(
 				@{ $self->{related_stations} },
 				{
 					ds100 => $candidates[0][0],
+					eva   => $candidates[0][2],
 					name  => $candidates[0][1],
 					uic   => $candidates[0][2],
 				}
@@ -110,7 +115,7 @@ sub new_p {
 
 	my $dt_req = $self->{datetime}->clone;
 	my @timetable_reqs
-	  = ( $self->get_timetable_p( $self->{station}{uic}, $dt_req ) );
+	  = ( $self->get_timetable_p( $self->{station}{eva}, $dt_req ) );
 
 	for my $eva (@related_stations) {
 		push( @timetable_reqs, $self->get_timetable_p( $eva, $dt_req ) );
@@ -119,7 +124,7 @@ sub new_p {
 	for ( 1 .. $lookahead_steps ) {
 		$dt_req->add( hours => 1 );
 		push( @timetable_reqs,
-			$self->get_timetable_p( $self->{station}{uic}, $dt_req ) );
+			$self->get_timetable_p( $self->{station}{eva}, $dt_req ) );
 		for my $eva (@related_stations) {
 			push( @timetable_reqs, $self->get_timetable_p( $eva, $dt_req ) );
 		}
@@ -129,7 +134,7 @@ sub new_p {
 	for ( 1 .. $lookbehind_steps ) {
 		$dt_req->subtract( hours => 1 );
 		push( @timetable_reqs,
-			$self->get_timetable_p( $self->{station}{uic}, $dt_req ) );
+			$self->get_timetable_p( $self->{station}{eva}, $dt_req ) );
 		for my $eva (@related_stations) {
 			push( @timetable_reqs, $self->get_timetable_p( $eva, $dt_req ) );
 		}
@@ -138,7 +143,7 @@ sub new_p {
 	$self->{promise}->all(@timetable_reqs)->then(
 		sub {
 			my @realtime_reqs
-			  = ( $self->get_realtime_p( $self->{station}{uic} ) );
+			  = ( $self->get_realtime_p( $self->{station}{eva} ) );
 			for my $eva (@related_stations) {
 				push( @realtime_reqs, $self->get_realtime_p( $eva, $dt_req ) );
 			}
@@ -246,7 +251,7 @@ sub new {
 			iris_base      => $self->{iris_base},
 			lookahead      => $self->{lookahead},
 			lookbehind     => $self->{lookbehind},
-			station        => $ref->{uic},
+			station        => $ref->{eva},
 			main_cache     => $self->{main_cache},
 			realtime_cache => $self->{rt_cache},
 			strptime_obj   => $self->{strptime_obj},
@@ -264,15 +269,15 @@ sub new {
 	}
 
 	my $dt_req = $self->{datetime}->clone;
-	$self->get_timetable( $self->{station}{uic}, $dt_req );
+	$self->get_timetable( $self->{station}{eva}, $dt_req );
 	for ( 1 .. $lookahead_steps ) {
 		$dt_req->add( hours => 1 );
-		$self->get_timetable( $self->{station}{uic}, $dt_req );
+		$self->get_timetable( $self->{station}{eva}, $dt_req );
 	}
 	$dt_req = $self->{datetime}->clone;
 	for ( 1 .. $lookbehind_steps ) {
 		$dt_req->subtract( hours => 1 );
-		$self->get_timetable( $self->{station}{uic}, $dt_req );
+		$self->get_timetable( $self->{station}{eva}, $dt_req );
 	}
 
 	$self->get_realtime;
@@ -435,9 +440,10 @@ sub get_station_p {
 			}
 			$promise->resolve(
 				{
-					uic   => $station_node->getAttribute('eva'),
-					name  => $station_node->getAttribute('name'),
 					ds100 => $station_node->getAttribute('ds100'),
+					eva   => $station_node->getAttribute('eva'),
+					name  => $station_node->getAttribute('name'),
+					uic   => $station_node->getAttribute('eva'),
 				}
 			);
 			return;
@@ -538,14 +544,15 @@ sub get_station {
 		push(
 			@ret,
 			{
-				uic   => $station_node->getAttribute('eva'),
-				name  => $station_node->getAttribute('name'),
 				ds100 => $station_node->getAttribute('ds100'),
+				eva   => $station_node->getAttribute('eva'),
+				name  => $station_node->getAttribute('name'),
+				uic   => $station_node->getAttribute('eva'),
 			}
 		);
 
 		if ( $self->{developer_mode} ) {
-			printf( " -> %s (%s / %s)\n", @{ $ret[-1] }{qw{name uic ds100}} );
+			printf( " -> %s (%s / %s)\n", @{ $ret[-1] }{qw{name eva ds100}} );
 		}
 
 		if ( $opt{recursive} and defined $station_node->getAttribute('meta') ) {
@@ -566,13 +573,13 @@ sub get_station {
 			  . "This is probably a bug" );
 	}
 
-	@ret = uniq_by { $_->{uic} } @ret;
+	@ret = uniq_by { $_->{eva} } @ret;
 
 	return @ret;
 }
 
 sub add_result {
-	my ( $self, $station_name, $station_uic, $s ) = @_;
+	my ( $self, $station_name, $station_eva, $s ) = @_;
 
 	my $id   = $s->getAttribute('id');
 	my $e_tl = ( $s->findnodes( $self->{xp_tl} ) )[0];
@@ -590,7 +597,8 @@ sub add_result {
 		train_no     => $e_tl->getAttribute('n'), # dep number
 		type         => $e_tl->getAttribute('c'), # S/ICE/ERB/...
 		station      => $station_name,
-		station_uic  => $station_uic + 0,         # UIC IDs are numbers
+		station_eva  => $station_eva + 0,         # EVA IDs are numbers
+		station_uic  => $station_eva + 0,         # deprecated
 		strptime_obj => $self->{strptime_obj},
 
 		#unknown_t    => $e_tl->getAttribute('t'),    # p
@@ -741,7 +749,7 @@ sub get_realtime_p {
 sub get_realtime {
 	my ($self) = @_;
 
-	my $eva = $self->{station}{uic};
+	my $eva = $self->{station}{eva};
 
 	my ( $raw, $err )
 	  = $self->get_with_cache( $self->{rt_cache},
@@ -1141,7 +1149,7 @@ Returns a list of hashes describing related stations whose
 arrivals/departures are included in B<results>. Only useful when setting
 B<with_related> to a true value, see its documentation above for details.
 
-Each hash contains the keys B<uic> (EVA number; often same as UIC station ID),
+Each hash contains the keys B<eva> (EVA number; often same as UIC station ID),
 B<name> (station name), and B<ds100> (station code). Note that stations
 returned by B<related_stations> are not necessarily known to
 Travel::Status::DE::IRIS::Stations(3pm).
