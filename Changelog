@@ -1,3 +1,11 @@
+Travel::Status::DE::IRIS 1.97 - Mon May 27 2024
+
+    * Update stations list
+    * Add deprecation notice. The backend service that this module relies on
+      is deprecated and scheduled for decommissioning. There is no successor.
+      Do not use this module for new projects and be prepared to migrate away
+      from it sooner rather than later.
+
 Travel::Status::DE::IRIS 1.96 - Sun Feb 25 2024
 
     * Re-add Wipperliese stations (service resumes on March 29th, 2024)
