@@ -63,15 +63,6 @@
       "name" : "Altmügeln"
    },
    {
-      "ds100" : "TAM M",
-      "eva" : 8079075,
-      "latlong" : [
-         48.577851,
-         9.873958
-      ],
-      "name" : "Amstetten(W) Lokalbahn"
-   },
-   {
       "ds100" : "XIA",
       "eva" : 8300186,
       "latlong" : [
@@ -351,22 +342,13 @@
       "name" : "Ebbsfleet International Eurostar"
    },
    {
-      "ds100" : "NEHM",
-      "eva" : 8070856,
+      "ds100" : "OME",
+      "eva" : 5500460,
       "latlong" : [
-         49.868639,
-         10.152516
+         47.462622,
+         21.488453
       ],
-      "name" : "Eisenheim"
-   },
-   {
-      "ds100" : "NESD",
-      "eva" : 8070857,
-      "latlong" : [
-         49.866751,
-         10.166081
-      ],
-      "name" : "Escherndorf-Vogelsburg"
+      "name" : "Ebes"
    },
    {
       "ds100" : "LEU",
@@ -432,15 +414,6 @@
       "name" : "Friedrichswalde(bei Eberswalde)"
    },
    {
-      "ds100" : "LFIO",
-      "eva" : 8011587,
-      "latlong" : [
-         51.59775,
-         11.323154
-      ],
-      "name" : "Friesdorf Ost"
-   },
-   {
       "ds100" : "UGOT",
       "eva" : 8011617,
       "latlong" : [
@@ -459,15 +432,6 @@
       "name" : "Gera-Liebschwitz"
    },
    {
-      "ds100" : "TGSN",
-      "eva" : 8007075,
-      "latlong" : [
-         48.624999,
-         10.02228
-      ],
-      "name" : "Gerstetten"
-   },
-   {
       "ds100" : "XPGW",
       "eva" : 5100014,
       "latlong" : [
@@ -475,15 +439,6 @@
          15.229226
       ],
       "name" : "Gorzow Wlkp."
-   },
-   {
-      "ds100" : "TGSS",
-      "eva" : 8007074,
-      "latlong" : [
-         48.639939,
-         9.957953
-      ],
-      "name" : "Gussenstadt"
    },
    {
       "ds100" : "HHAD",
@@ -576,15 +531,6 @@
       "name" : "Iselle transito"
    },
    {
-      "ds100" : "XAXRB",
-      "eva" : 7900043,
-      "latlong" : [
-         46.481412,
-         14.020333
-      ],
-      "name" : "Jesenice(Gr)"
-   },
-   {
       "ds100" : "MJGS",
       "eva" : 8003106,
       "latlong" : [
@@ -628,15 +574,6 @@
          12.186472
       ],
       "name" : "Koege st"
-   },
-   {
-      "ds100" : "XDKS",
-      "eva" : 8601343,
-      "latlong" : [
-         55.3572,
-         11.135127
-      ],
-      "name" : "Korsoer st"
    },
    {
       "ds100" : "KKRZ",
@@ -837,15 +774,6 @@
       "name" : "Neuhausen(b Landshut)"
    },
    {
-      "ds100" : "NNHM",
-      "eva" : 8071117,
-      "latlong" : [
-         48.726523,
-         13.506715
-      ],
-      "name" : "Neuhausmühle"
-   },
-   {
       "ds100" : "WNRS",
       "eva" : 8080175,
       "latlong" : [
@@ -907,15 +835,6 @@
          12.516319
       ],
       "name" : "Ny Ellebjerg st"
-   },
-   {
-      "ds100" : "XDNY",
-      "eva" : 8601739,
-      "latlong" : [
-         55.31407,
-         10.802921
-      ],
-      "name" : "Nyborg st"
    },
    {
       "ds100" : "XDNK",
@@ -1044,13 +963,22 @@
       "name" : "Plauen(V) unt Bf"
    },
    {
-      "ds100" : "NPM",
-      "eva" : 8070858,
+      "ds100" : "APSH",
+      "eva" : 8007318,
       "latlong" : [
-         49.864108,
-         10.123373
+         54.364899,
+         10.291408
       ],
-      "name" : "Prosselsheim"
+      "name" : "Probsteierhagen"
+   },
+   {
+      "ds100" : "OPPSY",
+      "eva" : 5102920,
+      "latlong" : [
+         49.975601,
+         18.953477
+      ],
+      "name" : "Pszczyna"
    },
    {
       "ds100" : "ERAE",
@@ -1188,15 +1116,6 @@
       "name" : "Savona"
    },
    {
-      "ds100" : "TSKS",
-      "eva" : 8007072,
-      "latlong" : [
-         48.612504,
-         9.910949
-      ],
-      "name" : "Schalkstetten"
-   },
-   {
       "ds100" : "MSLG",
       "eva" : 8070811,
       "latlong" : [
@@ -1296,15 +1215,6 @@
       "name" : "Steinwiesen Bf"
    },
    {
-      "ds100" : "TSBH",
-      "eva" : 8007071,
-      "latlong" : [
-         48.59422,
-         9.920801
-      ],
-      "name" : "Stubersheim"
-   },
-   {
       "ds100" : "XJST",
       "eva" : 7200012,
       "latlong" : [
@@ -1348,15 +1258,6 @@
          23.601227
       ],
       "name" : "Terespol"
-   },
-   {
-      "ds100" : "NTFB",
-      "eva" : 8026544,
-      "latlong" : [
-         48.614284,
-         13.423025
-      ],
-      "name" : "Tiefenbach(b Passau)"
    },
    {
       "ds100" : "XDTP",
@@ -1440,13 +1341,13 @@
       "name" : "Valby(Koebenhavn)"
    },
    {
-      "ds100" : "LVTT",
-      "eva" : 8079152,
+      "ds100" : "XDVJ",
+      "eva" : 8602756,
       "latlong" : [
-         51.598127,
-         11.412183
+         55.7066917,
+         9.5365649
       ],
-      "name" : "Vatteröder Teich"
+      "name" : "Vejle st"
    },
    {
       "ds100" : "XIVE",
@@ -1476,15 +1377,6 @@
       "name" : "Voghera"
    },
    {
-      "ds100" : "NVOLA",
-      "eva" : 8070860,
-      "latlong" : [
-         49.864306,
-         10.21722
-      ],
-      "name" : "Volkach-Astheim"
-   },
-   {
       "ds100" : "XDVB",
       "eva" : 8602903,
       "latlong" : [
@@ -1510,15 +1402,6 @@
          9.793359
       ],
       "name" : "Wagersrott"
-   },
-   {
-      "ds100" : "TWHS",
-      "eva" : 8007073,
-      "latlong" : [
-         48.635193,
-         9.907731
-      ],
-      "name" : "Waldhausen(b Geislingen)"
    },
    {
       "ds100" : "EWGO",
