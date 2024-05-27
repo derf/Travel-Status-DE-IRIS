@@ -9,7 +9,7 @@ train stations via text and JSON output.
 
 ## DEPRECATION NOTICE
 
-As of may 2024, the backend service that this utility relies on is deprecated
+As of May 2024, the backend service that this utility relies on is deprecated
 and may cease operation in the near future. There is no immediate successor.
 Hence, db-iris and Travel::Status::DE::IRIS are no longer actively maintained.
 There is no promise that issues and merge requests will be reviewed or merged.

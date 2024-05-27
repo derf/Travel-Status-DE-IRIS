@@ -1000,7 +1000,7 @@ version 1.96
 
 =head1 DEPRECATION NOTICE
 
-As of may 2024, the backend service that this module relies on is deprecated
+As of May 2024, the backend service that this module relies on is deprecated
 and may cease operation in the near future. There is no immediate successor.
 Hence, Travel::Status::DE::IRIS is no longer actively maintained.  There is no
 promise that issues and merge requests will be reviewed or merged.
