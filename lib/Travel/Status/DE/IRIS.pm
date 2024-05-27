@@ -998,6 +998,17 @@ Non-blocking variant (EXPERIMENTAL):
 
 version 1.96
 
+=head1 DEPRECATION NOTICE
+
+As of may 2024, the backend service that this module relies on is deprecated
+and may cease operation in the near future. There is no immediate successor.
+Hence, Travel::Status::DE::IRIS is no longer actively maintained.  There is no
+promise that issues and merge requests will be reviewed or merged.
+
+The Travel::Status::DE::HAFAS(3pm) module provides similar features. However,
+its default "DB" backend is also deprecated. There is no migration path to a
+Deutsche Bahn departure monitor that is not deprecated at the moment.
+
 =head1 DESCRIPTION
 
 Travel::Status::DE::IRIS is an unofficial interface to IRIS based web
