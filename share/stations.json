@@ -10836,6 +10836,15 @@
       "name" : "Bornholte(b Verl)"
    },
    {
+      "ds100" : "XZBO",
+      "eva" : 7900080,
+      "latlong" : [
+         45.921322,
+         14.367971
+      ],
+      "name" : "Borovnica"
+   },
+   {
       "ds100" : "OTBVE",
       "eva" : 5400548,
       "latlong" : [
@@ -37890,6 +37899,15 @@
       "name" : "Ilfeld Schreiberwiese"
    },
    {
+      "ds100" : "XZIB",
+      "eva" : 7900029,
+      "latlong" : [
+         45.569278,
+         14.236037
+      ],
+      "name" : "Ilirska Bistrica"
+   },
+   {
       "ds100" : "MILT",
       "eva" : 8003057,
       "latlong" : [
@@ -60948,6 +60966,15 @@
       "name" : "Oosterbeek"
    },
    {
+      "ds100" : "XROM",
+      "eva" : 7800002,
+      "latlong" : [
+         45.364701,
+         14.320976
+      ],
+      "name" : "Opatija Matulji"
+   },
+   {
       "ds100" : "XSZP",
       "eva" : 8503340,
       "latlong" : [
@@ -63153,6 +63180,15 @@
       "name" : "Pittenhart"
    },
    {
+      "ds100" : "XZPV",
+      "eva" : 7900011,
+      "latlong" : [
+         45.675252,
+         14.191378
+      ],
+      "name" : "Pivka"
+   },
+   {
       "ds100" : "WPZ",
       "eva" : 8010273,
       "latlong" : [
@@ -63772,6 +63808,15 @@
          11.358849
       ],
       "name" : "Postbauer-Heng"
+   },
+   {
+      "ds100" : "XZPJ",
+      "eva" : 7900012,
+      "latlong" : [
+         45.773099,
+         14.221465
+      ],
+      "name" : "Postojna"
    },
    {
       "ds100" : "RKAP",
@@ -67149,6 +67194,15 @@
       "name" : "Riffelriß, Grainau"
    },
    {
+      "ds100" : "XRR",
+      "eva" : 7800013,
+      "latlong" : [
+         45.330138,
+         14.430339
+      ],
+      "name" : "Rijeka"
+   },
+   {
       "ds100" : "ONRIS",
       "eva" : 8400538,
       "latlong" : [
@@ -70000,6 +70054,15 @@
          21.360366
       ],
       "name" : "Sap"
+   },
+   {
+      "ds100" : "XRSJ",
+      "eva" : 7800067,
+      "latlong" : [
+         45.47704,
+         14.244352
+      ],
+      "name" : "Sapjane"
    },
    {
       "ds100" : "XSSR",
