@@ -11232,6 +11232,15 @@
       "name" : "Bratislava hl.st."
    },
    {
+      "ds100" : "XYBPR",
+      "eva" : 5600578,
+      "latlong" : [
+         48.184222,
+         17.134474
+      ],
+      "name" : "Bratislava predmestie"
+   },
+   {
       "ds100" : "XYBZ",
       "eva" : 5600582,
       "latlong" : [
