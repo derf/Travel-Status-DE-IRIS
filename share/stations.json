@@ -85302,6 +85302,15 @@
       "name" : "Wiebelskirchen"
    },
    {
+      "ds100" : "DWID",
+      "eva" : 8013301,
+      "latlong" : [
+         51.393164,
+         14.039245
+      ],
+      "name" : "Wiednitz"
+   },
+   {
       "ds100" : "AWMD",
       "eva" : 8007059,
       "latlong" : [
