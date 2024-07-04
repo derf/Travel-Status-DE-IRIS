@@ -3060,6 +3060,15 @@
       "name" : "Auersmacher"
    },
    {
+      "ds100" : "UAS",
+      "eva" : 8011060,
+      "latlong" : [
+         51.10204,
+         11.590152
+      ],
+      "name" : "Auerstedt"
+   },
+   {
       "ds100" : "FKNZA",
       "eva" : 714006,
       "latlong" : [
@@ -4734,6 +4743,15 @@
       "name" : "Bad Sulza"
    },
    {
+      "ds100" : "UBSN",
+      "eva" : 8011086,
+      "latlong" : [
+         51.097446,
+         11.628194
+      ],
+      "name" : "Bad Sulza Nord"
+   },
+   {
       "ds100" : "RSAE",
       "eva" : 8005255,
       "latlong" : [
@@ -5571,7 +5589,7 @@
       "name" : "Barmstedt Brunnenstr"
    },
    {
-      "ds100" : "ONBAC",
+      "ds100" : "XNBC",
       "eva" : 8400091,
       "latlong" : [
          52.139862,
@@ -7065,11 +7083,11 @@
       "name" : "Berlin Gesundbrunnen(S)"
    },
    {
-      "ds100" : "BGFB",
+      "ds100" : "BGSS",
       "eva" : 8089011,
       "latlong" : [
-         52.54002,
-         13.439561
+         52.5399,
+         13.439314
       ],
       "name" : "Berlin Greifswalder Str"
    },
@@ -7893,11 +7911,11 @@
       "name" : "Berlin-Lichterfelde Süd"
    },
    {
-      "ds100" : "BLIW",
+      "ds100" : "BLWE",
       "eva" : 8089071,
       "latlong" : [
-         52.44335,
-         13.293732
+         52.441199,
+         13.288007
       ],
       "name" : "Berlin-Lichterfelde West"
    },
@@ -16461,16 +16479,16 @@
       "name" : "Daxlanden Dornröschenweg, Karlsruhe"
    },
    {
-      "ds100" : "PQKDC",
+      "ds100" : "PQKDD",
       "eva" : 371406,
       "latlong" : [
-         48.99283,
-         8.335364
+         48.992847,
+         8.335293
       ],
       "name" : "Daxlanden Dornröschenweg, Karlsruhe"
    },
    {
-      "ds100" : "PQKDD",
+      "ds100" : "RK  O",
       "eva" : 720567,
       "latlong" : [
          48.992847,
@@ -19341,7 +19359,16 @@
       "name" : "Durach"
    },
    {
-      "ds100" : "D720618",
+      "ds100" : "PQKAS",
+      "eva" : 377561,
+      "latlong" : [
+         49.000559,
+         8.463182
+      ],
+      "name" : "Durlach Auer Straße/Dr.Willmar Schwabe, Karlsruhe"
+   },
+   {
+      "ds100" : "PQKAU",
       "eva" : 720618,
       "latlong" : [
          49.000559,
@@ -19350,7 +19377,16 @@
       "name" : "Durlach Auer Straße/Dr.Willmar Schwabe, Karlsruhe"
    },
    {
-      "ds100" : "D720630",
+      "ds100" : "D373016",
+      "eva" : 373016,
+      "latlong" : [
+         48.999319,
+         8.468971
+      ],
+      "name" : "Durlach Friedrichschule, Karlsruhe"
+   },
+   {
+      "ds100" : "PQKFS",
       "eva" : 720630,
       "latlong" : [
          48.999319,
@@ -19377,13 +19413,22 @@
       "name" : "Durlach Hubstraße, Karlsruhe"
    },
    {
-      "ds100" : "D723857",
+      "ds100" : "PQKWY",
       "eva" : 723857,
       "latlong" : [
          48.998699,
          8.476756
       ],
       "name" : "Durlach Karl-Weysser-Straße, Karlsruhe"
+   },
+   {
+      "ds100" : "PQKSP",
+      "eva" : 723562,
+      "latlong" : [
+         48.999193,
+         8.473987
+      ],
+      "name" : "Durlach Schlossplatz, Karlsruhe"
    },
    {
       "ds100" : "D723563",
@@ -19397,6 +19442,15 @@
    {
       "ds100" : "D370018",
       "eva" : 370018,
+      "latlong" : [
+         49.000074,
+         8.47805
+      ],
+      "name" : "Durlach Turmberg, Karlsruhe"
+   },
+   {
+      "ds100" : "PQKTB",
+      "eva" : 723564,
       "latlong" : [
          49.000074,
          8.47805
@@ -20547,7 +20601,7 @@
       "name" : "Eggenstein Bf"
    },
    {
-      "ds100" : "PQESS",
+      "ds100" : "REGSN",
       "eva" : 720701,
       "latlong" : [
          49.085722,
@@ -20556,11 +20610,11 @@
       "name" : "Eggenstein Schweriner Straße, Eggenstein-Leopoldsh"
    },
    {
-      "ds100" : "PQESW",
+      "ds100" : "REGSW",
       "eva" : 720702,
       "latlong" : [
          49.079745,
-         8.399657
+         8.399655
       ],
       "name" : "Eggenstein Spöcker Weg, Eggenstein-Leopoldshafen"
    },
@@ -50697,6 +50751,15 @@
       "name" : "Maribor"
    },
    {
+      "ds100" : "HVOLM",
+      "eva" : 8006104,
+      "latlong" : [
+         52.101681,
+         9.582677
+      ],
+      "name" : "Marienau"
+   },
+   {
       "ds100" : "ONMB",
       "eva" : 8400428,
       "latlong" : [
@@ -50866,6 +50929,15 @@
          11.378446
       ],
       "name" : "Markt Indersdorf"
+   },
+   {
+      "ds100" : "PQSBE",
+      "eva" : 625886,
+      "latlong" : [
+         48.193157,
+         11.861509
+      ],
+      "name" : "Markt Schwaben"
    },
    {
       "ds100" : "MSB",
@@ -64573,6 +64645,15 @@
          13.470221
       ],
       "name" : "Prösen West"
+   },
+   {
+      "ds100" : "OTPSX",
+      "eva" : 5403681,
+      "latlong" : [
+         48.680939,
+         14.444263
+      ],
+      "name" : "Psenice"
    },
    {
       "ds100" : "OPPSY",
@@ -79335,6 +79416,15 @@
       "name" : "Trompet"
    },
    {
+      "ds100" : "UTRO",
+      "eva" : 8013152,
+      "latlong" : [
+         51.118526,
+         11.481194
+      ],
+      "name" : "Tromsdorf"
+   },
+   {
       "ds100" : "XBT",
       "eva" : 8800265,
       "latlong" : [
@@ -81063,6 +81153,15 @@
       "name" : "Vatteröder Teich"
    },
    {
+      "ds100" : "OTVCE",
+      "eva" : 5403289,
+      "latlong" : [
+         48.924448,
+         14.44962
+      ],
+      "name" : "Vcelna"
+   },
+   {
       "ds100" : "HVEC",
       "eva" : 8006060,
       "latlong" : [
@@ -82258,15 +82357,6 @@
          12.313001
       ],
       "name" : "Vojtanov obec"
-   },
-   {
-      "ds100" : "HVOL",
-      "eva" : 8006104,
-      "latlong" : [
-         52.101681,
-         9.582677
-      ],
-      "name" : "Voldagsen"
    },
    {
       "ds100" : "XAVO",

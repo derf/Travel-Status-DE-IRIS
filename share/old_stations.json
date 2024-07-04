@@ -99,15 +99,6 @@
       "name" : "Ashford(Kent) Int."
    },
    {
-      "ds100" : "UAS",
-      "eva" : 8011060,
-      "latlong" : [
-         51.10203,
-         11.590437
-      ],
-      "name" : "Auerstedt"
-   },
-   {
       "ds100" : "LDU",
       "eva" : 8011070,
       "latlong" : [
@@ -133,15 +124,6 @@
          12.7258694
       ],
       "name" : "Bad Schmiedeberg Süd"
-   },
-   {
-      "ds100" : "UBSN",
-      "eva" : 8011086,
-      "latlong" : [
-         51.097428,
-         11.6283
-      ],
-      "name" : "Bad Sulza Nord"
    },
    {
       "ds100" : "ZWBA",
@@ -340,15 +322,6 @@
          0.320865
       ],
       "name" : "Ebbsfleet International Eurostar"
-   },
-   {
-      "ds100" : "OME",
-      "eva" : 5500460,
-      "latlong" : [
-         47.462622,
-         21.488453
-      ],
-      "name" : "Ebes"
    },
    {
       "ds100" : "LEU",
@@ -963,24 +936,6 @@
       "name" : "Plauen(V) unt Bf"
    },
    {
-      "ds100" : "APSH",
-      "eva" : 8007318,
-      "latlong" : [
-         54.364899,
-         10.291408
-      ],
-      "name" : "Probsteierhagen"
-   },
-   {
-      "ds100" : "OPPSY",
-      "eva" : 5102920,
-      "latlong" : [
-         49.975601,
-         18.953477
-      ],
-      "name" : "Pszczyna"
-   },
-   {
       "ds100" : "ERAE",
       "eva" : 8004918,
       "latlong" : [
@@ -1305,15 +1260,6 @@
       "name" : "Trelleborg F"
    },
    {
-      "ds100" : "UTRO",
-      "eva" : 8013152,
-      "latlong" : [
-         51.118495,
-         11.481268
-      ],
-      "name" : "Tromsdorf"
-   },
-   {
       "ds100" : "RKTUT",
       "eva" : 720995,
       "latlong" : [
@@ -1339,15 +1285,6 @@
          12.514324
       ],
       "name" : "Valby(Koebenhavn)"
-   },
-   {
-      "ds100" : "XDVJ",
-      "eva" : 8602756,
-      "latlong" : [
-         55.7066917,
-         9.5365649
-      ],
-      "name" : "Vejle st"
    },
    {
       "ds100" : "XIVE",
