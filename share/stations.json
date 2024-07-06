@@ -29610,15 +29610,6 @@
       "name" : "Groß Quassow"
    },
    {
-      "ds100" : "FGRO",
-      "eva" : 8002391,
-      "latlong" : [
-         49.714066,
-         8.476857
-      ],
-      "name" : "Groß Rohrheim"
-   },
-   {
       "ds100" : "WGS",
       "eva" : 8011735,
       "latlong" : [
@@ -29635,6 +29626,15 @@
          13.537516
       ],
       "name" : "Groß Schönebeck"
+   },
+   {
+      "ds100" : "FGRO",
+      "eva" : 8002391,
+      "latlong" : [
+         49.714066,
+         8.476857
+      ],
+      "name" : "Groß-Rohrheim"
    },
    {
       "ds100" : "FKLU",
