@@ -20,16 +20,16 @@ for my $station ( @{$stations} ) {
 		my $hafas = Travel::Status::DE::HAFAS->new(
 			locationSearch => $station->{name},
 		);
-		if (not scalar $hafas->results) {
+		if ( not scalar $hafas->results ) {
 			say '    not found';
 			next;
 		}
-		my $result = ($hafas->results)[0];
-		if ($result->name ne $station->{name}) {
-			say '    name mismatch: got ' . $result->name;
-			next;
+		for my $result ( $hafas->results ) {
+			if ( $result->name eq $station->{name} ) {
+				$station->{latlong} = [ $result->lat, $result->lon ];
+				last;
+			}
 		}
-		$station->{latlong} = [ $result->lat, $result->lon ];
 	}
 }
 
