@@ -63000,15 +63000,6 @@
       "name" : "Pfäffingen"
    },
    {
-      "ds100" : "PQKPC",
-      "eva" : 378621,
-      "latlong" : [
-         49.004594,
-         8.411851
-      ],
-      "name" : "Philipp-Reis-Straße, Karlsruhe"
-   },
-   {
       "ds100" : "PQKPS",
       "eva" : 721660,
       "latlong" : [
