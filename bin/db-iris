@@ -138,7 +138,7 @@ if ($use_cache) {
 	my $schedule_cache_path = "${cache_path}/db-iris-schedule";
 	my $realtime_cache_path = "${cache_path}/db-iris-realtime";
 	eval {
-		use Cache::File;
+		require Cache::File;
 		$schedule_cache = Cache::File->new(
 			cache_root      => $schedule_cache_path,
 			default_expires => '6 hours',
