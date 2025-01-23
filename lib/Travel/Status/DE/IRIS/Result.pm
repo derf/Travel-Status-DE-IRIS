@@ -59,6 +59,7 @@ my %translation = (
 	24 => 'Verspätung im Ausland',
 	25 => 'Bereitstellung weiterer Wagen',
 	26 => 'Abhängen von Wagen',
+	27 => 'Technische Störung am Bus',
 	28 => 'Gegenstände auf der Strecke',
 	29 => 'Ersatzverkehr mit Bus ist eingerichtet',
 	31 => 'Bauarbeiten',
