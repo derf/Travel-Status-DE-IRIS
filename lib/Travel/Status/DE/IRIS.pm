@@ -1005,9 +1005,7 @@ and may cease operation in the near future. There is no immediate successor.
 Hence, Travel::Status::DE::IRIS is no longer actively maintained.  There is no
 promise that issues and merge requests will be reviewed or merged.
 
-The Travel::Status::DE::HAFAS(3pm) module provides similar features. However,
-its default "DB" backend is also deprecated. There is no migration path to a
-Deutsche Bahn departure monitor that is not deprecated at the moment.
+The Travel::Status::DE::DBRIS(3pm) module provides similar features.
 
 =head1 DESCRIPTION
 
