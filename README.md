@@ -10,9 +10,14 @@ train stations via text and JSON output.
 ## DEPRECATION NOTICE
 
 As of May 2024, the backend service that this utility relies on is deprecated
-and may cease operation in the near future. There is no immediate successor.
-Hence, db-iris and Travel::Status::DE::IRIS are no longer actively maintained.
-There is no promise that issues and merge requests will be reviewed or merged.
+and may cease operation in the near future.  Hence, db-iris and
+Travel::Status::DE::IRIS are no longer actively maintained.  There is no
+promise that issues and merge requests will be reviewed or merged.
+
+[Travel::Status::DE::DBRIS](https://finalrewind.org/projects/Travel-Status-DE-DBRIS/)
+supports most features provided by Travel::Status::DE::IRIS, and more.
+However, its backend does not provide detailed (timestamped) delay and quality
+of service messages.
 
 The **hafas-m** application that is part of [Travel::Status::DE::HAFAS](https://finalrewind.org/projects/Travel-Status-DE-DeutscheBahn/)
 provides similar features. However, its default "DB" backend is also
