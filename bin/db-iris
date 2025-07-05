@@ -78,7 +78,7 @@ if ($date) {
 	if ( $date eq 'tomorrow' ) {
 		$datetime->add( days => 1 );
 	}
-	elsif (not( defined $day and defined $month )
+	elsif ( not( defined $day and defined $month )
 		or ( $day < 1 )
 		or ( $day > 31 )
 		or ( $month < 1 )

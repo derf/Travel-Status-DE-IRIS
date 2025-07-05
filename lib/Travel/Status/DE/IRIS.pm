@@ -448,13 +448,13 @@ sub get_station_p {
 			);
 			return;
 		}
-	)->catch(
+	  )->catch(
 		sub {
 			my ($err) = @_;
 			$promise->reject($err);
 			return;
 		}
-	)->wait;
+	  )->wait;
 
 	return $promise;
 }
@@ -672,13 +672,13 @@ sub get_timetable_p {
 			$promise->resolve;
 			return;
 		}
-	)->catch(
+	  )->catch(
 		sub {
 			my ($err) = @_;
 			$promise->reject($err);
 			return;
 		}
-	)->wait;
+	  )->wait;
 	return $promise;
 }
 
@@ -736,13 +736,13 @@ sub get_realtime_p {
 			$promise->resolve;
 			return;
 		}
-	)->catch(
+	  )->catch(
 		sub {
 			my ($err) = @_;
 			$promise->reject("Failed to fetch realtime data: $err");
 			return;
 		}
-	)->wait;
+	  )->wait;
 	return $promise;
 }
 
