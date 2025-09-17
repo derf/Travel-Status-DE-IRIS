@@ -324,6 +324,15 @@
       "name" : "Ebbsfleet International Eurostar"
    },
    {
+      "ds100" : "SEG",
+      "eva" : 8000370,
+      "latlong" : [
+         49.802029,
+         6.685808
+      ],
+      "name" : "Ehrang"
+   },
+   {
       "ds100" : "LEU",
       "eva" : 8011522,
       "latlong" : [
