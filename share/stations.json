@@ -20781,15 +20781,6 @@
       "name" : "Ehr"
    },
    {
-      "ds100" : "SEG",
-      "eva" : 8000370,
-      "latlong" : [
-         49.802029,
-         6.685808
-      ],
-      "name" : "Ehrang"
-   },
-   {
       "ds100" : "SEGO",
       "eva" : 8001688,
       "latlong" : [
@@ -79261,6 +79252,15 @@
          13.052686
       ],
       "name" : "Triefenried"
+   },
+   {
+     "ds100" : "SEGH",
+     "eva" : 8005904,
+     "latlong" : [
+       49.792015,
+       6.682725
+     ],
+     "name" : "Trier Hafenstraße"
    },
    {
       "ds100" : "STR",
