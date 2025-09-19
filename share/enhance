@@ -5,7 +5,7 @@ use warnings;
 use 5.010;
 
 use File::Slurp qw(read_file write_file);
-use Travel::Status::DE::HAFAS;
+use Travel::Status::DE::DBRIS;
 
 my $json_str = read_file('stations.json');
 my $stations = JSON->new->utf8->decode($json_str);
@@ -17,15 +17,17 @@ $ua->env_proxy;
 for my $station ( @{$stations} ) {
 	if ( not $station->{latlong} ) {
 		say "Requesting location for $station->{name} ...";
-		my $hafas = Travel::Status::DE::HAFAS->new(
+		my $dbris = Travel::Status::DE::DBRIS->new(
 			locationSearch => $station->{name},
 		);
-		if ( not scalar $hafas->results ) {
+		if ( not scalar $dbris->results ) {
 			say '    not found';
 			next;
 		}
-		for my $result ( $hafas->results ) {
-			if ( $result->name eq $station->{name} ) {
+		for my $result ( $dbris->results ) {
+			if ( $result->name eq $station->{name}
+				or defined $result->eva and $result->eva == $station->{eva} )
+			{
 				$station->{latlong} = [ $result->lat, $result->lon ];
 				last;
 			}
