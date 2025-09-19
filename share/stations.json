@@ -1,5 +1,14 @@
 [
    {
+     "ds100" : "SEGH",
+     "eva" : 8005904,
+     "latlong" : [
+       49.792015,
+       6.682725
+     ],
+     "name" : "Trier Hafenstraße"
+   },
+   {
       "ds100" : "KA",
       "eva" : 8000001,
       "latlong" : [
