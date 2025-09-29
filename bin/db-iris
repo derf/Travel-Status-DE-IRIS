@@ -4,7 +4,7 @@ use warnings;
 use 5.014;
 use utf8;
 
-our $VERSION = '1.99';
+our $VERSION = '2.00';
 
 use DateTime;
 use DateTime::Format::Strptime;
@@ -587,13 +587,13 @@ B<db-iris> [B<-rx>] [B<-d> I<date>] [B<-o> I<output-flags>]
 
 =head1 VERSION
 
-version 1.99
+version 2.00
 
 =head1 DEPRECATION NOTICE
 
 As of May 2024, the backend service that this utility relies on is deprecated
-and may cease operation in the near future. There is no immediate successor.
-Hence, db-iris and Travel::Status::DE::IRIS are no longer actively maintained.
+and may cease operation in the near future. There is no successor with feature
+parity. db-iris and Travel::Status::DE::IRIS are no longer actively maintained.
 There is no promise that issues and merge requests will be reviewed or merged.
 
 The B<dbris-m> application that is part of Travel::Status::DE::DBRIS(3pm)
@@ -868,7 +868,7 @@ There are no known bugs at the moment.
 
 =head1 AUTHOR
 
-Copyright (C) 2013-2024 by Birte Kristina Friesel E<lt>derf@finalrewind.orgE<gt>
+Copyright (C) 2013-2025 by Birte Kristina Friesel E<lt>derf@finalrewind.orgE<gt>
 
 The station data used by this script is provided by DB
 Station&Service AG, Europaplatz 1, 10557 Berlin, Germany and available

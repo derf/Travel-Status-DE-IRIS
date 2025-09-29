@@ -1,3 +1,11 @@
+Travel::Status::DE::IRIS 2.00 - Fri Sep 19 2025
+
+    * Update station database
+    * db-iris and Travel::Status::DE::IRIS are still deprecated, but as the
+      backend service is still available, we might as well make the most of it
+    * The major release is mandated by Perl's standard versioning scheme.
+      There are no backwards-incompatible changes.
+
 Travel::Status::DE::IRIS 1.99 - Sat Jul 05 2025
 
     * Deprecation notice: Mention Travel::Status::DE::DBRIS as recommended
