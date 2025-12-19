@@ -36,7 +36,7 @@ my %translation = (
 	1  => 'Nähere Informationen in Kürze',
 	2  => 'Polizeieinsatz',
 	3  => 'Feuerwehreinsatz auf der Strecke',
-	4  => 'Kurzfristiger Personalausfall',            # xlsx: missing
+	4  => 'Kurzfristiger Personalausfall',                    # xlsx: missing
 	5  => 'Ärztliche Versorgung eines Fahrgastes',
 	6  => 'Betätigen der Notbremse',   # xlsx: "Unbefugtes Ziehen der Notbremse"
 	7  => 'Unbefugte Personen auf der Strecke',
@@ -54,14 +54,15 @@ my %translation = (
 	19 => 'Unfall an einem Bahnübergang',
 	20 => 'Tiere im Gleis',                           # xlsx: missing
 	21 => 'Warten auf Anschlussreisende',
-	22 => 'Witterungsbedingte Beeinträchtigung',
-	23 => 'Betriebsstabilisierung',
+	22 => 'Witterungsbedingte Beeinträchtigungen',
+	23 => 'Betriebsstabilisierung',                   # deleted as of 2025-12-14
 	24 => 'Verspätung im Ausland',
 	25 => 'Bereitstellung weiterer Wagen',
 	26 => 'Abhängen von Wagen',
 	27 => 'Technische Störung am Bus',
 	28 => 'Gegenstände auf der Strecke',
 	29 => 'Ersatzverkehr mit Bus ist eingerichtet',
+	30 => 'Personalausfall im Stellwerk',
 	31 => 'Bauarbeiten',
 	32 => 'Längere Haltezeit am Bahnhof',
 	33 => 'Defekt an der Oberleitung',    # xlsx: "Reparatur an der Oberleitung"
@@ -79,8 +80,7 @@ my %translation = (
 	43 => 'Verspätung eines vorausfahrenden Zuges',
 	44 => 'Warten auf einen entgegenkommenden Zug',
 	45 => 'Vorfahrt eines anderen Zuges',
-	46 => 'Vorfahrt eines anderen Zuges',
-
+	46 => 'Vorfahrt eines anderen Zuges',                     # xlsx: missing
 	47 => 'Verspätete Bereitstellung',
 	48 => 'Verspätung aus vorheriger Fahrt',
 	49 => 'Kurzfristiger Personalausfall',
@@ -90,7 +90,7 @@ my %translation = (
 	53 => 'Unwetterauswirkungen',
 	54 => 'Verfügbarkeit der Gleise derzeit eingeschränkt',
 	55 => 'Technischer Defekt an einem anderen Zug',
-	56 => 'Warten auf Anschlussreisende',                     # aus einem Bus
+	56 => 'Laden der Antriebsbatterie',
 	57 => 'Zusätzlicher Halt', # xslx: "Zusätzlicher Halt zum Ein- und Ausstieg"
 	58 => 'Umleitung',         # xlsx: "Umleitung des Zuges"
 	59 => 'Schnee und Eis',
@@ -106,7 +106,7 @@ my %translation = (
 	,    # xlsx: "Hohes Fahrgastaufkommen verlängert Ein- und Ausstieg"
 	69 => 'Zug verkehrt mit verminderter Geschwindigeit',
 	70 => 'WLAN nicht verfügbar',
-	71 => 'WLAN in einzelnen Wagen nicht verfügbar',
+	71 => 'Eingeschränktes WLAN',
 	72 => 'Info/Entertainment nicht verfügbar',
 	73 => 'Heute: Mehrzweckabteil vorne',
 	74 => 'Heute: Mehrzweckabteil hinten',
@@ -116,9 +116,9 @@ my %translation = (
 	78 => 'Ersatzverkehr mit Bus ist eingerichtet',
 	79 => 'Mehrzweckabteil fehlt',
 	80 => 'Abweichende Wagenreihung',
-	81 => 'Fahrzeugtausch',
+	81 => 'Fahrzeugtausch',         # deleted as of 2025-12-14
 	82 => 'Mehrere Wagen fehlen',
-	83 => 'Defekte fahrzeuggebundene Einstiegshilfe',
+	83 => 'Heute ohne fahrzeuggebundene Einstiegshilfe',
 	84 => 'Zug verkehrt richtig gereiht',
 	85 => 'Ein Wagen fehlt',
 	86 => 'Gesamter Zug ohne Reservierung',
@@ -127,12 +127,12 @@ my %translation = (
 	89 => 'Reservierungen sind wieder vorhanden',
 	90 => 'Kein gastronomisches Angebot',
 	91 => 'Fahrradmitnahme nicht möglich',
-	92 => 'Eingeschränkte Fahrradbeförderung',
+	92 => 'Fahrradmitnahme kann nicht garantiert werden',
 	93 => 'Behindertengerechte Einrichtung fehlt',
 	94 => 'Ersatzbewirtschaftung',
-	95 => 'Universal-WC fehlt',
-	96 => 'Überbesetzung mit Kulanzleistungen',
-	97 => 'Überbesetzung ohne Kulanzleistungen',
+	95 => 'Universaltoilette fehlt',
+	96 => 'Zustieg kann nicht garantiert werden',
+	97 => 'Hohe Auslastung',
 	98 => 'Sonstige Qualitätsmängel',
 	99 => 'Verzögerungen im Betriebsablauf',
 
@@ -274,14 +274,14 @@ sub sorted_sublist {
 sub superseded_messages {
 	my ( $self, $msg ) = @_;
 	my %superseded = (
-		62 => [36],
 		73 => [74],
 		74 => [73],
 		75 => [76],
 		76 => [75],
 		84 => [ 73, 74, 75, 76, 80 ],
 		88 => [
-			70, 71, 72, 77, 79, 82, 83, 85, 90, 91, 92, 93, 94, 95, 96, 97, 98
+			70, 71, 72, 77, 78, 79, 82, 83, 85, 90,
+			91, 92, 93, 94, 95, 96, 97, 98
 		],
 		89 => [ 86, 87 ],
 	);
