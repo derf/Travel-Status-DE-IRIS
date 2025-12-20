@@ -34,7 +34,7 @@ use Text::LevenshteinXS qw(distance);
 
 # TODO switch to Text::Levenshtein::XS once AUR/Debian packages become available
 
-our $VERSION = '2.00';
+our $VERSION = '2.01';
 
 # Automatically generated, see share/stations.json
 my @stations = (
@@ -204,7 +204,7 @@ Travel::Status::DE::IRIS::Stations - Station name to station code mapping
 
 =head1 VERSION
 
-version 2.00
+version 2.01
 
 =head1 DESCRIPTION
 
