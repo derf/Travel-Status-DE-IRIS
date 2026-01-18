@@ -228,3 +228,12 @@ good to go.
 
 Note that although EVA numbers are often identical with UIC station IDs, this
 is not always the case. Please do not rely on UIC IDs when managing stations.
+
+## References
+
+Mirrors of this repository are available at the following locations.
+
+* [Chaosdorf](https://chaosdorf.de/git/derf/Travel-Status-DE-IRIS)
+* [Codeberg](https://codeberg.org/derf/Travel-Status-DE-IRIS)
+* [Finalrewind](https://git.finalrewind.org/derf/Travel-Status-DE-IRIS)
+* [GitHub](https://github.com/derf/Travel-Status-DE-IRIS)
