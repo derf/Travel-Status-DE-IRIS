@@ -7292,7 +7292,10 @@
    {
       "ds100" : "BHBT",
       "eva" : 8089522,
-      "latlong" : null,
+      "latlong" : [
+         52.525592,
+         13.369545
+      ],
       "name" : "Berlin Hbf (S-Bahn)"
    },
    {
@@ -35405,7 +35408,10 @@
    {
       "ds100" : "PQKHZ",
       "eva" : 361599,
-      "latlong" : null,
+      "latlong" : [
+         49.009815,
+         8.400056
+      ],
       "name" : "Herrenstraße, Karlsruhe"
    },
    {
@@ -48286,12 +48292,6 @@
          7.573601
       ],
       "name" : "Limone Confine"
-   },
-   {
-      "ds100" : "D8700303",
-      "eva" : 8700303,
-      "latlong" : null,
-      "name" : "Limone-Confine"
    },
    {
       "ds100" : "LLI",
