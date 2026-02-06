@@ -4,7 +4,7 @@ use warnings;
 use 5.014;
 use utf8;
 
-use Test::More tests => 17;
+use Test::More tests => 20;
 use Test::Number::Delta;
 
 BEGIN {
@@ -14,8 +14,19 @@ require_ok('Travel::Status::DE::IRIS::Stations');
 
 my @emptypairs = grep { not( length( $_->[0] ) and length( $_->[1] ) ) }
   Travel::Status::DE::IRIS::Stations::get_stations;
-
 is_deeply( \@emptypairs, [], 'no stations with empty code / name' );
+
+my @no_eva
+  = grep { not $_->[2] } Travel::Status::DE::IRIS::Stations::get_stations;
+is_deeply( \@no_eva, [], 'no stations with eva unset' );
+
+my @no_lat
+  = grep { not $_->[3] } Travel::Status::DE::IRIS::Stations::get_stations;
+is_deeply( \@no_lat, [], 'no stations with lat unset' );
+
+my @no_lon
+  = grep { not $_->[4] } Travel::Status::DE::IRIS::Stations::get_stations;
+is_deeply( \@no_lon, [], 'no stations with lon unset' );
 
 is_deeply(
 	[ Travel::Status::DE::IRIS::Stations::get_station('EE') ],
