@@ -2918,7 +2918,10 @@
    {
       "ds100" : "OAAS",
       "eva" : 8100188,
-      "latlong" : null,
+      "latlong" : [
+         47.562393,
+         16.099716
+      ],
       "name" : "Aspang"
    },
    {
@@ -3356,7 +3359,10 @@
    {
       "ds100" : "OAAUZ",
       "eva" : 8100642,
-      "latlong" : null,
+      "latlong" : [
+         47.53244,
+         16.08349
+      ],
       "name" : "Ausschlag-Zöbern"
    },
    {
@@ -3911,7 +3917,10 @@
    {
       "ds100" : "OAER",
       "eva" : 8100192,
-      "latlong" : null,
+      "latlong" : [
+         47.731785,
+         16.211668
+      ],
       "name" : "Bad Erlach"
    },
    {
@@ -4979,7 +4988,10 @@
    {
       "ds100" : "OABW",
       "eva" : 8100455,
-      "latlong" : null,
+      "latlong" : [
+         47.170376,
+         16.013618
+      ],
       "name" : "Bad Waltersdorf"
    },
    {
@@ -9203,7 +9215,10 @@
    {
       "ds100" : "OABB",
       "eva" : 8100178,
-      "latlong" : null,
+      "latlong" : [
+         47.09809,
+         16.07416
+      ],
       "name" : "Bierbaum/Safen"
    },
    {
@@ -14276,7 +14291,10 @@
    {
       "ds100" : "TCWB",
       "eva" : 8098063,
-      "latlong" : null,
+      "latlong" : [
+         48.714664,
+         8.741848
+      ],
       "name" : "Calw"
    },
    {
@@ -16091,7 +16109,10 @@
    {
       "ds100" : "MCRO",
       "eva" : 8071105,
-      "latlong" : null,
+      "latlong" : [
+         49.09136,
+         10.664919
+      ],
       "name" : "Cronheim"
    },
    {
@@ -16826,7 +16847,10 @@
    {
       "ds100" : "OADK",
       "eva" : 8100722,
-      "latlong" : null,
+      "latlong" : [
+         47.41872,
+         16.022202
+      ],
       "name" : "Dechantskirchen"
    },
    {
@@ -20765,7 +20789,10 @@
    {
       "ds100" : "OAEGS",
       "eva" : 8100189,
-      "latlong" : null,
+      "latlong" : [
+         47.6172,
+         16.12797
+      ],
       "name" : "Edlitz-Grimmenstein"
    },
    {
@@ -24875,7 +24902,10 @@
    {
       "ds100" : "NFON",
       "eva" : 8003892,
-      "latlong" : null,
+      "latlong" : [
+         49.7322,
+         11.0644
+      ],
       "name" : "Forchheim Nord"
    },
    {
@@ -25358,7 +25388,10 @@
    {
       "ds100" : "FFGI",
       "eva" : 8002037,
-      "latlong" : null,
+      "latlong" : [
+         50.142998,
+         8.643137
+      ],
       "name" : "Frankfurt-Ginnheim"
    },
    {
@@ -26075,7 +26108,10 @@
    {
       "ds100" : "OAFR",
       "eva" : 8100185,
-      "latlong" : null,
+      "latlong" : [
+         47.434532,
+         16.053493
+      ],
       "name" : "Friedberg in der Steiermark"
    },
    {
@@ -26801,7 +26837,10 @@
    {
       "ds100" : "OAFFD",
       "eva" : 8100177,
-      "latlong" : null,
+      "latlong" : [
+         47.04155,
+         16.08402
+      ],
       "name" : "Fürstenfeld"
    },
    {
@@ -29291,7 +29330,10 @@
    {
       "ds100" : "OAGD",
       "eva" : 8100182,
-      "latlong" : null,
+      "latlong" : [
+         47.346382,
+         16.003668
+      ],
       "name" : "Grafendorf bei Hartberg"
    },
    {
@@ -33248,7 +33290,10 @@
    {
       "ds100" : "OAHB",
       "eva" : 8100180,
-      "latlong" : null,
+      "latlong" : [
+         47.28124,
+         15.985014
+      ],
       "name" : "Hartberg"
    },
    {
@@ -33506,7 +33551,10 @@
    {
       "ds100" : "OAHZ",
       "eva" : 8100268,
-      "latlong" : null,
+      "latlong" : [
+         46.979263,
+         16.003443
+      ],
       "name" : "Hatzendorf"
    },
    {
@@ -43076,7 +43124,10 @@
    {
       "ds100" : "XPKOS",
       "eva" : 5100214,
-      "latlong" : null,
+      "latlong" : [
+         52.59476,
+         14.663869
+      ],
       "name" : "Kostrzyn"
    },
    {
@@ -44828,7 +44879,10 @@
    {
       "ds100" : "XAKKS",
       "eva" : 8100336,
-      "latlong" : null,
+      "latlong" : [
+         46.624836,
+         14.620892
+      ],
       "name" : "Kühnsdorf-Klopeiner See"
    },
    {
@@ -51518,7 +51572,10 @@
    {
       "ds100" : "MMON",
       "eva" : 8003889,
-      "latlong" : null,
+      "latlong" : [
+         51.66187,
+         7.108427
+      ],
       "name" : "Marktoberdorf Nord"
    },
    {
@@ -63863,7 +63920,10 @@
    {
       "ds100" : "OAPG",
       "eva" : 8100186,
-      "latlong" : null,
+      "latlong" : [
+         47.440536,
+         16.061098
+      ],
       "name" : "Pinggau Markt"
    },
    {
@@ -68621,7 +68681,10 @@
    {
       "ds100" : "OARV",
       "eva" : 8100183,
-      "latlong" : null,
+      "latlong" : [
+         47.390934,
+         15.98576
+      ],
       "name" : "Rohrbach-Vorau"
    },
    {
@@ -69806,7 +69869,10 @@
    {
       "ds100" : "PPRMO",
       "eva" : 5100090,
-      "latlong" : null,
+      "latlong" : [
+         52.346012,
+         14.82519
+      ],
       "name" : "Rzepin Miasto"
    },
    {
@@ -72917,7 +72983,10 @@
    {
       "ds100" : "RSZD",
       "eva" : 8005492,
-      "latlong" : null,
+      "latlong" : [
+         49.394558,
+         8.571466
+      ],
       "name" : "Schwetzingen Nordstadt"
    },
    {
@@ -73436,7 +73505,10 @@
    {
       "ds100" : "OASB",
       "eva" : 8100179,
-      "latlong" : null,
+      "latlong" : [
+         47.18874,
+         15.999172
+      ],
       "name" : "Sebersdorf"
    },
    {
@@ -73649,7 +73721,10 @@
    {
       "ds100" : "D8110427",
       "eva" : 8110427,
-      "latlong" : null,
+      "latlong" : [
+         47.89058,
+         13.119963
+      ],
       "name" : "Seekirchen/Wallersee Stadt"
    },
    {
@@ -76031,7 +76106,10 @@
    {
       "ds100" : "XASPL",
       "eva" : 8100501,
-      "latlong" : null,
+      "latlong" : [
+         46.72139,
+         14.855789
+      ],
       "name" : "St. Paul im Lavanttal"
    },
    {
@@ -76073,7 +76151,10 @@
    {
       "ds100" : "OASJ",
       "eva" : 8100181,
-      "latlong" : null,
+      "latlong" : [
+         47.28043,
+         16.035452
+      ],
       "name" : "St.Johann in der Haide"
    },
    {
@@ -77429,7 +77510,10 @@
    {
       "ds100" : "NSH",
       "eva" : 8006744,
-      "latlong" : null,
+      "latlong" : [
+         48.891754,
+         12.662583
+      ],
       "name" : "Straubing Hafen"
    },
    {
@@ -77903,7 +77987,10 @@
    {
       "ds100" : "RSEBE",
       "eva" : 8001625,
-      "latlong" : null,
+      "latlong" : [
+         47.720592,
+         8.429886
+      ],
       "name" : "Stühlingen-Eberfingen"
    },
    {
@@ -78404,7 +78491,10 @@
    {
       "ds100" : "OASAU",
       "eva" : 8100429,
-      "latlong" : null,
+      "latlong" : [
+         47.028854,
+         16.013294
+      ],
       "name" : "Söchau"
    },
    {
@@ -78842,7 +78932,10 @@
    {
       "ds100" : "OATS",
       "eva" : 8100187,
-      "latlong" : null,
+      "latlong" : [
+         47.482864,
+         16.054832
+      ],
       "name" : "Tauchen-Schaueregg"
    },
    {
@@ -81629,7 +81722,10 @@
    {
       "ds100" : "MUWB",
       "eva" : 8006025,
-      "latlong" : null,
+      "latlong" : [
+         49.10602,
+         10.730882
+      ],
       "name" : "Unterwurmbach"
    },
    {
@@ -86414,7 +86510,10 @@
    {
       "ds100" : "XAWES",
       "eva" : 8101345,
-      "latlong" : null,
+      "latlong" : [
+         46.813923,
+         15.296773
+      ],
       "name" : "Weststeiermark"
    },
    {
@@ -90758,7 +90857,10 @@
    {
       "ds100" : "OAUB",
       "eva" : 8101694,
-      "latlong" : null,
+      "latlong" : [
+         47.02685,
+         16.053782
+      ],
       "name" : "Übersbach b.Fürstenfeld"
    },
    {
