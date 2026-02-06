@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use 5.014;
 
-our $VERSION = '2.01';
+our $VERSION = '2.02';
 
 use Carp qw(confess cluck);
 use DateTime;
@@ -996,7 +996,7 @@ Non-blocking variant (EXPERIMENTAL):
 
 =head1 VERSION
 
-version 2.01
+version 2.02
 
 =head1 DEPRECATION NOTICE
 
@@ -1208,7 +1208,7 @@ L<https://github.com/derf/Travel-Status-DE-IRIS>
 
 =head1 AUTHOR
 
-Copyright (C) 2013-2025 by Birte Kristina Friesel E<lt>derf@finalrewind.orgE<gt>
+Copyright (C) 2013-2026 by Birte Kristina Friesel E<lt>derf@finalrewind.orgE<gt>
 
 =head1 LICENSE
 
