@@ -77,7 +77,8 @@ is_deeply(
 		[ 'EEBE', 'Essen-Bergeborbeck', 8001901, 6.97711100,  51.4803960 ],
 		[ 'EEBB', 'Essen-Borbeck', 8001902, 6.94846100,  51.4731030 ],
 		[ 'EEBS', 'Essen-Borbeck Süd', 8005031, 6.95392200,  51.4616730 ],
-		[ 'EGAR', 'Garbeck', 8002180, 7.83990300,  51.3214590 ],
+		[ 'KARS', 'Arsbeck', 8000611, 6.206563,  51.152006 ],
+		[ 'ELBK', 'Lembeck', 8003630, 7.02548,  51.751244 ],
 	],
 	'get_station: partial match with substring and levenshtein'
 );
