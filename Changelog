@@ -1,3 +1,8 @@
+Travel::Status::DE::IRIS 2.03 - Fri Feb 07 2026
+
+    * Add missing geocoordinates for two stations
+    * Update meta database
+
 Travel::Status::DE::IRIS 2.02 - Fri Feb 06 2026
 
     * Update station database
