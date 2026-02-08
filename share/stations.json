@@ -1530,6 +1530,15 @@
       "name" : "Altenwillershagen"
    },
    {
+      "ds100" : "D122120",
+      "eva" : 122120,
+      "latlong" : [
+         53.62514,
+         11.399616
+      ],
+      "name" : "Alter Friedhof, Schwerin (Meckl)"
+   },
+   {
       "ds100" : "UACH",
       "eva" : 8011028,
       "latlong" : [
@@ -1798,6 +1807,15 @@
          8.107255
       ],
       "name" : "Alzey West"
+   },
+   {
+      "ds100" : "D364390",
+      "eva" : 364390,
+      "latlong" : [
+         51.22049,
+         6.698249
+      ],
+      "name" : "Am Kaiser, Neuss"
    },
    {
       "ds100" : "FKBHA",
@@ -2446,6 +2464,15 @@
          6.862374
       ],
       "name" : "Appingedam"
+   },
+   {
+      "ds100" : "D664231",
+      "eva" : 664231,
+      "latlong" : [
+         51.268215,
+         7.072083
+      ],
+      "name" : "Aprath Bahnhof, Wülfrath"
    },
    {
       "ds100" : "XUA",
@@ -5229,6 +5256,24 @@
       "name" : "Bahnbrücken"
    },
    {
+      "ds100" : "D185718",
+      "eva" : 185718,
+      "latlong" : [
+         53.47575,
+         10.623398
+      ],
+      "name" : "Bahnhof (Ladestraße), Büchen"
+   },
+   {
+      "ds100" : "D159252",
+      "eva" : 159252,
+      "latlong" : [
+         53.49078,
+         10.204833
+      ],
+      "name" : "Bahnhof Bergedorf (Johann-Meyer-Straße), Hamburg"
+   },
+   {
       "ds100" : "FKNZ",
       "eva" : 716781,
       "latlong" : [
@@ -5238,6 +5283,42 @@
       "name" : "Bahnhof Niederzwehren, Kassel"
    },
    {
+      "ds100" : "D230036",
+      "eva" : 230036,
+      "latlong" : [
+         48.819096,
+         11.846758
+      ],
+      "name" : "Bahnhof, Abensberg"
+   },
+   {
+      "ds100" : "D304448",
+      "eva" : 304448,
+      "latlong" : [
+         53.377666,
+         10.753903
+      ],
+      "name" : "Bahnhof, Boizenburg/ Elbe"
+   },
+   {
+      "ds100" : "D304057",
+      "eva" : 304057,
+      "latlong" : [
+         53.364803,
+         10.952844
+      ],
+      "name" : "Bahnhof, Brahlstorf"
+   },
+   {
+      "ds100" : "D160210",
+      "eva" : 160210,
+      "latlong" : [
+         51.303497,
+         7.345176
+      ],
+      "name" : "Bahnhof, Ennepetal"
+   },
+   {
       "ds100" : "RGHM",
       "eva" : 506735,
       "latlong" : [
@@ -5245,6 +5326,78 @@
          8.23226
       ],
       "name" : "Bahnhof, Gönnheim"
+   },
+   {
+      "ds100" : "D424901",
+      "eva" : 424901,
+      "latlong" : [
+         51.188858,
+         6.996916
+      ],
+      "name" : "Bahnhof, Haan"
+   },
+   {
+      "ds100" : "D330083",
+      "eva" : 330083,
+      "latlong" : [
+         51.10746,
+         7.006588
+      ],
+      "name" : "Bahnhof, Leichlingen (Rheinland)"
+   },
+   {
+      "ds100" : "D104782",
+      "eva" : 104782,
+      "latlong" : [
+         53.3341,
+         11.494677
+      ],
+      "name" : "Bahnhof, Ludwigslust"
+   },
+   {
+      "ds100" : "WL  B",
+      "eva" : 737983,
+      "latlong" : [
+         53.3341,
+         11.494677
+      ],
+      "name" : "Bahnhof, Ludwigslust"
+   },
+   {
+      "ds100" : "D202200",
+      "eva" : 202200,
+      "latlong" : [
+         48.800713,
+         11.763545
+      ],
+      "name" : "Bahnhof, Neustadt a.d. Donau"
+   },
+   {
+      "ds100" : "D206297",
+      "eva" : 206297,
+      "latlong" : [
+         53.430237,
+         11.831854
+      ],
+      "name" : "Bahnhof, Parchim"
+   },
+   {
+      "ds100" : "PQPTB",
+      "eva" : 597521,
+      "latlong" : [
+         53.364437,
+         11.084212
+      ],
+      "name" : "Bahnhof, Pritzier"
+   },
+   {
+      "ds100" : "D658276",
+      "eva" : 658276,
+      "latlong" : [
+         51.290104,
+         7.289838
+      ],
+      "name" : "Bahnhof, Schwelm"
    },
    {
       "ds100" : "BBO",
@@ -5722,6 +5875,15 @@
          11.640671
       ],
       "name" : "Barleber See"
+   },
+   {
+      "ds100" : "D211313",
+      "eva" : 211313,
+      "latlong" : [
+         51.267746,
+         7.194391
+      ],
+      "name" : "Barmen Bahnhof, Wuppertal"
    },
    {
       "ds100" : "ABMS",
@@ -6937,6 +7099,15 @@
          13.260794
       ],
       "name" : "Bergsdorf"
+   },
+   {
+      "ds100" : "D285337",
+      "eva" : 285337,
+      "latlong" : [
+         53.501396,
+         10.561606
+      ],
+      "name" : "Bergstraße, Müssen"
    },
    {
       "ds100" : "NBHM",
@@ -9385,6 +9556,15 @@
          13.759501
       ],
       "name" : "Bilina Kyselka"
+   },
+   {
+      "ds100" : "D330222",
+      "eva" : 330222,
+      "latlong" : [
+         51.21063,
+         6.774693
+      ],
+      "name" : "Bilker Allee/Friedrichstraße, Düsseldorf"
    },
    {
       "ds100" : "MBIN",
@@ -13968,6 +14148,15 @@
       "name" : "Büchenbach"
    },
    {
+      "ds100" : "D118525",
+      "eva" : 118525,
+      "latlong" : [
+         53.485798,
+         10.615478
+      ],
+      "name" : "Büchener Straße, Büchen"
+   },
+   {
       "ds100" : "FBDH",
       "eva" : 8001244,
       "latlong" : [
@@ -17278,6 +17467,15 @@
          7.881434
       ],
       "name" : "Denzlingen"
+   },
+   {
+      "ds100" : "D309071",
+      "eva" : 309071,
+      "latlong" : [
+         51.247223,
+         6.794137
+      ],
+      "name" : "Derendorf, Düsseldorf"
    },
    {
       "ds100" : "KDEA",
@@ -23112,6 +23310,15 @@
       "name" : "Essel"
    },
    {
+      "ds100" : "D208087",
+      "eva" : 208087,
+      "latlong" : [
+         51.4398,
+         7.022913
+      ],
+      "name" : "Essen (Ruhr) Süd"
+   },
+   {
       "ds100" : "EE",
       "eva" : 8000098,
       "latlong" : [
@@ -23119,6 +23326,15 @@
          7.014793
       ],
       "name" : "Essen Hbf"
+   },
+   {
+      "ds100" : "EE  K",
+      "eva" : 8072037,
+      "latlong" : [
+         51.450092,
+         7.009851
+      ],
+      "name" : "Essen Hbf Kruppstraße/Am Thyssenhaus"
    },
    {
       "ds100" : "EESA",
@@ -23662,19 +23878,19 @@
    },
    {
       "ds100" : "PQKE",
-      "eva" : 375031,
+      "eva" : 160037,
       "latlong" : [
-         49.010007,
-         8.394487
+         49.009666,
+         8.395026
       ],
       "name" : "Europaplatz, Karlsruhe"
    },
    {
       "ds100" : "PQKER",
-      "eva" : 720619,
+      "eva" : 240037,
       "latlong" : [
-         49.010088,
-         8.393705
+         49.009666,
+         8.395026
       ],
       "name" : "Europaplatz, Karlsruhe"
    },
@@ -24676,6 +24892,15 @@
          9.576616
       ],
       "name" : "Flieden"
+   },
+   {
+      "ds100" : "D304903",
+      "eva" : 304903,
+      "latlong" : [
+         51.227474,
+         6.811783
+      ],
+      "name" : "Flingern S-Bahnhof, Düsseldorf"
    },
    {
       "ds100" : "AFT",
@@ -26368,6 +26593,15 @@
          9.079258
       ],
       "name" : "Friedrichstadt"
+   },
+   {
+      "ds100" : "D319911",
+      "eva" : 319911,
+      "latlong" : [
+         51.211143,
+         6.78869
+      ],
+      "name" : "Friedrichstadt, Düsseldorf"
    },
    {
       "ds100" : "PQSFM",
@@ -28197,6 +28431,15 @@
       "name" : "Gerra (Gambarogno)"
    },
    {
+      "ds100" : "D215908",
+      "eva" : 215908,
+      "latlong" : [
+         51.220993,
+         6.865421
+      ],
+      "name" : "Gerresheim S-Bahnhof, Düsseldorf"
+   },
+   {
       "ds100" : "DGD",
       "eva" : 8011628,
       "latlong" : [
@@ -28321,6 +28564,15 @@
          7.313845
       ],
       "name" : "Gevelsberg West"
+   },
+   {
+      "ds100" : "D8071356",
+      "eva" : 8071356,
+      "latlong" : [
+         51.317276,
+         7.313845
+      ],
+      "name" : "Gevelsberg West Bhf"
    },
    {
       "ds100" : "KGVK",
@@ -30429,6 +30681,15 @@
       "name" : "Grub(Oberpf)"
    },
    {
+      "ds100" : "D230303",
+      "eva" : 230303,
+      "latlong" : [
+         51.21516,
+         7.010768
+      ],
+      "name" : "Gruiten Bahnhof, Haan"
+   },
+   {
       "ds100" : "TGC",
       "eva" : 8002448,
       "latlong" : [
@@ -31086,6 +31347,15 @@
       "name" : "Görlitz-Weinhübel"
    },
    {
+      "ds100" : "D102161",
+      "eva" : 102161,
+      "latlong" : [
+         53.609463,
+         11.381899
+      ],
+      "name" : "Görries Brücke, Schwerin (Meckl)"
+   },
+   {
       "ds100" : "UGSB",
       "eva" : 8011657,
       "latlong" : [
@@ -31669,6 +31939,15 @@
          7.782165
       ],
       "name" : "Haguenau"
+   },
+   {
+      "ds100" : "D110441",
+      "eva" : 110441,
+      "latlong" : [
+         51.25437,
+         7.056766
+      ],
+      "name" : "Hahnenfurth/Düssel Bahnhof, Wuppertal"
    },
    {
       "ds100" : "NHAG",
@@ -32760,6 +33039,15 @@
       "name" : "Hamm(Westf)Hbf"
    },
    {
+      "ds100" : "D131989",
+      "eva" : 131989,
+      "latlong" : [
+         51.211132,
+         6.739393
+      ],
+      "name" : "Hamm, Düsseldorf"
+   },
+   {
       "ds100" : "EBCK",
       "eva" : 8001045,
       "latlong" : [
@@ -33624,6 +33912,60 @@
       "name" : "Haupeltshofen"
    },
    {
+      "ds100" : "D150227",
+      "eva" : 150227,
+      "latlong" : [
+         51.25304,
+         7.143961
+      ],
+      "name" : "Hauptbahnhof Historische Stadthalle, Wuppertal"
+   },
+   {
+      "ds100" : "D305023",
+      "eva" : 305023,
+      "latlong" : [
+         51.221165,
+         6.792753
+      ],
+      "name" : "Hauptbahnhof, Düsseldorf"
+   },
+   {
+      "ds100" : "D170012",
+      "eva" : 170012,
+      "latlong" : [
+         51.36192,
+         7.462413
+      ],
+      "name" : "Hauptbahnhof, Hagen (Westf)"
+   },
+   {
+      "ds100" : "D304070",
+      "eva" : 304070,
+      "latlong" : [
+         51.202396,
+         6.684136
+      ],
+      "name" : "Hauptbahnhof, Neuss"
+   },
+   {
+      "ds100" : "D141090",
+      "eva" : 141090,
+      "latlong" : [
+         49.013935,
+         12.10002
+      ],
+      "name" : "Hauptbahnhof, Regensburg"
+   },
+   {
+      "ds100" : "NRH M",
+      "eva" : 785808,
+      "latlong" : [
+         49.013935,
+         12.10002
+      ],
+      "name" : "Hauptbahnhof, Regensburg"
+   },
+   {
       "ds100" : "PQSH",
       "eva" : 836075,
       "latlong" : [
@@ -33631,6 +33973,24 @@
          6.990165
       ],
       "name" : "Hauptbahnhof, Saarbrücken"
+   },
+   {
+      "ds100" : "PQS H",
+      "eva" : 705240,
+      "latlong" : [
+         53.634087,
+         11.408273
+      ],
+      "name" : "Hauptbahnhof, Schwerin (Meckl)"
+   },
+   {
+      "ds100" : "D130218",
+      "eva" : 130218,
+      "latlong" : [
+         51.160084,
+         7.00337
+      ],
+      "name" : "Hauptbahnhof, Solingen"
    },
    {
       "ds100" : "PQKHP",
@@ -36144,6 +36504,24 @@
       "name" : "Hirtenweg/Technologiepark, Karlsruhe"
    },
    {
+      "ds100" : "D183091",
+      "eva" : 183091,
+      "latlong" : [
+         51.2526,
+         7.145741
+      ],
+      "name" : "Historische Stadthalle, Wuppertal"
+   },
+   {
+      "ds100" : "PQWHH",
+      "eva" : 361241,
+      "latlong" : [
+         51.2526,
+         7.145741
+      ],
+      "name" : "Historische Stadthalle, Wuppertal"
+   },
+   {
       "ds100" : "AHIF",
       "eva" : 8002864,
       "latlong" : [
@@ -36187,6 +36565,24 @@
          6.944419
       ],
       "name" : "Hochdahl"
+   },
+   {
+      "ds100" : "D630085",
+      "eva" : 630085,
+      "latlong" : [
+         51.219196,
+         6.944958
+      ],
+      "name" : "Hochdahl S, Erkrath"
+   },
+   {
+      "ds100" : "D230084",
+      "eva" : 230084,
+      "latlong" : [
+         51.219322,
+         6.943996
+      ],
+      "name" : "Hochdahl S-Bahnhof, Erkrath"
    },
    {
       "ds100" : "KHOM",
@@ -36898,6 +37294,15 @@
          9.653221
       ],
       "name" : "Holtensen/Linderte"
+   },
+   {
+      "ds100" : "D209686",
+      "eva" : 209686,
+      "latlong" : [
+         51.417408,
+         7.074816
+      ],
+      "name" : "Holthausen Bahnhof, Essen (Ruhr)"
    },
    {
       "ds100" : "WHO",
@@ -37809,6 +38214,15 @@
       "name" : "Hämerten"
    },
    {
+      "ds100" : "D958364",
+      "eva" : 958364,
+      "latlong" : [
+         52.590942,
+         11.983996
+      ],
+      "name" : "Hämerten Abzweig, Tangermünde"
+   },
+   {
       "ds100" : "PQKEH",
       "eva" : 377044,
       "latlong" : [
@@ -38043,6 +38457,15 @@
       "name" : "Hösel"
    },
    {
+      "ds100" : "D304573",
+      "eva" : 304573,
+      "latlong" : [
+         51.341503,
+         6.893935
+      ],
+      "name" : "Hösel S-Bahn, Ratingen"
+   },
+   {
       "ds100" : "EHST",
       "eva" : 8070884,
       "latlong" : [
@@ -38158,6 +38581,15 @@
          8.490511
       ],
       "name" : "Hüfingen Mitte"
+   },
+   {
+      "ds100" : "D308085",
+      "eva" : 308085,
+      "latlong" : [
+         51.40476,
+         7.009555
+      ],
+      "name" : "Hügel, Essen (Ruhr)"
    },
    {
       "ds100" : "FHUE",
@@ -40582,10 +41014,10 @@
    },
    {
       "ds100" : "RKMAP",
-      "eva" : 401011,
+      "eva" : 8079046,
       "latlong" : [
-         49.009117,
-         8.403808
+         49.009083,
+         8.403826
       ],
       "name" : "Karlsruhe Marktplatz (Pyramide)"
    },
@@ -41254,6 +41686,24 @@
          6.939145
       ],
       "name" : "Kettwig Stausee"
+   },
+   {
+      "ds100" : "D398082",
+      "eva" : 398082,
+      "latlong" : [
+         51.358654,
+         6.93311
+      ],
+      "name" : "Kettwig Stausee SEV, Essen (Ruhr)"
+   },
+   {
+      "ds100" : "D308089",
+      "eva" : 308089,
+      "latlong" : [
+         51.363796,
+         6.953237
+      ],
+      "name" : "Kettwig, Essen (Ruhr)"
    },
    {
       "ds100" : "KKEV",
@@ -44091,6 +44541,15 @@
       "name" : "Kunowice"
    },
    {
+      "ds100" : "D347625",
+      "eva" : 347625,
+      "latlong" : [
+         51.390907,
+         7.081199
+      ],
+      "name" : "Kupferdreh Bahnhof, Essen (Ruhr)"
+   },
+   {
       "ds100" : "AKUP",
       "eva" : 8003478,
       "latlong" : [
@@ -44854,6 +45313,15 @@
          7.119543
       ],
       "name" : "Kövenig"
+   },
+   {
+      "ds100" : "D800033",
+      "eva" : 800033,
+      "latlong" : [
+         48.94051,
+         12.047829
+      ],
+      "name" : "Kühberg, Bad Abbach"
    },
    {
       "ds100" : "RKKK",
@@ -45657,6 +46125,15 @@
       "name" : "Langenbach(Oberbay)"
    },
    {
+      "ds100" : "D366337",
+      "eva" : 366337,
+      "latlong" : [
+         51.354305,
+         7.122873
+      ],
+      "name" : "Langenberg Bahnhof, Velbert"
+   },
+   {
       "ds100" : "RLBD",
       "eva" : 8003532,
       "latlong" : [
@@ -45898,6 +46375,15 @@
          10.801856
       ],
       "name" : "Langenzenn"
+   },
+   {
+      "ds100" : "D132501",
+      "eva" : 132501,
+      "latlong" : [
+         51.2744,
+         7.243921
+      ],
+      "name" : "Langerfeld, Wuppertal"
    },
    {
       "ds100" : "KLAW",
@@ -47383,6 +47869,15 @@
          7.878459
       ],
       "name" : "Lengerich(Westf)"
+   },
+   {
+      "ds100" : "D270034",
+      "eva" : 270034,
+      "latlong" : [
+         48.921867,
+         12.004662
+      ],
+      "name" : "Lengfeld B16, Bad Abbach"
    },
    {
       "ds100" : "MLG",
@@ -50184,6 +50679,15 @@
       "name" : "Lütter"
    },
    {
+      "ds100" : "D110452",
+      "eva" : 110452,
+      "latlong" : [
+         51.21469,
+         7.242762
+      ],
+      "name" : "Lüttringhausen Bahnhof Beyenburger Straße, Remsche"
+   },
+   {
       "ds100" : "ELUZ",
       "eva" : 8003791,
       "latlong" : [
@@ -50992,6 +51496,15 @@
          10.862501
       ],
       "name" : "Manebach"
+   },
+   {
+      "ds100" : "D804281",
+      "eva" : 804281,
+      "latlong" : [
+         51.031574,
+         7.015829
+      ],
+      "name" : "Manfort Bahnhof, Leverkusen"
    },
    {
       "ds100" : "NMDF",
@@ -51964,6 +52477,15 @@
          12.608166
       ],
       "name" : "Massing"
+   },
+   {
+      "ds100" : "FDN M",
+      "eva" : 104722,
+      "latlong" : [
+         49.87466,
+         8.650032
+      ],
+      "name" : "Mathildenplatz, Darmstadt"
    },
    {
       "ds100" : "RKMTY",
@@ -53037,6 +53559,15 @@
       "name" : "Meschede-Freienohl"
    },
    {
+      "ds100" : "D430011",
+      "eva" : 430011,
+      "latlong" : [
+         50.939865,
+         6.976285
+      ],
+      "name" : "Messe/Deutz Bahnhof, Köln"
+   },
+   {
       "ds100" : "FMES",
       "eva" : 8003996,
       "latlong" : [
@@ -53485,6 +54016,15 @@
          6.556373
       ],
       "name" : "Millingen(b Rheinb)"
+   },
+   {
+      "ds100" : "D219774",
+      "eva" : 219774,
+      "latlong" : [
+         51.215977,
+         6.966011
+      ],
+      "name" : "Millrath S/Feldstraße, Erkrath"
    },
    {
       "ds100" : "WMF",
@@ -55395,6 +55935,24 @@
       "name" : "Mühringen"
    },
    {
+      "ds100" : "D149144",
+      "eva" : 149144,
+      "latlong" : [
+         50.956837,
+         7.012287
+      ],
+      "name" : "Mülheim Bahnhof, Köln"
+   },
+   {
+      "ds100" : "KKM W",
+      "eva" : 444017,
+      "latlong" : [
+         50.961117,
+         7.003442
+      ],
+      "name" : "Mülheim Wiener Platz, Köln"
+   },
+   {
       "ds100" : "EMLR",
       "eva" : 8000259,
       "latlong" : [
@@ -56500,6 +57058,15 @@
          6.95325
       ],
       "name" : "Neanderthal"
+   },
+   {
+      "ds100" : "D430163",
+      "eva" : 430163,
+      "latlong" : [
+         51.226288,
+         6.951574
+      ],
+      "name" : "Neanderthal Museum, Mettmann"
    },
    {
       "ds100" : "XSN",
@@ -58239,6 +58806,15 @@
       "name" : "Neuötting"
    },
    {
+      "ds100" : "D364350",
+      "eva" : 364350,
+      "latlong" : [
+         51.31253,
+         7.089792
+      ],
+      "name" : "Neviges Markt/Bahnhof, Velbert"
+   },
+   {
       "ds100" : "OTNZD",
       "eva" : 5402134,
       "latlong" : [
@@ -59011,6 +59587,15 @@
          11.170056
       ],
       "name" : "Nienhagen(Halberst)"
+   },
+   {
+      "ds100" : "D663090",
+      "eva" : 663090,
+      "latlong" : [
+         51.373234,
+         7.137579
+      ],
+      "name" : "Nierenhof Busbahnhof, Velbert"
    },
    {
       "ds100" : "FNIR",
@@ -60244,6 +60829,15 @@
          12.175262
       ],
       "name" : "Oberaudorf"
+   },
+   {
+      "ds100" : "D303354",
+      "eva" : 303354,
+      "latlong" : [
+         51.274975,
+         7.22517
+      ],
+      "name" : "Oberbarmen Bahnhof, Wuppertal"
    },
    {
       "ds100" : "SOH",
@@ -61821,6 +62415,15 @@
       "name" : "Opladen"
    },
    {
+      "ds100" : "D430010",
+      "eva" : 430010,
+      "latlong" : [
+         51.0662,
+         7.007127
+      ],
+      "name" : "Opladen, Leverkusen"
+   },
+   {
       "ds100" : "XTOPL",
       "eva" : 5402260,
       "latlong" : [
@@ -62098,6 +62701,15 @@
          15.014287
       ],
       "name" : "Ostasov"
+   },
+   {
+      "ds100" : "D218634",
+      "eva" : 218634,
+      "latlong" : [
+         51.295876,
+         6.863597
+      ],
+      "name" : "Ostbahnhof, Ratingen"
    },
    {
       "ds100" : "EBRO",
@@ -62935,6 +63547,15 @@
          11.831265
       ],
       "name" : "Parchim"
+   },
+   {
+      "ds100" : "PTPCU",
+      "eva" : 5453644,
+      "latlong" : [
+         50.031487,
+         15.772662
+      ],
+      "name" : "Pardubice centrum"
    },
    {
       "ds100" : "XTPAR",
@@ -66051,6 +66672,15 @@
       "name" : "Radeburg"
    },
    {
+      "ds100" : "WRDND",
+      "eva" : 734593,
+      "latlong" : [
+         52.884655,
+         12.90664
+      ],
+      "name" : "Radensleben Dorf, Neuruppin"
+   },
+   {
       "ds100" : "MRDD",
       "eva" : 8004914,
       "latlong" : [
@@ -66409,6 +67039,24 @@
          6.963368
       ],
       "name" : "Rastpfuhl Malstatt, Saarbrücken"
+   },
+   {
+      "ds100" : "D366210",
+      "eva" : 366210,
+      "latlong" : [
+         51.262337,
+         6.811783
+      ],
+      "name" : "Rath Mitte S-Bahnhof, Düsseldorf"
+   },
+   {
+      "ds100" : "D653774",
+      "eva" : 653774,
+      "latlong" : [
+         51.26346,
+         6.819675
+      ],
+      "name" : "Rath S-Bahnhof, Düsseldorf"
    },
    {
       "ds100" : "FKRAT",
@@ -67833,6 +68481,15 @@
       "name" : "Ribnitz-Damgarten Ost"
    },
    {
+      "ds100" : "WRIOR",
+      "eva" : 8087031,
+      "latlong" : [
+         54.251016,
+         12.487015
+      ],
+      "name" : "Ribnitz-Damgarten Ost Friedhof"
+   },
+   {
       "ds100" : "WRI",
       "eva" : 8012763,
       "latlong" : [
@@ -67840,6 +68497,15 @@
          12.436965
       ],
       "name" : "Ribnitz-Damgarten West"
+   },
+   {
+      "ds100" : "WRI B",
+      "eva" : 8087032,
+      "latlong" : [
+         54.239176,
+         12.436965
+      ],
+      "name" : "Ribnitz-Damgarten West (Bahnhofsvorplatz)"
    },
    {
       "ds100" : "XIRN",
@@ -67858,6 +68524,15 @@
          8.936554
       ],
       "name" : "Richen(b Eppingen)"
+   },
+   {
+      "ds100" : "D325018",
+      "eva" : 325018,
+      "latlong" : [
+         54.250935,
+         12.483671
+      ],
+      "name" : "Richtenberger Str., Ribnitz-Damgarten"
    },
    {
       "ds100" : "XSRW",
@@ -68868,6 +69543,15 @@
       "name" : "Ronnenberg"
    },
    {
+      "ds100" : "D210401",
+      "eva" : 210401,
+      "latlong" : [
+         51.22602,
+         7.214095
+      ],
+      "name" : "Ronsdorf Bahnhof, Wuppertal"
+   },
+   {
       "ds100" : "FRON",
       "eva" : 8005161,
       "latlong" : [
@@ -69021,6 +69705,15 @@
       "name" : "Rosenheim Hochschule"
    },
    {
+      "ds100" : "D657862",
+      "eva" : 657862,
+      "latlong" : [
+         51.300476,
+         7.101856
+      ],
+      "name" : "Rosenhügel Bahnhof, Velbert"
+   },
+   {
       "ds100" : "WROW",
       "eva" : 8012792,
       "latlong" : [
@@ -69055,6 +69748,15 @@
          12.131079
       ],
       "name" : "Rostock Hbf"
+   },
+   {
+      "ds100" : "WR  A",
+      "eva" : 8070961,
+      "latlong" : [
+         54.078246,
+         12.131079
+      ],
+      "name" : "Rostock Hbf Süd (Albrecht-Kossel-Platz)"
    },
    {
       "ds100" : "WRHO",
@@ -69577,6 +70279,15 @@
          9.543699
       ],
       "name" : "Rudersberg-Oberndorf"
+   },
+   {
+      "ds100" : "D142020",
+      "eva" : 142020,
+      "latlong" : [
+         53.570927,
+         11.388766
+      ],
+      "name" : "Rudolf-Diesel-Straße, Schwerin (Meckl)"
    },
    {
       "ds100" : "UR",
@@ -72367,6 +73078,15 @@
          9.917602
       ],
       "name" : "Schruns"
+   },
+   {
+      "ds100" : "D306424",
+      "eva" : 306424,
+      "latlong" : [
+         53.407135,
+         11.716306
+      ],
+      "name" : "Schule, Spornitz"
    },
    {
       "ds100" : "XBSU",
@@ -75168,6 +75888,24 @@
       "name" : "Sondershausen"
    },
    {
+      "ds100" : "D131264",
+      "eva" : 131264,
+      "latlong" : [
+         51.237175,
+         7.098512
+      ],
+      "name" : "Sonnborner Ufer, Wuppertal"
+   },
+   {
+      "ds100" : "KWSOU",
+      "eva" : 664752,
+      "latlong" : [
+         51.237175,
+         7.098512
+      ],
+      "name" : "Sonnborner Ufer, Wuppertal"
+   },
+   {
       "ds100" : "USO",
       "eva" : 8013008,
       "latlong" : [
@@ -75598,6 +76336,15 @@
          9.556238
       ],
       "name" : "Springe"
+   },
+   {
+      "ds100" : "D654777",
+      "eva" : 654777,
+      "latlong" : [
+         51.42796,
+         7.073027
+      ],
+      "name" : "Springhoffsfeld, Essen (Ruhr)"
    },
    {
       "ds100" : "ASP",
@@ -76266,6 +77013,15 @@
       "name" : "Stadthagen"
    },
    {
+      "ds100" : "D418424",
+      "eva" : 418424,
+      "latlong" : [
+         51.224464,
+         6.909082
+      ],
+      "name" : "Stadthalle, Erkrath"
+   },
+   {
       "ds100" : "USTM",
       "eva" : 8013023,
       "latlong" : [
@@ -76300,6 +77056,24 @@
          11.722792
       ],
       "name" : "Stadtroda"
+   },
+   {
+      "ds100" : "D301551",
+      "eva" : 301551,
+      "latlong" : [
+         51.250854,
+         6.987962
+      ],
+      "name" : "Stadtwald, Mettmann"
+   },
+   {
+      "ds100" : "D231181",
+      "eva" : 231181,
+      "latlong" : [
+         51.41915,
+         7.024261
+      ],
+      "name" : "Stadtwaldplatz, Essen (Ruhr)"
    },
    {
       "ds100" : "FST",
@@ -76581,6 +77355,15 @@
       "name" : "Stedum"
    },
    {
+      "ds100" : "PQEST",
+      "eva" : 654786,
+      "latlong" : [
+         51.450504,
+         7.075239
+      ],
+      "name" : "Steele S-Bahnhof, Essen (Ruhr)"
+   },
+   {
       "ds100" : "XNSW",
       "eva" : 8400578,
       "latlong" : [
@@ -76743,6 +77526,15 @@
       "name" : "Steinbach-Hallenberg"
    },
    {
+      "ds100" : "D131242",
+      "eva" : 131242,
+      "latlong" : [
+         51.249355,
+         7.140482
+      ],
+      "name" : "Steinbeck Weidenplatz, Wuppertal"
+   },
+   {
       "ds100" : "XFSNG",
       "eva" : 8702047,
       "latlong" : [
@@ -76858,6 +77650,15 @@
          7.375921
       ],
       "name" : "Steinfurt-Grottenkamp"
+   },
+   {
+      "ds100" : "D122000",
+      "eva" : 122000,
+      "latlong" : [
+         53.541172,
+         10.139113
+      ],
+      "name" : "Steinfurther Allee (U), Hamburg"
    },
    {
       "ds100" : "ESTG",
@@ -80433,6 +81234,42 @@
       "name" : "Trier Süd"
    },
    {
+      "ds100" : "STRW",
+      "eva" : 8005906,
+      "latlong" : [
+         49.751778,
+         6.62354
+      ],
+      "name" : "Trier West"
+   },
+   {
+      "ds100" : "STEU",
+      "eva" : 8001940,
+      "latlong" : [
+         49.738087,
+         6.612303
+      ],
+      "name" : "Trier-Euren"
+   },
+   {
+      "ds100" : "STRP",
+      "eva" : 8004752,
+      "latlong" : [
+         49.764202,
+         6.630138
+      ],
+      "name" : "Trier-Pallien"
+   },
+   {
+      "ds100" : "STRZ",
+      "eva" : 8006650,
+      "latlong" : [
+         49.719982,
+         6.580895
+      ],
+      "name" : "Trier-Zewen"
+   },
+   {
       "ds100" : "PQSTS",
       "eva" : 836375,
       "latlong" : [
@@ -82008,6 +82845,15 @@
       "name" : "Utzedel"
    },
    {
+      "ds100" : "ZUU",
+      "eva" : 2200542,
+      "latlong" : [
+         48.6094,
+         22.30087
+      ],
+      "name" : "Uzhhorod"
+   },
+   {
       "ds100" : "XMV",
       "eva" : 5501413,
       "latlong" : [
@@ -83520,6 +84366,24 @@
       "name" : "Vohren"
    },
    {
+      "ds100" : "D130419",
+      "eva" : 130419,
+      "latlong" : [
+         51.233936,
+         7.070412
+      ],
+      "name" : "Vohwinkel Bahnhof, Wuppertal"
+   },
+   {
+      "ds100" : "PQWVB",
+      "eva" : 664798,
+      "latlong" : [
+         51.233936,
+         7.070412
+      ],
+      "name" : "Vohwinkel Bahnhof, Wuppertal"
+   },
+   {
       "ds100" : "DVO",
       "eva" : 8013201,
       "latlong" : [
@@ -83862,6 +84726,24 @@
       "name" : "Völklingen"
    },
    {
+      "ds100" : "D390201",
+      "eva" : 390201,
+      "latlong" : [
+         51.209587,
+         6.762019
+      ],
+      "name" : "Völklinger Straße, Düsseldorf"
+   },
+   {
+      "ds100" : "D231225",
+      "eva" : 231225,
+      "latlong" : [
+         51.262444,
+         7.174102
+      ],
+      "name" : "Völklinger Straße, Wuppertal"
+   },
+   {
       "ds100" : "HELV",
       "eva" : 8001741,
       "latlong" : [
@@ -83878,6 +84760,15 @@
          11.3216663976922
       ],
       "name" : "Völs"
+   },
+   {
+      "ds100" : "D204231",
+      "eva" : 204231,
+      "latlong" : [
+         53.37834,
+         11.591914
+      ],
+      "name" : "Wabeler Str., Neustadt-Glewe"
    },
    {
       "ds100" : "FWAB",
@@ -84366,6 +85257,15 @@
       "name" : "Walleshausen"
    },
    {
+      "ds100" : "D442199",
+      "eva" : 442199,
+      "latlong" : [
+         51.103252,
+         7.012683
+      ],
+      "name" : "Wallgraben, Leichlingen (Rheinland)"
+   },
+   {
       "ds100" : "UWAL",
       "eva" : 8013217,
       "latlong" : [
@@ -84724,6 +85624,15 @@
          14.121613
       ],
       "name" : "Wartberg/Krems"
+   },
+   {
+      "ds100" : "D958541",
+      "eva" : 958541,
+      "latlong" : [
+         52.58117,
+         12.036286
+      ],
+      "name" : "Wartehalle, Schönhausen (Elbe)"
    },
    {
       "ds100" : "TWV",
@@ -85129,6 +86038,15 @@
          9.985977
       ],
       "name" : "Wehretal-Reichensachsen"
+   },
+   {
+      "ds100" : "D309681",
+      "eva" : 309681,
+      "latlong" : [
+         51.22992,
+         6.797661
+      ],
+      "name" : "Wehrhahn, Düsseldorf"
    },
    {
       "ds100" : "FWEH",
@@ -85986,6 +86904,15 @@
       "name" : "Wemmetsweiler Rathaus"
    },
    {
+      "ds100" : "D960989",
+      "eva" : 960989,
+      "latlong" : [
+         52.58366,
+         12.03999
+      ],
+      "name" : "Wendestelle, Schönhausen (Elbe)"
+   },
+   {
       "ds100" : "AWE",
       "eva" : 8006330,
       "latlong" : [
@@ -86083,6 +87010,15 @@
          12.371521
       ],
       "name" : "Werdau Nord"
+   },
+   {
+      "ds100" : "D652751",
+      "eva" : 652751,
+      "latlong" : [
+         51.386593,
+         6.998183
+      ],
+      "name" : "Werden S-Bahnhof, Essen (Ruhr)"
    },
    {
       "ds100" : "BWE",
@@ -86254,6 +87190,15 @@
          13.4553322943825
       ],
       "name" : "Wernstein"
+   },
+   {
+      "ds100" : "D804291",
+      "eva" : 804291,
+      "latlong" : [
+         51.193657,
+         6.814372
+      ],
+      "name" : "Werstener Dorfstraße, Düsseldorf"
    },
    {
       "ds100" : "MWHA",
@@ -89154,6 +90099,15 @@
       "name" : "ZOB, Duderstadt"
    },
    {
+      "ds100" : "D204129",
+      "eva" : 204129,
+      "latlong" : [
+         53.429886,
+         11.185664
+      ],
+      "name" : "ZOB, Hagenow"
+   },
+   {
       "ds100" : "XNZAA",
       "eva" : 8400731,
       "latlong" : [
@@ -89674,6 +90628,15 @@
          9.317729
       ],
       "name" : "Zennern"
+   },
+   {
+      "ds100" : "D330135",
+      "eva" : 330135,
+      "latlong" : [
+         51.249527,
+         6.979827
+      ],
+      "name" : "Zentrum, Mettmann"
    },
    {
       "ds100" : "BZEP",
@@ -90205,6 +91168,24 @@
          10.418038
       ],
       "name" : "Zollhaus-Petersthal"
+   },
+   {
+      "ds100" : "D309691",
+      "eva" : 309691,
+      "latlong" : [
+         51.23633,
+         6.796564
+      ],
+      "name" : "Zoo, Düsseldorf"
+   },
+   {
+      "ds100" : "D231252",
+      "eva" : 231252,
+      "latlong" : [
+         51.2431,
+         7.10751
+      ],
+      "name" : "Zoologischer Garten, Wuppertal"
    },
    {
       "ds100" : "UZN",

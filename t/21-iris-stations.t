@@ -102,16 +102,22 @@ is_deeply(
 		  )
 	],
 	[
-		[ 'EESD', 'Essen Süd' ],
-		[ 'EE',   'Essen Hbf' ],
-		[ 'EESA', 'Essen Stadtwald' ],
-		[ 'EEUE', 'Essen-Überruhr' ],
-		[ 'EENW', 'Essen West' ],
-		[ 'EEST', 'Essen-Steele' ],
-		[ 'EEHU', 'Essen-Hügel' ],
-		[ 'EEHH', 'Essen-Holthausen' ],
-		[ 'EEKS', 'Essen-Kray Süd' ],
-		[ 'EESO', 'Essen-Steele Ost' ],
+		[ 'EESD',    'Essen Süd' ],
+		[ 'D208087', 'Essen (Ruhr) Süd' ],
+		[ 'EE',      'Essen Hbf' ],
+		[ 'EE  K',   'Essen Hbf Kruppstraße/Am Thyssenhaus' ],
+		[ 'EESA',    'Essen Stadtwald' ],
+		[ 'D231181', 'Stadtwaldplatz, Essen (Ruhr)' ],
+		[ 'EEUE',    'Essen-Überruhr' ],
+		[ 'D654777', 'Springhoffsfeld, Essen (Ruhr)' ],
+		[ 'EENW',    'Essen West' ],
+		[ 'PQEST',   'Steele S-Bahnhof, Essen (Ruhr)' ],
+
+		# [ 'EEST', 'Essen-Steele' ],
+		# [ 'EEHU', 'Essen-Hügel' ],
+		# [ 'EEHH', 'Essen-Holthausen' ],
+		# [ 'EEKS', 'Essen-Kray Süd' ],
+		# [ 'EESO', 'Essen-Steele Ost' ],
 	],
 	'get_station_by_location: 10 matches for Foobar'
 );
