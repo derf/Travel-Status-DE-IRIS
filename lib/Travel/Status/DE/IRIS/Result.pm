@@ -14,7 +14,7 @@ use List::Util      qw(any);
 use List::MoreUtils qw(uniq lastval);
 use Scalar::Util    qw(weaken);
 
-our $VERSION = '2.03';
+our $VERSION = '2.04';
 
 Travel::Status::DE::IRIS::Result->mk_ro_accessors(
 	qw(arrival arrival_delay arrival_has_realtime arrival_is_additional arrival_is_cancelled arrival_hidden
@@ -940,7 +940,7 @@ arrival/departure received by Travel::Status::DE::IRIS
 
 =head1 VERSION
 
-version 2.03
+version 2.04
 
 =head1 DESCRIPTION
 

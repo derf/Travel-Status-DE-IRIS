@@ -1,3 +1,8 @@
+Travel::Status::DE::IRIS 2.04 - Fri Feb 08 2026
+
+    * Update station and meta databases for rail replacement service around
+      Düsseldorf / Wuppertal / Hagen / Dortmund
+
 Travel::Status::DE::IRIS 2.03 - Fri Feb 07 2026
 
     * Add missing geocoordinates for two stations

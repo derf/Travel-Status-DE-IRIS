@@ -4,7 +4,7 @@ use warnings;
 use 5.014;
 use utf8;
 
-our $VERSION = '2.03';
+our $VERSION = '2.04';
 
 use DateTime;
 use DateTime::Format::Strptime;
@@ -587,7 +587,7 @@ B<db-iris> [B<-rx>] [B<-d> I<date>] [B<-o> I<output-flags>]
 
 =head1 VERSION
 
-version 2.03
+version 2.04
 
 =head1 DEPRECATION NOTICE
 
