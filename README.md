@@ -27,7 +27,7 @@ You have five installation options:
 * finalrewind.org APT repository for Debian-based distributions
 * Installing the latest release from CPAN
 * Installation from source
-* Using a Docker image
+* Using a Docker image (amd64 or arm64)
 
 Except for Docker, **db-iris** is available in your PATH after installation.
 You can run `db-iris --version` to verify this. Documentation is available via
