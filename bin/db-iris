@@ -66,6 +66,22 @@ if ( @ARGV != 1 ) {
 @grep_type     = split( qr{,}, join( q{,}, @grep_type ) );
 
 my ($station) = @ARGV;
+
+if ( $station =~ m{ ^ (?<lat> \d+ [.]? \d* ) : (?<lon> \d+ [.]? \d* ) $ }x ) {
+	my @candidates
+	  = Travel::Status::DE::IRIS::Stations::get_station_by_location( $+{lon},
+		$+{lat} );
+	for my $candidate (@candidates) {
+		printf(
+			"%5.1f km  %-7s %s\n",
+			$candidate->[1],
+			$candidate->[0][0],
+			$candidate->[0][1],
+		);
+	}
+	exit(0);
+}
+
 $station = get_station($station);
 
 if ($track_via) {
@@ -202,30 +218,6 @@ sub get_station {
 
 	if ( $input_name =~ m{ ^ [[:digit:]]+ $ }x ) {
 		return $input_name;
-	}
-
-	if ( $input_name
-		=~ m{ ^ (?<lon> [[:digit:].]+ ) , (?<lat> [[:digit:].]+ ) }x )
-	{
-		my @candidates
-		  = Travel::Status::DE::IRIS::Stations::get_station_by_location(
-			$+{lon}, $+{lat} );
-
-		if ( not @candidates ) {
-			say STDERR
-			  "Found no stations inside a 70km radius around $+{lon},$+{lat}";
-			exit(1);
-		}
-
-		say STDERR "Geolocation candidates for $+{lon},$+{lat} are:";
-		say STDERR join(
-			"\n",
-			map {
-				sprintf( "%-30s %-5s  %4.1fkm",
-					$_->[0][1], $_->[0][0], $_->[1] )
-			} @candidates
-		);
-		exit(1);
 	}
 
 	my @stations = Travel::Status::DE::IRIS::Stations::get_station($input_name);
@@ -584,6 +576,8 @@ db-iris - Interface to the DeutscheBahn online departure monitor
 
 B<db-iris> [B<-rx>] [B<-d> I<date>] [B<-o> I<output-flags>]
 [B<-t> I<time>] [B<-v>|B<-V> I<via>] [I<other options ...>] I<station>
+
+B<db-iris> I<lat>:I<lon>
 
 =head1 VERSION
 
