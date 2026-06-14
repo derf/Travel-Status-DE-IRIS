@@ -804,6 +804,7 @@ sub parse_realtime {
 		for my $e_m (@e_ms) {
 			my $type  = $e_m->getAttribute('t');
 			my $value = $e_m->getAttribute('c');
+			my $cat   = $e_m->getAttribute('cat');
 			my $msgid = $e_m->getAttribute('id');
 			my $ts    = $e_m->getAttribute('ts');
 
@@ -816,6 +817,13 @@ sub parse_realtime {
 			# to the text itself) is not helpful either.
 			if ( defined $value and $value > 1 and $value < 100 ) {
 				$messages{$msgid} = [ $ts, $type, $value ];
+			}
+			elsif ($cat) {
+				$messages{$msgid} = [
+					$ts, $type, $cat,
+					$e_m->getAttribute('from'),
+					$e_m->getAttribute('to')
+				];
 			}
 		}
 

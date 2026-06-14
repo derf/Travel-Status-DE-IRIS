@@ -737,8 +737,18 @@ sub messages {
 	my @messages = reverse sort keys %{ $self->{messages} };
 	my @ret      = map {
 		[
-			$self->parse_ts( $self->{messages}->{$_}->[0] ),
-			$self->translate_msg( $self->{messages}->{$_}->[2] )
+			$self->parse_ts( $self->{messages}{$_}[0] ),
+			$self->translate_msg(
+				$self->{messages}{$_}[2],
+				$self->{messages}{$_}[1]
+			),
+			$_,
+			$self->{messages}{$_}[3]
+			? $self->parse_ts( $self->{messages}{$_}[3] )
+			: undef,
+			$self->{messages}{$_}[4]
+			? $self->parse_ts( $self->{messages}{$_}[4] )
+			: undef,
 		]
 	} @messages;
 
@@ -865,8 +875,11 @@ sub sched_route {
 }
 
 sub translate_msg {
-	my ( $self, $msg ) = @_;
+	my ( $self, $msg, $type ) = @_;
 
+	if ( $type and $type eq 'h' ) {
+		return $msg;
+	}
 	return $translation{$msg} // "?($msg)";
 }
 

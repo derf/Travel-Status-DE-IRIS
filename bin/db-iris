@@ -370,10 +370,28 @@ sub display_result {
 		if ( $edata{messages} ) {
 			for my $message ( $d->messages ) {
 
-				# leading spaces to align with regular output
-				printf( " %s  %s\n",
-					$message->[0]->strftime('%d.%m. %H:%M'),
-					$message->[1] );
+				if ( $message->[3] and $message->[1] =~ m{Information} ) {
+
+					# not helpful
+					next;
+				}
+
+				# printf uses leading spaces to align with regular output
+				if ( $message->[3] ) {
+					printf(
+						" %s  %s %s (%s → %s)\n",
+						$message->[0]->strftime('%d.%m. %H:%M'),
+						$message->[1] =~ s{[.]? [(]Quelle: \S+?[)]}{}r,
+						$message->[2],
+						$message->[3]->strftime('%d.%m. %H:%M'),
+						$message->[4]->strftime('%d.%m. %H:%M'),
+					);
+				}
+				else {
+					printf( " %s  %s\n",
+						$message->[0]->strftime('%d.%m. %H:%M'),
+						$message->[1] );
+				}
 			}
 			print "\n";
 		}
